@@ -1,18 +1,27 @@
 import React, { useState } from 'react';
 
-export default function Stage({ chatHistory }) {
-  // Safe array fallback structure
+// Define strict data types for incoming structures
+interface ChatMessage {
+  text?: string;
+}
+
+interface StageProps {
+  chatHistory?: ChatMessage[];
+  characterData?: any;
+  updateStageState?: any;
+}
+
+export default function Stage({ chatHistory }: StageProps) {
   const safeHistory = chatHistory || [];
   const latestMessage = safeHistory.length > 0 ? safeHistory[safeHistory.length - 1]?.text || "" : "";
   
-  // Local state trigger so you can test on Android directly
-  const [manualPhase, setManualPhase] = useState(null);
+  // Explicitly tell TypeScript that state can be null OR a number
+  const [manualPhase, setManualPhase] = useState<number | null>(null);
 
   let activePhase = "Phase 1: Lajja-Avarana (Modesty Threshold)";
   let fluidTexture = "Viscous, unrefined dense mucus, sharp mineral-salinity";
   let voiceOctave = "Involuntary High-pitched adolescent octave, scared laughter loops";
 
-  // Check either the incoming chat history or the local touch trigger buttons
   if (latestMessage.includes("Svairini-Rasa") || latestMessage.includes("uninhibited") || manualPhase === 2) {
     activePhase = "Phase 2: Svairini-Rasa (Uninhibited Harem)";
     fluidTexture = "Smooth, velvety cream-like density, rose-water sugar sweetness";
