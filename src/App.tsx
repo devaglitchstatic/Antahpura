@@ -1,5 +1,5 @@
 import {ReactRunner} from "@chub-ai/stages-ts";
-import {Stage} from "./Stage";
+import Stage from "./Stage";
 import {TestStageRunner} from "./TestRunner";
 
 function App() {
