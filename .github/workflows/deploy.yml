@@ -29,3 +29,68 @@ jobs:
 
       - name: Build stage
         run: yarn build
+
+      - name: Ensure metadata exists
+        run: |
+          mkdir -p public
+          if [ ! -f public/chub_meta.yaml ]; then
+            cat > public/chub_meta.yaml <<META
+name: Antahpura Monitoring Plinth
+description: Constitutional runtime engine for the Antahpura world.
+github_path: devaglitchstatic/Antahpura
+META
+          fi
+
+      - name: Create or link Chub stage
+        env:
+          CHUB_AUTH_TOKEN: ${{ secrets.CHUB_AUTH_TOKEN }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+          STAGE_ID=$(grep '^extension_id:' public/chub_meta.yaml | cut -d ':' -f2 | tr -d " '")
+
+          if [ -z "$STAGE_ID" ]; then
+            echo "Creating Chub stage..."
+
+            HTTP_CODE=$(curl -s -w "%{http_code}" \
+              -H "CH-API-KEY: ${CHUB_AUTH_TOKEN}" \
+              -H "Content-Type: application/json" \
+              -X POST \
+              -d '{"name":"Antahpura Monitoring Plinth"}' \
+              https://api.chub.ai/extensions \
+              -o creation.json)
+
+            echo "HTTP: $HTTP_CODE"
+            cat creation.json
+
+            STAGE_ID=$(jq -r '.id_v2 // .id // empty' creation.json)
+
+            if [ -z "$STAGE_ID" ]; then
+              echo "Failed to create stage."
+              exit 1
+            fi
+
+            echo "extension_id: ${STAGE_ID}" >> public/chub_meta.yaml
+
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git add public/chub_meta.yaml
+            git commit -m "Link Chub extension" || true
+            git push
+          fi
+
+          echo "STAGE_ID=${STAGE_ID}" >> $GITHUB_ENV
+
+      - name: Upload stage bundle
+        env:
+          CHUB_AUTH_TOKEN: ${{ secrets.CHUB_AUTH_TOKEN }}
+        run: |
+          cd dist
+          zip -r ../stage.zip .
+          cd ..
+
+          curl -s \
+            -H "CH-API-KEY: ${CHUB_AUTH_TOKEN}" \
+            -F "file=@stage.zip" \
+            https://api.chub.ai/extensions/${STAGE_ID}/upload
