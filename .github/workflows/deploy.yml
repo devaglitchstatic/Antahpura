@@ -1,16 +1,28 @@
-name: Deploy
+name: Deploy Antahpura Stage
 
 on:
-  push:
-    branches: [ main ]
+push:
+branches: [ main ]
+
+permissions:
+contents: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: yarn install --ignore-engines
-      - run: yarn build
+deploy:
+runs-on: ubuntu-latest
+
+steps:
+  - uses: actions/checkout@v4
+
+  - uses: actions/setup-node@v4
+    with:
+      node-version: 21.7.1
+      cache: yarn
+
+  - name: Install dependencies
+    run: |
+      yarn config set ignore-engines true
+      yarn install --frozen-lockfile
+
+  - name: Build stage
+    run: yarn build
