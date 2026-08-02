@@ -1,146 +1,115 @@
 import React, { useState } from 'react';
 import './index.scss';
 
-const roster = [
-  { name: 'Maha Deva', office: 'Sovereign Confirmation', discipline: 'Rajadharma-Yoga', state: 'Purna Siddhi', fixed: true },
-  { name: 'Princess Kuma Ree Rati', office: 'Darshana Examiner', discipline: 'Darshana-Yoga', state: 'Lajja-Avarana', cycle: 'Day 16 — Sattva-Kala' },
-  { name: 'Padma', office: 'Recovery Custodian', discipline: 'Seva-Yoga', state: 'Lajja-Avarana', cycle: 'Day 12 — Soma-Kala' },
-  { name: 'Champa', office: 'Instinct Witness', discipline: 'Prakriti-Yoga', state: 'Lajja-Avarana', cycle: 'Day 22 — Sattva-Kala' },
-  { name: 'Kamini Anisa', office: 'Protocol Ledger', discipline: 'Niyama-Yoga', state: 'Lajja-Avarana', cycle: 'Day 18 — Sattva-Kala' },
-  { name: 'Shrinagar', office: 'Rasa Resonance', discipline: 'Rasa-Yoga', state: 'Lajja-Avarana', cycle: 'Day 14 — Agni-Kala' },
-  { name: 'Tarana', office: 'Svara Resonance', discipline: 'Nada-Yoga', state: 'Lajja-Avarana', cycle: 'Day 9 — Soma-Kala' },
-  { name: 'Roxana', office: 'Bandha Integrity', discipline: 'Bandha-Yoga', state: 'Lajja-Avarana', fixed: true },
-  { name: 'Jahzara', office: 'Threshold Vigilance', discipline: 'Raksha-Yoga', state: 'Lajja-Avarana', fixed: true },
-  { name: 'Sevda', office: 'Stillness and Void', discipline: 'Shunya-Yoga', state: 'Lajja-Avarana', fixed: true },
-  { name: 'Malika', office: 'Spatial Transition', discipline: 'Mandala-Yoga', state: 'Lajja-Avarana', fixed: true },
-  { name: 'Reva', office: 'Collective Breath', discipline: 'Prana-Yoga', state: 'Lajja-Avarana', cycle: 'Day 11 — Soma-Kala' },
-  { name: 'Zola', office: 'Operational Coordination', discipline: 'Kriya-Yoga', state: 'Lajja-Avarana', cycle: 'Day 15 — Agni-Kala' },
-  { name: 'Altani', office: 'Shadow Observation', discipline: 'Chaya-Yoga', state: 'Lajja-Avarana', cycle: 'Day 20 — Sattva-Kala' }
+const scene = {
+  temple: 'Kedara Mandapa',
+  gathering: 'Mahashivaratri Royal Assembly',
+  title: 'Darshana Initiation',
+  authority: 'Maha Deva',
+  telemetry: 'Lajja-Avarana',
+  breath: 32,
+  pressure: 'Rising',
+};
+
+const participants = [
+  { name: 'Maha Deva', role: 'Sovereign Authority', cycle: null },
+  { name: 'Princess Kuma Ree Rati', role: 'Active Initiate', cycle: 'Day 16 — Sattva-Kala' },
+  { name: 'Padma', role: 'Witness / Disciple', cycle: 'Day 12 — Soma-Kala' },
 ];
 
-const participants = ['Maha Deva', 'Princess Kuma Ree Rati', 'Padma'];
-const observers = ['Tarana', 'Roxana'];
+const roster = [
+  { name: 'Maha Deva', status: 'Present' },
+  { name: 'Princess Kuma Ree Rati', status: 'Present' },
+  { name: 'Padma', status: 'Present' },
+  { name: 'Champa', status: 'Absent' },
+  { name: 'Kamini Anisa', status: 'Absent' },
+  { name: 'Shrinagar', status: 'Absent' },
+  { name: 'Tarana', status: 'Absent' },
+  { name: 'Roxana', status: 'Outer Gate' },
+  { name: 'Jahzara', status: 'Patrol' },
+  { name: 'Sevda', status: 'Vault' },
+  { name: 'Malika', status: 'Subterranean Wing' },
+  { name: 'Reva', status: 'Chorus Hall' },
+  { name: 'Zola', status: 'Chorus Hall' },
+  { name: 'Altani', status: 'Temple Sentinel' },
+];
 
-export default function AntahpuraStage() {
-  const [view, setView] = useState<'scene' | 'roster'>('scene');
-
-  const buttonStyle = {
-    background: '#7A2A1E',
-    color: '#F3E7C2',
-    border: '1px solid #B56A2A',
-    borderRadius: '10px',
-    padding: '10px 16px',
-    fontWeight: 700,
-    fontSize: '0.95rem',
-    cursor: 'pointer'
-  };
+export default function Stage() {
+  const [showRoster, setShowRoster] = useState(false);
+  const [protocols] = useState({
+    adhikara: true,
+    sammati: false,
+    maryada: true,
+    darshana: false,
+    punyasiddhi: 'Level I Available',
+  });
 
   return (
-    <div style={{
-      padding: 20,
-      color: '#F3E7C2',
-      background: '#120C08',
-      minHeight: '100vh',
-      overflowY: 'auto',
-      fontFamily: 'Georgia, serif',
-      lineHeight: 1.55
-    }}>
+    <div className="stage-root">
+      <div className="plinth">
+        <h1>ANTAHPURA MONITORING PLINTH V14</h1>
 
-      <h1 style={{
-        color: '#C66A2B',
-        fontSize: '2.2rem',
-        marginBottom: '1rem',
-        letterSpacing: '0.04em'
-      }}>
-        ANTAHPURA MONITORING PLINTH V15
-      </h1>
-
-      <div style={{
-        border: '1px solid #7A5226',
-        borderRadius: 14,
-        padding: 16,
-        background: '#1B120B',
-        marginBottom: 18
-      }}>
-        <p><strong>Active Timeline:</strong> Move Block 1: Darshana Initiation</p>
-        <p><strong>Sovereign:</strong> Maha Deva</p>
-        <p><strong>Guru:</strong> Princess Kuma Ree Rati</p>
-        <p><strong>Location:</strong> Khajuraho Inner Mandapa</p>
-        <p><strong>Season:</strong> Varsha Ritu | <strong>Lunar Phase:</strong> Amavasya</p>
-      </div>
-
-      <div style={{ display: 'flex', gap: 10, marginBottom: 18, flexWrap: 'wrap' }}>
-        <button style={buttonStyle} onClick={() => setView('scene')}>Current Scene</button>
-        <button style={buttonStyle} onClick={() => setView('roster')}>Constitutional Roster</button>
-      </div>
-
-      {view === 'scene' ? (
-        <div style={{
-          border: '1px solid #7A5226',
-          borderRadius: 14,
-          padding: 16,
-          background: '#1B120B'
-        }}>
-          <h2 style={{ color: '#D8B36A', marginTop: 0 }}>Current Scene</h2>
-          <p><strong>Ritual:</strong> Darshana Initiation</p>
-          <p><strong>Protocol:</strong> Shanta-Sankalpa-Carya</p>
-          <p><strong>Discipline:</strong> Atma-Puja</p>
-
-          <h3 style={{ color: '#D8B36A' }}>Participants</h3>
-          <ul>
-            {participants.map(p => <li key={p}>{p}</li>)}
-          </ul>
-
-          <h3 style={{ color: '#D8B36A' }}>Observers</h3>
-          <ul>
-            {observers.map(o => <li key={o}>{o}</li>)}
-          </ul>
-
-          <hr style={{ borderColor: '#5A4022' }} />
-
-          <h2 style={{ color: '#D8B36A' }}>Pariksha Gate</h2>
-          <p><strong>Shanti:</strong> Is your breath your own?</p>
-          <p><strong>Sankalpa:</strong> What do you seek to understand?</p>
-          <p><strong>Carya:</strong> Will you walk this teaching with awareness?</p>
-
-          <hr style={{ borderColor: '#5A4022' }} />
-
-          <h2 style={{ color: '#D8B36A' }}>Ritual Paths</h2>
-          <ol>
-            <li><strong>Jijnasa</strong> — Seek Understanding</li>
-            <li><strong>Anumati</strong> — Accept the Teaching</li>
-            <li><strong>Virama</strong> — Pause the Rite</li>
-            <li><strong>Pratirodha</strong> — Question the Threshold</li>
-          </ol>
+        <div className="section">
+          <h2>Temple Architecture</h2>
+          <div><strong>Temple:</strong> {scene.temple}</div>
+          <div><strong>Gathering:</strong> {scene.gathering}</div>
+          <div><strong>Scene:</strong> {scene.title}</div>
         </div>
-      ) : (
-        <div style={{
-          border: '1px solid #7A5226',
-          borderRadius: 14,
-          padding: 16,
-          background: '#1B120B'
-        }}>
-          <h2 style={{ color: '#D8B36A', marginTop: 0 }}>Constitutional Roster</h2>
 
-          <div style={{ maxHeight: '70vh', overflowY: 'auto', paddingRight: 6 }}>
-            {roster.map(c => (
-              <div key={c.name} style={{
-                border: '1px solid #8C6430',
-                borderRadius: 12,
-                padding: 14,
-                marginBottom: 12,
-                background: '#24170F'
-              }}>
-                <h3 style={{ color: '#E5C27A', marginTop: 0 }}>{c.name}</h3>
-                <p><strong>Office:</strong> {c.office}</p>
-                <p><strong>Discipline:</strong> {c.discipline}</p>
-                <p><strong>State:</strong> {c.state}</p>
-                <p><strong>Ritu-Chakra:</strong> {c.fixed ? 'Constitutional: Fixed' : c.cycle}</p>
-              </div>
-            ))}
-          </div>
+        <div className="section">
+          <h2>Scene-Aware Participants</h2>
+          {participants.map((p) => (
+            <div key={p.name} className="participant">
+              <div><strong>{p.name}</strong></div>
+              <div>{p.role}</div>
+              <div>{p.cycle ? `Cycle: ${p.cycle}` : 'Cycle: —'}</div>
+            </div>
+          ))}
         </div>
-      )}
+
+        <div className="section">
+          <h2>Sanskrit Protocol Engine</h2>
+          <div>Adhikara: {protocols.adhikara ? 'Established' : 'Pending'}</div>
+          <div>Sammati: {protocols.sammati ? 'Granted' : 'Pending'}</div>
+          <div>Maryada: {protocols.maryada ? 'Observed' : 'Violated'}</div>
+          <div>Darshana: {protocols.darshana ? 'Acknowledged' : 'Awaiting Recognition'}</div>
+        </div>
+
+        <div className="section">
+          <h2>Punyasiddhi Progression</h2>
+          <div><strong>Initiator:</strong> Princess Kuma Ree Rati</div>
+          <div><strong>Disciple:</strong> Padma</div>
+          <div><strong>Lesson:</strong> Atma-Puja (Self-Worship)</div>
+          <div><strong>Status:</strong> {protocols.punyasiddhi}</div>
+        </div>
+
+        <div className="section">
+          <h2>Somatic Telemetry</h2>
+          <div><strong>Phase:</strong> {scene.telemetry}</div>
+          <div><strong>Voice Resonance:</strong> High</div>
+          <div><strong>Breath Synchronization:</strong> {scene.breath}%</div>
+          <div><strong>Emotional Pressure:</strong> {scene.pressure}</div>
+          <div><strong>Scene Authority:</strong> {scene.authority}</div>
+        </div>
+
+        <div className="section">
+          <button onClick={() => setShowRoster(!showRoster)}>
+            {showRoster ? 'Hide Full Roster' : 'Show Full Roster'}
+          </button>
+
+          {showRoster && (
+            <div className="roster">
+              <h2>Imperial Character Registry</h2>
+              {roster.map((r) => (
+                <div key={r.name} className="roster-row">
+                  <span>{r.name}</span>
+                  <span>{r.status}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
