@@ -14,18 +14,18 @@ runs-on: ubuntu-latest
 
 steps:
   - name: Checkout repository
-      uses: actions/checkout@v4
+    uses: actions/checkout@v4
 
-        - name: Setup Node
-            uses: actions/setup-node@v4
-                with:
-                      node-version: '21.7.1'
-                            cache: yarn
+  - name: Setup Node
+    uses: actions/setup-node@v4
+    with:
+      node-version: '21.7.1'
+      cache: yarn
 
-                              - name: Install dependencies
-                                  run: |
-                                        yarn config set ignore-engines true
-                                              yarn install --frozen-lockfile
+  - name: Install dependencies
+    run: |
+      yarn config set ignore-engines true
+      yarn install --frozen-lockfile
 
-                                                - name: Build stage
-                                                    run: yarn build
+  - name: Build stage
+    run: yarn build
