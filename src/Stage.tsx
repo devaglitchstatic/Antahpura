@@ -1,53 +1,21 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import './index.scss';
-
-const scene = {
-  temple: 'Kedara Mandapa',
-  gathering: 'Mahashivaratri Royal Assembly',
-  title: 'Darshana Initiation',
-  authority: 'Maha Deva',
-  telemetry: 'Lajja-Avarana',
-  breath: 32,
-  pressure: 'Rising',
-};
-
-const participants = [
-  { name: 'Maha Deva', role: 'Sovereign Authority', cycle: null },
-  { name: 'Princess Kuma Ree Rati', role: 'Active Initiate', cycle: 'Day 16 — Sattva-Kala' },
-  { name: 'Padma', role: 'Witness / Disciple', cycle: 'Day 12 — Soma-Kala' },
-];
-
-const roster = [
-  { name: 'Maha Deva', status: 'Present' },
-  { name: 'Princess Kuma Ree Rati', status: 'Present' },
-  { name: 'Padma', status: 'Present' },
-  { name: 'Champa', status: 'Absent' },
-  { name: 'Kamini Anisa', status: 'Absent' },
-  { name: 'Shrinagar', status: 'Absent' },
-  { name: 'Tarana', status: 'Absent' },
-  { name: 'Roxana', status: 'Outer Gate' },
-  { name: 'Jahzara', status: 'Patrol' },
-  { name: 'Sevda', status: 'Vault' },
-  { name: 'Malika', status: 'Subterranean Wing' },
-  { name: 'Reva', status: 'Chorus Hall' },
-  { name: 'Zola', status: 'Chorus Hall' },
-  { name: 'Altani', status: 'Temple Sentinel' },
-];
+import { constitution } from './engine/constitution';
 
 export default function Stage() {
+  const [sceneKey] = useState('darshana');
   const [showRoster, setShowRoster] = useState(false);
-  const [protocols] = useState({
-    adhikara: true,
-    sammati: false,
-    maryada: true,
-    darshana: false,
-    punyasiddhi: 'Level I Available',
-  });
+
+  const scene = constitution.scenes[sceneKey];
+  const participants = useMemo(
+    () => constitution.characters.filter(c => scene.participants.includes(c.name)),
+    [scene]
+  );
 
   return (
     <div className="stage-root">
       <div className="plinth">
-        <h1>ANTAHPURA MONITORING PLINTH V14</h1>
+        <h1>ANTAHPURA MONITORING PLINTH {constitution.version}</h1>
 
         <div className="section">
           <h2>Temple Architecture</h2>
@@ -58,7 +26,7 @@ export default function Stage() {
 
         <div className="section">
           <h2>Scene-Aware Participants</h2>
-          {participants.map((p) => (
+          {participants.map(p => (
             <div key={p.name} className="participant">
               <div><strong>{p.name}</strong></div>
               <div>{p.role}</div>
@@ -69,26 +37,27 @@ export default function Stage() {
 
         <div className="section">
           <h2>Sanskrit Protocol Engine</h2>
-          <div>Adhikara: {protocols.adhikara ? 'Established' : 'Pending'}</div>
-          <div>Sammati: {protocols.sammati ? 'Granted' : 'Pending'}</div>
-          <div>Maryada: {protocols.maryada ? 'Observed' : 'Violated'}</div>
-          <div>Darshana: {protocols.darshana ? 'Acknowledged' : 'Awaiting Recognition'}</div>
+          {Object.entries(scene.protocols).map(([k, v]) => (
+            <div key={k}>
+              <strong>{k}:</strong> {v ? constitution.protocols[k] : 'Pending'}
+            </div>
+          ))}
         </div>
 
         <div className="section">
           <h2>Punyasiddhi Progression</h2>
-          <div><strong>Initiator:</strong> Princess Kuma Ree Rati</div>
-          <div><strong>Disciple:</strong> Padma</div>
-          <div><strong>Lesson:</strong> Atma-Puja (Self-Worship)</div>
-          <div><strong>Status:</strong> {protocols.punyasiddhi}</div>
+          <div><strong>Initiator:</strong> {scene.punyasiddhi.initiator}</div>
+          <div><strong>Disciple:</strong> {scene.punyasiddhi.disciple}</div>
+          <div><strong>Lesson:</strong> {scene.punyasiddhi.lesson}</div>
+          <div><strong>Level:</strong> {scene.punyasiddhi.level}</div>
         </div>
 
         <div className="section">
           <h2>Somatic Telemetry</h2>
           <div><strong>Phase:</strong> {scene.telemetry}</div>
           <div><strong>Voice Resonance:</strong> High</div>
-          <div><strong>Breath Synchronization:</strong> {scene.breath}%</div>
-          <div><strong>Emotional Pressure:</strong> {scene.pressure}</div>
+          <div><strong>Breath Synchronization:</strong> 32%</div>
+          <div><strong>Emotional Pressure:</strong> Rising</div>
           <div><strong>Scene Authority:</strong> {scene.authority}</div>
         </div>
 
@@ -100,10 +69,10 @@ export default function Stage() {
           {showRoster && (
             <div className="roster">
               <h2>Imperial Character Registry</h2>
-              {roster.map((r) => (
-                <div key={r.name} className="roster-row">
-                  <span>{r.name}</span>
-                  <span>{r.status}</span>
+              {constitution.characters.map(c => (
+                <div key={c.name} className="roster-row">
+                  <span>{c.name}</span>
+                  <span>{c.status}</span>
                 </div>
               ))}
             </div>
