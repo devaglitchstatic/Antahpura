@@ -1,0 +1,84 @@
+import React, { useState, useEffect } from 'react';
+
+export default function AntahpuraStage({ chatHistory, activeCharacter, messageState, setState }) {
+  const [characterStates, setCharacterStates] = useState({
+    "Kuma Ree Kama": { cycleDay: 16, phase: "Tamsha-Kala (Luteal)", kama: 50, safeword: "Smarana (Green)" },
+    "Baha Soren": { cycleDay: 12, phase: "Sattva-Kala (Ovulatory)", kama: 20, safeword: "Smarana (Green)" },
+    "Buda Horo": { cycleDay: 22, phase: "Tamsha-Kala (Late Luteal)", kama: 10, safeword: "Smarana (Green)" }
+  });
+
+  const [activeBlock, setActiveBlock] = useState("Move Block 1: Kuma Ree Surrender");
+
+  // 🔄 Handle Swipes and Timeline Jumps (Restoring Past States)
+  useEffect(() => {
+    if (messageState) {
+      if (messageState.characterStates) setCharacterStates(messageState.characterStates);
+      if (messageState.activeBlock) setActiveBlock(messageState.activeBlock);
+    }
+  }, [messageState]);
+
+  // 🔄 Automated In-Context Real-Time Log Scanner Engine
+  useEffect(() => {
+    if (!chatHistory || chatHistory.length === 0) return;
+    const latestMessage = chatHistory[chatHistory.length - 1]?.text || "";
+
+    let updatedBlock = activeBlock;
+    if (latestMessage.includes("ACTIVATE MOVE BLOCK 1") || latestMessage.includes("Kuma Ree")) {
+      updatedBlock = "Move Block 1: Kuma Ree Surrender";
+    } else if (latestMessage.includes("ACTIVATE MOVE BLOCK 2") || latestMessage.includes("Baha") || latestMessage.includes("Padma")) {
+      updatedBlock = "Move Block 2: Enforced Padma Discipline";
+    } else if (latestMessage.includes("ACTIVATE MOVE BLOCK 3") || latestMessage.includes("Buda") || latestMessage.includes("Champa")) {
+      updatedBlock = "Move Block 3: Canine Champa Regression";
+    }
+    setActiveBlock(updatedBlock);
+
+    const updatedStates = { ...characterStates };
+    Object.keys(updatedStates).forEach(char => {
+      if (latestMessage.includes(`${char} whispers Vinaya`) || latestMessage.includes("TRIGGER: ORANGE")) {
+        updatedStates[char].safeword = "Vinaya (Orange)";
+      } else if (latestMessage.includes(`${char} collapses`) || latestMessage.includes("TRIGGER: RED")) {
+        updatedStates[char].safeword = "Lajja (Red)";
+      }
+    });
+    setCharacterStates(updatedStates);
+
+    // Save state back to the chat timeline node for history tracking
+    if (setState) {
+      setState({ characterStates: updatedStates, activeBlock: updatedBlock });
+    }
+  }, [chatHistory]);
+
+  return (
+    <div style={{ backgroundColor: '#120a0a', color: '#e6dfdf', padding: '16px', fontFamily: 'serif', border: '2px solid #3d1616', borderRadius: '8px' }}>
+      <h3 style={{ color: '#b83232', textAlign: 'center', margin: '0 0 12px 0', borderBottom: '1px solid #3d1616', paddingBottom: '6px' }}>
+        🏛️ ANTAHPURA MONITORING PLINTH V12
+      </h3>
+      <div style={{ marginBottom: '12px', fontSize: '14px' }}>
+        <strong>ACTIVE TIMELINE STATE:</strong> <span style={{ color: '#d99b26' }}>{activeBlock}</span>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        {Object.entries(characterStates).map(([name, stats]) => (
+          <div key={name} style={{ backgroundColor: '#1c1010', padding: '10px', borderRadius: '4px', border: '1px solid #2e1414' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
+              <strong>{name}</strong>
+              <span style={{ 
+                color: stats.safeword.includes('Green') ? '#41a641' : stats.safeword.includes('Orange') ? '#d99b26' : '#d93838',
+                fontSize: '12px', fontWeight: 'bold'
+              }}>{stats.safeword}</span>
+            </div>
+            <div style={{ fontSize: '12px', color: '#a69292', marginBottom: '6px' }}>
+              Cycle Tracker: Day {stats.cycleDay} — <span style={{ fontStyle: 'italic' }}>{stats.phase}</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '11px', width: '70px' }}>KAMA DRIVE:</span>
+              <div style={{ flexGrow: 1, backgroundColor: '#2d1818', height: '10px', borderRadius: '5px', overflow: 'hidden' }}>
+                <div style={{ backgroundColor: '#b83232', height: '100%', width: `${stats.kama}%`, transition: 'width 0.5s ease' }}></div>
+              </div>
+              <span style={{ fontSize: '11px', width: '30px', textAlign: 'right' }}>{stats.kama}%</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

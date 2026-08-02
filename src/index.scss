@@ -1,18 +1,45 @@
-:root {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-// Ensure that everything is transparent,
-// so that the chat page can be seen through the stage
-* {
-  background-color: transparent !important;
-  overflow: hidden !important;
-}
-
 html, body, #root {
   margin: 0;
   padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #120C08;
+  color: #F3E7C2;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: Georgia, serif;
+}
+
+body {
+  display: block;
+}
+
+#root {
+  display: block;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background: #7A2A1E;
+  color: #F3E7C2;
+  border: 1px solid #B56A2A;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-weight: 700;
+}
+
+h1 {
+  color: #C66A2B;
+}
+
+h2, h3 {
+  color: #D8B36A;
+}
+
+p, li {
+  color: #F3E7C2;
 }

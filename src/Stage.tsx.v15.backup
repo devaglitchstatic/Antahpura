@@ -24,88 +24,50 @@ const observers = ['Tarana', 'Roxana'];
 export default function AntahpuraStage() {
   const [view, setView] = useState<'scene' | 'roster'>('scene');
 
-  const buttonStyle = {
-    background: '#7A2A1E',
-    color: '#F3E7C2',
-    border: '1px solid #B56A2A',
-    borderRadius: '10px',
-    padding: '10px 16px',
-    fontWeight: 700,
-    fontSize: '0.95rem',
-    cursor: 'pointer'
-  };
-
   return (
-    <div style={{
-      padding: 20,
-      color: '#F3E7C2',
-      background: '#120C08',
-      minHeight: '100vh',
-      overflowY: 'auto',
-      fontFamily: 'Georgia, serif',
-      lineHeight: 1.55
-    }}>
+    <div style={{ padding: 18, color: '#f5e6c8', fontFamily: 'serif', background: '#1b120b', minHeight: '100vh' }}>
+      <h1>ANTAHPURA MONITORING PLINTH V15</h1>
 
-      <h1 style={{
-        color: '#C66A2B',
-        fontSize: '2.2rem',
-        marginBottom: '1rem',
-        letterSpacing: '0.04em'
-      }}>
-        ANTAHPURA MONITORING PLINTH V15
-      </h1>
+      <p><strong>Active Timeline:</strong> Move Block 1: Darshana Initiation</p>
+      <p><strong>Sovereign:</strong> Maha Deva</p>
+      <p><strong>Guru:</strong> Princess Kuma Ree Rati</p>
+      <p><strong>Location:</strong> Khajuraho Inner Mandapa</p>
+      <p><strong>Season:</strong> Varsha Ritu | <strong>Lunar Phase:</strong> Amavasya</p>
 
-      <div style={{
-        border: '1px solid #7A5226',
-        borderRadius: 14,
-        padding: 16,
-        background: '#1B120B',
-        marginBottom: 18
-      }}>
-        <p><strong>Active Timeline:</strong> Move Block 1: Darshana Initiation</p>
-        <p><strong>Sovereign:</strong> Maha Deva</p>
-        <p><strong>Guru:</strong> Princess Kuma Ree Rati</p>
-        <p><strong>Location:</strong> Khajuraho Inner Mandapa</p>
-        <p><strong>Season:</strong> Varsha Ritu | <strong>Lunar Phase:</strong> Amavasya</p>
-      </div>
+      <hr />
 
-      <div style={{ display: 'flex', gap: 10, marginBottom: 18, flexWrap: 'wrap' }}>
-        <button style={buttonStyle} onClick={() => setView('scene')}>Current Scene</button>
-        <button style={buttonStyle} onClick={() => setView('roster')}>Constitutional Roster</button>
+      <div style={{ display: 'flex', gap: 10, marginBottom: 16 }}>
+        <button onClick={() => setView('scene')}>Current Scene</button>
+        <button onClick={() => setView('roster')}>Constitutional Roster</button>
       </div>
 
       {view === 'scene' ? (
-        <div style={{
-          border: '1px solid #7A5226',
-          borderRadius: 14,
-          padding: 16,
-          background: '#1B120B'
-        }}>
-          <h2 style={{ color: '#D8B36A', marginTop: 0 }}>Current Scene</h2>
+        <div>
+          <h2>Current Scene</h2>
           <p><strong>Ritual:</strong> Darshana Initiation</p>
           <p><strong>Protocol:</strong> Shanta-Sankalpa-Carya</p>
           <p><strong>Discipline:</strong> Atma-Puja</p>
 
-          <h3 style={{ color: '#D8B36A' }}>Participants</h3>
+          <h3>Participants</h3>
           <ul>
             {participants.map(p => <li key={p}>{p}</li>)}
           </ul>
 
-          <h3 style={{ color: '#D8B36A' }}>Observers</h3>
+          <h3>Observers</h3>
           <ul>
             {observers.map(o => <li key={o}>{o}</li>)}
           </ul>
 
-          <hr style={{ borderColor: '#5A4022' }} />
+          <hr />
 
-          <h2 style={{ color: '#D8B36A' }}>Pariksha Gate</h2>
+          <h2>Pariksha Gate</h2>
           <p><strong>Shanti:</strong> Is your breath your own?</p>
           <p><strong>Sankalpa:</strong> What do you seek to understand?</p>
           <p><strong>Carya:</strong> Will you walk this teaching with awareness?</p>
 
-          <hr style={{ borderColor: '#5A4022' }} />
+          <hr />
 
-          <h2 style={{ color: '#D8B36A' }}>Ritual Paths</h2>
+          <h2>Ritual Paths</h2>
           <ol>
             <li><strong>Jijnasa</strong> — Seek Understanding</li>
             <li><strong>Anumati</strong> — Accept the Teaching</li>
@@ -114,31 +76,17 @@ export default function AntahpuraStage() {
           </ol>
         </div>
       ) : (
-        <div style={{
-          border: '1px solid #7A5226',
-          borderRadius: 14,
-          padding: 16,
-          background: '#1B120B'
-        }}>
-          <h2 style={{ color: '#D8B36A', marginTop: 0 }}>Constitutional Roster</h2>
-
-          <div style={{ maxHeight: '70vh', overflowY: 'auto', paddingRight: 6 }}>
-            {roster.map(c => (
-              <div key={c.name} style={{
-                border: '1px solid #8C6430',
-                borderRadius: 12,
-                padding: 14,
-                marginBottom: 12,
-                background: '#24170F'
-              }}>
-                <h3 style={{ color: '#E5C27A', marginTop: 0 }}>{c.name}</h3>
-                <p><strong>Office:</strong> {c.office}</p>
-                <p><strong>Discipline:</strong> {c.discipline}</p>
-                <p><strong>State:</strong> {c.state}</p>
-                <p><strong>Ritu-Chakra:</strong> {c.fixed ? 'Constitutional: Fixed' : c.cycle}</p>
-              </div>
-            ))}
-          </div>
+        <div>
+          <h2>Constitutional Roster</h2>
+          {roster.map(c => (
+            <div key={c.name} style={{ border: '1px solid #8c6a2d', borderRadius: 10, padding: 12, marginBottom: 12 }}>
+              <h3 style={{ margin: 0 }}>{c.name}</h3>
+              <p><strong>Office:</strong> {c.office}</p>
+              <p><strong>Discipline:</strong> {c.discipline}</p>
+              <p><strong>State:</strong> {c.state}</p>
+              <p><strong>Ritu-Chakra:</strong> {c.fixed ? 'Constitutional: Fixed' : c.cycle}</p>
+            </div>
+          ))}
         </div>
       )}
     </div>

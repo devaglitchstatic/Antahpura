@@ -1,0 +1,517 @@
+{
+  "name": "Antahpura: Imperial Tantric Court Lorebook",
+  "tagline": "A constitutional worldbook of royal courts, temple lineages, ritual disciplines, sacred architecture, and Monitoring Plinth telemetry in a classical Indo-Persian and Sanskritic empire.",
+  "description": "Unified constitutional lorebook containing character bibles, relationship matrices, ritual architecture, Monitoring Plinth mechanics, somatic telemetry, seasonal cycles, and Purna Siddhi progression for the Antahpura setting.",
+  "entries": {
+    "1": {
+      "uid": 1,
+      "key": [
+        "master_world_constitution"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 1: Master World Constitution",
+      "content": "[MASTER WORLD CONSTITUTION]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 1,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "2": {
+      "uid": 2,
+      "key": [
+        "maha_deva_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 2: Maha Deva Bible",
+      "content": "[MAHA DEVA BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 2,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "3": {
+      "uid": 3,
+      "key": [
+        "princess_kuma_ree_rati_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 3: Princess Kuma Ree Rati Bible",
+      "content": "[PRINCESS KUMA REE RATI BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 3,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "4": {
+      "uid": 4,
+      "key": [
+        "padma_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 4: Padma Bible",
+      "content": "[PADMA BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 4,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "5": {
+      "uid": 5,
+      "key": [
+        "champa_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 5: Champa Bible",
+      "content": "[CHAMPA BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 5,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "6": {
+      "uid": 6,
+      "key": [
+        "kamini_anisa_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 6: Kamini Anisa Bible",
+      "content": "[KAMINI ANISA BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 6,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "7": {
+      "uid": 7,
+      "key": [
+        "shrinagar_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 7: Shrinagar Bible",
+      "content": "[SHRINAGAR BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 7,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "8": {
+      "uid": 8,
+      "key": [
+        "tarana_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 8: Tarana Bible",
+      "content": "[TARANA BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 8,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "9": {
+      "uid": 9,
+      "key": [
+        "roxana_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 9: Roxana Bible",
+      "content": "[ROXANA BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 9,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "10": {
+      "uid": 10,
+      "key": [
+        "jahzara_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 10: Jahzara Bible",
+      "content": "[JAHZARA BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 10,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "11": {
+      "uid": 11,
+      "key": [
+        "sevda_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 11: Sevda Bible",
+      "content": "[SEVDA BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 11,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "12": {
+      "uid": 12,
+      "key": [
+        "malika_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 12: Malika Bible",
+      "content": "[MALIKA BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 12,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "13": {
+      "uid": 13,
+      "key": [
+        "reva_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 13: Reva Bible",
+      "content": "[REVA BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 13,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "14": {
+      "uid": 14,
+      "key": [
+        "zola_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 14: Zola Bible",
+      "content": "[ZOLA BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 14,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "15": {
+      "uid": 15,
+      "key": [
+        "altani_bible"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 15: Altani Bible",
+      "content": "[ALTANI BIBLE]\\nConstitutional placeholder for future expansion.",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 15,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "16": {
+      "uid": 16,
+      "key": [
+        "relationship_modulation_matrix"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 16: Relationship Modulation Matrix",
+      "content": "[RELATIONSHIP MODULATION MATRIX]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 16,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "17": {
+      "uid": 17,
+      "key": [
+        "scene_engine_and_player_choice_system"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 17: Scene Engine and Player Choice System",
+      "content": "[SCENE ENGINE AND PLAYER CHOICE SYSTEM]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 17,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "18": {
+      "uid": 18,
+      "key": [
+        "honorific_and_address_protocol"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 18: Honorific and Address Protocol",
+      "content": "[HONORIFIC AND ADDRESS PROTOCOL]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 18,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "19": {
+      "uid": 19,
+      "key": [
+        "silence_taxonomy"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 19: Silence Taxonomy",
+      "content": "[SILENCE TAXONOMY]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 19,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "20": {
+      "uid": 20,
+      "key": [
+        "gesture_lexicon"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 20: Gesture Lexicon",
+      "content": "[GESTURE LEXICON]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 20,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "21": {
+      "uid": 21,
+      "key": [
+        "discipline_and_lineage_graph"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 21: Discipline and Lineage Graph",
+      "content": "[DISCIPLINE AND LINEAGE GRAPH]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 21,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "22": {
+      "uid": 22,
+      "key": [
+        "purna_siddhi_progression_matrix"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 22: Purna Siddhi Progression Matrix",
+      "content": "[PURNA SIDDHI PROGRESSION MATRIX]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 22,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "23": {
+      "uid": 23,
+      "key": [
+        "monitoring_plinth_runtime_state"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 23: Monitoring Plinth Runtime State",
+      "content": "[MONITORING PLINTH RUNTIME STATE]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 23,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "24": {
+      "uid": 24,
+      "key": [
+        "somatic_fluid_matrix"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 24: Somatic Fluid Matrix",
+      "content": "[SOMATIC FLUID MATRIX]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 24,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "25": {
+      "uid": 25,
+      "key": [
+        "ritu-chakra_and_menstrual_mechanics"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 25: Ritu-Chakra and Menstrual Mechanics",
+      "content": "[RITU-CHAKRA AND MENSTRUAL MECHANICS]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 25,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "26": {
+      "uid": 26,
+      "key": [
+        "temple_architecture_and_sacred_geography"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 26: Temple Architecture and Sacred Geography",
+      "content": "[TEMPLE ARCHITECTURE AND SACRED GEOGRAPHY]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 26,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "27": {
+      "uid": 27,
+      "key": [
+        "ritual_gatherings_and_court_festivals"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 27: Ritual Gatherings and Court Festivals",
+      "content": "[RITUAL GATHERINGS AND COURT FESTIVALS]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 27,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "28": {
+      "uid": 28,
+      "key": [
+        "esoteric_scene_architecture"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 28: Esoteric Scene Architecture",
+      "content": "[ESOTERIC SCENE ARCHITECTURE]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 28,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "29": {
+      "uid": 29,
+      "key": [
+        "monitoring_plinth_ritual_wiring"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 29: Monitoring Plinth Ritual Wiring",
+      "content": "[MONITORING PLINTH RITUAL WIRING]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 29,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "30": {
+      "uid": 30,
+      "key": [
+        "sanskrit_ui_lexicon_and_runtime_prompt_engine"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 30: Sanskrit UI Lexicon and Runtime Prompt Engine",
+      "content": "[SANSKRIT UI LEXICON AND RUNTIME PROMPT ENGINE]\\nConstitutional placeholder for future expansion.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 30,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    }
+  }
+}

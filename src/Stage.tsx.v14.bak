@@ -1,0 +1,216 @@
+import React, { useState, useEffect } from 'react';
+import './index.scss';
+
+export default function AntahpuraStage({ chatHistory, activeCharacter, messageState, setState }) {
+
+  const [characterStates, setCharacterStates] = useState({
+    "Maha Deva": {
+      office: "Sovereign Confirmation",
+      discipline: "Rajadharma-Yoga",
+      constitutional: "Fixed",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Princess Kuma Ree Rati": {
+      office: "Darshana Examiner",
+      discipline: "Darshana-Yoga",
+      cycleDay: 16,
+      ritu: "Sattva-Kala",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Padma": {
+      office: "Recovery Custodian",
+      discipline: "Seva-Yoga",
+      cycleDay: 12,
+      ritu: "Soma-Kala",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Champa": {
+      office: "Instinct Witness",
+      discipline: "Prakriti-Yoga",
+      cycleDay: 22,
+      ritu: "Sattva-Kala",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Kamini Anisa": {
+      office: "Protocol Ledger",
+      discipline: "Niyama-Yoga",
+      cycleDay: 18,
+      ritu: "Sattva-Kala",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Shrinagar": {
+      office: "Rasa Resonance",
+      discipline: "Rasa-Yoga",
+      cycleDay: 14,
+      ritu: "Agni-Kala",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Tarana": {
+      office: "Svara Resonance",
+      discipline: "Nada-Yoga",
+      cycleDay: 9,
+      ritu: "Soma-Kala",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Roxana": {
+      office: "Bandha Integrity",
+      discipline: "Bandha-Yoga",
+      constitutional: "Fixed",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Jahzara": {
+      office: "Threshold Vigilance",
+      discipline: "Raksha-Yoga",
+      constitutional: "Fixed",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Sevda": {
+      office: "Stillness and Void",
+      discipline: "Shunya-Yoga",
+      constitutional: "Fixed",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Malika": {
+      office: "Spatial Transition",
+      discipline: "Mandala-Yoga",
+      constitutional: "Fixed",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Reva": {
+      office: "Collective Breath",
+      discipline: "Prana-Yoga",
+      cycleDay: 11,
+      ritu: "Soma-Kala",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Zola": {
+      office: "Operational Coordination",
+      discipline: "Kriya-Yoga",
+      cycleDay: 15,
+      ritu: "Agni-Kala",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    },
+    "Altani": {
+      office: "Shadow Observation",
+      discipline: "Chaya-Yoga",
+      cycleDay: 20,
+      ritu: "Sattva-Kala",
+      purna: "Lajja-Avarana",
+      exhaustion: "Low",
+      recovery: "High"
+    }
+  });
+
+  const [activeBlock, setActiveBlock] = useState("Move Block 1: Darshana Initiation");
+  const [aftercareInitiator, setAftercareInitiator] = useState("Princess Kuma Ree Rati");
+
+  useEffect(() => {
+    if (messageState) {
+      if (messageState.characterStates) setCharacterStates(messageState.characterStates);
+      if (messageState.activeBlock) setActiveBlock(messageState.activeBlock);
+      if (messageState.aftercareInitiator) setAftercareInitiator(messageState.aftercareInitiator);
+    }
+  }, [messageState]);
+
+  useEffect(() => {
+    if (!chatHistory || chatHistory.length === 0) return;
+    const latest = chatHistory[chatHistory.length - 1]?.text || "";
+
+    let block = activeBlock;
+
+    if (latest.includes("Maha Deva")) block = "Move Block 14: Sovereign Confirmation";
+    else if (latest.includes("Kuma Ree")) block = "Move Block 1: Darshana Initiation";
+    else if (latest.includes("Padma")) block = "Move Block 2: Recovery Discipline";
+    else if (latest.includes("Champa")) block = "Move Block 3: Instinct Threshold";
+    else if (latest.includes("Anisa")) block = "Move Block 4: Protocol Examination";
+    else if (latest.includes("Shrinagar")) block = "Move Block 5: Rasa Resonance";
+    else if (latest.includes("Tarana")) block = "Move Block 6: Svara Synchronization";
+    else if (latest.includes("Roxana")) block = "Move Block 7: Bandha Alignment";
+    else if (latest.includes("Jahzara")) block = "Move Block 8: Vigilance Trial";
+    else if (latest.includes("Sevda")) block = "Move Block 9: Void Stillness";
+    else if (latest.includes("Malika")) block = "Move Block 10: Spatial Transition";
+    else if (latest.includes("Reva")) block = "Move Block 11: Breath Communion";
+    else if (latest.includes("Zola")) block = "Move Block 12: Operational Rite";
+    else if (latest.includes("Altani")) block = "Move Block 13: Shadow Observation";
+
+    if (block !== activeBlock) {
+      setActiveBlock(block);
+      setState?.({
+        ...messageState,
+        activeBlock: block,
+        characterStates,
+        aftercareInitiator
+      });
+    }
+  }, [chatHistory]);
+
+  return (
+    <div style={{ padding: 16, color: '#f5e6c8', fontFamily: 'serif' }}>
+      <h1>ANTAHPURA MONITORING PLINTH V14</h1>
+
+      <p><strong>Active Timeline:</strong> {activeBlock}</p>
+      <p><strong>Sovereign:</strong> Maha Deva</p>
+      <p><strong>Guru:</strong> Princess Kuma Ree Rati</p>
+      <p><strong>Pūrṇa Siddhi:</strong> Lajja-Avarana</p>
+      <p><strong>Season:</strong> Varsha Ritu</p>
+      <p><strong>Lunar Phase:</strong> Amavasya</p>
+
+      <hr />
+
+      {Object.entries(characterStates).map(([name, c]: any) => (
+        <div key={name} style={{ border: '1px solid #8c6a2d', borderRadius: 10, padding: 12, marginBottom: 12 }}>
+          <h3 style={{ margin: 0 }}>{name}</h3>
+          <p><strong>Office:</strong> {c.office}</p>
+          <p><strong>Discipline:</strong> {c.discipline}</p>
+          {c.constitutional
+            ? <p><strong>Ritu-Chakra:</strong> Constitutional: Fixed</p>
+            : <p><strong>Ritu-Chakra:</strong> Day {c.cycleDay} — {c.ritu}</p>}
+          <p><strong>Pūrṇa Siddhi:</strong> {c.purna}</p>
+          <p><strong>Exhaustion:</strong> {c.exhaustion}</p>
+          <p><strong>Recovery:</strong> {c.recovery}</p>
+        </div>
+      ))}
+
+      <hr />
+
+      <h2>Recovery Engine</h2>
+      <p><strong>Aftercare Initiator:</strong> {aftercareInitiator}</p>
+      <p><strong>Recovery Style:</strong> Dynamic (Scene Initiator Driven)</p>
+
+      <hr />
+
+      <h2>Ritual Paths</h2>
+      <ol>
+        <li><strong>Anuvartana</strong> (Continue)</li>
+        <li><strong>Parivartana</strong> (Adapt)</li>
+        <li><strong>Vishrama</strong> (Rest)</li>
+      </ol>
+    </div>
+  );
+}
