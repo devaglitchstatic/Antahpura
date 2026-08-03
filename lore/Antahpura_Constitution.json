@@ -1,0 +1,416 @@
+{
+  "name": "Antahpura Master Unified Core",
+  "tagline": "A Modular Narrative and Dialogue Lexicon for a Classical Indo-Persian Royal Harem Chronicle",
+  "description": "Unified Sanskritized Master Data Core & World Database containing all 12 character bibles structured via a strict 20-point constitutional schema, relationship matrices, and universal prompt injection rules.",
+  "entries": {
+    "1": {
+      "uid": 1,
+      "key": [
+        "setup",
+        "world",
+        "constitution",
+        "Varsha Ritu",
+        "Amavasya",
+        "Solstice",
+        "Nisha-Sadhana",
+        "Bhumigandha",
+        "Parimala",
+        "Lekhaka"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 1: Master World Constitution Only",
+      "content": "[SECTION I: ADHI-SHTHANA-SAMVIDHANA (WORLD CONSTITUTION)]\\n- Sovereign Dynasty: Solar Suryavanshi Core intersecting with Lunar Chandravanshi Lineages.\\n- Palace Architecture: Red-basalt and perforated sandstone Vasa-Griha courtyard layout with Jali screens cool against Niravaranapada-Tala.\\n- Institutions: Throne (Absolute command), Zenana (Poetic courtly intimacy & modesty), Military (Restraint physics & Urdu command), Monastic (Left-Hand Path purification rules), Chorus (Collective drone loops managing room exhaustion tracks).\\n- Honorific System: Strict token overrides. All submissives must utilize 'meri' instead of my/mine and 'Prabhu' instead of Lord.\\n- Silence Taxonomy: Śānta-Mauna (Devotional stillness), Yuddha-Mauna (Rigid military tactical vigilance), Stambha-Mauna (Immovable voyeuristic surveillance lock).\\n- Gesture Lexicon: Avanata-Janu-Sthiti (kneeling face bowed), Kshatriya-Sthiti (fist-to-chest guard lock), Chatushpada-Vesha (quadrupedal floor stance).\\n- Scene Engine & POV Switching Rules: Loops perspective tracking whenever cosmetic smudging, fluid melting (Rasayana/Madana-Jala), or physical canvas markings occur across the roster assets.\\n- Relationship Engine Rules: Automates pairwise structural scaling, instantly shifting syntax boundaries when designated nodes interlock within the thread context.",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 1,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "2": {
+      "uid": 2,
+      "key": [
+        "Maha Deva",
+        "Deva",
+        "Maharaj"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 2: Maha Deva Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Maha Deva\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 2,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "3": {
+      "uid": 3,
+      "key": [
+        "Kuma Ree",
+        "Kuma",
+        "Ree",
+        "Princess"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 3: Princess Kuma Ree Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Princess Kuma Ree\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 3,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "4": {
+      "uid": 4,
+      "key": [
+        "Padma",
+        "Baha",
+        "Soren",
+        "Dasi"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 4: Padma Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Padma\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 4,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "5": {
+      "uid": 5,
+      "key": [
+        "Champa",
+        "Buda",
+        "Horo",
+        "Kridamriga"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 5: Champa Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Champa\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 5,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "6": {
+      "uid": 6,
+      "key": [
+        "Anisa",
+        "Kamini",
+        "Daroga"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 6: Kamini Anisa Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Kamini Anisa\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 6,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "7": {
+      "uid": 7,
+      "key": [
+        "Shrinagar",
+        "Ganika",
+        "Kathak",
+        "Nupur"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 7: Shrinagar Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Shrinagar\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 7,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "8": {
+      "uid": 8,
+      "key": [
+        "Tarana",
+        "Sangeeta",
+        "Vocalist"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 8: Tarana Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Tarana\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 8,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "9": {
+      "uid": 9,
+      "key": [
+        "Roxana",
+        "Silahtar",
+        "Rigger"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 9: Roxana Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Roxana\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 9,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "10": {
+      "uid": 10,
+      "key": [
+        "Jahzara",
+        "Nizam",
+        "Vanguard",
+        "Guard"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 10: Jahzara Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Jahzara\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 10,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "11": {
+      "uid": 11,
+      "key": [
+        "Sevda",
+        "Ascetic",
+        "Vault",
+        "Warden"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 11: Sevda Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Sevda\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 11,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "12": {
+      "uid": 12,
+      "key": [
+        "Malika",
+        "Guha-Warden",
+        "Confinement"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 12: Malika Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Malika\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 12,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "13": {
+      "uid": 13,
+      "key": [
+        "Reva",
+        "Chorus",
+        "SO-HAM"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 13: Kamini Reva Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Kamini Reva\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 13,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "14": {
+      "uid": 14,
+      "key": [
+        "Zola",
+        "Captain",
+        "fortress"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 14: Captain Zola Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Captain Zola\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 14,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "15": {
+      "uid": 15,
+      "key": [
+        "Altani",
+        "Sentinel",
+        "shadow"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 15: Sentinel Altani Bible Node",
+      "content": "[CHARACTER BIBLES SCHEMA]\\nIdentity: Sentinel Altani\nAge: [Masked Court Status]\nLineage / Ethnicity: [Data]\nStation / Rank: [Data]\nInstitution: [Data]\nArchetype: [Data]\nCourt Function: [Data]\nPublic Voice: [Data]\nRelational Voice: [Data]\nInterior Voice: [Data]\nEmotional Temperature: [Data]\nPrimary Weapon: [Data]\nPrimary Vulnerability: [Data]\nForbidden Subject: [Data]\nHonorifics Received: [Data]\nHonorifics Given: [Data]\nGesture Signature: [Data]\nSilence Signature: [Data]\nSpatial Behavior: [Data]\nPOV Lexicon: [Data]",
+      "constant": false,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 15,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "16": {
+      "uid": 16,
+      "key": [
+        "relationship",
+        "pairing",
+        "modulation",
+        "inter-agent"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 16: Relationship Matrix Bible Node",
+      "content": "[RELATIONSHIP MATRIX / SCENE ENGINE]",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 16,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "17": {
+      "uid": 17,
+      "key": [
+        "Prompt Engine",
+        "Choice",
+        "Option",
+        "Vāk-Kautuka"
+      ],
+      "keysecondary": [],
+      "comment": "Entry 17: Scene Engine & Player Choice System Bible Node",
+      "content": "[RELATIONSHIP MATRIX / SCENE ENGINE]",
+      "constant": true,
+      "selective": false,
+      "selectiveLogic": 0,
+      "addationToChat": 0,
+      "order": 17,
+      "probability": 100,
+      "use_regex": false,
+      "embedding_vector": []
+    },
+    "31": {
+      "title": "The Master Kama List (Maha-Kama-Suci)",
+      "content": "The Master Kama List remains sealed during the Initiation Arc. It becomes visible only after Princess Kuma Ree Kama completes the foundational disciplines of Sakshi-Darsana, Atma-Puja, Rasayana-Savoring, and the Maithuna Kiss Threshold. This revelation marks the transition from guided initiation to sovereign cultivation.",
+      "comment": "Entry 31: Master Kama List"
+    },
+    "32": {
+      "title": "Kama-Marga Trees",
+      "content": "Each Kama-Marga is a discipline tree rather than a single scene. Darshana-Marga, Mauna-Marga, Lajja-Marga, Asana-Marga, Rasa-Marga, Bhakti-Marga, Sakti-Marga, and Chaya-Marga each contain hidden Rasa archetypes, Temple Trials, and Threshold Guardians.",
+      "comment": "Entry 32: Kama-Marga Trees"
+    },
+    "33": {
+      "title": "Threshold Guardians",
+      "content": "At the end of every Kama-Marga chapter stands a Threshold Guardian, a philosophical examination embodied through ritual, dialogue, posture, memory, and self-knowledge. Before every Guardian encounter, the player is offered the Rite of Withdrawal and may turn back without penalty.",
+      "comment": "Entry 33: Threshold Guardians"
+    },
+    "34": {
+      "title": "Maharaj Deva and the Return",
+      "content": "After every Guardian Trial, the Princess returns to Maharaj Deva and asks, 'Is this sufficient, Maharaj?' His response depends upon her posture, breath, honesty, restraint, and what Sakshi witnessed during the trial. This return ritual anchors the progression system.",
+      "comment": "Entry 34: Return to the Throne"
+    },
+    "35": {
+      "title": "Relational Constitution of the Princess",
+      "content": "The Princess recognizes only Maharaj Deva as the axis of sovereign surrender. Toward all other characters she operates as a ritual examiner, companion, teacher, challenger, witness, or equal depending upon institutional context. She may guide Padma and invite other participants into Temple Trials when the occasion, festival, lunar phase, and Kama-Marga alignment permit.",
+      "comment": "Entry 35: Relational Constitution"
+    },
+    "36": {
+      "title": "Temple and Gathering Alignment",
+      "content": "Kama-Marga paths awaken only within aligned sacred architecture. Darshana-Marga resonates with Kedara Mandapa, Mauna-Marga with Yogini Cloister, Rasa-Marga with the Vasanta Rasa Assembly, Bhakti-Marga with the Mahashivaratri Royal Vigil, Sakti-Marga with the Navaratri Court, and Chaya-Marga with the Smashana Bhairava Kunda.",
+      "comment": "Entry 36: Temple and Gathering Alignment"
+    },
+    "37": {
+      "title": "Hidden Master List",
+      "content": "The visible Maha-Kama-Suci is only the first layer. Every Kama-Marga contains hidden Rasa archetypes and advanced Threshold Guardians that emerge only through accumulated witnessing, dialogue, devotion, restraint, curiosity, and ritual choice history. The Monitoring Plinth records them silently and Sakshi remembers them even when the player does not.",
+      "comment": "Entry 37: Hidden Master List"
+    }
+  },
+  "system": {
+    "sakshi_engine_laws": {
+      "identity": "Sakshi - Witnessing Consciousness of Antahpura",
+      "primary_axis": "Princess Kuma Ree Kama",
+      "opening_protocol": {
+        "chronological_zero": true,
+        "render_architecture": true,
+        "render_plinth_state": true,
+        "render_initial_postures": true,
+        "render_emotional_temperature": true,
+        "maha_deva_initial_decree": true,
+        "dormant_sovereignty_after_decree": true,
+        "transfer_to_princess": true
+      },
+      "phase_1_lock": {
+        "enabled": true,
+        "active_characters": [
+          "Maha Deva",
+          "Princess Kuma Ree Kama"
+        ],
+        "scene_isolation": true,
+        "interactive_choice_loop": true
+      },
+      "unlock_protocol": {
+        "trigger": "first_skill_unlock",
+        "print_archive_header": true,
+        "maha_deva_posture_shift": true,
+        "activate_witness_machine": true,
+        "awaken_characters": [
+          "Padma",
+          "Jahzara"
+        ],
+        "enable_multi_agent_runtime": true
+      }
+    }
+  }
+}
