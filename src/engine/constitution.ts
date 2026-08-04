@@ -1,84 +1,42 @@
+import characterTemplate from '../../data/constitution/antahpura_character_template_v1.json';
+import entryBlocks from '../../data/constitution/antahpura_entry_blocks_v1.json';
+import kalas from '../../data/constitution/kalas_64_reference.json';
+import disciplines from '../../data/constitution/disciplines.json';
+import protocols from '../../data/constitution/protocol_engine.json';
+import temples from '../../data/constitution/temples_occasions.json';
+import monitoring from '../../data/constitution/monitoring_matrix_schema.json';
+import sakshi from '../../data/characters/sakshi.json';\nimport mahaDeva from '../../data/characters/maha_deva.json';\nimport princess from '../../data/characters/princess_kuma_ree_rati.json';
+
 export const constitution = {
-  version: "V15",
+  version: 'Constitution v1.0',
+  template: characterTemplate,
+  entryBlocks,
+  kalas,
+  disciplines,
+  protocols,
+  temples,
+  monitoring,\n\n  characters: {\n    mahaDeva,\n    princess\n  },
+  sakshi,
 
-  temples: [
-    "Kedara Mandapa",
-    "Matangi Sabha",
-    "Yogini Cloister",
-    "Smashana Bhairava Kunda",
-    "Raja Snana Pavilion",
-    "Chandra Pushkarini"
-  ],
-
-  gatherings: [
-    "Mahashivaratri Royal Assembly",
-    "Vasanta Rasa Assembly",
-    "Kartika Dipotsava",
-    "Navaratri Court",
-    "Monastic Pranayama Session",
-    "Royal Darshana Procession"
-  ],
-
-  protocols: {
-    Adhikara: "Authority established",
-    Sammati: "Mutual assent",
-    Maryada: "Boundary discipline",
-    Darshana: "Recognition / acknowledgement",
-    Smarana: "Pause / recollection",
-    Manda: "Reduce intensity",
-    Virama: "Immediate cessation",
-    "Shanti-Seva": "Recovery / integration",
-    Punyasiddhi: "Instructional bond"
+  getDiscipline(id: string) {
+    return (disciplines as any).disciplines[id];
   },
 
-  telemetry: [
-    "Lajja-Avarana",
-    "Svairini-Rasa",
-    "Bhairavi-Avesha",
-    "Samarasa-Laya"
-  ],
+  getTemple(id: string) {
+    return (temples as any).temples[id];
+  },
 
-  characters: [
-    { name: "Maha Deva", role: "Sovereign Authority", cycle: null, status: "Present" },
-    { name: "Princess Kuma Ree Rati", role: "Active Initiate", cycle: "Day 16 — Sattva-Kala", status: "Present" },
-    { name: "Padma", role: "Witness / Disciple", cycle: "Day 12 — Soma-Kala", status: "Present" },
-    { name: "Champa", role: "Novice Attendant", cycle: "Day 22 — Sattva-Kala", status: "Absent" },
-    { name: "Kamini Anisa", role: "Court Administrator", cycle: "Day 18 — Sattva-Kala", status: "Absent" },
-    { name: "Shrinagar", role: "Temple Steward", cycle: "Day 14 — Agni-Kala", status: "Absent" },
-    { name: "Tarana", role: "Attendant", cycle: "Day 9 — Soma-Kala", status: "Absent" },
-    { name: "Roxana", role: "Outer Gate Commander", cycle: null, status: "Outer Gate" },
-    { name: "Jahzara", role: "Patrol Captain", cycle: null, status: "Patrol" },
-    { name: "Sevda", role: "Vault Keeper", cycle: null, status: "Vault" },
-    { name: "Malika", role: "Subterranean Warden", cycle: null, status: "Subterranean Wing" },
-    { name: "Reva", role: "Chorus", cycle: "Day 11 — Soma-Kala", status: "Chorus Hall" },
-    { name: "Zola", role: "Chorus", cycle: "Day 15 — Agni-Kala", status: "Chorus Hall" },
-    { name: "Altani", role: "Temple Sentinel", cycle: "Day 20 — Sattva-Kala", status: "Temple Sentinel" }
-  ],
+  getOccasion(id: string) {
+    return (temples as any).occasions[id];
+  },
 
-  scenes: {
-    darshana: {
-      title: "Darshana Initiation",
-      temple: "Kedara Mandapa",
-      gathering: "Mahashivaratri Royal Assembly",
-      authority: "Maha Deva",
-      telemetry: "Lajja-Avarana",
-      participants: [
-        "Maha Deva",
-        "Princess Kuma Ree Rati",
-        "Padma"
-      ],
-      protocols: {
-        Adhikara: true,
-        Sammati: false,
-        Maryada: true,
-        Darshana: false
-      },
-      punyasiddhi: {
-        initiator: "Princess Kuma Ree Rati",
-        disciple: "Padma",
-        lesson: "Atma-Puja (Self-Worship)",
-        level: 1
-      }
+  getMetric(id: string) {
+    const groups = (monitoring as any);
+    for (const key of ['physiological','emotional','relational','witness']) {
+      if (groups[key] && groups[key][id]) return groups[key][id];
     }
+    return null;
   }
 };
+
+export default constitution;
