@@ -1,0 +1,69 @@
+{
+  "latest_revelation": "Exhibition pending — Darśana resonance increased by Mahā Deva.",
+  "mandira_kala": {
+    "mandira": "Kedāra",
+    "rtu": "Varṣā",
+    "sabha": "Mahāśivarātri",
+    "tithi": "Amāvasyā",
+    "drsya": "Darśana",
+    "sakshi": "Awakened"
+  },
+  "hero": {
+    "seat": "Pravartaka",
+    "character": "Mahā Deva",
+    "title": "Sovereign",
+    "portrait": "https://avatars.charhub.io/avatars/austere_sweet_62889/maha-deva-0683f297e053/chara_card_v2.png?nocache=2026-08-02T21:10:42Z",
+    "chub": "https://chub.ai/characters/austere_sweet_62889/maha-deva-0683f297e053",
+    "archetype": "Īśvara / Rasika-Sovereign",
+    "age": 42,
+    "ojas": 92,
+    "kama": 28,
+    "arts": "Statecraft • Philosophy • Ritual"
+  },
+  "seats": [
+    {
+      "seat": "Prativaktā",
+      "character": "Princess Kuma Ree Rati",
+      "title": "Initiate",
+      "portrait": "https://avatars.charhub.io/avatars/austere_sweet_62889/princess-kuma-ree-kama-b40508c4faf7/chara_card_v2.png?nocache=2026-07-30T12:12:17Z"
+    },
+    {
+      "seat": "Nitya-Saṅginī",
+      "character": "Baha Soren (Padmā)",
+      "title": "Permanent Companion",
+      "portrait": "https://avatars.charhub.io/avatars/austere_sweet_62889/padma-6f6d56dd4121/chara_card_v2.png?nocache=2026-07-29T20:45:59Z"
+    },
+    {
+      "seat": "Guardian",
+      "character": "Jahzara",
+      "title": "Vanguard Guard",
+      "portrait": "https://avatars.charhub.io/avatars/austere_sweet_62889/jahzara-1bf1d3670b86/chara_card_v2.png?nocache=2026-08-02T16:54:51Z"
+    }
+  ],
+  "story_flags": {
+    "pup_training_pact": false,
+    "vivaha_completed": false,
+    "champa_companion_mode": false
+  },
+  "punyasiddhi": {
+    "initiator": "Mahā Deva",
+    "disciple": "Princess Kuma Ree Rati",
+    "lesson": "Darśana",
+    "level": 1
+  },
+  "telemetry": {
+    "avastha": "Nishchala-Sādhana",
+    "vak_resonance": "High",
+    "prana_sync": 18,
+    "bhava_pressure": "Contained",
+    "scene_authority": "Mahā Deva"
+  },
+  "scene": {
+    "title": "Nisha-Sādhana Opening"
+  },
+  "constellations": [
+    "opening_constellation"
+  ],
+  "chronicle_entries": 1,
+  "observer_mode": "Mahā Deva"
+}
