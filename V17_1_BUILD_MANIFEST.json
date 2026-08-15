@@ -1,0 +1,19 @@
+{
+  "version": "17.1",
+  "artifact_count": 41,
+  "directories": [
+    ".",
+    "cards",
+    "docs",
+    "lorebook/characters",
+    "lorebook/system",
+    "registry",
+    "scripts"
+  ],
+  "locked_decisions": [
+    "Zola removed",
+    "Svara replaces Zola",
+    "Anisa Abyssinian/Habshi/East African",
+    "Tarana Sogdian/Samarkand/Silk Road"
+  ]
+}
