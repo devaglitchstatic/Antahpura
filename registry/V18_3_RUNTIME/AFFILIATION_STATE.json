@@ -1,0 +1,90 @@
+{
+  "schema": "V18.3_AFFILIATION_STATE",
+  "version": "18.3",
+  "characters": {
+    "maha_deva": {
+      "canonical_id": "maha_deva",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "kumari_rati": {
+      "canonical_id": "kumari_rati",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "roxana": {
+      "canonical_id": "roxana",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "shrinagar": {
+      "canonical_id": "shrinagar",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "malika": {
+      "canonical_id": "malika",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "jahzara": {
+      "canonical_id": "jahzara",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "altani": {
+      "canonical_id": "altani",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "anisa": {
+      "canonical_id": "anisa",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "padma": {
+      "canonical_id": "padma",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "campa": {
+      "canonical_id": "campa",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "reva": {
+      "canonical_id": "reva",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "tarana": {
+      "canonical_id": "tarana",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "sevda": {
+      "canonical_id": "sevda",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    },
+    "svara": {
+      "canonical_id": "svara",
+      "faction": null,
+      "affiliations": [],
+      "provenance": null
+    }
+  }
+}

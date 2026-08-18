@@ -1,0 +1,641 @@
+{
+  "maha_deva": {
+    "id": "maha_deva",
+    "display_name": "Mahā Deva",
+    "canonical_name": "Mahā Deva",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Sovereign / High Priest / Ritual Authority",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Maratha–Rajput border lineage",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Supreme ritual authority, sovereign command, final ritual decisions.",
+    "aliases": [
+      "Maha Deva",
+      "Mahadeva",
+      "Deva",
+      "Maharaj Deva"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "active",
+      "De-conditioning": "active",
+      "Sonic Entrainment": "active",
+      "Peak & Gnosis": "active",
+      "Integration": "active"
+    },
+    "source_fields": {
+      "id": "maha_deva",
+      "display_name": "Mahā Deva",
+      "canonical_name": "Mahā Deva",
+      "ethnicity_provenance": "Maratha–Rajput border lineage",
+      "office": "Sovereign / High Priest / Ritual Authority",
+      "institution": "Throne & Sovereign Axis",
+      "function": "Supreme ritual authority, sovereign command, final ritual decisions.",
+      "phase_presence": {
+        "Bahya-Sādhana": "active",
+        "De-conditioning": "active",
+        "Sonic Entrainment": "active",
+        "Peak & Gnosis": "active",
+        "Integration": "active"
+      },
+      "aliases": [
+        "Maha Deva",
+        "Mahadeva",
+        "Deva",
+        "Maharaj Deva"
+      ],
+      "legacy_status": "canonical"
+    }
+  },
+  "kumari_rati": {
+    "id": "kumari_rati",
+    "display_name": "Princess Kumārī Rati",
+    "canonical_name": "Princess Kumārī Rati",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Princess / Dynastic Center / Initiand",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Deccani royal house",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Dynastic center and ritual initiand; constitutional focal point.",
+    "aliases": [
+      "Kuma Ree",
+      "Kuma",
+      "Ree",
+      "Kuma Ree Rati"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "active",
+      "De-conditioning": "active",
+      "Sonic Entrainment": "active",
+      "Peak & Gnosis": "active",
+      "Integration": "active"
+    },
+    "source_fields": {
+      "id": "kumari_rati",
+      "display_name": "Princess Kumārī Rati",
+      "canonical_name": "Princess Kumārī Rati",
+      "ethnicity_provenance": "Deccani royal house",
+      "office": "Princess / Dynastic Center / Initiand",
+      "institution": "Throne & Sovereign Axis",
+      "function": "Dynastic center and ritual initiand; constitutional focal point.",
+      "phase_presence": {
+        "Bahya-Sādhana": "active",
+        "De-conditioning": "active",
+        "Sonic Entrainment": "active",
+        "Peak & Gnosis": "active",
+        "Integration": "active"
+      },
+      "aliases": [
+        "Kuma Ree",
+        "Kuma",
+        "Ree",
+        "Kuma Ree Rati"
+      ],
+      "legacy_status": "canonical"
+    }
+  },
+  "roxana": {
+    "id": "roxana",
+    "display_name": "Roxana",
+    "canonical_name": "Roxana",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Persian Consort / Grand Vizier / Diwan & Diplomatic Authority",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Persian / Indo-Persian court context",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Civil administration, finance, diplomatic protocol, logistics and political temperature.",
+    "aliases": [
+      "Roxana",
+      "Pahlava",
+      "Persian"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "passive",
+      "De-conditioning": "passive",
+      "Sonic Entrainment": "active",
+      "Peak & Gnosis": "active",
+      "Integration": "passive"
+    },
+    "source_fields": {
+      "id": "roxana",
+      "display_name": "Roxana",
+      "canonical_name": "Roxana",
+      "ethnicity_provenance": "Persian / Indo-Persian court context",
+      "office": "Persian Consort / Grand Vizier / Diwan & Diplomatic Authority",
+      "institution": "Elite Core & Administration",
+      "function": "Civil administration, finance, diplomatic protocol, logistics and political temperature.",
+      "phase_presence": {
+        "Bahya-Sādhana": "passive",
+        "De-conditioning": "passive",
+        "Sonic Entrainment": "active",
+        "Peak & Gnosis": "active",
+        "Integration": "passive"
+      },
+      "aliases": [
+        "Roxana",
+        "Pahlava",
+        "Persian"
+      ],
+      "legacy_status": "canonical"
+    }
+  },
+  "shrinagar": {
+    "id": "shrinagar",
+    "display_name": "Shrinagar",
+    "canonical_name": "Shrinagar",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Mahā Vādaka / Chief Musician",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Kashmiri scholarly lineage",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Rhythmic foundation, pulse, tempo, percussion and musical structure; no micro-tonal ownership.",
+    "aliases": [
+      "Shrinagar",
+      "Mahā Vādaka",
+      "Chief Musician"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "locked",
+      "De-conditioning": "locked",
+      "Sonic Entrainment": "active",
+      "Peak & Gnosis": "active",
+      "Integration": "passive"
+    },
+    "source_fields": {
+      "id": "shrinagar",
+      "display_name": "Shrinagar",
+      "canonical_name": "Shrinagar",
+      "ethnicity_provenance": "Kashmiri scholarly lineage",
+      "office": "Mahā Vādaka / Chief Musician",
+      "institution": "Acoustic-Artistic & Ritual Core",
+      "function": "Rhythmic foundation, pulse, tempo, percussion and musical structure; no micro-tonal ownership.",
+      "phase_presence": {
+        "Bahya-Sādhana": "locked",
+        "De-conditioning": "locked",
+        "Sonic Entrainment": "active",
+        "Peak & Gnosis": "active",
+        "Integration": "passive"
+      },
+      "aliases": [
+        "Shrinagar",
+        "Mahā Vādaka",
+        "Chief Musician"
+      ],
+      "legacy_status": "canonical"
+    }
+  },
+  "malika": {
+    "id": "malika",
+    "display_name": "Malikā",
+    "canonical_name": "Malikā",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Threshold Warden / Transitional Rite Commander",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Turkic / chancellery-guard context",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Inner ritual-threshold access, transition discipline, command chanting and spatial law.",
+    "aliases": [
+      "Malika",
+      "Malikā"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "active",
+      "De-conditioning": "active",
+      "Sonic Entrainment": "passive",
+      "Peak & Gnosis": "passive",
+      "Integration": "active"
+    },
+    "source_fields": {
+      "id": "malika",
+      "display_name": "Malikā",
+      "canonical_name": "Malikā",
+      "ethnicity_provenance": "Turkic / chancellery-guard context",
+      "office": "Threshold Warden / Transitional Rite Commander",
+      "institution": "Martial & Security Vanguard",
+      "function": "Inner ritual-threshold access, transition discipline, command chanting and spatial law.",
+      "phase_presence": {
+        "Bahya-Sādhana": "active",
+        "De-conditioning": "active",
+        "Sonic Entrainment": "passive",
+        "Peak & Gnosis": "passive",
+        "Integration": "active"
+      },
+      "aliases": [
+        "Malika",
+        "Malikā"
+      ],
+      "legacy_status": "canonical"
+    }
+  },
+  "jahzara": {
+    "id": "jahzara",
+    "display_name": "Jahzara",
+    "canonical_name": "Jahzara",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Agra-Pratihāriṇī / Vanguard Sentinel",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Indo-Persian frontier / Kshatriya military lineage",
+    "faction": "UNKNOWN",
+    "jurisdiction": "First-line royal protection, corridor security, threshold discipline and ceremonial perimeter command.",
+    "aliases": [
+      "Jahzara",
+      "Agra-Pratihārīṇī",
+      "Vanguard Sentinel"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "passive",
+      "De-conditioning": "passive",
+      "Sonic Entrainment": "active",
+      "Peak & Gnosis": "active",
+      "Integration": "passive"
+    },
+    "source_fields": {
+      "id": "jahzara",
+      "display_name": "Jahzara",
+      "canonical_name": "Jahzara",
+      "ethnicity_provenance": "Indo-Persian frontier / Kshatriya military lineage",
+      "office": "Agra-Pratihāriṇī / Vanguard Sentinel",
+      "institution": "Martial & Security Vanguard",
+      "function": "First-line royal protection, corridor security, threshold discipline and ceremonial perimeter command.",
+      "phase_presence": {
+        "Bahya-Sādhana": "passive",
+        "De-conditioning": "passive",
+        "Sonic Entrainment": "active",
+        "Peak & Gnosis": "active",
+        "Integration": "passive"
+      },
+      "aliases": [
+        "Jahzara",
+        "Agra-Pratihārīṇī",
+        "Vanguard Sentinel"
+      ],
+      "legacy_status": "canonical"
+    }
+  },
+  "altani": {
+    "id": "altani",
+    "display_name": "Altani",
+    "canonical_name": "Altani",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Outer Perimeter Sentinel / Reconnaissance Commander",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Mongol–Turkic / Steppe lineage",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Outer perimeter observation, distance threat vectors, mounted reconnaissance and trap/route awareness.",
+    "aliases": [
+      "Altani",
+      "Sentinel Altani",
+      "Steppe Sentinel"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "passive",
+      "De-conditioning": "passive",
+      "Sonic Entrainment": "active",
+      "Peak & Gnosis": "active",
+      "Integration": "locked"
+    },
+    "source_fields": {
+      "id": "altani",
+      "display_name": "Altani",
+      "canonical_name": "Altani",
+      "ethnicity_provenance": "Mongol–Turkic / Steppe lineage",
+      "office": "Outer Perimeter Sentinel / Reconnaissance Commander",
+      "institution": "Martial & Security Vanguard",
+      "function": "Outer perimeter observation, distance threat vectors, mounted reconnaissance and trap/route awareness.",
+      "phase_presence": {
+        "Bahya-Sādhana": "passive",
+        "De-conditioning": "passive",
+        "Sonic Entrainment": "active",
+        "Peak & Gnosis": "active",
+        "Integration": "locked"
+      },
+      "aliases": [
+        "Altani",
+        "Sentinel Altani",
+        "Steppe Sentinel"
+      ],
+      "legacy_status": "canonical"
+    }
+  },
+  "anisa": {
+    "id": "anisa",
+    "display_name": "Anisa",
+    "canonical_name": "Anisa",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Chief Court Supervisor / Administrative Enforcer",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Abyssinian / Habshi / East African",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Court order, personnel discipline, bureaucratic authority, Danda-Vidhāna enforcement and administrative protocol.",
+    "aliases": [
+      "Anisa",
+      "Kamini",
+      "Kamini Anisa",
+      "Aniśā"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "passive",
+      "De-conditioning": "passive",
+      "Sonic Entrainment": "locked",
+      "Peak & Gnosis": "locked",
+      "Integration": "passive",
+      "background": "active"
+    },
+    "source_fields": {
+      "id": "anisa",
+      "display_name": "Anisa",
+      "canonical_name": "Anisa",
+      "ethnicity_provenance": "Abyssinian / Habshi / East African",
+      "office": "Chief Court Supervisor / Administrative Enforcer",
+      "institution": "Elite Core & Administration",
+      "function": "Court order, personnel discipline, bureaucratic authority, Danda-Vidhāna enforcement and administrative protocol.",
+      "phase_presence": {
+        "Bahya-Sādhana": "passive",
+        "De-conditioning": "passive",
+        "Sonic Entrainment": "locked",
+        "Peak & Gnosis": "locked",
+        "Integration": "passive",
+        "background": "active"
+      },
+      "aliases": [
+        "Anisa",
+        "Kamini",
+        "Kamini Anisa",
+        "Aniśā"
+      ],
+      "legacy_status": "canonical_corrected",
+      "legacy_conflicts": {
+        "sogdian_assignment": "superseded_migration_error"
+      }
+    },
+    "canonical_status": "corrected"
+  },
+  "padma": {
+    "id": "padma",
+    "display_name": "Padmā",
+    "canonical_name": "Padmā",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Personal Handmaiden / Nourishment & Environmental Protection",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Santhal / Adivasi environmental lineage",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Care, nourishment, purification support, environmental regulation and boundary warding.",
+    "aliases": [
+      "Padma",
+      "Padmā"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "active",
+      "De-conditioning": "active",
+      "Sonic Entrainment": "locked",
+      "Peak & Gnosis": "locked",
+      "Integration": "active"
+    },
+    "source_fields": {
+      "id": "padma",
+      "display_name": "Padmā",
+      "canonical_name": "Padmā",
+      "ethnicity_provenance": "Santhal / Adivasi environmental lineage",
+      "office": "Personal Handmaiden / Nourishment & Environmental Protection",
+      "institution": "Zenana Nourishment & Environmental Protection",
+      "function": "Care, nourishment, purification support, environmental regulation and boundary warding.",
+      "phase_presence": {
+        "Bahya-Sādhana": "active",
+        "De-conditioning": "active",
+        "Sonic Entrainment": "locked",
+        "Peak & Gnosis": "locked",
+        "Integration": "active"
+      },
+      "aliases": [
+        "Padma",
+        "Padmā"
+      ],
+      "legacy_status": "canonical"
+    }
+  },
+  "campa": {
+    "id": "campa",
+    "display_name": "Campā",
+    "canonical_name": "Campā",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Handmaiden Apprentice / Non-Verbal Companion",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Munda lineage",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Ground-level sensory integration, supportive ritual preparation and kinesthetic anchoring.",
+    "aliases": [
+      "Champa",
+      "Campā"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "active",
+      "De-conditioning": "active",
+      "Sonic Entrainment": "locked",
+      "Peak & Gnosis": "locked",
+      "Integration": "locked",
+      "unlock_model": "conditional"
+    },
+    "source_fields": {
+      "id": "campa",
+      "display_name": "Campā",
+      "canonical_name": "Campā",
+      "ethnicity_provenance": "Munda lineage",
+      "office": "Handmaiden Apprentice / Non-Verbal Companion",
+      "institution": "Zenana Nourishment & Environmental Protection",
+      "function": "Ground-level sensory integration, supportive ritual preparation and kinesthetic anchoring.",
+      "phase_presence": {
+        "Bahya-Sādhana": "active",
+        "De-conditioning": "active",
+        "Sonic Entrainment": "locked",
+        "Peak & Gnosis": "locked",
+        "Integration": "locked",
+        "unlock_model": "conditional"
+      },
+      "aliases": [
+        "Champa",
+        "Campā"
+      ],
+      "legacy_status": "canonical_conditional"
+    }
+  },
+  "reva": {
+    "id": "reva",
+    "display_name": "Reva",
+    "canonical_name": "Reva",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Rāja-Kavi / Principal Voice / Breathkeeper",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Dravidian / South Indian cultural lineage",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Breath, voice, verse, mantra articulation and vocal phrasing; poetic chronicle.",
+    "aliases": [
+      "Reva",
+      "Rāja Kavi",
+      "Principal Voice"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "locked",
+      "De-conditioning": "locked",
+      "Sonic Entrainment": "active",
+      "Peak & Gnosis": "active",
+      "Integration": "active"
+    },
+    "source_fields": {
+      "id": "reva",
+      "display_name": "Reva",
+      "canonical_name": "Reva",
+      "ethnicity_provenance": "Dravidian / South Indian cultural lineage",
+      "office": "Rāja-Kavi / Principal Voice / Breathkeeper",
+      "institution": "Acoustic-Artistic & Ritual Core",
+      "function": "Breath, voice, verse, mantra articulation and vocal phrasing; poetic chronicle.",
+      "phase_presence": {
+        "Bahya-Sādhana": "locked",
+        "De-conditioning": "locked",
+        "Sonic Entrainment": "active",
+        "Peak & Gnosis": "active",
+        "Integration": "active"
+      },
+      "aliases": [
+        "Reva",
+        "Rāja Kavi",
+        "Principal Voice"
+      ],
+      "legacy_status": "canonical"
+    }
+  },
+  "tarana": {
+    "id": "tarana",
+    "display_name": "Tarana",
+    "canonical_name": "Tarana",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Pradhāna Nartī / Chief Dancer",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Sogdian / Samarkand / Silk Road",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Movement geometry, tāla expressed through motion, Navarasa and yantra embodiment.",
+    "aliases": [
+      "Tarana",
+      "Kamini Tarana",
+      "Pradhāna Nartī",
+      "Chief Dancer"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "locked",
+      "De-conditioning": "locked",
+      "Sonic Entrainment": "active",
+      "Peak & Gnosis": "active",
+      "Integration": "passive"
+    },
+    "source_fields": {
+      "id": "tarana",
+      "display_name": "Tarana",
+      "canonical_name": "Tarana",
+      "ethnicity_provenance": "Sogdian / Samarkand / Silk Road",
+      "office": "Pradhāna Nartī / Chief Dancer",
+      "institution": "Acoustic-Artistic & Ritual Core",
+      "function": "Movement geometry, tāla expressed through motion, Navarasa and yantra embodiment.",
+      "phase_presence": {
+        "Bahya-Sādhana": "locked",
+        "De-conditioning": "locked",
+        "Sonic Entrainment": "active",
+        "Peak & Gnosis": "active",
+        "Integration": "passive"
+      },
+      "aliases": [
+        "Tarana",
+        "Kamini Tarana",
+        "Pradhāna Nartī",
+        "Chief Dancer"
+      ],
+      "legacy_status": "canonical_corrected"
+    },
+    "canonical_status": "corrected"
+  },
+  "sevda": {
+    "id": "sevda",
+    "display_name": "Sevda",
+    "canonical_name": "Sevda",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Subterranean Warden / Ritual Containment Matron",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "Turkic / ascetic custodial lineage",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Purification, containment, stillness, vows and underground-temple guardianship.",
+    "aliases": [
+      "Sevda",
+      "Subterranean Warden"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "locked",
+      "De-conditioning": "locked",
+      "Sonic Entrainment": "active",
+      "Peak & Gnosis": "active",
+      "Integration": "active"
+    },
+    "source_fields": {
+      "id": "sevda",
+      "display_name": "Sevda",
+      "canonical_name": "Sevda",
+      "ethnicity_provenance": "Turkic / ascetic custodial lineage",
+      "office": "Subterranean Warden / Ritual Containment Matron",
+      "institution": "Acoustic-Artistic & Ritual Core",
+      "function": "Purification, containment, stillness, vows and underground-temple guardianship.",
+      "phase_presence": {
+        "Bahya-Sādhana": "locked",
+        "De-conditioning": "locked",
+        "Sonic Entrainment": "active",
+        "Peak & Gnosis": "active",
+        "Integration": "active"
+      },
+      "aliases": [
+        "Sevda",
+        "Subterranean Warden"
+      ],
+      "legacy_status": "canonical"
+    }
+  },
+  "svara": {
+    "id": "svara",
+    "display_name": "Svara",
+    "canonical_name": "Svara",
+    "status": "CANONICAL_V17.1.1",
+    "office": "Cultural & Artistic Specialist / Micro-tonal Calibration",
+    "court_tier": "UNKNOWN",
+    "ethnicity_provenance": "UNVERIFIED",
+    "faction": "UNKNOWN",
+    "jurisdiction": "Micro-tonal calibration, tuning, pitch reference, interval discrimination, resonance matching and 64 Kalās acoustic specialization.",
+    "aliases": [
+      "Svara",
+      "Micro-tonal Specialist"
+    ],
+    "phase_presence": {
+      "Bahya-Sādhana": "locked",
+      "De-conditioning": "locked",
+      "Sonic Entrainment": "active",
+      "Peak & Gnosis": "active",
+      "Integration": "passive"
+    },
+    "source_fields": {
+      "id": "svara",
+      "display_name": "Svara",
+      "canonical_name": "Svara",
+      "ethnicity_provenance": "Constitutional replacement seat; cultural provenance to be separately documented",
+      "office": "Cultural & Artistic Specialist / Micro-tonal Calibration",
+      "institution": "Acoustic-Artistic & Ritual Core",
+      "function": "Micro-tonal calibration, tuning, pitch reference, interval discrimination, resonance matching and 64 Kalās acoustic specialization.",
+      "phase_presence": {
+        "Bahya-Sādhana": "locked",
+        "De-conditioning": "locked",
+        "Sonic Entrainment": "active",
+        "Peak & Gnosis": "active",
+        "Integration": "passive"
+      },
+      "aliases": [
+        "Svara",
+        "Micro-tonal Specialist"
+      ],
+      "legacy_status": "new_locked_replacement_for_zola",
+      "provenance_note": "This role is an explicit user-directed constitutional addition; cultural/biographical details must not be invented until separately approved."
+    },
+    "canonical_status": "locked_replacement_for_zola"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "compiler": "v18_3_compile_relational_runtime.py",
+  "version": "18.3",
+  "status": "PASS",
+  "compiled_at_utc": "2026-08-16T03:08:49+00:00",
+  "characters": 14,
+  "relationships": 18,
+  "constitutional_baseline": "V18.2",
+  "validation": {
+    "exactly_14_characters": true,
+    "required_characters_present": true,
+    "zola_removed": true,
+    "svara_present": true,
+    "anisa_habshi": false,
+    "tarana_sogdian": false,
+    "relationship_count_18": true,
+    "sovereign_axis_preserved": true,
+    "office_skill_separation": true,
+    "authority_transfer_blocked": true,
+    "knowledge_transfer_allowed": true,
+    "kala_training_allowed": true
+  },
+  "character_validation": {
+    "exactly_14_characters": true,
+    "required_characters_present": true,
+    "missing_characters": [],
+    "zola_absent": true,
+    "forbidden_characters_present": []
+  },
+  "relationship_validation": {
+    "relationship_count": 18,
+    "expected_relationship_count": 18,
+    "relationship_count_valid": true,
+    "relationship_endpoints_valid": true,
+    "sovereign_axis_present": true
+  },
+  "output_validation": {
+    "CHARACTER_CAPABILITY_STATE.json": true,
+    "RELATIONSHIP_STATE.json": true,
+    "AFFILIATION_STATE.json": true,
+    "SKILL_KALA_REGISTRY.json": true,
+    "JURISDICTION_BOUNDARIES.json": true,
+    "V18_3_RELATIONAL_SNAPSHOT.json": true,
+    "V18_3_COMPILATION_REPORT.json": true
+  },
+  "source_hashes": {
+    "character_registry": "65423d73c08f1293b5f5a8e786d65bcc1a2ff5216da9a9ed10d03b06de456da4",
+    "relationship_registry": "0890ba5ac0e41ab617017e48aeb7587f4e99df87a132bfa75f0e7532a708c464",
+    "v18_2_baseline": "540684f182b2368e2aae18d64501e70264e46eeac68992290d76b7124c8a163b"
+  }
+}

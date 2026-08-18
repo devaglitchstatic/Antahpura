@@ -1,0 +1,38 @@
+{
+  "schema": "V18.5_RUNTIME_REPORT",
+  "version": "18.5",
+  "generated_at_utc": "2026-08-16T09:29:38+00:00",
+  "status": "PASS",
+  "constitutional_firewall": "ACTIVE",
+  "canonical_source_version": "18.3",
+  "counts": {
+    "characters": 14,
+    "registered_skill_classes": 17,
+    "events": 0,
+    "learned_skills": 0,
+    "knowledge_items": 0,
+    "kala_items": 0,
+    "active_training": 0,
+    "completed_training": 0,
+    "emergent_relationships": 0
+  },
+  "invariants": {
+    "canonical_identity": "PASS",
+    "constitutional_office": "PASS",
+    "constitutional_authority": "PASS",
+    "canonical_provenance": "PASS",
+    "canonical_relationships": "PASS",
+    "sovereign_marriage_axis": "PASS",
+    "event_log_append_only": "PASS",
+    "transactional_mutation": "PASS",
+    "skill_to_office_transfer": "BLOCKED",
+    "knowledge_to_authority_transfer": "BLOCKED"
+  },
+  "event_types": [],
+  "source_sha256": "75ec63c6d647dd99032afb3ed79d7bd17115e2ed67aacdee74a2ea7b7cf2410a",
+  "output_sha256": {
+    "V18_5_RUNTIME_STATE.json": "88c6d20be6be02859c6fb6075a645293bdbc3aa67ac9dddbf8dcc0b8c0e0547e",
+    "V18_5_EVENT_LOG.json": "b6c0104eaf136803b811a8acf0b40eb0d6821037847d634b2237ce4a21671407"
+  },
+  "source_file": "D:\\dolphin\\AntahpuraRepo\\registry\\V18_3_RUNTIME\\V18_3_RELATIONAL_SNAPSHOT.json"
+}

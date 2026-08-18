@@ -1,0 +1,97 @@
+{
+  "schema": "V18.8.1_KAMA_PROGRESSION_RULES",
+  "version": "18.8.1",
+  "progression_stages": [
+    {"stage": "knowledge", "requires": ["source_awareness", "boundary_awareness"]},
+    {"stage": "training", "requires": ["knowledge", "adult_gate", "consent_state", "eligibility"]},
+    {"stage": "practice", "requires": ["training", "adult_gate", "green_or_explicitly_validated_orange_state", "runtime_event"]},
+    {"stage": "mastery", "requires": ["practice", "repetition_threshold", "state_stability"]}
+  ],
+  "character_kink_state": {
+    "fields": [
+      "preference",
+      "soft_limit",
+      "hard_limit",
+      "knowledge_level",
+      "training_level",
+      "practice_repetitions",
+      "mastery_level",
+      "consent_state",
+      "awareness",
+      "situational_vulnerability",
+      "relevance",
+      "primary",
+      "related",
+      "similar",
+      "secondary"
+    ]
+  },
+  "learning_channels": {
+    "knowledge_event": "adds conceptual awareness without granting competence",
+    "training_event": "raises guided competence",
+    "practice_event": "increments repetition after validated runtime event",
+    "mastery_event": "derived from repetition and stability; not an office change"
+  },
+  "repetition": {
+    "unit": "validated_runtime_event",
+    "counts_only_successful_adult_consensual_events": true,
+    "branch_local": true,
+    "replayable": true,
+    "decay_supported": true
+  },
+  "psychological_dimensions": [
+    "trust",
+    "attachment",
+    "vulnerability",
+    "curiosity",
+    "devotion",
+    "confidence",
+    "fear",
+    "shame",
+    "pride",
+    "jealousy",
+    "agency",
+    "self_knowledge",
+    "restraint",
+    "reciprocity",
+    "emotional_attunement",
+    "loyalty",
+    "forgiveness",
+    "anticipation"
+  ],
+  "trigger_classes": [
+    "trust_gain",
+    "trust_loss",
+    "disclosure",
+    "reciprocity",
+    "boundary_respect",
+    "boundary_violation",
+    "vulnerability",
+    "recognition",
+    "rejection",
+    "jealousy",
+    "devotion",
+    "fear_activation",
+    "fear_resolution",
+    "curiosity",
+    "ritual_bonding",
+    "kala_mastery",
+    "knowledge_exchange",
+    "service",
+    "betrayal",
+    "forgiveness",
+    "challenge",
+    "praise",
+    "absence",
+    "reunion",
+    "sacrifice",
+    "confession"
+  ],
+  "vamacari": {
+    "stages": ["recognition", "confrontation", "discernment", "integration", "mastery", "siddhi"],
+    "siddhi_is_derived_state": true,
+    "siddhi_grants_constitutional_authority": false,
+    "siddhi_changes_constitutional_office": false,
+    "principle": "psychological and philosophical integration is modeled as progression, not institutional promotion"
+  }
+}

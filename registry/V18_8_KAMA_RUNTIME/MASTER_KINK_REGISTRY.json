@@ -1,0 +1,102 @@
+{
+  "schema": "V18.8.1_MASTER_KINK_REGISTRY",
+  "version": "18.8.1",
+  "source_authority": "XLIX.pdf",
+  "source_policy": {
+    "legacy_restricted_content": "taxonomy_only",
+    "runtime_representation": "abstract_preference_and_progression_metadata",
+    "adult_gate": "required",
+    "explicit_act_instructions": "excluded",
+    "minor_content": "excluded_from_runtime",
+    "canonical_promotion": "requires_review"
+  },
+  "progression_model": {
+    "knowledge": "conceptual awareness, terminology, boundaries, and safety context",
+    "training": "guided competence under explicit eligibility and consent rules",
+    "practice": "validated repeated runtime experience",
+    "mastery": "stable competence after sufficient repetition",
+    "constitutional_office_transfer": false,
+    "institutional_authority_transfer": false
+  },
+  "preference_states": [
+    "favorite",
+    "like",
+    "maybe",
+    "okay",
+    "no"
+  ],
+  "limit_states": [
+    "soft_limit",
+    "hard_limit"
+  ],
+  "consent_states": [
+    "green",
+    "orange",
+    "red"
+  ],
+  "kinks": [
+    {
+      "id": "KINK-RASA-SADHANA",
+      "canonical_name": "Rasa-Sādhana",
+      "family": "somatic_sensation",
+      "source_status": "legacy_restricted",
+      "adult_only": true
+    },
+    {
+      "id": "KINK-ANDA-VESHA",
+      "canonical_name": "Anda-Veśa",
+      "family": "containment_object_play",
+      "source_status": "legacy_restricted",
+      "adult_only": true
+    },
+    {
+      "id": "KINK-BHOJANA-RATI",
+      "canonical_name": "Bhojana-Rati",
+      "family": "sensory_food_play",
+      "source_status": "legacy_restricted",
+      "adult_only": true
+    },
+    {
+      "id": "KINK-GUDA-PRASTARA",
+      "canonical_name": "Guda-Prastara",
+      "family": "body_boundary_play",
+      "source_status": "legacy_restricted",
+      "adult_only": true
+    },
+    {
+      "id": "KINK-DARPANA-SADHANA",
+      "canonical_name": "Darpana-Sādhana",
+      "family": "self_observation",
+      "source_status": "legacy_restricted",
+      "adult_only": true
+    },
+    {
+      "id": "KINK-KRIDAMRIGA-VESHA",
+      "canonical_name": "Kridāmṛga-Veśa",
+      "family": "role_play",
+      "source_status": "legacy_restricted",
+      "adult_only": true
+    },
+    {
+      "id": "KINK-SARVANGA-VESHTANA",
+      "canonical_name": "Sarvāṅga-Veṣṭana",
+      "family": "restraint_sensory_control",
+      "source_status": "legacy_restricted",
+      "adult_only": true
+    },
+    {
+      "id": "KINK-GAURUPA-MATRIKA",
+      "canonical_name": "Gau-Rūpa Mātrikā",
+      "family": "nurturing_lactation",
+      "source_status": "legacy_restricted",
+      "adult_only": true
+    },
+    {
+      "id": "KINK-PRAHANANA-VILASA",
+      "canonical_name": "Prahanana / Vilāsa-Prahanana",
+      "family": "impact_power_exchange",
+      "source_status": "legacy_restricted",
+      "adult_only": true
+    }
+  ]
+}

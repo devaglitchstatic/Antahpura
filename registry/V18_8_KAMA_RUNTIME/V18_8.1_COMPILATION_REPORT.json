@@ -1,0 +1,16 @@
+{
+  "schema": "V18.8.1_COMPILATION_REPORT",
+  "version": "18.8.1",
+  "status": "PASS",
+  "kink_nodes": 9,
+  "graph_relations": 11,
+  "progression_stages": 4,
+  "psychological_dimensions": 18,
+  "trigger_classes": 26,
+  "adult_gate": "REQUIRED",
+  "explicit_act_instructions": "EXCLUDED",
+  "minor_content": "EXCLUDED_FROM_RUNTIME",
+  "constitutional_office_transfer": "BLOCKED",
+  "institutional_authority_transfer": "BLOCKED",
+  "source": "XLIX.pdf"
+}

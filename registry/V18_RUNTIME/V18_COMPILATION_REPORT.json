@@ -1,0 +1,19 @@
+{
+  "compiler": "v18_compile_constitutional_state.py",
+  "version": "18.2",
+  "status": "PASS",
+  "characters": 14,
+  "relationships": 18,
+  "zola_removed": true,
+  "svara_present": true,
+  "anisa_habshi": true,
+  "tarana_sogdian": true,
+  "separate_abyssinian_logistics_seat": false,
+  "source_hashes": {
+    "character_registry": "65423d73c08f1293b5f5a8e786d65bcc1a2ff5216da9a9ed10d03b06de456da4",
+    "relationship_registry": "0890ba5ac0e41ab617017e48aeb7587f4e99df87a132bfa75f0e7532a708c464",
+    "phase_registry": "f2f324cfe22d3ef7714abad881ba70a3bf3408cb0bd1b8bb788f29e0ac01a581",
+    "acoustic_registry": "bfdfbac932454979d0ce831643784803541cfafcfc47e136463104d465522b9a",
+    "migration_registry": "95d52b837b5e8067f62fa32716cc305087ba60050c4998ce5c62781390ae999f"
+  }
+}

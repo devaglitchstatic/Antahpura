@@ -1,0 +1,71 @@
+{
+  "schema": "V18_6_RUNTIME_STATE",
+  "version": "18.6",
+  "canonical_hash": "09a12dfa8eb20581b9849d7b130d9b46b91365c64e1053716ffceb898e5bb21d",
+  "characters": {
+    "altani": {
+      "canonical_name": "Altani"
+    },
+    "anisa": {
+      "canonical_name": "Anisa"
+    },
+    "campa": {
+      "canonical_name": "Campā"
+    },
+    "jahzara": {
+      "canonical_name": "Jahzara"
+    },
+    "kumari_rati": {
+      "canonical_name": "Princess Kumārī Rati"
+    },
+    "maha_deva": {
+      "canonical_name": "Mahā Deva"
+    },
+    "malika": {
+      "canonical_name": "Malikā"
+    },
+    "padma": {
+      "canonical_name": "Padmā"
+    },
+    "reva": {
+      "canonical_name": "Reva"
+    },
+    "roxana": {
+      "canonical_name": "Roxana"
+    },
+    "sevda": {
+      "canonical_name": "Sevda"
+    },
+    "shrinagar": {
+      "canonical_name": "Shrinagar"
+    },
+    "svara": {
+      "canonical_name": "Svara"
+    },
+    "tarana": {
+      "canonical_name": "Tarana"
+    }
+  },
+  "relationships": [],
+  "sovereign_axis": {
+    "type": "constitutional_relationship",
+    "status": "newly_wedded",
+    "members": [
+      "maha_deva",
+      "kumari_rati"
+    ],
+    "bond": "marriage",
+    "dynastic_status": "active",
+    "source": "V17.1.1 canonical reconciliation",
+    "runtime_note": "Marriage is pre-existing constitutional state; runtime events may modify emergent relational dimensions."
+  },
+  "runtime": {
+    "skills": {},
+    "knowledge": {},
+    "kalas": {},
+    "training": {},
+    "statuses": {},
+    "flags": {},
+    "relationship_state": {}
+  }
+}

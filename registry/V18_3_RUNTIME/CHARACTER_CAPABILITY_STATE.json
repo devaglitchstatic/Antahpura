@@ -1,0 +1,492 @@
+{
+  "maha_deva": {
+    "canonical_id": "maha_deva",
+    "canonical_name": "Mahā Deva",
+    "constitutional_office": "Sovereign / High Priest / Ritual Authority",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "kumari_rati": {
+    "canonical_id": "kumari_rati",
+    "canonical_name": "Princess Kumārī Rati",
+    "constitutional_office": "Princess / Dynastic Center / Initiand",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "roxana": {
+    "canonical_id": "roxana",
+    "canonical_name": "Roxana",
+    "constitutional_office": "Persian Consort / Grand Vizier / Diwan & Diplomatic Authority",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "shrinagar": {
+    "canonical_id": "shrinagar",
+    "canonical_name": "Shrinagar",
+    "constitutional_office": "Mahā Vādaka / Chief Musician",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "malika": {
+    "canonical_id": "malika",
+    "canonical_name": "Malikā",
+    "constitutional_office": "Threshold Warden / Transitional Rite Commander",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "jahzara": {
+    "canonical_id": "jahzara",
+    "canonical_name": "Jahzara",
+    "constitutional_office": "Agra-Pratihāriṇī / Vanguard Sentinel",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "altani": {
+    "canonical_id": "altani",
+    "canonical_name": "Altani",
+    "constitutional_office": "Outer Perimeter Sentinel / Reconnaissance Commander",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "anisa": {
+    "canonical_id": "anisa",
+    "canonical_name": "Anisa",
+    "constitutional_office": "Chief Court Supervisor / Administrative Enforcer",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "padma": {
+    "canonical_id": "padma",
+    "canonical_name": "Padmā",
+    "constitutional_office": "Personal Handmaiden / Nourishment & Environmental Protection",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "campa": {
+    "canonical_id": "campa",
+    "canonical_name": "Campā",
+    "constitutional_office": "Handmaiden Apprentice / Non-Verbal Companion",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "reva": {
+    "canonical_id": "reva",
+    "canonical_name": "Reva",
+    "constitutional_office": "Rāja-Kavi / Principal Voice / Breathkeeper",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "tarana": {
+    "canonical_id": "tarana",
+    "canonical_name": "Tarana",
+    "constitutional_office": "Pradhāna Nartī / Chief Dancer",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "sevda": {
+    "canonical_id": "sevda",
+    "canonical_name": "Sevda",
+    "constitutional_office": "Subterranean Warden / Ritual Containment Matron",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  },
+  "svara": {
+    "canonical_id": "svara",
+    "canonical_name": "Svara",
+    "constitutional_office": "Cultural & Artistic Specialist / Micro-tonal Calibration",
+    "constitutional_authority": {
+      "status": "immutable",
+      "may_change_through_runtime_skill": false,
+      "may_change_through_training": false,
+      "may_change_through_knowledge": false
+    },
+    "capability_domains": {
+      "skills": {},
+      "knowledge": {},
+      "kalas": {}
+    },
+    "training_state": {
+      "active_training": [],
+      "completed_training": [],
+      "instructors": []
+    },
+    "transfer_rules": {
+      "skill_learning": true,
+      "knowledge_learning": true,
+      "kala_learning": true,
+      "constitutional_office_transfer": false,
+      "institutional_authority_transfer": false
+    },
+    "runtime_constraints": [
+      "May learn skills outside constitutional office.",
+      "May acquire knowledge across jurisdictional boundaries.",
+      "May study kalas associated with another office.",
+      "May not inherit another constitutional office through training.",
+      "May not exercise another office's institutional authority merely by possessing its skills."
+    ]
+  }
+}

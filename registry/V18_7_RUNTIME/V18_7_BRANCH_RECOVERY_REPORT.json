@@ -1,0 +1,18 @@
+{
+  "schema": "V18_7_BRANCH_RECOVERY_REPORT",
+  "version": "18.7",
+  "status": "PASS",
+  "characters": 14,
+  "events": 0,
+  "branches": 1,
+  "main_state_hash": "85a5cc3cfb5407e95e503885ca24640af0311283fe551d6cfe2d372e5f62ce6b",
+  "checkpoint_support": true,
+  "rollback_support": true,
+  "fork_support": true,
+  "merge_support": false,
+  "canonical_state_locked": true,
+  "authority_transfer": false,
+  "provenance_mutation": false,
+  "canonical_relationship_deletion": false,
+  "sovereign_axis_mutation": false
+}
