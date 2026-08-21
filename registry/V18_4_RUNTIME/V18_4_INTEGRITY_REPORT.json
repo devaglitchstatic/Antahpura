@@ -1,0 +1,43 @@
+{
+  "schema": "V18.4_CANONICAL_INTEGRITY_REPORT",
+  "version": "18.4",
+  "compiled_at_utc": "2026-08-21T08:40:30+00:00",
+  "status": "PASS",
+  "source_files": {
+    "canonical_baseline": "D:\\dolphin\\AntahpuraRepo\\registry\\V18_2_CANONICAL_BASELINE.json",
+    "runtime_snapshot": "D:\\dolphin\\AntahpuraRepo\\registry\\V18_3_RUNTIME\\V18_3_RELATIONAL_SNAPSHOT.json",
+    "relationship_registry": "D:\\dolphin\\AntahpuraRepo\\registry\\V17_1_RELATIONSHIP_REGISTRY.json"
+  },
+  "counts": {
+    "characters": 14,
+    "relationships": 18,
+    "canonical_relationships": 18,
+    "affiliations": 14,
+    "skill_classes": 17
+  },
+  "invariants": {
+    "character_identity": "PASS",
+    "constitutional_office": "PASS",
+    "constitutional_authority": "PASS",
+    "canonical_provenance": "PASS",
+    "canonical_relationships": "PASS",
+    "sovereign_axis": "PASS",
+    "skill_authority_firewall": "PASS",
+    "runtime_principles": "PASS"
+  },
+  "provenance_repaired": [],
+  "constitutional_principles": {
+    "office_immutable": true,
+    "authority_nontransferable": true,
+    "skills_trainable": true,
+    "knowledge_transferable": true,
+    "kalas_trainable": true,
+    "relationship_registry_preserved": true,
+    "canonical_provenance_preserved": true,
+    "canonical_identity_preserved": true
+  },
+  "output_sha256": {
+    "V18_4_CANONICAL_BASELINE.json": "c21d8fed86473413cf3ab3a91392ddf06f3ad054b1e4bbd367e4e5cc54ab59ca",
+    "V18_4_RELATIONAL_SNAPSHOT.json": "1ea20114963fcc6e3ca916f2e9ad9a5b969d69d7450af59d246c5438d6453459"
+  }
+}

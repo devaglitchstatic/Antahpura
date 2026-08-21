@@ -1,6 +1,6 @@
 {
-  "schema": "V18.3_RELATIONAL_RUNTIME_SNAPSHOT",
-  "version": "18.3",
+  "schema": "V18.4_CANONICAL_INTEGRITY_RUNTIME_SNAPSHOT",
+  "version": "18.4",
   "compiled_at_utc": "2026-08-21T08:40:30+00:00",
   "canonical_baseline": "V18.2",
   "constitutional_preservation": true,
@@ -10,7 +10,9 @@
     "skills_trainable": true,
     "knowledge_transferable": true,
     "kalas_trainable": true,
-    "relationship_registry_preserved": true
+    "relationship_registry_preserved": true,
+    "canonical_provenance_preserved": true,
+    "canonical_identity_preserved": true
   },
   "sovereign_axis": {
     "type": "constitutional_relationship",
@@ -517,8 +519,8 @@
     }
   },
   "relationships": {
-    "schema": "V18.3_RELATIONSHIP_STATE",
-    "version": "18.3",
+    "schema": "V18.4_RELATIONSHIP_STATE",
+    "version": "18.4",
     "constitutional_preservation": true,
     "sovereign_axis": {
       "type": "constitutional_relationship",
@@ -645,8 +647,8 @@
     ]
   },
   "affiliations": {
-    "schema": "V18.3_AFFILIATION_STATE",
-    "version": "18.3",
+    "schema": "V18.4_AFFILIATION_STATE",
+    "version": "18.4",
     "characters": {
       "maha_deva": {
         "canonical_id": "maha_deva",
@@ -735,8 +737,8 @@
     }
   },
   "skills": {
-    "schema": "V18.3_SKILL_KALA_REGISTRY",
-    "version": "18.3",
+    "schema": "V18.4_SKILL_KALA_REGISTRY",
+    "version": "18.4",
     "principle": "Kalā and technical skills are transferable through learning and training; constitutional offices are not.",
     "skill_classes": {
       "dance": {
@@ -871,8 +873,8 @@
     }
   },
   "jurisdiction": {
-    "schema": "V18.3_JURISDICTION_BOUNDARIES",
-    "version": "18.3",
+    "schema": "V18.4_JURISDICTION_BOUNDARIES",
+    "version": "18.4",
     "rules": [
       {
         "rule": "office_skill_separation",
@@ -893,6 +895,22 @@
       {
         "rule": "relationship_preservation",
         "description": "Canonical constitutional relationships remain intact unless a future constitutional revision explicitly changes them."
+      },
+      {
+        "rule": "canonical_field_immutability",
+        "description": "Canonical identity, office, authority and provenance cannot be changed by runtime compilation."
+      },
+      {
+        "rule": "canonical_relationship_integrity",
+        "description": "Canonical relationships cannot disappear through runtime compilation."
+      },
+      {
+        "rule": "provenance_preservation",
+        "description": "Character provenance is inherited from the canonical baseline and cannot be nulled by runtime state."
+      },
+      {
+        "rule": "skill_authority_firewall",
+        "description": "Skill possession or training cannot transfer constitutional office or institutional authority."
       }
     ],
     "characters": {

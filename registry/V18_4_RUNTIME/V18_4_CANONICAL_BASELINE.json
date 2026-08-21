@@ -1,6 +1,6 @@
 {
   "runtime_version": "18.2",
-  "compiled_at": "2026-08-21T08:40:30.482169+00:00",
+  "compiled_at": "2026-08-15T19:12:51.288444+00:00",
   "canonical_source": "V17.1.1",
   "constitutional_invariants": {
     "seat_count": 14,
@@ -969,5 +969,8 @@
     "dynastic_status": "active",
     "source": "V17.1.1 canonical reconciliation",
     "runtime_note": "Marriage is pre-existing constitutional state; runtime events may modify emergent relational dimensions."
-  }
+  },
+  "schema": "V18.4_CANONICAL_BASELINE",
+  "version": "18.4",
+  "source_version": "V18.2"
 }
