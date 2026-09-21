@@ -1,0 +1,110 @@
+{
+  "schema": "antahpura.kala_synergies",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "source": "kala_system_v20.json → kala_synergies",
+  "total_synergies": 5,
+  "synergies": [
+    {
+      "synergy_id": "syn_sonic_entrainment",
+      "name": "Sonic Entrainment",
+      "required_kalas": [
+        {"kala": "kala_1", "name": "Gīta", "min_mastery": 5},
+        {"kala": "kala_2", "name": "Vādya", "min_mastery": 4},
+        {"kala": "kala_53", "name": "Nṛtya", "min_mastery": 3}
+      ],
+      "characters_eligible": ["char_svara", "char_tarana", "char_reva"],
+      "effect": "Creates a trance-inducing ritual space",
+      "kama_unlocks": ["MANTRA_MOHA", "NADA_SADHANA"],
+      "avn_asset": "trance_sequence",
+      "activation_conditions": {
+        "location_required": null,
+        "occasion_required": null,
+        "audience_required": false,
+        "institution_required": "inst_ritual_chorus"
+      }
+    },
+    {
+      "synergy_id": "syn_restraint_arts",
+      "name": "Restraint Arts",
+      "required_kalas": [
+        {"kala": "kala_25", "name": "Granthana", "min_mastery": 6},
+        {"kala": "kala_33", "name": "Nāga-pāśa", "min_mastery": 4},
+        {"kala": "kala_31", "name": "Malla", "min_mastery": 3}
+      ],
+      "characters_eligible": ["char_roxana", "char_sevda"],
+      "effect": "Enhanced rope and binding capabilities",
+      "kama_unlocks": ["GRANTHI_KALA", "BANDHA_SADHANA", "SANGHATAKA"],
+      "avn_asset": "rope_sequence",
+      "activation_conditions": {
+        "location_required": null,
+        "occasion_required": null,
+        "audience_required": false,
+        "institution_required": "inst_military_perimeter"
+      }
+    },
+    {
+      "synergy_id": "syn_sacred_geometry",
+      "name": "Sacred Geometry",
+      "required_kalas": [
+        {"kala": "kala_43", "name": "Yantra", "min_mastery": 5},
+        {"kala": "kala_16", "name": "Rekhā", "min_mastery": 4},
+        {"kala": "kala_39", "name": "Vāstu", "min_mastery": 3}
+      ],
+      "characters_eligible": ["char_jahzara", "char_shrinagar"],
+      "effect": "Can construct any sacred diagram for ritual use",
+      "kama_unlocks": ["YANTRA_LEKHANA"],
+      "avn_asset": "yantra_construction",
+      "activation_conditions": {
+        "location_required": null,
+        "occasion_required": null,
+        "audience_required": false,
+        "institution_required": "inst_yogic_pavilion"
+      }
+    },
+    {
+      "synergy_id": "syn_alchemical_cuisine",
+      "name": "Alchemical Cuisine",
+      "required_kalas": [
+        {"kala": "kala_46", "name": "Rasāyana", "min_mastery": 5},
+        {"kala": "kala_59", "name": "Sūpa-Pāka", "min_mastery": 5},
+        {"kala": "kala_58", "name": "Pāna-rasa", "min_mastery": 3}
+      ],
+      "characters_eligible": ["char_malika", "char_padma", "char_jahzara"],
+      "effect": "Can create elixirs that alter emotional states",
+      "kama_unlocks": ["RASAYANA", "BHOJANA_RATI_SENSORY"],
+      "avn_asset": "alchemical_cooking",
+      "activation_conditions": {
+        "location_required": null,
+        "occasion_required": null,
+        "audience_required": false,
+        "institution_required": null
+      }
+    },
+    {
+      "synergy_id": "syn_gestural_communication",
+      "name": "Gestural Communication",
+      "required_kalas": [
+        {"kala": "kala_45", "name": "Mudrā", "min_mastery": 5},
+        {"kala": "kala_53", "name": "Nṛtya", "min_mastery": 4},
+        {"kala": "kala_3", "name": "Nāṭya", "min_mastery": 4}
+      ],
+      "characters_eligible": ["char_tarana", "char_svara", "char_jahzara"],
+      "effect": "Can communicate complex ideas without words",
+      "kama_unlocks": ["SPARSHA_SHIKSHA", "MANTRA_MOHA"],
+      "avn_asset": "gesture_sequence",
+      "activation_conditions": {
+        "location_required": null,
+        "occasion_required": null,
+        "audience_required": false,
+        "institution_required": null
+      }
+    }
+  ],
+  "audit": {
+    "total_synergies": 5,
+    "total_unique_kalas_referenced": 12,
+    "total_unique_characters_eligible": 9,
+    "audit_passed": true
+  }
+}

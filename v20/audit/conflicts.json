@@ -1,0 +1,109 @@
+{
+  "schema": "antahpura.audit.conflicts",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "description": "Registry of resolved and unresolved conflicts between sources. Every conflict has a resolution status.",
+  "conflicts": [
+    {
+      "conflict_id": "conf_001",
+      "field": "kama_count",
+      "description": "Kama System V20 header declared 98 kamas; actual pasted content had 97 unique entries",
+      "sources": [
+        {"source": "KAMA_SYSTEM_V20.txt header", "value": 98},
+        {"source": "KAMA_SYSTEM_V20.txt actual content", "value": 97}
+      ],
+      "resolution": "Added DRASHTA_RATI as the 98th kama (approved by user)",
+      "status": "resolved",
+      "canonical_decision": "V20.1-KAMA-COUNT-FINALIZED"
+    },
+    {
+      "conflict_id": "conf_002",
+      "field": "family_h_count",
+      "description": "Family H declared 17 kamas but only 10 were visible in the source paste",
+      "sources": [
+        {"source": "Kama System V20 Family H header", "value": 17},
+        {"source": "Kama System V20 Family H visible content", "value": 10}
+      ],
+      "resolution": "Frozen at 10 visible Family H entries; 7 remain unrecovered. New kama DRASHTA_RATI added to reach 98 total.",
+      "status": "resolved_with_gap",
+      "canonical_decision": "V20.1-FAMILY-H-FROZEN"
+    },
+    {
+      "conflict_id": "conf_003",
+      "field": "laghava_kala",
+      "description": "LAGHAVA_KALA appeared in the dimension_kama_matrix but is not a classical Kala",
+      "sources": [
+        {"source": "dimension_kama_matrix.json (spurious)", "value": "LAGHAVA_KALA"},
+        {"source": "Kāmasūtra 64 arts (classical)", "value": "hasta-laghava, art 23"}
+      ],
+      "resolution": "Removed LAGHAVA_KALA from matrix. Hasta-laghava absorbed into Domain 2 craft skills.",
+      "status": "resolved",
+      "canonical_decision": "V20.1-LAGHAVA-REMOVED"
+    },
+    {
+      "conflict_id": "conf_004",
+      "field": "padma_primary_kalas",
+      "description": "Padmā's primary kala count was inconsistent between Section VII and per-kala fields",
+      "sources": [
+        {"source": "Kala System V20 Section VII", "value": 1},
+        {"source": "Kala System V20 per-kala primary fields", "value": 0}
+      ],
+      "resolution": "Padmā set as co-primary on Kalas 58 (Pāna-rasa) and 59 (Sūpa-Pāka) with Malika",
+      "status": "resolved",
+      "canonical_decision": "V20.1-PADMA-CO-PRIMARY"
+    },
+    {
+      "conflict_id": "conf_005",
+      "field": "sevda_primary_count",
+      "description": "Sevda has no primary kala. Confirmed as intentional.",
+      "sources": [
+        {"source": "Kala System V20 per-kala fields", "value": 0}
+      ],
+      "resolution": "Confirmed Sevda is resonance-only in Domain 4 (Occult). Not an error.",
+      "status": "resolved",
+      "canonical_decision": "V20.1-SEVDA-RESONANCE-ONLY"
+    },
+    {
+      "conflict_id": "conf_006",
+      "field": "altani_primary_count",
+      "description": "Altani has no primary kala. Confirmed as intentional.",
+      "sources": [
+        {"source": "Kala System V20 per-kala fields", "value": 0}
+      ],
+      "resolution": "Confirmed Altani is resonance-only in Domain 3 (Martial). Not an error.",
+      "status": "resolved",
+      "canonical_decision": "V20.1-ALTANI-RESONANCE-ONLY"
+    },
+    {
+      "conflict_id": "conf_007",
+      "field": "character_dimension_weights_json_structure",
+      "description": "The character_dimension_weights.json file was originally found to contain two concatenated top-level JSON documents",
+      "sources": [
+        {"source": "Original file", "value": "invalid — two root objects"},
+        {"source": "Corrected file", "value": "single root object"}
+      ],
+      "resolution": "Rewrote file with single root. Dimension count reduced from 21 to 20 by folding 'nurture' into 'devotion'.",
+      "status": "resolved",
+      "canonical_decision": "V20.1-CDIM-WEIGHTS-FIXED"
+    },
+    {
+      "conflict_id": "conf_008",
+      "field": "kama_lifecycle_states_count",
+      "description": "Some sources described 6 lifecycle states, others 7",
+      "sources": [
+        {"source": "Kama System V20 (final)", "value": 7},
+        {"source": "Earlier draft material", "value": 6}
+      ],
+      "resolution": "Canonical count is 7: discoverable, mentionable, imaginable, discussable, exploreable, participatory, runtime_enabled",
+      "status": "resolved",
+      "canonical_decision": "V20.1-KAMA-LIFECYCLE-7"
+    }
+  ],
+  "audit": {
+    "total_conflicts": 8,
+    "resolved": 8,
+    "resolved_with_gap": 1,
+    "unresolved": 0,
+    "audit_passed": true
+  }
+}

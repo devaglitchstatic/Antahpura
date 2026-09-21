@@ -1,0 +1,133 @@
+{
+  "schema": "antahpura.seva_registry",
+  "version": "20.0",
+  "total_offices": 14,
+  "offices": {
+    "seva_sovereign_guru": {
+      "holder": "char_maha_deva",
+      "institution": "institution_throne",
+      "authority_level": 10,
+      "responsibilities": ["sovereign_decree", "ritual_oversight", "succession_authority", "harem_authorization"],
+      "required_kalas": ["tarka_nyaya"],
+      "access_permissions": ["all_locations"],
+      "progression_path": ["heir", "prince", "sovereign", "guru_sovereign"]
+    },
+    "seva_princess_initiate": {
+      "holder": "char_kumari_rati",
+      "institution": "institution_throne",
+      "authority_level": 8,
+      "responsibilities": ["ritual_participation", "succession_training", "patronage_of_arts", "network_leadership_training"],
+      "required_kalas": ["maithuna", "gita", "kaku"],
+      "access_permissions": ["throne_hall", "zenana_inner", "yogic_pavilion", "ritual_chorus"],
+      "progression_path": ["princess", "primary_initiate", "queen_consort", "queen_regnant"]
+    },
+    "seva_senior_handmaiden": {
+      "holder": "char_padma",
+      "institution": "institution_zenana",
+      "authority_level": 3,
+      "responsibilities": ["personal_care_of_principal", "wardrobe_management", "household_relay", "ritual_presence"],
+      "required_kalas": ["sutra_karma", "mālya", "gandha_yukti"],
+      "access_permissions": ["princess_apartment", "service_corridors", "private_dining"],
+      "progression_path": ["apprentice", "handmaiden", "senior_handmaiden", "household_steward"]
+    },
+    "seva_handmaiden_apprentice": {
+      "holder": "char_champa",
+      "institution": "institution_zenana",
+      "authority_level": 2,
+      "responsibilities": ["service_tasks", "ritual_assistance", "animal_handling", "lore_learning"],
+      "required_kalas": ["pāśupālakya", "smṛti"],
+      "access_permissions": ["service_corridors", "palace_grounds", "munda_ritual_space"],
+      "progression_path": ["apprentice", "handmaiden", "clan_lorekeeper", "patala_medium"]
+    },
+    "seva_chief_protocol_steward": {
+      "holder": "char_anisa",
+      "institution": "institution_administrative_court",
+      "authority_level": 7,
+      "responsibilities": ["protocol_enforcement", "chronicle_record", "adjudication", "archive_management"],
+      "required_kalas": ["kala_protocol", "kala_writing", "kala_voice"],
+      "access_permissions": ["administrative_court", "archive", "zenana_outer", "throne_anteroom"],
+      "progression_path": ["scribe", "protocol_officer", "chief_protocol_steward", "grand_chronicler"]
+    },
+    "seva_chief_musician": {
+      "holder": "char_shrinagar",
+      "institution": "institution_yogic_pavilion",
+      "authority_level": 6,
+      "responsibilities": ["court_music_direction", "esoteric_preparation", "ritual_acoustics", "aesthetic_curation"],
+      "required_kalas": ["gita", "vadya", "vilepana", "gandha_yukti"],
+      "access_permissions": ["yogic_pavilion", "ritual_chorus", "zenana_inner", "esoteric_study_rooms"],
+      "progression_path": ["court_musician", "senior_performer", "chief_musician", "esoteric_master"]
+    },
+    "seva_primary_court_dancer": {
+      "holder": "char_tarana",
+      "institution": "institution_ritual_chorus",
+      "authority_level": 5,
+      "responsibilities": ["primary_performance", "dance_instruction", "ritual_movement_lead", "costume_design"],
+      "required_kalas": ["nṛtya", "lāsa", "sphoṭa", "pralamba", "pāda_sañcāra"],
+      "access_permissions": ["ritual_chorus", "performance_pavilion", "zenana_inner"],
+      "progression_path": ["dancer_initiate", "court_dancer", "primary_court_dancer", "chorus_master"]
+    },
+    "seva_noble_commander": {
+      "holder": "char_roxana",
+      "institution": "institution_military_perimeter",
+      "authority_level": 8,
+      "responsibilities": ["perimeter_command", "binding_mastery", "protocol_drill", "security_training"],
+      "required_kalas": ["granthana", "naga_pasa", "malla", "dhanurveda", "khadga"],
+      "access_permissions": ["military_perimeter", "throne_anteroom", "vault_exterior", "drill_yard"],
+      "progression_path": ["cadet", "officer", "commander", "noble_commander"]
+    },
+    "seva_vanguard_sentinel": {
+      "holder": "char_jahzara",
+      "institution": "institution_military_perimeter",
+      "authority_level": 6,
+      "responsibilities": ["princess_guard", "vanguard_lead", "blood_oath_ritual", "external_threat_response"],
+      "required_kalas": ["srama", "dharana", "tantra_yukti", "mudra"],
+      "access_permissions": ["military_perimeter", "zenana_threshold", "princess_apartment_guard_post"],
+      "progression_path": ["guard", "vanguard", "sentinel", "vanguard_commander"]
+    },
+    "seva_shadow_sentinel": {
+      "holder": "char_altani",
+      "institution": "institution_military_perimeter",
+      "authority_level": 6,
+      "responsibilities": ["stealth_patrol", "mounted_reconnaissance", "long_range_security", "shadow_operations"],
+      "required_kalas": ["dhanurveda", "senapatya", "vyayama", "srama", "dharana"],
+      "access_permissions": ["military_perimeter", "palace_walls", "steppe_corridor"],
+      "progression_path": ["outrider", "scout", "sentinel", "shadow_commander"]
+    },
+    "seva_vault_warden": {
+      "holder": "char_sevda",
+      "institution": "institution_subterranean_vaults",
+      "authority_level": 7,
+      "responsibilities": ["vault_custody", "containment_protocol", "hidden_archive_guard", "ritual_containment_lead"],
+      "required_kalas": ["granthana", "naga_pasa", "dharana", "avagaha"],
+      "access_permissions": ["subterranean_vaults", "hidden_archive", "containment_chambers"],
+      "progression_path": ["vault_attendant", "containment_officer", "vault_warden", "grand_containment_master"]
+    },
+    "seva_threshold_commander": {
+      "holder": "char_malika",
+      "institution": "institution_administrative_court",
+      "authority_level": 7,
+      "responsibilities": ["threshold_control", "access_granting", "gate_watch", "denial_authority"],
+      "required_kalas": ["kala_gatekeeping", "kala_threshold", "kala_protocol"],
+      "access_permissions": ["all_thresholds", "administrative_court", "zenana_gate", "vault_entry"],
+      "progression_path": ["gate_warden", "threshold_officer", "threshold_commander", "grand_gate_master"]
+    },
+    "seva_cipher_lorekeeper": {
+      "holder": "char_reva",
+      "institution": "institution_administrative_court",
+      "authority_level": 6,
+      "responsibilities": ["cipher_management", "poetic_record", "breath_discipline", "covert_communication"],
+      "required_kalas": ["kavya", "katha", "smṛti", "mantra"],
+      "access_permissions": ["archive", "administrative_court", "yogic_pavilion", "subterranean_vaults_read_only"],
+      "progression_path": ["scribe", "poet", "cipher_lorekeeper", "grand_lorekeeper"]
+    },
+    "seva_microtonal_calibrator": {
+      "holder": "char_svara",
+      "institution": "institution_ritual_chorus",
+      "authority_level": 5,
+      "responsibilities": ["microtonal_calibration", "instrument_craft", "ritual_acoustics", "cultural_artistry"],
+      "required_kalas": ["gita", "vadya", "nāṭya", "kāku", "chandas"],
+      "access_permissions": ["ritual_chorus", "performance_pavilion", "instrument_workshop"],
+      "progression_path": ["apprentice_musician", "calibrator", "microtonal_calibrator", "grand_artistic_director"]
+    }
+  }
+}

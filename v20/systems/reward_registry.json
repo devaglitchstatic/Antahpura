@@ -1,0 +1,166 @@
+{
+  "schema": "antahpura.reward_registry",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "total_rewards": 42,
+  "description": "Full catalog of every reward across categories. Integrates with aphrodisiacs_substances_registry.json, toys_registry.json, jewelry_registry.json, recovery_action_registry.json.",
+  "external_registries": {
+    "aphrodisiacs_substances_registry": "systems/aphrodisiacs_substances_registry.json",
+    "toys_registry": "systems/toys_registry.json",
+    "jewelry_registry": "systems/jewelry_registry.json",
+    "recovery_action_registry": "systems/recovery_action_registry.json"
+  },
+  "reward_categories": {
+    "verbal": {
+      "name": "Verbal Rewards",
+      "count": 8,
+      "primary_trigger": "dopamine",
+      "items": [
+        {"reward_id": "rw_verbal_praise", "name": "Specific Verbal Praise", "duration_seconds": 10, "affection_delta": 2, "trust_delta": 1, "preferred_by": ["char_svara", "char_kumari_rati", "char_padma"]},
+        {"reward_id": "rw_text_checkin", "name": "Mid-day Text Check-In", "duration_seconds": 30, "affection_delta": 3, "trust_delta": 2, "preferred_by": ["char_kumari_rati", "char_padma"]},
+        {"reward_id": "rw_public_acknowledgment", "name": "Public Acknowledgment", "duration_minutes": 2, "respect_delta": 4, "affection_delta": 2, "preferred_by": ["char_anisa", "char_roxana"]},
+        {"reward_id": "rw_private_confession", "name": "Private Confession", "duration_minutes": 10, "trust_delta": 6, "affection_delta": 5, "preferred_by": ["char_reva", "char_sevda"]},
+        {"reward_id": "rw_good_pet", "name": "\"Good Pet\"", "duration_seconds": 5, "affection_delta": 3, "trust_delta": 2, "preferred_by": ["char_champa", "char_padma"]},
+        {"reward_id": "rw_poetic_recitation", "name": "Poetic Recitation for Subject", "duration_minutes": 5, "aesthetic_delta": 3, "affection_delta": 4, "preferred_by": ["char_reva", "char_shrinagar"]},
+        {"reward_id": "rw_name_spoken_warmly", "name": "Name Spoken Warmly", "duration_seconds": 5, "oxytocin_trigger": true, "preferred_by": ["char_kumari_rati", "char_champa"]},
+        {"reward_id": "rw_formal_title", "name": "Formal Title Bestowed", "duration_minutes": 2, "respect_delta": 5, "authority_delta": 3, "preferred_by": ["char_malika", "char_anisa"]}
+      ]
+    },
+    "physical": {
+      "name": "Physical Rewards",
+      "count": 9,
+      "primary_trigger": "oxytocin",
+      "items": [
+        {"reward_id": "rw_forehead_kiss", "name": "Forehead Kiss", "duration_seconds": 5, "affection_delta": 4, "trust_delta": 3, "preferred_by": ["char_champa", "char_padma", "char_kumari_rati"]},
+        {"reward_id": "rw_hair_stroke", "name": "Hair Stroke", "duration_minutes": 2, "affection_delta": 3, "stress_reduction": 15, "preferred_by": ["char_shrinagar", "char_champa"]},
+        {"reward_id": "rw_heavy_hold", "name": "Heavy-Pressure Hold", "duration_seconds": 30, "affection_delta": 3, "trust_delta": 3, "preferred_by": ["char_jahzara", "char_roxana", "char_altani"]},
+        {"reward_id": "rw_collar_adjustment", "name": "Collar Adjustment", "duration_seconds": 10, "affection_delta": 2, "loyalty_delta": 3, "preferred_by": ["char_kumari_rati", "char_padma"]},
+        {"reward_id": "rw_hand_holding", "name": "Hand Holding", "duration_minutes": 5, "affection_delta": 3, "trust_delta": 2, "preferred_by": ["char_champa", "char_kumari_rati"]},
+        {"reward_id": "rw_cuddling", "name": "Cuddling", "duration_minutes": 15, "affection_delta": 5, "trust_delta": 4, "preferred_by": ["char_shrinagar", "char_padma", "char_champa"]},
+        {"reward_id": "rw_bathing_together", "name": "Ritual Bath Together", "duration_minutes": 30, "affection_delta": 6, "trust_delta": 5, "preferred_by": ["char_shrinagar", "char_kumari_rati"]},
+        {"reward_id": "rw_sleeping_entwined", "name": "Sleeping Entwined", "duration_hours": 8, "affection_delta": 8, "trust_delta": 6, "preferred_by": ["char_champa", "char_padma"]},
+        {"reward_id": "rw_oil_massage", "name": "Full-Body Oil Massage", "duration_minutes": 45, "affection_delta": 5, "trust_delta": 4, "preferred_by": ["char_shrinagar", "char_jahzara"]}
+      ]
+    },
+    "privilege": {
+      "name": "Privilege Rewards",
+      "count": 7,
+      "primary_trigger": "dopamine",
+      "items": [
+        {"reward_id": "rw_wardrobe_choice", "name": "Wardrobe Choice", "duration_minutes": 5, "autonomy_delta": 3, "preferred_by": ["char_kumari_rati", "char_tarana"]},
+        {"reward_id": "rw_menu_release", "name": "Menu Selection", "duration_minutes": 5, "autonomy_delta": 2, "preferred_by": ["char_malika", "char_padma"]},
+        {"reward_id": "rw_screen_pass", "name": "Media Selection", "duration_hours": 2, "autonomy_delta": 3, "preferred_by": ["char_tarana", "char_reva"]},
+        {"reward_id": "rw_furniture_shift", "name": "Furniture Privilege", "duration_hours": 3, "autonomy_delta": 4, "preferred_by": ["char_padma", "char_champa"]},
+        {"reward_id": "rw_position_release", "name": "Formal Posture Release", "duration_hours": 4, "autonomy_delta": 3, "preferred_by": ["char_anisa", "char_roxana"]},
+        {"reward_id": "rw_solo_time", "name": "Uninterrupted Solo Time", "duration_hours": 2, "autonomy_delta": 4, "preferred_by": ["char_sevda", "char_reva"]},
+        {"reward_id": "rw_late_sleepin", "name": "Late Sleep-In", "duration_hours": 2, "autonomy_delta": 3, "preferred_by": ["char_tarana", "char_champa"]}
+      ]
+    },
+    "token": {
+      "name": "Symbolic Token Rewards",
+      "count": 6,
+      "primary_trigger": "serotonin",
+      "integration": "References jewelry_registry.json and toys_registry.json",
+      "items": [
+        {"reward_id": "rw_sticker_chart", "name": "Sticker on Tracking Chart", "duration_seconds": 5, "affection_delta": 2, "serotonin_boost": "moderate", "preferred_by": ["char_champa", "char_padma"]},
+        {"reward_id": "rw_pocket_token", "name": "Pocket Token", "duration_seconds": 5, "trust_delta": 3, "reference_registry": "jewelry_registry", "preferred_by": ["char_reva", "char_anisa"]},
+        {"reward_id": "rw_collar_ring", "name": "Collar Ring", "duration_minutes": 10, "loyalty_delta": 5, "reference_registry": "jewelry_registry", "preferred_by": ["char_kumari_rati"]},
+        {"reward_id": "rw_bracelet_gift", "name": "Bracelet Gift", "duration_minutes": 15, "affection_delta": 5, "reference_registry": "jewelry_registry", "preferred_by": ["char_jahzara", "char_roxana"]},
+        {"reward_id": "rw_hair_ornament", "name": "Hair Ornament Gift", "duration_minutes": 10, "aesthetic_delta": 4, "reference_registry": "jewelry_registry", "preferred_by": ["char_svara", "char_shrinagar"]},
+        {"reward_id": "rw_pet_bells", "name": "Pet Bells Gift", "duration_minutes": 5, "playfulness_delta": 5, "reference_registry": "toys_registry", "preferred_by": ["char_champa"]}
+      ]
+    },
+    "sensory": {
+      "name": "Sensory Treat Rewards",
+      "count": 7,
+      "primary_trigger": "dopamine",
+      "integration": "References aphrodisiacs_substances_registry.json",
+      "items": [
+        {"reward_id": "rw_sweet_treat", "name": "Sweet Treat", "duration_seconds": 10, "dopamine_boost": "moderate", "preferred_by": ["char_shrinagar", "char_malika"]},
+        {"reward_id": "rw_warm_drink", "name": "Perfectly Timed Warm Drink", "duration_minutes": 5, "dopamine_boost": "moderate", "preferred_by": ["char_shrinagar", "char_malika"]},
+        {"reward_id": "rw_scent_gift", "name": "Rare Scent Gift", "duration_minutes": 10, "reference_registry": "aphrodisiacs_substances_registry", "preferred_by": ["char_shrinagar"]},
+        {"reward_id": "rw_oil_anointment", "name": "Ritual Oil Anointment", "duration_minutes": 20, "reference_registry": "aphrodisiacs_substances_registry", "preferred_by": ["char_shrinagar", "char_reva"]},
+        {"reward_id": "rw_saffron_tea", "name": "Saffron Kahwa Tea", "duration_minutes": 15, "reference_registry": "aphrodisiacs_substances_registry", "preferred_by": ["char_shrinagar", "char_kumari_rati"]},
+        {"reward_id": "rw_incense_session", "name": "Private Incense Session", "duration_minutes": 30, "reference_registry": "aphrodisiacs_substances_registry", "preferred_by": ["char_sevda", "char_shrinagar"]},
+        {"reward_id": "rw_flower_bath", "name": "Flower Bath", "duration_minutes": 45, "aesthetic_delta": 5, "preferred_by": ["char_kumari_rati", "char_shrinagar"]}
+      ]
+    },
+    "macro": {
+      "name": "Macro Rewards",
+      "count": 5,
+      "primary_trigger": "endorphins+dopamine+oxytocin",
+      "items": [
+        {"reward_id": "rw_full_scene_release", "name": "Full Scene Release", "duration_hours": 2, "affection_delta": 10, "trust_delta": 8, "loyalty_delta": 8, "kama_advance": true, "kala_advance": true, "preferred_by": ["char_kumari_rati", "char_roxana", "char_shrinagar"]},
+        {"reward_id": "rw_total_regression", "name": "Total Regression (Little/Pet/Primal)", "duration_hours": 4, "affection_delta": 12, "trust_delta": 10, "loyalty_delta": 10, "vulnerability_delta": 5, "preferred_by": ["char_champa", "char_padma"]},
+        {"reward_id": "rw_earned_physical_release", "name": "Earned Physical Release", "duration_minutes": 30, "affection_delta": 8, "trust_delta": 6, "loyalty_delta": 5, "preferred_by": ["char_kumari_rati", "char_tarana"]},
+        {"reward_id": "rw_institutional_recognition", "name": "Institutional Recognition", "duration_days": 1, "respect_delta": 10, "loyalty_delta": 8, "institutional_reputation_delta": 5, "access_permission_advance": true, "preferred_by": ["char_anisa", "char_roxana", "char_malika"]},
+        {"reward_id": "rw_synergy_activation", "name": "Kala Synergy Activation", "duration_hours": 1, "kala_synergy_unlock": true, "preferred_by": ["char_svara", "char_roxana", "char_jahzara"]}
+      ]
+    }
+  },
+  "character_reward_preferences": {
+    "char_maha_deva": {
+      "top_rewards": ["rw_public_acknowledgment", "rw_institutional_recognition", "rw_formal_title"],
+      "avoid": ["rw_sticker_chart", "rw_pet_bells"]
+    },
+    "char_kumari_rati": {
+      "top_rewards": ["rw_collar_adjustment", "rw_private_confession", "rw_full_scene_release", "rw_flower_bath"],
+      "avoid": []
+    },
+    "char_padma": {
+      "top_rewards": ["rw_good_pet", "rw_cuddling", "rw_sticker_chart", "rw_sleeping_entwined"],
+      "avoid": ["rw_public_acknowledgment"]
+    },
+    "char_champa": {
+      "top_rewards": ["rw_pet_bells", "rw_cuddling", "rw_total_regression", "rw_sticker_chart"],
+      "avoid": []
+    },
+    "char_anisa": {
+      "top_rewards": ["rw_formal_title", "rw_institutional_recognition", "rw_pocket_token"],
+      "avoid": ["rw_total_regression"]
+    },
+    "char_shrinagar": {
+      "top_rewards": ["rw_oil_massage", "rw_flower_bath", "rw_scent_gift", "rw_cuddling"],
+      "avoid": []
+    },
+    "char_tarana": {
+      "top_rewards": ["rw_wardrobe_choice", "rw_earned_physical_release", "rw_screen_pass"],
+      "avoid": ["rw_formal_title"]
+    },
+    "char_roxana": {
+      "top_rewards": ["rw_heavy_hold", "rw_public_acknowledgment", "rw_full_scene_release"],
+      "avoid": ["rw_sticker_chart", "rw_good_pet"]
+    },
+    "char_jahzara": {
+      "top_rewards": ["rw_heavy_hold", "rw_oil_massage", "rw_bracelet_gift"],
+      "avoid": ["rw_sticker_chart"]
+    },
+    "char_altani": {
+      "top_rewards": ["rw_heavy_hold", "rw_solo_time"],
+      "avoid": ["rw_public_acknowledgment", "rw_formal_title"]
+    },
+    "char_sevda": {
+      "top_rewards": ["rw_solo_time", "rw_incense_session", "rw_private_confession"],
+      "avoid": ["rw_public_acknowledgment"]
+    },
+    "char_malika": {
+      "top_rewards": ["rw_formal_title", "rw_institutional_recognition", "rw_menu_release"],
+      "avoid": ["rw_total_regression"]
+    },
+    "char_reva": {
+      "top_rewards": ["rw_private_confession", "rw_poetic_recitation", "rw_pocket_token"],
+      "avoid": ["rw_public_acknowledgment"]
+    },
+    "char_svara": {
+      "top_rewards": ["rw_hair_ornament", "rw_verbal_praise", "rw_synergy_activation"],
+      "avoid": []
+    }
+  },
+  "audit": {
+    "total_rewards": 42,
+    "categories": 6,
+    "characters_mapped": 14,
+    "external_registries_referenced": 4,
+    "audit_passed": true
+  }
+}

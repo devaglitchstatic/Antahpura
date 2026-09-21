@@ -1,0 +1,55 @@
+{
+  "schema": "antahpura.kama_families",
+  "version": "20.1",
+  "total_families": 8,
+  "families": {
+    "authority_protocol": {
+      "name": "Authority & Protocol",
+      "description": "Power exchange, ritual authority, protocol enforcement, access control",
+      "primary_characters": ["char_maha_deva", "char_anisa", "char_malika"],
+      "base_dimensions": ["authority", "discipline", "restraint"]
+    },
+    "devotion_service": {
+      "name": "Devotion & Service",
+      "description": "Servitude, care, nurturing, ritual offering",
+      "primary_characters": ["char_padma", "char_kumari_rati", "char_shrinagar"],
+      "base_dimensions": ["devotion", "service", "trust"]
+    },
+    "sensory_aesthetic": {
+      "name": "Sensory & Aesthetic",
+      "description": "Sensory refinement, adornment, bathing, aesthetic presentation",
+      "primary_characters": ["char_shrinagar", "char_svara", "char_jahzara"],
+      "base_dimensions": ["aesthetic", "precision", "expression"]
+    },
+    "movement_performance": {
+      "name": "Movement & Performance",
+      "description": "Body, dance, acrobatics, kinetic expression",
+      "primary_characters": ["char_tarana", "char_champa"],
+      "base_dimensions": ["performance", "playfulness", "novelty"]
+    },
+    "restraint_containment": {
+      "name": "Restraint & Containment",
+      "description": "Rope, binding, encasement, stillness, restraint engineering",
+      "primary_characters": ["char_roxana", "char_sevda", "char_altani"],
+      "base_dimensions": ["restraint", "precision", "stillness"]
+    },
+    "voice_literary": {
+      "name": "Voice & Literary",
+      "description": "Voice, poetry, writing, cipher, speech",
+      "primary_characters": ["char_reva", "char_anisa", "char_svara"],
+      "base_dimensions": ["expression", "aesthetic", "precision"]
+    },
+    "hidden_occult": {
+      "name": "Hidden & Occult",
+      "description": "Trance, mantra, energetic practice, ritual isolation",
+      "primary_characters": ["char_jahzara", "char_sevda", "char_svara"],
+      "base_dimensions": ["rituality", "intensity", "privacy"]
+    },
+    "exploration_novelty": {
+      "name": "Exploration & Novelty",
+      "description": "Discovery, curiosity, experimentation, boundary testing",
+      "primary_characters": ["char_kumari_rati", "char_champa"],
+      "base_dimensions": ["curiosity", "novelty", "transgression"]
+    }
+  }
+}

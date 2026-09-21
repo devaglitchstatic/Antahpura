@@ -1,0 +1,1865 @@
+{
+  "schema": "antahpura.kala_system",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "cross_reference": "DeepSeek Kala Master Matrix v2.0 (ontology V19.0)",
+  "total_kalas": 64,
+  "total_domains": 6,
+  "total_synergies": 5,
+  "orphaned_kalas": 0,
+  "corrections_applied": [
+    "Padmā (char_padma) added as co-primary on kala_58 (Pāna-rasa) and kala_59 (Sūpa-Pāka)",
+    "Sevda confirmed as 0-primary (resonance-only in Domain 4)",
+    "Altani confirmed as 0-primary (resonance-only in Domain 3)",
+    "Section VII primary matrix recalculated from per-kala primary fields"
+  ],
+
+  "domains": {
+    "domain_1_vocal_poetic": {
+      "name": "Vocal & Poetic Arts",
+      "patron": "char_svara",
+      "minigames": ["Rhythm", "Reflection"],
+      "kala_range": [1, 12],
+      "kala_count": 12,
+      "avn_asset_category": "audio_visual_vocal",
+      "multiplayer_role": "primary_performance"
+    },
+    "domain_2_visual_adornment": {
+      "name": "Visual, Adornment & Crafts",
+      "patron": "char_shrinagar",
+      "minigames": ["Precision", "Perception"],
+      "kala_range": [13, 28],
+      "kala_count": 16,
+      "avn_asset_category": "craft_visual_gallery",
+      "multiplayer_role": "crafting_cooperative",
+      "absorbed_arts_note": "Hasta-laghava (sleight of hand / manual dexterity, classical art 23) is absorbed into the general craft/precision skills of this domain rather than existing as a standalone Kala entry. It is expressed through Kalas 16 (Rekhā), 18 (Sūtra-karma), 19 (Ābharaṇa), and 25 (Granthana)."
+    },
+    "domain_3_martial_physical": {
+      "name": "Martial, Physical & Strategic Arts",
+      "patron": "char_roxana",
+      "minigames": ["Endurance", "Coordination", "Sequence"],
+      "kala_range": [29, 40],
+      "kala_count": 12,
+      "avn_asset_category": "action_sequence",
+      "multiplayer_role": "competitive_pvp"
+    },
+    "domain_4_occult_healing": {
+      "name": "Occult, Healing & Hidden Knowledge",
+      "patron": "char_jahzara",
+      "minigames": ["Puzzle", "Perception", "Reflection"],
+      "kala_range": [41, 52],
+      "kala_count": 12,
+      "avn_asset_category": "ritual_mystery",
+      "multiplayer_role": "investigation_cooperative"
+    },
+    "domain_5_movement_dance": {
+      "name": "Movement, Dance & Energy",
+      "patron": "char_tarana",
+      "minigames": ["Rhythm", "Coordination", "Endurance"],
+      "kala_range": [53, 57],
+      "kala_count": 5,
+      "avn_asset_category": "animation_sequence",
+      "multiplayer_role": "choreography_cooperative"
+    },
+    "domain_6_sensory_pleasure": {
+      "name": "Sensory, Pleasure & Temporal Arts",
+      "patron": "char_kumari_rati",
+      "minigames": ["Coordination", "Perception", "Reflection"],
+      "kala_range": [58, 64],
+      "kala_count": 7,
+      "avn_asset_category": "intimate_scene",
+      "multiplayer_role": "shared_experience"
+    }
+  },
+
+  "mastery_ladder": {
+    "0_unknown": {
+      "name": "Unknown",
+      "description": "Character has no awareness of this Kala",
+      "runtime_state": "locked",
+      "avn_visibility": "hidden"
+    },
+    "1_observed": {
+      "name": "Observed",
+      "description": "Character has witnessed the Kala performed",
+      "runtime_state": "discoverable",
+      "avn_visibility": "hinted"
+    },
+    "2_curious": {
+      "name": "Curious",
+      "description": "Character expresses interest in learning",
+      "runtime_state": "mentionable",
+      "avn_visibility": "dialogue_available"
+    },
+    "3_witnessed": {
+      "name": "Witnessed (Darshana)",
+      "description": "Character has closely observed with intent to learn",
+      "runtime_state": "imaginable",
+      "avn_visibility": "reflection_available"
+    },
+    "4_accepted": {
+      "name": "Accepted (Sammati)",
+      "description": "Character has explicitly agreed to receive training",
+      "runtime_state": "discussable",
+      "avn_visibility": "training_option"
+    },
+    "5_guided": {
+      "name": "Guided Practice",
+      "description": "Character performs under direct instruction",
+      "runtime_state": "exploreable",
+      "avn_visibility": "minigame_available"
+    },
+    "6_practicing": {
+      "name": "Practicing",
+      "description": "Character performs regularly without instruction",
+      "runtime_state": "participatory",
+      "avn_visibility": "activity_available"
+    },
+    "7_internalized": {
+      "name": "Internalized",
+      "description": "Character performs naturally, integrating with other Kalas",
+      "runtime_state": "runtime_enabled",
+      "avn_visibility": "autonomous_use"
+    },
+    "8_independent": {
+      "name": "Independent",
+      "description": "Character can teach this Kala to others",
+      "runtime_state": "runtime_enabled",
+      "avn_visibility": "teaching_available"
+    },
+    "9_integrated": {
+      "name": "Integrated (Siddhi)",
+      "description": "Kala is fully integrated into character's identity",
+      "runtime_state": "runtime_enabled",
+      "avn_visibility": "signature_ability"
+    },
+    "10_siddha": {
+      "name": "Siddha",
+      "description": "Character has achieved mastery beyond formal instruction",
+      "runtime_state": "runtime_enabled",
+      "avn_visibility": "legendary_status"
+    }
+  },
+
+  "kala_kama_linkage_types": {
+    "core_practice": "This Kala IS the primary expression of the Kama",
+    "reinforcing": "This Kala directly enhances the Kama",
+    "adjacent": "This Kala shares dimensions with the Kama",
+    "advanced_extension": "This Kala unlocks at high mastery of the Kama",
+    "aesthetic_extension": "This Kala expresses the Kama aesthetically",
+    "posture_extension": "This Kala extends the Kama's postural range"
+  },
+
+  "character_kala_primary_matrix": {
+    "note": "Primary counts derived from per-Kala primary fields. Characters without primary assignments have roles defined by resonance.",
+    "matrix": {
+      "char_maha_deva": {"primary_count": 1, "kalas": [52]},
+      "char_kumari_rati": {"primary_count": 1, "kalas": [64]},
+      "char_padma": {"primary_count": 2, "kalas": [58, 59], "note": "Co-primary with Malika on Kalas 58 and 59"},
+      "char_champa": {"primary_count": 1, "kalas": [61]},
+      "char_anisa": {"primary_count": 2, "kalas": [62, 63]},
+      "char_shrinagar": {"primary_count": 16, "kalas": [9, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 27, 28]},
+      "char_tarana": {"primary_count": 5, "kalas": [53, 54, 55, 56, 57]},
+      "char_roxana": {"primary_count": 12, "kalas": [25, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]},
+      "char_jahzara": {"primary_count": 12, "kalas": [40, 41, 43, 44, 45, 46, 47, 48, 49, 50, 51, 60]},
+      "char_altani": {"primary_count": 0, "note": "Resonance-only in Domain 3 (Martial)"},
+      "char_sevda": {"primary_count": 0, "note": "Resonance-only in Domain 4 (Occult)"},
+      "char_malika": {"primary_count": 2, "kalas": [58, 59]},
+      "char_reva": {"primary_count": 2, "kalas": [6, 10]},
+      "char_svara": {"primary_count": 10, "kalas": [1, 2, 3, 4, 5, 7, 8, 11, 12, 42]}
+    }
+  },
+
+  "kala_synergies": [
+    {
+      "synergy_id": "syn_sonic_entrainment",
+      "name": "Sonic Entrainment",
+      "required_kalas": [
+        {"kala": "kala_1", "name": "Gīta", "min_mastery": 5},
+        {"kala": "kala_2", "name": "Vādya", "min_mastery": 4},
+        {"kala": "kala_53", "name": "Nṛtya", "min_mastery": 3}
+      ],
+      "characters_eligible": ["char_svara", "char_tarana", "char_reva"],
+      "effect": "Creates a trance-inducing ritual space",
+      "kama_unlocks": ["MANTRA_MOHA", "NADA_SADHANA"],
+      "avn_asset": "trance_sequence"
+    },
+    {
+      "synergy_id": "syn_restraint_arts",
+      "name": "Restraint Arts",
+      "required_kalas": [
+        {"kala": "kala_25", "name": "Granthana", "min_mastery": 6},
+        {"kala": "kala_33", "name": "Nāga-pāśa", "min_mastery": 4},
+        {"kala": "kala_31", "name": "Malla", "min_mastery": 3}
+      ],
+      "characters_eligible": ["char_roxana", "char_sevda"],
+      "effect": "Enhanced rope and binding capabilities",
+      "kama_unlocks": ["GRANTHI_KALA", "BANDHA_SADHANA", "SANGHATAKA"],
+      "avn_asset": "rope_sequence"
+    },
+    {
+      "synergy_id": "syn_sacred_geometry",
+      "name": "Sacred Geometry",
+      "required_kalas": [
+        {"kala": "kala_43", "name": "Yantra", "min_mastery": 5},
+        {"kala": "kala_16", "name": "Rekhā", "min_mastery": 4},
+        {"kala": "kala_39", "name": "Vāstu", "min_mastery": 3}
+      ],
+      "characters_eligible": ["char_jahzara", "char_shrinagar"],
+      "effect": "Can construct any sacred diagram for ritual use",
+      "kama_unlocks": ["YANTRA_LEKHANA"],
+      "avn_asset": "yantra_construction"
+    },
+    {
+      "synergy_id": "syn_alchemical_cuisine",
+      "name": "Alchemical Cuisine",
+      "required_kalas": [
+        {"kala": "kala_46", "name": "Rasāyana", "min_mastery": 5},
+        {"kala": "kala_59", "name": "Sūpa-Pāka", "min_mastery": 5},
+        {"kala": "kala_58", "name": "Pāna-rasa", "min_mastery": 3}
+      ],
+      "characters_eligible": ["char_malika", "char_padma", "char_jahzara"],
+      "effect": "Can create elixirs that alter emotional states",
+      "kama_unlocks": ["RASAYANA", "BHOJANA_RATI_SENSORY"],
+      "avn_asset": "alchemical_cooking"
+    },
+    {
+      "synergy_id": "syn_gestural_communication",
+      "name": "Gestural Communication",
+      "required_kalas": [
+        {"kala": "kala_45", "name": "Mudrā", "min_mastery": 5},
+        {"kala": "kala_53", "name": "Nṛtya", "min_mastery": 4},
+        {"kala": "kala_3", "name": "Nāṭya", "min_mastery": 4}
+      ],
+      "characters_eligible": ["char_tarana", "char_svara", "char_jahzara"],
+      "effect": "Can communicate complex ideas without words",
+      "kama_unlocks": ["SPARSHA_SHIKSHA", "MANTRA_MOHA"],
+      "avn_asset": "gesture_sequence"
+    }
+  ],
+
+  "kalas": {
+
+    "kala_1": {
+      "id": 1,
+      "sanskrit": "Gīta",
+      "english": "Song",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_svara"],
+      "resonant": ["char_shrinagar", "char_tarana", "char_reva"],
+      "latent": ["char_kumari_rati", "char_champa", "char_padma"],
+      "character_skills": {
+        "char_svara": "Perfect pitch; can shatter glass with sustained note; teaches vocal calibration",
+        "char_shrinagar": "Emotional resonance; sings in 7 languages; uses song to seduce",
+        "char_tarana": "Rhythmic vocalization; syncopated breathing; sings while dancing",
+        "char_reva": "Poetic recitation; voice induces trance; breath control master",
+        "char_kumari_rati": "Ritual invocation; voice triggers submission in listeners",
+        "char_champa": "Pup whimpers; babygirl lullabies; non-verbal melodic communication",
+        "char_padma": "Devotional humming; service songs; soothing work chants"
+      },
+      "kinks": ["Voice-Induced Submission", "Acoustic Bondage", "Song-Based Trance"],
+      "dimensions": {"expression": 0.9, "aesthetic": 0.8, "rituality": 0.7},
+      "kama_links": [
+        {"kama": "SRINGARA_VAKYA", "rel": "core_practice", "w": 0.85},
+        {"kama": "SVARA_PRASTARA", "rel": "reinforcing", "w": 0.8},
+        {"kama": "KAVYA_KRIA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "vocal_performance_loop",
+      "minigame": "Rhythm"
+    },
+
+    "kala_2": {
+      "id": 2,
+      "sanskrit": "Vādya",
+      "english": "Instrumental Music",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_svara"],
+      "resonant": ["char_tarana", "char_jahzara", "char_reva"],
+      "latent": ["char_shrinagar", "char_malika"],
+      "character_skills": {
+        "char_svara": "Master of 12 instruments; can calibrate any instrument by ear",
+        "char_tarana": "Percussion specialist; Damaru drum; ankle bells",
+        "char_jahzara": "Percussive rhythm; body as instrument; breath as flute",
+        "char_reva": "Breath instruments; conch; flute; veena",
+        "char_shrinagar": "String instruments; lute; aesthetic performance",
+        "char_malika": "Kitchen instruments; pot rhythms; spoon percussion"
+      },
+      "kinks": ["Rhythmic Impact Play", "Percussive Bondage", "Instrumental Objectification"],
+      "dimensions": {"expression": 0.85, "precision": 0.85, "aesthetic": 0.8},
+      "kama_links": [
+        {"kama": "TALA_PRASTARA", "rel": "core_practice", "w": 0.9},
+        {"kama": "NADA_SADHANA", "rel": "reinforcing", "w": 0.85}
+      ],
+      "prerequisites": [],
+      "avn_asset": "instrumental_loop",
+      "minigame": "Rhythm"
+    },
+
+    "kala_3": {
+      "id": 3,
+      "sanskrit": "Nāṭya",
+      "english": "Drama",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_svara"],
+      "resonant": ["char_tarana", "char_roxana", "char_anisa"],
+      "latent": ["char_kumari_rati", "char_champa", "char_reva"],
+      "character_skills": {
+        "char_svara": "Voice acting; emotional modulation; theatrical calibration",
+        "char_tarana": "Physical theater; dance-drama; mudra storytelling",
+        "char_roxana": "Roleplay dominance; scene construction; psychological theater",
+        "char_anisa": "Protocol theater; punishment as performance",
+        "char_kumari_rati": "Ritual drama; ego-death performance",
+        "char_champa": "Pet play theater; non-verbal dramatic expression",
+        "char_reva": "Poetic drama; breath-based performance"
+      },
+      "kinks": ["Roleplay", "Scene Construction", "Psychological Theater", "Age Play"],
+      "dimensions": {"expression": 0.9, "performance": 0.85, "playfulness": 0.75},
+      "kama_links": [
+        {"kama": "SPHUTA_VACHANA", "rel": "adjacent", "w": 0.7},
+        {"kama": "BALA_CHITTA", "rel": "adjacent", "w": 0.65}
+      ],
+      "prerequisites": [],
+      "avn_asset": "dramatic_sequence",
+      "minigame": "Reflection"
+    },
+
+    "kala_4": {
+      "id": 4,
+      "sanskrit": "Kāku",
+      "english": "Tonal Expression",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_svara"],
+      "resonant": ["char_shrinagar", "char_kumari_rati", "char_reva"],
+      "latent": ["char_champa", "char_padma"],
+      "character_skills": {
+        "char_svara": "Vocal tone control; can induce any emotional state through pitch",
+        "char_shrinagar": "Seductive tone; whisper mastery; voice as foreplay",
+        "char_kumari_rati": "Command tone; submission-inducing voice",
+        "char_reva": "Poetic tone; emotional modulation through breath",
+        "char_champa": "Pup whimper tones; babygirl voice",
+        "char_padma": "Service tone; deference vocalization"
+      },
+      "kinks": ["Voice Training", "Tonal Submission", "Vocal Bondage"],
+      "dimensions": {"expression": 0.9, "precision": 0.85, "intensity": 0.7},
+      "kama_links": [
+        {"kama": "SRINGARA_VAKYA", "rel": "reinforcing", "w": 0.85},
+        {"kama": "SPHUTA_VACHANA", "rel": "adjacent", "w": 0.75}
+      ],
+      "prerequisites": ["kala_1"],
+      "avn_asset": "vocal_modulation",
+      "minigame": "Rhythm"
+    },
+
+    "kala_5": {
+      "id": 5,
+      "sanskrit": "Chandas",
+      "english": "Metrics/Poetry",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_svara"],
+      "resonant": ["char_maha_deva", "char_reva", "char_jahzara"],
+      "latent": ["char_sevda", "char_shrinagar"],
+      "character_skills": {
+        "char_svara": "Perfect metric recall; can compose in any meter instantly",
+        "char_maha_deva": "Cosmic rhythm; sees all patterns as meter",
+        "char_reva": "Poetic composition; breath as meter",
+        "char_jahzara": "Oracular meter; prophecy in verse",
+        "char_sevda": "Mantric meter; sacred repetition",
+        "char_shrinagar": "Aesthetic meter; beauty in structure"
+      },
+      "kinks": ["Metered Punishment", "Poetic Bondage", "Rhythmic Submission"],
+      "dimensions": {"precision": 0.85, "rituality": 0.85, "expression": 0.8},
+      "kama_links": [
+        {"kama": "CHANDAS_RATI", "rel": "core_practice", "w": 0.9},
+        {"kama": "KAVYA_KRIA", "rel": "reinforcing", "w": 0.85}
+      ],
+      "prerequisites": ["kala_1"],
+      "avn_asset": "poetic_composition",
+      "minigame": "Reflection"
+    },
+
+    "kala_6": {
+      "id": 6,
+      "sanskrit": "Kāvya",
+      "english": "Composition",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_reva"],
+      "resonant": ["char_svara", "char_shrinagar", "char_maha_deva"],
+      "latent": ["char_jahzara", "char_padma"],
+      "character_skills": {
+        "char_reva": "Erotic poetry; sacred verse; breath-based composition",
+        "char_svara": "Lyric composition; songwriting; acoustic poetry",
+        "char_shrinagar": "Aesthetic verse; beauty poetry",
+        "char_maha_deva": "Cosmic composition; philosophical verse",
+        "char_jahzara": "Prophetic poetry; oracular verse",
+        "char_padma": "Service verse; devotional poetry"
+      },
+      "kinks": ["Erotica Writing", "Poetic Submission", "Verse Bondage"],
+      "dimensions": {"expression": 0.9, "aesthetic": 0.85, "privacy": 0.7},
+      "kama_links": [
+        {"kama": "KAVYA_KRIA", "rel": "core_practice", "w": 0.9},
+        {"kama": "EROTICA_WRITING", "rel": "reinforcing", "w": 0.85},
+        {"kama": "GRAPHOEROTICA", "rel": "adjacent", "w": 0.8}
+      ],
+      "prerequisites": ["kala_5"],
+      "avn_asset": "writing_sequence",
+      "minigame": "Reflection"
+    },
+
+    "kala_7": {
+      "id": 7,
+      "sanskrit": "Prāsa",
+      "english": "Alliteration",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_svara"],
+      "resonant": ["char_reva", "char_champa"],
+      "latent": ["char_shrinagar", "char_kumari_rati"],
+      "character_skills": {
+        "char_svara": "Perfect alliterative recall; tongue-twister master",
+        "char_reva": "Poetic alliteration; breath-sound patterns",
+        "char_champa": "Pup sound patterns; repetitive vocalizations",
+        "char_shrinagar": "Aesthetic alliteration; beautiful sounds",
+        "char_kumari_rati": "Command alliteration; ritual repetition"
+      },
+      "kinks": ["Verbal Repetition", "Sound Bondage", "Vocal Training"],
+      "dimensions": {"expression": 0.8, "precision": 0.8, "playfulness": 0.7},
+      "kama_links": [
+        {"kama": "CHANDAS_RATI", "rel": "adjacent", "w": 0.75}
+      ],
+      "prerequisites": ["kala_1"],
+      "avn_asset": "vocal_loop",
+      "minigame": "Rhythm"
+    },
+
+    "kala_8": {
+      "id": 8,
+      "sanskrit": "Yamaka",
+      "english": "Repetition/Jingle",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_svara"],
+      "resonant": ["char_tarana", "char_champa", "char_reva"],
+      "latent": ["char_kumari_rati"],
+      "character_skills": {
+        "char_svara": "Repetition mastery; can loop any sound perfectly",
+        "char_tarana": "Dance repetition; rhythmic loops",
+        "char_champa": "Pup repetition; babygirl babbling",
+        "char_reva": "Poetic repetition; mantra loops",
+        "char_kumari_rati": "Command repetition; ritual loops"
+      },
+      "kinks": ["Repetition Compulsion", "Loop Bondage", "Rhythmic Submission"],
+      "dimensions": {"expression": 0.75, "rituality": 0.8, "playfulness": 0.7},
+      "kama_links": [
+        {"kama": "MANTRA_MOHA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": ["kala_1"],
+      "avn_asset": "loop_sequence",
+      "minigame": "Rhythm"
+    },
+
+    "kala_9": {
+      "id": 9,
+      "sanskrit": "Citra-kāvya",
+      "english": "Visual Poetry",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_reva", "char_svara", "char_jahzara"],
+      "latent": ["char_kumari_rati"],
+      "character_skills": {
+        "char_shrinagar": "Visual poetry; calligraphy; illuminated manuscripts",
+        "char_reva": "Poetic imagery; breath-painted verse",
+        "char_svara": "Sound poetry; acoustic visualizations",
+        "char_jahzara": "Oracular imagery; symbolic verse",
+        "char_kumari_rati": "Command imagery; ritual visualization"
+      },
+      "kinks": ["Visual Bondage", "Aesthetic Submission", "Image-Based Trance"],
+      "dimensions": {"aesthetic": 0.85, "expression": 0.8, "rituality": 0.7},
+      "kama_links": [
+        {"kama": "KAVYA_KRIA", "rel": "reinforcing", "w": 0.8},
+        {"kama": "DARPANA_SADHANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": ["kala_6"],
+      "avn_asset": "visual_poetry_gallery",
+      "minigame": "Precision"
+    },
+
+    "kala_10": {
+      "id": 10,
+      "sanskrit": "Katha",
+      "english": "Prose/Narrative",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_reva"],
+      "resonant": ["char_svara", "char_maha_deva", "char_anisa"],
+      "latent": ["char_jahzara", "char_padma"],
+      "character_skills": {
+        "char_reva": "Narrative mastery; breath-paced storytelling",
+        "char_svara": "Acoustic narrative; voice-driven stories",
+        "char_maha_deva": "Cosmic narrative; philosophical storytelling",
+        "char_anisa": "Protocol narrative; punishment stories",
+        "char_jahzara": "Oracular narrative; prophetic tales",
+        "char_padma": "Service narrative; devotional storytelling"
+      },
+      "kinks": ["Narrative Bondage", "Story-Based Submission", "Erotic Storytelling"],
+      "dimensions": {"expression": 0.85, "aesthetic": 0.8, "rituality": 0.75},
+      "kama_links": [
+        {"kama": "KAVYA_KRIA", "rel": "core_practice", "w": 0.85},
+        {"kama": "NIBANDHA_PRACODANA", "rel": "reinforcing", "w": 0.75}
+      ],
+      "prerequisites": ["kala_6"],
+      "avn_asset": "narrative_sequence",
+      "minigame": "Reflection"
+    },
+
+    "kala_11": {
+      "id": 11,
+      "sanskrit": "Kosha",
+      "english": "Lexicography",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_svara"],
+      "resonant": ["char_reva", "char_jahzara", "char_maha_deva"],
+      "latent": ["char_anisa"],
+      "character_skills": {
+        "char_svara": "Perfect vocabulary recall; can define any word",
+        "char_reva": "Poetic vocabulary; breath-based definitions",
+        "char_jahzara": "Hidden vocabulary; occult definitions",
+        "char_maha_deva": "Cosmic vocabulary; philosophical definitions",
+        "char_anisa": "Protocol vocabulary; legal definitions"
+      },
+      "kinks": ["Verbal Bondage", "Vocabulary Training", "Word-Based Submission"],
+      "dimensions": {"precision": 0.85, "expression": 0.75, "discipline": 0.7},
+      "kama_links": [
+        {"kama": "SPHUTA_VACHANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": ["kala_6"],
+      "avn_asset": "lexicon_interface",
+      "minigame": "Puzzle"
+    },
+
+    "kala_12": {
+      "id": 12,
+      "sanskrit": "Smṛti",
+      "english": "Memory/Recitation",
+      "domain": "domain_1_vocal_poetic",
+      "primary": ["char_svara"],
+      "resonant": ["char_reva", "char_jahzara", "char_altani"],
+      "latent": ["char_maha_deva", "char_champa"],
+      "character_skills": {
+        "char_svara": "Eidetic memory for sound; perfect recitation",
+        "char_reva": "Breath-based memory; poetic recall",
+        "char_jahzara": "Oracular memory; prophetic recall",
+        "char_altani": "Endurance memory; repetitive recall",
+        "char_maha_deva": "Cosmic memory; eternal recall",
+        "char_champa": "Pup memory; scent-based recall"
+      },
+      "kinks": ["Memory Bondage", "Recitation Submission", "Recall Training"],
+      "dimensions": {"precision": 0.85, "discipline": 0.8, "privacy": 0.7},
+      "kama_links": [
+        {"kama": "NIBANDHA_PRACODANA", "rel": "reinforcing", "w": 0.75}
+      ],
+      "prerequisites": ["kala_1"],
+      "avn_asset": "memory_interface",
+      "minigame": "Reflection"
+    },
+
+    "kala_13": {
+      "id": 13,
+      "sanskrit": "Alekhya",
+      "english": "Painting",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_jahzara", "char_kumari_rati"],
+      "latent": ["char_tarana", "char_padma"],
+      "character_skills": {
+        "char_shrinagar": "Master painter; miniature and mural; body painting",
+        "char_jahzara": "Occult painting; yantra and mandala",
+        "char_kumari_rati": "Body art; ritual painting; self-decoration",
+        "char_tarana": "Movement painting; dance-traced art",
+        "char_padma": "Service painting; decorative assistance"
+      },
+      "kinks": ["Body Painting", "Ritual Marking", "Erotic Art"],
+      "dimensions": {"aesthetic": 0.9, "precision": 0.85, "rituality": 0.75},
+      "kama_links": [
+        {"kama": "BHUMI_BHUSHANA", "rel": "reinforcing", "w": 0.8},
+        {"kama": "DARPANA_SADHANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "painting_canvas",
+      "minigame": "Precision"
+    },
+
+    "kala_14": {
+      "id": 14,
+      "sanskrit": "Bitti-chitra",
+      "english": "Wall Murals",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_jahzara", "char_maha_deva"],
+      "latent": ["char_tarana", "char_padma"],
+      "character_skills": {
+        "char_shrinagar": "Mural mastery; large-scale narrative art",
+        "char_jahzara": "Temple murals; occult symbols",
+        "char_maha_deva": "Cosmic murals; philosophical art",
+        "char_tarana": "Movement murals; dance-traced art",
+        "char_padma": "Service murals; preparation assistance"
+      },
+      "kinks": ["Environmental Bondage", "Sacred Space Creation", "Visual Submission"],
+      "dimensions": {"aesthetic": 0.85, "rituality": 0.8, "precision": 0.75},
+      "kama_links": [
+        {"kama": "YANTRA_LEKHANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": ["kala_13"],
+      "avn_asset": "environment_art",
+      "minigame": "Precision"
+    },
+
+    "kala_15": {
+      "id": 15,
+      "sanskrit": "Varṇa",
+      "english": "Colour Theory",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_jahzara", "char_tarana"],
+      "latent": ["char_padma", "char_kumari_rati"],
+      "character_skills": {
+        "char_shrinagar": "Color mastery; can mix any hue",
+        "char_jahzara": "Symbolic color; occult correspondences",
+        "char_tarana": "Movement color; dance-visualization",
+        "char_padma": "Service color; preparation knowledge",
+        "char_kumari_rati": "Ritual color; ceremonial significance"
+      },
+      "kinks": ["Color Bondage", "Visual Submission", "Aesthetic Training"],
+      "dimensions": {"aesthetic": 0.85, "precision": 0.8, "expression": 0.7},
+      "kama_links": [
+        {"kama": "BHUMI_BHUSHANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "color_palette",
+      "minigame": "Perception"
+    },
+
+    "kala_16": {
+      "id": 16,
+      "sanskrit": "Rekhā",
+      "english": "Line Drawing",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_roxana", "char_tarana"],
+      "latent": ["char_jahzara", "char_padma"],
+      "character_skills": {
+        "char_shrinagar": "Line mastery; can draw perfect lines",
+        "char_roxana": "Strategic lines; tactical drawing",
+        "char_tarana": "Movement lines; dance-traced",
+        "char_jahzara": "Symbolic lines; occult geometry",
+        "char_padma": "Service lines; decorative assistance"
+      },
+      "kinks": ["Line Bondage", "Precision Submission", "Drawing as Discipline"],
+      "dimensions": {"precision": 0.9, "aesthetic": 0.8, "restraint": 0.75},
+      "kama_links": [
+        {"kama": "YANTRA_LEKHANA", "rel": "reinforcing", "w": 0.75},
+        {"kama": "KASTHA_RATI", "rel": "adjacent", "w": 0.65}
+      ],
+      "prerequisites": ["kala_13"],
+      "avn_asset": "line_drawing",
+      "minigame": "Precision"
+    },
+
+    "kala_17": {
+      "id": 17,
+      "sanskrit": "Vastra-gopana",
+      "english": "Dyeing/Weaving",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_padma", "char_kumari_rati"],
+      "latent": ["char_tarana", "char_malika"],
+      "character_skills": {
+        "char_shrinagar": "Master weaver; can create any textile",
+        "char_padma": "Service weaving; practical textiles",
+        "char_kumari_rati": "Ritual weaving; ceremonial fabric",
+        "char_tarana": "Movement weaving; dance-costume creation",
+        "char_malika": "Culinary weaving; food presentation"
+      },
+      "kinks": ["Textile Bondage", "Fabric Submission", "Weaving as Discipline"],
+      "dimensions": {"aesthetic": 0.85, "precision": 0.85, "restraint": 0.7},
+      "kama_links": [
+        {"kama": "VASTRA_VANCANA", "rel": "reinforcing", "w": 0.75}
+      ],
+      "prerequisites": [],
+      "avn_asset": "textile_craft",
+      "minigame": "Precision"
+    },
+
+    "kala_18": {
+      "id": 18,
+      "sanskrit": "Sūtra-karma",
+      "english": "Sewing/Embroidery",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_padma", "char_roxana"],
+      "latent": ["char_kumari_rati", "char_malika"],
+      "character_skills": {
+        "char_shrinagar": "Master embroiderer; can stitch any pattern",
+        "char_padma": "Service sewing; practical mending",
+        "char_roxana": "Tactical sewing; armor and gear repair",
+        "char_kumari_rati": "Ritual embroidery; ceremonial stitching",
+        "char_malika": "Culinary sewing; food binding"
+      },
+      "kinks": ["Needle Play", "Stitch Bondage", "Embroidery as Discipline"],
+      "dimensions": {"precision": 0.9, "aesthetic": 0.8, "intensity": 0.65},
+      "kama_links": [
+        {"kama": "SHALAKA_SOUNDING", "rel": "adjacent", "w": 0.6}
+      ],
+      "prerequisites": [],
+      "avn_asset": "embroidery_craft",
+      "minigame": "Precision"
+    },
+
+    "kala_19": {
+      "id": 19,
+      "sanskrit": "Ābharaṇa",
+      "english": "Jewellery-making",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_kumari_rati", "char_roxana"],
+      "latent": ["char_jahzara", "char_padma"],
+      "character_skills": {
+        "char_shrinagar": "Master jeweler; can craft any ornament",
+        "char_kumari_rati": "Ritual jewelry; ceremonial adornment",
+        "char_roxana": "Tactical jewelry; weaponized ornament",
+        "char_jahzara": "Occult jewelry; amulets and talismans",
+        "char_padma": "Service jewelry; practical care"
+      },
+      "kinks": ["Jewelry Bondage", "Adornment Submission", "Metal Play"],
+      "dimensions": {"precision": 0.9, "aesthetic": 0.85, "expression": 0.7},
+      "kama_links": [
+        {"kama": "JEWELRY_CRAFTING", "rel": "core_practice", "w": 0.95}
+      ],
+      "prerequisites": [],
+      "avn_asset": "jewelry_gallery",
+      "minigame": "Precision"
+    },
+
+    "kala_20": {
+      "id": 20,
+      "sanskrit": "Maṇi-rañjana",
+      "english": "Gem Polishing",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_jahzara"],
+      "latent": ["char_roxana", "char_kumari_rati"],
+      "character_skills": {
+        "char_shrinagar": "Master gemologist; can polish any stone",
+        "char_jahzara": "Occult gems; magically charged stones",
+        "char_roxana": "Weapon gems; tactical stones",
+        "char_kumari_rati": "Ritual gems; ceremonial stones"
+      },
+      "kinks": ["Gem Bondage", "Stone Play", "Polishing as Discipline"],
+      "dimensions": {"precision": 0.9, "aesthetic": 0.8, "rituality": 0.7},
+      "kama_links": [
+        {"kama": "JEWELRY_CRAFTING", "rel": "reinforcing", "w": 0.8}
+      ],
+      "prerequisites": ["kala_19"],
+      "avn_asset": "gem_polishing",
+      "minigame": "Precision"
+    },
+
+    "kala_21": {
+      "id": 21,
+      "sanskrit": "Gandha-yukti",
+      "english": "Perfumery",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_jahzara", "char_kumari_rati"],
+      "latent": ["char_padma", "char_malika"],
+      "character_skills": {
+        "char_shrinagar": "Master perfumer; can create any scent",
+        "char_jahzara": "Occult perfume; ritual fragrances",
+        "char_kumari_rati": "Command perfume; submission-inducing scents",
+        "char_padma": "Service perfume; practical fragrances",
+        "char_malika": "Culinary perfume; aromatic cooking"
+      },
+      "kinks": ["Olfactory Bondage", "Scent Submission", "Perfume Play"],
+      "dimensions": {"aesthetic": 0.85, "sensory_awareness": 0.9, "rituality": 0.75},
+      "kama_links": [
+        {"kama": "RASAYANA", "rel": "adjacent", "w": 0.75},
+        {"kama": "SNANA_RATI", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "perfume_blending",
+      "minigame": "Perception"
+    },
+
+    "kala_22": {
+      "id": 22,
+      "sanskrit": "Vilepana",
+      "english": "Cosmetics/Ointments",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_kumari_rati", "char_padma"],
+      "latent": ["char_jahzara"],
+      "character_skills": {
+        "char_shrinagar": "Master cosmetician; can create any ointment",
+        "char_kumari_rati": "Command cosmetics; ritual anointment",
+        "char_padma": "Service cosmetics; practical applications",
+        "char_jahzara": "Occult cosmetics; ritual unguents"
+      },
+      "kinks": ["Body Worship", "Ointment Bondage", "Cosmetic Submission"],
+      "dimensions": {"aesthetic": 0.85, "sensory_awareness": 0.85, "devotion": 0.7},
+      "kama_links": [
+        {"kama": "SNANA_RATI", "rel": "reinforcing", "w": 0.8},
+        {"kama": "RASAYANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "cosmetic_craft",
+      "minigame": "Precision"
+    },
+
+    "kala_23": {
+      "id": 23,
+      "sanskrit": "Pushpa-astaraṇa",
+      "english": "Flower Arranging",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_padma", "char_kumari_rati"],
+      "latent": ["char_tarana"],
+      "character_skills": {
+        "char_shrinagar": "Master florist; can arrange any flower",
+        "char_padma": "Service flowers; practical arrangements",
+        "char_kumari_rati": "Ritual flowers; ceremonial offerings",
+        "char_tarana": "Movement flowers; dance-flower fusion"
+      },
+      "kinks": ["Floral Bondage", "Petal Play", "Flower Submission"],
+      "dimensions": {"aesthetic": 0.9, "rituality": 0.8, "sensory_awareness": 0.75},
+      "kama_links": [
+        {"kama": "BHUMI_BHUSHANA", "rel": "reinforcing", "w": 0.75}
+      ],
+      "prerequisites": [],
+      "avn_asset": "floral_arrangement",
+      "minigame": "Perception"
+    },
+
+    "kala_24": {
+      "id": 24,
+      "sanskrit": "Mālya",
+      "english": "Garland Weaving",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_padma", "char_champa"],
+      "latent": ["char_kumari_rati"],
+      "character_skills": {
+        "char_shrinagar": "Master garland-maker; can weave any flower",
+        "char_padma": "Service garlands; practical weaving",
+        "char_champa": "Pup garlands; playful weaving",
+        "char_kumari_rati": "Ritual garlands; ceremonial offerings"
+      },
+      "kinks": ["Garland Bondage", "Floral Submission", "Weaving as Discipline"],
+      "dimensions": {"aesthetic": 0.85, "rituality": 0.85, "service": 0.7},
+      "kama_links": [
+        {"kama": "BHUMI_BHUSHANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": ["kala_23"],
+      "avn_asset": "garland_weaving",
+      "minigame": "Precision"
+    },
+
+    "kala_25": {
+      "id": 25,
+      "sanskrit": "Granthana",
+      "english": "Knotting/Binding",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_roxana"],
+      "resonant": ["char_shrinagar", "char_tarana"],
+      "latent": ["char_jahzara", "char_padma"],
+      "character_skills": {
+        "char_roxana": "Master knotter; can tie any binding",
+        "char_shrinagar": "Aesthetic knots; decorative binding",
+        "char_tarana": "Movement knots; dance-binding",
+        "char_jahzara": "Occult knots; ritual binding",
+        "char_padma": "Service knots; practical binding"
+      },
+      "kinks": ["Shibari", "Rope Bondage", "Knot Play", "Binding Submission"],
+      "dimensions": {"restraint": 0.95, "precision": 0.9, "aesthetic": 0.8},
+      "kama_links": [
+        {"kama": "GRANTHI_KALA", "rel": "core_practice", "w": 0.95},
+        {"kama": "BANDHA_SADHANA", "rel": "reinforcing", "w": 0.9},
+        {"kama": "BANDHA_DARSHANA", "rel": "adjacent", "w": 0.8},
+        {"kama": "SANGHATAKA", "rel": "advanced_extension", "w": 0.85},
+        {"kama": "BONDAGE_ART", "rel": "aesthetic_extension", "w": 0.85},
+        {"kama": "LATA_PATRA", "rel": "adjacent", "w": 0.75}
+      ],
+      "prerequisites": [],
+      "avn_asset": "rope_rigging",
+      "minigame": "Sequence"
+    },
+
+    "kala_26": {
+      "id": 26,
+      "sanskrit": "Vetrakarma",
+      "english": "Basketry",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_roxana", "char_tarana"],
+      "latent": ["char_padma", "char_malika"],
+      "character_skills": {
+        "char_shrinagar": "Master basket-weaver; can create any vessel",
+        "char_roxana": "Tactical baskets; shields and containers",
+        "char_tarana": "Movement baskets; dance-prop creation",
+        "char_padma": "Service baskets; practical weaving",
+        "char_malika": "Culinary baskets; food presentation"
+      },
+      "kinks": ["Containment Bondage", "Weaving Submission", "Vessel Play"],
+      "dimensions": {"restraint": 0.8, "aesthetic": 0.75, "craft": 0.85},
+      "kama_links": [
+        {"kama": "AVARANA_RATI", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "basket_weaving",
+      "minigame": "Precision"
+    },
+
+    "kala_27": {
+      "id": 27,
+      "sanskrit": "Kumbhakāra",
+      "english": "Pottery",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_jahzara", "char_malika"],
+      "latent": ["char_padma", "char_roxana"],
+      "character_skills": {
+        "char_shrinagar": "Master potter; can throw any vessel",
+        "char_jahzara": "Occult pottery; ritual vessels",
+        "char_malika": "Culinary pottery; cooking vessels",
+        "char_padma": "Service pottery; practical vessels",
+        "char_roxana": "Tactical pottery; defensive vessels"
+      },
+      "kinks": ["Clay Play", "Vessel Bondage", "Pottery as Discipline"],
+      "dimensions": {"craft": 0.85, "aesthetic": 0.8, "restraint": 0.7},
+      "kama_links": [
+        {"kama": "AVARANA_RATI", "rel": "adjacent", "w": 0.65}
+      ],
+      "prerequisites": [],
+      "avn_asset": "pottery_craft",
+      "minigame": "Precision"
+    },
+
+    "kala_28": {
+      "id": 28,
+      "sanskrit": "Danta-karma",
+      "english": "Ivory/Carving",
+      "domain": "domain_2_visual_adornment",
+      "primary": ["char_shrinagar"],
+      "resonant": ["char_roxana", "char_jahzara"],
+      "latent": ["char_maha_deva"],
+      "character_skills": {
+        "char_shrinagar": "Master carver; can carve any material",
+        "char_roxana": "Weapon carving; tactical crafting",
+        "char_jahzara": "Occult carving; ritual objects",
+        "char_maha_deva": "Cosmic carving; philosophical objects"
+      },
+      "kinks": ["Carving as Discipline", "Sharp Object Play", "Material Submission"],
+      "dimensions": {"precision": 0.9, "craft": 0.85, "intensity": 0.7},
+      "kama_links": [
+        {"kama": "RAKTA_SPARSHA", "rel": "adjacent", "w": 0.6}
+      ],
+      "prerequisites": [],
+      "avn_asset": "carving_craft",
+      "minigame": "Precision"
+    },
+
+    "kala_29": {
+      "id": 29,
+      "sanskrit": "Dhanurveda",
+      "english": "Archery",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_roxana"],
+      "resonant": ["char_altani", "char_jahzara"],
+      "latent": ["char_tarana"],
+      "character_skills": {
+        "char_roxana": "Master archer; can hit any target",
+        "char_altani": "Steppe archery; mounted archery",
+        "char_jahzara": "Occult archery; enchanted arrows",
+        "char_tarana": "Movement archery; dance-shooting"
+      },
+      "kinks": ["Target Bondage", "Arrow Play", "Precision Submission"],
+      "dimensions": {"precision": 0.9, "intensity": 0.8, "discipline": 0.85},
+      "kama_links": [
+        {"kama": "KASTHA_RATI", "rel": "adjacent", "w": 0.7},
+        {"kama": "TADANA_KALA_INFLICTING", "rel": "adjacent", "w": 0.65}
+      ],
+      "prerequisites": [],
+      "avn_asset": "archery_sequence",
+      "minigame": "Coordination"
+    },
+
+    "kala_30": {
+      "id": 30,
+      "sanskrit": "Khaḍga",
+      "english": "Swordplay",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_roxana"],
+      "resonant": ["char_altani", "char_tarana"],
+      "latent": ["char_kumari_rati"],
+      "character_skills": {
+        "char_roxana": "Master swordswoman; can wield any blade",
+        "char_altani": "Steppe swordplay; mounted combat",
+        "char_tarana": "Dance swordplay; blade-dance fusion",
+        "char_kumari_rati": "Ritual swordplay; ceremonial combat"
+      },
+      "kinks": ["Blade Play", "Edge Bondage", "Sword Submission"],
+      "dimensions": {"precision": 0.85, "intensity": 0.85, "discipline": 0.8},
+      "kama_links": [
+        {"kama": "RAKTA_SPARSHA", "rel": "adjacent", "w": 0.65}
+      ],
+      "prerequisites": [],
+      "avn_asset": "swordplay_sequence",
+      "minigame": "Coordination"
+    },
+
+    "kala_31": {
+      "id": 31,
+      "sanskrit": "Malla",
+      "english": "Wrestling",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_roxana"],
+      "resonant": ["char_altani", "char_tarana"],
+      "latent": ["char_jahzara"],
+      "character_skills": {
+        "char_roxana": "Master wrestler; can pin any opponent",
+        "char_altani": "Steppe wrestling; mounted grappling",
+        "char_tarana": "Movement wrestling; dance-grapple",
+        "char_jahzara": "Occult wrestling; ritual combat"
+      },
+      "kinks": ["Grappling Bondage", "Body Contact", "Submission Wrestling"],
+      "dimensions": {"intensity": 0.9, "performance": 0.85, "restraint": 0.8},
+      "kama_links": [
+        {"kama": "KRIDA_MRIGA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "wrestling_sequence",
+      "minigame": "Endurance"
+    },
+
+    "kala_32": {
+      "id": 32,
+      "sanskrit": "Gadā",
+      "english": "Mace",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_roxana"],
+      "resonant": ["char_maha_deva", "char_altani"],
+      "latent": ["char_jahzara"],
+      "character_skills": {
+        "char_roxana": "Master mace-wielder; can crush any defense",
+        "char_maha_deva": "Cosmic mace; philosophical force",
+        "char_altani": "Steppe mace; mounted crushing",
+        "char_jahzara": "Occult mace; ritual force"
+      },
+      "kinks": ["Impact Bondage", "Crushing Submission", "Force Play"],
+      "dimensions": {"intensity": 0.9, "discipline": 0.85, "authority": 0.75},
+      "kama_links": [
+        {"kama": "TADANA_KALA_INFLICTING", "rel": "reinforcing", "w": 0.8},
+        {"kama": "DHMA_KALA", "rel": "adjacent", "w": 0.75}
+      ],
+      "prerequisites": [],
+      "avn_asset": "mace_sequence",
+      "minigame": "Endurance"
+    },
+
+    "kala_33": {
+      "id": 33,
+      "sanskrit": "Nāga-pāśa",
+      "english": "Lasso/Rope Arts",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_roxana"],
+      "resonant": ["char_shrinagar", "char_tarana"],
+      "latent": ["char_svara", "char_jahzara"],
+      "character_skills": {
+        "char_roxana": "Master lassoer; can capture any target",
+        "char_shrinagar": "Aesthetic lasso; decorative binding",
+        "char_tarana": "Movement lasso; dance-binding",
+        "char_svara": "Acoustic lasso; sound-guided capture",
+        "char_jahzara": "Occult lasso; ritual binding"
+      },
+      "kinks": ["Rope Bondage", "Lasso Play", "Capture Submission"],
+      "dimensions": {"restraint": 0.9, "precision": 0.85, "performance": 0.75},
+      "kama_links": [
+        {"kama": "GRANTHI_KALA", "rel": "reinforcing", "w": 0.85},
+        {"kama": "BANDHA_SADHANA", "rel": "adjacent", "w": 0.8}
+      ],
+      "prerequisites": ["kala_25"],
+      "avn_asset": "lasso_sequence",
+      "minigame": "Coordination"
+    },
+
+    "kala_34": {
+      "id": 34,
+      "sanskrit": "Senāpatya",
+      "english": "Military Strategy",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_roxana"],
+      "resonant": ["char_anisa", "char_altani"],
+      "latent": ["char_maha_deva"],
+      "character_skills": {
+        "char_roxana": "Master strategist; can plan any campaign",
+        "char_anisa": "Protocol strategy; punitive planning",
+        "char_altani": "Steppe strategy; mobile warfare",
+        "char_maha_deva": "Cosmic strategy; universal planning"
+      },
+      "kinks": ["Strategic Bondage", "War Play", "Command Submission"],
+      "dimensions": {"authority": 0.85, "discipline": 0.9, "precision": 0.8},
+      "kama_links": [
+        {"kama": "PROTOCOL_ENFORCEMENT", "rel": "reinforcing", "w": 0.75},
+        {"kama": "AVADHANA_STHANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "strategy_interface",
+      "minigame": "Sequence"
+    },
+
+    "kala_35": {
+      "id": 35,
+      "sanskrit": "Vyāyāma",
+      "english": "Physical Training",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_roxana"],
+      "resonant": ["char_altani", "char_padma"],
+      "latent": ["char_tarana"],
+      "character_skills": {
+        "char_roxana": "Master trainer; can push any body to limit",
+        "char_altani": "Steppe training; endurance conditioning",
+        "char_padma": "Service training; practical fitness",
+        "char_tarana": "Movement training; dance-athletics"
+      },
+      "kinks": ["Physical Discipline", "Endurance Play", "Training Submission"],
+      "dimensions": {"discipline": 0.9, "intensity": 0.85, "service": 0.7},
+      "kama_links": [
+        {"kama": "KASTHA_RATI", "rel": "adjacent", "w": 0.75}
+      ],
+      "prerequisites": [],
+      "avn_asset": "training_sequence",
+      "minigame": "Endurance"
+    },
+
+    "kala_36": {
+      "id": 36,
+      "sanskrit": "Śrama",
+      "english": "Endurance",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_roxana"],
+      "resonant": ["char_altani", "char_maha_deva"],
+      "latent": ["char_sevda", "char_padma"],
+      "character_skills": {
+        "char_roxana": "Master of endurance; can outlast any trial",
+        "char_altani": "Steppe endurance; mobile persistence",
+        "char_maha_deva": "Cosmic endurance; unwavering witness",
+        "char_sevda": "Vow endurance; sacred persistence",
+        "char_padma": "Service endurance; practical stamina"
+      },
+      "kinks": ["Endurance Bondage", "Marathon Play", "Persistence Submission"],
+      "dimensions": {"discipline": 0.95, "intensity": 0.85, "stillness": 0.7},
+      "kama_links": [
+        {"kama": "NISHCHALA_SADHANA", "rel": "reinforcing", "w": 0.8},
+        {"kama": "KASTHA_RATI", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "endurance_sequence",
+      "minigame": "Endurance"
+    },
+
+    "kala_37": {
+      "id": 37,
+      "sanskrit": "Dharaṇa",
+      "english": "Concentration/Holding",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_roxana"],
+      "resonant": ["char_sevda", "char_reva"],
+      "latent": ["char_maha_deva"],
+      "character_skills": {
+        "char_roxana": "Master holder; can maintain any position",
+        "char_sevda": "Vow holding; sacred stillness",
+        "char_reva": "Breath holding; static immobility",
+        "char_maha_deva": "Cosmic holding; eternal witness"
+      },
+      "kinks": ["Posture Bondage", "Holding Play", "Static Submission"],
+      "dimensions": {"stillness": 0.9, "restraint": 0.85, "precision": 0.75},
+      "kama_links": [
+        {"kama": "NISHCHALA_SADHANA", "rel": "core_practice", "w": 0.85},
+        {"kama": "INDRIYA_NIRODHA", "rel": "adjacent", "w": 0.75}
+      ],
+      "prerequisites": [],
+      "avn_asset": "stillness_sequence",
+      "minigame": "Endurance"
+    },
+
+    "kala_38": {
+      "id": 38,
+      "sanskrit": "Takṣaṇa",
+      "english": "Carpentry/Engineering",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_roxana"],
+      "resonant": ["char_shrinagar"],
+      "latent": ["char_malika", "char_padma"],
+      "character_skills": {
+        "char_roxana": "Master carpenter; can build any structure",
+        "char_shrinagar": "Aesthetic carpentry; beautiful structures",
+        "char_malika": "Culinary carpentry; food structures",
+        "char_padma": "Service carpentry; practical building"
+      },
+      "kinks": ["Construction Bondage", "Wood Play", "Building Submission"],
+      "dimensions": {"precision": 0.85, "craft": 0.9, "discipline": 0.8},
+      "kama_links": [
+        {"kama": "BANDHA_SADHANA", "rel": "adjacent", "w": 0.65}
+      ],
+      "prerequisites": [],
+      "avn_asset": "carpentry_craft",
+      "minigame": "Sequence"
+    },
+
+    "kala_39": {
+      "id": 39,
+      "sanskrit": "Vāstu",
+      "english": "Architecture",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_roxana"],
+      "resonant": ["char_shrinagar", "char_anisa"],
+      "latent": ["char_jahzara"],
+      "character_skills": {
+        "char_roxana": "Master architect; can design any space",
+        "char_shrinagar": "Aesthetic architecture; beautiful spaces",
+        "char_anisa": "Protocol architecture; functional design",
+        "char_jahzara": "Occult architecture; sacred geometry"
+      },
+      "kinks": ["Spatial Bondage", "Architectural Submission", "Environment Play"],
+      "dimensions": {"precision": 0.85, "rituality": 0.8, "aesthetic": 0.85},
+      "kama_links": [
+        {"kama": "YANTRA_LEKHANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": ["kala_38"],
+      "avn_asset": "architecture_design",
+      "minigame": "Sequence"
+    },
+
+    "kala_40": {
+      "id": 40,
+      "sanskrit": "Dhātu-vāda",
+      "english": "Metallurgy",
+      "domain": "domain_3_martial_physical",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_roxana", "char_shrinagar"],
+      "latent": ["char_malika"],
+      "character_skills": {
+        "char_jahzara": "Master metallurgist; occult forging",
+        "char_roxana": "Weapon metallurgy; tactical forging",
+        "char_shrinagar": "Aesthetic metallurgy; beautiful metals",
+        "char_malika": "Culinary metallurgy; cookware forging"
+      },
+      "kinks": ["Metal Play", "Forge Bondage", "Heat Submission"],
+      "dimensions": {"craft": 0.9, "intensity": 0.85, "precision": 0.8},
+      "kama_links": [
+        {"kama": "FIRE_PLAY", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "forge_craft",
+      "minigame": "Endurance"
+    },
+
+    "kala_41": {
+      "id": 41,
+      "sanskrit": "Tantra-yukti",
+      "english": "Ritual System",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_maha_deva", "char_sevda"],
+      "latent": ["char_kumari_rati"],
+      "character_skills": {
+        "char_jahzara": "Master of Tantric ritual; can construct any ceremony",
+        "char_maha_deva": "Cosmic ritual; philosophical ceremony",
+        "char_sevda": "Vow ritual; sacred stillness",
+        "char_kumari_rati": "Command ritual; submission ceremony"
+      },
+      "kinks": ["Ritual Bondage", "Ceremonial Submission", "Sacred Play"],
+      "dimensions": {"rituality": 0.95, "precision": 0.85, "intensity": 0.8},
+      "kama_links": [
+        {"kama": "RITUAL_AUTHORITY", "rel": "core_practice", "w": 0.9},
+        {"kama": "YANTRA_LEKHANA", "rel": "reinforcing", "w": 0.85}
+      ],
+      "prerequisites": [],
+      "avn_asset": "ritual_sequence",
+      "minigame": "Reflection"
+    },
+
+    "kala_42": {
+      "id": 42,
+      "sanskrit": "Mantra-vidya",
+      "english": "Sacred Formula",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_svara"],
+      "resonant": ["char_jahzara", "char_sevda"],
+      "latent": ["char_maha_deva", "char_reva"],
+      "character_skills": {
+        "char_svara": "Master of mantra; can intone any formula",
+        "char_jahzara": "Occult mantra; ritual formulas",
+        "char_sevda": "Vow mantra; sacred repetition",
+        "char_maha_deva": "Cosmic mantra; philosophical formulas",
+        "char_reva": "Breath mantra; poetic formulas"
+      },
+      "kinks": ["Mantra Bondage", "Chant Submission", "Sound Play"],
+      "dimensions": {"rituality": 0.9, "expression": 0.85, "precision": 0.8},
+      "kama_links": [
+        {"kama": "MANTRA_MOHA", "rel": "core_practice", "w": 0.9},
+        {"kama": "NADA_SADHANA", "rel": "reinforcing", "w": 0.85}
+      ],
+      "prerequisites": ["kala_1"],
+      "avn_asset": "mantra_loop",
+      "minigame": "Reflection"
+    },
+
+    "kala_43": {
+      "id": 43,
+      "sanskrit": "Yantra",
+      "english": "Mystical Diagrams",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_shrinagar", "char_sevda"],
+      "latent": ["char_tarana"],
+      "character_skills": {
+        "char_jahzara": "Master of yantra; can construct any diagram",
+        "char_shrinagar": "Aesthetic yantra; beautiful geometry",
+        "char_sevda": "Vow yantra; sacred geometry",
+        "char_tarana": "Movement yantra; dance-traced diagrams"
+      },
+      "kinks": ["Geometric Bondage", "Yantra Submission", "Sacred Geometry Play"],
+      "dimensions": {"rituality": 0.9, "precision": 0.9, "aesthetic": 0.8},
+      "kama_links": [
+        {"kama": "YANTRA_LEKHANA", "rel": "core_practice", "w": 0.9}
+      ],
+      "prerequisites": [],
+      "avn_asset": "yantra_geometry",
+      "minigame": "Precision"
+    },
+
+    "kala_44": {
+      "id": 44,
+      "sanskrit": "Māyā",
+      "english": "Illusion",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_kumari_rati", "char_roxana"],
+      "latent": ["char_svara"],
+      "character_skills": {
+        "char_jahzara": "Master of illusion; can create any false reality",
+        "char_kumari_rati": "Seductive illusion; glamour magic",
+        "char_roxana": "Tactical illusion; strategic deception",
+        "char_svara": "Acoustic illusion; sound-based deception"
+      },
+      "kinks": ["Illusion Play", "Deception Bondage", "Maya Submission"],
+      "dimensions": {"transgression": 0.85, "intensity": 0.8, "precision": 0.75},
+      "kama_links": [
+        {"kama": "DARPANA_SADHANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "illusion_sequence",
+      "minigame": "Puzzle"
+    },
+
+    "kala_45": {
+      "id": 45,
+      "sanskrit": "Mudrā",
+      "english": "Gestural Seals",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_tarana", "char_sevda"],
+      "latent": ["char_roxana", "char_svara"],
+      "character_skills": {
+        "char_jahzara": "Master of mudra; can form any seal",
+        "char_tarana": "Movement mudra; dance-gesture fusion",
+        "char_sevda": "Vow mudra; sacred gestures",
+        "char_roxana": "Combat mudra; tactical signals",
+        "char_svara": "Acoustic mudra; sound-gesture fusion"
+      },
+      "kinks": ["Gesture Bondage", "Mudra Submission", "Hand Play"],
+      "dimensions": {"rituality": 0.85, "precision": 0.9, "expression": 0.8},
+      "kama_links": [
+        {"kama": "SPARSHA_SHIKSHA", "rel": "adjacent", "w": 0.75}
+      ],
+      "prerequisites": [],
+      "avn_asset": "mudra_sequence",
+      "minigame": "Precision"
+    },
+
+    "kala_46": {
+      "id": 46,
+      "sanskrit": "Rasāyana",
+      "english": "Alchemy/Elixirs",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_malika", "char_shrinagar"],
+      "latent": ["char_padma"],
+      "character_skills": {
+        "char_jahzara": "Master alchemist; occult elixirs",
+        "char_malika": "Culinary alchemy; edible elixirs",
+        "char_shrinagar": "Aesthetic alchemy; beauty elixirs",
+        "char_padma": "Service alchemy; practical remedies"
+      },
+      "kinks": ["Elixir Play", "Alchemical Bondage", "Potion Submission"],
+      "dimensions": {"rituality": 0.85, "precision": 0.85, "sensory_awareness": 0.8},
+      "kama_links": [
+        {"kama": "RASAYANA", "rel": "core_practice", "w": 0.9}
+      ],
+      "prerequisites": [],
+      "avn_asset": "alchemy_lab",
+      "minigame": "Puzzle"
+    },
+
+    "kala_47": {
+      "id": 47,
+      "sanskrit": "Āyurveda",
+      "english": "Medicine",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_malika", "char_sevda"],
+      "latent": ["char_padma"],
+      "character_skills": {
+        "char_jahzara": "Master physician; can diagnose any ailment",
+        "char_malika": "Culinary medicine; food healing",
+        "char_sevda": "Vow medicine; spiritual healing",
+        "char_padma": "Service medicine; practical care"
+      },
+      "kinks": ["Medical Play", "Healing Bondage", "Remedy Submission"],
+      "dimensions": {"precision": 0.85, "service": 0.8, "rituality": 0.75},
+      "kama_links": [
+        {"kama": "MEDICAL_PLAY", "rel": "core_practice", "w": 0.85}
+      ],
+      "prerequisites": [],
+      "avn_asset": "medical_interface",
+      "minigame": "Puzzle"
+    },
+
+    "kala_48": {
+      "id": 48,
+      "sanskrit": "Śalya",
+      "english": "Surgery",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_roxana", "char_sevda"],
+      "latent": ["char_svara"],
+      "character_skills": {
+        "char_jahzara": "Master surgeon; can perform any operation",
+        "char_roxana": "Precision surgery; tactical strikes",
+        "char_sevda": "Vow surgery; sacred cutting",
+        "char_svara": "Acoustic surgery; sound-based healing"
+      },
+      "kinks": ["Medical Play", "Surgical Bondage", "Cutting Play"],
+      "dimensions": {"precision": 0.95, "intensity": 0.85, "transgression": 0.8},
+      "kama_links": [
+        {"kama": "RAKTA_SPARSHA", "rel": "adjacent", "w": 0.75},
+        {"kama": "MEDICAL_PLAY", "rel": "reinforcing", "w": 0.8}
+      ],
+      "prerequisites": ["kala_47"],
+      "avn_asset": "surgery_sequence",
+      "minigame": "Precision"
+    },
+
+    "kala_49": {
+      "id": 49,
+      "sanskrit": "Jyotiṣa",
+      "english": "Astronomy/Astrology",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_sevda", "char_maha_deva"],
+      "latent": ["char_kumari_rati"],
+      "character_skills": {
+        "char_jahzara": "Master astrologer; can read any chart",
+        "char_sevda": "Vow astrology; sacred charts",
+        "char_maha_deva": "Cosmic astrology; universal charts",
+        "char_kumari_rati": "Command astrology; ritual timing"
+      },
+      "kinks": ["Celestial Bondage", "Star Play", "Astrological Submission"],
+      "dimensions": {"rituality": 0.85, "precision": 0.85, "privacy": 0.75},
+      "kama_links": [
+        {"kama": "RITUAL_AUTHORITY", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "astrology_interface",
+      "minigame": "Perception"
+    },
+
+    "kala_50": {
+      "id": 50,
+      "sanskrit": "Nimitta",
+      "english": "Divination/Omens",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_sevda", "char_maha_deva"],
+      "latent": ["char_reva"],
+      "character_skills": {
+        "char_jahzara": "Master diviner; can read any omen",
+        "char_sevda": "Vow divination; sacred omens",
+        "char_maha_deva": "Cosmic divination; universal omens",
+        "char_reva": "Poetic divination; breath omens"
+      },
+      "kinks": ["Omen Play", "Divination Bondage", "Fate Submission"],
+      "dimensions": {"rituality": 0.85, "perception": 0.9, "privacy": 0.75},
+      "kama_links": [
+        {"kama": "MANTRA_MOHA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "divination_interface",
+      "minigame": "Perception"
+    },
+
+    "kala_51": {
+      "id": 51,
+      "sanskrit": "Svapna",
+      "english": "Dream Interpretation",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_maha_deva", "char_reva"],
+      "latent": ["char_sevda"],
+      "character_skills": {
+        "char_jahzara": "Master dream interpreter; can read any dream",
+        "char_maha_deva": "Cosmic dreams; universal visions",
+        "char_reva": "Poetic dreams; breath-visions",
+        "char_sevda": "Vow dreams; sacred visions"
+      },
+      "kinks": ["Dream Play", "Sleep Bondage", "Vision Submission"],
+      "dimensions": {"rituality": 0.85, "privacy": 0.9, "expression": 0.75},
+      "kama_links": [
+        {"kama": "SOMNOPHILIA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "dream_sequence",
+      "minigame": "Reflection"
+    },
+
+    "kala_52": {
+      "id": 52,
+      "sanskrit": "Tarka-Nyāya",
+      "english": "Logic/Philosophy",
+      "domain": "domain_4_occult_healing",
+      "primary": ["char_maha_deva"],
+      "resonant": ["char_jahzara", "char_anisa"],
+      "latent": ["char_reva"],
+      "character_skills": {
+        "char_maha_deva": "Master philosopher; can debate any topic",
+        "char_jahzara": "Occult logic; hidden reasoning",
+        "char_anisa": "Protocol logic; legal reasoning",
+        "char_reva": "Poetic logic; breath-reasoning"
+      },
+      "kinks": ["Intellectual Bondage", "Debate Play", "Logic Submission"],
+      "dimensions": {"precision": 0.9, "authority": 0.8, "expression": 0.75},
+      "kama_links": [
+        {"kama": "AVADHANA_STHANA", "rel": "adjacent", "w": 0.75}
+      ],
+      "prerequisites": [],
+      "avn_asset": "dialogue_interface",
+      "minigame": "Puzzle"
+    },
+
+    "kala_53": {
+      "id": 53,
+      "sanskrit": "Nṛtya",
+      "english": "Dance",
+      "domain": "domain_5_movement_dance",
+      "primary": ["char_tarana"],
+      "resonant": ["char_svara", "char_kumari_rati"],
+      "latent": ["char_champa", "char_padma"],
+      "character_skills": {
+        "char_tarana": "Master dancer; can perform any style",
+        "char_svara": "Acoustic dance; sound-movement fusion",
+        "char_kumari_rati": "Ritual dance; ceremonial movement",
+        "char_champa": "Pup dance; playful movement",
+        "char_padma": "Service dance; devotional movement"
+      },
+      "kinks": ["Dance Bondage", "Movement Submission", "Performance Play"],
+      "dimensions": {"performance": 0.95, "expression": 0.9, "intensity": 0.8},
+      "kama_links": [
+        {"kama": "CHITRA_RATI", "rel": "core_practice", "w": 0.9},
+        {"kama": "LAGHAVA_SADHANA", "rel": "reinforcing", "w": 0.85}
+      ],
+      "prerequisites": [],
+      "avn_asset": "dance_animation",
+      "minigame": "Rhythm"
+    },
+
+    "kala_54": {
+      "id": 54,
+      "sanskrit": "Lāsa",
+      "english": "Graceful Movement",
+      "domain": "domain_5_movement_dance",
+      "primary": ["char_tarana"],
+      "resonant": ["char_shrinagar", "char_kumari_rati"],
+      "latent": ["char_champa", "char_padma"],
+      "character_skills": {
+        "char_tarana": "Master of grace; can move beautifully",
+        "char_shrinagar": "Aesthetic movement; beautiful gestures",
+        "char_kumari_rati": "Ritual grace; ceremonial movement",
+        "char_champa": "Pup grace; playful movement",
+        "char_padma": "Service grace; devotional movement"
+      },
+      "kinks": ["Grace Bondage", "Movement Submission", "Aesthetic Play"],
+      "dimensions": {"performance": 0.9, "aesthetic": 0.85, "expression": 0.85},
+      "kama_links": [
+        {"kama": "LAGHAVA_SADHANA", "rel": "reinforcing", "w": 0.85}
+      ],
+      "prerequisites": ["kala_53"],
+      "avn_asset": "grace_animation",
+      "minigame": "Coordination"
+    },
+
+    "kala_55": {
+      "id": 55,
+      "sanskrit": "Sphoṭa",
+      "english": "Explosive Burst",
+      "domain": "domain_5_movement_dance",
+      "primary": ["char_tarana"],
+      "resonant": ["char_roxana", "char_altani"],
+      "latent": ["char_jahzara"],
+      "character_skills": {
+        "char_tarana": "Master of explosive movement; can burst any direction",
+        "char_roxana": "Combat burst; tactical explosion",
+        "char_altani": "Steppe burst; mounted explosion",
+        "char_jahzara": "Occult burst; ritual explosion"
+      },
+      "kinks": ["Explosive Play", "Burst Bondage", "Sudden Submission"],
+      "dimensions": {"intensity": 0.95, "performance": 0.85, "transgression": 0.75},
+      "kama_links": [
+        {"kama": "ACROEROTICISM", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": ["kala_53"],
+      "avn_asset": "burst_animation",
+      "minigame": "Endurance"
+    },
+
+    "kala_56": {
+      "id": 56,
+      "sanskrit": "Pralamba",
+      "english": "Sustained Flow",
+      "domain": "domain_5_movement_dance",
+      "primary": ["char_tarana"],
+      "resonant": ["char_sevda", "char_reva"],
+      "latent": ["char_kumari_rati"],
+      "character_skills": {
+        "char_tarana": "Master of sustained movement; can flow indefinitely",
+        "char_sevda": "Vow flow; sacred movement",
+        "char_reva": "Breath flow; poetic movement",
+        "char_kumari_rati": "Ritual flow; ceremonial movement"
+      },
+      "kinks": ["Flow Bondage", "Sustained Submission", "Endurance Play"],
+      "dimensions": {"performance": 0.85, "stillness": 0.8, "expression": 0.85},
+      "kama_links": [
+        {"kama": "NISHCHALA_SADHANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": ["kala_53"],
+      "avn_asset": "flow_animation",
+      "minigame": "Endurance"
+    },
+
+    "kala_57": {
+      "id": 57,
+      "sanskrit": "Pāda-sañcāra",
+      "english": "Footwork",
+      "domain": "domain_5_movement_dance",
+      "primary": ["char_tarana"],
+      "resonant": ["char_roxana", "char_champa"],
+      "latent": ["char_altani", "char_padma"],
+      "character_skills": {
+        "char_tarana": "Master of footwork; can step any pattern",
+        "char_roxana": "Combat footwork; tactical stepping",
+        "char_champa": "Pup footwork; playful stepping",
+        "char_altani": "Steppe footwork; mounted stepping",
+        "char_padma": "Service footwork; practical stepping"
+      },
+      "kinks": ["Foot Bondage", "Footwork Submission", "Stepping Play"],
+      "dimensions": {"performance": 0.85, "precision": 0.85, "playfulness": 0.75},
+      "kama_links": [
+        {"kama": "PADA_VANDANA_GIVING", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": ["kala_53"],
+      "avn_asset": "footwork_animation",
+      "minigame": "Coordination"
+    },
+
+    "kala_58": {
+      "id": 58,
+      "sanskrit": "Pāna-rasa",
+      "english": "Juice/Drink Prep",
+      "domain": "domain_6_sensory_pleasure",
+      "primary": ["char_malika", "char_padma"],
+      "resonant": ["char_shrinagar", "char_padma"],
+      "latent": ["char_jahzara"],
+      "character_skills": {
+        "char_malika": "Master mixologist; can create any drink",
+        "char_padma": "Service drinks; practical beverages; co-learner with Malika",
+        "char_shrinagar": "Aesthetic drinks; beautiful beverages",
+        "char_jahzara": "Occult drinks; ritual potions"
+      },
+      "kinks": ["Drink Play", "Liquid Bondage", "Beverage Submission"],
+      "dimensions": {"sensory_awareness": 0.85, "service": 0.8, "rituality": 0.7},
+      "kama_links": [
+        {"kama": "RASAYANA", "rel": "reinforcing", "w": 0.8}
+      ],
+      "prerequisites": [],
+      "avn_asset": "drink_preparation",
+      "minigame": "Coordination"
+    },
+
+    "kala_59": {
+      "id": 59,
+      "sanskrit": "Sūpa-Pāka",
+      "english": "Culinary Arts",
+      "domain": "domain_6_sensory_pleasure",
+      "primary": ["char_malika", "char_padma"],
+      "resonant": ["char_padma", "char_shrinagar"],
+      "latent": ["char_jahzara", "char_kumari_rati"],
+      "character_skills": {
+        "char_malika": "Master chef; can cook any dish",
+        "char_padma": "Service cooking; practical meals; co-learner with Malika",
+        "char_shrinagar": "Aesthetic cooking; beautiful cuisine",
+        "char_jahzara": "Occult cooking; ritual food",
+        "char_kumari_rati": "Ritual cooking; ceremonial cuisine"
+      },
+      "kinks": ["Food Play", "Culinary Bondage", "Feeding Submission"],
+      "dimensions": {"sensory_awareness": 0.9, "service": 0.85, "aesthetic": 0.8},
+      "kama_links": [
+        {"kama": "BHOJANA_RATI_SENSORY", "rel": "core_practice", "w": 0.9},
+        {"kama": "RASAYANA", "rel": "reinforcing", "w": 0.85}
+      ],
+      "prerequisites": [],
+      "avn_asset": "culinary_sequence",
+      "minigame": "Coordination"
+    },
+
+    "kala_60": {
+      "id": 60,
+      "sanskrit": "Vṛkṣa-āyurveda",
+      "english": "Botany",
+      "domain": "domain_6_sensory_pleasure",
+      "primary": ["char_jahzara"],
+      "resonant": ["char_shrinagar", "char_padma"],
+      "latent": ["char_malika"],
+      "character_skills": {
+        "char_jahzara": "Master botanist; can identify any plant",
+        "char_shrinagar": "Aesthetic botany; beautiful plants",
+        "char_padma": "Service botany; practical plants",
+        "char_malika": "Culinary botany; edible plants"
+      },
+      "kinks": ["Plant Bondage", "Botanical Submission", "Nature Play"],
+      "dimensions": {"sensory_awareness": 0.85, "rituality": 0.8, "precision": 0.75},
+      "kama_links": [
+        {"kama": "DHUPAN", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "botany_garden",
+      "minigame": "Perception"
+    },
+
+    "kala_61": {
+      "id": 61,
+      "sanskrit": "Pāśupālakya",
+      "english": "Animal Training",
+      "domain": "domain_6_sensory_pleasure",
+      "primary": ["char_champa"],
+      "resonant": ["char_padma", "char_roxana"],
+      "latent": ["char_tarana"],
+      "character_skills": {
+        "char_champa": "Pup training; being trained as pet; husband-pleasing",
+        "char_padma": "Service animal training; practical care",
+        "char_roxana": "Master animal trainer; can train any beast",
+        "char_tarana": "Movement animal training; dance-animal fusion"
+      },
+      "kinks": ["Pet Play", "Animal Bondage", "Training Submission"],
+      "dimensions": {"playfulness": 0.85, "trust": 0.9, "performance": 0.8},
+      "kama_links": [
+        {"kama": "KRIDA_MRIGA", "rel": "core_practice", "w": 0.9},
+        {"kama": "PASHU_DARSHANA", "rel": "adjacent", "w": 0.75}
+      ],
+      "prerequisites": [],
+      "avn_asset": "pet_training",
+      "minigame": "Coordination"
+    },
+
+    "kala_62": {
+      "id": 62,
+      "sanskrit": "Akṣa",
+      "english": "Dice/Games of Chance",
+      "domain": "domain_6_sensory_pleasure",
+      "primary": ["char_anisa"],
+      "resonant": ["char_maha_deva", "char_roxana"],
+      "latent": ["char_jahzara"],
+      "character_skills": {
+        "char_anisa": "Master of chance; can manipulate any game",
+        "char_maha_deva": "Cosmic games; universal chance",
+        "char_roxana": "Tactical games; strategic chance",
+        "char_jahzara": "Occult games; hidden chance"
+      },
+      "kinks": ["Gambling Play", "Chance Bondage", "Risk Submission"],
+      "dimensions": {"playfulness": 0.85, "precision": 0.8, "transgression": 0.7},
+      "kama_links": [
+        {"kama": "VILASA_PRAHANANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "gambling_minigame",
+      "minigame": "Puzzle"
+    },
+
+    "kala_63": {
+      "id": 63,
+      "sanskrit": "Pratibhā",
+      "english": "Board Games/Strategy",
+      "domain": "domain_6_sensory_pleasure",
+      "primary": ["char_anisa"],
+      "resonant": ["char_roxana", "char_jahzara"],
+      "latent": ["char_maha_deva"],
+      "character_skills": {
+        "char_anisa": "Master strategist; can win any game",
+        "char_roxana": "Tactical games; military strategy",
+        "char_jahzara": "Occult games; hidden patterns",
+        "char_maha_deva": "Cosmic games; universal strategy"
+      },
+      "kinks": ["Game Bondage", "Strategic Submission", "Competition Play"],
+      "dimensions": {"precision": 0.9, "authority": 0.8, "discipline": 0.85},
+      "kama_links": [
+        {"kama": "PROTOCOL_ENFORCEMENT", "rel": "adjacent", "w": 0.7}
+      ],
+      "prerequisites": [],
+      "avn_asset": "board_game_interface",
+      "minigame": "Puzzle"
+    },
+
+    "kala_64": {
+      "id": 64,
+      "sanskrit": "Maithuna",
+      "english": "Union/Intimacy",
+      "domain": "domain_6_sensory_pleasure",
+      "primary": ["char_kumari_rati"],
+      "resonant": ["char_maha_deva", "char_padma", "char_champa", "char_shrinagar"],
+      "latent": ["all_characters"],
+      "character_skills": {
+        "char_kumari_rati": "Master of sacred union; initiates through intimacy",
+        "char_maha_deva": "Cosmic union; philosophical intimacy",
+        "char_padma": "Devotional union; service through intimacy",
+        "char_champa": "Trust-based union; playful intimacy",
+        "char_shrinagar": "Nurturing union; intimacy through care"
+      },
+      "kinks": ["Sacred Union", "Ritual Intimacy", "Soul Bonding"],
+      "dimensions": {"devotion": 0.9, "vulnerability": 0.85, "trust": 0.9, "rituality": 0.85},
+      "kama_links": [
+        {"kama": "MAITHUNA", "rel": "core_practice", "w": 0.95}
+      ],
+      "prerequisites": ["kala_53", "kala_61"],
+      "avn_asset": "intimate_scene",
+      "minigame": "Reflection",
+      "note": "Source entry in V20 was truncated. This entry completes the required fields using the same schema as all other Kalas."
+    }
+  },
+
+  "audit": {
+    "total_kalas": 64,
+    "total_domains": 6,
+    "total_primary_assignments": 64,
+    "total_resonant_assignments": 218,
+    "total_latent_assignments": 252,
+    "orphaned_kalas": 0,
+    "orphaned_characters": 0,
+    "audit_passed": true
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schema": "antahpura.occasions",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "occasions": [
+    {
+      "id": "occ_vasantotsava",
+      "name": "Vasantotsava (Spring Festival)",
+      "type": "seasonal",
+      "description": "Celebration of spring, fertility, and renewal. Features dance, music, and floral offerings.",
+      "frequency": "annual",
+      "season": "spring",
+      "participants": [
+        "char_tarana",
+        "char_svara",
+        "char_shrinagar",
+        "char_kumari_rati"
+      ],
+      "locations": ["loc_royal_court", "loc_temple"],
+      "rituals": ["flower offering", "dance performance", "spring rites"],
+      "kama_associations": ["BHOJANA_RATI_SENSORY", "SNANA_RATI", "CHITRA_RATI"],
+      "status": "active"
+    },
+    {
+      "id": "occ_navaratri",
+      "name": "Navarātri (Nine Nights)",
+      "type": "religious",
+      "description": "Nine-night festival honoring the divine feminine. Features ritual dance, fasting, and tantric rites.",
+      "frequency": "annual",
+      "season": "autumn",
+      "participants": [
+        "char_kumari_rati",
+        "char_jahzara",
+        "char_sevda",
+        "char_tarana"
+      ],
+      "locations": ["loc_temple", "loc_sanctum"],
+      "rituals": ["nightly ritual", "dance offering", "tantric invocation"],
+      "kama_associations": ["RITUAL_AUTHORITY", "MANTRA_MOHA", "YANTRA_LEKHANA"],
+      "status": "active"
+    },
+    {
+      "id": "occ_diwali",
+      "name": "Dīpāvalī (Festival of Lights)",
+      "type": "seasonal",
+      "description": "Celebration of light over darkness. Features lamps, feasts, and court gatherings.",
+      "frequency": "annual",
+      "season": "autumn",
+      "participants": [
+        "char_maha_deva",
+        "char_kumari_rati",
+        "char_anisa",
+        "char_malika"
+      ],
+      "locations": ["loc_royal_court", "loc_inner_palace"],
+      "rituals": ["lamp lighting", "feast", "court assembly"],
+      "kama_associations": ["BHOJANA_RATI_SENSORY", "RASAYANA", "SRINGARA_VAKYA"],
+      "status": "active"
+    },
+    {
+      "id": "occ_royal_wedding_anniversary",
+      "name": "Royal Wedding Anniversary",
+      "type": "dynastic",
+      "description": "Annual commemoration of the sovereign's marriage. Features sacred union rites and public celebration.",
+      "frequency": "annual",
+      "season": "any",
+      "participants": [
+        "char_maha_deva",
+        "char_kumari_rati",
+        "char_padma",
+        "char_champa"
+      ],
+      "locations": ["loc_temple", "loc_inner_palace"],
+      "rituals": ["sacred union rite", "feast", "blessing"],
+      "kama_associations": ["MAITHUNA", "RITUAL_AUTHORITY", "VATSALYA_RATI"],
+      "status": "active"
+    },
+    {
+      "id": "occ_harvest_festival",
+      "name": "Harvest Festival (Anna-Kūṭa)",
+      "type": "seasonal",
+      "description": "Celebration of the harvest. Features culinary competitions, feasts, and offerings.",
+      "frequency": "annual",
+      "season": "autumn",
+      "participants": [
+        "char_malika",
+        "char_padma",
+        "char_champa"
+      ],
+      "locations": ["loc_kitchen", "loc_royal_court"],
+      "rituals": ["food offering", "culinary contest", "feast"],
+      "kama_associations": ["BHOJANA_RATI_SENSORY", "FORCE_FEEDING", "RASAYANA"],
+      "status": "active"
+    },
+    {
+      "id": "occ_sacred_night",
+      "name": "Sacred Night (Rātri-Pūjā)",
+      "type": "religious",
+      "description": "Night-long ritual observance involving tantric practices, meditation, and esoteric rites.",
+      "frequency": "monthly",
+      "season": "any",
+      "participants": [
+        "char_jahzara",
+        "char_sevda",
+        "char_maha_deva"
+      ],
+      "locations": ["loc_temple", "loc_occult_chamber"],
+      "rituals": ["night vigil", "tantric rite", "meditation"],
+      "kama_associations": ["MANTRA_MOHA", "AVAGAHA_SADHANA", "NISHCHALA_SADHANA"],
+      "status": "active"
+    },
+    {
+      "id": "occ_court_durbar",
+      "name": "Court Durbar (Sabhā)",
+      "type": "political",
+      "description": "Formal assembly of the court for governance, diplomacy, and public audience.",
+      "frequency": "weekly",
+      "season": "any",
+      "participants": [
+        "char_maha_deva",
+        "char_anisa",
+        "char_roxana",
+        "char_malika"
+      ],
+      "locations": ["loc_royal_court", "loc_throne_hall"],
+      "rituals": ["formal assembly", "petition", "judgment"],
+      "kama_associations": ["PROTOCOL_ENFORCEMENT", "AVADHANA_STHANA", "RITUAL_AUTHORITY"],
+      "status": "active"
+    },
+    {
+      "id": "occ_warrior_initiation",
+      "name": "Warrior Initiation (Vīra-Dīkṣā)",
+      "type": "military",
+      "description": "Ritual initiation of new warriors. Features combat trials and sacred oaths.",
+      "frequency": "annual",
+      "season": "any",
+      "participants": [
+        "char_roxana",
+        "char_jahzara",
+        "char_altani"
+      ],
+      "locations": ["loc_barracks", "loc_temple"],
+      "rituals": ["combat trial", "oath taking", "blessing"],
+      "kama_associations": ["TADANA_KALA_INFLICTING", "KASTHA_RATI", "NISHCHALA_SADHANA"],
+      "status": "active"
+    },
+    {
+      "id": "occ_musical_conclave",
+      "name": "Musical Conclave (Saṅgīta-Sabhā)",
+      "type": "cultural",
+      "description": "Gathering of musicians, dancers, and poets for performance and competition.",
+      "frequency": "monthly",
+      "season": "any",
+      "participants": [
+        "char_svara",
+        "char_tarana",
+        "char_reva",
+        "char_shrinagar"
+      ],
+      "locations": ["loc_academy", "loc_performance_hall"],
+      "rituals": ["performance", "competition", "collaboration"],
+      "kama_associations": ["NADA_SADHANA", "TALA_PRASTARA", "SRINGARA_VAKYA"],
+      "status": "active"
+    },
+    {
+      "id": "occ_lunar_rite",
+      "name": "Lunar Rite (Candra-Pūjā)",
+      "type": "religious",
+      "description": "Monthly ritual tied to the lunar cycle, honoring the moon and its erogenous zones.",
+      "frequency": "monthly",
+      "season": "any",
+      "participants": [
+        "char_kumari_rati",
+        "char_jahzara",
+        "char_padma"
+      ],
+      "locations": ["loc_temple", "loc_sanctum"],
+      "rituals": ["lunar mapping", "zone awakening", "sacred touch"],
+      "kama_associations": ["MAITHUNA", "SNANA_RATI", "VILASA_PRAHANANA"],
+      "status": "active"
+    }
+  ]
+}

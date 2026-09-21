@@ -1,0 +1,13 @@
+{
+  "schema": "antahpura.role_orientation",
+  "version": "1.0",
+  "fields": {
+    "disposition":           {"enum": ["swarini", "nirvishati", "switch", "unmapped"]},
+    "disposition_source":    {"enum": ["upload", "inferred", "design_layer"]},
+    "confidence":            {"type": "float", "range": [0.0, 1.0]},
+    "default_role":          {"enum": ["active", "receptive", "mutual", "fluid"]},
+    "role_stability":        {"type": "float", "range": [0.0, 1.0]},
+    "partner_orientation":   {"type": "object", "keys": ["with_swarini", "with_nirvishati", "with_switch", "with_male"]},
+    "network_role":          {"type": "object", "keys": ["membership", "function", "alliance_type"]}
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "antahpura.relationship.memory",
+  "version": "20.0",
+  "memory_entry_schema": {
+    "memory_id": "string",
+    "character": "char_id",
+    "relationship_target": "char_id",
+    "event_id": "string",
+    "timestamp": "iso_8601",
+    "event_description": "string",
+    "dimension_changes": {
+      "affection": "integer",
+      "trust": "integer",
+      "respect": "integer",
+      "loyalty": "integer"
+    },
+    "memory_tag": "string",
+    "salience": "float (0-1)",
+    "persists": "boolean"
+  },
+  "memory_tags": [
+    "public_praise",
+    "public_criticism",
+    "private_confession",
+    "private_trust",
+    "sacrifice",
+    "protection",
+    "betrayal",
+    "forgiveness",
+    "shared_ritual",
+    "shared_grief",
+    "rivalry_escalation",
+    "rivalry_resolution",
+    "intimacy_milestone",
+    "intimacy_rupture"
+  ],
+  "standard_event_effects": {
+    "public_praise": {
+      "affection": 3,
+      "trust": 2,
+      "respect": 4,
+      "rivalry": -1,
+      "loyalty": 2
+    },
+    "public_criticism": {
+      "affection": -4,
+      "trust": -3,
+      "respect": -2,
+      "rivalry": 3,
+      "loyalty": -1
+    },
+    "private_confession": {
+      "affection": 5,
+      "trust": 6,
+      "respect": 2,
+      "loyalty": 3
+    },
+    "protection_offered": {
+      "affection": 4,
+      "trust": 5,
+      "respect": 4,
+      "loyalty": 5
+    },
+    "betrayal_minor": {
+      "affection": -8,
+      "trust": -15,
+      "respect": -5,
+      "rivalry": 10,
+      "loyalty": -10
+    },
+    "betrayal_major": {
+      "affection": -20,
+      "trust": -40,
+      "respect": -15,
+      "rivalry": 25,
+      "loyalty": -30
+    },
+    "forgiveness_granted": {
+      "affection": 12,
+      "trust": 15,
+      "respect": 8,
+      "rivalry": -15,
+      "loyalty": 10
+    },
+    "shared_ritual": {
+      "affection": 4,
+      "trust": 4,
+      "respect": 3,
+      "rivalry": -2,
+      "loyalty": 3
+    },
+    "rivalry_escalation": {
+      "affection": -3,
+      "trust": -2,
+      "rivalry": 8,
+      "loyalty": -3
+    },
+    "intimacy_milestone": {
+      "affection": 10,
+      "trust": 8,
+      "respect": 5,
+      "rivalry": -5,
+      "loyalty": 8
+    }
+  }
+}

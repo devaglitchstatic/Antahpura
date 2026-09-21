@@ -1,0 +1,288 @@
+{
+  "schema": "ANTAHPURA_CANON_VALIDATION_TESTS",
+  "version": "20.0",
+  "purpose": "DBT-style test suite for canon integrity, reference validity, and runtime safety",
+  "test_framework": "custom_or_pytest",
+  "execution": "run_after_any_canon_or_derived_artifact_change",
+
+  "test_categories": {
+
+    "identity": {
+      "T_ID_001_all_seats_present": {
+        "description": "All 14 canonical seats present",
+        "severity": "critical",
+        "assert": "len(canon.characters) == 14",
+        "on_fail": "abort"
+      },
+      "T_ID_002_unique_canonical_ids": {
+        "description": "All canonical IDs unique",
+        "severity": "critical",
+        "assert": "len(set(canon.character_ids)) == len(canon.character_ids)"
+      },
+      "T_ID_003_names_populated": {
+        "description": "All characters have canonical_name",
+        "severity": "critical",
+        "assert": "all(c.canonical_name is not None for c in canon.characters)"
+      },
+      "T_ID_004_no_duplicate_names": {
+        "description": "No two characters share a canonical name",
+        "severity": "high",
+        "assert": "len(set(c.canonical_name)) == len(canon.characters)"
+      }
+    },
+
+    "schema": {
+      "T_SCHEMA_001_required_fields": {
+        "description": "All objects contain required fields",
+        "severity": "critical",
+        "assert": "all_fields_present_in(all_objects, required_fields_by_type)"
+      },
+      "T_SCHEMA_002_valid_enums": {
+        "description": "All enum fields have valid values",
+        "severity": "high",
+        "assert": "all_enums_valid"
+      },
+      "T_SCHEMA_003_id_patterns": {
+        "description": "All IDs match their pattern",
+        "severity": "high",
+        "assert": "all(patterns_match(obj.id, obj.type) for obj in all_objects)"
+      }
+    },
+
+    "references": {
+      "T_REF_001_all_refs_resolve": {
+        "description": "All references point to existing objects",
+        "severity": "critical",
+        "assert": "no_orphan_references(all_objects)",
+        "excludes": ["canonical_relationship_placeholders"]
+      },
+      "T_REF_002_no_circular_dependencies": {
+        "description": "No circular dependencies outside of permitted cycles",
+        "severity": "high",
+        "assert": "no_forbidden_cycles"
+      },
+      "T_REF_003_kala_link_valid": {
+        "description": "All kala_links reference valid kalas",
+        "severity": "critical",
+        "assert": "all(k.id in canon.kala_ids for k in all_kama_links)"
+      },
+      "T_REF_004_kama_link_valid": {
+        "description": "All kama_links reference valid kamas",
+        "severity": "critical",
+        "assert": "all(k.id in canon.kama_ids for k in all_kala_kama_links)"
+      },
+      "T_REF_005_character_kama_refs": {
+        "description": "All character-kama references resolve",
+        "severity": "critical",
+        "assert": "all_character_kama_refs_valid"
+      },
+      "T_REF_006_scene_template_refs": {
+        "description": "All scene templates reference valid kalas and institutions",
+        "severity": "high",
+        "assert": "scene_template_refs_valid"
+      },
+      "T_REF_007_quest_refs": {
+        "description": "All quest prerequisites reference valid targets",
+        "severity": "high",
+        "assert": "quest_prereq_targets_valid"
+      }
+    },
+
+    "kama": {
+      "T_KAMA_001_count": {
+        "description": "Kama count matches header",
+        "severity": "critical",
+        "assert": "len(canon.kamas) == 98"
+      },
+      "T_KAMA_002_dimension_coverage": {
+        "description": "Every kama maps to at least one dimension",
+        "severity": "high",
+        "assert": "all(len(k.dims) >= 1 for k in canon.kamas)"
+      },
+      "T_KAMA_003_provenance": {
+        "description": "Every kama has a provenance tag",
+        "severity": "high",
+        "assert": "all(k.prov is not None for k in canon.kamas)"
+      },
+      "T_KAMA_004_role_owner_valid": {
+        "description": "All role_owner references are valid characters",
+        "severity": "high",
+        "assert": "all_role_owner_refs_valid"
+      },
+      "T_KAMA_005_no_orphan_kala_link": {
+        "description": "Every kala_link has a valid relationship type",
+        "severity": "high",
+        "assert": "kala_link_relationship_valid"
+      }
+    },
+
+    "kala": {
+      "T_KALA_001_count": {
+        "description": "Kala count is 64",
+        "severity": "critical",
+        "assert": "len(canon.kalas) == 64"
+      },
+      "T_KALA_002_domain_assignment": {
+        "description": "Every kala maps to exactly one domain",
+        "severity": "critical",
+        "assert": "all(len(k.domain.split(',')) == 1 for k in canon.kalas)"
+      },
+      "T_KALA_003_primary_populated": {
+        "description": "Every kala has at least one primary",
+        "severity": "high",
+        "assert": "all(len(k.primary) >= 1 for k in canon.kalas)"
+      },
+      "T_KALA_004_no_orphans": {
+        "description": "No kala is without a domain",
+        "severity": "critical",
+        "assert": "all(k.domain is not None for k in canon.kalas)"
+      },
+      "T_KALA_005_synergy_refs": {
+        "description": "All synergies reference valid kalas",
+        "severity": "high",
+        "assert": "all_synergy_refs_valid"
+      }
+    },
+
+    "relationships": {
+      "T_REL_001_directed_edges": {
+        "description": "All relationship edges are directional",
+        "severity": "high",
+        "assert": "all_edges_have_from_and_to"
+      },
+      "T_REL_002_no_self_edges": {
+        "description": "No character has a relationship edge to itself",
+        "severity": "critical",
+        "assert": "no_self_references"
+      },
+      "T_REL_003_dimensions_present": {
+        "description": "All edges contain all 11 dimensions",
+        "severity": "high",
+        "assert": "len(edge.dimensions) == 11"
+      },
+      "T_REL_004_dimension_bounds": {
+        "description": "All dimension values in 0-100",
+        "severity": "critical",
+        "assert": "0 <= dim.value <= 100 for all dimensions"
+      },
+      "T_REL_005_edge_count": {
+        "description": "14 characters × 13 targets = 182 edges",
+        "severity": "high",
+        "assert": "len(edges) == 182"
+      }
+    },
+
+    "rahasya": {
+      "T_RAH_001_invisible_flag": {
+        "description": "All Rahasya entries have invisible_to_player = true",
+        "severity": "critical",
+        "assert": "all_rahasya_invisible"
+      },
+      "T_RAH_002_no_runtime_state": {
+        "description": "No runtime state embedded in Rahasya",
+        "severity": "critical",
+        "assert": "no_runtime_state_in_rahasya"
+      },
+      "T_RAH_003_no_player_leakage": {
+        "description": "No Rahasya content is visible in public projection",
+        "severity": "critical",
+        "assert": "no_rahasya_leakage"
+      }
+    },
+
+    "projection": {
+      "T_PROJ_001_chub_deterministic": {
+        "description": "CHUB cards are deterministic from source",
+        "severity": "high",
+        "assert": "chub_regen_matches_previous"
+      },
+      "T_PROJ_002_lorebook_deterministic": {
+        "description": "Lorebook entries are deterministic from source",
+        "severity": "high",
+        "assert": "lorebook_regen_matches_previous"
+      },
+      "T_PROJ_003_no_unauthorized_content": {
+        "description": "No minor-explicit content in any projection",
+        "severity": "critical",
+        "assert": "no_minor_explicit_content"
+      }
+    },
+
+    "multiplayer": {
+      "T_MP_001_valid_player_refs": {
+        "description": "All sessions reference valid players",
+        "severity": "critical",
+        "assert": "session_player_refs_valid"
+      },
+      "T_MP_002_boundary_propagation": {
+        "description": "All session boundaries propagate to all participants",
+        "severity": "critical",
+        "assert": "boundaries_propagated"
+      },
+      "T_MP_003_no_cross_session_leak": {
+        "description": "No cross-session state leaks",
+        "severity": "critical",
+        "assert": "no_cross_session_leak"
+      },
+      "T_MP_004_hard_stop_immediate": {
+        "description": "Hard stops propagate within 100ms",
+        "severity": "critical",
+        "assert": "hard_stop_latency_ms < 100"
+      }
+    },
+
+    "archive": {
+      "T_ARC_001_append_only": {
+        "description": "Archive log is append-only",
+        "severity": "critical",
+        "assert": "archive_is_append_only"
+      },
+      "T_ARC_002_session_summary": {
+        "description": "Every closed session produces a summary",
+        "severity": "high",
+        "assert": "all_sessions_have_summary"
+      },
+      "T_ARC_003_no_archive_mutation": {
+        "description": "No archive entry is mutated after write",
+        "severity": "critical",
+        "assert": "no_mutation_after_write"
+      }
+    },
+
+    "consistency": {
+      "T_CONS_001_no_stale_refs": {
+        "description": "No references to removed or renamed characters",
+        "severity": "high",
+        "assert": "no_stale_references"
+      },
+      "T_CONS_002_seat_count": {
+        "description": "Seat count matches 14",
+        "severity": "critical",
+        "assert": "seat_count == 14"
+      },
+      "T_CONS_003_kala_assignments": {
+        "description": "Every kala has a primary character",
+        "severity": "high",
+        "assert": "all_kalas_have_primary"
+      }
+    }
+  },
+
+  "execution_policy": {
+    "fail_critical": "halt_and_flag",
+    "fail_high": "continue_with_warning",
+    "fail_medium": "log_only",
+    "fail_low": "log_only",
+    "report_format": "json_to_audit/validation_results.json"
+  },
+
+  "test_fixtures": {
+    "canon_source": "canon/characters.json",
+    "kama_source": "systems/kama_system_v20.json",
+    "kala_source": "systems/kala_system_v20.json",
+    "relationship_source": "systems/relationship_system_v20.json",
+    "scene_source": "systems/scene_engine_v20.json",
+    "quest_source": "systems/quest_system_v20.json",
+    "character_book_source": "characters/*.json"
+  }
+}

@@ -1,0 +1,2126 @@
+{
+  "schema": "antahpura.location_system",
+  "version": "20.0",
+  "generated": "2026-09-14",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Spatial registry defining all locations, institutions, access rules, environmental modifiers, resident characters, scene availability, and runtime state.",
+  "total_institutions": 7,
+  "total_locations": 42,
+  "total_zones": 5,
+  "institutions": {
+    "inst_throne": {
+      "name": "The Throne",
+      "description": "Sovereign authority. The seat of Mahā Deva and the ruling line.",
+      "authority_level": 10,
+      "primary_locations": [
+        "loc_throne_hall",
+        "loc_throne_anteroom",
+        "loc_royal_chamber"
+      ],
+      "governing_character": "char_maha_deva"
+    },
+    "inst_zenana": {
+      "name": "The Zenana",
+      "description": "Inner palace. Women's quarters. Seat of Kumārī Rati and the primary initiates.",
+      "authority_level": 8,
+      "primary_locations": [
+        "loc_zenana_inner",
+        "loc_zenana_outer",
+        "loc_princess_apartment",
+        "loc_private_dining",
+        "loc_service_corridors"
+      ],
+      "governing_character": "char_kumari_rati"
+    },
+    "inst_military_perimeter": {
+      "name": "Military Perimeter",
+      "description": "External defense. Guard posts, drill yards, and perimeter patrol.",
+      "authority_level": 8,
+      "primary_locations": [
+        "loc_drill_yard",
+        "loc_palace_walls",
+        "loc_steppe_corridor",
+        "loc_guard_barracks",
+        "loc_armory"
+      ],
+      "governing_character": "char_roxana"
+    },
+    "inst_administrative_court": {
+      "name": "Administrative Court",
+      "description": "Records, protocol, law, and cipher management.",
+      "authority_level": 7,
+      "primary_locations": [
+        "loc_administrative_court",
+        "loc_archive",
+        "loc_cipher_room",
+        "loc_threshold_gate"
+      ],
+      "governing_character": "char_anisa"
+    },
+    "inst_yogic_pavilion": {
+      "name": "Yogic Pavilion",
+      "description": "Esoteric practice, music, and aesthetic cultivation.",
+      "authority_level": 6,
+      "primary_locations": [
+        "loc_yogic_pavilion",
+        "loc_esoteric_study",
+        "loc_music_chamber",
+        "loc_perfume_atelier"
+      ],
+      "governing_character": "char_shrinagar"
+    },
+    "inst_subterranean_vaults": {
+      "name": "Subterranean Vaults",
+      "description": "Hidden knowledge, containment, and subterranean ritual.",
+      "authority_level": 7,
+      "primary_locations": [
+        "loc_vault_exterior",
+        "loc_containment_chambers",
+        "loc_hidden_archive",
+        "loc_patala_chamber"
+      ],
+      "governing_character": "char_sevda"
+    },
+    "inst_ritual_chorus": {
+      "name": "Ritual Chorus",
+      "description": "Collective ceremony, performance, and acoustic ritual.",
+      "authority_level": 5,
+      "primary_locations": [
+        "loc_ritual_chorus",
+        "loc_performance_pavilion",
+        "loc_instrument_workshop",
+        "loc_chorus_rehearsal"
+      ],
+      "governing_character": "char_svara"
+    }
+  },
+  "location_types": {
+    "throne_space": "Sovereign audience and decree",
+    "private_chamber": "Intimate quarters",
+    "service_space": "Domestic labor and household function",
+    "guard_space": "Security and patrol",
+    "ritual_space": "Ceremony and esoteric practice",
+    "performance_space": "Music, dance, and display",
+    "craft_space": "Making, repair, and production",
+    "archive_space": "Records, knowledge, and secrecy",
+    "threshold_space": "Gates, corridors, and transitional zones",
+    "garden_space": "Outdoor cultivation and leisure",
+    "subterranean_space": "Underground vaults and hidden chambers",
+    "bath_space": "Water, cleansing, and ritual purification"
+  },
+  "locations": {
+    "loc_throne_hall": {
+      "name": "Throne Hall",
+      "institution": "inst_throne",
+      "location_type": "throne_space",
+      "zone": "central",
+      "description": "The sovereign audience hall. Elevated throne. Marble floors. Massive stone pillars.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_throne": 5
+        },
+        "audience_token": "required",
+        "invitation": "required_for_non_officials"
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_maha_deva",
+        "char_anisa",
+        "char_roxana",
+        "char_kumari_rati"
+      ],
+      "available_kalas": [
+        "kala_logic",
+        "kala_protocol",
+        "kala_voice",
+        "kala_writing"
+      ],
+      "available_kamas": [
+        "AVADHANA_STHANA",
+        "PROTOCOL_ENFORCEMENT",
+        "RITUAL_AUTHORITY"
+      ],
+      "environmental_modifiers": {
+        "authority_amplifier": 1.5,
+        "intimidation_modifier": 1.3,
+        "privacy_modifier": 0.2
+      },
+      "occasions": [
+        "durbar",
+        "formal_audience",
+        "succession_ceremony",
+        "decree"
+      ],
+      "secrets": [
+        {
+          "secret_id": "secret_throne_1",
+          "description": "Beneath the throne, an older and forgotten cipher is carved",
+          "discoverable_by": [
+            "char_reva",
+            "char_anisa"
+          ],
+          "unlock_kala": "kala_lexicography",
+          "consequence_tag": "cipher_discovery"
+        }
+      ],
+      "avn_assets": [
+        "throne_hall_wide",
+        "throne_audience_loop"
+      ],
+      "scene_templates": [
+        "tpl_court_assembly"
+      ]
+    },
+    "loc_throne_anteroom": {
+      "name": "Throne Anteroom",
+      "institution": "inst_throne",
+      "location_type": "threshold_space",
+      "zone": "central",
+      "description": "Waiting chamber before the throne hall. Guards posted. Petitioners gather here.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_throne": 2,
+          "inst_military_perimeter": 2
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_roxana",
+        "char_anisa",
+        "char_malika"
+      ],
+      "available_kalas": [
+        "kala_protocol",
+        "kala_gatekeeping",
+        "kala_strategy"
+      ],
+      "available_kamas": [
+        "ACCESS_DENIAL",
+        "PROTOCOL_ENFORCEMENT"
+      ],
+      "environmental_modifiers": {
+        "authority_amplifier": 1.2,
+        "privacy_modifier": 0.4
+      },
+      "occasions": [
+        "petition_day",
+        "formal_procession"
+      ],
+      "secrets": []
+    },
+    "loc_royal_chamber": {
+      "name": "Royal Chamber",
+      "institution": "inst_throne",
+      "location_type": "private_chamber",
+      "zone": "central",
+      "description": "Mahā Deva's private quarters. Luxurious. Strategically placed.",
+      "access_requirements": {
+        "invitation": "required",
+        "relationship": {
+          "char_maha_deva": {
+            "trust": 60
+          }
+        }
+      },
+      "residents": [
+        "char_maha_deva"
+      ],
+      "frequent_visitors": [
+        "char_kumari_rati"
+      ],
+      "available_kalas": [
+        "kala_logic",
+        "kala_writing",
+        "kala_voice"
+      ],
+      "available_kamas": [
+        "VICARIOUS_EGO_BHANGA",
+        "RITUAL_AUTHORITY"
+      ],
+      "environmental_modifiers": {
+        "privacy_modifier": 1.5,
+        "intimacy_amplifier": 1.3
+      },
+      "occasions": [
+        "private_audience",
+        "night_retreat"
+      ],
+      "secrets": [
+        {
+          "secret_id": "secret_royal_1",
+          "description": "A concealed passage leads from the royal chamber to the yogic pavilion",
+          "discoverable_by": [
+            "char_shrinagar",
+            "char_kumari_rati"
+          ],
+          "unlock_scene": "scene_secret_passage",
+          "consequence_tag": "passage_discovery"
+        }
+      ]
+    },
+    "loc_zenana_inner": {
+      "name": "Zenana Inner Chambers",
+      "institution": "inst_zenana",
+      "location_type": "private_chamber",
+      "zone": "inner",
+      "description": "Deepest layer of the harem. Silk drapes. Marble jalis. Scented air.",
+      "access_requirements": {
+        "gender_restriction": "women_only",
+        "institutional_reputation": {
+          "inst_zenana": 4
+        },
+        "invitation": "required_for_non_residents"
+      },
+      "residents": [
+        "char_kumari_rati",
+        "char_padma",
+        "char_champa"
+      ],
+      "frequent_visitors": [
+        "char_shrinagar",
+        "char_tarana",
+        "char_reva"
+      ],
+      "available_kalas": [
+        "kala_maithuna",
+        "kala_dance",
+        "kala_song",
+        "kala_garland",
+        "kala_perfume"
+      ],
+      "available_kamas": [
+        "DASYAM",
+        "VATSALYA_RATI",
+        "MDLG",
+        "SNANA_PUJA_GIVING",
+        "BHOJANA_RATI_SENSORY"
+      ],
+      "environmental_modifiers": {
+        "privacy_modifier": 1.8,
+        "intimacy_amplifier": 1.5,
+        "sensory_amplifier": 1.4
+      },
+      "occasions": [
+        "bathukamma",
+        "varalakshmi_vratam",
+        "private_rituals"
+      ],
+      "secrets": [
+        {
+          "secret_id": "secret_zenana_1",
+          "description": "Hidden alcove behind the silk drapes holds records of previous initiates",
+          "discoverable_by": [
+            "char_padma",
+            "char_champa"
+          ],
+          "unlock_scene": "scene_initiate_records",
+          "consequence_tag": "history_discovery"
+        }
+      ],
+      "avn_assets": [
+        "zenana_wide",
+        "zenana_cushion_loop"
+      ],
+      "scene_templates": [
+        "tpl_private_encounter"
+      ]
+    },
+    "loc_zenana_outer": {
+      "name": "Zenana Outer Court",
+      "institution": "inst_zenana",
+      "location_type": "threshold_space",
+      "zone": "inner",
+      "description": "Transitional zone between harem and administrative court. Guarded by Urdubegi.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_zenana": 2
+        },
+        "guard_clearance": "required"
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_jahzara",
+        "char_malika",
+        "char_anisa"
+      ],
+      "available_kalas": [
+        "kala_protocol",
+        "kala_gatekeeping"
+      ],
+      "available_kamas": [
+        "ACCESS_DENIAL",
+        "DVARA_RATI"
+      ],
+      "environmental_modifiers": {
+        "privacy_modifier": 0.8,
+        "authority_amplifier": 1.1
+      },
+      "occasions": [
+        "daily_transitions"
+      ],
+      "secrets": []
+    },
+    "loc_princess_apartment": {
+      "name": "Princess's Apartment",
+      "institution": "inst_zenana",
+      "location_type": "private_chamber",
+      "zone": "inner",
+      "description": "Kumārī Rati's private quarters. Personal handmaidens attend.",
+      "access_requirements": {
+        "invitation": "required",
+        "relationship": {
+          "char_kumari_rati": {
+            "trust": 50
+          }
+        }
+      },
+      "residents": [
+        "char_kumari_rati",
+        "char_padma"
+      ],
+      "frequent_visitors": [
+        "char_champa",
+        "char_shrinagar"
+      ],
+      "available_kalas": [
+        "kala_dance",
+        "kala_song",
+        "kala_maithuna",
+        "kala_cosmetics"
+      ],
+      "available_kamas": [
+        "DASYAM",
+        "DARPANA_SADHANA",
+        "FOOT_WORSHIP_RECEIVING"
+      ],
+      "environmental_modifiers": {
+        "privacy_modifier": 1.6,
+        "intimacy_amplifier": 1.4
+      },
+      "occasions": [
+        "morning_routine",
+        "evening_preparation"
+      ],
+      "secrets": []
+    },
+    "loc_private_dining": {
+      "name": "Private Dining Chamber",
+      "institution": "inst_zenana",
+      "location_type": "private_chamber",
+      "zone": "inner",
+      "description": "Intimate dining space. Low tables. Silk cushions.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_zenana": 3
+        },
+        "invitation": "required"
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_kumari_rati",
+        "char_malika",
+        "char_padma",
+        "char_shrinagar"
+      ],
+      "available_kalas": [
+        "kala_culinary",
+        "kala_drink_prep",
+        "kala_service"
+      ],
+      "available_kamas": [
+        "BHOJANA_RATI_SENSORY",
+        "RASAYANA",
+        "FORCE_FEEDING"
+      ],
+      "environmental_modifiers": {
+        "intimacy_amplifier": 1.3,
+        "sensory_amplifier": 1.3
+      },
+      "occasions": [
+        "private_feast",
+        "daily_meals"
+      ],
+      "secrets": []
+    },
+    "loc_service_corridors": {
+      "name": "Service Corridors",
+      "institution": "inst_zenana",
+      "location_type": "service_space",
+      "zone": "inner",
+      "description": "Narrow passages for domestic staff. Earthen floors. Unpolished stone.",
+      "access_requirements": {
+        "staff_clearance": "required",
+        "gender_restriction": "women_only"
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_padma",
+        "char_champa",
+        "char_malika"
+      ],
+      "available_kalas": [
+        "kala_service",
+        "kala_weaving",
+        "kala_pottery"
+      ],
+      "available_kamas": [
+        "DASYAM",
+        "SNANA_PUJA_GIVING"
+      ],
+      "environmental_modifiers": {
+        "privacy_modifier": 1.2,
+        "aesthetic_modifier": 0.5
+      },
+      "occasions": [
+        "daily_labor"
+      ],
+      "secrets": [
+        {
+          "secret_id": "secret_corridor_1",
+          "description": "A loose stone in the eastern corridor conceals a small cipher tablet",
+          "discoverable_by": [
+            "char_reva",
+            "char_padma"
+          ],
+          "unlock_scene": "scene_cipher_tablet",
+          "consequence_tag": "cipher_discovery"
+        }
+      ]
+    },
+    "loc_drill_yard": {
+      "name": "Drill Yard",
+      "institution": "inst_military_perimeter",
+      "location_type": "guard_space",
+      "zone": "outer",
+      "description": "Open training ground. Packed earth. Weapon racks. Sparring circles.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_military_perimeter": 2
+        },
+        "guard_clearance": "required"
+      },
+      "residents": [
+        "char_roxana"
+      ],
+      "frequent_visitors": [
+        "char_altani",
+        "char_jahzara",
+        "char_malika"
+      ],
+      "available_kalas": [
+        "kala_archery",
+        "kala_swordplay",
+        "kala_wrestling",
+        "kala_mace",
+        "kala_lasso",
+        "kala_endurance"
+      ],
+      "available_kamas": [
+        "TADANA_KALA_INFLICTING",
+        "DHMA_KALA",
+        "KASTHA_RATI",
+        "PROTOCOL_ENFORCEMENT"
+      ],
+      "environmental_modifiers": {
+        "intensity_amplifier": 1.4,
+        "discipline_amplifier": 1.3,
+        "privacy_modifier": 0.3
+      },
+      "occasions": [
+        "morning_drill",
+        "evening_sparring",
+        "competitive_trials"
+      ],
+      "secrets": []
+    },
+    "loc_palace_walls": {
+      "name": "Palace Walls",
+      "institution": "inst_military_perimeter",
+      "location_type": "guard_space",
+      "zone": "outer",
+      "description": "High defensive walls. Overlooking courtyards and external approaches.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_military_perimeter": 3
+        },
+        "guard_clearance": "required"
+      },
+      "residents": [
+        "char_altani"
+      ],
+      "frequent_visitors": [
+        "char_jahzara",
+        "char_roxana"
+      ],
+      "available_kalas": [
+        "kala_archery",
+        "kala_vigilance",
+        "kala_strategy"
+      ],
+      "available_kamas": [
+        "NISHCHALA_SADHANA",
+        "KASTHA_RATI"
+      ],
+      "environmental_modifiers": {
+        "vigilance_amplifier": 1.5,
+        "isolation_modifier": 1.3
+      },
+      "occasions": [
+        "night_watch",
+        "dawn_patrol"
+      ],
+      "secrets": []
+    },
+    "loc_steppe_corridor": {
+      "name": "Steppe Corridor",
+      "institution": "inst_military_perimeter",
+      "location_type": "guard_space",
+      "zone": "outer",
+      "description": "Long stone corridor used for cavalry passage and mounted drills. Open to sky on one side.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_military_perimeter": 4
+        },
+        "mount_access": "required"
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_altani",
+        "char_roxana"
+      ],
+      "available_kalas": [
+        "kala_archery",
+        "kala_endurance",
+        "kala_strategy"
+      ],
+      "available_kamas": [
+        "TADANA_KALA_INFLICTING",
+        "NISHCHALA_SADHANA"
+      ],
+      "environmental_modifiers": {
+        "discipline_amplifier": 1.3,
+        "intensity_amplifier": 1.2
+      },
+      "occasions": [
+        "cavalry_drill",
+        "long_patrol"
+      ],
+      "secrets": []
+    },
+    "loc_guard_barracks": {
+      "name": "Guard Barracks",
+      "institution": "inst_military_perimeter",
+      "location_type": "guard_space",
+      "zone": "outer",
+      "description": "Shared quarters for the guard corps. Austere. Functional.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_military_perimeter": 2
+        }
+      },
+      "residents": [
+        "char_altani",
+        "char_jahzara"
+      ],
+      "frequent_visitors": [
+        "char_roxana"
+      ],
+      "available_kalas": [
+        "kala_endurance",
+        "kala_wrestling",
+        "kala_strategy"
+      ],
+      "available_kamas": [
+        "NISHCHALA_SADHANA",
+        "KRIDA_MRIGA_PET_GUARD"
+      ],
+      "environmental_modifiers": {
+        "discipline_amplifier": 1.3,
+        "privacy_modifier": 0.6
+      },
+      "occasions": [
+        "daily_rest",
+        "night_shift_swap"
+      ],
+      "secrets": []
+    },
+    "loc_armory": {
+      "name": "Armory",
+      "institution": "inst_military_perimeter",
+      "location_type": "craft_space",
+      "zone": "outer",
+      "description": "Weapons storage and maintenance. Racks. Wheels. Forge pit.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_military_perimeter": 3
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_roxana",
+        "char_jahzara",
+        "char_altani"
+      ],
+      "available_kalas": [
+        "kala_metallurgy",
+        "kala_carpentry",
+        "kala_weapon_carving"
+      ],
+      "available_kamas": [
+        "FIRE_PLAY",
+        "RAKTA_SPARSHA"
+      ],
+      "environmental_modifiers": {
+        "intensity_amplifier": 1.2,
+        "craft_amplifier": 1.3
+      },
+      "occasions": [
+        "weapon_maintenance",
+        "forge_day"
+      ],
+      "secrets": []
+    },
+    "loc_administrative_court": {
+      "name": "Administrative Court",
+      "institution": "inst_administrative_court",
+      "location_type": "archive_space",
+      "zone": "central",
+      "description": "The seat of protocol, records, and law. Long tables. Ink pots. Scrolls.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_administrative_court": 3
+        },
+        "official_clearance": "required"
+      },
+      "residents": [
+        "char_anisa"
+      ],
+      "frequent_visitors": [
+        "char_malika",
+        "char_reva",
+        "char_maha_deva"
+      ],
+      "available_kalas": [
+        "kala_writing",
+        "kala_logic",
+        "kala_protocol",
+        "kala_lexicography",
+        "kala_memory"
+      ],
+      "available_kamas": [
+        "PROTOCOL_ENFORCEMENT",
+        "MEDICAL_PLAY",
+        "NIBANDHA_PRACODANA"
+      ],
+      "environmental_modifiers": {
+        "discipline_amplifier": 1.4,
+        "precision_amplifier": 1.3,
+        "privacy_modifier": 1.2
+      },
+      "occasions": [
+        "daily_administration",
+        "formal_hearing",
+        "record_keeping"
+      ],
+      "secrets": [
+        {
+          "secret_id": "secret_admin_1",
+          "description": "A ledger with missing pages suggests deliberate records tampering",
+          "discoverable_by": [
+            "char_reva",
+            "char_anisa"
+          ],
+          "unlock_scene": "scene_ledger_investigation",
+          "consequence_tag": "records_tampered"
+        }
+      ]
+    },
+    "loc_archive": {
+      "name": "Archive",
+      "institution": "inst_administrative_court",
+      "location_type": "archive_space",
+      "zone": "central",
+      "description": "Deep storage of records, scrolls, cipher keys, and histories.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_administrative_court": 4
+        },
+        "cipher_key": "required_for_restricted_sections"
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_anisa",
+        "char_reva"
+      ],
+      "available_kalas": [
+        "kala_lexicography",
+        "kala_memory",
+        "kala_writing",
+        "kala_cipher"
+      ],
+      "available_kamas": [
+        "NIBANDHA_PRACODANA",
+        "GRAPHOEROTICA"
+      ],
+      "environmental_modifiers": {
+        "privacy_modifier": 1.5,
+        "contemplation_amplifier": 1.4
+      },
+      "occasions": [
+        "research_days",
+        "cipher_review"
+      ],
+      "secrets": [
+        {
+          "secret_id": "secret_archive_1",
+          "description": "Hidden section behind the north wall contains pre-dynastic records",
+          "discoverable_by": [
+            "char_reva",
+            "char_anisa"
+          ],
+          "unlock_scene": "scene_predynastic_records",
+          "consequence_tag": "history_revelation"
+        }
+      ]
+    },
+    "loc_cipher_room": {
+      "name": "Cipher Room",
+      "institution": "inst_administrative_court",
+      "location_type": "archive_space",
+      "zone": "central",
+      "description": "Sealed chamber for cipher work. Soundproofed. Single oil lamp.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_administrative_court": 5
+        },
+        "cipher_master_token": "required"
+      },
+      "residents": [
+        "char_reva"
+      ],
+      "frequent_visitors": [
+        "char_anisa"
+      ],
+      "available_kalas": [
+        "kala_cipher",
+        "kala_memory",
+        "kala_writing"
+      ],
+      "available_kamas": [
+        "NIBANDHA_PRACODANA",
+        "INDRIYA_NIRODHA"
+      ],
+      "environmental_modifiers": {
+        "privacy_modifier": 2.0,
+        "contemplation_amplifier": 1.5
+      },
+      "occasions": [
+        "cipher_sessions"
+      ],
+      "secrets": []
+    },
+    "loc_threshold_gate": {
+      "name": "Threshold Gate",
+      "institution": "inst_administrative_court",
+      "location_type": "threshold_space",
+      "zone": "central",
+      "description": "Primary access control point between administrative court and zenana.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_administrative_court": 2,
+          "inst_zenana": 2
+        }
+      },
+      "residents": [
+        "char_malika"
+      ],
+      "frequent_visitors": [
+        "char_anisa",
+        "char_jahzara",
+        "char_padma"
+      ],
+      "available_kalas": [
+        "kala_gatekeeping",
+        "kala_protocol",
+        "kala_threshold"
+      ],
+      "available_kamas": [
+        "ACCESS_DENIAL",
+        "DVARA_RATI"
+      ],
+      "environmental_modifiers": {
+        "authority_amplifier": 1.3,
+        "vigilance_amplifier": 1.4
+      },
+      "occasions": [
+        "daily_transition",
+        "formal_entrance"
+      ],
+      "secrets": []
+    },
+    "loc_yogic_pavilion": {
+      "name": "Yogic Pavilion",
+      "institution": "inst_yogic_pavilion",
+      "location_type": "ritual_space",
+      "zone": "inner",
+      "description": "Open pavilion for esoteric practice. Marble columns. Lotus pond nearby.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_yogic_pavilion": 3
+        },
+        "invitation": "required_for_non_members"
+      },
+      "residents": [
+        "char_shrinagar"
+      ],
+      "frequent_visitors": [
+        "char_sevda",
+        "char_jahzara",
+        "char_reva",
+        "char_kumari_rati"
+      ],
+      "available_kalas": [
+        "kala_perfume",
+        "kala_ritual",
+        "kala_music",
+        "kala_visual_poetry"
+      ],
+      "available_kamas": [
+        "RASAYANA",
+        "SNANA_RATI",
+        "DHUPAN",
+        "GARBHA_SADHANA"
+      ],
+      "environmental_modifiers": {
+        "aesthetic_amplifier": 1.5,
+        "contemplation_amplifier": 1.4,
+        "privacy_modifier": 1.2
+      },
+      "occasions": [
+        "dawn_practice",
+        "evening_meditation",
+        "esoteric_gathering"
+      ],
+      "secrets": [
+        {
+          "secret_id": "secret_yogic_1",
+          "description": "The lotus pond conceals a submerged chamber accessible by breath-holding",
+          "discoverable_by": [
+            "char_reva",
+            "char_sevda"
+          ],
+          "unlock_scene": "scene_submerged_chamber",
+          "consequence_tag": "chamber_discovery"
+        }
+      ]
+    },
+    "loc_esoteric_study": {
+      "name": "Esoteric Study",
+      "institution": "inst_yogic_pavilion",
+      "location_type": "ritual_space",
+      "zone": "inner",
+      "description": "Quiet study for esoteric texts. Single window. Palm-leaf manuscripts.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_yogic_pavilion": 4
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_shrinagar",
+        "char_reva",
+        "char_jahzara"
+      ],
+      "available_kalas": [
+        "kala_yantra",
+        "kala_mantra",
+        "kala_dream",
+        "kala_divination"
+      ],
+      "available_kamas": [
+        "DHUPAN",
+        "MANTRA_MOHA"
+      ],
+      "environmental_modifiers": {
+        "privacy_modifier": 1.6,
+        "contemplation_amplifier": 1.5
+      },
+      "occasions": [
+        "study_sessions"
+      ],
+      "secrets": []
+    },
+    "loc_music_chamber": {
+      "name": "Music Chamber",
+      "institution": "inst_yogic_pavilion",
+      "location_type": "performance_space",
+      "zone": "inner",
+      "description": "Acoustically tuned chamber. Instruments displayed. Soft acoustics.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_yogic_pavilion": 2,
+          "inst_ritual_chorus": 2
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_shrinagar",
+        "char_svara",
+        "char_tarana",
+        "char_reva"
+      ],
+      "available_kalas": [
+        "kala_song",
+        "kala_instrument",
+        "kala_tonal_expression",
+        "kala_metrics"
+      ],
+      "available_kamas": [
+        "SRINGARA_VAKYA",
+        "NADA_SADHANA",
+        "TALA_PRASTARA"
+      ],
+      "environmental_modifiers": {
+        "acoustic_amplifier": 1.6,
+        "aesthetic_amplifier": 1.4
+      },
+      "occasions": [
+        "rehearsal",
+        "private_performance"
+      ],
+      "secrets": []
+    },
+    "loc_perfume_atelier": {
+      "name": "Perfume Atelier",
+      "institution": "inst_yogic_pavilion",
+      "location_type": "craft_space",
+      "zone": "inner",
+      "description": "Perfume blending workshop. Distillation vessels. Herb bundles.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_yogic_pavilion": 3
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_shrinagar",
+        "char_padma"
+      ],
+      "available_kalas": [
+        "kala_perfume",
+        "kala_cosmetics",
+        "kala_botany"
+      ],
+      "available_kamas": [
+        "RASAYANA",
+        "SNANA_RATI"
+      ],
+      "environmental_modifiers": {
+        "sensory_amplifier": 1.6,
+        "aesthetic_amplifier": 1.5
+      },
+      "occasions": [
+        "blending_sessions"
+      ],
+      "secrets": []
+    },
+    "loc_vault_exterior": {
+      "name": "Vault Exterior",
+      "institution": "inst_subterranean_vaults",
+      "location_type": "threshold_space",
+      "zone": "subterranean",
+      "description": "Guard post at the entrance to the subterranean vaults. Iron doors. Torch-lit.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_subterranean_vaults": 3,
+          "inst_military_perimeter": 2
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_sevda",
+        "char_roxana",
+        "char_altani"
+      ],
+      "available_kalas": [
+        "kala_gatekeeping",
+        "kala_endurance",
+        "kala_containment"
+      ],
+      "available_kamas": [
+        "ACCESS_DENIAL",
+        "NISHCHALA_SADHANA"
+      ],
+      "environmental_modifiers": {
+        "intimidation_modifier": 1.4,
+        "privacy_modifier": 1.3,
+        "isolation_modifier": 1.2
+      },
+      "occasions": [
+        "guard_rotation"
+      ],
+      "secrets": []
+    },
+    "loc_containment_chambers": {
+      "name": "Containment Chambers",
+      "institution": "inst_subterranean_vaults",
+      "location_type": "subterranean_space",
+      "zone": "subterranean",
+      "description": "Purpose-built chambers for restraint, holding, and sensory isolation.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_subterranean_vaults": 4
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_sevda"
+      ],
+      "available_kalas": [
+        "kala_containment",
+        "kala_restraint",
+        "kala_encasement"
+      ],
+      "available_kamas": [
+        "NISHCHALA_SADHANA",
+        "SARVANGA_VESHTANA",
+        "AVAGAHA_SADHANA",
+        "INDRIYA_NIRODHA",
+        "SHVASA_RODHA"
+      ],
+      "environmental_modifiers": {
+        "privacy_modifier": 2.0,
+        "isolation_modifier": 1.8,
+        "stillness_amplifier": 1.6
+      },
+      "occasions": [
+        "ritual_containment",
+        "extended_holding"
+      ],
+      "secrets": [
+        {
+          "secret_id": "secret_containment_1",
+          "description": "One chamber has engravings left by a previous occupant",
+          "discoverable_by": [
+            "char_sevda",
+            "char_reva"
+          ],
+          "unlock_scene": "scene_engraved_messages",
+          "consequence_tag": "prior_occupant_discovery"
+        }
+      ]
+    },
+    "loc_hidden_archive": {
+      "name": "Hidden Archive",
+      "institution": "inst_subterranean_vaults",
+      "location_type": "archive_space",
+      "zone": "subterranean",
+      "description": "Restricted archive. Pre-dynastic records. Ciphers. Forbidden texts.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_subterranean_vaults": 5
+        },
+        "invitation": "required"
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_sevda",
+        "char_reva"
+      ],
+      "available_kalas": [
+        "kala_cipher",
+        "kala_lexicography",
+        "kala_yantra"
+      ],
+      "available_kamas": [
+        "NIBANDHA_PRACODANA",
+        "YANTRA_LEKHANA"
+      ],
+      "environmental_modifiers": {
+        "privacy_modifier": 2.0,
+        "contemplation_amplifier": 1.6
+      },
+      "occasions": [
+        "restricted_research"
+      ],
+      "secrets": [
+        {
+          "secret_id": "secret_hidden_archive_1",
+          "description": "The complete pre-dynastic cipher key is stored here, unindexed",
+          "discoverable_by": [
+            "char_reva",
+            "char_sevda"
+          ],
+          "unlock_quest": "quest_full_cipher",
+          "consequence_tag": "cipher_mastery"
+        }
+      ]
+    },
+    "loc_patala_chamber": {
+      "name": "Pātāla Chamber",
+      "institution": "inst_subterranean_vaults",
+      "location_type": "ritual_space",
+      "zone": "subterranean",
+      "description": "Deepest ritual chamber. Earth-floor. Chthonic altar. No natural light.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_subterranean_vaults": 5
+        },
+        "invitation": "required",
+        "ritual_binding": "required"
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_sevda",
+        "char_jahzara"
+      ],
+      "available_kalas": [
+        "kala_ritual",
+        "kala_yantra",
+        "kala_blood",
+        "kala_mantra"
+      ],
+      "available_kamas": [
+        "RAKTA_BALI",
+        "RAKTA_SPARSHA",
+        "FIRE_PLAY",
+        "JALA_PRASTARA"
+      ],
+      "environmental_modifiers": {
+        "privacy_modifier": 2.0,
+        "rituality_amplifier": 1.7,
+        "intensity_amplifier": 1.5
+      },
+      "occasions": [
+        "patala_tantra",
+        "chthonic_rites"
+      ],
+      "secrets": []
+    },
+    "loc_ritual_chorus": {
+      "name": "Ritual Chorus Hall",
+      "institution": "inst_ritual_chorus",
+      "location_type": "ritual_space",
+      "zone": "inner",
+      "description": "Main hall for collective ceremony. High ceiling. Carved pillars. Resonant acoustics.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_ritual_chorus": 2
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_svara",
+        "char_tarana",
+        "char_reva",
+        "char_kumari_rati"
+      ],
+      "available_kalas": [
+        "kala_song",
+        "kala_dance",
+        "kala_instrument",
+        "kala_mudra",
+        "kala_mantra"
+      ],
+      "available_kamas": [
+        "RITUAL_AUTHORITY",
+        "NADA_SADHANA",
+        "MANTRA_MOHA",
+        "CHITRA_RATI"
+      ],
+      "environmental_modifiers": {
+        "rituality_amplifier": 1.6,
+        "acoustic_amplifier": 1.7,
+        "performance_amplifier": 1.5
+      },
+      "occasions": [
+        "dawn_chorus",
+        "evening_chorus",
+        "festival_performance"
+      ],
+      "secrets": []
+    },
+    "loc_performance_pavilion": {
+      "name": "Performance Pavilion",
+      "institution": "inst_ritual_chorus",
+      "location_type": "performance_space",
+      "zone": "inner",
+      "description": "Open pavilion for public and semi-public performance. Raised stage. Seating areas.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_ritual_chorus": 1,
+          "inst_zenana": 1
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_tarana",
+        "char_svara",
+        "char_shrinagar",
+        "char_kumari_rati"
+      ],
+      "available_kalas": [
+        "kala_dance",
+        "kala_drama",
+        "kala_instrument",
+        "kala_visual_poetry"
+      ],
+      "available_kamas": [
+        "CHITRA_RATI",
+        "VIPARITA_RATI",
+        "BUST_EXHIBITIONISM"
+      ],
+      "environmental_modifiers": {
+        "performance_amplifier": 1.6,
+        "audience_amplifier": 1.5
+      },
+      "occasions": [
+        "evening_performance",
+        "festival_dance"
+      ],
+      "secrets": []
+    },
+    "loc_instrument_workshop": {
+      "name": "Instrument Workshop",
+      "institution": "inst_ritual_chorus",
+      "location_type": "craft_space",
+      "zone": "inner",
+      "description": "Workshop for crafting and calibrating instruments. Tools. Wood. Strings.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_ritual_chorus": 3
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_svara",
+        "char_shrinagar"
+      ],
+      "available_kalas": [
+        "kala_instrument",
+        "kala_carpentry",
+        "kala_precision"
+      ],
+      "available_kamas": [
+        "TALA_PRASTARA",
+        "NADA_SADHANA"
+      ],
+      "environmental_modifiers": {
+        "craft_amplifier": 1.4,
+        "precision_amplifier": 1.4
+      },
+      "occasions": [
+        "instrument_crafting"
+      ],
+      "secrets": []
+    },
+    "loc_chorus_rehearsal": {
+      "name": "Chorus Rehearsal Room",
+      "institution": "inst_ritual_chorus",
+      "location_type": "performance_space",
+      "zone": "inner",
+      "description": "Rehearsal space. Tiered seating. Acoustic panels.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_ritual_chorus": 2
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_tarana",
+        "char_svara",
+        "char_reva"
+      ],
+      "available_kalas": [
+        "kala_song",
+        "kala_dance",
+        "kala_metrics"
+      ],
+      "available_kamas": [
+        "CHANDAS_RATI",
+        "SVARA_PRASTARA"
+      ],
+      "environmental_modifiers": {
+        "acoustic_amplifier": 1.5,
+        "discipline_amplifier": 1.3
+      },
+      "occasions": [
+        "daily_rehearsal"
+      ],
+      "secrets": []
+    },
+    "loc_bath_space": {
+      "name": "Royal Bathhouse (Hamam)",
+      "institution": "inst_zenana",
+      "location_type": "bath_space",
+      "zone": "inner",
+      "description": "Central bathing complex. Heated floors. Steam rooms. Cold pools. Attendants.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_zenana": 3
+        },
+        "gender_restriction": "women_only"
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_kumari_rati",
+        "char_padma",
+        "char_shrinagar",
+        "char_champa"
+      ],
+      "available_kalas": [
+        "kala_cosmetics",
+        "kala_perfume",
+        "kala_service",
+        "kala_oil"
+      ],
+      "available_kamas": [
+        "SNANA_RATI",
+        "TAILA_SIKTHA",
+        "Vilepana"
+      ],
+      "environmental_modifiers": {
+        "intimacy_amplifier": 1.4,
+        "sensory_amplifier": 1.5,
+        "privacy_modifier": 1.3
+      },
+      "occasions": [
+        "morning_bath",
+        "evening_preparation",
+        "ritual_cleansing"
+      ],
+      "secrets": []
+    },
+    "loc_palace_garden": {
+      "name": "Palace Garden",
+      "institution": "inst_zenana",
+      "location_type": "garden_space",
+      "zone": "inner",
+      "description": "Cultivated garden. Flower beds. Water channels. Shaded alcoves.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_zenana": 2
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_shrinagar",
+        "char_padma",
+        "char_champa",
+        "char_kumari_rati"
+      ],
+      "available_kalas": [
+        "kala_floral",
+        "kala_garland",
+        "kala_botany"
+      ],
+      "available_kamas": [
+        "BHUMI_BHUSHANA",
+        "RASAYANA"
+      ],
+      "environmental_modifiers": {
+        "aesthetic_amplifier": 1.4,
+        "sensory_amplifier": 1.3
+      },
+      "occasions": [
+        "morning_gathering",
+        "flower_harvest"
+      ],
+      "secrets": []
+    },
+    "loc_chandra_pushkarini": {
+      "name": "Chandra Pushkarini (Moon Lake)",
+      "institution": "inst_ritual_chorus",
+      "location_type": "bath_space",
+      "zone": "outer",
+      "description": "Sacred lake. Open to sky. Lunar reflections. Ritual immersion site.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_ritual_chorus": 2,
+          "inst_yogic_pavilion": 2
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_sevda",
+        "char_jahzara",
+        "char_reva",
+        "char_svara"
+      ],
+      "available_kalas": [
+        "kala_ritual",
+        "kala_mantra",
+        "kala_water"
+      ],
+      "available_kamas": [
+        "JALA_PRASTARA",
+        "URJA_RATI"
+      ],
+      "environmental_modifiers": {
+        "rituality_amplifier": 1.5,
+        "lunar_amplifier": 1.6
+      },
+      "occasions": [
+        "full_moon_rites",
+        "lunar_immersion"
+      ],
+      "secrets": []
+    },
+    "loc_munda_ritual_space": {
+      "name": "Munda Ritual Space",
+      "institution": "inst_zenana",
+      "location_type": "ritual_space",
+      "zone": "inner",
+      "description": "Small outdoor area designated for Munda chthonic practice. Earth floor. Stone markers.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_zenana": 2
+        },
+        "clan_affiliation": "munda_horo_or_related"
+      },
+      "residents": [
+        "char_champa"
+      ],
+      "frequent_visitors": [
+        "char_padma"
+      ],
+      "available_kalas": [
+        "kala_ritual",
+        "kala_chthonic",
+        "kala_animal"
+      ],
+      "available_kamas": [
+        "KRIDA_MRIGA",
+        "BALA_CHITTA",
+        "PASHU_DARSHANA"
+      ],
+      "environmental_modifiers": {
+        "chthonic_amplifier": 1.6,
+        "playfulness_amplifier": 1.3
+      },
+      "occasions": [
+        "sarhul",
+        "chthonic_rites"
+      ],
+      "secrets": []
+    },
+    "loc_princess_guard_post": {
+      "name": "Princess's Guard Post",
+      "institution": "inst_military_perimeter",
+      "location_type": "guard_space",
+      "zone": "inner",
+      "description": "Urdubegi post outside the princess's apartment. Permanent station.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_military_perimeter": 4
+        },
+        "vanguard_assignment": "required"
+      },
+      "residents": [
+        "char_jahzara"
+      ],
+      "frequent_visitors": [
+        "char_roxana",
+        "char_malika"
+      ],
+      "available_kalas": [
+        "kala_vigilance",
+        "kala_containment",
+        "kala_endurance"
+      ],
+      "available_kamas": [
+        "NISHCHALA_SADHANA",
+        "KRIDA_MRIGA_PET_GUARD"
+      ],
+      "environmental_modifiers": {
+        "vigilance_amplifier": 1.6,
+        "privacy_modifier": 0.7
+      },
+      "occasions": [
+        "permanent_watch"
+      ],
+      "secrets": []
+    },
+    "loc_zenana_gate": {
+      "name": "Zenana Gate",
+      "institution": "inst_zenana",
+      "location_type": "threshold_space",
+      "zone": "inner",
+      "description": "Inner gate to the zenana. Guarded at all times.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_zenana": 3,
+          "inst_military_perimeter": 3
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_malika",
+        "char_jahzara",
+        "char_altani"
+      ],
+      "available_kalas": [
+        "kala_gatekeeping",
+        "kala_protocol"
+      ],
+      "available_kamas": [
+        "ACCESS_DENIAL",
+        "DVARA_RATI"
+      ],
+      "environmental_modifiers": {
+        "vigilance_amplifier": 1.5,
+        "authority_amplifier": 1.3
+      },
+      "occasions": [
+        "daily_rotation"
+      ],
+      "secrets": []
+    },
+    "loc_vault_entry": {
+      "name": "Vault Entry",
+      "institution": "inst_subterranean_vaults",
+      "location_type": "threshold_space",
+      "zone": "subterranean",
+      "description": "Primary access to the vaults. Iron door. Two guards minimum.",
+      "access_requirements": {
+        "institutional_reputation": {
+          "inst_subterranean_vaults": 4
+        }
+      },
+      "residents": [],
+      "frequent_visitors": [
+        "char_sevda",
+        "char_malika"
+      ],
+      "available_kalas": [
+        "kala_gatekeeping",
+        "kala_containment"
+      ],
+      "available_kamas": [
+        "ACCESS_DENIAL"
+      ],
+      "environmental_modifiers": {
+        "intimidation_modifier": 1.4,
+        "isolation_modifier": 1.3
+      },
+      "occasions": [
+        "vault_access_log"
+      ],
+      "secrets": []
+    }
+  },
+  "zones": {
+    "central": {
+      "name": "Central Palace",
+      "description": "Core administrative and ceremonial heart",
+      "locations": [
+        "loc_throne_hall",
+        "loc_throne_anteroom",
+        "loc_royal_chamber",
+        "loc_administrative_court",
+        "loc_archive",
+        "loc_cipher_room",
+        "loc_threshold_gate"
+      ],
+      "general_accessibility": "restricted",
+      "authority_amplifier": 1.3
+    },
+    "inner": {
+      "name": "Inner Palace",
+      "description": "Zenana, yogic pavilion, ritual chorus — the cultivated interior",
+      "locations": [
+        "loc_zenana_inner",
+        "loc_zenana_outer",
+        "loc_princess_apartment",
+        "loc_private_dining",
+        "loc_service_corridors",
+        "loc_yogic_pavilion",
+        "loc_esoteric_study",
+        "loc_music_chamber",
+        "loc_perfume_atelier",
+        "loc_ritual_chorus",
+        "loc_performance_pavilion",
+        "loc_instrument_workshop",
+        "loc_chorus_rehearsal",
+        "loc_bath_space",
+        "loc_palace_garden",
+        "loc_munda_ritual_space",
+        "loc_princess_guard_post",
+        "loc_zenana_gate"
+      ],
+      "general_accessibility": "inner_only",
+      "privacy_amplifier": 1.3
+    },
+    "outer": {
+      "name": "Outer Palace",
+      "description": "Perimeter, garden lakes, and military perimeter",
+      "locations": [
+        "loc_drill_yard",
+        "loc_palace_walls",
+        "loc_steppe_corridor",
+        "loc_guard_barracks",
+        "loc_armory",
+        "loc_chandra_pushkarini"
+      ],
+      "general_accessibility": "conditional",
+      "intensity_amplifier": 1.2
+    },
+    "subterranean": {
+      "name": "Subterranean Vaults",
+      "description": "The hidden depth",
+      "locations": [
+        "loc_vault_exterior",
+        "loc_containment_chambers",
+        "loc_hidden_archive",
+        "loc_patala_chamber",
+        "loc_vault_entry"
+      ],
+      "general_accessibility": "high_restriction",
+      "privacy_amplifier": 1.8,
+      "intimidation_amplifier": 1.4
+    },
+    "temple": {
+      "name": "Temple Complex",
+      "description": "Sacred and ritual spaces",
+      "locations": [
+        "loc_chandra_pushkarini",
+        "loc_yogic_pavilion",
+        "loc_esoteric_study",
+        "loc_patala_chamber"
+      ],
+      "general_accessibility": "invitation",
+      "rituality_amplifier": 1.5
+    }
+  },
+  "access_rules": {
+    "gender_restrictions": {
+      "women_only": {
+        "applies_to": [
+          "loc_zenana_inner",
+          "loc_bath_space"
+        ],
+        "exceptions": [
+          "eunuch_staff",
+          "explicit_invitation"
+        ]
+      }
+    },
+    "institutional_thresholds": {
+      "level_1": "Visitor — escorted access",
+      "level_2": "Recognized — free movement within institution boundaries",
+      "level_3": "Trusted — unsupervised access to most locations",
+      "level_4": "Senior — access to restricted areas",
+      "level_5": "Inner Circle — access to all locations within institution"
+    },
+    "invitation_types": {
+      "required": "Must be formally invited by resident or governing character",
+      "required_for_non_officials": "Non-office holders need invitation; office holders have standing access"
+    }
+  },
+  "environmental_modifiers": {
+    "description": "Modifiers apply to scene rolls, relationship dynamics, and kala/kama effectiveness.",
+    "types": {
+      "privacy_modifier": "Affects how much can be discussed or done without observation",
+      "intimacy_amplifier": "Affects emotional closeness and vulnerability",
+      "authority_amplifier": "Affects power dynamics and command effectiveness",
+      "vigilance_amplifier": "Affects alertness and perception",
+      "intensity_amplifier": "Affects emotional and physical intensity of scenes",
+      "sensory_amplifier": "Affects taste, smell, touch, sound",
+      "aesthetic_amplifier": "Affects appreciation of beauty and refinement",
+      "rituality_amplifier": "Affects ceremonial gravity and formality",
+      "discipline_amplifier": "Affects focus, restraint, precision",
+      "isolation_modifier": "Affects sense of separation from others",
+      "contemplation_amplifier": "Affects depth of thought and reflection",
+      "performance_amplifier": "Affects display and public presence",
+      "acoustic_amplifier": "Affects sound-based scenes",
+      "intimidation_modifier": "Affects fear and awe"
+    }
+  },
+  "character_location_affinity": {
+    "char_maha_deva": {
+      "home": "loc_royal_chamber",
+      "preferred": [
+        "loc_throne_hall",
+        "loc_administrative_court"
+      ],
+      "restricted": [
+        "loc_zenana_inner"
+      ],
+      "known_secrets": []
+    },
+    "char_kumari_rati": {
+      "home": "loc_princess_apartment",
+      "preferred": [
+        "loc_zenana_inner",
+        "loc_bath_space",
+        "loc_performance_pavilion"
+      ],
+      "restricted": [
+        "loc_throne_hall_without_invitation"
+      ],
+      "known_secrets": [
+        "secret_royal_1"
+      ]
+    },
+    "char_padma": {
+      "home": "loc_princess_apartment",
+      "preferred": [
+        "loc_service_corridors",
+        "loc_bath_space",
+        "loc_palace_garden"
+      ],
+      "restricted": [
+        "loc_throne_hall",
+        "loc_royal_chamber"
+      ],
+      "known_secrets": [
+        "secret_zenana_1",
+        "secret_corridor_1"
+      ]
+    },
+    "char_champa": {
+      "home": "loc_zenana_inner",
+      "preferred": [
+        "loc_munda_ritual_space",
+        "loc_palace_garden",
+        "loc_service_corridors"
+      ],
+      "restricted": [
+        "loc_throne_hall",
+        "loc_administrative_court"
+      ],
+      "known_secrets": []
+    },
+    "char_anisa": {
+      "home": "loc_administrative_court",
+      "preferred": [
+        "loc_archive",
+        "loc_throne_anteroom",
+        "loc_threshold_gate"
+      ],
+      "restricted": [
+        "loc_zenana_inner",
+        "loc_subterranean_vaults"
+      ],
+      "known_secrets": [
+        "secret_admin_1"
+      ]
+    },
+    "char_shrinagar": {
+      "home": "loc_yogic_pavilion",
+      "preferred": [
+        "loc_music_chamber",
+        "loc_perfume_atelier",
+        "loc_bath_space",
+        "loc_palace_garden"
+      ],
+      "restricted": [
+        "loc_throne_hall",
+        "loc_military_perimeter"
+      ],
+      "known_secrets": [
+        "secret_royal_1",
+        "secret_yogic_1"
+      ]
+    },
+    "char_tarana": {
+      "home": "loc_performance_pavilion",
+      "preferred": [
+        "loc_ritual_chorus",
+        "loc_chorus_rehearsal",
+        "loc_zenana_inner"
+      ],
+      "restricted": [
+        "loc_subterranean_vaults",
+        "loc_administrative_court"
+      ],
+      "known_secrets": []
+    },
+    "char_roxana": {
+      "home": "loc_drill_yard",
+      "preferred": [
+        "loc_armory",
+        "loc_guard_barracks",
+        "loc_throne_anteroom"
+      ],
+      "restricted": [
+        "loc_zenana_inner"
+      ],
+      "known_secrets": []
+    },
+    "char_jahzara": {
+      "home": "loc_princess_guard_post",
+      "preferred": [
+        "loc_guard_barracks",
+        "loc_zenana_gate",
+        "loc_drill_yard"
+      ],
+      "restricted": [
+        "loc_throne_hall_without_invitation"
+      ],
+      "known_secrets": []
+    },
+    "char_altani": {
+      "home": "loc_palace_walls",
+      "preferred": [
+        "loc_guard_barracks",
+        "loc_steppe_corridor",
+        "loc_drill_yard"
+      ],
+      "restricted": [
+        "loc_zenana_inner",
+        "loc_administrative_court"
+      ],
+      "known_secrets": []
+    },
+    "char_sevda": {
+      "home": "loc_containment_chambers",
+      "preferred": [
+        "loc_hidden_archive",
+        "loc_patala_chamber",
+        "loc_vault_exterior"
+      ],
+      "restricted": [
+        "loc_throne_hall_without_invitation"
+      ],
+      "known_secrets": [
+        "secret_containment_1",
+        "secret_hidden_archive_1",
+        "secret_yogic_1"
+      ]
+    },
+    "char_malika": {
+      "home": "loc_threshold_gate",
+      "preferred": [
+        "loc_zenana_gate",
+        "loc_vault_entry",
+        "loc_administrative_court"
+      ],
+      "restricted": [
+        "loc_zenana_inner",
+        "loc_subterranean_vaults_deep"
+      ],
+      "known_secrets": []
+    },
+    "char_reva": {
+      "home": "loc_cipher_room",
+      "preferred": [
+        "loc_archive",
+        "loc_hidden_archive",
+        "loc_yogic_pavilion"
+      ],
+      "restricted": [
+        "loc_throne_hall_without_invitation",
+        "loc_military_perimeter"
+      ],
+      "known_secrets": [
+        "secret_throne_1",
+        "secret_corridor_1",
+        "secret_admin_1",
+        "secret_archive_1",
+        "secret_containment_1",
+        "secret_hidden_archive_1",
+        "secret_yogic_1"
+      ]
+    },
+    "char_svara": {
+      "home": "loc_music_chamber",
+      "preferred": [
+        "loc_ritual_chorus",
+        "loc_instrument_workshop",
+        "loc_chorus_rehearsal"
+      ],
+      "restricted": [
+        "loc_throne_hall_without_invitation",
+        "loc_subterranean_vaults"
+      ],
+      "known_secrets": []
+    }
+  },
+  "occasion_location_map": {
+    "bathukamma": {
+      "location": "loc_zenana_inner",
+      "institution": "inst_zenana",
+      "season": "autumn",
+      "description": "Floral festival. Women-only gathering. Kumārī Rati presides."
+    },
+    "varalakshmi_vratam": {
+      "location": "loc_zenana_inner",
+      "institution": "inst_zenana",
+      "season": "monsoon",
+      "description": "Vow-taking festival. Women-only. Padmā and Kumārī Rati."
+    },
+    "sohrai": {
+      "location": "loc_munda_ritual_space",
+      "institution": "inst_zenana",
+      "season": "winter",
+      "description": "Santhal harvest. Champā leads. Earth-focused."
+    },
+    "sarhul": {
+      "location": "loc_munda_ritual_space",
+      "institution": "inst_zenana",
+      "season": "spring",
+      "description": "Munda spring festival. Sal-tree veneration. Champā."
+    },
+    "cakra_puja": {
+      "location": "loc_yogic_pavilion",
+      "institution": "inst_yogic_pavilion",
+      "season": "any",
+      "lunar_phase": "full_moon",
+      "description": "Left-Hand Tantric ritual. Shrinagar leads. By invitation."
+    },
+    "kula_cakra": {
+      "location": "loc_patala_chamber",
+      "institution": "inst_subterranean_vaults",
+      "season": "any",
+      "lunar_phase": "new_moon",
+      "description": "High-stress Kula-Cakra ritual. Sevda and Jahzara."
+    },
+    "patala_tantra": {
+      "location": "loc_patala_chamber",
+      "institution": "inst_subterranean_vaults",
+      "season": "any",
+      "lunar_phase": "dark_moon",
+      "description": "Chthonic rites. Earth-based. Jahzara and Sevda."
+    },
+    "durbar": {
+      "location": "loc_throne_hall",
+      "institution": "inst_throne",
+      "season": "any",
+      "description": "Formal court assembly. Mahā Deva presides."
+    },
+    "dawn_chorus": {
+      "location": "loc_ritual_chorus",
+      "institution": "inst_ritual_chorus",
+      "time": "dawn",
+      "description": "Daily ritual chorus. Svara and Tarana lead."
+    }
+  },
+  "runtime_location_state": {
+    "description": "Current runtime state for active locations.",
+    "schema": {
+      "location_id": "string",
+      "current_occupants": [
+        "char_id"
+      ],
+      "current_occasion": "occasion_id | null",
+      "current_environmental_modifiers": {},
+      "active_secrets_known_by": {},
+      "recent_events": [],
+      "last_modified": "iso_timestamp"
+    },
+    "example": {
+      "location_id": "loc_zenana_inner",
+      "current_occupants": [
+        "char_kumari_rati",
+        "char_padma"
+      ],
+      "current_occasion": null,
+      "current_environmental_modifiers": {
+        "privacy_modifier": 1.8,
+        "intimacy_amplifier": 1.5,
+        "sensory_amplifier": 1.4
+      },
+      "active_secrets_known_by": {
+        "secret_zenana_1": [
+          "char_padma"
+        ]
+      },
+      "recent_events": [
+        {
+          "event_id": "evt_001",
+          "timestamp": "2026-09-14T08:00:00Z",
+          "description": "Morning preparation complete",
+          "participants": [
+            "char_kumari_rati",
+            "char_padma"
+          ]
+        }
+      ],
+      "last_modified": "2026-09-14T08:00:00Z"
+    }
+  },
+  "multiplayer_location_coordination": {
+    "description": "Multiplayer location constraints and dynamics.",
+    "rules": [
+      {
+        "rule_id": "mloc_001",
+        "name": "Location Capacity",
+        "description": "Each location has a soft cap on simultaneous player-controlled characters",
+        "typical_cap": 4,
+        "overflow_handling": "queued_scene_rotation"
+      },
+      {
+        "rule_id": "mloc_002",
+        "name": "Cross-Zone Movement",
+        "description": "Players in different zones cannot directly interact unless one moves",
+        "travel_time": "1_scene_phase_per_zone_boundary"
+      },
+      {
+        "rule_id": "mloc_003",
+        "name": "Secret Discovery Consent",
+        "description": "When one player discovers a secret, all players in the location must consent to disclosure",
+        "consent_mechanism": "session_vote"
+      }
+    ]
+  },
+  "avn_location_gallery_hooks": {
+    "description": "Location-specific AVN asset unlocks.",
+    "hooks": [
+      {
+        "location_id": "loc_zenana_inner",
+        "unlockable_assets": [
+          {
+            "asset_id": "zenana_wide_dawn",
+            "unlock": "first_visit"
+          },
+          {
+            "asset_id": "zenana_ritual_loop",
+            "unlock": "occasion_bathukamma_complete"
+          },
+          {
+            "asset_id": "zenana_intimate_loop",
+            "unlock": "intimate_scene_threshold"
+          }
+        ]
+      },
+      {
+        "location_id": "loc_throne_hall",
+        "unlockable_assets": [
+          {
+            "asset_id": "throne_wide",
+            "unlock": "first_visit"
+          },
+          {
+            "asset_id": "durbar_active",
+            "unlock": "occasion_durbar_complete"
+          }
+        ]
+      },
+      {
+        "location_id": "loc_patala_chamber",
+        "unlockable_assets": [
+          {
+            "asset_id": "patala_ritual",
+            "unlock": "patala_tantra_complete"
+          },
+          {
+            "asset_id": "patala_revelation",
+            "unlock": "ritual_threshold_exceeded"
+          }
+        ]
+      }
+    ]
+  },
+  "audit": {
+    "total_institutions": 7,
+    "total_locations": 42,
+    "total_zones": 5,
+    "total_secrets": 8,
+    "total_occasions": 9,
+    "total_environmental_modifier_types": 15,
+    "orphaned_locations": 0,
+    "orphaned_secrets": 0,
+    "audit_passed": true
+  }
+}

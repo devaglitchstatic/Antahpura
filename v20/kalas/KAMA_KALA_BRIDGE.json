@@ -1,0 +1,141 @@
+{
+  "schema": "V18.9_KAMA_KALA_BRIDGE",
+  "version": "18.9",
+  "created_at_utc": "2026-08-21T14:00:00",
+  "correlations": [
+    {
+      "kama_node": "darshana",
+      "kala_skills": [
+        "perception",
+        "observation",
+        "witnessing"
+      ],
+      "correlation_type": "deepens",
+      "direction": "bidirectional",
+      "weight": 0.7,
+      "notes": "Witnessing deepens perception; perception enables witnessing"
+    },
+    {
+      "kama_node": "mauna",
+      "kala_skills": [
+        "stillness",
+        "breath_control",
+        "containment"
+      ],
+      "correlation_type": "unlocks",
+      "direction": "kala_to_kama",
+      "weight": 0.8,
+      "notes": "Stillness/breath control unlocks mauna practice"
+    },
+    {
+      "kama_node": "lajja",
+      "kala_skills": [
+        "modesty",
+        "restraint",
+        "boundary_awareness"
+      ],
+      "correlation_type": "deepens",
+      "direction": "bidirectional",
+      "weight": 0.6,
+      "notes": "Modesty and lajja reinforce each other"
+    },
+    {
+      "kama_node": "asana",
+      "kala_skills": [
+        "posture",
+        "movement",
+        "dance"
+      ],
+      "correlation_type": "deepens",
+      "direction": "bidirectional",
+      "weight": 0.9,
+      "notes": "Posture and movement deepen asana practice"
+    },
+    {
+      "kama_node": "rasa",
+      "kala_skills": [
+        "dance",
+        "movement",
+        "expression",
+        "chanting"
+      ],
+      "correlation_type": "deepens",
+      "direction": "bidirectional",
+      "weight": 0.9,
+      "notes": "Expression/chanting and rasa deepen each other"
+    },
+    {
+      "kama_node": "bhakti",
+      "kala_skills": [
+        "devotion",
+        "ritual",
+        "chanting"
+      ],
+      "correlation_type": "unlocks",
+      "direction": "bidirectional",
+      "weight": 0.6,
+      "notes": "Ritual practice and bhakti reinforce each other"
+    },
+    {
+      "kama_node": "sakti",
+      "kala_skills": [
+        "authority",
+        "command",
+        "protection"
+      ],
+      "correlation_type": "requires",
+      "direction": "kama_to_kala",
+      "weight": 0.5,
+      "notes": "Sakti requires but does not grant authority"
+    },
+    {
+      "kama_node": "chaya",
+      "kala_skills": [
+        "shadow_work",
+        "containment",
+        "stillness"
+      ],
+      "correlation_type": "unlocks",
+      "direction": "kala_to_kama",
+      "weight": 0.7,
+      "notes": "Shadow work/containment unlocks chaya"
+    }
+  ],
+  "progression_mappings": {
+    "knowledge": {
+      "kama_threshold": 0.3,
+      "kala_threshold": 0.2
+    },
+    "training": {
+      "kama_threshold": 0.5,
+      "kala_threshold": 0.4
+    },
+    "repetition": {
+      "kama_threshold": 0.7,
+      "kala_threshold": 0.6
+    },
+    "mastery": {
+      "kama_threshold": 0.9,
+      "kala_threshold": 0.8
+    }
+  },
+  "correlation_rules": {
+    "mastery_requires": [
+      "training",
+      "repetition"
+    ],
+    "knowledge_unlocks": [
+      "training"
+    ],
+    "training_unlocks": [
+      "repetition"
+    ],
+    "repetition_leads_to": [
+      "mastery"
+    ],
+    "correlation_does_not_grant": [
+      "office",
+      "authority"
+    ]
+  }
+}

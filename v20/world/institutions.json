@@ -1,0 +1,209 @@
+{
+  "schema": "antahpura.institutions",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "institutions": [
+    {
+      "id": "inst_royal_court",
+      "name": "Royal Court (Rāja-Sabhā)",
+      "type": "court",
+      "description": "The sovereign's formal assembly for governance, ritual, and diplomacy. Seat of imperial authority.",
+      "jurisdiction": "imperial",
+      "offices": [
+        "office_sovereign",
+        "office_chief_court_supervisor",
+        "office_grand_vizier",
+        "office_civil_authority",
+        "office_ritual_authority"
+      ],
+      "characters": [
+        "char_maha_deva",
+        "char_kumari_rati",
+        "char_anisa",
+        "char_roxana",
+        "char_malika"
+      ],
+      "domains": ["authority_protocol", "voice_literary"],
+      "locations": ["loc_royal_court", "loc_throne_hall"],
+      "authority_source": "constitutional",
+      "status": "active"
+    },
+    {
+      "id": "inst_inner_palace",
+      "name": "Inner Palace (Antaḥpura)",
+      "type": "palace",
+      "description": "The secluded royal residence and its attendant quarters. Domain of the sovereign's consorts, attendants, and personal staff.",
+      "jurisdiction": "domestic_imperial",
+      "offices": [
+        "office_sovereign",
+        "office_princess_consort",
+        "office_chief_attendant",
+        "office_threshold_guardian",
+        "office_pet_consort"
+      ],
+      "characters": [
+        "char_maha_deva",
+        "char_kumari_rati",
+        "char_padma",
+        "char_champa",
+        "char_malika"
+      ],
+      "domains": ["devotion_service", "sensory_aesthetic"],
+      "locations": ["loc_inner_palace", "loc_private_chambers"],
+      "authority_source": "constitutional",
+      "status": "active"
+    },
+    {
+      "id": "inst_temple_complex",
+      "name": "Temple Complex (Deva-Ālaya)",
+      "type": "temple",
+      "description": "Sacred precinct for ritual, worship, and esoteric practice. Overseen by the high priest and ritual specialists.",
+      "jurisdiction": "religious",
+      "offices": [
+        "office_high_priest",
+        "office_ritual_authority",
+        "office_ritual_containment",
+        "office_occult_specialist"
+      ],
+      "characters": [
+        "char_maha_deva",
+        "char_kumari_rati",
+        "char_jahzara",
+        "char_sevda",
+        "char_svara"
+      ],
+      "domains": ["hidden_occult", "authority_protocol"],
+      "locations": ["loc_temple", "loc_sanctum"],
+      "authority_source": "constitutional",
+      "status": "active"
+    },
+    {
+      "id": "inst_administrative_chancery",
+      "name": "Administrative Chancery (Kārya-Śālā)",
+      "type": "bureaucracy",
+      "description": "Central administrative apparatus for records, discipline, and protocol enforcement.",
+      "jurisdiction": "administrative",
+      "offices": [
+        "office_chief_court_supervisor",
+        "office_administrative_enforcer",
+        "office_archive_keeper",
+        "office_chronicler"
+      ],
+      "characters": [
+        "char_anisa",
+        "char_reva",
+        "char_maha_deva"
+      ],
+      "domains": ["authority_protocol", "voice_literary"],
+      "locations": ["loc_chancery", "loc_archive"],
+      "authority_source": "constitutional",
+      "status": "active"
+    },
+    {
+      "id": "inst_guard_corps",
+      "name": "Guard Corps (Rakṣā-Senā)",
+      "type": "military",
+      "description": "Elite security force responsible for perimeter defense, royal protection, and internal order.",
+      "jurisdiction": "security",
+      "offices": [
+        "office_vanguard_sentinel",
+        "office_royal_protector",
+        "office_perimeter_sentinel",
+        "office_security_coordinator"
+      ],
+      "characters": [
+        "char_jahzara",
+        "char_altani",
+        "char_roxana"
+      ],
+      "domains": ["authority_protocol", "movement_performance"],
+      "locations": ["loc_barracks", "loc_perimeter"],
+      "authority_source": "constitutional",
+      "status": "active"
+    },
+    {
+      "id": "inst_cultural_academy",
+      "name": "Cultural Academy (Kalā-Śālā)",
+      "type": "academy",
+      "description": "Institution for the preservation and transmission of the 64 Kalās, performance arts, and aesthetic refinement.",
+      "jurisdiction": "cultural",
+      "offices": [
+        "office_pradhana_narti",
+        "office_cultural_artistic_specialist",
+        "office_microtonal_calibrator",
+        "office_poet_laureate"
+      ],
+      "characters": [
+        "char_tarana",
+        "char_svara",
+        "char_reva",
+        "char_shrinagar"
+      ],
+      "domains": ["movement_performance", "voice_literary", "sensory_aesthetic"],
+      "locations": ["loc_academy", "loc_performance_hall"],
+      "authority_source": "constitutional",
+      "status": "active"
+    },
+    {
+      "id": "inst_kitchen_service",
+      "name": "Kitchen & Service Corps (Pāka-Sevā)",
+      "type": "service",
+      "description": "Domestic service organization responsible for cuisine, culinary rituals, and personal attendance.",
+      "jurisdiction": "domestic",
+      "offices": [
+        "office_chief_attendant",
+        "office_culinary_master",
+        "office_service_attendant"
+      ],
+      "characters": [
+        "char_malika",
+        "char_padma",
+        "char_champa"
+      ],
+      "domains": ["devotion_service", "sensory_aesthetic"],
+      "locations": ["loc_kitchen", "loc_service_quarters"],
+      "authority_source": "constitutional",
+      "status": "active"
+    },
+    {
+      "id": "inst_occult_order",
+      "name": "Occult Order (Guhya-Sampradāya)",
+      "type": "esoteric",
+      "description": "Secretive order dedicated to tantric ritual, divination, alchemy, and hidden knowledge.",
+      "jurisdiction": "esoteric",
+      "offices": [
+        "office_occult_specialist",
+        "office_ritual_containment",
+        "office_high_priest"
+      ],
+      "characters": [
+        "char_jahzara",
+        "char_sevda",
+        "char_maha_deva"
+      ],
+      "domains": ["hidden_occult", "ritual_containment"],
+      "locations": ["loc_occult_chamber", "loc_hidden_library"],
+      "authority_source": "constitutional",
+      "status": "active"
+    },
+    {
+      "id": "inst_threshold_guard",
+      "name": "Threshold Guard (Dvāra-Rakṣā)",
+      "type": "security",
+      "description": "Specialized unit responsible for controlling access to the inner palace and sacred spaces.",
+      "jurisdiction": "access_control",
+      "offices": [
+        "office_threshold_guardian",
+        "office_access_controller"
+      ],
+      "characters": [
+        "char_malika"
+      ],
+      "domains": ["authority_protocol", "restraint_containment"],
+      "locations": ["loc_threshold", "loc_gatehouse"],
+      "authority_source": "constitutional",
+      "status": "active"
+    }
+  ]
+}

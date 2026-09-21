@@ -1,0 +1,61 @@
+{
+  "schema": "antahpura.quest.types",
+  "version": "20.0",
+  "total_types": 9,
+  "types": {
+    "character_quest": {
+      "name": "Character Quest",
+      "description": "Personal arc centered on one character",
+      "issuer": "any",
+      "reward_class": "personal"
+    },
+    "institutional_quest": {
+      "name": "Institutional Quest",
+      "description": "Mission on behalf of an institution",
+      "issuer": "institution_leader",
+      "reward_class": "institutional"
+    },
+    "kala_quest": {
+      "name": "Kala Quest",
+      "description": "Mastery progression via structured challenge",
+      "issuer": "teacher",
+      "reward_class": "personal"
+    },
+    "ritual_quest": {
+      "name": "Ritual Quest",
+      "description": "Ceremony preparation and execution",
+      "issuer": "esoteric_authority",
+      "reward_class": "narrative"
+    },
+    "political_quest": {
+      "name": "Political Quest",
+      "description": "Court intrigue, alliance negotiation",
+      "issuer": "high_status_character",
+      "reward_class": "institutional"
+    },
+    "investigation_quest": {
+      "name": "Investigation Quest",
+      "description": "Secret discovery, cipher work",
+      "issuer": "cipher_keeper",
+      "reward_class": "narrative"
+    },
+    "relationship_quest": {
+      "name": "Relationship Quest",
+      "description": "Deepening or repairing a specific relationship",
+      "issuer": "either_party",
+      "reward_class": "personal"
+    },
+    "archival_quest": {
+      "name": "Archival Quest",
+      "description": "Recover or decode historical record",
+      "issuer": "archivist",
+      "reward_class": "narrative"
+    },
+    "exploration_quest": {
+      "name": "Exploration Quest",
+      "description": "Discover new location or secret passage",
+      "issuer": "any_curious",
+      "reward_class": "personal"
+    }
+  }
+}

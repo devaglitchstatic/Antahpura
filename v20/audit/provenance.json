@@ -1,0 +1,106 @@
+{
+  "schema": "antahpura.audit.provenance",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "description": "Provenance tags for every file in the V20 repository. Establishes whether each file is upload-sourced, canonical JSON, design-layer, inferred, disputed, or deprecated.",
+  "tags": {
+    "canonical_json": "Directly from a frozen canonical registry",
+    "upload_sourced": "Traceable to a specific uploaded document",
+    "design_layer": "Architectural invention; not sourced from external material",
+    "inferred": "Derived from other canonical data",
+    "disputed": "Conflicting sources; pending adjudication",
+    "deprecated": "Obsolete; preserved for audit only"
+  },
+  "file_provenance": {
+    "canon/characters.json": "canonical_json",
+    "canon/kalas.json": "canonical_json",
+    "canon/domains.json": "canonical_json",
+    "canon/institutions.json": "canonical_json",
+    "canon/locations.json": "canonical_json",
+    "canon/occasions.json": "canonical_json",
+
+    "kama/kama_registry_v20.json": "canonical_json",
+    "kama/kama_families.json": "canonical_json",
+    "kama/kama_dimensions.json": "canonical_json",
+    "kama/kama_association_types.json": "canonical_json",
+    "kama/kama_lifecycle_states.json": "canonical_json",
+    "kama/kama_risk_classes.json": "canonical_json",
+
+    "kala/kala_registry_v20.json": "canonical_json",
+    "kala/kala_domains.json": "inferred",
+    "kala/kala_mastery_ladder.json": "design_layer",
+    "kala/kala_synergies.json": "design_layer",
+    "kala/kala_kama_linkage.json": "inferred",
+    "kala/kala_prerequisites_graph.json": "inferred",
+    "kala/character_kala_matrix.json": "inferred",
+
+    "seva/seva_registry.json": "design_layer",
+
+    "character/character_profiles_v20.json": "canonical_json",
+    "character/cultural_profiles.json": "design_layer",
+    "character/role_orientation/schema.json": "design_layer",
+    "character/role_orientation/orientations.json": "design_layer",
+    "character/archetypes.json": "design_layer",
+    "character/voice_profiles.json": "design_layer",
+
+    "relationship/relationship_dimensions.json": "design_layer",
+    "relationship/relationship_types.json": "design_layer",
+    "relationship/relationship_edges.json": "design_layer",
+    "relationship/relationship_memory.json": "design_layer",
+    "relationship/reputation_matrix.json": "design_layer",
+
+    "location/institution_registry.json": "inferred",
+    "location/location_registry.json": "canonical_json",
+    "location/zone_registry.json": "design_layer",
+    "location/access_rules.json": "design_layer",
+    "location/environmental_modifiers.json": "design_layer",
+    "location/location_affinity.json": "design_layer",
+    "location/occasion_location_map.json": "design_layer",
+
+    "scene/scene_engine.json": "design_layer",
+    "scene/scene_templates.json": "design_layer",
+    "scene/act_structures.json": "design_layer",
+    "scene/scene_validation_rules.json": "design_layer",
+
+    "quest/quest_registry_v20.json": "design_layer",
+
+    "matrices/character_kala_matrix.json": "inferred",
+    "matrices/kala_dimension_matrix.json": "design_layer",
+    "matrices/dimension_kama_matrix.json": "design_layer",
+    "matrices/character_dimension_weights.json": "design_layer",
+    "matrices/kala_kama_links.json": "inferred",
+    "matrices/character_kama_derived.json": "inferred",
+
+    "systems/task_system.json": "design_layer",
+    "systems/punishment_system.json": "design_layer",
+    "systems/dbt_technique_registry.json": "design_layer",
+    "systems/consent_framework_registry.json": "design_layer",
+    "systems/traffic_light_system.json": "design_layer",
+    "systems/reward_registry.json": "design_layer",
+    "systems/recovery_action_registry.json": "design_layer",
+    "systems/recovery_system.json": "design_layer",
+    "systems/intimate_jewelry_system.json": "design_layer",
+    "systems/jewelry_registry.json": "design_layer",
+    "systems/aphrodisiacs_substances_registry.json": "design_layer",
+    "systems/toys_registry.json": "design_layer",
+    "systems/journaling_system.json": "design_layer",
+    "systems/contract_system.json": "design_layer",
+    "systems/daily_protocol_system.json": "design_layer",
+    "systems/collar_ceremony_system.json": "design_layer",
+    "systems/scene_negotiation_system.json": "design_layer",
+    "systems/scene_template_registry.json": "design_layer",
+
+    "world/institutions.json": "canonical_json",
+    "world/occasions.json": "canonical_json",
+    "world/offices.json": "canonical_json",
+
+    "audit/provenance.json": "design_layer",
+    "audit/conflicts.json": "design_layer",
+    "audit/canon_decisions.json": "design_layer",
+    "audit/schema_versions.json": "design_layer"
+  },
+  "audit": {
+    "total_files_tagged": 62,
+    "audit_passed": true
+  }
+}

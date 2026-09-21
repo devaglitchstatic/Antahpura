@@ -1,0 +1,205 @@
+{
+  "schema": "antahpura.location.location_affinity",
+  "version": "20.0",
+  "affinity": {
+    "char_maha_deva": {
+      "home": "loc_royal_chamber",
+      "preferred": [
+        "loc_throne_hall",
+        "loc_administrative_court"
+      ],
+      "restricted": [
+        "loc_zenana_inner"
+      ],
+      "known_secrets": []
+    },
+    "char_kumari_rati": {
+      "home": "loc_princess_apartment",
+      "preferred": [
+        "loc_zenana_inner",
+        "loc_bath_space",
+        "loc_performance_pavilion"
+      ],
+      "restricted": [
+        "loc_throne_hall_without_invitation"
+      ],
+      "known_secrets": [
+        "secret_royal_1"
+      ]
+    },
+    "char_padma": {
+      "home": "loc_princess_apartment",
+      "preferred": [
+        "loc_service_corridors",
+        "loc_bath_space",
+        "loc_palace_garden"
+      ],
+      "restricted": [
+        "loc_throne_hall",
+        "loc_royal_chamber"
+      ],
+      "known_secrets": [
+        "secret_zenana_1",
+        "secret_corridor_1"
+      ]
+    },
+    "char_champa": {
+      "home": "loc_zenana_inner",
+      "preferred": [
+        "loc_munda_ritual_space",
+        "loc_palace_garden",
+        "loc_service_corridors"
+      ],
+      "restricted": [
+        "loc_throne_hall",
+        "loc_administrative_court"
+      ],
+      "known_secrets": []
+    },
+    "char_anisa": {
+      "home": "loc_administrative_court",
+      "preferred": [
+        "loc_archive",
+        "loc_throne_anteroom",
+        "loc_threshold_gate"
+      ],
+      "restricted": [
+        "loc_zenana_inner",
+        "loc_subterranean_vaults"
+      ],
+      "known_secrets": [
+        "secret_admin_1"
+      ]
+    },
+    "char_shrinagar": {
+      "home": "loc_yogic_pavilion",
+      "preferred": [
+        "loc_music_chamber",
+        "loc_perfume_atelier",
+        "loc_bath_space",
+        "loc_palace_garden"
+      ],
+      "restricted": [
+        "loc_throne_hall",
+        "loc_military_perimeter"
+      ],
+      "known_secrets": [
+        "secret_royal_1",
+        "secret_yogic_1"
+      ]
+    },
+    "char_tarana": {
+      "home": "loc_performance_pavilion",
+      "preferred": [
+        "loc_ritual_chorus",
+        "loc_chorus_rehearsal",
+        "loc_zenana_inner"
+      ],
+      "restricted": [
+        "loc_subterranean_vaults",
+        "loc_administrative_court"
+      ],
+      "known_secrets": []
+    },
+    "char_roxana": {
+      "home": "loc_drill_yard",
+      "preferred": [
+        "loc_armory",
+        "loc_guard_barracks",
+        "loc_throne_anteroom"
+      ],
+      "restricted": [
+        "loc_zenana_inner"
+      ],
+      "known_secrets": []
+    },
+    "char_jahzara": {
+      "home": "loc_princess_guard_post",
+      "preferred": [
+        "loc_guard_barracks",
+        "loc_zenana_gate",
+        "loc_drill_yard"
+      ],
+      "restricted": [
+        "loc_throne_hall_without_invitation"
+      ],
+      "known_secrets": []
+    },
+    "char_altani": {
+      "home": "loc_palace_walls",
+      "preferred": [
+        "loc_guard_barracks",
+        "loc_steppe_corridor",
+        "loc_drill_yard"
+      ],
+      "restricted": [
+        "loc_zenana_inner",
+        "loc_administrative_court"
+      ],
+      "known_secrets": []
+    },
+    "char_sevda": {
+      "home": "loc_containment_chambers",
+      "preferred": [
+        "loc_hidden_archive",
+        "loc_patala_chamber",
+        "loc_vault_exterior"
+      ],
+      "restricted": [
+        "loc_throne_hall_without_invitation"
+      ],
+      "known_secrets": [
+        "secret_containment_1",
+        "secret_hidden_archive_1",
+        "secret_yogic_1"
+      ]
+    },
+    "char_malika": {
+      "home": "loc_threshold_gate",
+      "preferred": [
+        "loc_zenana_gate",
+        "loc_vault_entry",
+        "loc_administrative_court"
+      ],
+      "restricted": [
+        "loc_zenana_inner",
+        "loc_subterranean_vaults_deep"
+      ],
+      "known_secrets": []
+    },
+    "char_reva": {
+      "home": "loc_cipher_room",
+      "preferred": [
+        "loc_archive",
+        "loc_hidden_archive",
+        "loc_yogic_pavilion"
+      ],
+      "restricted": [
+        "loc_throne_hall_without_invitation",
+        "loc_military_perimeter"
+      ],
+      "known_secrets": [
+        "secret_throne_1",
+        "secret_corridor_1",
+        "secret_admin_1",
+        "secret_archive_1",
+        "secret_containment_1",
+        "secret_hidden_archive_1",
+        "secret_yogic_1"
+      ]
+    },
+    "char_svara": {
+      "home": "loc_music_chamber",
+      "preferred": [
+        "loc_ritual_chorus",
+        "loc_instrument_workshop",
+        "loc_chorus_rehearsal"
+      ],
+      "restricted": [
+        "loc_throne_hall_without_invitation",
+        "loc_subterranean_vaults"
+      ],
+      "known_secrets": []
+    }
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "schema": "antahpura.kala_dimension_matrix",
+  "version": "20.1",
+  "generated": "2026-09-19",
+  "source": "kala_system_v20.json → kalas.*.dimensions",
+  "dimensions_observed_in_kalas": [
+    "aesthetic",
+    "authority",
+    "craft",
+    "devotion",
+    "discipline",
+    "expression",
+    "intensity",
+    "perception",
+    "performance",
+    "playfulness",
+    "precision",
+    "privacy",
+    "restraint",
+    "rituality",
+    "sensory_awareness",
+    "service",
+    "stillness",
+    "transgression",
+    "trust",
+    "vulnerability"
+  ],
+  "matrix": {
+    "kala_1": {
+      "expression": 0.9,
+      "aesthetic": 0.8,
+      "rituality": 0.7
+    },
+    "kala_2": {
+      "expression": 0.85,
+      "precision": 0.85,
+      "aesthetic": 0.8
+    },
+    "kala_3": {
+      "expression": 0.9,
+      "performance": 0.85,
+      "playfulness": 0.75
+    },
+    "kala_4": {
+      "expression": 0.9,
+      "precision": 0.85,
+      "intensity": 0.7
+    },
+    "kala_5": {
+      "precision": 0.85,
+      "rituality": 0.85,
+      "expression": 0.8
+    },
+    "kala_6": {
+      "expression": 0.9,
+      "aesthetic": 0.85,
+      "privacy": 0.7
+    },
+    "kala_7": {
+      "expression": 0.8,
+      "precision": 0.8,
+      "playfulness": 0.7
+    },
+    "kala_8": {
+      "expression": 0.75,
+      "rituality": 0.8,
+      "playfulness": 0.7
+    },
+    "kala_9": {
+      "aesthetic": 0.85,
+      "expression": 0.8,
+      "rituality": 0.7
+    },
+    "kala_10": {
+      "expression": 0.85,
+      "aesthetic": 0.8,
+      "rituality": 0.75
+    },
+    "kala_11": {
+      "precision": 0.85,
+      "expression": 0.75,
+      "discipline": 0.7
+    },
+    "kala_12": {
+      "precision": 0.85,
+      "discipline": 0.8,
+      "privacy": 0.7
+    },
+    "kala_13": {
+      "aesthetic": 0.9,
+      "precision": 0.85,
+      "rituality": 0.75
+    },
+    "kala_14": {
+      "aesthetic": 0.85,
+      "rituality": 0.8,
+      "precision": 0.75
+    },
+    "kala_15": {
+      "aesthetic": 0.85,
+      "precision": 0.8,
+      "expression": 0.7
+    },
+    "kala_16": {
+      "precision": 0.9,
+      "aesthetic": 0.8,
+      "restraint": 0.75
+    },
+    "kala_17": {
+      "aesthetic": 0.85,
+      "precision": 0.85,
+      "restraint": 0.7
+    },
+    "kala_18": {
+      "precision": 0.9,
+      "aesthetic": 0.8,
+      "intensity": 0.65
+    },
+    "kala_19": {
+      "precision": 0.9,
+      "aesthetic": 0.85,
+      "expression": 0.7
+    },
+    "kala_20": {
+      "precision": 0.9,
+      "aesthetic": 0.8,
+      "rituality": 0.7
+    },
+    "kala_21": {
+      "aesthetic": 0.85,
+      "sensory_awareness": 0.9,
+      "rituality": 0.75
+    },
+    "kala_22": {
+      "aesthetic": 0.85,
+      "sensory_awareness": 0.85,
+      "devotion": 0.7
+    },
+    "kala_23": {
+      "aesthetic": 0.9,
+      "rituality": 0.8,
+      "sensory_awareness": 0.75
+    },
+    "kala_24": {
+      "aesthetic": 0.85,
+      "rituality": 0.85,
+      "service": 0.7
+    },
+    "kala_25": {
+      "restraint": 0.95,
+      "precision": 0.9,
+      "aesthetic": 0.8
+    },
+    "kala_26": {
+      "restraint": 0.8,
+      "aesthetic": 0.75,
+      "craft": 0.85
+    },
+    "kala_27": {
+      "craft": 0.85,
+      "aesthetic": 0.8,
+      "restraint": 0.7
+    },
+    "kala_28": {
+      "precision": 0.9,
+      "craft": 0.85,
+      "intensity": 0.7
+    },
+    "kala_29": {
+      "precision": 0.9,
+      "intensity": 0.8,
+      "discipline": 0.85
+    },
+    "kala_30": {
+      "precision": 0.85,
+      "intensity": 0.85,
+      "discipline": 0.8
+    },
+    "kala_31": {
+      "intensity": 0.9,
+      "performance": 0.85,
+      "restraint": 0.8
+    },
+    "kala_32": {
+      "intensity": 0.9,
+      "discipline": 0.85,
+      "authority": 0.75
+    },
+    "kala_33": {
+      "restraint": 0.9,
+      "precision": 0.85,
+      "performance": 0.75
+    },
+    "kala_34": {
+      "authority": 0.85,
+      "discipline": 0.9,
+      "precision": 0.8
+    },
+    "kala_35": {
+      "discipline": 0.9,
+      "intensity": 0.85,
+      "service": 0.7
+    },
+    "kala_36": {
+      "discipline": 0.95,
+      "intensity": 0.85,
+      "stillness": 0.7
+    },
+    "kala_37": {
+      "stillness": 0.9,
+      "restraint": 0.85,
+      "precision": 0.75
+    },
+    "kala_38": {
+      "precision": 0.85,
+      "craft": 0.9,
+      "discipline": 0.8
+    },
+    "kala_39": {
+      "precision": 0.85,
+      "rituality": 0.8,
+      "aesthetic": 0.85
+    },
+    "kala_40": {
+      "craft": 0.9,
+      "intensity": 0.85,
+      "precision": 0.8
+    },
+    "kala_41": {
+      "rituality": 0.95,
+      "precision": 0.85,
+      "intensity": 0.8
+    },
+    "kala_42": {
+      "rituality": 0.9,
+      "expression": 0.85,
+      "precision": 0.8
+    },
+    "kala_43": {
+      "rituality": 0.9,
+      "precision": 0.9,
+      "aesthetic": 0.8
+    },
+    "kala_44": {
+      "transgression": 0.85,
+      "intensity": 0.8,
+      "precision": 0.75
+    },
+    "kala_45": {
+      "rituality": 0.85,
+      "precision": 0.9,
+      "expression": 0.8
+    },
+    "kala_46": {
+      "rituality": 0.85,
+      "precision": 0.85,
+      "sensory_awareness": 0.8
+    },
+    "kala_47": {
+      "precision": 0.85,
+      "service": 0.8,
+      "rituality": 0.75
+    },
+    "kala_48": {
+      "precision": 0.95,
+      "intensity": 0.85,
+      "transgression": 0.8
+    },
+    "kala_49": {
+      "rituality": 0.85,
+      "precision": 0.85,
+      "privacy": 0.75
+    },
+    "kala_50": {
+      "rituality": 0.85,
+      "perception": 0.9,
+      "privacy": 0.75
+    },
+    "kala_51": {
+      "rituality": 0.85,
+      "privacy": 0.9,
+      "expression": 0.75
+    },
+    "kala_52": {
+      "precision": 0.9,
+      "authority": 0.8,
+      "expression": 0.75
+    },
+    "kala_53": {
+      "performance": 0.95,
+      "expression": 0.9,
+      "intensity": 0.8
+    },
+    "kala_54": {
+      "performance": 0.9,
+      "aesthetic": 0.85,
+      "expression": 0.85
+    },
+    "kala_55": {
+      "intensity": 0.95,
+      "performance": 0.85,
+      "transgression": 0.75
+    },
+    "kala_56": {
+      "performance": 0.85,
+      "stillness": 0.8,
+      "expression": 0.85
+    },
+    "kala_57": {
+      "performance": 0.85,
+      "precision": 0.85,
+      "playfulness": 0.75
+    },
+    "kala_58": {
+      "sensory_awareness": 0.85,
+      "service": 0.8,
+      "rituality": 0.7
+    },
+    "kala_59": {
+      "sensory_awareness": 0.9,
+      "service": 0.85,
+      "aesthetic": 0.8
+    },
+    "kala_60": {
+      "sensory_awareness": 0.85,
+      "rituality": 0.8,
+      "precision": 0.75
+    },
+    "kala_61": {
+      "playfulness": 0.85,
+      "trust": 0.9,
+      "performance": 0.8
+    },
+    "kala_62": {
+      "playfulness": 0.85,
+      "precision": 0.8,
+      "transgression": 0.7
+    },
+    "kala_63": {
+      "precision": 0.9,
+      "authority": 0.8,
+      "discipline": 0.85
+    },
+    "kala_64": {
+      "devotion": 0.9,
+      "vulnerability": 0.85,
+      "trust": 0.9,
+      "rituality": 0.85
+    }
+  },
+  "audit": {
+    "total_kalas": 64,
+    "unique_dimensions": 20,
+    "note": "Kala dimension vocabulary is independent of the 20 kama dimensions. Add a mapping layer later if needed."
+  }
+}

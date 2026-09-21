@@ -1,0 +1,239 @@
+{
+  "schema": "antahpura.world.offices",
+  "version": "20.0",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "provenance": "Derived from V17.1 lorebook bibles, V17_1_RELATIONSHIP_REGISTRY, SKILL_KALA_REGISTRY, and CONSTITUTIONAL_RELATIONSHIPS",
+  "principle": "Constitutional offices are non-transferable through training. Knowledge and skill may cross jurisdictions; authority does not.",
+
+  "offices": {
+    "office_sovereign": {
+      "id": "office_sovereign",
+      "name": "Sovereign of Antaḥpura",
+      "sanskrit": "Samrāṭ",
+      "holder": "char_maha_deva",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_authority_protocol",
+      "function": "Universal constitutional authority; final arbiter of law, ritual, and dynastic succession.",
+      "source": "sovereign_axis / MAHA DEVA BIBLE",
+      "related_kalas": ["kala_52"],
+      "related_kamas": ["AVADHANA_STHANA", "RITUAL_AUTHORITY", "PROTOCOL_ENFORCEMENT"]
+    },
+
+    "office_royal_consort": {
+      "id": "office_royal_consort",
+      "name": "Royal Consort / Princess",
+      "sanskrit": "Rājñī / Kumārī",
+      "holder": "char_kumari_rati",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_authority_protocol",
+      "function": "Co-sovereign within the sovereign axis; ritual intimacy authority; threshold to the inner sanctum.",
+      "source": "sovereign_axis / PRINCESS KUMA REE RATI BIBLE",
+      "related_kalas": ["kala_64"],
+      "related_kamas": ["MAITHUNA", "BALA_CHITTA", "VILASA_PRAHANANA"]
+    },
+
+    "office_chief_court_supervisor": {
+      "id": "office_chief_court_supervisor",
+      "name": "Chief Court Supervisor",
+      "sanskrit": "Danda-Vidhāna Adhyakṣa",
+      "holder": "char_anisa",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_authority_protocol",
+      "function": "Court order, personnel discipline, bureaucratic authority, Danda-Vidhāna enforcement, administrative protocol.",
+      "source": "ANISA BIBLE / SKILL_KALA_REGISTRY.may_not_acquire_by_training",
+      "related_kalas": ["kala_62", "kala_63"],
+      "related_kamas": ["PROTOCOL_ENFORCEMENT", "SPHUTA_VACHANA", "NINDA_VACHANA"]
+    },
+
+    "office_pradhana_narti": {
+      "id": "office_pradhana_narti",
+      "name": "Chief Dancer",
+      "sanskrit": "Pradhāna Nartī",
+      "holder": "char_tarana",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_movement_dance",
+      "function": "Dance geometry, tāla expressed through movement, Navarasa and yantra embodiment.",
+      "source": "TARANA BIBLE",
+      "related_kalas": ["kala_53", "kala_54", "kala_55", "kala_56", "kala_57"],
+      "related_kamas": ["CHITRA_RATI", "VIPARITA_RATI", "ACROEROTICISM", "LAGHAVA_SADHANA"]
+    },
+
+    "office_cultural_artistic_specialist": {
+      "id": "office_cultural_artistic_specialist",
+      "name": "Cultural & Artistic Specialist — Micro-tonal Calibration",
+      "sanskrit": "Sūkṣma-svara Kalā Viśeṣajña",
+      "holder": "char_svara",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_1_vocal_poetic",
+      "function": "Micro-tonal calibration, tuning, pitch reference, interval discrimination, resonance matching, 64 Kalās acoustic specialization.",
+      "source": "SVARA BIBLE / SKILL_KALA_REGISTRY",
+      "related_kalas": ["kala_1", "kala_2", "kala_3", "kala_4", "kala_5", "kala_7", "kala_8", "kala_11", "kala_12", "kala_42"],
+      "related_kamas": ["SRINGARA_VAKYA", "NADA_SADHANA", "MANTRA_MOHA", "TALA_PRASTARA"]
+    },
+
+    "office_civil_authority": {
+      "id": "office_civil_authority",
+      "name": "Civil Authority",
+      "sanskrit": "Nāgarika Adhikārī",
+      "holder": "char_roxana",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_3_martial_physical",
+      "function": "Civil governance, martial command, tactical authority, restraint engineering.",
+      "source": "V17_1_RELATIONSHIP_REGISTRY (maha_deva → roxana: civil_authority)",
+      "related_kalas": ["kala_25", "kala_29", "kala_30", "kala_31", "kala_32", "kala_33", "kala_34", "kala_35", "kala_36", "kala_37", "kala_38", "kala_39"],
+      "related_kamas": ["GRANTHI_KALA", "BANDHA_SADHANA", "SANGHATAKA", "BONDAGE_ART", "TADANA_KALA_INFLICTING"]
+    },
+
+    "office_royal_protection": {
+      "id": "office_royal_protection",
+      "name": "Royal Protection",
+      "sanskrit": "Rāja-rakṣā",
+      "holder": "char_jahzara",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_4_occult_healing",
+      "function": "Royal protection, occult oversight, ritual security, metallurgical authority.",
+      "source": "V17_1_RELATIONSHIP_REGISTRY (jahzara → kumari_rati: royal_protection)",
+      "related_kalas": ["kala_40", "kala_41", "kala_43", "kala_44", "kala_45", "kala_46", "kala_47", "kala_48", "kala_49", "kala_50", "kala_51"],
+      "related_kamas": ["RITUAL_AUTHORITY", "YANTRA_LEKHANA", "RAKTA_BALI", "MANTRA_MOHA"]
+    },
+
+    "office_threshold_authority": {
+      "id": "office_threshold_authority",
+      "name": "Threshold Authority",
+      "sanskrit": "Dvāra-pāla",
+      "holder": "char_malika",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_6_sensory_pleasure",
+      "function": "Threshold guardianship, culinary authority, alchemical cuisine, access control to inner domains.",
+      "source": "V17_1_RELATIONSHIP_REGISTRY (malika → maha_deva: threshold_subordination; malika → kumari_rati: threshold_protection)",
+      "related_kalas": ["kala_58", "kala_59"],
+      "related_kamas": ["RASAYANA", "BHOJANA_RATI_SENSORY", "ACCESS_DENIAL", "DVARA_RATI"]
+    },
+
+    "office_ritual_containment": {
+      "id": "office_ritual_containment",
+      "name": "Ritual Containment",
+      "sanskrit": "Yantra-rodha",
+      "holder": "char_sevda",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_4_occult_healing",
+      "function": "Ritual containment, vow-keeping, sacred stillness, immersion discipline.",
+      "source": "V17_1_RELATIONSHIP_REGISTRY (sevda → maha_deva: ritual_containment)",
+      "related_kalas": [],
+      "related_kamas": ["NISHCHALA_SADHANA", "AVAGAHA_SADHANA", "INDRIYA_NIRODHA"]
+    },
+
+    "office_vanguard_sentinel": {
+      "id": "office_vanguard_sentinel",
+      "name": "Vanguard Sentinel",
+      "sanskrit": "Agrāṇī Pratisena",
+      "holder": "char_altani",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_3_martial_physical",
+      "function": "Perimeter synchronization, vanguard operations, steppe tactical integration.",
+      "source": "SKILL_KALA_REGISTRY.may_not_acquire_by_training / V17_1_RELATIONSHIP_REGISTRY (altani → jahzara: perimeter_synchronization)",
+      "related_kalas": [],
+      "related_kamas": ["KRIDA_MRIGA", "EQUINE_FASCINATION"]
+    },
+
+    "office_attendant_care": {
+      "id": "office_attendant_care",
+      "name": "Attendant (Care)",
+      "sanskrit": "Paricārikā (Sevā)",
+      "holder": "char_padma",
+      "constitutional_authority": false,
+      "transferable": true,
+      "domain": "domain_6_sensory_pleasure",
+      "function": "Attendant care to the royal consort; co-primary in culinary and drink preparation.",
+      "source": "V17_1_RELATIONSHIP_REGISTRY (kumari_rati → padma: attendant_care)",
+      "related_kalas": ["kala_58", "kala_59"],
+      "related_kamas": ["DASYAM", "BHOJANA_RATI_SENSORY", "CHUSHANA_CHAKRA", "VATSALYA_RATI"]
+    },
+
+    "office_attendant_companionship": {
+      "id": "office_attendant_companionship",
+      "name": "Attendant (Companionship)",
+      "sanskrit": "Sahacārikā",
+      "holder": "char_champa",
+      "constitutional_authority": false,
+      "transferable": true,
+      "domain": "domain_6_sensory_pleasure",
+      "function": "Companionship to the royal consort; pet play partner; husband-pleasing.",
+      "source": "V17_1_RELATIONSHIP_REGISTRY (kumari_rati → campa: attendant_companionship)",
+      "related_kalas": ["kala_61"],
+      "related_kamas": ["KRIDA_MRIGA", "BALA_CHITTA", "PASHU_DARSHANA", "MDLG"]
+    },
+
+    "office_archive_chronicle": {
+      "id": "office_archive_chronicle",
+      "name": "Archive & Chronicle",
+      "sanskrit": "Lekha-kośa",
+      "holder": "char_reva",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_1_vocal_poetic",
+      "function": "Archive chronicle duality with the Chief Court Supervisor; poetic composition; breath-based memory.",
+      "source": "V17_1_RELATIONSHIP_REGISTRY (anisa → reva: archive_chronicle_duality) / REVA BIBLE",
+      "related_kalas": ["kala_6", "kala_10"],
+      "related_kamas": ["KAVYA_KRIA", "EROTICA_WRITING", "GRAPHOEROTICA", "NIBANDHA_PRACODANA"]
+    },
+
+    "office_acoustic_coordination": {
+      "id": "office_acoustic_coordination",
+      "name": "Acoustic Coordination",
+      "sanskrit": "Svara-samanvaya",
+      "holder": "char_shrinagar",
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_2_visual_adornment",
+      "function": "Acoustic coordination with the Archive & Chronicle; visual and sensory aesthetic authority.",
+      "source": "V17_1_RELATIONSHIP_REGISTRY (shrinagar → reva: acoustic_coordination)",
+      "related_kalas": ["kala_9", "kala_13", "kala_14", "kala_15", "kala_16", "kala_17", "kala_18", "kala_19", "kala_20", "kala_21", "kala_22", "kala_23", "kala_24", "kala_26", "kala_27", "kala_28"],
+      "related_kamas": ["BHUMI_BHUSHANA", "JEWELRY_CRAFTING", "VASTRA_VANCANA", "SNANA_RATI", "DARPANA_SADHANA"]
+    },
+
+    "office_grand_vizier": {
+      "id": "office_grand_vizier",
+      "name": "Grand Vizier",
+      "sanskrit": "Mahāmātya",
+      "holder": null,
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_authority_protocol",
+      "function": "Principal administrative advisor to the sovereign (vacant or unfilled in current registry).",
+      "source": "SKILL_KALA_REGISTRY.may_not_acquire_by_training",
+      "related_kalas": [],
+      "related_kamas": []
+    },
+
+    "office_high_priest": {
+      "id": "office_high_priest",
+      "name": "High Priest",
+      "sanskrit": "Mahā-purohita",
+      "holder": null,
+      "constitutional_authority": true,
+      "transferable": false,
+      "domain": "domain_4_occult_healing",
+      "function": "Principal ritual authority (vacant or unfilled in current registry).",
+      "source": "SKILL_KALA_REGISTRY.may_not_acquire_by_training",
+      "related_kalas": [],
+      "related_kamas": []
+    }
+  },
+
+  "authority_rule": "Possession of a skill never automatically grants the constitutional authority associated with another office.",
+  "training_rule": "Training may create competence, mastery, familiarity, or knowledge without changing constitutional office.",
+  "registry_count": 16,
+  "active_holders": 14,
+  "vacant_offices": ["office_grand_vizier", "office_high_priest"]
+}

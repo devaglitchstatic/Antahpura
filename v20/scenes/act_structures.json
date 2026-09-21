@@ -1,0 +1,79 @@
+{
+  "schema": "antahpura.scene.act_structures",
+  "version": "20.0",
+  "acts": {
+    "act_1_environment": {
+      "name": "Spatial Consecration",
+      "purpose": "Establish location, time, participants, sensory context",
+      "required_fields": [
+        "location_id",
+        "occasion_id",
+        "participants",
+        "environmental_modifiers"
+      ],
+      "player_actions": [
+        "observe",
+        "engage",
+        "shift"
+      ]
+    },
+    "act_2_preparation": {
+      "name": "Somatic Regulation",
+      "purpose": "Characters prepare physically, emotionally, ritually",
+      "required_fields": [
+        "preparation_activities",
+        "kala_activations",
+        "kama_activations"
+      ],
+      "player_actions": [
+        "observe",
+        "engage",
+        "shift"
+      ]
+    },
+    "act_3_interaction": {
+      "name": "Sonic & Geometric Resonance",
+      "purpose": "Core interaction — dialogue, kala performance, kama exploration",
+      "required_fields": [
+        "dialogue_nodes",
+        "kala_checks",
+        "relationship_checks",
+        "choice_points"
+      ],
+      "player_actions": [
+        "observe",
+        "engage",
+        "shift"
+      ]
+    },
+    "act_4_revelation": {
+      "name": "Metaphysical Crux",
+      "purpose": "Decision point — revelation, choice, consequence trigger",
+      "required_fields": [
+        "choice_object",
+        "consequence_class",
+        "visibility",
+        "audience"
+      ],
+      "player_actions": [
+        "observe",
+        "engage",
+        "shift"
+      ]
+    },
+    "act_5_grounding": {
+      "name": "Grounding & Dissolution",
+      "purpose": "Resolution, memory write, relationship delta, recovery",
+      "required_fields": [
+        "memory_writes",
+        "relationship_deltas",
+        "recovery_type"
+      ],
+      "player_actions": [
+        "observe",
+        "engage",
+        "shift"
+      ]
+    }
+  }
+}

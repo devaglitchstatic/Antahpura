@@ -1,0 +1,251 @@
+{
+  "schema": "antahpura.contract_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Formal D/s contract system. The contract is a living document — written, negotiated, revised, and celebrated. It covers rules, limits, protocols, rituals, punishments, safewords, aftercare, and review schedule. Contracts evolve through three primary stages aligned with the collar ceremony system.",
+  "design_principles": {
+    "principle_1": "The contract is a shared document, not a unilateral decree.",
+    "principle_2": "Everything in the contract is negotiable; nothing is assumed.",
+    "principle_3": "The contract is revised regularly — quarterly at minimum.",
+    "principle_4": "Either party can call for a contract review at any time.",
+    "principle_5": "The contract does not supersede consent — consent can always be revoked.",
+    "principle_6": "The contract reflects the dynamic's maturity, not its ambition."
+  },
+
+  "contract_stages": {
+    "stage_1_consideration": {
+      "name": "Consideration Contract",
+      "stage": 1,
+      "duration_weeks": 4,
+      "description": "Trial period. Establishes whether the dynamic is viable.",
+      "typical_scope": ["introductory_rules", "initial_limits", "safewords", "aftercare_basics"],
+      "review_cadence": "weekly",
+      "exit_clauses": ["either_party_may_end_without_penalty"]
+    },
+    "stage_2_training": {
+      "name": "Training Contract",
+      "stage": 2,
+      "duration_months": 3,
+      "description": "Active training period. Protocols deepen.",
+      "typical_scope": ["full_rules", "protocol_list", "punishment_matrix", "daily_rituals", "journaling_required"],
+      "review_cadence": "monthly",
+      "exit_clauses": ["either_party_may_end_with_review"]
+    },
+    "stage_3_formal": {
+      "name": "Formal Contract",
+      "stage": 3,
+      "duration_months": 12,
+      "description": "Long-term established dynamic. Full integration.",
+      "typical_scope": ["long_term_protocols", "advanced_kama_exploration", "kala_mastery_paths", "public_and_private_role_boundaries"],
+      "review_cadence": "quarterly",
+      "exit_clauses": ["negotiated_ending"]
+    }
+  },
+
+  "contract_sections": {
+    "preamble": {
+      "name": "Preamble",
+      "required": true,
+      "description": "Both parties state why they are entering the dynamic.",
+      "fields": ["dominant_intention", "submissive_intention", "shared_vision"]
+    },
+    "rules": {
+      "name": "Rules",
+      "required": true,
+      "description": "The behavioral rules that govern the dynamic.",
+      "rule_categories": [
+        "communication_rules",
+        "service_rules",
+        "safety_rules",
+        "honesty_rules",
+        "daily_conduct_rules",
+        "scene_specific_rules"
+      ]
+    },
+    "limits": {
+      "name": "Limits",
+      "required": true,
+      "description": "Hard and soft limits. Never negotiable mid-scene.",
+      "fields": ["hard_limits", "soft_limits", "conditional_limits", "review_schedule"]
+    },
+    "protocols": {
+      "name": "Protocols",
+      "required": true,
+      "description": "Formalized ways of doing things within the dynamic.",
+      "protocol_categories": [
+        "greeting_protocol",
+        "posture_protocol",
+        "speech_protocol",
+        "collar_protocol",
+        "physical_contact_protocol",
+        "disagreement_protocol"
+      ]
+    },
+    "rituals": {
+      "name": "Rituals",
+      "required": true,
+      "description": "Scheduled practices that reinforce the dynamic.",
+      "ritual_categories": [
+        "morning_ritual",
+        "evening_ritual",
+        "collar_handling",
+        "weekly_checkin",
+        "monthly_review"
+      ]
+    },
+    "punishments": {
+      "name": "Punishments",
+      "required": true,
+      "description": "The infraction-to-correction matrix, negotiated in advance.",
+      "fields": ["infractions", "corrections", "clean_slate_loop", "hard_banned_punishments"]
+    },
+    "rewards": {
+      "name": "Rewards",
+      "required": true,
+      "description": "What the submissive finds rewarding, and how the Dominant will reward.",
+      "fields": ["preferred_rewards", "reward_schedule", "milestone_rewards"]
+    },
+    "safewords": {
+      "name": "Safewords",
+      "required": true,
+      "description": "Verbal and non-verbal safewords, plus the contract-level override.",
+      "fields": ["green_word", "yellow_word", "red_word", "contract_safeword", "non_verbal_signals"]
+    },
+    "aftercare": {
+      "name": "Aftercare",
+      "required": true,
+      "description": "Post-scene and post-conflict aftercare for both parties.",
+      "fields": ["submissive_aftercare", "dominant_aftercare", "mutual_aftercare"]
+    },
+    "review_schedule": {
+      "name": "Review Schedule",
+      "required": true,
+      "description": "When the contract will be reviewed and revised.",
+      "fields": ["review_cadence", "next_review_date", "review_process"]
+    },
+    "termination": {
+      "name": "Termination",
+      "required": true,
+      "description": "How the dynamic can end, and what happens after.",
+      "fields": ["termination_process", "cooling_off_period", "post_dynamic_contact_rules"]
+    }
+  },
+
+  "contract_negotiation_workflow": {
+    "description": "The process by which a contract is created or revised.",
+    "steps": [
+      {
+        "step": 1,
+        "name": "Initiation",
+        "content": "Either party proposes contract creation or revision."
+      },
+      {
+        "step": 2,
+        "name": "Separate Drafting",
+        "content": "Each party drafts their vision of the contract independently."
+      },
+      {
+        "step": 3,
+        "name": "Shared Reading",
+        "content": "Both drafts read aloud together, without judgment."
+      },
+      {
+        "step": 4,
+        "name": "Section-by-Section Negotiation",
+        "content": "Each section is discussed and either agreed, revised, or deferred."
+      },
+      {
+        "step": 5,
+        "name": "Safeword Confirmation",
+        "content": "Both parties test and confirm safewords out of scene."
+      },
+      {
+        "step": 6,
+        "name": "Signing",
+        "content": "Both parties sign the contract. In Antahpura, this is a formal ceremony at a specific location."
+      },
+      {
+        "step": 7,
+        "name": "Archival",
+        "content": "The contract is recorded in the audit layer and becomes canon for the dynamic."
+      }
+    ]
+  },
+
+  "contract_registry": {
+    "contracts": [
+      {
+        "contract_id": "contract_sovereign_kumari_v1",
+        "stage": "stage_3_formal",
+        "parties": ["char_maha_deva", "char_kumari_rati"],
+        "signed_at": "2026-09-16",
+        "review_schedule": "quarterly",
+        "next_review": "2026-12-16",
+        "status": "active",
+        "scope_summary": "Formal long-term D/s contract between the sovereign and the primary initiate",
+        "safeword_contract_override": "kailasa",
+        "notes": "Includes provisions for public roles, harem conduct, and succession training."
+      },
+      {
+        "contract_id": "contract_padma_service_v1",
+        "stage": "stage_2_training",
+        "parties": ["char_kumari_rati", "char_padma"],
+        "signed_at": "2026-09-16",
+        "review_schedule": "monthly",
+        "next_review": "2026-10-16",
+        "status": "active",
+        "scope_summary": "Training contract focusing on service excellence, journaling discipline, and kama exploration",
+        "safeword_contract_override": "padma_yellow",
+        "notes": "Includes culinary, aesthetic, and household service protocols."
+      },
+      {
+        "contract_id": "contract_roxana_rigging_v1",
+        "stage": "stage_2_training",
+        "parties": ["char_roxana", "char_kumari_rati"],
+        "signed_at": "2026-09-16",
+        "review_schedule": "monthly",
+        "next_review": "2026-10-16",
+        "status": "active",
+        "scope_summary": "Training contract for shibari/rigging practice under a Rigger's supervision",
+        "safeword_contract_override": "iron_silk",
+        "notes": "Includes anatomical safety rules, suspension tier progression, and rigger's code."
+      }
+    ]
+  },
+
+  "contract_revision_rules": {
+    "who_can_propose": ["either_party"],
+    "cooling_off_period_hours": 24,
+    "revision_requires": ["both_parties_present", "both_parties_sober", "no_active_scene"],
+    "minor_changes": "single_section_revision",
+    "major_changes": "full_contract_renegotiation",
+    "version_tracking": "every_revision_creates_new_version"
+  },
+
+  "runtime_contract_state": {
+    "schema": {
+      "character_id": "char_id",
+      "active_contracts": [
+        {
+          "contract_id": "string",
+          "counterparty": "char_id",
+          "stage": "string",
+          "signed_at": "iso_8601",
+          "next_review": "iso_8601",
+          "status": "active|under_review|suspended|terminated"
+        }
+      ],
+      "contract_safeword": "string",
+      "last_updated": "iso_8601"
+    }
+  },
+
+  "audit": {
+    "total_stages": 3,
+    "total_sections": 11,
+    "total_workflow_steps": 7,
+    "total_active_contracts": 3,
+    "audit_passed": true
+  }
+}

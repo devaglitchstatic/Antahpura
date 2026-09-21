@@ -1,0 +1,156 @@
+{
+  "schema": "V18.9_SCENE_TRIGGERS",
+  "version": "18.9",
+  "provenance": "CONFIRMED_V18.9_CANON",
+  "triggers": {
+    "guhya_initiation": {
+      "name": "Guhya Garbhagṛha Initiation",
+      "location": "guhya_garbhagriha",
+      "characters_present": ["maha_deva", "kumari_rati", "padma", "champa", "anisa"],
+      "associated_kinks": ["Rasayana", "Darpana_Sadhana", "Bala_Chitta"],
+      "associated_rituals": ["Sphota", "Panchamakara"],
+      "trigger_conditions": {
+        "lunar_phase": "Amāvasyā",
+        "time": "Nishita Kaal",
+        "trust_threshold": 0.6,
+        "sadhana_tier": 2
+      },
+      "resulting_actions": ["initiate_ritual", "unlock_rasayana"],
+      "next_locations": ["private_apartments_kumari", "throne_chamber"],
+      "prerequisite_scenes": []
+    },
+    "breeding_inquiry": {
+      "name": "Champa's Breeding Inquiry",
+      "location": "private_apartments_padma",
+      "characters_present": ["champa", "padma"],
+      "associated_kinks": ["Kshetra_Sadhana", "Pashu_Gamana"],
+      "associated_rituals": [],
+      "trigger_conditions": {
+        "curiosity_threshold": 0.6,
+        "prerequisite_scene": "guhya_initiation"
+      },
+      "resulting_actions": ["share_with_princess", "unlock_breeding_arc"],
+      "next_locations": ["private_apartments_kumari", "kukur_vivaha_ground"],
+      "prerequisite_scenes": ["guhya_initiation"]
+    },
+    "mirror_initiation": {
+      "name": "Padma's Mirror Initiation",
+      "location": "private_apartments_kumari",
+      "characters_present": ["kumari_rati", "padma"],
+      "associated_kinks": ["Darpana_Sadhana"],
+      "associated_rituals": ["Darpana-Sadhana"],
+      "trigger_conditions": {
+        "prerequisite_scene": "guhya_initiation",
+        "trust_threshold": 0.5
+      },
+      "resulting_actions": ["unlock_darpana", "ego_breaking"],
+      "next_locations": ["private_apartments_padma", "gardens_pramada"],
+      "prerequisite_scenes": ["guhya_initiation"]
+    },
+    "shibari_session": {
+      "name": "Roxana's Shibari Session",
+      "location": "rope_chamber",
+      "characters_present": ["roxana"],
+      "associated_kinks": ["Granthi_Kala", "Bandha_Darshana"],
+      "associated_rituals": ["Shibari Practice"],
+      "trigger_conditions": {
+        "trust_threshold": 0.4
+      },
+      "resulting_actions": ["teach_bondage", "unlock_self_bondage"],
+      "next_locations": ["dance_hall", "private_apartments_roxana"],
+      "prerequisite_scenes": []
+    },
+    "lactation_ritual": {
+      "name": "Shrinagar's Lactation Ritual",
+      "location": "farm_barn_shrinagar",
+      "characters_present": ["shrinagar", "champa"],
+      "associated_kinks": ["Stanya_Dohana", "Gau_Rupa"],
+      "associated_rituals": ["Gau-Rupa Training"],
+      "trigger_conditions": {
+        "trust_threshold": 0.3
+      },
+      "resulting_actions": ["teach_lactation", "unlock_esoteric"],
+      "next_locations": ["music_chamber", "kitchen"],
+      "prerequisite_scenes": []
+    },
+    "primal_marking": {
+      "name": "Jahzara's Primal Marking",
+      "location": "guard_post",
+      "characters_present": ["jahzara", "padma", "champa"],
+      "associated_kinks": ["Yoni_Vega", "Mutra_Lanchhana"],
+      "associated_rituals": ["Primal Marking"],
+      "trigger_conditions": {
+        "trust_threshold": 0.5
+      },
+      "resulting_actions": ["teach_primal_marking", "unlock_fluid_play"],
+      "next_locations": ["bath_pond", "gardens_pramada"],
+      "prerequisite_scenes": ["guhya_initiation"]
+    },
+    "impact_training": {
+      "name": "Altani's Impact Training",
+      "location": "perimeter_post",
+      "characters_present": ["altani"],
+      "associated_kinks": ["Tadana_Kala_Inflicting"],
+      "associated_rituals": ["Impact Practice"],
+      "trigger_conditions": {
+        "discipline_need": true
+      },
+      "resulting_actions": ["teach_impact", "administer_correction"],
+      "next_locations": ["armory", "perimeter_post"],
+      "prerequisite_scenes": []
+    },
+    "containment_ritual": {
+      "name": "Sevda's Containment Ritual",
+      "location": "vault_subterranean",
+      "characters_present": ["sevda"],
+      "associated_kinks": ["Sarvanga_Veshtana", "Dhupan"],
+      "associated_rituals": ["Containment", "Purification"],
+      "trigger_conditions": {
+        "lunar_phase": "Amāvasyā",
+        "trust_threshold": 0.5
+      },
+      "resulting_actions": ["teach_containment", "unlock_encasement"],
+      "next_locations": ["threshold_chamber", "dungeon"],
+      "prerequisite_scenes": []
+    },
+    "threshold_crossing": {
+      "name": "Malika's Threshold Crossing",
+      "location": "threshold_chamber",
+      "characters_present": ["malika"],
+      "associated_kinks": ["Indriya_Nirodha", "Access_Denial"],
+      "associated_rituals": ["Gatekeeping"],
+      "trigger_conditions": {
+        "protocol_need": true
+      },
+      "resulting_actions": ["teach_gatekeeping", "unlock_denial"],
+      "next_locations": ["connecting_passage", "threshold_chamber"],
+      "prerequisite_scenes": []
+    },
+    "voice_chorus": {
+      "name": "Reva's Voice Chorus",
+      "location": "chorus_balcony",
+      "characters_present": ["reva"],
+      "associated_kinks": ["Śṛṅgāra_Vākya", "Śānta_Rasa"],
+      "associated_rituals": ["Chorus Practice"],
+      "trigger_conditions": {
+        "ritual_need": true
+      },
+      "resulting_actions": ["teach_voice", "unlock_erotic_literature"],
+      "next_locations": ["calibration_chamber", "gardens_pramada"],
+      "prerequisite_scenes": []
+    },
+    "calibration_session": {
+      "name": "Svara's Calibration Session",
+      "location": "calibration_chamber",
+      "characters_present": ["svara"],
+      "associated_kinks": ["Sparsha_Shiksha", "Shalaka_Sounding"],
+      "associated_rituals": ["Acoustic Calibration"],
+      "trigger_conditions": {
+        "acoustic_need": true
+      },
+      "resulting_actions": ["teach_calibration", "unlock_self_affirmation"],
+      "next_locations": ["music_chamber", "chorus_balcony"],
+      "prerequisite_scenes": []
+    }
+  }
+}

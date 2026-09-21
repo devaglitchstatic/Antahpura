@@ -1,0 +1,699 @@
+{
+  "schema": "antahpura.scene.templates",
+  "version": "20.0",
+  "total_templates": 20,
+  "templates": [
+    {
+      "template_id": "tpl_dawn_ritual",
+      "name": "Dawn Ritual",
+      "scene_type": "ritual_scene",
+      "default_location": "loc_ritual_chorus",
+      "default_occasion": "occ_dawn_chorus",
+      "typical_participants": [
+        "char_svara",
+        "char_tarana",
+        "char_kumari_rati"
+      ],
+      "required_kalas": [
+        "kala_1",
+        "kala_2",
+        "kala_41"
+      ],
+      "available_kamas": [
+        "RITUAL_AUTHORITY",
+        "NADA_SADHANA",
+        "MANTRA_MOHA"
+      ],
+      "act_scripts": {
+        "act_1": "Participants gather in the ritual hall. Oil lamps lit. Incense burns.",
+        "act_2": "Preparation: instruments calibrated, offerings arranged, participants centered.",
+        "act_3": "Core ritual: chant, instrumental performance, ritual gesture.",
+        "act_4": "Choice: interpret a sign or message received during the ritual.",
+        "act_5": "Grounding: participants share water, journal, disperse."
+      },
+      "reward_slots": [
+        "rw_verbal_praise",
+        "rw_scent_gift"
+      ],
+      "scene_minigames": [
+        "Rhythm",
+        "Reflection"
+      ]
+    },
+    {
+      "template_id": "tpl_training_ground",
+      "name": "Training Ground",
+      "scene_type": "training_scene",
+      "default_location": "loc_drill_yard",
+      "typical_participants": [
+        "char_roxana",
+        "char_altani",
+        "char_jahzara"
+      ],
+      "required_kalas": [
+        "kala_29",
+        "kala_30",
+        "kala_36"
+      ],
+      "available_kamas": [
+        "TADANA_KALA_INFLICTING",
+        "NISHCHALA_SADHANA",
+        "PROTOCOL_ENFORCEMENT"
+      ],
+      "act_scripts": {
+        "act_1": "Training yard. Weapons laid out. Roxana observes.",
+        "act_2": "Altani stretches. Jahzara checks gear. Roxana assigns tasks.",
+        "act_3": "Combat drills. Kala checks. Relationship dynamics emerge.",
+        "act_4": "Choice: show mercy or push harder.",
+        "act_5": "Cool down. Recovery. Memory write."
+      },
+      "reward_slots": [
+        "rw_heavy_hold",
+        "rw_public_acknowledgment"
+      ],
+      "scene_minigames": [
+        "Endurance",
+        "Coordination"
+      ]
+    },
+    {
+      "template_id": "tpl_court_assembly",
+      "name": "Court Assembly",
+      "scene_type": "political_scene",
+      "default_location": "loc_throne_hall",
+      "default_occasion": "occ_durbar",
+      "typical_participants": [
+        "char_maha_deva",
+        "char_anisa",
+        "char_malika"
+      ],
+      "required_kalas": [
+        "kala_11",
+        "kala_52",
+        "kala_6"
+      ],
+      "available_kamas": [
+        "PROTOCOL_ENFORCEMENT",
+        "ACCESS_DENIAL",
+        "AVADHANA_STHANA"
+      ],
+      "act_scripts": {
+        "act_1": "Throne hall. Mahā Deva seated. Aniśā records. Malika guards threshold.",
+        "act_2": "Petitioners enter. Protocol enforced.",
+        "act_3": "Debate. Protocol checks. Choice: support one faction or remain neutral.",
+        "act_4": "Mahā Deva renders judgment. Choice: enforce or soften.",
+        "act_5": "Assembly dissolves. Institutional reputation deltas."
+      },
+      "reward_slots": [
+        "rw_formal_title",
+        "rw_institutional_recognition"
+      ],
+      "scene_minigames": [
+        "Reflection",
+        "Puzzle"
+      ]
+    },
+    {
+      "template_id": "tpl_private_encounter",
+      "name": "Private Encounter",
+      "scene_type": "intimate_scene",
+      "default_location": "loc_zenana_inner",
+      "typical_participants": [
+        "variable"
+      ],
+      "required_kalas": [
+        "variable"
+      ],
+      "available_kamas": [
+        "variable"
+      ],
+      "special_requirements": [
+        "consent_verified",
+        "aftercare_protocol_active"
+      ],
+      "act_scripts": {
+        "act_1": "Private chamber. Candles. Scent. Two characters alone.",
+        "act_2": "Preparation. Boundaries discussed. Consent verified.",
+        "act_3": "Interaction. Kama exploration. Kala checks.",
+        "act_4": "Choice: deepen or step back.",
+        "act_5": "Aftercare. Memory write. Recovery."
+      },
+      "reward_slots": [
+        "rw_full_scene_release",
+        "rw_cuddling",
+        "rw_oil_massage"
+      ],
+      "scene_minigames": [
+        "Coordination",
+        "Perception",
+        "Reflection"
+      ]
+    },
+    {
+      "template_id": "tpl_floral_ceremony",
+      "name": "Floral Ceremony (Bathukamma)",
+      "scene_type": "ritual_scene",
+      "default_location": "loc_zenana_inner",
+      "default_occasion": "occ_bathukamma",
+      "typical_participants": [
+        "char_kumari_rati",
+        "char_padma",
+        "char_champa"
+      ],
+      "required_kalas": [
+        "kala_23",
+        "kala_24",
+        "kala_53"
+      ],
+      "available_kamas": [
+        "BHOJANA_RATI_SENSORY",
+        "SNANA_RATI",
+        "BHUMI_BHUSHANA"
+      ],
+      "act_scripts": {
+        "act_1": "Flowers gathered from the garden. Women-only gathering.",
+        "act_2": "Stack creation: layered flower arrangements.",
+        "act_3": "Circle dance. Songs. Jasmine garlands woven.",
+        "act_4": "Choice: offer personal intention or community offering.",
+        "act_5": "Water immersion. Memory write."
+      },
+      "reward_slots": [
+        "rw_flower_bath",
+        "rw_sticker_chart"
+      ],
+      "scene_minigames": [
+        "Rhythm",
+        "Perception"
+      ]
+    },
+    {
+      "template_id": "tpl_collar_training",
+      "name": "Training Collar Ceremony",
+      "scene_type": "ritual_scene",
+      "default_location": "loc_yogic_pavilion",
+      "typical_participants": [
+        "variable"
+      ],
+      "required_kalas": [
+        "kala_41",
+        "kala_45"
+      ],
+      "available_kamas": [
+        "VICARIOUS_EGO_BHANGA",
+        "RITUAL_AUTHORITY",
+        "DASYAM"
+      ],
+      "act_scripts": {
+        "act_1": "Preparation ritual. Bathing, purification.",
+        "act_2": "Spoken vows. Each party states intention.",
+        "act_3": "Collar presentation. Collar placement.",
+        "act_4": "Witnesses acknowledge the collar.",
+        "act_5": "Private celebration. Memory write."
+      },
+      "reward_slots": [
+        "rw_collar_adjustment",
+        "rw_private_confession"
+      ],
+      "scene_minigames": [
+        "Reflection"
+      ]
+    },
+    {
+      "template_id": "tpl_collar_formal",
+      "name": "Formal Collar Ceremony",
+      "scene_type": "ritual_scene",
+      "default_location": "loc_throne_hall",
+      "typical_participants": [
+        "variable",
+        "witnesses"
+      ],
+      "required_kalas": [
+        "kala_41",
+        "kala_45",
+        "kala_19"
+      ],
+      "available_kamas": [
+        "VICARIOUS_EGO_BHANGA",
+        "RITUAL_AUTHORITY"
+      ],
+      "act_scripts": {
+        "act_1": "Formal processional.",
+        "act_2": "Public vows. Collar consecration.",
+        "act_3": "Collar placement.",
+        "act_4": "Assembly acknowledgment.",
+        "act_5": "Feast. Memory write."
+      },
+      "reward_slots": [
+        "rw_institutional_recognition",
+        "rw_formal_title"
+      ],
+      "scene_minigames": [
+        "Reflection"
+      ]
+    },
+    {
+      "template_id": "tpl_rigging_practice",
+      "name": "Rigging Practice",
+      "scene_type": "training_scene",
+      "default_location": "loc_drill_yard",
+      "typical_participants": [
+        "char_roxana",
+        "char_sevda"
+      ],
+      "required_kalas": [
+        "kala_25",
+        "kala_33"
+      ],
+      "available_kamas": [
+        "GRANTHI_KALA",
+        "BANDHA_SADHANA",
+        "SANGHATAKA"
+      ],
+      "act_scripts": {
+        "act_1": "Rope laid out. Rigger inspects. Subject prepared.",
+        "act_2": "Safety check. Negotiation confirmed.",
+        "act_3": "Tie begins. Knot by knot. Trust deepens.",
+        "act_4": "Suspension or floor work. Choice: extend or conclude.",
+        "act_5": "Full release. Aftercare. Rope storage."
+      },
+      "reward_slots": [
+        "rw_heavy_hold",
+        "rw_full_scene_release"
+      ],
+      "scene_minigames": [
+        "Precision",
+        "Coordination"
+      ]
+    },
+    {
+      "template_id": "tpl_chthonic_rite",
+      "name": "Chthonic Rite (Pātāla)",
+      "scene_type": "ritual_scene",
+      "default_location": "loc_patala_chamber",
+      "default_occasion": "occ_patala_tantra",
+      "typical_participants": [
+        "char_sevda",
+        "char_jahzara"
+      ],
+      "required_kalas": [
+        "kala_41",
+        "kala_43",
+        "kala_37"
+      ],
+      "available_kamas": [
+        "RAKTA_BALI",
+        "RAKTA_SPARSHA",
+        "INDRIYA_NIRODHA"
+      ],
+      "act_scripts": {
+        "act_1": "Descent into the chamber. Earth floor. Oil lamps.",
+        "act_2": "Earth consecration. Body preparation. Mantra begins.",
+        "act_3": "Blood offering or bloodless substitute. Immobility hold.",
+        "act_4": "Choice: receive or withdraw before completion.",
+        "act_5": "Extended grounding. Slow ascent. Memory write."
+      },
+      "reward_slots": [
+        "rw_solo_time",
+        "rw_incense_session"
+      ],
+      "scene_minigames": [
+        "Puzzle",
+        "Reflection"
+      ]
+    },
+    {
+      "template_id": "tpl_esoteric_preparation",
+      "name": "Esoteric Preparation",
+      "scene_type": "ritual_scene",
+      "default_location": "loc_perfume_atelier",
+      "typical_participants": [
+        "char_shrinagar",
+        "char_padma"
+      ],
+      "required_kalas": [
+        "kala_21",
+        "kala_22"
+      ],
+      "available_kamas": [
+        "SNANA_RATI",
+        "RASAYANA"
+      ],
+      "act_scripts": {
+        "act_1": "Atelier prepared. Saffron strands, oils, mortars.",
+        "act_2": "Ingredients arranged. Intentions stated.",
+        "act_3": "Grinding, infusing, blending.",
+        "act_4": "Choice: create for self or gift to another.",
+        "act_5": "Storage. Memory write."
+      },
+      "reward_slots": [
+        "rw_scent_gift",
+        "rw_oil_anointment"
+      ],
+      "scene_minigames": [
+        "Perception"
+      ]
+    },
+    {
+      "template_id": "tpl_private_dining",
+      "name": "Private Dining",
+      "scene_type": "intimate_scene",
+      "default_location": "loc_private_dining",
+      "typical_participants": [
+        "char_kumari_rati",
+        "char_padma",
+        "char_malika"
+      ],
+      "required_kalas": [
+        "kala_59",
+        "kala_58"
+      ],
+      "available_kamas": [
+        "BHOJANA_RATI_SENSORY",
+        "RASAYANA"
+      ],
+      "act_scripts": {
+        "act_1": "Low table set. Silk cushions. Food prepared.",
+        "act_2": "Service begins. Each dish introduced.",
+        "act_3": "Feeding, tasting, sharing.",
+        "act_4": "Choice: offer a specific dish or receive from another.",
+        "act_5": "Clearing. Digestive drink. Memory write."
+      },
+      "reward_slots": [
+        "rw_sweet_treat",
+        "rw_warm_drink"
+      ],
+      "scene_minigames": [
+        "Coordination"
+      ]
+    },
+    {
+      "template_id": "tpl_music_chamber",
+      "name": "Music Chamber Session",
+      "scene_type": "dialogue_scene",
+      "default_location": "loc_music_chamber",
+      "typical_participants": [
+        "char_shrinagar",
+        "char_svara",
+        "char_reva"
+      ],
+      "required_kalas": [
+        "kala_1",
+        "kala_2",
+        "kala_4"
+      ],
+      "available_kamas": [
+        "SRINGARA_VAKYA",
+        "NADA_SADHANA",
+        "TALA_PRASTARA"
+      ],
+      "act_scripts": {
+        "act_1": "Instruments tuned. Acoustics checked.",
+        "act_2": "Improvisation begins. Melodies interweave.",
+        "act_3": "Deep collaboration. One leads, then the other.",
+        "act_4": "Choice: perform for the court or keep private.",
+        "act_5": "Silence. Reflection. Memory write."
+      },
+      "reward_slots": [
+        "rw_poetic_recitation",
+        "rw_hair_ornament"
+      ],
+      "scene_minigames": [
+        "Rhythm",
+        "Reflection"
+      ]
+    },
+    {
+      "template_id": "tpl_bathhouse_ritual",
+      "name": "Bathhouse Ritual",
+      "scene_type": "ritual_scene",
+      "default_location": "loc_bath_space",
+      "typical_participants": [
+        "char_shrinagar",
+        "char_padma",
+        "char_kumari_rati"
+      ],
+      "required_kalas": [
+        "kala_22",
+        "kala_21",
+        "kala_19"
+      ],
+      "available_kamas": [
+        "SNANA_RATI",
+        "TAILA_SIKTHA",
+        "Vilepana"
+      ],
+      "act_scripts": {
+        "act_1": "Steam rises. Oils ready. Water warmed.",
+        "act_2": "Preparation. Garments removed. Hair loosened.",
+        "act_3": "Washing, oiling, anointing.",
+        "act_4": "Choice: extend into deeper intimacy or remain at bathing.",
+        "act_5": "Wrapping. Rest. Memory write."
+      },
+      "reward_slots": [
+        "rw_oil_massage",
+        "rw_flower_bath"
+      ],
+      "scene_minigames": [
+        "Perception",
+        "Reflection"
+      ]
+    },
+    {
+      "template_id": "tpl_garden_walk",
+      "name": "Garden Walk",
+      "scene_type": "dialogue_scene",
+      "default_location": "loc_palace_garden",
+      "typical_participants": [
+        "variable"
+      ],
+      "required_kalas": [
+        "kala_23",
+        "kala_60"
+      ],
+      "available_kamas": [
+        "BHUMI_BHUSHANA",
+        "DHUPAN"
+      ],
+      "act_scripts": {
+        "act_1": "Garden path. Flowers in bloom. Birdsong.",
+        "act_2": "Walk begins. Conversation flows.",
+        "act_3": "Deeper conversation. Secrets surface.",
+        "act_4": "Choice: share a secret or keep it.",
+        "act_5": "Return to palace. Memory write."
+      },
+      "reward_slots": [
+        "rw_private_confession",
+        "rw_flower_bath"
+      ],
+      "scene_minigames": [
+        "Reflection"
+      ]
+    },
+    {
+      "template_id": "tpl_threshold_checkpoint",
+      "name": "Threshold Checkpoint",
+      "scene_type": "political_scene",
+      "default_location": "loc_threshold_gate",
+      "typical_participants": [
+        "char_malika",
+        "char_anisa",
+        "char_jahzara"
+      ],
+      "required_kalas": [
+        "kala_11",
+        "kala_13"
+      ],
+      "available_kamas": [
+        "ACCESS_DENIAL",
+        "DVARA_RATI",
+        "PROTOCOL_ENFORCEMENT"
+      ],
+      "act_scripts": {
+        "act_1": "Checkpoint. Guards posted. Queue forms.",
+        "act_2": "Each arrival examined. Credentials verified.",
+        "act_3": "A difficult case presents itself.",
+        "act_4": "Choice: deny entry or grant exception.",
+        "act_5": "Log entry. Memory write."
+      },
+      "reward_slots": [
+        "rw_formal_title"
+      ],
+      "scene_minigames": [
+        "Puzzle"
+      ]
+    },
+    {
+      "template_id": "tpl_archival_research",
+      "name": "Archival Research",
+      "scene_type": "exploration_scene",
+      "default_location": "loc_archive",
+      "typical_participants": [
+        "char_reva",
+        "char_anisa"
+      ],
+      "required_kalas": [
+        "kala_11",
+        "kala_12",
+        "kala_6"
+      ],
+      "available_kamas": [
+        "NIBANDHA_PRACODANA",
+        "GRAPHOEROTICA"
+      ],
+      "act_scripts": {
+        "act_1": "Archive doors open. Dust in the air.",
+        "act_2": "Scrolls pulled. Ciphers studied.",
+        "act_3": "Discovery. A hidden reference.",
+        "act_4": "Choice: reveal or conceal discovery.",
+        "act_5": "Archive resealed. Memory write."
+      },
+      "reward_slots": [
+        "rw_pocket_token",
+        "rw_private_confession"
+      ],
+      "scene_minigames": [
+        "Puzzle",
+        "Perception"
+      ]
+    },
+    {
+      "template_id": "tpl_cipher_exchange",
+      "name": "Cipher Exchange",
+      "scene_type": "dialogue_scene",
+      "default_location": "loc_cipher_room",
+      "typical_participants": [
+        "char_reva",
+        "char_anisa"
+      ],
+      "required_kalas": [
+        "kala_11",
+        "kala_6"
+      ],
+      "available_kamas": [
+        "NIBANDHA_PRACODANA",
+        "GRAPHOEROTICA"
+      ],
+      "act_scripts": {
+        "act_1": "Cipher room sealed. Lamp lit.",
+        "act_2": "Twin rings touched. Cipher disc turned.",
+        "act_3": "Message exchanged. Meaning decoded.",
+        "act_4": "Choice: act on the message or store it.",
+        "act_5": "Lamp extinguished. Memory write."
+      },
+      "reward_slots": [
+        "rw_pocket_token"
+      ],
+      "scene_minigames": [
+        "Puzzle"
+      ]
+    },
+    {
+      "template_id": "tpl_pet_training",
+      "name": "Pet Training Session",
+      "scene_type": "intimate_scene",
+      "default_location": "loc_munda_ritual_space",
+      "typical_participants": [
+        "char_champa",
+        "char_padma"
+      ],
+      "required_kalas": [
+        "kala_61",
+        "kala_53"
+      ],
+      "available_kamas": [
+        "KRIDA_MRIGA",
+        "PASHU_DARSHANA",
+        "BALA_CHITTA"
+      ],
+      "special_requirements": [
+        "consent_verified",
+        "aftercare_protocol_active"
+      ],
+      "act_scripts": {
+        "act_1": "Space prepared. Collar or bell retrieved.",
+        "act_2": "Pet space entered. Rules restated.",
+        "act_3": "Training begins. Commands, rewards, repetitions.",
+        "act_4": "Choice: reward for perfect behavior or extend training.",
+        "act_5": "Slow exit from pet space. Cuddling. Memory write."
+      },
+      "reward_slots": [
+        "rw_pet_bells",
+        "rw_cuddling",
+        "rw_total_regression"
+      ],
+      "scene_minigames": [
+        "Coordination",
+        "Reflection"
+      ]
+    },
+    {
+      "template_id": "tpl_shadow_patrol",
+      "name": "Shadow Patrol",
+      "scene_type": "exploration_scene",
+      "default_location": "loc_palace_walls",
+      "typical_participants": [
+        "char_altani",
+        "char_jahzara"
+      ],
+      "required_kalas": [
+        "kala_29",
+        "kala_36",
+        "kala_37"
+      ],
+      "available_kamas": [
+        "NISHCHALA_SADHANA",
+        "KASTHA_RATI"
+      ],
+      "act_scripts": {
+        "act_1": "Walls at dusk. Torches lit. Wind rises.",
+        "act_2": "Patrol begins. Silence maintained.",
+        "act_3": "Anomaly detected. Alert.",
+        "act_4": "Choice: engage or observe.",
+        "act_5": "Report filed. Memory write."
+      },
+      "reward_slots": [
+        "rw_heavy_hold"
+      ],
+      "scene_minigames": [
+        "Perception",
+        "Endurance"
+      ]
+    },
+    {
+      "template_id": "tpl_dance_performance",
+      "name": "Dance Performance",
+      "scene_type": "ritual_scene",
+      "default_location": "loc_performance_pavilion",
+      "typical_participants": [
+        "char_tarana",
+        "char_svara",
+        "char_kumari_rati"
+      ],
+      "required_kalas": [
+        "kala_53",
+        "kala_54",
+        "kala_2"
+      ],
+      "available_kamas": [
+        "CHITRA_RATI",
+        "BUST_EXHIBITIONISM",
+        "LAGHAVA_SADHANA"
+      ],
+      "act_scripts": {
+        "act_1": "Pavilion prepared. Audience gathers.",
+        "act_2": "Dancer centers. Instruments tuned.",
+        "act_3": "Performance begins. Audience entranced.",
+        "act_4": "Choice: end with flourish or extend.",
+        "act_5": "Ovation. Offering. Memory write."
+      },
+      "reward_slots": [
+        "rw_public_acknowledgment",
+        "rw_full_scene_release"
+      ],
+      "scene_minigames": [
+        "Rhythm",
+        "Coordination"
+      ]
+    }
+  ]
+}

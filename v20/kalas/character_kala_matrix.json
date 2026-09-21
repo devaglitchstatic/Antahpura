@@ -1,0 +1,215 @@
+{
+  "schema": "antahpura.character_kala_matrix",
+  "version": "20.1",
+  "generated": "2026-09-18",
+  "parent_schema": "antahpura.kala_system",
+  "source": "kala_system_v20.json",
+  "cross_reference": "DeepSeek Kala Master Matrix v2.0 (flat display format)",
+  "description": "Inverse index of character-to-Kala affinity. Derived from per-Kala primary/resonant/latent fields in kala_system_v20.json. Used by the runtime engine to determine character Kala capabilities, scene eligibility, and Kama unlocking via KAMA_KALA_BRIDGE.json.",
+
+  "characters": {
+    "char_maha_deva": {
+      "primary": [52],
+      "resonant": [5, 6, 10, 11, 14, 32, 36, 41, 49, 50, 51, 62, 64],
+      "latent": [12, 28, 34, 37, 42, 63]
+    },
+    "char_kumari_rati": {
+      "primary": [64],
+      "resonant": [4, 13, 17, 19, 21, 22, 23, 44, 53, 54],
+      "latent": [1, 3, 7, 8, 9, 15, 18, 20, 24, 30, 41, 49, 56, 59]
+    },
+    "char_padma": {
+      "primary": [58, 59],
+      "resonant": [17, 18, 22, 23, 24, 35, 60, 61, 64],
+      "latent": [1, 4, 6, 10, 13, 14, 15, 16, 19, 21, 25, 26, 27, 36, 38, 46, 47, 53, 54, 57]
+    },
+    "char_champa": {
+      "primary": [61],
+      "resonant": [7, 8, 24, 57, 64],
+      "latent": [1, 3, 4, 12, 53, 54]
+    },
+    "char_anisa": {
+      "primary": [62, 63],
+      "resonant": [3, 10, 34, 39, 52],
+      "latent": [11]
+    },
+    "char_shrinagar": {
+      "primary": [9, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 27, 28],
+      "resonant": [1, 4, 6, 25, 33, 38, 39, 40, 43, 46, 54, 58, 59, 60, 64],
+      "latent": [2, 5, 7]
+    },
+    "char_tarana": {
+      "primary": [53, 54, 55, 56, 57],
+      "resonant": [1, 2, 3, 8, 15, 16, 25, 26, 30, 31, 33, 45],
+      "latent": [13, 14, 17, 23, 29, 35, 43, 61]
+    },
+    "char_roxana": {
+      "primary": [25, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+      "resonant": [3, 16, 18, 19, 26, 28, 40, 44, 48, 55, 57, 61, 62, 63],
+      "latent": [20, 27, 45]
+    },
+    "char_jahzara": {
+      "primary": [40, 41, 43, 44, 45, 46, 47, 48, 49, 50, 51, 60],
+      "resonant": [2, 5, 9, 11, 12, 13, 14, 15, 20, 21, 27, 28, 29, 42, 52, 63],
+      "latent": [6, 10, 16, 19, 22, 25, 31, 32, 33, 39, 55, 58, 59, 62]
+    },
+    "char_sevda": {
+      "primary": [],
+      "resonant": [37, 41, 42, 43, 45, 47, 48, 49, 50, 56],
+      "latent": [5, 36, 51]
+    },
+    "char_malika": {
+      "primary": [58, 59],
+      "resonant": [27, 46, 47],
+      "latent": [2, 17, 18, 21, 26, 38, 40, 60]
+    },
+    "char_reva": {
+      "primary": [6, 10],
+      "resonant": [1, 2, 4, 5, 7, 8, 9, 11, 12, 37, 51, 56],
+      "latent": [3, 42, 50, 52]
+    },
+    "char_altani": {
+      "primary": [],
+      "resonant": [12, 29, 30, 31, 32, 34, 35, 36, 55],
+      "latent": [57]
+    },
+    "char_svara": {
+      "primary": [1, 2, 3, 4, 5, 7, 8, 11, 12, 42],
+      "resonant": [6, 9, 10, 53],
+      "latent": [33, 44, 45, 48]
+    }
+  },
+
+  "by_kala": {
+    "kala_1":  { "sanskrit": "Gīta",           "primary": ["char_svara"],                        "resonant": ["char_shrinagar", "char_tarana", "char_reva"],         "latent": ["char_kumari_rati", "char_champa", "char_padma"] },
+    "kala_2":  { "sanskrit": "Vādya",          "primary": ["char_svara"],                        "resonant": ["char_tarana", "char_jahzara", "char_reva"],           "latent": ["char_shrinagar", "char_malika"] },
+    "kala_3":  { "sanskrit": "Nāṭya",          "primary": ["char_svara"],                        "resonant": ["char_tarana", "char_roxana", "char_anisa"],           "latent": ["char_kumari_rati", "char_champa", "char_reva"] },
+    "kala_4":  { "sanskrit": "Kāku",           "primary": ["char_svara"],                        "resonant": ["char_shrinagar", "char_kumari_rati", "char_reva"],     "latent": ["char_champa", "char_padma"] },
+    "kala_5":  { "sanskrit": "Chandas",        "primary": ["char_svara"],                        "resonant": ["char_maha_deva", "char_reva", "char_jahzara"],         "latent": ["char_sevda", "char_shrinagar"] },
+    "kala_6":  { "sanskrit": "Kāvya",          "primary": ["char_reva"],                         "resonant": ["char_svara", "char_shrinagar", "char_maha_deva"],      "latent": ["char_jahzara", "char_padma"] },
+    "kala_7":  { "sanskrit": "Prāsa",          "primary": ["char_svara"],                        "resonant": ["char_reva", "char_champa"],                            "latent": ["char_shrinagar", "char_kumari_rati"] },
+    "kala_8":  { "sanskrit": "Yamaka",         "primary": ["char_svara"],                        "resonant": ["char_tarana", "char_champa", "char_reva"],             "latent": ["char_kumari_rati"] },
+    "kala_9":  { "sanskrit": "Citra-kāvya",    "primary": ["char_shrinagar"],                    "resonant": ["char_reva", "char_svara", "char_jahzara"],             "latent": ["char_kumari_rati"] },
+    "kala_10": { "sanskrit": "Katha",          "primary": ["char_reva"],                         "resonant": ["char_svara", "char_maha_deva", "char_anisa"],          "latent": ["char_jahzara", "char_padma"] },
+    "kala_11": { "sanskrit": "Kosha",          "primary": ["char_svara"],                        "resonant": ["char_reva", "char_jahzara", "char_maha_deva"],         "latent": ["char_anisa"] },
+    "kala_12": { "sanskrit": "Smṛti",          "primary": ["char_svara"],                        "resonant": ["char_reva", "char_jahzara", "char_altani"],            "latent": ["char_maha_deva", "char_champa"] },
+    "kala_13": { "sanskrit": "Alekhya",        "primary": ["char_shrinagar"],                    "resonant": ["char_jahzara", "char_kumari_rati"],                    "latent": ["char_tarana", "char_padma"] },
+    "kala_14": { "sanskrit": "Bitti-chitra",   "primary": ["char_shrinagar"],                    "resonant": ["char_jahzara", "char_maha_deva"],                      "latent": ["char_tarana", "char_padma"] },
+    "kala_15": { "sanskrit": "Varṇa",          "primary": ["char_shrinagar"],                    "resonant": ["char_jahzara", "char_tarana"],                         "latent": ["char_padma", "char_kumari_rati"] },
+    "kala_16": { "sanskrit": "Rekhā",          "primary": ["char_shrinagar"],                    "resonant": ["char_roxana", "char_tarana"],                          "latent": ["char_jahzara", "char_padma"] },
+    "kala_17": { "sanskrit": "Vastra-gopana",  "primary": ["char_shrinagar"],                    "resonant": ["char_padma", "char_kumari_rati"],                      "latent": ["char_tarana", "char_malika"] },
+    "kala_18": { "sanskrit": "Sūtra-karma",    "primary": ["char_shrinagar"],                    "resonant": ["char_padma", "char_roxana"],                           "latent": ["char_kumari_rati", "char_malika"] },
+    "kala_19": { "sanskrit": "Ābharaṇa",       "primary": ["char_shrinagar"],                    "resonant": ["char_kumari_rati", "char_roxana"],                     "latent": ["char_jahzara", "char_padma"] },
+    "kala_20": { "sanskrit": "Maṇi-rañjana",   "primary": ["char_shrinagar"],                    "resonant": ["char_jahzara"],                                        "latent": ["char_roxana", "char_kumari_rati"] },
+    "kala_21": { "sanskrit": "Gandha-yukti",   "primary": ["char_shrinagar"],                    "resonant": ["char_jahzara", "char_kumari_rati"],                    "latent": ["char_padma", "char_malika"] },
+    "kala_22": { "sanskrit": "Vilepana",       "primary": ["char_shrinagar"],                    "resonant": ["char_kumari_rati", "char_padma"],                      "latent": ["char_jahzara"] },
+    "kala_23": { "sanskrit": "Pushpa-astaraṇa","primary": ["char_shrinagar"],                    "resonant": ["char_padma", "char_kumari_rati"],                      "latent": ["char_tarana"] },
+    "kala_24": { "sanskrit": "Mālya",          "primary": ["char_shrinagar"],                    "resonant": ["char_padma", "char_champa"],                           "latent": ["char_kumari_rati"] },
+    "kala_25": { "sanskrit": "Granthana",      "primary": ["char_roxana"],                       "resonant": ["char_shrinagar", "char_tarana"],                       "latent": ["char_jahzara", "char_padma"] },
+    "kala_26": { "sanskrit": "Vetrakarma",     "primary": ["char_shrinagar"],                    "resonant": ["char_roxana", "char_tarana"],                          "latent": ["char_padma", "char_malika"] },
+    "kala_27": { "sanskrit": "Kumbhakāra",     "primary": ["char_shrinagar"],                    "resonant": ["char_jahzara", "char_malika"],                         "latent": ["char_padma", "char_roxana"] },
+    "kala_28": { "sanskrit": "Danta-karma",    "primary": ["char_shrinagar"],                    "resonant": ["char_roxana", "char_jahzara"],                         "latent": ["char_maha_deva"] },
+    "kala_29": { "sanskrit": "Dhanurveda",     "primary": ["char_roxana"],                       "resonant": ["char_altani", "char_jahzara"],                         "latent": ["char_tarana"] },
+    "kala_30": { "sanskrit": "Khaḍga",         "primary": ["char_roxana"],                       "resonant": ["char_altani", "char_tarana"],                          "latent": ["char_kumari_rati"] },
+    "kala_31": { "sanskrit": "Malla",          "primary": ["char_roxana"],                       "resonant": ["char_altani", "char_tarana"],                          "latent": ["char_jahzara"] },
+    "kala_32": { "sanskrit": "Gadā",           "primary": ["char_roxana"],                       "resonant": ["char_maha_deva", "char_altani"],                       "latent": ["char_jahzara"] },
+    "kala_33": { "sanskrit": "Nāga-pāśa",      "primary": ["char_roxana"],                       "resonant": ["char_shrinagar", "char_tarana"],                       "latent": ["char_svara", "char_jahzara"] },
+    "kala_34": { "sanskrit": "Senāpatya",      "primary": ["char_roxana"],                       "resonant": ["char_anisa", "char_altani"],                           "latent": ["char_maha_deva"] },
+    "kala_35": { "sanskrit": "Vyāyāma",        "primary": ["char_roxana"],                       "resonant": ["char_altani", "char_padma"],                           "latent": ["char_tarana"] },
+    "kala_36": { "sanskrit": "Śrama",          "primary": ["char_roxana"],                       "resonant": ["char_altani", "char_maha_deva"],                       "latent": ["char_sevda", "char_padma"] },
+    "kala_37": { "sanskrit": "Dharaṇa",        "primary": ["char_roxana"],                       "resonant": ["char_sevda", "char_reva"],                             "latent": ["char_maha_deva"] },
+    "kala_38": { "sanskrit": "Takṣaṇa",        "primary": ["char_roxana"],                       "resonant": ["char_shrinagar"],                                      "latent": ["char_malika", "char_padma"] },
+    "kala_39": { "sanskrit": "Vāstu",          "primary": ["char_roxana"],                       "resonant": ["char_shrinagar", "char_anisa"],                        "latent": ["char_jahzara"] },
+    "kala_40": { "sanskrit": "Dhātu-vāda",     "primary": ["char_jahzara"],                      "resonant": ["char_roxana", "char_shrinagar"],                       "latent": ["char_malika"] },
+    "kala_41": { "sanskrit": "Tantra-yukti",   "primary": ["char_jahzara"],                      "resonant": ["char_maha_deva", "char_sevda"],                        "latent": ["char_kumari_rati"] },
+    "kala_42": { "sanskrit": "Mantra-vidya",   "primary": ["char_svara"],                        "resonant": ["char_jahzara", "char_sevda"],                          "latent": ["char_maha_deva", "char_reva"] },
+    "kala_43": { "sanskrit": "Yantra",         "primary": ["char_jahzara"],                      "resonant": ["char_shrinagar", "char_sevda"],                        "latent": ["char_tarana"] },
+    "kala_44": { "sanskrit": "Māyā",           "primary": ["char_jahzara"],                      "resonant": ["char_kumari_rati", "char_roxana"],                     "latent": ["char_svara"] },
+    "kala_45": { "sanskrit": "Mudrā",          "primary": ["char_jahzara"],                      "resonant": ["char_tarana", "char_sevda"],                           "latent": ["char_roxana", "char_svara"] },
+    "kala_46": { "sanskrit": "Rasāyana",       "primary": ["char_jahzara"],                      "resonant": ["char_malika", "char_shrinagar"],                       "latent": ["char_padma"] },
+    "kala_47": { "sanskrit": "Āyurveda",       "primary": ["char_jahzara"],                      "resonant": ["char_malika", "char_sevda"],                           "latent": ["char_padma"] },
+    "kala_48": { "sanskrit": "Śalya",          "primary": ["char_jahzara"],                      "resonant": ["char_roxana", "char_sevda"],                           "latent": ["char_svara"] },
+    "kala_49": { "sanskrit": "Jyotiṣa",        "primary": ["char_jahzara"],                      "resonant": ["char_sevda", "char_maha_deva"],                        "latent": ["char_kumari_rati"] },
+    "kala_50": { "sanskrit": "Nimitta",        "primary": ["char_jahzara"],                      "resonant": ["char_sevda", "char_maha_deva"],                        "latent": ["char_reva"] },
+    "kala_51": { "sanskrit": "Svapna",         "primary": ["char_jahzara"],                      "resonant": ["char_maha_deva", "char_reva"],                         "latent": ["char_sevda"] },
+    "kala_52": { "sanskrit": "Tarka-Nyāya",    "primary": ["char_maha_deva"],                    "resonant": ["char_jahzara", "char_anisa"],                          "latent": ["char_reva"] },
+    "kala_53": { "sanskrit": "Nṛtya",          "primary": ["char_tarana"],                       "resonant": ["char_svara", "char_kumari_rati"],                      "latent": ["char_champa", "char_padma"] },
+    "kala_54": { "sanskrit": "Lāsa",           "primary": ["char_tarana"],                       "resonant": ["char_shrinagar", "char_kumari_rati"],                  "latent": ["char_champa", "char_padma"] },
+    "kala_55": { "sanskrit": "Sphoṭa",         "primary": ["char_tarana"],                       "resonant": ["char_roxana", "char_altani"],                          "latent": ["char_jahzara"] },
+    "kala_56": { "sanskrit": "Pralamba",       "primary": ["char_tarana"],                       "resonant": ["char_sevda", "char_reva"],                             "latent": ["char_kumari_rati"] },
+    "kala_57": { "sanskrit": "Pāda-sañcāra",   "primary": ["char_tarana"],                       "resonant": ["char_roxana", "char_champa"],                          "latent": ["char_altani", "char_padma"] },
+    "kala_58": { "sanskrit": "Pāna-rasa",      "primary": ["char_malika", "char_padma"],         "resonant": ["char_shrinagar"],                                      "latent": ["char_jahzara"] },
+    "kala_59": { "sanskrit": "Sūpa-Pāka",      "primary": ["char_malika", "char_padma"],         "resonant": ["char_shrinagar"],                                      "latent": ["char_jahzara", "char_kumari_rati"] },
+    "kala_60": { "sanskrit": "Vṛkṣa-āyurveda", "primary": ["char_jahzara"],                      "resonant": ["char_shrinagar", "char_padma"],                        "latent": ["char_malika"] },
+    "kala_61": { "sanskrit": "Pāśupālakya",    "primary": ["char_champa"],                       "resonant": ["char_padma", "char_roxana"],                           "latent": ["char_tarana"] },
+    "kala_62": { "sanskrit": "Akṣa",           "primary": ["char_anisa"],                        "resonant": ["char_maha_deva", "char_roxana"],                       "latent": ["char_jahzara"] },
+    "kala_63": { "sanskrit": "Pratibhā",       "primary": ["char_anisa"],                        "resonant": ["char_roxana", "char_jahzara"],                         "latent": ["char_maha_deva"] },
+    "kala_64": { "sanskrit": "Maithuna",       "primary": ["char_kumari_rati"],                  "resonant": ["char_maha_deva", "char_padma", "char_champa", "char_shrinagar"], "latent": ["char_anisa", "char_tarana", "char_roxana", "char_jahzara", "char_sevda", "char_malika", "char_reva", "char_altani", "char_svara"] }
+  },
+
+  "domain_rollup": {
+    "domain_1_vocal_poetic":       { "primary_owner": "char_svara",      "primary_count": 8,  "resonant_count": 14, "latent_count": 13 },
+    "domain_2_visual_adornment":   { "primary_owner": "char_shrinagar",  "primary_count": 15, "resonant_count": 24, "latent_count": 24 },
+    "domain_3_martial_physical":   { "primary_owner": "char_roxana",     "primary_count": 11, "resonant_count": 24, "latent_count": 13 },
+    "domain_4_occult_healing":     { "primary_owner": "char_jahzara",    "primary_count": 11, "resonant_count": 20, "latent_count": 15 },
+    "domain_5_movement_dance":     { "primary_owner": "char_tarana",     "primary_count": 5,  "resonant_count": 10, "latent_count": 10 },
+    "domain_6_sensory_pleasure":   { "primary_owner": "char_kumari_rati","primary_count": 9,  "resonant_count": 17, "latent_count": 14 }
+  },
+
+  "audit": {
+    "total_characters": 14,
+    "total_kalas": 64,
+    "primary_assignments_total": 64,
+    "resonant_assignments_total": 218,
+    "latent_assignments_total": 252,
+    "orphaned_kalas": 0,
+    "orphaned_characters": 0,
+    "audit_passed": true,
+
+    "primary_counts_by_character": {
+      "char_maha_deva": 1,
+      "char_kumari_rati": 1,
+      "char_padma": 2,
+      "char_champa": 1,
+      "char_anisa": 2,
+      "char_shrinagar": 16,
+      "char_tarana": 5,
+      "char_roxana": 12,
+      "char_jahzara": 12,
+      "char_sevda": 0,
+      "char_malika": 2,
+      "char_reva": 2,
+      "char_altani": 0,
+      "char_svara": 10
+    },
+
+    "discrepancies_flagged": [
+      {
+        "id": "disc_001",
+        "severity": "minor",
+        "field": "character_kala_primary_matrix.char_jahzara.primary_count",
+        "source_value": 11,
+        "derived_value": 12,
+        "explanation": "Source matrix in kala_system_v20.json lists 11 primaries for char_jahzara but omits kala_60 (Vṛkṣa-āyurveda), whose per-Kala primary field is char_jahzara. The per-Kala field is treated as authoritative. Recommend updating the source matrix's primary_count to 12 and adding 60 to the kalas list."
+      },
+      {
+        "id": "disc_002",
+        "severity": "informational",
+        "field": "kala_58.resonant, kala_59.resonant",
+        "source_value": "char_padma appears in both primary and resonant lists",
+        "derived_value": "char_padma treated as primary only",
+        "explanation": "In kala_system_v20.json, kala_58 and kala_59 list char_padma in both the primary array and the resonant array. Primary assignment takes precedence; Padmā is recorded as primary on both Kalas and removed from their resonant lists. This is consistent with the corrections_applied block which states 'Padmā (char_padma) added as co-primary on kala_58 and kala_59'."
+      }
+    ],
+
+    "cross_check_vs_shared_update": {
+      "source": "DeepSeek Kala Master Matrix v2.0 (flat display format)",
+      "status": "consistent",
+      "notes": [
+        "The flat display format uses bare character IDs (e.g., 'svara') while this file uses 'char_' prefixed IDs (e.g., 'char_svara'). Both refer to the same canonical roster.",
+        "The flat display format lists a single primary per Kala. This file supports multiple primaries (Kalas 58 and 59 have co-primaries char_malika and char_padma).",
+        "Primary, resonant, and latent sets match across both formats for all 64 Kalas except the co-primary correction already flagged in disc_002."
+      ]
+    }
+  }
+}

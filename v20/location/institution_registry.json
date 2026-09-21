@@ -1,0 +1,91 @@
+{
+  "schema": "antahpura.location.institution_registry",
+  "version": "20.0",
+  "institutions": {
+    "inst_throne": {
+      "name": "The Throne",
+      "description": "Sovereign authority. The seat of Mahā Deva and the ruling line.",
+      "authority_level": 10,
+      "primary_locations": [
+        "loc_throne_hall",
+        "loc_throne_anteroom",
+        "loc_royal_chamber"
+      ],
+      "governing_character": "char_maha_deva"
+    },
+    "inst_zenana": {
+      "name": "The Zenana",
+      "description": "Inner palace. Women's quarters. Seat of Kumārī Rati and the primary initiates.",
+      "authority_level": 8,
+      "primary_locations": [
+        "loc_zenana_inner",
+        "loc_zenana_outer",
+        "loc_princess_apartment",
+        "loc_private_dining",
+        "loc_service_corridors"
+      ],
+      "governing_character": "char_kumari_rati"
+    },
+    "inst_military_perimeter": {
+      "name": "Military Perimeter",
+      "description": "External defense. Guard posts, drill yards, and perimeter patrol.",
+      "authority_level": 8,
+      "primary_locations": [
+        "loc_drill_yard",
+        "loc_palace_walls",
+        "loc_steppe_corridor",
+        "loc_guard_barracks",
+        "loc_armory"
+      ],
+      "governing_character": "char_roxana"
+    },
+    "inst_administrative_court": {
+      "name": "Administrative Court",
+      "description": "Records, protocol, law, and cipher management.",
+      "authority_level": 7,
+      "primary_locations": [
+        "loc_administrative_court",
+        "loc_archive",
+        "loc_cipher_room",
+        "loc_threshold_gate"
+      ],
+      "governing_character": "char_anisa"
+    },
+    "inst_yogic_pavilion": {
+      "name": "Yogic Pavilion",
+      "description": "Esoteric practice, music, and aesthetic cultivation.",
+      "authority_level": 6,
+      "primary_locations": [
+        "loc_yogic_pavilion",
+        "loc_esoteric_study",
+        "loc_music_chamber",
+        "loc_perfume_atelier"
+      ],
+      "governing_character": "char_shrinagar"
+    },
+    "inst_subterranean_vaults": {
+      "name": "Subterranean Vaults",
+      "description": "Hidden knowledge, containment, and subterranean ritual.",
+      "authority_level": 7,
+      "primary_locations": [
+        "loc_vault_exterior",
+        "loc_containment_chambers",
+        "loc_hidden_archive",
+        "loc_patala_chamber"
+      ],
+      "governing_character": "char_sevda"
+    },
+    "inst_ritual_chorus": {
+      "name": "Ritual Chorus",
+      "description": "Collective ceremony, performance, and acoustic ritual.",
+      "authority_level": 5,
+      "primary_locations": [
+        "loc_ritual_chorus",
+        "loc_performance_pavilion",
+        "loc_instrument_workshop",
+        "loc_chorus_rehearsal"
+      ],
+      "governing_character": "char_svara"
+    }
+  }
+}

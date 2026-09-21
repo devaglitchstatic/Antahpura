@@ -1,0 +1,1592 @@
+{
+  "KINKS": {
+    "AVADHANA_STHANA": {
+      "id": "AVADHANA_STHANA",
+      "name": "Avadhāna‑Sthāna (Absolute Domspace)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "VICARIOUS_EGO_BHANGA": {
+      "id": "VICARIOUS_EGO_BHANGA",
+      "name": "Vicarious Ego‑Bhanga",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "RITUAL_AUTHORITY": {
+      "id": "RITUAL_AUTHORITY",
+      "name": "Ritual Authority",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "YANTRA_LEKHANA": {
+      "id": "YANTRA_LEKHANA",
+      "name": "Yantra‑Lekhana",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "PROTOCOL_ENFORCEMENT": {
+      "id": "PROTOCOL_ENFORCEMENT",
+      "name": "Protocol Enforcement",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "BHUMI_BHUSHANA": {
+      "id": "BHUMI_BHUSHANA",
+      "name": "Bhūmi‑Bhūshana",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "FOOT_WORSHIP_RECEIVING": {
+      "id": "FOOT_WORSHIP_RECEIVING",
+      "name": "Foot Worship (Receiving)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "DARPANA_SADHANA": {
+      "id": "DARPANA_SADHANA",
+      "name": "Darpaṇa‑Sādhana (Mirror Work)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "KASTHA_RATI": {
+      "id": "KASTHA_RATI",
+      "name": "Kastha‑Rati (Edging Control)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "RAKTA_BALI": {
+      "id": "RAKTA_BALI",
+      "name": "Rakta‑Bali (Blood Offering)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "PASHU_DARSHANA": {
+      "id": "PASHU_DARSHANA",
+      "name": "Pashu‑Darshana (Animalistic Gaze)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "DOLLIFICATION_RECEIVING": {
+      "id": "DOLLIFICATION_RECEIVING",
+      "name": "Dollification (Receiving)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "DASYAM": {
+      "id": "DASYAM",
+      "name": "Dāsyam (Absolute Servitude)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "RASAYANA": {
+      "id": "RASAYANA",
+      "name": "Rasāyana (Alchemical Taste)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "KRIDA_MRIGA": {
+      "id": "KRIDA_MRIGA",
+      "name": "Krīḍā‑Mṛga (Animal Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SPHUTA_VACHANA": {
+      "id": "SPHUTA_VACHANA",
+      "name": "Sphuṭa‑Vāchana (Verbal Humiliation)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "BHOJANA_RATI_SENSORY": {
+      "id": "BHOJANA_RATI_SENSORY",
+      "name": "Bhojana‑Rati (Sensory Feeding)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "DACRYPHILIA": {
+      "id": "DACRYPHILIA",
+      "name": "Dacryphilia (Tears)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "MDLG": {
+      "id": "MDLG",
+      "name": "MDLG (Mommy/Little Girl)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "AGAMYA_GAMANA": {
+      "id": "AGAMYA_GAMANA",
+      "name": "Agamya‑Gamana (Forbidden Union)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "MAITHUNA": {
+      "id": "MAITHUNA",
+      "name": "Maithuna (Sacred Union / Ritual Intimacy)",
+      "taxonomy": {
+        "primary": true,
+        "related": [
+          "AGAMYA_GAMANA"
+        ],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SHALAKA_SOUNDING": {
+      "id": "SHALAKA_SOUNDING",
+      "name": "Shalaka‑Sounding (Urethral Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "APAN_MUDRA": {
+      "id": "APAN_MUDRA",
+      "name": "Apan‑Mudra (Elimination Control)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SARVANGA_VESHTANA": {
+      "id": "SARVANGA_VESHTANA",
+      "name": "Sarvāṅga‑Veṣṭana (Full Encasement)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "BALA_CHITTA": {
+      "id": "BALA_CHITTA",
+      "name": "Bāla‑Chitta (Infantile Regression)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "CHUSHANA_CHAKRA": {
+      "id": "CHUSHANA_CHAKRA",
+      "name": "Chūṣaṇa‑Chakra (Suckling)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "GARBHA_SADHANA": {
+      "id": "GARBHA_SADHANA",
+      "name": "Garbha‑Sādhana (Womb Worship)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "VATSALYA_RATI": {
+      "id": "VATSALYA_RATI",
+      "name": "Vātsalya‑Rati (Nurturing Domination)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "DHATRI": {
+      "id": "DHATRI",
+      "name": "Dhatri (Wet Nurse)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "ANDA_VESHA": {
+      "id": "ANDA_VESHA",
+      "name": "Anda‑Veṣa (Oviposition / Egg Insertion)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "KSHETRA_SADHANA": {
+      "id": "KSHETRA_SADHANA",
+      "name": "Kṣetra‑Sādhana (Breeding / Fertility Rite)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "PASHU_GAMANA": {
+      "id": "PASHU_GAMANA",
+      "name": "Pashu‑Gamana (Animal Intercourse)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "MUTRA_SNANA_RECEIVING": {
+      "id": "MUTRA_SNANA_RECEIVING",
+      "name": "Mutra‑Snana (Receiving – Golden Shower)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "VILASA_PRAHANANA": {
+      "id": "VILASA_PRAHANANA",
+      "name": "Vilāsa‑Prahaṇana (Playful Punishment)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "YONI_LEKHANA": {
+      "id": "YONI_LEKHANA",
+      "name": "Yoni‑Lekhana (Vaginal Writing)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "NINDA_VACHANA": {
+      "id": "NINDA_VACHANA",
+      "name": "Ninda‑Vāchana (Verbal Degradation)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "VASTRA_VANCANA": {
+      "id": "VASTRA_VANCANA",
+      "name": "Vastra‑Vañcana (Clothing Deception / Dress Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "LAGHAVA_KALA": {
+      "id": "LAGHAVA_KALA",
+      "name": "Lāghava‑Kāla (Minimalist Bondage / Light Restraint)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "MEDICAL_PLAY": {
+      "id": "MEDICAL_PLAY",
+      "name": "Medical Play",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "MUTRA_SNANA_GIVING": {
+      "id": "MUTRA_SNANA_GIVING",
+      "name": "Mutra‑Snana (Giving – Golden Shower)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "GAU_RUPA": {
+      "id": "GAU_RUPA",
+      "name": "Gau‑Rūpa (Cow Play / Hucow)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "BUST_EXHIBITIONISM": {
+      "id": "BUST_EXHIBITIONISM",
+      "name": "Bust Exhibitionism",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "STANYA_DOHANA": {
+      "id": "STANYA_DOHANA",
+      "name": "Stanya‑Dohana (Milk Expression / Lactation)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "PITA_RASA_GIVING": {
+      "id": "PITA_RASA_GIVING",
+      "name": "Pīta‑Rasa (Milk Play – Giving)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SNANA_RATI": {
+      "id": "SNANA_RATI",
+      "name": "Snāna‑Rati (Bathing Rituals)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "BHOJANA_RATI_SELF_INFUSION": {
+      "id": "BHOJANA_RATI_SELF_INFUSION",
+      "name": "Bhojana‑Rati (Self‑Infusion / Marinating)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "FORCE_FEEDING": {
+      "id": "FORCE_FEEDING",
+      "name": "Force Feeding",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "FIGGING": {
+      "id": "FIGGING",
+      "name": "Figging (Ginger Root Insertion)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "CHITRA_RATI": {
+      "id": "CHITRA_RATI",
+      "name": "Chitra‑Rati (Acrobatic Sex)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "VIPARITA_RATI": {
+      "id": "VIPARITA_RATI",
+      "name": "Viparita‑Rati (Reversed Positions)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "PADA_VANDANA_GIVING": {
+      "id": "PADA_VANDANA_GIVING",
+      "name": "Pāda‑Vandana (Foot Fetish – Giving)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "LAGHAVA_SADHANA": {
+      "id": "LAGHAVA_SADHANA",
+      "name": "Lāghava‑Sādhana (Flexibility Worship)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "ACROEROTICISM": {
+      "id": "ACROEROTICISM",
+      "name": "Acroeroticism (Inverted Self‑Wetting)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "LATA_PATRA": {
+      "id": "LATA_PATRA",
+      "name": "Lata‑Patra (Vine/Bondage Posture)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "GUDA_PRASTARA": {
+      "id": "GUDA_PRASTARA",
+      "name": "Guda‑Prastara (Anal Stretching / Gaping)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "GRANTHI_KALA": {
+      "id": "GRANTHI_KALA",
+      "name": "Granthi‑Kala (Rope Knotting / Shibari)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "GRAPHOEROTICA": {
+      "id": "GRAPHOEROTICA",
+      "name": "Graphoerotica (Erotic Writing / Illustration)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "BANDHA_DARSHANA": {
+      "id": "BANDHA_DARSHANA",
+      "name": "Bandha‑Darśana (Rope Art – Viewing / Appreciation)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "NIBANDHA_PRACODANA": {
+      "id": "NIBANDHA_PRACODANA",
+      "name": "Nibandha‑Pracodana (Journaling Task Assignment)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SANGHATAKA": {
+      "id": "SANGHATAKA",
+      "name": "Sanghaṭaka (Suspension / Complex Rope Harness)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "BONDAGE_ART": {
+      "id": "BONDAGE_ART",
+      "name": "Bondage Art (Kinbaku / Artistic Rope)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "YONI_VEGA": {
+      "id": "YONI_VEGA",
+      "name": "Yoni‑Vega (Squirting / Female Ejaculation)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "TAILA_SIKTHA": {
+      "id": "TAILA_SIKTHA",
+      "name": "Taila‑Siktha (Oil / Lubricant Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "MUTRA_LANCHHANA": {
+      "id": "MUTRA_LANCHHANA",
+      "name": "Mutra‑Lanchhana (Urine Marking / Scenting)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SNANA_PUJA_GIVING": {
+      "id": "SNANA_PUJA_GIVING",
+      "name": "Snāna‑Pūjā (Ritual Bathing – Giving)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "MUTRA_KRIDA": {
+      "id": "MUTRA_KRIDA",
+      "name": "Mutra‑Krida (Piss Play / Golden Shower)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "OMORASHI": {
+      "id": "OMORASHI",
+      "name": "Omorashi (Urine Desperation / Wetting)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "RAKTA_SPARSHA": {
+      "id": "RAKTA_SPARSHA",
+      "name": "Rakta‑Sparsha (Blood Touch / Cutting)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "TADANA_KALA_INFLICTING": {
+      "id": "TADANA_KALA_INFLICTING",
+      "name": "Tadana‑Kala (Inflicting – Impact / Whipping)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "NISHCHALA_SADHANA": {
+      "id": "NISHCHALA_SADHANA",
+      "name": "Nishchala‑Sādhana (Stillness / Immobility)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "EQUINE_FASCINATION": {
+      "id": "EQUINE_FASCINATION",
+      "name": "Equine Fascination (Horse / Riding Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "URJA_RATI": {
+      "id": "URJA_RATI",
+      "name": "Ūrja‑Rati (Energy Exchange / Chi Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "DHMA_KALA": {
+      "id": "DHMA_KALA",
+      "name": "Dhma‑Kāla (Whipping / Flogging)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SOMNOPHILIA": {
+      "id": "SOMNOPHILIA",
+      "name": "Somnophilia (Sleep Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "MUKHA_SAMDANA": {
+      "id": "MUKHA_SAMDANA",
+      "name": "Mukha‑Samdana (Mouth Covering / Gagging)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "DHUPAN": {
+      "id": "DHUPAN",
+      "name": "Dhūpan (Fumigation / Smoke Rituals)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "BANDHA_SADHANA": {
+      "id": "BANDHA_SADHANA",
+      "name": "Bandha‑Sādhana (Rope Bondage Practice)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "AVARANA_RATI": {
+      "id": "AVARANA_RATI",
+      "name": "Āvaraṇa‑Rati (Covering / Encasement Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "FIRE_PLAY": {
+      "id": "FIRE_PLAY",
+      "name": "Fire Play (Agni‑Sādhana)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SHVASA_RODHA": {
+      "id": "SHVASA_RODHA",
+      "name": "Shvasa‑Rodha (Breath Control / Choking)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "JALA_PRASTARA": {
+      "id": "JALA_PRASTARA",
+      "name": "Jala‑Prastara (Water / Immersion Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "INDRIYA_NIRODHA": {
+      "id": "INDRIYA_NIRODHA",
+      "name": "Indriya‑Nirodha (Sensory Withholding / Denial)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "ACCESS_DENIAL": {
+      "id": "ACCESS_DENIAL",
+      "name": "Access Denial (Gatekeeping)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "DVARA_RATI": {
+      "id": "DVARA_RATI",
+      "name": "Dvāra‑Rati (Threshold Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "AVAGAHA_SADHANA": {
+      "id": "AVAGAHA_SADHANA",
+      "name": "Avagāha‑Sādhana (Sensory Deprivation / Immersion)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "KRIDA_MRIGA_PET_GUARD": {
+      "id": "KRIDA_MRIGA_PET_GUARD",
+      "name": "Krīḍā‑Mṛga (Pet Guard / Animal Sentinel)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "BHOJANA_RATI_SPICE_INFUSION": {
+      "id": "BHOJANA_RATI_SPICE_INFUSION",
+      "name": "Bhojana‑Rati (Spice Infusion / Sensation Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SRINGARA_VAKYA": {
+      "id": "SRINGARA_VAKYA",
+      "name": "Śṛṅgāra‑Vākya (Erotic Speech / Seductive Language)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SANTA_RASA": {
+      "id": "SANTA_RASA",
+      "name": "Śānta‑Rasa (Peaceful / Meditative Sensuality)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "KAVYA_KRIA": {
+      "id": "KAVYA_KRIA",
+      "name": "Kāvya‑Kriyā (Poetic Erotica)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "CHANDAS_RATI": {
+      "id": "CHANDAS_RATI",
+      "name": "Chandas‑Rati (Rhythmic Speech Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "EROTICA_WRITING": {
+      "id": "EROTICA_WRITING",
+      "name": "Erotica Writing (Sapphic / Fantasy)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SVARA_PRASTARA": {
+      "id": "SVARA_PRASTARA",
+      "name": "Svara‑Prastara (Loud Moan / Vocal Expression)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "SPARSHA_SHIKSHA": {
+      "id": "SPARSHA_SHIKSHA",
+      "name": "Sparsha‑Shiksha (Touch‑Based Instruction / Teaching)",
+      "taxonomy": {
+        "primary": true,
+        "related": [],
+        "similar": [],
+        "secondary": []
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "JEWELRY_CRAFTING": {
+      "id": "JEWELRY_CRAFTING",
+      "name": "Jewelry Crafting (Body Adornment / Ritual Ornaments)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": true
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "TALA_PRASTARA": {
+      "id": "TALA_PRASTARA",
+      "name": "Tāla‑Prastara (Sonic Percussion Play / Rhythmic Stimulation)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "NADA_SADHANA": {
+      "id": "NADA_SADHANA",
+      "name": "Nāda‑Sādhana (Sound‑Based Stimulation / Vibrational Play)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "MANTRA_MOHA": {
+      "id": "MANTRA_MOHA",
+      "name": "Mantra‑Moha (Hypnotic Suggestion / Trance Induction)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    },
+    "DOLLIFICATION_INFLICTING": {
+      "id": "DOLLIFICATION_INFLICTING",
+      "name": "Dollification (Inflicting / Objectification)",
+      "taxonomy": {
+        "primary": false,
+        "related": [],
+        "similar": [],
+        "secondary": false
+      },
+      "progression": {
+        "knowledge": true,
+        "training": true,
+        "practice": true,
+        "mastery": true
+      }
+    }
+  },
+  "schema": "antahpura.kama.MASTER_KINK_REGISTRY",
+  "version": "1.0"
+}

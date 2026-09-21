@@ -1,0 +1,14 @@
+{
+  "schema": "antahpura.kama_lifecycle_states",
+  "version": "20.1",
+  "total_states": 7,
+  "states": {
+    "discoverable":    {"description": "Concept exists in world; may appear in narrative"},
+    "mentionable":     {"description": "Can be discussed in dialogue"},
+    "imaginable":      {"description": "Can be fantasized or dreamt"},
+    "discussable":     {"description": "Can be philosophically explored"},
+    "exploreable":     {"description": "Can be investigated hypothetically"},
+    "participatory":   {"description": "Can be participated in with consent"},
+    "runtime_enabled": {"description": "Fully integrated into runtime mechanics"}
+  }
+}

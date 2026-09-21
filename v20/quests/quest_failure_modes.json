@@ -1,0 +1,43 @@
+{
+  "schema": "antahpura.quest.failure_modes",
+  "version": "20.0",
+  "total_modes": 6,
+  "modes": [
+    {
+      "mode_id": "fail_001",
+      "name": "Time Expired",
+      "trigger": "quest time limit passed"
+    },
+    {
+      "mode_id": "fail_002",
+      "name": "Critical Character Loss",
+      "trigger": "required character unavailable"
+    },
+    {
+      "mode_id": "fail_003",
+      "name": "Reputation Collapse",
+      "trigger": "issuer institutional reputation below threshold"
+    },
+    {
+      "mode_id": "fail_004",
+      "name": "Relationship Rupture",
+      "trigger": "key relationship edge drops below minimum"
+    },
+    {
+      "mode_id": "fail_005",
+      "name": "Choice Misalignment",
+      "trigger": "player choice in Act 4 contradicts premise"
+    },
+    {
+      "mode_id": "fail_006",
+      "name": "Abandonment",
+      "trigger": "player explicitly abandons quest"
+    }
+  ],
+  "failure_consequences": [
+    "Quest becomes failed state",
+    "Partial rewards may still be granted",
+    "Relationship penalties applied",
+    "Possible redemption quest unlocked"
+  ]
+}

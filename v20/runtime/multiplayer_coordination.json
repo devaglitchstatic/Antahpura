@@ -1,0 +1,12 @@
+{
+  "schema": "antahpura.multiplayer_coordination",
+  "version": "20.0",
+  "session_id": null,
+  "players": [],
+  "consent_negotiation_completed": false,
+  "consensus_rules": {
+    "major_choices": "consensus",
+    "scene_participation": "self_select",
+    "pov_shifts": "negotiated"
+  }
+}

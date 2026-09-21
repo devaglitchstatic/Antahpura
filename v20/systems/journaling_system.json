@@ -1,0 +1,225 @@
+{
+  "schema": "antahpura.journaling_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Submissive/switch journaling as the core reflective practice of the dynamic. Journals are the private and shared record of kink curiosity, exploration, and inner development. The Dominant reads (when granted) and annotates. Journal consistency is a reward lever; journal neglect is a soft signal, not a hard failure.",
+  "design_principles": {
+    "principle_1": "Journaling is the primary tool of self-discovery. The submissive's journal is theirs first, shared second.",
+    "principle_2": "Sharing is a privilege the submissive grants, never a right the Dominant demands.",
+    "principle_3": "Journal entries deepen kink curiosity, kama lifecycle progression, and kala practice.",
+    "principle_4": "Consistency is rewarded; neglect is a signal of state, not a failure to punish automatically.",
+    "principle_5": "Journal annotations from the Dominant are a bonding practice, not a grading practice.",
+    "principle_6": "The journal is a safe space. Nothing written there is used as ammunition."
+  },
+
+  "journal_types": {
+    "daily_entry": {
+      "name": "Daily Entry",
+      "cadence": "daily",
+      "typical_length_words": 100,
+      "audience": "private_or_shared",
+      "purpose": "State tracking, small reflections, gratitude, noticing",
+      "default_prompts": ["dp_daily_state", "dp_daily_desire", "dp_daily_gratitude"]
+    },
+    "weekly_reflection": {
+      "name": "Weekly Reflection",
+      "cadence": "weekly",
+      "typical_length_words": 400,
+      "audience": "shared_by_default",
+      "purpose": "Pattern recognition, kama exploration, kala progress",
+      "default_prompts": ["wp_weekly_patterns", "wp_weekly_kama", "wp_weekly_kala"]
+    },
+    "monthly_review": {
+      "name": "Monthly Review",
+      "cadence": "monthly",
+      "typical_length_words": 800,
+      "audience": "shared_by_default",
+      "purpose": "Deep review, dynamic recalibration, desire mapping",
+      "default_prompts": ["mp_monthly_growth", "mp_monthly_desire", "mp_monthly_recalibration"]
+    },
+    "scene_debrief": {
+      "name": "Scene Debrief",
+      "cadence": "after_each_scene",
+      "typical_length_words": 300,
+      "audience": "shared_by_default",
+      "purpose": "Post-scene processing, learning, integration",
+      "default_prompts": ["sp_scene_felt", "sp_scene_learned", "sp_scene_next"]
+    },
+    "free_write": {
+      "name": "Free Write",
+      "cadence": "as_desired",
+      "typical_length_words": null,
+      "audience": "private_only",
+      "purpose": "Unstructured expression, fantasy, exploration",
+      "default_prompts": []
+    },
+    "prompt_response": {
+      "name": "Prompt Response",
+      "cadence": "assigned",
+      "typical_length_words": 250,
+      "audience": "shared_by_default",
+      "purpose": "Directed exploration of specific kamas or kalas",
+      "default_prompts": "from_prompt_library"
+    }
+  },
+
+  "prompt_library": {
+    "daily_prompts": [
+      {"prompt_id": "dp_daily_state", "text": "What was your state today — physical, emotional, mental?"},
+      {"prompt_id": "dp_daily_desire", "text": "What desire surfaced today, even briefly?"},
+      {"prompt_id": "dp_daily_gratitude", "text": "Name one thing you are grateful for in the dynamic today."},
+      {"prompt_id": "dp_daily_boundary", "text": "Did you notice any boundary today? Yours or theirs?"},
+      {"prompt_id": "dp_daily_curiosity", "text": "What did you become curious about today?"}
+    ],
+    "weekly_prompts": [
+      {"prompt_id": "wp_weekly_patterns", "text": "What patterns do you notice in your week?"},
+      {"prompt_id": "wp_weekly_kama", "text": "Which kama felt most alive this week? Which felt dormant?"},
+      {"prompt_id": "wp_weekly_kala", "text": "Which kala did you practice most? Which one did you avoid?"},
+      {"prompt_id": "wp_weekly_relationship", "text": "How did the dynamic feel this week — close, distant, balanced?"},
+      {"prompt_id": "wp_weekly_friction", "text": "Where did you feel friction? What might that friction be teaching you?"}
+    ],
+    "monthly_prompts": [
+      {"prompt_id": "mp_monthly_growth", "text": "How have you grown in the last month?"},
+      {"prompt_id": "mp_monthly_desire", "text": "What new desire has surfaced that you have not yet spoken aloud?"},
+      {"prompt_id": "mp_monthly_recalibration", "text": "What needs recalibration in the dynamic?"},
+      {"prompt_id": "mp_monthly_kama_frontier", "text": "Which kama is calling you deeper?"},
+      {"prompt_id": "mp_monthly_celebration", "text": "What deserves celebration this month?"}
+    ],
+    "scene_debrief_prompts": [
+      {"prompt_id": "sp_scene_felt", "text": "What did I feel during the scene — moment by moment?"},
+      {"prompt_id": "sp_scene_learned", "text": "What did I learn about myself or my partner?"},
+      {"prompt_id": "sp_scene_next", "text": "What would I want to explore next time?"},
+      {"prompt_id": "sp_scene_boundary", "text": "Did any boundary get tested? How did it feel?"},
+      {"prompt_id": "sp_scene_aftercare", "text": "How was the aftercare? What did I need that I got or did not get?"}
+    ],
+    "kama_specific_prompts": {
+      "DASYAM": {"prompt_id": "kama_dasyam", "text": "Where in your life do you feel most in service? Where do you resist it?"},
+      "GRANTHI_KALA": {"prompt_id": "kama_granthi", "text": "When bound, what do you notice about trust?"},
+      "MANTRA_MOHA": {"prompt_id": "kama_mantra", "text": "What state does repetition put you in?"},
+      "VICARIOUS_EGO_BHANGA": {"prompt_id": "kama_ego", "text": "What part of your self-image is hardest to let go?"},
+      "BHOJANA_RATI_SENSORY": {"prompt_id": "kama_bhojana", "text": "What does being fed awaken in you?"}
+    }
+  },
+
+  "journal_annotation_types": {
+    "acknowledgment": {
+      "name": "Acknowledgment",
+      "description": "I see you. Simple. Brief.",
+      "relationship_effect": {"trust": 1},
+      "prompt_to_submissive": null
+    },
+    "reflection": {
+      "name": "Reflection",
+      "description": "Adds the Dominant's own perspective on what was written.",
+      "relationship_effect": {"trust": 2, "affection": 1},
+      "prompt_to_submissive": null
+    },
+    "question": {
+      "name": "Question",
+      "description": "Invites the submissive to go deeper.",
+      "relationship_effect": {"trust": 1, "curiosity": 2},
+      "prompt_to_submissive": "answer_in_next_entry"
+    },
+    "assignment": {
+      "name": "Assignment",
+      "description": "Directs the next journal entry toward a specific exploration.",
+      "relationship_effect": {"trust": 1},
+      "prompt_to_submissive": "directed_prompt"
+    },
+    "praise": {
+      "name": "Praise",
+      "description": "Explicit appreciation for the entry or insight.",
+      "relationship_effect": {"affection": 3, "trust": 2},
+      "reward_trigger": "rw_verbal_praise"
+    },
+    "concern": {
+      "name": "Concern",
+      "description": "Flags something in the entry that requires care.",
+      "relationship_effect": {"trust": 1, "vulnerability": 2},
+      "triggers_checkin": true
+    }
+  },
+
+  "journal_consistency_rewards": {
+    "streak_7_days": {
+      "reward": "rw_sticker_chart",
+      "relationship_effect": {"trust": 2},
+      "narrative_note": "One week of consistent journaling"
+    },
+    "streak_30_days": {
+      "reward": "rw_pocket_token",
+      "relationship_effect": {"trust": 4, "affection": 2},
+      "narrative_note": "One month of consistent journaling"
+    },
+    "streak_90_days": {
+      "reward": "rw_formal_title",
+      "relationship_effect": {"trust": 6, "respect": 5},
+      "narrative_note": "Three months of consistent journaling — journal keeper status"
+    },
+    "deep_insight_recognized": {
+      "trigger": "dominant_annotation_of_type_reflection_or_praise",
+      "reward": "rw_private_confession",
+      "relationship_effect": {"trust": 3}
+    },
+    "kama_unlock_through_journal": {
+      "trigger": "journal_mentions_new_kama_three_times",
+      "effect": "advance_kama_lifecycle_one_stage",
+      "narrative_note": "Written exploration unlocks discussion of the kama"
+    },
+    "kala_unlock_through_journal": {
+      "trigger": "journal_reflects_on_kala_practice_consistently",
+      "effect": "kala_mastery_progress",
+      "narrative_note": "Reflective practice deepens kala mastery"
+    }
+  },
+
+  "journal_neglect_signals": {
+    "missed_3_days": {
+      "signal": "soft_concern",
+      "action": "check_in_with_submissive",
+      "note": "Not punished automatically. Missing journaling often means state change, not failure."
+    },
+    "missed_7_days": {
+      "signal": "moderate_concern",
+      "action": "check_in_plus_offer_support",
+      "note": "Punishment is optional and negotiated, not automatic."
+    },
+    "missed_14_days": {
+      "signal": "deep_concern",
+      "action": "pause_journaling_assignment_and_renegotiate",
+      "note": "The journaling system itself may need revision."
+    }
+  },
+
+  "runtime_journal_state": {
+    "schema": {
+      "character_id": "char_id",
+      "journal_entries": [
+        {
+          "entry_id": "string",
+          "journal_type": "daily_entry|weekly_reflection|monthly_review|scene_debrief|free_write|prompt_response",
+          "prompt_id": "string | null",
+          "written_at": "iso_8601",
+          "shared_with": ["char_id"],
+          "annotation_ids": ["string"],
+          "word_count": "integer"
+        }
+      ],
+      "shared_journals_with": ["char_id"],
+      "journal_streak_current": "integer",
+      "journal_streak_longest": "integer",
+      "last_entry_at": "iso_8601 | null",
+      "last_updated": "iso_8601"
+    }
+  },
+
+  "audit": {
+    "total_journal_types": 6,
+    "total_prompts": 25,
+    "total_annotation_types": 6,
+    "total_consistency_rewards": 6,
+    "total_neglect_signals": 3,
+    "audit_passed": true
+  }
+}

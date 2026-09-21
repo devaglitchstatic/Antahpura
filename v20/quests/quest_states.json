@@ -1,0 +1,34 @@
+{
+  "schema": "antahpura.quest.states",
+  "version": "20.0",
+  "total_states": 9,
+  "states": {
+    "locked": {
+      "description": "Prerequisites not met"
+    },
+    "available": {
+      "description": "Prerequisites met, not yet accepted"
+    },
+    "accepted": {
+      "description": "Player has accepted the quest"
+    },
+    "in_progress": {
+      "description": "Active work on the quest"
+    },
+    "blocked": {
+      "description": "Temporarily stalled pending event or unlock"
+    },
+    "completed": {
+      "description": "Successfully finished"
+    },
+    "failed": {
+      "description": "Failure condition triggered"
+    },
+    "abandoned": {
+      "description": "Player chose to abandon"
+    },
+    "expired": {
+      "description": "Time limit passed"
+    }
+  }
+}

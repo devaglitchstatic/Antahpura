@@ -3,15 +3,13 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --mode lib",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -21,9 +19,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite-plugin-dts": "^3.9.1"
-  },
-  "engines": {
-    "node": "21.7.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

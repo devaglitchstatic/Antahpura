@@ -1,0 +1,29 @@
+{
+  "schema": "antahpura.quest.branching",
+  "version": "20.0",
+  "branch_types": {
+    "linear": {
+      "description": "No branching; single path to completion"
+    },
+    "diamond": {
+      "description": "Branches and rejoins; different paths reach same ending"
+    },
+    "tree": {
+      "description": "Branches do not rejoin; different endings"
+    },
+    "web": {
+      "description": "Multiple branch and rejoin points"
+    }
+  },
+  "branch_resolution": {
+    "immediate": {
+      "description": "Branching choice resolves instantly"
+    },
+    "deferred": {
+      "description": "Resolves at chapter end"
+    },
+    "persistent": {
+      "description": "Choice permanently alters quest line"
+    }
+  }
+}

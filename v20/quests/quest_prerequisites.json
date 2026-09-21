@@ -1,0 +1,39 @@
+{
+  "schema": "antahpura.quest.prerequisites",
+  "version": "20.0",
+  "total_types": 8,
+  "types": {
+    "kala_requirement": {
+      "type": "kala_mastery",
+      "example": "kala_cipher >= 3"
+    },
+    "kama_requirement": {
+      "type": "kama_lifecycle",
+      "example": "NIBANDHA_PRACODANA >= discussable"
+    },
+    "relationship_requirement": {
+      "type": "relationship_edge",
+      "example": "char_reva to char_anisa trust >= 60"
+    },
+    "institutional_requirement": {
+      "type": "institutional_reputation",
+      "example": "inst_administrative_court >= 4"
+    },
+    "location_requirement": {
+      "type": "location_access",
+      "example": "access to loc_archive"
+    },
+    "quest_requirement": {
+      "type": "quest_completion",
+      "example": "quest_ledger_investigation completed"
+    },
+    "occasion_requirement": {
+      "type": "occasion_trigger",
+      "example": "during cakra_puja"
+    },
+    "chandra_kala_requirement": {
+      "type": "lunar_phase",
+      "example": "full_moon"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "antahpura.audit.schema_versions",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "active_versions": {
+    "canon": "20.1",
+    "kama": "20.1",
+    "kala": "20.1",
+    "seva": "20.0",
+    "character": "20.1",
+    "relationship": "20.0",
+    "location": "20.0",
+    "scene": "20.0",
+    "quest": "20.0",
+    "matrices": "20.1",
+    "runtime": "20.0",
+    "systems": "20.0",
+    "archive": "1.0",
+    "audit": "20.1"
+  },
+  "history": [
+    {"layer": "kama", "from": "V18.9", "to": "20.0", "date": "2026-09-14", "note": "First canonical freeze"},
+    {"layer": "kama", "from": "20.0", "to": "20.1", "date": "2026-09-16", "note": "DRASHTA_RATI added; final count 98"},
+    {"layer": "kala", "from": "20.0", "to": "20.1", "date": "2026-09-16", "note": "Padmā co-primary on Kalas 58, 59; LAGHAVA_KALA removed from matrices"},
+    {"layer": "seva", "from": null, "to": "20.0", "date": "2026-09-14", "note": "Registry created"},
+    {"layer": "matrices", "from": "20.0", "to": "20.1", "date": "2026-09-16", "note": "character_dimension_weights fixed; dimension count 20"},
+    {"layer": "audit", "from": null, "to": "20.1", "date": "2026-09-16", "note": "Audit layer initialized"}
+  ],
+  "deprecated": [
+    {"schema": "KAMA_SYSTEM_V20 (99 kama claim)", "reason": "Superseded by V20.1 with 98 kama"},
+    {"schema": "kala_dimension_matrix.json (with LAGHAVA_KALA)", "reason": "Spurious entry removed"},
+    {"schema": "character_dimension_weights.json (21 dims, invalid JSON)", "reason": "Rewritten with 20 dims, valid JSON"}
+  ],
+  "audit": {
+    "total_active_layers": 14,
+    "total_history_entries": 6,
+    "audit_passed": true
+  }
+}

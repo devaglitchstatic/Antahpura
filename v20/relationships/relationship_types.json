@@ -1,0 +1,63 @@
+{
+  "schema": "antahpura.relationship.types",
+  "version": "20.0",
+  "total_types": 14,
+  "types": {
+    "authority_to_subordinate": {
+      "power_direction": "downward",
+      "description": "Institutional command"
+    },
+    "submissive_to_authority": {
+      "power_direction": "upward",
+      "description": "Submission to authority"
+    },
+    "peer_colleague": {
+      "power_direction": "lateral",
+      "description": "Institutional equals"
+    },
+    "peer_rival": {
+      "power_direction": "lateral",
+      "description": "Competitive equals"
+    },
+    "mentor_to_student": {
+      "power_direction": "downward",
+      "description": "Teaching relationship"
+    },
+    "student_to_mentor": {
+      "power_direction": "upward",
+      "description": "Learning relationship"
+    },
+    "caregiver_to_charge": {
+      "power_direction": "downward",
+      "description": "Protective relationship"
+    },
+    "charge_to_caregiver": {
+      "power_direction": "upward",
+      "description": "Dependent relationship"
+    },
+    "intimate_partner": {
+      "power_direction": "bidirectional",
+      "description": "Romantic or erotic bond"
+    },
+    "sacred_bond": {
+      "power_direction": "bidirectional",
+      "description": "Ritual kinship"
+    },
+    "observer_to_subject": {
+      "power_direction": "directional",
+      "description": "Monitoring relationship"
+    },
+    "subject_to_observer": {
+      "power_direction": "directional",
+      "description": "Observed relationship"
+    },
+    "allied": {
+      "power_direction": "lateral",
+      "description": "Shared cause"
+    },
+    "unknown": {
+      "power_direction": "neutral",
+      "description": "Not yet established"
+    }
+  }
+}

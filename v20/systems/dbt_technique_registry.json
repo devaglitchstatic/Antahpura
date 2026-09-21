@@ -1,0 +1,254 @@
+{
+  "schema": "antahpura.dbt_technique_registry",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Dialectical Behavior Therapy (DBT) techniques adapted for Antahpura dynamics. Each technique provides mechanical effects on emotional regulation, distress tolerance, interpersonal effectiveness, and mindfulness.",
+  "source_frameworks": {
+    "dbt_four_modules": ["mindfulness", "distress_tolerance", "emotion_regulation", "interpersonal_effectiveness"],
+    "key_skills": ["ACCEPTS", "STOP", "TIPP", "IMPROVE", "DEAR_MAN", "GIVE", "FAST", "Wise_Mind"]
+  },
+
+  "dbt_modules": {
+    "mindfulness": {
+      "name": "Mindfulness",
+      "description": "Present-moment awareness without judgment.",
+      "core_skills": ["observe", "describe", "participate", "non_judgmental_stance", "one_mindfully", "effectiveness"],
+      "bdsm_application": "Staying present during intense scenes; observing sensations without judgment; participating fully in the dynamic."
+    },
+    "distress_tolerance": {
+      "name": "Distress Tolerance",
+      "description": "Surviving crises without making things worse.",
+      "core_skills": ["ACCEPTS", "STOP", "TIPP", "IMPROVE", "self_soothing", "radical_acceptance"],
+      "bdsm_application": "Handling sub drop, dom drop, and scene-related distress without escalating; using ACCEPTS to distract during aftercare."
+    },
+    "emotion_regulation": {
+      "name": "Emotion Regulation",
+      "description": "Understanding and managing emotions.",
+      "core_skills": ["identify_emotions", "check_the_facts", "opposite_action", "problem_solving", "accumulate_positives", "build_mastery"],
+      "bdsm_application": "Recognizing emotional states in the dynamic; using opposite action to counter shame; building mastery through kala practice."
+    },
+    "interpersonal_effectiveness": {
+      "name": "Interpersonal Effectiveness",
+      "description": "Asking for what you need, saying no, and maintaining relationships.",
+      "core_skills": ["DEAR_MAN", "GIVE", "FAST", "validation", "boundary_setting"],
+      "bdsm_application": "Negotiating scenes, setting boundaries, and maintaining the health of the dynamic."
+    }
+  },
+
+  "dbt_techniques": {
+    "TIPP": {
+      "technique_id": "dbt_TIPP",
+      "name": "TIPP",
+      "module": "distress_tolerance",
+      "acronym_expansion": "Temperature, Intense exercise, Paced breathing, Paired muscle relaxation",
+      "description": "Fast-acting technique to reduce extreme emotional arousal.",
+      "steps": [
+        "Temperature: Cold water on face or hold ice",
+        "Intense exercise: 10-15 minutes of high-intensity movement",
+        "Paced breathing: Breathe in for 4, out for 6",
+        "Paired muscle relaxation: Tense and relax muscle groups"
+      ],
+      "mechanical_effects": {
+        "emotional_pressure_reduction": 40,
+        "physical_energy_cost": 15,
+        "duration_minutes": 15,
+        "aftercare_compatible": true
+      },
+      "bdsm_context": "Useful during sub drop or dom drop. Can be applied by partner or self-directed.",
+      "recovery_system_integration": "rec_emo_grounding"
+    },
+    "STOP": {
+      "technique_id": "dbt_STOP",
+      "name": "STOP",
+      "module": "distress_tolerance",
+      "acronym_expansion": "Stop, Take a step back, Observe, Proceed mindfully",
+      "description": "Pause before reacting to emotional triggers.",
+      "steps": [
+        "Stop: Freeze. Do not react.",
+        "Take a step back: Remove yourself from the situation.",
+        "Observe: Notice what is happening inside and outside.",
+        "Proceed mindfully: Act with awareness."
+      ],
+      "mechanical_effects": {
+        "impulse_control_bonus": 30,
+        "emotional_pressure_reduction": 20,
+        "duration_minutes": 5
+      },
+      "bdsm_context": "Useful when a scene triggers an unexpected emotional response. Allows renegotiation.",
+      "recovery_system_integration": "rec_emo_quiet"
+    },
+    "ACCEPTS": {
+      "technique_id": "dbt_ACCEPTS",
+      "name": "ACCEPTS",
+      "module": "distress_tolerance",
+      "acronym_expansion": "Activities, Contributing, Comparisons, Emotions, Pushing away, Thoughts, Sensations",
+      "description": "Distraction techniques for surviving crisis without making it worse.",
+      "steps": [
+        "Activities: Engage in a distracting activity",
+        "Contributing: Do something for someone else",
+        "Comparisons: Compare to a worse time",
+        "Emotions: Generate a different emotion",
+        "Pushing away: Temporarily push the problem out of mind",
+        "Thoughts: Replace thoughts with counting or puzzles",
+        "Sensations: Use intense sensory input (cold, sour, loud)"
+      ],
+      "mechanical_effects": {
+        "emotional_pressure_reduction": 25,
+        "duration_minutes": 20
+      },
+      "bdsm_context": "Useful during aftercare when the drop is hitting hard. Sensation technique can be integrated with toy/substance use.",
+      "recovery_system_integration": "rec_emo_grounding",
+      "registry_integration": ["toys_registry", "aphrodisiacs_substances_registry"]
+    },
+    "IMPROVE": {
+      "technique_id": "dbt_IMPROVE",
+      "name": "IMPROVE the Moment",
+      "module": "distress_tolerance",
+      "acronym_expansion": "Imagery, Meaning, Prayer, Relaxation, One thing at a time, Vacation, Encouragement",
+      "description": "Techniques to make the present moment more bearable.",
+      "steps": [
+        "Imagery: Imagine a safe place",
+        "Meaning: Find purpose in the pain",
+        "Prayer: Connect to something larger",
+        "Relaxation: Progressive muscle relaxation",
+        "One thing at a time: Focus on just this moment",
+        "Vacation: Take a brief mental break",
+        "Encouragement: Speak kindly to yourself"
+      ],
+      "mechanical_effects": {
+        "emotional_pressure_reduction": 20,
+        "duration_minutes": 15
+      },
+      "bdsm_context": "Useful for both Dominant and submissive during high-intensity scenes.",
+      "recovery_system_integration": "rec_emo_quiet"
+    },
+    "DEAR_MAN": {
+      "technique_id": "dbt_DEAR_MAN",
+      "name": "DEAR MAN",
+      "module": "interpersonal_effectiveness",
+      "acronym_expansion": "Describe, Express, Assert, Reinforce, Mindfully, Appear confident, Negotiate",
+      "description": "Assertive communication for getting needs met.",
+      "steps": [
+        "Describe: State the facts",
+        "Express: Share your feelings",
+        "Assert: Ask for what you need",
+        "Reinforce: Explain the benefits",
+        "Mindfully: Stay focused on the goal",
+        "Appear confident: Use confident tone and posture",
+        "Negotiate: Be willing to give to get"
+      ],
+      "mechanical_effects": {
+        "negotiation_success_bonus": 25,
+        "trust_delta_on_success": 3,
+        "duration_minutes": 15
+      },
+      "bdsm_context": "Useful for scene negotiation and boundary setting before play.",
+      "recovery_system_integration": "rec_rel_conversation"
+    },
+    "GIVE": {
+      "technique_id": "dbt_GIVE",
+      "name": "GIVE",
+      "module": "interpersonal_effectiveness",
+      "acronym_expansion": "Gentle, Interested, Validate, Easy manner",
+      "description": "Maintaining the relationship while asserting needs.",
+      "steps": [
+        "Gentle: Be soft and kind",
+        "Interested: Listen to the other person",
+        "Validate: Acknowledge their feelings",
+        "Easy manner: Use humor and lightness"
+      ],
+      "mechanical_effects": {
+        "affection_delta_on_use": 3,
+        "trust_delta_on_use": 2,
+        "duration_minutes": 10
+      },
+      "bdsm_context": "Useful for maintaining the dynamic's health during difficult conversations.",
+      "recovery_system_integration": "rec_rel_conversation"
+    },
+    "FAST": {
+      "technique_id": "dbt_FAST",
+      "name": "FAST",
+      "module": "interpersonal_effectiveness",
+      "acronym_expansion": "Fair, Apologies (no excessive), Stick to values, Truthful",
+      "description": "Maintaining self-respect in interactions.",
+      "steps": [
+        "Fair: Be fair to yourself and others",
+        "Apologies: No excessive apologies",
+        "Stick to values: Don't compromise your values",
+        "Truthful: Be honest"
+      ],
+      "mechanical_effects": {
+        "self_respect_bonus": 15,
+        "trust_delta_on_use": 2,
+        "duration_minutes": 5
+      },
+      "bdsm_context": "Useful for maintaining boundaries and self-respect during scenes.",
+      "recovery_system_integration": "rec_emo_quiet"
+    },
+    "Wise_Mind": {
+      "technique_id": "dbt_Wise_Mind",
+      "name": "Wise Mind",
+      "module": "mindfulness",
+      "description": "The balance between reasonable mind and emotional mind.",
+      "steps": [
+        "Notice when you are in reasonable mind",
+        "Notice when you are in emotional mind",
+        "Find the balance point — Wise Mind"
+      ],
+      "mechanical_effects": {
+        "decision_quality_bonus": 20,
+        "emotional_pressure_reduction": 15,
+        "duration_minutes": 5
+      },
+      "bdsm_context": "Useful for scene planning and aftercare decisions.",
+      "recovery_system_integration": "rec_narr_reflection"
+    },
+    "Self_Soothing": {
+      "technique_id": "dbt_Self_Soothing",
+      "name": "Self-Soothing through the Five Senses",
+      "module": "distress_tolerance",
+      "description": "Using the five senses to calm the nervous system.",
+      "senses": {
+        "vision": "Look at something beautiful",
+        "hearing": "Listen to calming music",
+        "smell": "Use a favorite scent",
+        "taste": "Eat something comforting",
+        "touch": "Wrap in a soft blanket"
+      },
+      "mechanical_effects": {
+        "emotional_pressure_reduction": 30,
+        "physical_energy_restore": 10,
+        "duration_minutes": 20
+      },
+      "bdsm_context": "Core aftercare technique. Integrates with jewelry, toys, substances, and recovery actions.",
+      "recovery_system_integration": "rec_phys_bath",
+      "registry_integration": ["aphrodisiacs_substances_registry", "jewelry_registry"]
+    }
+  },
+
+  "runtime_dbt_state": {
+    "schema": {
+      "character_id": "char_id",
+      "dbt_skills_known": ["string"],
+      "dbt_skills_practiced": [
+        {
+          "skill_id": "string",
+          "practice_count": "integer",
+          "last_practiced": "iso_8601",
+          "mastery_level": "float (0-1)"
+        }
+      ],
+      "dbt_effectiveness_rating": "float (0-100)",
+      "last_updated": "iso_8601"
+    }
+  },
+
+  "audit": {
+    "total_modules": 4,
+    "total_techniques": 10,
+    "total_acronym_skills": 8,
+    "orphaned_techniques": 0,
+    "audit_passed": true
+  }
+}

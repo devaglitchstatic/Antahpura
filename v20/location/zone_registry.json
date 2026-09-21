@@ -1,0 +1,87 @@
+{
+  "schema": "antahpura.location.zone_registry",
+  "version": "20.0",
+  "zones": {
+    "central": {
+      "name": "Central Palace",
+      "description": "Core administrative and ceremonial heart",
+      "locations": [
+        "loc_throne_hall",
+        "loc_throne_anteroom",
+        "loc_royal_chamber",
+        "loc_administrative_court",
+        "loc_archive",
+        "loc_cipher_room",
+        "loc_threshold_gate"
+      ],
+      "general_accessibility": "restricted",
+      "authority_amplifier": 1.3
+    },
+    "inner": {
+      "name": "Inner Palace",
+      "description": "Zenana, yogic pavilion, ritual chorus — the cultivated interior",
+      "locations": [
+        "loc_zenana_inner",
+        "loc_zenana_outer",
+        "loc_princess_apartment",
+        "loc_private_dining",
+        "loc_service_corridors",
+        "loc_yogic_pavilion",
+        "loc_esoteric_study",
+        "loc_music_chamber",
+        "loc_perfume_atelier",
+        "loc_ritual_chorus",
+        "loc_performance_pavilion",
+        "loc_instrument_workshop",
+        "loc_chorus_rehearsal",
+        "loc_bath_space",
+        "loc_palace_garden",
+        "loc_munda_ritual_space",
+        "loc_princess_guard_post",
+        "loc_zenana_gate"
+      ],
+      "general_accessibility": "inner_only",
+      "privacy_amplifier": 1.3
+    },
+    "outer": {
+      "name": "Outer Palace",
+      "description": "Perimeter, garden lakes, and military perimeter",
+      "locations": [
+        "loc_drill_yard",
+        "loc_palace_walls",
+        "loc_steppe_corridor",
+        "loc_guard_barracks",
+        "loc_armory",
+        "loc_chandra_pushkarini"
+      ],
+      "general_accessibility": "conditional",
+      "intensity_amplifier": 1.2
+    },
+    "subterranean": {
+      "name": "Subterranean Vaults",
+      "description": "The hidden depth",
+      "locations": [
+        "loc_vault_exterior",
+        "loc_containment_chambers",
+        "loc_hidden_archive",
+        "loc_patala_chamber",
+        "loc_vault_entry"
+      ],
+      "general_accessibility": "high_restriction",
+      "privacy_amplifier": 1.8,
+      "intimidation_amplifier": 1.4
+    },
+    "temple": {
+      "name": "Temple Complex",
+      "description": "Sacred and ritual spaces",
+      "locations": [
+        "loc_chandra_pushkarini",
+        "loc_yogic_pavilion",
+        "loc_esoteric_study",
+        "loc_patala_chamber"
+      ],
+      "general_accessibility": "invitation",
+      "rituality_amplifier": 1.5
+    }
+  }
+}

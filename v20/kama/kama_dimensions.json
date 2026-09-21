@@ -1,0 +1,27 @@
+{
+  "schema": "antahpura.kama_dimensions",
+  "version": "20.1",
+  "total_dimensions": 20,
+  "dimensions": {
+    "dim_authority":      {"name": "Authority",           "polarity": "bidirectional", "scene_relevance": "high"},
+    "dim_agency":         {"name": "Agency",              "polarity": "bidirectional", "scene_relevance": "high"},
+    "dim_curiosity":      {"name": "Curiosity",           "polarity": "additive",      "scene_relevance": "medium"},
+    "dim_novelty":        {"name": "Novelty",             "polarity": "additive",      "scene_relevance": "medium"},
+    "dim_trust":          {"name": "Trust",               "polarity": "additive",      "scene_relevance": "critical"},
+    "dim_vulnerability":  {"name": "Vulnerability",       "polarity": "bidirectional", "scene_relevance": "high"},
+    "dim_restraint":      {"name": "Restraint",           "polarity": "additive",      "scene_relevance": "high"},
+    "dim_precision":      {"name": "Precision",           "polarity": "additive",      "scene_relevance": "medium"},
+    "dim_performance":    {"name": "Performance",         "polarity": "additive",      "scene_relevance": "medium"},
+    "dim_aesthetic":      {"name": "Aesthetic Awareness", "polarity": "additive",      "scene_relevance": "high"},
+    "dim_devotion":       {"name": "Devotion",            "polarity": "additive",      "scene_relevance": "high"},
+    "dim_service":        {"name": "Service",             "polarity": "additive",      "scene_relevance": "medium"},
+    "dim_playfulness":    {"name": "Playfulness",         "polarity": "additive",      "scene_relevance": "medium"},
+    "dim_stillness":      {"name": "Stillness",           "polarity": "additive",      "scene_relevance": "medium"},
+    "dim_intensity":      {"name": "Intensity",           "polarity": "additive",      "scene_relevance": "high"},
+    "dim_rituality":      {"name": "Rituality",           "polarity": "additive",      "scene_relevance": "critical"},
+    "dim_expression":     {"name": "Expression",          "polarity": "additive",      "scene_relevance": "medium"},
+    "dim_privacy":        {"name": "Privacy",             "polarity": "additive",      "scene_relevance": "medium"},
+    "dim_discipline":     {"name": "Discipline",          "polarity": "additive",      "scene_relevance": "high"},
+    "dim_transgression":  {"name": "Transgression",       "polarity": "additive",      "scene_relevance": "high"}
+  }
+}

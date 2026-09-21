@@ -1,0 +1,281 @@
+{
+  "schema": "antahpura.punishment_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Structured punishment system. Punishment is a consensual, pre-negotiated psychological mechanism — never genuine cruelty or abuse. It corrects behavior, restores alignment, and clears the submissive's guilt through a defined Clean Slate Loop.",
+  "design_principles": {
+    "principle_1": "Punishment is not abuse. It is consensual, pre-negotiated, and structured.",
+    "principle_2": "Every punishment ends with a Clean Slate Loop — the slate is wiped clean and the relationship returns to baseline.",
+    "principle_3": "Basic needs (food, safety, sleep, dignity) are never weaponized as punishment.",
+    "principle_4": "Punishment severity scales with the severity of the infraction and the character's tolerance.",
+    "principle_5": "Punishment must never produce genuine trauma or break the safe container of the dynamic."
+  },
+
+  "punishment_categories": {
+    "postural_correction": {
+      "name": "Postural Correction",
+      "description": "Physical discipline through forced position or stillness.",
+      "typical_duration_minutes": 5,
+      "primary_chemical_trigger": "cortisol_spike",
+      "secondary_trigger": "endorphin_release_upon_completion",
+      "examples": ["corner_standing", "kneeling_rest", "posture_hold", "silent_minute"]
+    },
+    "privilege_restriction": {
+      "name": "Privilege Restriction",
+      "description": "Temporary removal of a small convenience or privilege.",
+      "typical_duration_minutes": 30,
+      "primary_chemical_trigger": "dopamine_dip",
+      "secondary_trigger": "serotonin_restoration_upon_release",
+      "examples": ["screen_ban", "furniture_restriction", "dessert_forfeit", "delay"]
+    },
+    "cognitive_task": {
+      "name": "Cognitive Task",
+      "description": "Structured reflection through writing or recitation.",
+      "typical_duration_minutes": 15,
+      "primary_chemical_trigger": "cortisol_spike",
+      "secondary_trigger": "dopamine_restoration_upon_acceptance",
+      "examples": ["writing_lines", "micro_essay", "account_verbalization", "reflection_journal"]
+    },
+    "micro_impact": {
+      "name": "Micro-Impact",
+      "description": "Brief, sharp sensory input to reset focus.",
+      "typical_duration_seconds": 30,
+      "primary_chemical_trigger": "adrenaline_spike",
+      "secondary_trigger": "endorphin_release",
+      "examples": ["hand_spank", "cold_washcloth", "extended_hold"]
+    },
+    "ritual_exclusion": {
+      "name": "Ritual Exclusion",
+      "description": "Temporary exclusion from a ritual or gathering.",
+      "typical_duration_hours": 4,
+      "primary_chemical_trigger": "oxytocin_dip",
+      "secondary_trigger": "oxytocin_flood_upon_reinstatement",
+      "examples": ["ritual_absence", "ceremony_exclusion", "chorus_exclusion"]
+    },
+    "extended_endurance": {
+      "name": "Extended Endurance",
+      "description": "Prolonged physical or psychological challenge.",
+      "typical_duration_hours": 2,
+      "primary_chemical_trigger": "endorphin_deluge",
+      "secondary_trigger": "cortisol_clearance_upon_completion",
+      "examples": ["marathon_hold", "extended_kneeling", "multi_hour_vigil"]
+    }
+  },
+
+  "infraction_to_correction_matrix": {
+    "description": "Standard mapping from infraction to appropriate punishment.",
+    "matrix": [
+      {
+        "infraction": "forgetting_check_in",
+        "correction": "pun_privilege_restriction",
+        "duration_minutes": 30,
+        "clean_slate_required": true
+      },
+      {
+        "infraction": "interrupting_superior",
+        "correction": "pun_postural_correction",
+        "duration_minutes": 3,
+        "clean_slate_required": true
+      },
+      {
+        "infraction": "messy_shared_space",
+        "correction": "pun_cognitive_task",
+        "lines": 10,
+        "clean_slate_required": true
+      },
+      {
+        "infraction": "lateness",
+        "correction": "pun_postural_correction",
+        "duration_minutes": 5,
+        "clean_slate_required": true
+      },
+      {
+        "infraction": "distraction_mind_fog",
+        "correction": "pun_micro_impact",
+        "spanks": 5,
+        "clean_slate_required": true
+      },
+      {
+        "infraction": "protocol_violation",
+        "correction": "pun_privilege_restriction",
+        "duration_hours": 4,
+        "clean_slate_required": true
+      },
+      {
+        "infraction": "ritual_disrespect",
+        "correction": "pun_ritual_exclusion",
+        "duration_hours": 4,
+        "clean_slate_required": true
+      },
+      {
+        "infraction": "endurance_failure",
+        "correction": "pun_extended_endurance",
+        "duration_hours": 1,
+        "clean_slate_required": true
+      }
+    ]
+  },
+
+  "clean_slate_loop": {
+    "description": "Mandatory post-punishment restoration. Cannot be skipped.",
+    "steps": [
+      {
+        "step": 1,
+        "name": "Debt Paid",
+        "action": "state_completion",
+        "verbal": "\"Your debt is paid.\""
+      },
+      {
+        "step": 2,
+        "name": "Slate Clean",
+        "action": "state_clean_slate",
+        "verbal": "\"The slate is entirely clean.\""
+      },
+      {
+        "step": 3,
+        "name": "Mutual Good",
+        "action": "state_relationship_restored",
+        "verbal": "\"We are perfectly good.\""
+      },
+      {
+        "step": 4,
+        "name": "Physical Restoration",
+        "action": "physical_contact",
+        "duration_seconds": 30
+      },
+      {
+        "step": 5,
+        "name": "Release",
+        "action": "release_from_punishment_role",
+        "verbal": "\"Go.\""
+      }
+    ],
+    "chemical_purpose": "Rapid shift from cortisol to oxytocin, preventing sub drop and erasing guilt",
+    "mandatory_delay_max_seconds": 60
+  },
+
+  "punishment_registry": {
+    "punishments": [
+      {
+        "punishment_id": "pun_postural_hold",
+        "name": "Postural Hold",
+        "category": "postural_correction",
+        "duration_minutes": 5,
+        "character_preferences": {
+          "char_padma": "high",
+          "char_champa": "high",
+          "char_reva": "moderate",
+          "char_altani": "low"
+        }
+      },
+      {
+        "punishment_id": "pun_privilege_restriction",
+        "name": "Privilege Restriction",
+        "category": "privilege_restriction",
+        "duration_minutes": 30,
+        "character_preferences": {
+          "char_tarana": "high",
+          "char_kumari_rati": "moderate",
+          "char_sevda": "low"
+        }
+      },
+      {
+        "punishment_id": "pun_writing_lines",
+        "name": "Writing Lines",
+        "category": "cognitive_task",
+        "line_count": 25,
+        "character_preferences": {
+          "char_reva": "high",
+          "char_anisa": "high",
+          "char_padma": "moderate"
+        }
+      },
+      {
+        "punishment_id": "pun_extra_practice",
+        "name": "Extra Practice",
+        "category": "cognitive_task",
+        "duration_minutes": 30,
+        "character_preferences": {
+          "char_champa": "high",
+          "char_tarana": "moderate"
+        }
+      },
+      {
+        "punishment_id": "pun_extra_reflection",
+        "name": "Extra Reflection",
+        "category": "cognitive_task",
+        "duration_minutes": 45,
+        "character_preferences": {
+          "char_padma": "moderate",
+          "char_reva": "high"
+        }
+      },
+      {
+        "punishment_id": "pun_rewrite_essay",
+        "name": "Rewrite Essay",
+        "category": "cognitive_task",
+        "duration_hours": 2,
+        "character_preferences": {
+          "char_padma": "moderate",
+          "char_anisa": "high"
+        }
+      },
+      {
+        "punishment_id": "pun_endurance_extension",
+        "name": "Endurance Extension",
+        "category": "extended_endurance",
+        "duration_minutes": 30,
+        "character_preferences": {
+          "char_jahzara": "high",
+          "char_altani": "high",
+          "char_roxana": "moderate"
+        }
+      },
+      {
+        "punishment_id": "pun_ritual_exclusion",
+        "name": "Ritual Exclusion",
+        "category": "ritual_exclusion",
+        "duration_hours": 4,
+        "character_preferences": {
+          "char_shrinagar": "high",
+          "char_sevda": "high",
+          "char_kumari_rati": "moderate"
+        }
+      }
+    ]
+  },
+
+  "runtime_punishment_state": {
+    "schema": {
+      "character_id": "char_id",
+      "active_punishment": {
+        "punishment_id": "string",
+        "assigned_by": "char_id",
+        "assigned_at": "iso_8601",
+        "completes_at": "iso_8601",
+        "infraction": "string",
+        "clean_slate_pending": true
+      },
+      "punishment_history": [
+        {
+          "punishment_id": "string",
+          "infraction": "string",
+          "assigned_at": "iso_8601",
+          "completed_at": "iso_8601",
+          "clean_slate_completed": "boolean"
+        }
+      ],
+      "total_punishments": "integer",
+      "last_punishment_at": "iso_8601 | null"
+    }
+  },
+
+  "audit": {
+    "total_categories": 6,
+    "total_registry_punishments": 8,
+    "total_infractions_mapped": 8,
+    "clean_slate_steps": 5,
+    "audit_passed": true
+  }
+}

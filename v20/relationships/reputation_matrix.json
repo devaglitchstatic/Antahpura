@@ -1,0 +1,65 @@
+{
+  "schema": "antahpura.relationship.reputation_matrix",
+  "version": "20.0",
+  "reputation_layers": {
+    "personal_reputation": {
+      "description": "Who the character is privately",
+      "range": [
+        0,
+        100
+      ]
+    },
+    "institutional_reputation": {
+      "description": "What each institution thinks of the character",
+      "range": [
+        0,
+        100
+      ],
+      "per_institution": true
+    },
+    "public_reputation": {
+      "description": "What the court thinks",
+      "range": [
+        0,
+        100
+      ]
+    },
+    "private_reputation": {
+      "description": "What a small trusted circle knows",
+      "range": [
+        0,
+        100
+      ],
+      "per_character": true
+    }
+  },
+  "institutions_tracked": [
+    "inst_throne",
+    "inst_zenana",
+    "inst_military_perimeter",
+    "inst_administrative_court",
+    "inst_yogic_pavilion",
+    "inst_subterranean_vaults",
+    "inst_ritual_chorus"
+  ],
+  "example_profile": {
+    "character_id": "char_svara",
+    "personal_reputation": 55,
+    "institutional_reputation": {
+      "inst_throne": 40,
+      "inst_zenana": 55,
+      "inst_military_perimeter": 30,
+      "inst_administrative_court": 45,
+      "inst_yogic_pavilion": 50,
+      "inst_subterranean_vaults": 45,
+      "inst_ritual_chorus": 78
+    },
+    "public_reputation": 50,
+    "private_reputation": {
+      "char_kumari_rati": 72,
+      "char_shrinagar": 65,
+      "char_reva": 70,
+      "char_tarana": 68
+    }
+  }
+}

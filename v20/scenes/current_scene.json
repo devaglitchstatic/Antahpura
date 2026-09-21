@@ -1,0 +1,25 @@
+{
+  "schema": "antahpura.current_scene",
+  "version": "20.0",
+  "scene_id": "guhya_garbhagriha_001",
+  "chapter": "Chapter I",
+  "title": "Guhya Garbhagṛha",
+  "ritual": "Ātma-Garbha Abhiṣeka",
+  "phase": "Sādhana",
+  "pov": "kumari_rati",
+  "participants": [
+    "maha_deva",
+    "kumari_rati",
+    "padma",
+    "campa",
+    "jahzara",
+    "reva"
+  ],
+  "kala_focus": [],
+  "kama_focus": [],
+  "event_type": "scene_entered",
+  "trigger_intensity": 0.5,
+  "salience": 0.7,
+  "user_message": "My lord, I am ready to begin. Where shall the first discipline fall?",
+  "history": []
+}

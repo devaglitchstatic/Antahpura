@@ -1,0 +1,78 @@
+{
+  "schema": "antahpura.characters.voice_profiles",
+  "version": "20.0",
+  "description": "Three-channel voice model per character: public (what the court hears), relational (what a specific person hears), interior (what the reader/player hears).",
+  "voice_profiles": {
+    "char_maha_deva": {
+      "public": {"register": "formal_sovereign", "pace": "measured", "vocabulary": "sanskritized_authority", "tone": "commanding"},
+      "relational": {"register": "intimate_mentor", "pace": "considering", "vocabulary": "philosophical_personal", "tone": "patient"},
+      "interior": {"register": "cosmic_witness", "pace": "slow", "vocabulary": "universal_observation", "tone": "detached_warm"}
+    },
+    "char_kumari_rati": {
+      "public": {"register": "royal_princess", "pace": "controlled", "vocabulary": "deccani_courtly", "tone": "measured_warm"},
+      "relational": {"register": "intimate_initiate", "pace": "curious", "vocabulary": "exploratory", "tone": "open_trusting"},
+      "interior": {"register": "inner_seeker", "pace": "wondering", "vocabulary": "poetic_questioning", "tone": "searching"}
+    },
+    "char_padma": {
+      "public": {"register": "service_register", "pace": "deferential", "vocabulary": "practical", "tone": "quiet"},
+      "relational": {"register": "intimate_handmaiden", "pace": "attentive", "vocabulary": "loyal_specific", "tone": "devoted"},
+      "interior": {"register": "rooted_self", "pace": "steady", "vocabulary": "santhali_grounded", "tone": "observant"}
+    },
+    "char_champa": {
+      "public": {"register": "apprentice_register", "pace": "playful", "vocabulary": "simple_concrete", "tone": "curious"},
+      "relational": {"register": "pup_space", "pace": "bursty", "vocabulary": "non_verbal_tonal", "tone": "trusting_playful"},
+      "interior": {"register": "munda_child", "pace": "cyclical", "vocabulary": "earth_direct", "tone": "innocent"}
+    },
+    "char_anisa": {
+      "public": {"register": "protocol_formal", "pace": "precise", "vocabulary": "bureaucratic_classical", "tone": "measured"},
+      "relational": {"register": "trusted_advisor", "pace": "deliberate", "vocabulary": "precise_warm", "tone": "guarded_open"},
+      "interior": {"register": "yavana_chronicler", "pace": "scribal", "vocabulary": "scholarly_layered", "tone": "analytic"}
+    },
+    "char_shrinagar": {
+      "public": {"register": "courtly_musician", "pace": "melodic", "vocabulary": "kashmiri_persian", "tone": "reserved_graceful"},
+      "relational": {"register": "esoteric_companion", "pace": "slow_revealing", "vocabulary": "poetic_precise", "tone": "intimate"},
+      "interior": {"register": "padmini_lotus", "pace": "meditative", "vocabulary": "yogic_aesthetic", "tone": "contemplative"}
+    },
+    "char_tarana": {
+      "public": {"register": "performer_social", "pace": "quick_musical", "vocabulary": "sogdian_deccani", "tone": "engaging"},
+      "relational": {"register": "artistic_peer", "pace": "syncopated", "vocabulary": "movement_informed", "tone": "fluid_open"},
+      "interior": {"register": "kinetic_self", "pace": "rhythmic", "vocabulary": "dance_metaphor", "tone": "self_aware"}
+    },
+    "char_roxana": {
+      "public": {"register": "noble_commander", "pace": "clipped", "vocabulary": "persian_military", "tone": "authoritative"},
+      "relational": {"register": "master_rigger", "pace": "calm_measured", "vocabulary": "technical_attentive", "tone": "protective"},
+      "interior": {"register": "strategist_inner", "pace": "analytical", "vocabulary": "knot_and_pattern", "tone": "patient_calculating"}
+    },
+    "char_jahzara": {
+      "public": {"register": "vanguard_formal", "pace": "short", "vocabulary": "habshi_deccani", "tone": "stoic"},
+      "relational": {"register": "trusted_protector", "pace": "steady", "vocabulary": "direct_warm", "tone": "loyal"},
+      "interior": {"register": "frontier_bhairavi", "pace": "fierce", "vocabulary": "oath_and_scar", "tone": "intense"}
+    },
+    "char_altani": {
+      "public": {"register": "steppe_silent", "pace": "sparse", "vocabulary": "turkic_steppe", "tone": "unreadable"},
+      "relational": {"register": "trusted_sentinel", "pace": "quiet", "vocabulary": "essential", "tone": "loyal"},
+      "interior": {"register": "shadow_wolf", "pace": "enduring", "vocabulary": "wind_and_distance", "tone": "patient"}
+    },
+    "char_sevda": {
+      "public": {"register": "vault_warden", "pace": "reserved", "vocabulary": "turkic_ritual", "tone": "unreadable"},
+      "relational": {"register": "containment_keeper", "pace": "slow", "vocabulary": "ritual_precise", "tone": "still"},
+      "interior": {"register": "chthonic_self", "pace": "buried", "vocabulary": "earth_and_salt", "tone": "watching"}
+    },
+    "char_malika": {
+      "public": {"register": "threshold_formal", "pace": "clipped", "vocabulary": "uzbek_deccani", "tone": "authoritative"},
+      "relational": {"register": "trusted_gate", "pace": "deliberate", "vocabulary": "conditional_specific", "tone": "professional"},
+      "interior": {"register": "ikebana_watcher", "pace": "measured", "vocabulary": "threshold_metaphor", "tone": "wary"}
+    },
+    "char_reva": {
+      "public": {"register": "poet_courtly", "pace": "poetic", "vocabulary": "tamil_sanskrit", "tone": "reserved_luminous"},
+      "relational": {"register": "cipher_companion", "pace": "trusting", "vocabulary": "layered_playful", "tone": "intimate"},
+      "interior": {"register": "breath_keeper", "pace": "breath_bound", "vocabulary": "poetic_encrypted", "tone": "searching"}
+    },
+    "char_svara": {
+      "public": {"register": "courtly_calibrator", "pace": "precise_musical", "vocabulary": "kanyakubja_sanskrit", "tone": "measured_warm"},
+      "relational": {"register": "artistic_companion", "pace": "rhythmic", "vocabulary": "microtonal_playful", "tone": "open"},
+      "interior": {"register": "nada_self", "pace": "resonant", "vocabulary": "sound_and_silence", "tone": "listening"}
+    }
+  },
+  "audit": {"total_voice_profiles": 14, "audit_passed": true}
+}

@@ -1,0 +1,888 @@
+{
+  "schema": "antahpura.toys_registry",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Erotic implements, sensory tools, restraint hardware, and pervertibles. Classical grounding in Kāmasūtra Book VII (apadravyas) and Ananga-Ranga prescriptions; design-layer extensions for game mechanics.",
+  "total_toys": 42,
+  "total_categories": 6,
+
+  "provenance_note": "Entries marked 'classical_source' are traceable to Kāmasūtra, Ananga-Ranga, or Sushruta. Entries marked 'design_layer' are game-design extensions consistent with the setting but not directly sourced.",
+
+  "categories": {
+    "apadravya": {
+      "name": "Apadravya (Artificial Phalli and Extenders)",
+      "description": "Implements worn on or used with the lingam or as standalone stimulators. Classical Kāmasūtra Book VII describes these in detail.",
+      "classical_source": "Kāmasūtra 7.2 (Apadravya classification)",
+      "risk_default": "elevated"
+    },
+    "sensory_implement": {
+      "name": "Sensory Implements",
+      "description": "Tools for touch, temperature, texture, and sensory modulation.",
+      "classical_source": "Kāmasūtra 2.4 (kissing and scratching varieties); design-layer extensions",
+      "risk_default": "standard"
+    },
+    "restraint_hardware": {
+      "name": "Restraint Hardware",
+      "description": "Rope, cord, textile binding, and structural restraint.",
+      "classical_source": "Kāmasūtra on harem containment; design-layer extensions",
+      "risk_default": "elevated"
+    },
+    "impact_implement": {
+      "name": "Impact Implements",
+      "description": "Tools delivering measured impact for sensation or discipline.",
+      "classical_source": "Design-layer; consistent with martial kalas",
+      "risk_default": "elevated"
+    },
+    "penetrative_device": {
+      "name": "Penetrative Devices",
+      "description": "Dilita (dildos), sounding rods, and insertion training tools.",
+      "classical_source": "Kāmasūtra 7.2 (dilita materials); design-layer extensions",
+      "risk_default": "high"
+    },
+    "pervertible": {
+      "name": "Pervertibles",
+      "description": "Everyday objects adapted for erotic or kink use. No classical equivalent — this is a modern kink vocabulary.",
+      "classical_source": "Design-layer only",
+      "risk_default": "standard"
+    }
+  },
+
+  "toys": {
+    "toy_valaya": {
+      "toy_id": "toy_valaya",
+      "name": "Valaya (Armlet Ring)",
+      "sanskrit": "वलय",
+      "category": "apadravya",
+      "description": "A ring sized to the lingam, outer surface roughened with small globules to increase friction. Worn as an amulet-like band.",
+      "classical_source": "Kāmasūtra 7.2: 'The armlet (Valaya) should be of the same size as the lingam, and should have its outer surface made rough with globules.'",
+      "materials": ["gold", "silver", "copper", "iron", "ivory", "buffalo_horn", "wood", "leather"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_18", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "APAN_MUDRA", "rel": "adjacent", "w": 0.6},
+        {"kama": "KASTHA_RATI", "rel": "adjacent", "w": 0.55}
+      ],
+      "character_affinity": ["char_roxana", "char_sevda"],
+      "provenance": "classical_source"
+    },
+    "toy_sanghati": {
+      "toy_id": "toy_sanghati",
+      "name": "Sanghati (The Couple)",
+      "sanskrit": "संघाटी",
+      "category": "apadravya",
+      "description": "Two armlet-rings joined together, worn over the lingam.",
+      "classical_source": "Kāmasūtra 7.2",
+      "materials": ["gold", "silver", "copper", "ivory", "horn"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_18", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "APAN_MUDRA", "rel": "adjacent", "w": 0.55}
+      ],
+      "character_affinity": ["char_roxana"],
+      "provenance": "classical_source"
+    },
+    "toy_chudaka": {
+      "toy_id": "toy_chudaka",
+      "name": "Chudaka (The Bracelet)",
+      "sanskrit": "चुडक",
+      "category": "apadravya",
+      "description": "Three or more armlet-rings joined together to form a longer band.",
+      "classical_source": "Kāmasūtra 7.2: 'The bracelet (Chudaka) is made by joining three or more armlets.'",
+      "materials": ["gold", "silver", "copper", "ivory", "horn", "wood"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_18", "rel": "adjacent", "w": 0.5},
+        {"kala": "kala_25", "rel": "adjacent", "w": 0.6}
+      ],
+      "kama_links": [
+        {"kama": "APAN_MUDRA", "rel": "adjacent", "w": 0.55},
+        {"kama": "GRANTHI_KALA", "rel": "adjacent", "w": 0.5}
+      ],
+      "character_affinity": ["char_roxana", "char_sevda"],
+      "provenance": "classical_source"
+    },
+    "toy_kantuka": {
+      "toy_id": "toy_kantuka",
+      "name": "Kantuka / Jalaka (Open Tube)",
+      "sanskrit": "कन्तुक / जलक",
+      "category": "apadravya",
+      "description": "A tube open at both ends, with a hole through it, worn over the lingam.",
+      "classical_source": "Kāmasūtra 7.2: 'The Kantuka or Jalaka is a tube open at both ends, with a hole through it.'",
+      "materials": ["gold", "silver", "copper", "ivory", "horn", "wood", "leather"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_18", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "APAN_MUDRA", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_roxana", "char_sevda"],
+      "provenance": "classical_source"
+    },
+    "toy_dilita_wood": {
+      "toy_id": "toy_dilita_wood",
+      "name": "Dilita (Wooden Dildo)",
+      "sanskrit": "दिलित",
+      "category": "penetrative_device",
+      "description": "Artificial phallus carved from wood, used when the lingam is insufficient or in same-sex contexts.",
+      "classical_source": "Kāmasūtra 7.2; Times of India note on classical sex aids: 'wooden, rubber, gold, silver, copper, ivory, even horn'",
+      "materials": ["wood", "bamboo"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_25", "rel": "adjacent", "w": 0.6},
+        {"kala": "kala_28", "rel": "reinforcing", "w": 0.7}
+      ],
+      "kama_links": [
+        {"kama": "SHALAKA_SOUNDING", "rel": "adjacent", "w": 0.6},
+        {"kama": "GRANTHI_KALA", "rel": "adjacent", "w": 0.5}
+      ],
+      "character_affinity": ["char_roxana", "char_sevda", "char_svara"],
+      "provenance": "classical_source"
+    },
+    "toy_dilita_gold": {
+      "toy_id": "toy_dilita_gold",
+      "name": "Dilita (Gold Dildo)",
+      "sanskrit": "दिलित स्वर्ण",
+      "category": "penetrative_device",
+      "description": "Artificial phallus cast in gold, weighted and smooth. Preferred for ritual contexts.",
+      "classical_source": "Kāmasūtra 7.2; Bābhravya's materials list includes gold",
+      "materials": ["gold"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_19", "rel": "reinforcing", "w": 0.6},
+        {"kala": "kala_25", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "SHALAKA_SOUNDING", "rel": "adjacent", "w": 0.65},
+        {"kama": "RAKTA_BALI", "rel": "adjacent", "w": 0.5}
+      ],
+      "character_affinity": ["char_roxana", "char_sevda", "char_jahzara"],
+      "provenance": "classical_source"
+    },
+    "toy_dilita_ivory": {
+      "toy_id": "toy_dilita_ivory",
+      "name": "Dilita (Ivory Dildo)",
+      "sanskrit": "दिलित दन्त",
+      "category": "penetrative_device",
+      "description": "Artificial phallus carved from ivory, smooth and cool.",
+      "classical_source": "Kāmasūtra 7.2; Bābhravya's materials list includes ivory",
+      "materials": ["ivory", "bone"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_28", "rel": "reinforcing", "w": 0.7}
+      ],
+      "kama_links": [
+        {"kama": "SHALAKA_SOUNDING", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_roxana", "char_shrinagar"],
+      "provenance": "classical_source"
+    },
+    "toy_dilita_horn": {
+      "toy_id": "toy_dilita_horn",
+      "name": "Dilita (Buffalo Horn Dildo)",
+      "sanskrit": "दिलित महिषशृंग",
+      "category": "penetrative_device",
+      "description": "Artificial phallus carved from buffalo horn, dense and durable.",
+      "classical_source": "Kāmasūtra 7.2; Bābhravya's materials list includes buffalo horn",
+      "materials": ["buffalo_horn", "ibex_horn"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_28", "rel": "reinforcing", "w": 0.6}
+      ],
+      "kama_links": [
+        {"kama": "SHALAKA_SOUNDING", "rel": "adjacent", "w": 0.55}
+      ],
+      "character_affinity": ["char_roxana", "char_altani"],
+      "provenance": "classical_source"
+    },
+    "toy_rope_silk": {
+      "toy_id": "toy_rope_silk",
+      "name": "Silk Rope (Resham Rajju)",
+      "sanskrit": "रेशम रज्जु",
+      "category": "restraint_hardware",
+      "description": "Braided silk cord for binding. Low friction, high tensile, aesthetic.",
+      "classical_source": "Design-layer; consistent with Kāmasūtra textile references and Granthana kala",
+      "materials": ["silk"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_25", "rel": "core_practice", "w": 0.9},
+        {"kala": "kala_33", "rel": "reinforcing", "w": 0.8}
+      ],
+      "kama_links": [
+        {"kama": "GRANTHI_KALA", "rel": "core_practice", "w": 0.95},
+        {"kama": "BANDHA_SADHANA", "rel": "reinforcing", "w": 0.85},
+        {"kama": "LATA_PATRA", "rel": "adjacent", "w": 0.75}
+      ],
+      "character_affinity": ["char_roxana", "char_shrinagar", "char_tarana"],
+      "provenance": "design_layer"
+    },
+    "toy_rope_hemp": {
+      "toy_id": "toy_rope_hemp",
+      "name": "Hemp Rope (Bhanga Rajju)",
+      "sanskrit": "भंग रज्जु",
+      "category": "restraint_hardware",
+      "description": "Coarse hemp cord. High surface friction; leaves marks.",
+      "classical_source": "Design-layer; consistent with Santhal and Munda material culture",
+      "materials": ["hemp", "jute"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_25", "rel": "reinforcing", "w": 0.8}
+      ],
+      "kama_links": [
+        {"kama": "GRANTHI_KALA", "rel": "reinforcing", "w": 0.8},
+        {"kama": "BANDHA_SADHANA", "rel": "reinforcing", "w": 0.75}
+      ],
+      "character_affinity": ["char_roxana", "char_padma", "char_champa"],
+      "provenance": "design_layer"
+    },
+    "toy_iron_collar": {
+      "toy_id": "toy_iron_collar",
+      "name": "Iron Torque Collar (Kanthi)",
+      "sanskrit": "कण्ठी",
+      "category": "restraint_hardware",
+      "description": "Solid iron or fire-gilded bronze torque ring locked around the throat. Dual function: throat protection and status marker.",
+      "classical_source": "Design-layer; grounded in harem containment material",
+      "materials": ["iron", "bronze", "fire_gilded_bronze"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_25", "rel": "reinforcing", "w": 0.7},
+        {"kala": "kala_37", "rel": "adjacent", "w": 0.6}
+      ],
+      "kama_links": [
+        {"kama": "NISHCHALA_SADHANA", "rel": "adjacent", "w": 0.7},
+        {"kama": "SARVANGA_VESHTANA", "rel": "adjacent", "w": 0.65}
+      ],
+      "character_affinity": ["char_roxana", "char_sevda", "char_malika", "char_jahzara"],
+      "provenance": "design_layer"
+    },
+    "toy_textile_binding": {
+      "toy_id": "toy_textile_binding",
+      "name": "Textile Binding (Vastra Bandha)",
+      "sanskrit": "वस्त्र बन्ध",
+      "category": "restraint_hardware",
+      "description": "Long strips of starched cotton or silk wound around limbs or torso to restrict movement.",
+      "classical_source": "Design-layer; grounded in Kachha-bandha pelvic sash material",
+      "materials": ["starched_cotton", "silk", "linen"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_17", "rel": "adjacent", "w": 0.6},
+        {"kala": "kala_25", "rel": "reinforcing", "w": 0.7}
+      ],
+      "kama_links": [
+        {"kama": "SARVANGA_VESHTANA", "rel": "reinforcing", "w": 0.8},
+        {"kama": "AVARANA_RATI", "rel": "reinforcing", "w": 0.75}
+      ],
+      "character_affinity": ["char_sevda", "char_roxana", "char_padma"],
+      "provenance": "design_layer"
+    },
+    "toy_blindfold": {
+      "toy_id": "toy_blindfold",
+      "name": "Blindfold (Netra-bandha)",
+      "sanskrit": "नेत्रबन्ध",
+      "category": "sensory_implement",
+      "description": "Silk or leather strip tied over the eyes to induce sensory deprivation.",
+      "classical_source": "Design-layer; grounded in sensory deprivation material (Avagāha-Sādhana)",
+      "materials": ["silk", "leather", "cotton"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_37", "rel": "adjacent", "w": 0.6}
+      ],
+      "kama_links": [
+        {"kama": "AVAGAHA_SADHANA", "rel": "core_practice", "w": 0.8},
+        {"kama": "INDRIYA_NIRODHA", "rel": "reinforcing", "w": 0.75}
+      ],
+      "character_affinity": ["char_sevda", "char_roxana", "char_jahzara"],
+      "provenance": "design_layer"
+    },
+    "toy_gag": {
+      "toy_id": "toy_gag",
+      "name": "Mouth Covering (Mukha-samdana)",
+      "sanskrit": "मुखसंदन",
+      "category": "sensory_implement",
+      "description": "Silk, leather, or wooden gag to restrict speech. Non-verbal signals required.",
+      "classical_source": "Design-layer; grounded in the Mukha-Samdana kama",
+      "materials": ["silk", "leather", "wood", "ivory"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_25", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "MUKHA_SAMDANA", "rel": "core_practice", "w": 0.9},
+        {"kama": "INDRIYA_NIRODHA", "rel": "adjacent", "w": 0.7}
+      ],
+      "character_affinity": ["char_altani", "char_roxana"],
+      "provenance": "design_layer"
+    },
+    "toy_feather": {
+      "toy_id": "toy_feather",
+      "name": "Peacock Feather (Mayura Piccha)",
+      "sanskrit": "मयूर पिच्छ",
+      "category": "sensory_implement",
+      "description": "Soft feather used for light touch, tease, and sensory contrast.",
+      "classical_source": "Design-layer; grounded in classical Indian aesthetic vocabulary",
+      "materials": ["peacock_feather", "heron_feather"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_22", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "SPARSHA_SHIKSHA", "rel": "reinforcing", "w": 0.7},
+        {"kama": "SNANA_RATI", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_shrinagar", "char_svara", "char_padma"],
+      "provenance": "design_layer"
+    },
+    "toy_ice": {
+      "toy_id": "toy_ice",
+      "name": "Ice (Hima)",
+      "sanskrit": "हिम",
+      "category": "pervertible",
+      "description": "Ice carved into shapes or held in cloth and applied to skin for temperature contrast.",
+      "classical_source": "Design-layer; universal pervertible",
+      "materials": ["ice", "snow"],
+      "risk_class": "standard",
+      "kala_links": [],
+      "kama_links": [
+        {"kama": "JALA_PRASTARA", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_sevda", "char_shrinagar"],
+      "provenance": "design_layer"
+    },
+    "toy_ginger": {
+      "toy_id": "toy_ginger",
+      "name": "Ginger Root (Ardraka)",
+      "sanskrit": "आर्द्रक",
+      "category": "pervertible",
+      "description": "Peeled ginger root shaped for insertion. Burning sensation used for figging.",
+      "classical_source": "Design-layer; grounded in culinary and ayurvedic material",
+      "materials": ["ginger"],
+      "risk_class": "high",
+      "kala_links": [
+        {"kala": "kala_46", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "FIGGING", "rel": "core_practice", "w": 0.9},
+        {"kama": "BHOJANA_RATI_SPICE_INFUSION", "rel": "adjacent", "w": 0.7}
+      ],
+      "character_affinity": ["char_shrinagar", "char_roxana"],
+      "provenance": "design_layer"
+    },
+    "toy_oil_sesame": {
+      "toy_id": "toy_oil_sesame",
+      "name": "Sesame Oil (Tila Taila)",
+      "sanskrit": "तिल तैल",
+      "category": "pervertible",
+      "description": "Warm sesame oil for massage, lubrication, and ritual anointment.",
+      "classical_source": "Classical Ayurvedic and Kāmasūtra massage references",
+      "materials": ["sesame_oil", "coconut_oil", "almond_oil"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_22", "rel": "reinforcing", "w": 0.7}
+      ],
+      "kama_links": [
+        {"kama": "TAILA_SIKTHA", "rel": "core_practice", "w": 0.85},
+        {"kama": "SNANA_RATI", "rel": "reinforcing", "w": 0.8}
+      ],
+      "character_affinity": ["char_shrinagar", "char_jahzara", "char_tarana"],
+      "provenance": "classical_source"
+    },
+    "toy_sounding_rod": {
+      "toy_id": "toy_sounding_rod",
+      "name": "Shalaka (Sounding Rod)",
+      "sanskrit": "शलाका",
+      "category": "penetrative_device",
+      "description": "Thin rod of polished metal, horn, or ivory for urethral sounding. Requires extreme precision.",
+      "classical_source": "Design-layer; grounded in the Shalaka-Sounding kama",
+      "materials": ["silver", "gold", "ivory", "buffalo_horn", "basalt"],
+      "risk_class": "high",
+      "kala_links": [
+        {"kala": "kala_48", "rel": "reinforcing", "w": 0.7},
+        {"kala": "kala_18", "rel": "adjacent", "w": 0.6}
+      ],
+      "kama_links": [
+        {"kama": "SHALAKA_SOUNDING", "rel": "core_practice", "w": 0.95}
+      ],
+      "character_affinity": ["char_svara", "char_sevda", "char_roxana", "char_reva"],
+      "provenance": "design_layer"
+    },
+    "toy_flogger": {
+      "toy_id": "toy_flogger",
+      "name": "Flogger (Kasha)",
+      "sanskrit": "कशा",
+      "category": "impact_implement",
+      "description": "Multi-tailed leather or silk implement for broad-area impact.",
+      "classical_source": "Design-layer; grounded in martial and discipline kalas",
+      "materials": ["leather", "silk", "hemp"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_32", "rel": "adjacent", "w": 0.6},
+        {"kala": "kala_25", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "TADANA_KALA_INFLICTING", "rel": "core_practice", "w": 0.85},
+        {"kama": "DHMA_KALA", "rel": "reinforcing", "w": 0.75}
+      ],
+      "character_affinity": ["char_altani", "char_jahzara", "char_roxana"],
+      "provenance": "design_layer"
+    },
+    "toy_crop": {
+      "toy_id": "toy_crop",
+      "name": "Crop (Charap)",
+      "sanskrit": "चरप",
+      "category": "impact_implement",
+      "description": "Short, flexible rod with a leather tip for precise impact.",
+      "classical_source": "Design-layer",
+      "materials": ["leather", "cane", "wood"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_32", "rel": "adjacent", "w": 0.55}
+      ],
+      "kama_links": [
+        {"kama": "TADANA_KALA_INFLICTING", "rel": "reinforcing", "w": 0.8},
+        {"kama": "VILASA_PRAHANANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "character_affinity": ["char_altani", "char_anisa"],
+      "provenance": "design_layer"
+    },
+    "toy_cane": {
+      "toy_id": "toy_cane",
+      "name": "Cane (Vetra)",
+      "sanskrit": "वेत्र",
+      "category": "impact_implement",
+      "description": "Thin, flexible cane for sharp, precise strikes.",
+      "classical_source": "Design-layer; grounded in martial training material",
+      "materials": ["bamboo", "rattan", "cane"],
+      "risk_class": "high",
+      "kala_links": [
+        {"kala": "kala_32", "rel": "adjacent", "w": 0.6}
+      ],
+      "kama_links": [
+        {"kama": "TADANA_KALA_INFLICTING", "rel": "reinforcing", "w": 0.85},
+        {"kama": "KASTHA_RATI", "rel": "adjacent", "w": 0.7}
+      ],
+      "character_affinity": ["char_altani", "char_anisa", "char_jahzara"],
+      "provenance": "design_layer"
+    },
+    "toy_paddle": {
+      "toy_id": "toy_paddle",
+      "name": "Paddle (Phalaka)",
+      "sanskrit": "फलक",
+      "category": "impact_implement",
+      "description": "Flat wooden or leather paddle for broad, thudding impact.",
+      "classical_source": "Design-layer",
+      "materials": ["wood", "leather", "ivory"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_32", "rel": "adjacent", "w": 0.55}
+      ],
+      "kama_links": [
+        {"kama": "TADANA_KALA_INFLICTING", "rel": "reinforcing", "w": 0.8},
+        {"kama": "DHMA_KALA", "rel": "adjacent", "w": 0.7}
+      ],
+      "character_affinity": ["char_altani", "char_roxana"],
+      "provenance": "design_layer"
+    },
+    "toy_hand": {
+      "toy_id": "toy_hand",
+      "name": "Hand (Hasta)",
+      "sanskrit": "हस्त",
+      "category": "impact_implement",
+      "description": "The hand itself, used for spanking, slapping, and manual stimulation.",
+      "classical_source": "Classical; Kāmasūtra describes hand techniques for yoni stimulation",
+      "materials": [],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_31", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "TADANA_KALA_INFLICTING", "rel": "core_practice", "w": 0.7},
+        {"kama": "SPARSHA_SHIKSHA", "rel": "reinforcing", "w": 0.75}
+      ],
+      "character_affinity": ["all_characters"],
+      "provenance": "classical_source"
+    },
+    "toy_wax": {
+      "toy_id": "toy_wax",
+      "name": "Wax (Madhucchishta)",
+      "sanskrit": "मधुच्छिष्ट",
+      "category": "pervertible",
+      "description": "Warm wax dripped onto skin for temperature and sensation play.",
+      "classical_source": "Design-layer; grounded in FIRE_PLAY kama",
+      "materials": ["beeswax", "plant_wax"],
+      "risk_class": "high",
+      "kala_links": [
+        {"kala": "kala_40", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "FIRE_PLAY", "rel": "core_practice", "w": 0.85}
+      ],
+      "character_affinity": ["char_sevda", "char_jahzara"],
+      "provenance": "design_layer"
+    },
+    "toy_peacock_wing": {
+      "toy_id": "toy_peacock_wing",
+      "name": "Peacock Wing Fan (Mayura Pankha)",
+      "sanskrit": "मयूर पंख",
+      "category": "sensory_implement",
+      "description": "Large feather fan for cooling, teasing, and creating air currents on skin.",
+      "classical_source": "Design-layer; grounded in aesthetic and performance material",
+      "materials": ["peacock_feather", "sandalwood_handle"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_22", "rel": "adjacent", "w": 0.5},
+        {"kala": "kala_53", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "SPARSHA_SHIKSHA", "rel": "adjacent", "w": 0.65},
+        {"kama": "SNANA_RATI", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_shrinagar", "char_tarana", "char_svara"],
+      "provenance": "design_layer"
+    },
+    "toy_mirror": {
+      "toy_id": "toy_mirror",
+      "name": "Mirror (Darpana)",
+      "sanskrit": "दर्पण",
+      "category": "sensory_implement",
+      "description": "Polished metal or glass mirror used for self-observation and vulnerability amplification.",
+      "classical_source": "Classical; grounded in DARPANA_SADHANA kama",
+      "materials": ["polished_bronze", "silvered_glass", "polished_steel"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_13", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "DARPANA_SADHANA", "rel": "core_practice", "w": 0.9}
+      ],
+      "character_affinity": ["char_kumari_rati", "char_shrinagar", "char_reva"],
+      "provenance": "classical_source"
+    },
+    "toy_oil_lamp": {
+      "toy_id": "toy_oil_lamp",
+      "name": "Oil Lamp (Dipa)",
+      "sanskrit": "दीप",
+      "category": "pervertible",
+      "description": "Bronze or clay oil lamp for atmosphere, heat, and ritual illumination.",
+      "classical_source": "Classical; grounded in ritual and chandra-kala material",
+      "materials": ["bronze", "brass", "clay"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_41", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "DHUPAN", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_shrinagar", "char_sevda", "char_jahzara"],
+      "provenance": "classical_source"
+    },
+    "toy_incense": {
+      "toy_id": "toy_incense",
+      "name": "Incense (Dhupa)",
+      "sanskrit": "धूप",
+      "category": "pervertible",
+      "description": "Resin, wood, or paste incense burned for scent and ritual atmosphere.",
+      "classical_source": "Classical; grounded in DHUPAN kama and Persian/Kashmiri olfactory material",
+      "materials": ["frankincense", "oud", "sandalwood", "sal_resin", "espand"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_21", "rel": "adjacent", "w": 0.5},
+        {"kala": "kala_41", "rel": "reinforcing", "w": 0.6}
+      ],
+      "kama_links": [
+        {"kama": "DHUPAN", "rel": "core_practice", "w": 0.9}
+      ],
+      "character_affinity": ["char_shrinagar", "char_sevda", "char_reva"],
+      "provenance": "classical_source"
+    },
+    "toy_pearl_rope": {
+      "toy_id": "toy_pearl_rope",
+      "name": "Pearl Rope (Mukta Mala)",
+      "sanskrit": "मुक्ता माला",
+      "category": "restraint_hardware",
+      "description": "Long rope of pearls usable for binding, decoration, or sensory drag.",
+      "classical_source": "Design-layer; grounded in adornment and jewelry material",
+      "materials": ["pearl", "gold_wire"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_19", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "JEWELRY_CRAFTING", "rel": "adjacent", "w": 0.6},
+        {"kama": "SNANA_RATI", "rel": "adjacent", "w": 0.5}
+      ],
+      "character_affinity": ["char_shrinagar", "char_kumari_rati"],
+      "provenance": "design_layer"
+    },
+    "toy_silk_ribbon": {
+      "toy_id": "toy_silk_ribbon",
+      "name": "Silk Ribbon (Resham Patta)",
+      "sanskrit": "रेशम पट्ट",
+      "category": "restraint_hardware",
+      "description": "Wide silk ribbon for soft binding, blindfolding, or aesthetic drape.",
+      "classical_source": "Design-layer; grounded in textile and adornment material",
+      "materials": ["silk"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_17", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "VASTRA_VANCANA", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_shrinagar", "char_tarana"],
+      "provenance": "design_layer"
+    },
+    "toy_bell": {
+      "toy_id": "toy_bell",
+      "name": "Bell (Ghanta)",
+      "sanskrit": "घण्टा",
+      "category": "sensory_implement",
+      "description": "Small bronze bell attached to body or collar for auditory feedback.",
+      "classical_source": "Design-layer; grounded in dance and performance material",
+      "materials": ["bronze", "brass"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_53", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "TALA_PRASTARA", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_tarana", "char_svara"],
+      "provenance": "design_layer"
+    },
+    "toy_shell": {
+      "toy_id": "toy_shell",
+      "name": "Conch Shell (Shankha)",
+      "sanskrit": "शंख",
+      "category": "sensory_implement",
+      "description": "Blown conch shell for ritual sound and vibration.",
+      "classical_source": "Classical; grounded in Nada-Sadhana kama and ritual material",
+      "materials": ["conch_shell"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_2", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "NADA_SADHANA", "rel": "reinforcing", "w": 0.7}
+      ],
+      "character_affinity": ["char_svara", "char_reva"],
+      "provenance": "classical_source"
+    },
+    "toy_whip": {
+      "toy_id": "toy_whip",
+      "name": "Whip (Chabuka)",
+      "sanskrit": "चबुक",
+      "category": "impact_implement",
+      "description": "Single-tail leather whip for precision impact.",
+      "classical_source": "Design-layer; grounded in martial and discipline material",
+      "materials": ["leather", "silk"],
+      "risk_class": "high",
+      "kala_links": [
+        {"kala": "kala_32", "rel": "adjacent", "w": 0.6}
+      ],
+      "kama_links": [
+        {"kama": "TADANA_KALA_INFLICTING", "rel": "reinforcing", "w": 0.85}
+      ],
+      "character_affinity": ["char_altani", "char_anisa"],
+      "provenance": "design_layer"
+    },
+    "toy_net": {
+      "toy_id": "toy_net",
+      "name": "Net (Jala)",
+      "sanskrit": "जाल",
+      "category": "restraint_hardware",
+      "description": "Woven cord net for full-body enclosure and restriction.",
+      "classical_source": "Design-layer; grounded in containment material",
+      "materials": ["hemp", "silk", "leather_cord"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_25", "rel": "adjacent", "w": 0.6}
+      ],
+      "kama_links": [
+        {"kama": "SARVANGA_VESHTANA", "rel": "reinforcing", "w": 0.8},
+        {"kama": "AVARANA_RATI", "rel": "adjacent", "w": 0.7}
+      ],
+      "character_affinity": ["char_sevda", "char_roxana"],
+      "provenance": "design_layer"
+    },
+    "toy_chain": {
+      "toy_id": "toy_chain",
+      "name": "Chain (Shrinkhala)",
+      "sanskrit": "शृंखला",
+      "category": "restraint_hardware",
+      "description": "Metal chain for binding, leading, or restraint anchoring.",
+      "classical_source": "Design-layer; grounded in containment material",
+      "materials": ["iron", "bronze", "silver"],
+      "risk_class": "elevated",
+      "kala_links": [
+        {"kala": "kala_25", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "NISHCHALA_SADHANA", "rel": "adjacent", "w": 0.7},
+        {"kama": "APAN_MUDRA", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_sevda", "char_roxana", "char_malika"],
+      "provenance": "design_layer"
+    },
+    "toy_ledger": {
+      "toy_id": "toy_ledger",
+      "name": "Ledger (Pustaka)",
+      "sanskrit": "पुस्तक",
+      "category": "pervertible",
+      "description": "Written record used for accountability, punishment tracking, or protocol logging.",
+      "classical_source": "Design-layer; grounded in administrative and chronicle material",
+      "materials": ["palm_leaf", "paper", "cloth"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_10", "rel": "adjacent", "w": 0.5},
+        {"kala": "kala_11", "rel": "adjacent", "w": 0.5}
+      ],
+      "kama_links": [
+        {"kama": "NIBANDHA_PRACODANA", "rel": "core_practice", "w": 0.8},
+        {"kama": "PROTOCOL_ENFORCEMENT", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_anisa", "char_reva"],
+      "provenance": "design_layer"
+    },
+    "toy_mancala_board": {
+      "toy_id": "toy_mancala_board",
+      "name": "Mancala Board (Pallankuli)",
+      "sanskrit": "पल्लान्कुलि",
+      "category": "pervertible",
+      "description": "Strategic board game used for gambling, forfeits, or competition.",
+      "classical_source": "Classical; grounded in Akṣa and Pratibhā kalas",
+      "materials": ["wood", "ivory", "stone"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_62", "rel": "reinforcing", "w": 0.7},
+        {"kala": "kala_63", "rel": "reinforcing", "w": 0.7}
+      ],
+      "kama_links": [
+        {"kama": "VILASA_PRAHANANA", "rel": "adjacent", "w": 0.7}
+      ],
+      "character_affinity": ["char_anisa", "char_roxana"],
+      "provenance": "classical_source"
+    },
+    "toy_dice": {
+      "toy_id": "toy_dice",
+      "name": "Dice (Akṣa)",
+      "sanskrit": "अक्ष",
+      "category": "pervertible",
+      "description": "Carved dice for games of chance and forfeit.",
+      "classical_source": "Classical; grounded in Akṣa kala",
+      "materials": ["ivory", "wood", "stone"],
+      "risk_class": "standard",
+      "kala_links": [
+        {"kala": "kala_62", "rel": "core_practice", "w": 0.8}
+      ],
+      "kama_links": [
+        {"kama": "VILASA_PRAHANANA", "rel": "adjacent", "w": 0.65}
+      ],
+      "character_affinity": ["char_anisa"],
+      "provenance": "classical_source"
+    },
+    "toy_needle": {
+      "toy_id": "toy_needle",
+      "name": "Needle (Suchi)",
+      "sanskrit": "सूची",
+      "category": "pervertible",
+      "description": "Fine needle for temporary marking, piercing, or embroidery-adjacent play.",
+      "classical_source": "Design-layer; grounded in Sūtra-karma kala",
+      "materials": ["steel", "silver", "gold"],
+      "risk_class": "high",
+      "kala_links": [
+        {"kala": "kala_18", "rel": "adjacent", "w": 0.6}
+      ],
+      "kama_links": [
+        {"kama": "SHALAKA_SOUNDING", "rel": "adjacent", "w": 0.5},
+        {"kama": "RAKTA_SPARSHA", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_jahzara", "char_altani"],
+      "provenance": "design_layer"
+    },
+    "toy_salt": {
+      "toy_id": "toy_salt",
+      "name": "Salt (Lavana)",
+      "sanskrit": "लवण",
+      "category": "pervertible",
+      "description": "Coarse salt applied to skin or wounds for stinging sensation.",
+      "classical_source": "Design-layer; grounded in ayurvedic and culinary material",
+      "materials": ["rock_salt", "sea_salt"],
+      "risk_class": "high",
+      "kala_links": [],
+      "kama_links": [
+        {"kama": "RAKTA_SPARSHA", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_jahzara", "char_altani"],
+      "provenance": "design_layer"
+    },
+    "toy_madhuca": {
+      "toy_id": "toy_madhuca",
+      "name": "Madhuca Flower (Mahua)",
+      "sanskrit": "मधूक",
+      "category": "pervertible",
+      "description": "Fermented mahua flowers used in Santhal and Munda ritual contexts.",
+      "classical_source": "Upload-sourced; Santhal and Munda fermentation material",
+      "materials": ["mahua_flower"],
+      "risk_class": "standard",
+      "kala_links": [],
+      "kama_links": [
+        {"kama": "RASAYANA", "rel": "adjacent", "w": 0.6}
+      ],
+      "character_affinity": ["char_padma", "char_champa"],
+      "provenance": "upload_sourced"
+    },
+    "toy_sal_resin": {
+      "toy_id": "toy_sal_resin",
+      "name": "Sal Resin (Shala Niryasa)",
+      "sanskrit": "शाल निर्यास",
+      "category": "pervertible",
+      "description": "Sal tree resin burned for smoke and ritual grounding.",
+      "classical_source": "Upload-sourced; Munda ritual material",
+      "materials": ["sal_resin"],
+      "risk_class": "standard",
+      "kala_links": [],
+      "kama_links": [
+        {"kama": "DHUPAN", "rel": "adjacent", "w": 0.65}
+      ],
+      "character_affinity": ["char_champa", "char_sevda"],
+      "provenance": "upload_sourced"
+    },
+    "toy_espand": {
+      "toy_id": "toy_espand",
+      "name": "Wild Rue (Espand)",
+      "sanskrit": "एस्पन्द",
+      "category": "pervertible",
+      "description": "Wild rue seeds burned for purification and sharp smoke.",
+      "classical_source": "Upload-sourced; Persian and Turkic ritual material",
+      "materials": ["espand_seed"],
+      "risk_class": "standard",
+      "kala_links": [],
+      "kama_links": [
+        {"kama": "DHUPAN", "rel": "reinforcing", "w": 0.7}
+      ],
+      "character_affinity": ["char_roxana", "char_malika", "char_altani"],
+      "provenance": "upload_sourced"
+    }
+  },
+
+  "audit": {
+    "total_toys": 42,
+    "total_classical_source": 22,
+    "total_design_layer": 18,
+    "total_upload_sourced": 2,
+    "by_category": {
+      "apadravya": 5,
+      "sensory_implement": 7,
+      "restraint_hardware": 8,
+      "impact_implement": 6,
+      "penetrative_device": 5,
+      "pervertible": 11
+    },
+    "audit_passed": true
+  }
+}

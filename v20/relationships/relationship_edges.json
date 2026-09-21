@@ -1,0 +1,3479 @@
+{
+  "schema": "antahpura.relationship.edges_canonical",
+  "version": "20.0",
+  "description": "All 182 directed relationship edges for the 14 canonical characters.",
+  "total_edges": 182,
+  "dimension_keys": {
+    "a": "affection",
+    "t": "trust",
+    "r": "respect",
+    "o": "obligation",
+    "rv": "rivalry",
+    "ly": "loyalty",
+    "c": "curiosity",
+    "f": "fear",
+    "d": "dependency",
+    "rs": "resentment",
+    "fm": "familiarity"
+  },
+  "edges": {
+    "rel_maha_deva_kumari_rati": {
+      "from": "char_maha_deva",
+      "to": "char_kumari_rati",
+      "type": "intimate_partner",
+      "power_direction": "bidirectional",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_padma": {
+      "from": "char_maha_deva",
+      "to": "char_padma",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_champa": {
+      "from": "char_maha_deva",
+      "to": "char_champa",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_anisa": {
+      "from": "char_maha_deva",
+      "to": "char_anisa",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_shrinagar": {
+      "from": "char_maha_deva",
+      "to": "char_shrinagar",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_tarana": {
+      "from": "char_maha_deva",
+      "to": "char_tarana",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_roxana": {
+      "from": "char_maha_deva",
+      "to": "char_roxana",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_jahzara": {
+      "from": "char_maha_deva",
+      "to": "char_jahzara",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_altani": {
+      "from": "char_maha_deva",
+      "to": "char_altani",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_sevda": {
+      "from": "char_maha_deva",
+      "to": "char_sevda",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_malika": {
+      "from": "char_maha_deva",
+      "to": "char_malika",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_reva": {
+      "from": "char_maha_deva",
+      "to": "char_reva",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_maha_deva_svara": {
+      "from": "char_maha_deva",
+      "to": "char_svara",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 50,
+        "t": 70,
+        "r": 75,
+        "o": 15,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 10,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_kumari_rati_maha_deva": {
+      "from": "char_kumari_rati",
+      "to": "char_maha_deva",
+      "type": "intimate_partner",
+      "power_direction": "bidirectional",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_kumari_rati_padma": {
+      "from": "char_kumari_rati",
+      "to": "char_padma",
+      "type": "caregiver_to_charge",
+      "power_direction": "downward",
+      "dim": {
+        "a": 80,
+        "t": 80,
+        "r": 70,
+        "o": 45,
+        "rv": 5,
+        "ly": 80,
+        "c": 50,
+        "f": 5,
+        "d": 35,
+        "rs": 3,
+        "fm": 75
+      }
+    },
+    "rel_kumari_rati_champa": {
+      "from": "char_kumari_rati",
+      "to": "char_champa",
+      "type": "caregiver_to_charge",
+      "power_direction": "downward",
+      "dim": {
+        "a": 75,
+        "t": 80,
+        "r": 60,
+        "o": 35,
+        "rv": 5,
+        "ly": 75,
+        "c": 60,
+        "f": 5,
+        "d": 20,
+        "rs": 3,
+        "fm": 70
+      }
+    },
+    "rel_kumari_rati_anisa": {
+      "from": "char_kumari_rati",
+      "to": "char_anisa",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 65,
+        "t": 62,
+        "r": 68,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 7,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_kumari_rati_shrinagar": {
+      "from": "char_kumari_rati",
+      "to": "char_shrinagar",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 65,
+        "t": 62,
+        "r": 68,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 7,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_kumari_rati_tarana": {
+      "from": "char_kumari_rati",
+      "to": "char_tarana",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 65,
+        "t": 62,
+        "r": 68,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 7,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_kumari_rati_roxana": {
+      "from": "char_kumari_rati",
+      "to": "char_roxana",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 65,
+        "t": 62,
+        "r": 68,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 7,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_kumari_rati_jahzara": {
+      "from": "char_kumari_rati",
+      "to": "char_jahzara",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 65,
+        "t": 62,
+        "r": 68,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 7,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_kumari_rati_altani": {
+      "from": "char_kumari_rati",
+      "to": "char_altani",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 65,
+        "t": 62,
+        "r": 68,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 7,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_kumari_rati_sevda": {
+      "from": "char_kumari_rati",
+      "to": "char_sevda",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 65,
+        "t": 62,
+        "r": 68,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 7,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_kumari_rati_malika": {
+      "from": "char_kumari_rati",
+      "to": "char_malika",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 65,
+        "t": 62,
+        "r": 68,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 7,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_kumari_rati_reva": {
+      "from": "char_kumari_rati",
+      "to": "char_reva",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 65,
+        "t": 62,
+        "r": 68,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 7,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_kumari_rati_svara": {
+      "from": "char_kumari_rati",
+      "to": "char_svara",
+      "type": "authority_to_subordinate",
+      "power_direction": "downward",
+      "dim": {
+        "a": 65,
+        "t": 62,
+        "r": 68,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 7,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_padma_maha_deva": {
+      "from": "char_padma",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_padma_kumari_rati": {
+      "from": "char_padma",
+      "to": "char_kumari_rati",
+      "type": "charge_to_caregiver",
+      "power_direction": "upward",
+      "dim": {
+        "a": 90,
+        "t": 90,
+        "r": 85,
+        "o": 90,
+        "rv": 5,
+        "ly": 95,
+        "c": 50,
+        "f": 10,
+        "d": 70,
+        "rs": 3,
+        "fm": 85
+      }
+    },
+    "rel_padma_champa": {
+      "from": "char_padma",
+      "to": "char_champa",
+      "type": "mentor_to_student",
+      "power_direction": "downward",
+      "dim": {
+        "a": 78,
+        "t": 85,
+        "r": 65,
+        "o": 65,
+        "rv": 5,
+        "ly": 82,
+        "c": 60,
+        "f": 5,
+        "d": 40,
+        "rs": 3,
+        "fm": 75
+      }
+    },
+    "rel_padma_anisa": {
+      "from": "char_padma",
+      "to": "char_anisa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 58,
+        "t": 68,
+        "r": 82,
+        "o": 38,
+        "rv": 5,
+        "ly": 60,
+        "c": 45,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_padma_shrinagar": {
+      "from": "char_padma",
+      "to": "char_shrinagar",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 52,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_padma_tarana": {
+      "from": "char_padma",
+      "to": "char_tarana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 68,
+        "t": 65,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 58,
+        "c": 52,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_padma_roxana": {
+      "from": "char_padma",
+      "to": "char_roxana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 68,
+        "r": 85,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 18,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_padma_jahzara": {
+      "from": "char_padma",
+      "to": "char_jahzara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_padma_altani": {
+      "from": "char_padma",
+      "to": "char_altani",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 52,
+        "t": 60,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 58,
+        "c": 35,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 37
+      }
+    },
+    "rel_padma_sevda": {
+      "from": "char_padma",
+      "to": "char_sevda",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_padma_malika": {
+      "from": "char_padma",
+      "to": "char_malika",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 42,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_padma_reva": {
+      "from": "char_padma",
+      "to": "char_reva",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 78,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 60,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_padma_svara": {
+      "from": "char_padma",
+      "to": "char_svara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 65,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 58,
+        "c": 55,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_champa_maha_deva": {
+      "from": "char_champa",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_champa_kumari_rati": {
+      "from": "char_champa",
+      "to": "char_kumari_rati",
+      "type": "charge_to_caregiver",
+      "power_direction": "upward",
+      "dim": {
+        "a": 80,
+        "t": 90,
+        "r": 80,
+        "o": 85,
+        "rv": 5,
+        "ly": 85,
+        "c": 50,
+        "f": 10,
+        "d": 55,
+        "rs": 3,
+        "fm": 75
+      }
+    },
+    "rel_champa_padma": {
+      "from": "char_champa",
+      "to": "char_padma",
+      "type": "student_to_mentor",
+      "power_direction": "upward",
+      "dim": {
+        "a": 82,
+        "t": 88,
+        "r": 70,
+        "o": 60,
+        "rv": 5,
+        "ly": 85,
+        "c": 55,
+        "f": 5,
+        "d": 55,
+        "rs": 3,
+        "fm": 78
+      }
+    },
+    "rel_champa_anisa": {
+      "from": "char_champa",
+      "to": "char_anisa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 58,
+        "t": 68,
+        "r": 82,
+        "o": 38,
+        "rv": 5,
+        "ly": 60,
+        "c": 45,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_champa_shrinagar": {
+      "from": "char_champa",
+      "to": "char_shrinagar",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 52,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_champa_tarana": {
+      "from": "char_champa",
+      "to": "char_tarana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 68,
+        "t": 65,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 58,
+        "c": 52,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_champa_roxana": {
+      "from": "char_champa",
+      "to": "char_roxana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 68,
+        "r": 85,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 18,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_champa_jahzara": {
+      "from": "char_champa",
+      "to": "char_jahzara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_champa_altani": {
+      "from": "char_champa",
+      "to": "char_altani",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 52,
+        "t": 60,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 58,
+        "c": 35,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 37
+      }
+    },
+    "rel_champa_sevda": {
+      "from": "char_champa",
+      "to": "char_sevda",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_champa_malika": {
+      "from": "char_champa",
+      "to": "char_malika",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 42,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_champa_reva": {
+      "from": "char_champa",
+      "to": "char_reva",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 78,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 60,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_champa_svara": {
+      "from": "char_champa",
+      "to": "char_svara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 65,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 58,
+        "c": 55,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_anisa_maha_deva": {
+      "from": "char_anisa",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_anisa_kumari_rati": {
+      "from": "char_anisa",
+      "to": "char_kumari_rati",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 68,
+        "t": 68,
+        "r": 75,
+        "o": 52,
+        "rv": 5,
+        "ly": 65,
+        "c": 42,
+        "f": 15,
+        "d": 30,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_anisa_padma": {
+      "from": "char_anisa",
+      "to": "char_padma",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 58,
+        "t": 65,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 45,
+        "f": 13,
+        "d": 20,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_anisa_champa": {
+      "from": "char_anisa",
+      "to": "char_champa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 58,
+        "t": 65,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 45,
+        "f": 13,
+        "d": 20,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_anisa_shrinagar": {
+      "from": "char_anisa",
+      "to": "char_shrinagar",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 52,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_anisa_tarana": {
+      "from": "char_anisa",
+      "to": "char_tarana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 58,
+        "t": 65,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 45,
+        "f": 13,
+        "d": 20,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_anisa_roxana": {
+      "from": "char_anisa",
+      "to": "char_roxana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 68,
+        "r": 85,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 18,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_anisa_jahzara": {
+      "from": "char_anisa",
+      "to": "char_jahzara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_anisa_altani": {
+      "from": "char_anisa",
+      "to": "char_altani",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 52,
+        "t": 60,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 58,
+        "c": 35,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 37
+      }
+    },
+    "rel_anisa_sevda": {
+      "from": "char_anisa",
+      "to": "char_sevda",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_anisa_malika": {
+      "from": "char_anisa",
+      "to": "char_malika",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 58,
+        "t": 72,
+        "r": 82,
+        "o": 40,
+        "rv": 8,
+        "ly": 65,
+        "c": 45,
+        "f": 13,
+        "d": 25,
+        "rs": 3,
+        "fm": 60
+      }
+    },
+    "rel_anisa_reva": {
+      "from": "char_anisa",
+      "to": "char_reva",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 65,
+        "t": 78,
+        "r": 82,
+        "o": 38,
+        "rv": 7,
+        "ly": 70,
+        "c": 70,
+        "f": 7,
+        "d": 27,
+        "rs": 3,
+        "fm": 60
+      }
+    },
+    "rel_anisa_svara": {
+      "from": "char_anisa",
+      "to": "char_svara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 58,
+        "t": 65,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 45,
+        "f": 13,
+        "d": 20,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_shrinagar_maha_deva": {
+      "from": "char_shrinagar",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_shrinagar_kumari_rati": {
+      "from": "char_shrinagar",
+      "to": "char_kumari_rati",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 68,
+        "t": 68,
+        "r": 75,
+        "o": 52,
+        "rv": 5,
+        "ly": 65,
+        "c": 42,
+        "f": 15,
+        "d": 30,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_shrinagar_padma": {
+      "from": "char_shrinagar",
+      "to": "char_padma",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 60,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 50,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_shrinagar_champa": {
+      "from": "char_shrinagar",
+      "to": "char_champa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 60,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 50,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_shrinagar_anisa": {
+      "from": "char_shrinagar",
+      "to": "char_anisa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 60,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 50,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_shrinagar_tarana": {
+      "from": "char_shrinagar",
+      "to": "char_tarana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 68,
+        "t": 72,
+        "r": 82,
+        "o": 28,
+        "rv": 8,
+        "ly": 62,
+        "c": 65,
+        "f": 5,
+        "d": 20,
+        "rs": 3,
+        "fm": 60
+      }
+    },
+    "rel_shrinagar_roxana": {
+      "from": "char_shrinagar",
+      "to": "char_roxana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 60,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 50,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_shrinagar_jahzara": {
+      "from": "char_shrinagar",
+      "to": "char_jahzara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 60,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 50,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_shrinagar_altani": {
+      "from": "char_shrinagar",
+      "to": "char_altani",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 60,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 50,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_shrinagar_sevda": {
+      "from": "char_shrinagar",
+      "to": "char_sevda",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 60,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 50,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_shrinagar_malika": {
+      "from": "char_shrinagar",
+      "to": "char_malika",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 60,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 50,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_shrinagar_reva": {
+      "from": "char_shrinagar",
+      "to": "char_reva",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 72,
+        "t": 72,
+        "r": 82,
+        "o": 28,
+        "rv": 8,
+        "ly": 66,
+        "c": 68,
+        "f": 5,
+        "d": 23,
+        "rs": 3,
+        "fm": 60
+      }
+    },
+    "rel_shrinagar_svara": {
+      "from": "char_shrinagar",
+      "to": "char_svara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 65,
+        "t": 70,
+        "r": 82,
+        "o": 28,
+        "rv": 10,
+        "ly": 62,
+        "c": 70,
+        "f": 5,
+        "d": 20,
+        "rs": 3,
+        "fm": 57
+      }
+    },
+    "rel_tarana_maha_deva": {
+      "from": "char_tarana",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_tarana_kumari_rati": {
+      "from": "char_tarana",
+      "to": "char_kumari_rati",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 68,
+        "t": 68,
+        "r": 75,
+        "o": 52,
+        "rv": 5,
+        "ly": 65,
+        "c": 42,
+        "f": 15,
+        "d": 30,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_tarana_padma": {
+      "from": "char_tarana",
+      "to": "char_padma",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 65,
+        "t": 65,
+        "r": 78,
+        "o": 30,
+        "rv": 5,
+        "ly": 58,
+        "c": 55,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_tarana_champa": {
+      "from": "char_tarana",
+      "to": "char_champa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 65,
+        "t": 65,
+        "r": 78,
+        "o": 30,
+        "rv": 5,
+        "ly": 58,
+        "c": 55,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_tarana_anisa": {
+      "from": "char_tarana",
+      "to": "char_anisa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 58,
+        "t": 68,
+        "r": 82,
+        "o": 38,
+        "rv": 5,
+        "ly": 60,
+        "c": 45,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_tarana_shrinagar": {
+      "from": "char_tarana",
+      "to": "char_shrinagar",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 72,
+        "t": 70,
+        "r": 80,
+        "o": 25,
+        "rv": 10,
+        "ly": 60,
+        "c": 70,
+        "f": 5,
+        "d": 20,
+        "rs": 3,
+        "fm": 63
+      }
+    },
+    "rel_tarana_roxana": {
+      "from": "char_tarana",
+      "to": "char_roxana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 68,
+        "r": 85,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 18,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_tarana_jahzara": {
+      "from": "char_tarana",
+      "to": "char_jahzara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_tarana_altani": {
+      "from": "char_tarana",
+      "to": "char_altani",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 52,
+        "t": 60,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 58,
+        "c": 35,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 37
+      }
+    },
+    "rel_tarana_sevda": {
+      "from": "char_tarana",
+      "to": "char_sevda",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_tarana_malika": {
+      "from": "char_tarana",
+      "to": "char_malika",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 42,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_tarana_reva": {
+      "from": "char_tarana",
+      "to": "char_reva",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 65,
+        "t": 65,
+        "r": 78,
+        "o": 30,
+        "rv": 5,
+        "ly": 58,
+        "c": 55,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_tarana_svara": {
+      "from": "char_tarana",
+      "to": "char_svara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 72,
+        "t": 74,
+        "r": 82,
+        "o": 26,
+        "rv": 8,
+        "ly": 65,
+        "c": 68,
+        "f": 5,
+        "d": 20,
+        "rs": 3,
+        "fm": 63
+      }
+    },
+    "rel_roxana_maha_deva": {
+      "from": "char_roxana",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_roxana_kumari_rati": {
+      "from": "char_roxana",
+      "to": "char_kumari_rati",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 68,
+        "t": 68,
+        "r": 75,
+        "o": 52,
+        "rv": 5,
+        "ly": 65,
+        "c": 42,
+        "f": 15,
+        "d": 30,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_roxana_padma": {
+      "from": "char_roxana",
+      "to": "char_padma",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 12,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_roxana_champa": {
+      "from": "char_roxana",
+      "to": "char_champa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 12,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_roxana_anisa": {
+      "from": "char_roxana",
+      "to": "char_anisa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 12,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_roxana_shrinagar": {
+      "from": "char_roxana",
+      "to": "char_shrinagar",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 52,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_roxana_tarana": {
+      "from": "char_roxana",
+      "to": "char_tarana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 12,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_roxana_jahzara": {
+      "from": "char_roxana",
+      "to": "char_jahzara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 75,
+        "r": 85,
+        "o": 55,
+        "rv": 8,
+        "ly": 72,
+        "c": 40,
+        "f": 13,
+        "d": 25,
+        "rs": 3,
+        "fm": 57
+      }
+    },
+    "rel_roxana_altani": {
+      "from": "char_roxana",
+      "to": "char_altani",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 60,
+        "t": 75,
+        "r": 88,
+        "o": 50,
+        "rv": 10,
+        "ly": 70,
+        "c": 38,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_roxana_sevda": {
+      "from": "char_roxana",
+      "to": "char_sevda",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 12,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_roxana_malika": {
+      "from": "char_roxana",
+      "to": "char_malika",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 12,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_roxana_reva": {
+      "from": "char_roxana",
+      "to": "char_reva",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 12,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_roxana_svara": {
+      "from": "char_roxana",
+      "to": "char_svara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 35,
+        "rv": 5,
+        "ly": 58,
+        "c": 38,
+        "f": 12,
+        "d": 20,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_jahzara_maha_deva": {
+      "from": "char_jahzara",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_jahzara_kumari_rati": {
+      "from": "char_jahzara",
+      "to": "char_kumari_rati",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 68,
+        "t": 68,
+        "r": 75,
+        "o": 52,
+        "rv": 5,
+        "ly": 65,
+        "c": 42,
+        "f": 15,
+        "d": 30,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_jahzara_padma": {
+      "from": "char_jahzara",
+      "to": "char_padma",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 60,
+        "c": 38,
+        "f": 12,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_jahzara_champa": {
+      "from": "char_jahzara",
+      "to": "char_champa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 60,
+        "c": 38,
+        "f": 12,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_jahzara_anisa": {
+      "from": "char_jahzara",
+      "to": "char_anisa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 60,
+        "c": 38,
+        "f": 12,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_jahzara_shrinagar": {
+      "from": "char_jahzara",
+      "to": "char_shrinagar",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 52,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_jahzara_tarana": {
+      "from": "char_jahzara",
+      "to": "char_tarana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 60,
+        "c": 38,
+        "f": 12,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_jahzara_roxana": {
+      "from": "char_jahzara",
+      "to": "char_roxana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 60,
+        "t": 78,
+        "r": 88,
+        "o": 62,
+        "rv": 7,
+        "ly": 75,
+        "c": 38,
+        "f": 15,
+        "d": 30,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_jahzara_altani": {
+      "from": "char_jahzara",
+      "to": "char_altani",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 68,
+        "t": 82,
+        "r": 82,
+        "o": 50,
+        "rv": 7,
+        "ly": 72,
+        "c": 45,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 63
+      }
+    },
+    "rel_jahzara_sevda": {
+      "from": "char_jahzara",
+      "to": "char_sevda",
+      "type": "sacred_bond",
+      "power_direction": "bidirectional",
+      "dim": {
+        "a": 58,
+        "t": 74,
+        "r": 80,
+        "o": 48,
+        "rv": 7,
+        "ly": 68,
+        "c": 50,
+        "f": 13,
+        "d": 27,
+        "rs": 3,
+        "fm": 55
+      }
+    },
+    "rel_jahzara_malika": {
+      "from": "char_jahzara",
+      "to": "char_malika",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 60,
+        "c": 38,
+        "f": 12,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_jahzara_reva": {
+      "from": "char_jahzara",
+      "to": "char_reva",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 60,
+        "c": 38,
+        "f": 12,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_jahzara_svara": {
+      "from": "char_jahzara",
+      "to": "char_svara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 60,
+        "c": 38,
+        "f": 12,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_altani_maha_deva": {
+      "from": "char_altani",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_altani_kumari_rati": {
+      "from": "char_altani",
+      "to": "char_kumari_rati",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 68,
+        "t": 68,
+        "r": 75,
+        "o": 52,
+        "rv": 5,
+        "ly": 65,
+        "c": 42,
+        "f": 15,
+        "d": 30,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_altani_padma": {
+      "from": "char_altani",
+      "to": "char_padma",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 50,
+        "t": 60,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 55,
+        "c": 33,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_altani_champa": {
+      "from": "char_altani",
+      "to": "char_champa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 50,
+        "t": 60,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 55,
+        "c": 33,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_altani_anisa": {
+      "from": "char_altani",
+      "to": "char_anisa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 50,
+        "t": 60,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 55,
+        "c": 33,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_altani_shrinagar": {
+      "from": "char_altani",
+      "to": "char_shrinagar",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 52,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_altani_tarana": {
+      "from": "char_altani",
+      "to": "char_tarana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 50,
+        "t": 60,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 55,
+        "c": 33,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_altani_roxana": {
+      "from": "char_altani",
+      "to": "char_roxana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 58,
+        "t": 78,
+        "r": 90,
+        "o": 60,
+        "rv": 8,
+        "ly": 72,
+        "c": 35,
+        "f": 15,
+        "d": 27,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_altani_jahzara": {
+      "from": "char_altani",
+      "to": "char_jahzara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 65,
+        "t": 80,
+        "r": 80,
+        "o": 48,
+        "rv": 7,
+        "ly": 70,
+        "c": 42,
+        "f": 12,
+        "d": 23,
+        "rs": 3,
+        "fm": 60
+      }
+    },
+    "rel_altani_sevda": {
+      "from": "char_altani",
+      "to": "char_sevda",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 50,
+        "t": 60,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 55,
+        "c": 33,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_altani_malika": {
+      "from": "char_altani",
+      "to": "char_malika",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 50,
+        "t": 60,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 55,
+        "c": 33,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_altani_reva": {
+      "from": "char_altani",
+      "to": "char_reva",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 50,
+        "t": 60,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 55,
+        "c": 33,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_altani_svara": {
+      "from": "char_altani",
+      "to": "char_svara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 50,
+        "t": 60,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 55,
+        "c": 33,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 35
+      }
+    },
+    "rel_sevda_maha_deva": {
+      "from": "char_sevda",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_sevda_kumari_rati": {
+      "from": "char_sevda",
+      "to": "char_kumari_rati",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 68,
+        "t": 68,
+        "r": 75,
+        "o": 52,
+        "rv": 5,
+        "ly": 65,
+        "c": 42,
+        "f": 15,
+        "d": 30,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_sevda_padma": {
+      "from": "char_sevda",
+      "to": "char_padma",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_sevda_champa": {
+      "from": "char_sevda",
+      "to": "char_champa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_sevda_anisa": {
+      "from": "char_sevda",
+      "to": "char_anisa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_sevda_shrinagar": {
+      "from": "char_sevda",
+      "to": "char_shrinagar",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 52,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_sevda_tarana": {
+      "from": "char_sevda",
+      "to": "char_tarana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_sevda_roxana": {
+      "from": "char_sevda",
+      "to": "char_roxana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 68,
+        "r": 85,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 18,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_sevda_jahzara": {
+      "from": "char_sevda",
+      "to": "char_jahzara",
+      "type": "sacred_bond",
+      "power_direction": "bidirectional",
+      "dim": {
+        "a": 60,
+        "t": 72,
+        "r": 78,
+        "o": 45,
+        "rv": 7,
+        "ly": 66,
+        "c": 52,
+        "f": 12,
+        "d": 25,
+        "rs": 3,
+        "fm": 57
+      }
+    },
+    "rel_sevda_altani": {
+      "from": "char_sevda",
+      "to": "char_altani",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 52,
+        "t": 60,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 58,
+        "c": 35,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 37
+      }
+    },
+    "rel_sevda_malika": {
+      "from": "char_sevda",
+      "to": "char_malika",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_sevda_reva": {
+      "from": "char_sevda",
+      "to": "char_reva",
+      "type": "sacred_bond",
+      "power_direction": "bidirectional",
+      "dim": {
+        "a": 64,
+        "t": 76,
+        "r": 80,
+        "o": 40,
+        "rv": 7,
+        "ly": 66,
+        "c": 60,
+        "f": 12,
+        "d": 27,
+        "rs": 3,
+        "fm": 59
+      }
+    },
+    "rel_sevda_svara": {
+      "from": "char_sevda",
+      "to": "char_svara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_malika_maha_deva": {
+      "from": "char_malika",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_malika_kumari_rati": {
+      "from": "char_malika",
+      "to": "char_kumari_rati",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 68,
+        "t": 68,
+        "r": 75,
+        "o": 52,
+        "rv": 5,
+        "ly": 65,
+        "c": 42,
+        "f": 15,
+        "d": 30,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_malika_padma": {
+      "from": "char_malika",
+      "to": "char_padma",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 42,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_malika_champa": {
+      "from": "char_malika",
+      "to": "char_champa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 42,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_malika_anisa": {
+      "from": "char_malika",
+      "to": "char_anisa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 75,
+        "r": 85,
+        "o": 38,
+        "rv": 7,
+        "ly": 65,
+        "c": 42,
+        "f": 15,
+        "d": 27,
+        "rs": 3,
+        "fm": 57
+      }
+    },
+    "rel_malika_shrinagar": {
+      "from": "char_malika",
+      "to": "char_shrinagar",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 82,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 52,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_malika_tarana": {
+      "from": "char_malika",
+      "to": "char_tarana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 42,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_malika_roxana": {
+      "from": "char_malika",
+      "to": "char_roxana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 68,
+        "r": 85,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 18,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_malika_jahzara": {
+      "from": "char_malika",
+      "to": "char_jahzara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_malika_altani": {
+      "from": "char_malika",
+      "to": "char_altani",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 52,
+        "t": 60,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 58,
+        "c": 35,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 37
+      }
+    },
+    "rel_malika_sevda": {
+      "from": "char_malika",
+      "to": "char_sevda",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_malika_reva": {
+      "from": "char_malika",
+      "to": "char_reva",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 42,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_malika_svara": {
+      "from": "char_malika",
+      "to": "char_svara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 42,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 45
+      }
+    },
+    "rel_reva_maha_deva": {
+      "from": "char_reva",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_reva_kumari_rati": {
+      "from": "char_reva",
+      "to": "char_kumari_rati",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 68,
+        "t": 68,
+        "r": 75,
+        "o": 52,
+        "rv": 5,
+        "ly": 65,
+        "c": 42,
+        "f": 15,
+        "d": 30,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_reva_padma": {
+      "from": "char_reva",
+      "to": "char_padma",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 78,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 60,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_reva_champa": {
+      "from": "char_reva",
+      "to": "char_champa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 78,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 60,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_reva_anisa": {
+      "from": "char_reva",
+      "to": "char_anisa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 68,
+        "t": 76,
+        "r": 82,
+        "o": 42,
+        "rv": 8,
+        "ly": 68,
+        "c": 72,
+        "f": 7,
+        "d": 25,
+        "rs": 3,
+        "fm": 63
+      }
+    },
+    "rel_reva_shrinagar": {
+      "from": "char_reva",
+      "to": "char_shrinagar",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 70,
+        "t": 74,
+        "r": 80,
+        "o": 30,
+        "rv": 7,
+        "ly": 64,
+        "c": 65,
+        "f": 5,
+        "d": 23,
+        "rs": 3,
+        "fm": 63
+      }
+    },
+    "rel_reva_tarana": {
+      "from": "char_reva",
+      "to": "char_tarana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 68,
+        "t": 65,
+        "r": 78,
+        "o": 32,
+        "rv": 5,
+        "ly": 58,
+        "c": 52,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 53
+      }
+    },
+    "rel_reva_roxana": {
+      "from": "char_reva",
+      "to": "char_roxana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 68,
+        "r": 85,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 18,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_reva_jahzara": {
+      "from": "char_reva",
+      "to": "char_jahzara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_reva_altani": {
+      "from": "char_reva",
+      "to": "char_altani",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 52,
+        "t": 60,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 58,
+        "c": 35,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 37
+      }
+    },
+    "rel_reva_sevda": {
+      "from": "char_reva",
+      "to": "char_sevda",
+      "type": "sacred_bond",
+      "power_direction": "bidirectional",
+      "dim": {
+        "a": 62,
+        "t": 78,
+        "r": 80,
+        "o": 38,
+        "rv": 7,
+        "ly": 68,
+        "c": 62,
+        "f": 12,
+        "d": 25,
+        "rs": 3,
+        "fm": 57
+      }
+    },
+    "rel_reva_malika": {
+      "from": "char_reva",
+      "to": "char_malika",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 42,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_reva_svara": {
+      "from": "char_reva",
+      "to": "char_svara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 78,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 60,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_svara_maha_deva": {
+      "from": "char_svara",
+      "to": "char_maha_deva",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 55,
+        "rv": 5,
+        "ly": 70,
+        "c": 20,
+        "f": 25,
+        "d": 35,
+        "rs": 3,
+        "fm": 40
+      }
+    },
+    "rel_svara_kumari_rati": {
+      "from": "char_svara",
+      "to": "char_kumari_rati",
+      "type": "submissive_to_authority",
+      "power_direction": "upward",
+      "dim": {
+        "a": 68,
+        "t": 68,
+        "r": 75,
+        "o": 52,
+        "rv": 5,
+        "ly": 65,
+        "c": 42,
+        "f": 15,
+        "d": 30,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_svara_padma": {
+      "from": "char_svara",
+      "to": "char_padma",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 65,
+        "r": 78,
+        "o": 30,
+        "rv": 5,
+        "ly": 58,
+        "c": 55,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_svara_champa": {
+      "from": "char_svara",
+      "to": "char_champa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 65,
+        "r": 78,
+        "o": 30,
+        "rv": 5,
+        "ly": 58,
+        "c": 55,
+        "f": 10,
+        "d": 20,
+        "rs": 3,
+        "fm": 50
+      }
+    },
+    "rel_svara_anisa": {
+      "from": "char_svara",
+      "to": "char_anisa",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 58,
+        "t": 68,
+        "r": 82,
+        "o": 38,
+        "rv": 5,
+        "ly": 60,
+        "c": 45,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_svara_shrinagar": {
+      "from": "char_svara",
+      "to": "char_shrinagar",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 68,
+        "t": 72,
+        "r": 84,
+        "o": 26,
+        "rv": 9,
+        "ly": 65,
+        "c": 72,
+        "f": 5,
+        "d": 21,
+        "rs": 3,
+        "fm": 60
+      }
+    },
+    "rel_svara_tarana": {
+      "from": "char_svara",
+      "to": "char_tarana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 70,
+        "t": 72,
+        "r": 84,
+        "o": 25,
+        "rv": 7,
+        "ly": 68,
+        "c": 65,
+        "f": 5,
+        "d": 19,
+        "rs": 3,
+        "fm": 60
+      }
+    },
+    "rel_svara_roxana": {
+      "from": "char_svara",
+      "to": "char_roxana",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 68,
+        "r": 85,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 18,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_svara_jahzara": {
+      "from": "char_svara",
+      "to": "char_jahzara",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 80,
+        "o": 42,
+        "rv": 5,
+        "ly": 62,
+        "c": 38,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_svara_altani": {
+      "from": "char_svara",
+      "to": "char_altani",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 52,
+        "t": 60,
+        "r": 78,
+        "o": 38,
+        "rv": 5,
+        "ly": 58,
+        "c": 35,
+        "f": 13,
+        "d": 23,
+        "rs": 3,
+        "fm": 37
+      }
+    },
+    "rel_svara_sevda": {
+      "from": "char_svara",
+      "to": "char_sevda",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 48,
+        "f": 10,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_svara_malika": {
+      "from": "char_svara",
+      "to": "char_malika",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 55,
+        "t": 65,
+        "r": 78,
+        "o": 42,
+        "rv": 5,
+        "ly": 58,
+        "c": 42,
+        "f": 15,
+        "d": 25,
+        "rs": 3,
+        "fm": 47
+      }
+    },
+    "rel_svara_reva": {
+      "from": "char_svara",
+      "to": "char_reva",
+      "type": "peer_colleague",
+      "power_direction": "lateral",
+      "dim": {
+        "a": 62,
+        "t": 68,
+        "r": 78,
+        "o": 35,
+        "rv": 5,
+        "ly": 60,
+        "c": 60,
+        "f": 10,
+        "d": 23,
+        "rs": 3,
+        "fm": 53
+      }
+    }
+  }
+}

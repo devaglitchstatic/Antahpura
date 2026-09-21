@@ -1,0 +1,47 @@
+{
+  "schema": "antahpura.quest.rewards",
+  "version": "20.0",
+  "total_categories": 10,
+  "categories": {
+    "kala_mastery": {
+      "effect": "Adds mastery points to one or more kalas",
+      "example": "+2 mastery to kala_granthana"
+    },
+    "kama_affinity": {
+      "effect": "Advances one or more kamas in lifecycle",
+      "example": "GRANTHI_KALA advances from mentionable to discussable"
+    },
+    "relationship_delta": {
+      "effect": "Modifies dimensions on specific edges",
+      "example": "+5 trust with char_roxana"
+    },
+    "institutional_reputation": {
+      "effect": "Changes institutional reputation",
+      "example": "+2 to inst_ritual_chorus"
+    },
+    "access_permission": {
+      "effect": "Unlocks a location or increases access level",
+      "example": "Unlocks loc_hidden_archive"
+    },
+    "secret_discovery": {
+      "effect": "Reveals a specific secret",
+      "example": "Reveals secret_hidden_archive_1"
+    },
+    "item_acquisition": {
+      "effect": "Grants an item or artifact",
+      "example": "Grants cipher key"
+    },
+    "scene_unlock": {
+      "effect": "Unlocks a scene template",
+      "example": "Unlocks scene_predynastic_ritual"
+    },
+    "quest_unlock": {
+      "effect": "Opens a follow-up quest",
+      "example": "Unlocks quest_full_cipher"
+    },
+    "avn_gallery_unlock": {
+      "effect": "Unlocks AVN asset for gallery",
+      "example": "Unlocks asset patala_revelation"
+    }
+  }
+}

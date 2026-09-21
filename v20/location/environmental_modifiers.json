@@ -1,0 +1,23 @@
+{
+  "schema": "antahpura.location.environmental_modifiers",
+  "version": "20.0",
+  "modifiers": {
+    "description": "Modifiers apply to scene rolls, relationship dynamics, and kala/kama effectiveness.",
+    "types": {
+      "privacy_modifier": "Affects how much can be discussed or done without observation",
+      "intimacy_amplifier": "Affects emotional closeness and vulnerability",
+      "authority_amplifier": "Affects power dynamics and command effectiveness",
+      "vigilance_amplifier": "Affects alertness and perception",
+      "intensity_amplifier": "Affects emotional and physical intensity of scenes",
+      "sensory_amplifier": "Affects taste, smell, touch, sound",
+      "aesthetic_amplifier": "Affects appreciation of beauty and refinement",
+      "rituality_amplifier": "Affects ceremonial gravity and formality",
+      "discipline_amplifier": "Affects focus, restraint, precision",
+      "isolation_modifier": "Affects sense of separation from others",
+      "contemplation_amplifier": "Affects depth of thought and reflection",
+      "performance_amplifier": "Affects display and public presence",
+      "acoustic_amplifier": "Affects sound-based scenes",
+      "intimidation_modifier": "Affects fear and awe"
+    }
+  }
+}

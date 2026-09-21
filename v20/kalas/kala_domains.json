@@ -1,0 +1,89 @@
+{
+  "schema": "antahpura.kala_domains",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "source": "kala_system_v20.json → domains",
+  "total_domains": 6,
+  "total_kalas": 64,
+  "domains": {
+    "domain_1_vocal_poetic": {
+      "name": "Vocal & Poetic Arts",
+      "patron": "char_svara",
+      "minigames": ["Rhythm", "Reflection"],
+      "kala_range": [1, 12],
+      "kala_count": 12,
+      "avn_asset_category": "audio_visual_vocal",
+      "multiplayer_role": "primary_performance",
+      "member_kalas": [
+        "kala_1", "kala_2", "kala_3", "kala_4", "kala_5", "kala_6",
+        "kala_7", "kala_8", "kala_9", "kala_10", "kala_11", "kala_12"
+      ]
+    },
+    "domain_2_visual_adornment": {
+      "name": "Visual, Adornment & Crafts",
+      "patron": "char_shrinagar",
+      "minigames": ["Precision", "Perception"],
+      "kala_range": [13, 28],
+      "kala_count": 16,
+      "avn_asset_category": "craft_visual_gallery",
+      "multiplayer_role": "crafting_cooperative",
+      "absorbed_arts_note": "Hasta-laghava (sleight of hand / manual dexterity, classical art 23) is absorbed into the general craft/precision skills of this domain rather than existing as a standalone Kala entry. It is expressed through Kalas 16 (Rekhā), 18 (Sūtra-karma), 19 (Ābharaṇa), and 25 (Granthana).",
+      "member_kalas": [
+        "kala_13", "kala_14", "kala_15", "kala_16", "kala_17", "kala_18",
+        "kala_19", "kala_20", "kala_21", "kala_22", "kala_23", "kala_24",
+        "kala_25", "kala_26", "kala_27", "kala_28"
+      ]
+    },
+    "domain_3_martial_physical": {
+      "name": "Martial, Physical & Strategic Arts",
+      "patron": "char_roxana",
+      "minigames": ["Endurance", "Coordination", "Sequence"],
+      "kala_range": [29, 40],
+      "kala_count": 12,
+      "avn_asset_category": "action_sequence",
+      "multiplayer_role": "competitive_pvp",
+      "member_kalas": [
+        "kala_29", "kala_30", "kala_31", "kala_32", "kala_33", "kala_34",
+        "kala_35", "kala_36", "kala_37", "kala_38", "kala_39", "kala_40"
+      ]
+    },
+    "domain_4_occult_healing": {
+      "name": "Occult, Healing & Hidden Knowledge",
+      "patron": "char_jahzara",
+      "minigames": ["Puzzle", "Perception", "Reflection"],
+      "kala_range": [41, 52],
+      "kala_count": 12,
+      "avn_asset_category": "ritual_mystery",
+      "multiplayer_role": "investigation_cooperative",
+      "member_kalas": [
+        "kala_41", "kala_42", "kala_43", "kala_44", "kala_45", "kala_46",
+        "kala_47", "kala_48", "kala_49", "kala_50", "kala_51", "kala_52"
+      ]
+    },
+    "domain_5_movement_dance": {
+      "name": "Movement, Dance & Energy",
+      "patron": "char_tarana",
+      "minigames": ["Rhythm", "Coordination", "Endurance"],
+      "kala_range": [53, 57],
+      "kala_count": 5,
+      "avn_asset_category": "animation_sequence",
+      "multiplayer_role": "choreography_cooperative",
+      "member_kalas": ["kala_53", "kala_54", "kala_55", "kala_56", "kala_57"]
+    },
+    "domain_6_sensory_pleasure": {
+      "name": "Sensory, Pleasure & Temporal Arts",
+      "patron": "char_kumari_rati",
+      "minigames": ["Coordination", "Perception", "Reflection"],
+      "kala_range": [58, 64],
+      "kala_count": 7,
+      "avn_asset_category": "intimate_scene",
+      "multiplayer_role": "shared_experience",
+      "member_kalas": ["kala_58", "kala_59", "kala_60", "kala_61", "kala_62", "kala_63", "kala_64"]
+    }
+  },
+  "audit": {
+    "total_kalas_accounted": 64,
+    "orphaned_kalas": 0,
+    "audit_passed": true
+  }
+}

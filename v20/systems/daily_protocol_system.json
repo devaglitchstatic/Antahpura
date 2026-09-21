@@ -1,0 +1,187 @@
+{
+  "schema": "antahpura.daily_protocol_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Daily rituals, protocols, and habits that maintain the dynamic between scenes. Rituals include morning and evening practice, greeting protocols, posture, speech, and collar handling. This is the continuity layer that keeps the dynamic alive day-to-day.",
+  "design_principles": {
+    "principle_1": "Rituals maintain connection. Without them, the dynamic becomes intermittent.",
+    "principle_2": "Daily protocols are scaled to the dynamic's stage — early stages use fewer, later stages use more.",
+    "principle_3": "Rituals must be sustainable. If a ritual becomes burdensome, it is revised or retired.",
+    "principle_4": "Protocols are practiced, not enforced. Failure is data, not moral failing.",
+    "principle_5": "Habits support the submissive's wellbeing — hydration, sleep, movement, meditation."
+  },
+
+  "protocol_categories": {
+    "greeting": {
+      "name": "Greeting Protocol",
+      "description": "How the submissive greets the Dominant on first contact of the day.",
+      "example": "Kneeling at the door, head bowed, hands behind back"
+    },
+    "farewell": {
+      "name": "Farewell Protocol",
+      "description": "How the submissive parts from the Dominant.",
+      "example": "Kiss on the hand, forehead, or collar"
+    },
+    "posture": {
+      "name": "Posture Protocol",
+      "description": "Standard body positions for different contexts.",
+      "positions": ["kneeling", "standing_open", "standing_presenting", "crouched", "sitting_at_feet"]
+    },
+    "speech": {
+      "name": "Speech Protocol",
+      "description": "How the submissive speaks to the Dominant.",
+      "example": "Yes sir/ma'am, third-person for self-reference, permission to speak"
+    },
+    "collar": {
+      "name": "Collar Protocol",
+      "description": "Ritual handling of the collar — putting on, taking off, adjusting.",
+      "example": "Collar placed on by Dominant each morning, removed each night"
+    },
+    "physical_contact": {
+      "name": "Physical Contact Protocol",
+      "description": "Rules for touching, being touched, and initiating contact.",
+      "example": "Submissive may not initiate touch; Dominant may initiate at will"
+    },
+    "disagreement": {
+      "name": "Disagreement Protocol",
+      "description": "How the submissive disagrees or raises concern without breaking the dynamic.",
+      "example": "Signal using the yellow word, step out of character, speak as equal"
+    }
+  },
+
+  "daily_rituals": {
+    "morning_ritual": {
+      "name": "Morning Ritual",
+      "description": "The submissive's first acts of the day.",
+      "steps": [
+        "wake_at_assigned_time",
+        "physical_hygiene",
+        "journal_daily_entry",
+        "report_to_dominant",
+        "receive_collar_and_tasks"
+      ],
+      "typical_duration_minutes": 30,
+      "kala_alignment": ["kala_18", "kala_6"],
+      "reward_on_completion": "rw_warm_drink",
+      "skip_penalty": "soft_concern_not_punishment"
+    },
+    "evening_ritual": {
+      "name": "Evening Ritual",
+      "description": "The submissive's closing acts of the day.",
+      "steps": [
+        "complete_daily_tasks",
+        "journal_evening_reflection",
+        "report_status_to_dominant",
+        "surrender_collar",
+        "rest_at_assigned_time"
+      ],
+      "typical_duration_minutes": 45,
+      "kala_alignment": ["kala_6", "kala_12"],
+      "reward_on_completion": "rw_cuddling"
+    },
+    "check_in_ritual": {
+      "name": "Midday Check-In",
+      "description": "Brief contact during the day.",
+      "steps": [
+        "send_text_check_in",
+        "confirm_status_green",
+        "receive_any_adjustments"
+      ],
+      "typical_duration_minutes": 5,
+      "reward_on_completion": "rw_text_checkin"
+    }
+  },
+
+  "daily_habits": {
+    "habits": [
+      {"habit_id": "habit_hydration", "name": "Hydration", "target": "8 glasses of water"},
+      {"habit_id": "habit_sleep", "name": "Sleep", "target": "7-9 hours"},
+      {"habit_id": "habit_movement", "name": "Movement", "target": "30 minutes of physical activity"},
+      {"habit_id": "habit_meditation", "name": "Meditation", "target": "10 minutes of stillness"},
+      {"habit_id": "habit_journal", "name": "Journaling", "target": "1 entry per day"},
+      {"habit_id": "habit_kala_practice", "name": "Kala Practice", "target": "1 kala per day"},
+      {"habit_id": "habit_kama_reflection", "name": "Kama Reflection", "target": "notice 1 kama surfacing"}
+    ],
+    "tracking": "daily_checkmarks",
+    "reward_on_streak": {
+      "streak_7_days": "rw_sticker_chart",
+      "streak_30_days": "rw_pocket_token",
+      "streak_90_days": "rw_formal_title"
+    }
+  },
+
+  "position_library": {
+    "positions": [
+      {"position_id": "pos_kneeling", "name": "Kneeling", "description": "Knees together, back straight, hands on thighs", "typical_use": "greeting, waiting, journaling"},
+      {"position_id": "pos_presenting", "name": "Presenting", "description": "Kneeling, forehead to floor, arms extended forward", "typical_use": "formal submission, receiving correction"},
+      {"position_id": "pos_standing_open", "name": "Standing Open", "description": "Standing, feet apart, hands behind back, eyes down", "typical_use": "formal greeting, ritual service"},
+      {"position_id": "pos_at_feet", "name": "At Feet", "description": "Seated at the feet, side posture, hands folded", "typical_use": "evening ritual, quiet presence"},
+      {"position_id": "pos_crouched", "name": "Crouched", "description": "Deep crouch, knees bent, hands on thighs", "typical_use": "pet-space, play"},
+      {"position_id": "pos_service", "name": "Service Posture", "description": "Standing, hands clasped, ready to serve", "typical_use": "service tasks, household duties"}
+    ],
+    "daily_position_assignment": "Dominant selects position for the day",
+    "position_reward": "rw_verbal_praise"
+  },
+
+  "protocol_registry": {
+    "protocols": [
+      {
+        "protocol_id": "proto_greeting_kneeling",
+        "name": "Kneeling Greeting",
+        "category": "greeting",
+        "parties": ["char_maha_deva", "char_kumari_rati"],
+        "steps": ["enter_room", "kneel_at_door", "bow_head", "wait_for_permission_to_rise"],
+        "reward_on_observance": "rw_verbal_praise"
+      },
+      {
+        "protocol_id": "proto_speech_formal",
+        "name": "Formal Speech",
+        "category": "speech",
+        "parties": ["char_maha_deva", "char_kumari_rati"],
+        "steps": ["third_person_self_reference", "yes_sir_or_yes_maam", "request_permission_to_speak"],
+        "reward_on_observance": "rw_verbal_praise"
+      },
+      {
+        "protocol_id": "proto_collar_morning",
+        "name": "Morning Collar Placement",
+        "category": "collar",
+        "parties": ["char_kumari_rati", "char_padma"],
+        "steps": ["submissive_presents_neck", "dominant_places_collar", "submissive_thanks_dominant"],
+        "reward_on_observance": "rw_collar_adjustment"
+      },
+      {
+        "protocol_id": "proto_disagreement_signal",
+        "name": "Signal Disagreement",
+        "category": "disagreement",
+        "parties": ["char_roxana", "char_kumari_rati"],
+        "steps": ["signal_yellow", "step_out_of_character", "speak_as_equal", "resolve", "re_enter_character"],
+        "reward_on_observance": "rw_private_confession"
+      }
+    ]
+  },
+
+  "runtime_protocol_state": {
+    "schema": {
+      "character_id": "char_id",
+      "daily_position": "string",
+      "protocols_active": ["string"],
+      "rituals_completed_today": ["string"],
+      "habits_streaks": {
+        "habit_id": {"current": "integer", "longest": "integer"}
+      },
+      "last_morning_ritual": "iso_8601 | null",
+      "last_evening_ritual": "iso_8601 | null",
+      "last_updated": "iso_8601"
+    }
+  },
+
+  "audit": {
+    "total_protocol_categories": 7,
+    "total_daily_rituals": 3,
+    "total_habits": 7,
+    "total_positions": 6,
+    "total_protocols": 4,
+    "audit_passed": true
+  }
+}

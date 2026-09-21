@@ -1,0 +1,2026 @@
+{
+  "schema": "antahpura.repo_manifest",
+  "version": "1.1",
+  "generated": "2026-09-19",
+  "root": ".",
+  "description": "Canonical index of every JSON file in the repository. Paths are relative to the audit --root.",
+  "registries": {
+    "characters": "characters/V17_1_CHARACTER_REGISTRY.json",
+    "kalas": "kalas/kala_system_v20.json",
+    "kamas": "kama/MASTER_KINK_REGISTRY.json"
+  },
+  "id_patterns": {
+    "character": "^[a-z][a-z0-9_]+$",
+    "character_prefixed": "^char_[a-z0-9_]+$",
+    "kala": "^kala_[0-9]+$",
+    "kama": "^[A-Z][A-Z0-9_]{2,}$"
+  },
+  "status_values": {
+    "canonical": "Authoritative source of truth. Do not edit without an audit trail.",
+    "derived": "Generated from one or more canonical files. Safe to regenerate.",
+    "runtime_state": "Mutable state that changes during gameplay. Not canonical.",
+    "archive": "Historical artifact. Read-only. Superseded but retained.",
+    "deprecated": "Superseded. Do not reference. Scheduled for removal.",
+    "stub": "Placeholder awaiting review. Auto-declared by auto_declare.py."
+  },
+  "canonical_paths": {
+    "antahpura.kala_system": "kalas/kala_system_v20.json",
+    "V18.3_SKILL_KALA_REGISTRY": "kalas/SKILL_KALA_REGISTRY.json",
+    "V18.9_KAMA_KALA_BRIDGE": "kalas/KAMA_KALA_BRIDGE.json",
+    "antahpura.character_kala_matrix": "kalas/character_kala_matrix.json",
+    "antahpura.kala_kama_linkage": "kalas/kala_kama_linkage.json",
+    "antahpura.character_registry": "characters/V17_1_CHARACTER_REGISTRY.json",
+    "antahpura.role_orientation": "characters/role_orientation/schema.json",
+    "antahpura.institutions": "world/institutions.json",
+    "antahpura.canon.locations": "world/locations.json",
+    "antahpura.occasions": "world/occasions.json",
+    "antahpura.location_system": "registries/location_system_v20.json",
+    "ANTAHPURA_AVN_ASSET_REGISTRY": "runtime/ANTAHPURA_AVN_ASSET_REGISTRY.json",
+    "antahpura.relationship_system": "relationships/relationship_system_v20.json",
+    "antahpura.relationship_registry": "relationships/V17_1_RELATIONSHIP_REGISTRY.json",
+    "antahpura.constitutional_relationships": "relationships/CONSTITUTIONAL_RELATIONSHIPS.json",
+    "V18.3_RELATIONSHIP_STATE": "relationships/RELATIONSHIP_STATE.json",
+    "V18.9_CHANDRA_KALA": "chandra_kala/V18_9_CHANDRA_KALA.json",
+    "antahpura.chandra_kala_modifiers": "chandra_kala/chandra_kala_modifiers.json",
+    "V18.9_VRTTI_MODULATION": "chandra_kala/V18_9_VRTTI_MODULATION.json",
+    "antahpura.scene_engine": "scenes/Scene Engine V20.json",
+    "antahpura.current_scene": "scenes/current_scene.json",
+    "V18.9_SCENE_TRIGGERS": "scenes/V18_9_SCENE_TRIGGERS.json",
+    "antahpura.runtime_engine": "runtime/ANTAHPURA_RUNTIME_ENGINE_V20.json",
+    "ANTAHPURA_KAMA_SYSTEM_V20": "world/ANTAHPURA_KAMA_SYSTEM_V20.json",
+    "antahpura.master_kink_registry": "kama/MASTER_KINK_REGISTRY.json",
+    "antahpura.kala_dimension_matrix": "kalas/kala_dimension_matrix.json"
+  },
+  "files": [
+    {
+      "path": "REPO_MANIFEST.json",
+      "role": "stub",
+      "domain": "root",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "archive/duplicates/canon/SKILL_KALA_REGISTRY.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of canon/SKILL_KALA_REGISTRY.json."
+    },
+    {
+      "path": "archive/duplicates/canon/institutions.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of canon/institutions.json."
+    },
+    {
+      "path": "archive/duplicates/canon/kala_system_v20.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of canon/kala_system_v20.json."
+    },
+    {
+      "path": "archive/duplicates/canon/locations.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of canon/locations.json."
+    },
+    {
+      "path": "archive/duplicates/canon/occasions.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of canon/occasions.json."
+    },
+    {
+      "path": "archive/duplicates/location/location_system_v20.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of location/location_system_v20.json."
+    },
+    {
+      "path": "archive/duplicates/matrices/KAMA_KALA_BRIDGE.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of matrices/KAMA_KALA_BRIDGE.json."
+    },
+    {
+      "path": "archive/duplicates/matrices/character_kala_matrix.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of matrices/character_kala_matrix.json."
+    },
+    {
+      "path": "archive/duplicates/matrices/kala_kama_linkage.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of matrices/kala_kama_linkage.json."
+    },
+    {
+      "path": "archive/duplicates/matrices/kala_kama_links.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of matrices/kala_kama_links.json."
+    },
+    {
+      "path": "archive/duplicates/registries/ANTAHPURA_AVN_ASSET_REGISTRY.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of registries/ANTAHPURA_AVN_ASSET_REGISTRY.json."
+    },
+    {
+      "path": "archive/duplicates/registries/SKILL_KALA_REGISTRY.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of registries/SKILL_KALA_REGISTRY.json."
+    },
+    {
+      "path": "archive/duplicates/registries/V17_1_CHARACTER_REGISTRY.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of registries/V17_1_CHARACTER_REGISTRY.json."
+    },
+    {
+      "path": "archive/duplicates/runtime/current_scene.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": "antahpura.current_scene",
+      "version": "20.0",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of scenes/current_scene.json."
+    },
+    {
+      "path": "archive/duplicates/world/schema.json",
+      "role": "archive",
+      "domain": "archive",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Archived duplicate of world/schema.json."
+    },
+    {
+      "path": "audit/ANTAHPURA_CANON_VALIDATION_TESTS.json",
+      "role": "stub",
+      "domain": "audit",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "audit/ANTAHPURA_MIGRATION_V18.9_TO_V20.json",
+      "role": "canonical",
+      "domain": "audit",
+      "schema": "antahpura.migration_report",
+      "version": "20.0",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": []
+    },
+    {
+      "path": "audit/Antahpura_V17_1_Lorebook.source.json",
+      "role": "archive",
+      "domain": "audit",
+      "schema": "antahpura.lorebook_source",
+      "version": "17.1",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": []
+    },
+    {
+      "path": "audit/V18_4_CANONICAL_BASELINE.json",
+      "role": "stub",
+      "domain": "audit",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "audit/V18_CANONICAL_SNAPSHOT.json",
+      "role": "stub",
+      "domain": "audit",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "audit/canon_decisions.json",
+      "role": "canonical",
+      "domain": "audit",
+      "schema": "antahpura.canon_decisions",
+      "version": "17.1",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [
+        "character"
+      ]
+    },
+    {
+      "path": "audit/conflicts.json",
+      "role": "canonical",
+      "domain": "audit",
+      "schema": "antahpura.conflicts",
+      "version": "1.0",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [
+        "character"
+      ]
+    },
+    {
+      "path": "audit/provenance.json",
+      "role": "stub",
+      "domain": "audit",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "audit/schema_versions.json",
+      "role": "stub",
+      "domain": "audit",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "audit/validation_results.json",
+      "role": "stub",
+      "domain": "audit",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "canon/characters.json",
+      "role": "stub",
+      "domain": "canon",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "canon/domains.json",
+      "role": "stub",
+      "domain": "canon",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "canon/kalas.json",
+      "role": "stub",
+      "domain": "canon",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "chandra_kala/V18_9_CHANDRA_KALA.json",
+      "role": "canonical",
+      "domain": "chandra_kala",
+      "schema": "V18.9_CHANDRA_KALA",
+      "version": "18.9",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": []
+    },
+    {
+      "path": "chandra_kala/V18_9_VRTTI_MODULATION.json",
+      "role": "canonical",
+      "domain": "chandra_kala",
+      "schema": "V18.9_VRTTI_MODULATION",
+      "version": "18.9",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [
+        "character"
+      ]
+    },
+    {
+      "path": "chandra_kala/chandra_kala_modifiers.json",
+      "role": "canonical",
+      "domain": "chandra_kala",
+      "schema": "antahpura.chandra_kala_modifiers",
+      "version": "18.9",
+      "depends_on": [
+        "chandra_kala/V18_9_CHANDRA_KALA.json"
+      ],
+      "referenced_by": [],
+      "reference_types": []
+    },
+    {
+      "path": "characters/CHARACTER_CAPABILITY_STATE.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/KAMA_CHARACTER_STATE.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/KAMA_CHARACTER_STATE_UPDATED.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/V17_1_CHARACTER_REGISTRY.json",
+      "role": "canonical",
+      "domain": "characters",
+      "schema": "antahpura.character_registry",
+      "version": "17.1",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [
+        "character"
+      ]
+    },
+    {
+      "path": "characters/archetypes.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/character_profiles_v20.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/cultural_profiles.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_anisa-516ca24ebad9_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_champa-56f763bb0f21_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_jahzara-1bf1d3670b86_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_maha-deva-0683f297e053_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_malika-8e9a4273b14e_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_padma-6f6d56dd4121_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_princess-kumari-rati-76fccfb0e749_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_reva-a3a602f0ab93_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_roxana-b06eb0cd91a3_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_sentinel-altani-ea162aac0cf1_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_sevda-f96051425049_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_shrinagar-760b526b2314_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_svara-05e8923aa988_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/main_tarana-cc4f04e97a59_spec_v2.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/role_orientation/orientations.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/role_orientation/schema.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "characters/voice_profiles.json",
+      "role": "stub",
+      "domain": "characters",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "kalas/KAMA_KALA_BRIDGE.json",
+      "role": "canonical",
+      "domain": "kalas",
+      "schema": "V18.9_KAMA_KALA_BRIDGE",
+      "version": "18.9",
+      "depends_on": [
+        "kalas/kala_system_v20.json",
+        "kama/MASTER_KINK_REGISTRY.json"
+      ],
+      "referenced_by": [],
+      "reference_types": [
+        "kama",
+        "kala"
+      ]
+    },
+    {
+      "path": "kalas/SKILL_KALA_REGISTRY.json",
+      "role": "canonical",
+      "domain": "kalas",
+      "schema": "V18.3_SKILL_KALA_REGISTRY",
+      "version": "18.3",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [
+        "character"
+      ]
+    },
+    {
+      "path": "kalas/character_kala_matrix.json",
+      "role": "derived",
+      "domain": "kalas",
+      "schema": "antahpura.character_kala_matrix",
+      "version": "20.1",
+      "depends_on": [
+        "kalas/kala_system_v20.json"
+      ],
+      "referenced_by": [],
+      "reference_types": [
+        "character",
+        "kala"
+      ]
+    },
+    {
+      "path": "kalas/kala_dimension_matrix.json",
+      "role": "stub",
+      "domain": "kalas",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by resolve_manifest.py."
+    },
+    {
+      "path": "kalas/kala_domains.json",
+      "role": "stub",
+      "domain": "kalas",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "kalas/kala_kama_linkage.json",
+      "role": "stub",
+      "domain": "kalas",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "kalas/kala_mastery_ladder.json",
+      "role": "stub",
+      "domain": "kalas",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "kalas/kala_prerequisites_graph.json",
+      "role": "stub",
+      "domain": "kalas",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "kalas/kala_synergies.json",
+      "role": "stub",
+      "domain": "kalas",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "kalas/kala_system_v20.json",
+      "role": "canonical",
+      "domain": "kalas",
+      "schema": "antahpura.kala_system",
+      "version": "20.1",
+      "depends_on": [],
+      "referenced_by": [
+        "kalas/character_kala_matrix.json"
+      ],
+      "reference_types": [
+        "character",
+        "kama"
+      ]
+    },
+    {
+      "path": "kama/MASTER_KINK_REGISTRY.json",
+      "role": "canonical",
+      "domain": "kama",
+      "schema": "antahpura.master_kink_registry",
+      "version": "20.0",
+      "depends_on": [],
+      "referenced_by": [
+        "kalas/KAMA_KALA_BRIDGE.json"
+      ],
+      "reference_types": [
+        "kama"
+      ]
+    },
+    {
+      "path": "kama/kama_association_types.json",
+      "role": "stub",
+      "domain": "kama",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "kama/kama_dimensions.json",
+      "role": "stub",
+      "domain": "kama",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "kama/kama_families.json",
+      "role": "stub",
+      "domain": "kama",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "kama/kama_lifecycle_states.json",
+      "role": "stub",
+      "domain": "kama",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "kama/kama_registry_v20.json",
+      "role": "stub",
+      "domain": "kama",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "kama/kama_risk_classes.json",
+      "role": "stub",
+      "domain": "kama",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "location/access_rules.json",
+      "role": "stub",
+      "domain": "location",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "location/environmental_modifiers.json",
+      "role": "stub",
+      "domain": "location",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "location/institution_registry.json",
+      "role": "stub",
+      "domain": "location",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "location/location_affinity.json",
+      "role": "stub",
+      "domain": "location",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "location/location_registry.json",
+      "role": "stub",
+      "domain": "location",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "location/occasion_location_map.json",
+      "role": "stub",
+      "domain": "location",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "location/zone_registry.json",
+      "role": "stub",
+      "domain": "location",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "lorebook/Antahpura V18.9 — Unified Lorebook.json",
+      "role": "canonical",
+      "domain": "lorebook",
+      "schema": "antahpura.lorebook.unified",
+      "version": "18.9",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Live V18.9 unified lorebook. Supersedes the V17.1 placeholder in audit/."
+    },
+    {
+      "path": "matrices/character_dimension_weights.json",
+      "role": "stub",
+      "domain": "matrices",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "matrices/character_kama_derived.json",
+      "role": "stub",
+      "domain": "matrices",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "matrices/dimension_kama_matrix.json",
+      "role": "stub",
+      "domain": "matrices",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/avn_quest_hooks.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/multiplayer_quest_rules.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/quest_availability_rules.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/quest_branching.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/quest_chains.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/quest_failure_modes.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/quest_prerequisites.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/quest_registry_v20.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/quest_rewards.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/quest_runtime_schema.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/quest_states.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/quest_system_v20.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "quests/quest_types.json",
+      "role": "stub",
+      "domain": "quests",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "registries/V17_1_MIGRATION_REGISTRY.json",
+      "role": "stub",
+      "domain": "registries",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "registries/V17_1_PHASE_REGISTRY.json",
+      "role": "stub",
+      "domain": "registries",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "registries/V17_1_RELATIONSHIP_REGISTRY.json",
+      "role": "stub",
+      "domain": "registries",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "registries/location_system_v20.json",
+      "role": "stub",
+      "domain": "registries",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "registries/seva_registry.json",
+      "role": "stub",
+      "domain": "registries",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "registries/v19_registry_overlay.json",
+      "role": "stub",
+      "domain": "registries",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "relationships/CONSTITUTIONAL_RELATIONSHIPS.json",
+      "role": "canonical",
+      "domain": "relationships",
+      "schema": "antahpura.constitutional_relationships",
+      "version": "17.1",
+      "depends_on": [],
+      "referenced_by": [
+        "relationships/relationship_system_v20.json"
+      ],
+      "reference_types": [
+        "character"
+      ]
+    },
+    {
+      "path": "relationships/RELATIONSHIP_STATE.json",
+      "role": "runtime_state",
+      "domain": "relationships",
+      "schema": "V18.3_RELATIONSHIP_STATE",
+      "version": "18.3",
+      "depends_on": [
+        "relationships/CONSTITUTIONAL_RELATIONSHIPS.json"
+      ],
+      "referenced_by": [],
+      "reference_types": [
+        "character"
+      ]
+    },
+    {
+      "path": "relationships/V17_1_RELATIONSHIP_REGISTRY.json",
+      "role": "canonical",
+      "domain": "relationships",
+      "schema": "antahpura.relationship_registry",
+      "version": "17.1",
+      "depends_on": [],
+      "referenced_by": [
+        "relationships/relationship_system_v20.json"
+      ],
+      "reference_types": [
+        "character"
+      ]
+    },
+    {
+      "path": "relationships/relationship_dimensions.json",
+      "role": "stub",
+      "domain": "relationships",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "relationships/relationship_edges.json",
+      "role": "deprecated",
+      "domain": "relationships",
+      "schema": "antahpura.relationship_edges",
+      "version": "1.0",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [
+        "character"
+      ],
+      "note": "Superseded by relationship_system_v20.json. Retained only for provenance."
+    },
+    {
+      "path": "relationships/relationship_memory.json",
+      "role": "stub",
+      "domain": "relationships",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "relationships/relationship_system_v20.json",
+      "role": "canonical",
+      "domain": "relationships",
+      "schema": "antahpura.relationship_system",
+      "version": "20.0",
+      "depends_on": [
+        "relationships/V17_1_RELATIONSHIP_REGISTRY.json",
+        "relationships/CONSTITUTIONAL_RELATIONSHIPS.json",
+        "relationships/RELATIONSHIP_STATE.json"
+      ],
+      "referenced_by": [],
+      "reference_types": [
+        "character"
+      ]
+    },
+    {
+      "path": "relationships/relationship_types.json",
+      "role": "stub",
+      "domain": "relationships",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "relationships/reputation_matrix.json",
+      "role": "stub",
+      "domain": "relationships",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime-replayed/chandra_kala_modifiers.json",
+      "role": "stub",
+      "domain": "runtime-replayed",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime-replayed/character_states.json",
+      "role": "stub",
+      "domain": "runtime-replayed",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime-replayed/relationship_edges.json",
+      "role": "stub",
+      "domain": "runtime-replayed",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime-replayed/replay_meta.json",
+      "role": "stub",
+      "domain": "runtime-replayed",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime-replayed/world_state.json",
+      "role": "stub",
+      "domain": "runtime-replayed",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime/ANTAHPURA_AVN_ASSET_REGISTRY.json",
+      "role": "stub",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime/ANTAHPURA_RUNTIME_ENGINE_V20.json",
+      "role": "canonical",
+      "domain": "runtime",
+      "schema": "antahpura.runtime_engine",
+      "version": "20.0",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [
+        "character",
+        "kala",
+        "kama"
+      ]
+    },
+    {
+      "path": "runtime/Antarvāṇī.json",
+      "role": "canonical",
+      "domain": "runtime",
+      "schema": "antahpura.runtime.preset",
+      "version": "1.0",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Chat Completion preset for Antarvāṇī (Royal Chronicler)."
+    },
+    {
+      "path": "runtime/chandra_kala_modifiers.json",
+      "role": "stub",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime/character_states.json",
+      "role": "stub",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime/character_states/altani.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/anisa.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/campa.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/jahzara.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/kumari_rati.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/maha_deva.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/malika.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/padma.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/reva.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/roxana.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/sevda.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/shrinagar.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/svara.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/character_states/tarana.json",
+      "role": "derived",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by sync_manifest.py v2."
+    },
+    {
+      "path": "runtime/current_scene.json",
+      "role": "archive",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Duplicate of scenes/current_scene.json. Moved to archive/duplicates/runtime/."
+    },
+    {
+      "path": "runtime/multiplayer_coordination.json",
+      "role": "stub",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime/relationship_edges.json",
+      "role": "stub",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime/save_contract.json",
+      "role": "stub",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime/session_registry.json",
+      "role": "stub",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime/telemetry.json",
+      "role": "stub",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "runtime/world_state.json",
+      "role": "stub",
+      "domain": "runtime",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "scenes/Scene Engine V20.json",
+      "role": "canonical",
+      "domain": "scenes",
+      "schema": "antahpura.scene_engine",
+      "version": "20.0",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [
+        "character",
+        "kala",
+        "kama"
+      ]
+    },
+    {
+      "path": "scenes/V18_9_SCENE_TRIGGERS.json",
+      "role": "canonical",
+      "domain": "scenes",
+      "schema": "V18.9_SCENE_TRIGGERS",
+      "version": "18.9",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [
+        "character",
+        "kama"
+      ]
+    },
+    {
+      "path": "scenes/act_structures.json",
+      "role": "stub",
+      "domain": "scenes",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "scenes/current_scene.json",
+      "role": "runtime_state",
+      "domain": "scenes",
+      "schema": "antahpura.current_scene",
+      "version": "20.0",
+      "depends_on": [
+        "scenes/Scene Engine V20.json"
+      ],
+      "referenced_by": [],
+      "reference_types": [
+        "character"
+      ]
+    },
+    {
+      "path": "scenes/scene_engine.json",
+      "role": "stub",
+      "domain": "scenes",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "scenes/scene_templates.json",
+      "role": "stub",
+      "domain": "scenes",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "scenes/scene_validation_rules.json",
+      "role": "stub",
+      "domain": "scenes",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/aphrodisiacs_substances_registry.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/collar_ceremony_system.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/consent_framework_registry.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/contract_system.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/daily_protocol_system.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/dbt_technique_registry.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/intimate_jewelry_system.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/jewelry_registry.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/journaling_system.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/punishment_system.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/recovery_action_registry.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/recovery_system.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/reward_registry.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/reward_system.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/scene_negotiation_system.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/scene_template_registry.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/task_system.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/toys_registry.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "systems/traffic_light_system.json",
+      "role": "stub",
+      "domain": "systems",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "world/ANTAHPURA_KAMA_SYSTEM_V20.json",
+      "role": "canonical",
+      "domain": "world",
+      "schema": "ANTAHPURA_KAMA_SYSTEM_V20",
+      "version": "20.0",
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [
+        "character"
+      ]
+    },
+    {
+      "path": "world/institutions.json",
+      "role": "stub",
+      "domain": "world",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "world/locations.json",
+      "role": "stub",
+      "domain": "world",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "world/occasions.json",
+      "role": "stub",
+      "domain": "world",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    },
+    {
+      "path": "world/offices.json",
+      "role": "stub",
+      "domain": "world",
+      "schema": null,
+      "version": null,
+      "depends_on": [],
+      "referenced_by": [],
+      "reference_types": [],
+      "note": "Auto-declared by auto_declare.py. Promote role when reviewed."
+    }
+  ],
+  "notes": [
+    "Run auto_declare.py after any file addition to fill in the rest with role='stub'.",
+    "canonical_paths tells the audit which copy of a duplicate-schema file is authoritative.",
+    "When a file is superseded, set role='deprecated' and add a note. Do not delete.",
+    "Character registry uses bare slugs (maha_deva). The audit normalises char_-prefixed references automatically."
+  ],
+  "multi_instance_schemas": [
+    "antahpura.character_state_derived"
+  ]
+}

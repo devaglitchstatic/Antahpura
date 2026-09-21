@@ -1,0 +1,135 @@
+{
+  "schema": "antahpura.scene_negotiation_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Pre-scene negotiation checklist and post-scene debrief protocol. Every scene is preceded by negotiation and followed by debrief. This is the operational layer of consent.",
+  "design_principles": {
+    "principle_1": "Every scene is negotiated, however brief.",
+    "principle_2": "Nothing is assumed. Everything is confirmed.",
+    "principle_3": "Negotiation happens sober, out of character, and before the scene starts.",
+    "principle_4": "The negotiation itself can be a ritual — a quiet moment before play.",
+    "principle_5": "Debrief is not optional. Even brief scenes need brief debriefs."
+  },
+
+  "negotiation_workflow": {
+    "pre_scene_checklist": {
+      "description": "Confirm every item before scene starts.",
+      "items": [
+        {"item_id": "ne_consent_confirmed", "question": "Are we both consenting freely?", "required": true},
+        {"item_id": "ne_limits_confirmed", "question": "Are hard limits and soft limits clear?", "required": true},
+        {"item_id": "ne_safewords_confirmed", "question": "Are safewords agreed and tested?", "required": true},
+        {"item_id": "ne_aftercare_planned", "question": "Is aftercare planned for both parties?", "required": true},
+        {"item_id": "ne_scene_parameters", "question": "What is on the table tonight?", "required": true},
+        {"item_id": "ne_off_table", "question": "What is off the table tonight?", "required": true},
+        {"item_id": "ne_duration", "question": "How long is the scene expected to run?", "required": false},
+        {"item_id": "ne_locations", "question": "Where will the scene happen?", "required": false},
+        {"item_id": "ne_tools_confirmed", "question": "Are the tools and toys available and clean?", "required": false},
+        {"item_id": "ne_substances_confirmed", "question": "Are any substances being used? Which?", "required": false},
+        {"item_id": "ne_collar_state", "question": "Is the collar being worn? Is it staying on?", "required": false},
+        {"item_id": "ne_traffic_lights", "question": "Are traffic lights agreed? Non-verbal alternatives?", "required": true},
+        {"item_id": "ne_abort_plan", "question": "What is the abort plan if something goes wrong?", "required": false}
+      ]
+    },
+    "post_scene_checklist": {
+      "description": "Confirm every item after scene ends.",
+      "items": [
+        {"item_id": "ne_aftercare_given", "question": "Was aftercare given to both parties?", "required": true},
+        {"item_id": "ne_hydration_food", "question": "Did both parties hydrate and eat?", "required": true},
+        {"item_id": "ne_traffic_lights_final", "question": "What were the final traffic light states?", "required": true},
+        {"item_id": "ne_marks_check", "question": "Any marks that need attention?", "required": false},
+        {"item_id": "ne_emotional_check", "question": "How is each party feeling emotionally?", "required": true},
+        {"item_id": "ne_debrief_scheduled", "question": "When will debrief happen?", "required": false},
+        {"item_id": "ne_drop_watch", "question": "Is anyone at risk of drop in the next 12-48 hours?", "required": false}
+      ]
+    },
+    "debrief_workflow": {
+      "description": "Happens within 48 hours of a scene, or at next calm moment.",
+      "steps": [
+        {"step": 1, "name": "Scene Recollection", "content": "Each party describes what happened, without judgment."},
+        {"step": 2, "name": "Emotional Check", "content": "Each party describes their emotional state during and after."},
+        {"step": 3, "name": "What Worked", "content": "Name things that worked — specifically."},
+        {"step": 4, "name": "What Didn't", "content": "Name things that did not work — specifically."},
+        {"step": 5, "name": "What Next", "content": "Suggest adjustments for next scene."},
+        {"step": 6, "name": "Relationship Check", "content": "Are we closer? Farther? The same?"},
+        {"step": 7, "name": "Debrief Journal", "content": "Both parties write their debrief journal entry."}
+      ]
+    }
+  },
+
+  "scene_parameters": {
+    "scene_duration": {
+      "short": {"min_minutes": 15, "max_minutes": 45},
+      "medium": {"min_minutes": 45, "max_minutes": 120},
+      "long": {"min_hours": 2, "max_hours": 4},
+      "extended": {"min_hours": 4, "max_hours": 12}
+    },
+    "scene_intensity": {
+      "gentle": {"min": 1, "max": 3, "typical_aftercare_minutes": 20},
+      "moderate": {"min": 4, "max": 6, "typical_aftercare_minutes": 45},
+      "intense": {"min": 7, "max": 9, "typical_aftercare_minutes": 90},
+      "extreme": {"min": 10, "max": 10, "typical_aftercare_minutes": 180}
+    },
+    "scene_types": {
+      "sensation_scene": "Focus on sensation play — impact, temperature, texture",
+      "bondage_scene": "Focus on restraint — rope, cuffs, encasement",
+      "roleplay_scene": "Focus on roleplay — age, pet, service, dominance",
+      "ritual_scene": "Focus on ritual — tantric, ceremonial, meditative",
+      "training_scene": "Focus on discipline — protocol practice, endurance",
+      "aftercare_scene": "Focus on recovery — soothing, grounding, holding",
+      "intimate_scene": "Focus on intimacy — union, tenderness, merging"
+    }
+  },
+
+  "abort_protocol": {
+    "trigger": ["red_signal", "contract_safeword", "medical_emergency", "psychological_break"],
+    "immediate_actions": [
+      "stop_all_stimulation",
+      "release_all_restraints",
+      "drop_all_roles",
+      "assess_physical_state",
+      "assess_emotional_state",
+      "give_immediate_aftercare",
+      "stay_with_partner_until_stable"
+    ],
+    "documentation_required": true,
+    "follow_up_required": "within_24_hours",
+    "debrief_required": "within_72_hours"
+  },
+
+  "runtime_negotiation_state": {
+    "schema": {
+      "scene_id": "string",
+      "participants": ["char_id"],
+      "negotiation_completed": "boolean",
+      "negotiation_timestamp": "iso_8601 | null",
+      "parameters": {
+        "scene_type": "string",
+        "intensity": "string",
+        "duration_planned": "string",
+        "tools_planned": ["string"],
+        "substances_planned": ["string"],
+        "collar_state": "string"
+      },
+      "abort_happened": "boolean",
+      "abort_reason": "string | null",
+      "debrief_completed": "boolean",
+      "debrief_timestamp": "iso_8601 | null",
+      "post_scene_traffic_lights": {
+        "char_id": "green|yellow|red"
+      },
+      "drop_risk_flagged": "boolean",
+      "last_updated": "iso_8601"
+    }
+  },
+
+  "audit": {
+    "total_pre_scene_items": 13,
+    "total_post_scene_items": 7,
+    "total_debrief_steps": 7,
+    "total_scene_durations": 4,
+    "total_scene_intensities": 4,
+    "total_scene_types": 7,
+    "audit_passed": true
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schema": "antahpura.baseline",
+  "version": "20.0",
+  "frozen_at": "2026-09-19T20:00:40.267499+00:00",
+  "description": "Frozen reference baseline of the Antahpura repository. Hashes below are signatures of the canonical files as verified by audit_repo.py and smoke_test.py.",
+  "audit_summary": {
+    "files_scanned": 158,
+    "parse_errors": 0,
+    "files_with_warnings": 0,
+    "manifest_errors": 0,
+    "manifest_warnings": 0,
+    "duplicate_schemas": 0,
+    "registries": {
+      "characters_canonical": 14,
+      "characters_aliases": 43,
+      "kalas_loaded": 64,
+      "kamas_loaded": 99
+    },
+    "dangling_unique_counts": {
+      "character": 0,
+      "kala": 0,
+      "kama": 0
+    }
+  },
+  "characters": [
+    {
+      "id": "maha_deva",
+      "chub_card_id": "maha-deva-0683f297e053",
+      "display_name": "Mahā Deva",
+      "office": "Sovereign / High Priest / Ritual Authority"
+    },
+    {
+      "id": "kumari_rati",
+      "chub_card_id": "princess-kumari-rati-76fccfb0e749",
+      "display_name": "Princess Kumārī Rati",
+      "office": "Princess / Dynastic Center / Initiand"
+    },
+    {
+      "id": "roxana",
+      "chub_card_id": "roxana-b06eb0cd91a3",
+      "display_name": "Roxana",
+      "office": "Persian Consort / Grand Vizier / Diwan & Diplomatic Authority"
+    },
+    {
+      "id": "shrinagar",
+      "chub_card_id": "shrinagar-760b526b2314",
+      "display_name": "Shrinagar",
+      "office": "Mahā Vādaka / Chief Musician"
+    },
+    {
+      "id": "malika",
+      "chub_card_id": "malika-8e9a4273b14e",
+      "display_name": "Malikā",
+      "office": "Threshold Warden / Transitional Rite Commander"
+    },
+    {
+      "id": "jahzara",
+      "chub_card_id": "jahzara-1bf1d3670b86",
+      "display_name": "Jahzara",
+      "office": "Agra-Pratihāriṇī / Vanguard Sentinel"
+    },
+    {
+      "id": "altani",
+      "chub_card_id": "sentinel-altani-ea162aac0cf1",
+      "display_name": "Altani",
+      "office": "Outer Perimeter Sentinel / Reconnaissance Commander"
+    },
+    {
+      "id": "anisa",
+      "chub_card_id": "anisa-516ca24ebad9",
+      "display_name": "Aniśā",
+      "office": "Chief Court Supervisor / Administrative Enforcer"
+    },
+    {
+      "id": "padma",
+      "chub_card_id": "padma-6f6d56dd4121",
+      "display_name": "Padmā",
+      "office": "Personal Handmaiden / Nourishment & Environmental Protection"
+    },
+    {
+      "id": "campa",
+      "chub_card_id": "champa-56f763bb0f21",
+      "display_name": "Campā",
+      "office": "Handmaiden Apprentice / Non-Verbal Companion"
+    },
+    {
+      "id": "reva",
+      "chub_card_id": "reva-a3a602f0ab93",
+      "display_name": "Reva",
+      "office": "Rāja-Kavi / Principal Voice / Breathkeeper"
+    },
+    {
+      "id": "tarana",
+      "chub_card_id": "tarana-cc4f04e97a59",
+      "display_name": "Tarana",
+      "office": "Pradhāna Nartī / Chief Dancer"
+    },
+    {
+      "id": "sevda",
+      "chub_card_id": "sevda-f96051425049",
+      "display_name": "Sevda",
+      "office": "Subterranean Warden / Ritual Containment Matron"
+    },
+    {
+      "id": "svara",
+      "chub_card_id": "svara-05e8923aa988",
+      "display_name": "Svara",
+      "office": "Cultural & Artistic Specialist / Micro-tonal Calibration"
+    }
+  ],
+  "character_count": 14,
+  "canonical_file_hashes": {
+    "characters/V17_1_CHARACTER_REGISTRY.json": {
+      "sha256": "d3563fb3b424285cd44e2844eb456f7843e469b4bb856fa0200c0578b51e8ff1",
+      "size_bytes": 12660
+    },
+    "kalas/kala_system_v20.json": {
+      "sha256": "af6b4b5c4f2004df95a52b9fe411f922fcd3298192e2e8b06d576934cc931760",
+      "size_bytes": 74409
+    },
+    "kalas/character_kala_matrix.json": {
+      "sha256": "bcd4b356ded8bee2259b2cc1fe17f7ef735750b3485a91ac0942c85e2e1dda80",
+      "size_bytes": 19556
+    },
+    "kalas/kala_kama_linkage.json": {
+      "sha256": "0779aedb26ebc34fca42205ceb1faeddfa83ab360b077bbbcc6c7de73e2b22bb",
+      "size_bytes": 13496
+    },
+    "kalas/kala_prerequisites_graph.json": {
+      "sha256": "f0dcd35c4a638d6b457914dd362e35f699bff7cbf5ebcaf37becbb45c7c6030a",
+      "size_bytes": 5178
+    },
+    "kalas/kala_synergies.json": {
+      "sha256": "03f584adf5695e62be3f5f5193d2c1a41adcfab4a343c311dc3cdca8feaf556a",
+      "size_bytes": 4096
+    },
+    "kalas/kala_mastery_ladder.json": {
+      "sha256": "a874deb7f7712e03c830e093e5cc5a4e517ab79b680d31de1b29ff3b930a1b88",
+      "size_bytes": 3977
+    },
+    "kalas/kala_dimension_matrix.json": {
+      "sha256": "e95c8b435ba8caed464adce79b34de66118513a508403ec9eef97f3a56847a5e",
+      "size_bytes": 7387
+    },
+    "kalas/KAMA_KALA_BRIDGE.json": {
+      "sha256": "70025826b710f913a615533ab760a0568927a4a854a77f48f596004c6992157a",
+      "size_bytes": 3325
+    },
+    "kama/MASTER_KINK_REGISTRY.json": {
+      "sha256": "aa5f7512850556ea0ac680afa1725e5411662e195831c2297ab41add8288ab08",
+      "size_bytes": 39035
+    },
+    "relationships/relationship_system_v20.json": {
+      "sha256": "1e2379ed581abd4f2f60e90c98976216babaa632d2d12567d5d112baf09cf523",
+      "size_bytes": 10663
+    },
+    "world/offices.json": {
+      "sha256": "00f583ab451f570557992b049066a0841c80389246ea96186632863e5a36bdb1",
+      "size_bytes": 11142
+    },
+    "world/ANTAHPURA_KAMA_SYSTEM_V20.json": {
+      "sha256": "6ccd2fd2b643c9d0311d96d5b2cfcb0d5b6fa56abc5beae1c38080f56a598ebc",
+      "size_bytes": 7721
+    },
+    "runtime/ANTAHPURA_RUNTIME_ENGINE_V20.json": {
+      "sha256": "9a16c9b481c2b45ed5c525a321b2bffb1adc3b30eb7830ba1d00c6cafec9eb02",
+      "size_bytes": 7891
+    },
+    "runtime/Antarvāṇī.json": {
+      "sha256": "7f7a23ba09776b24c5f0721db6a043d0665df735d1369574eee5e447b7fddad8",
+      "size_bytes": 4276
+    },
+    "scenes/current_scene.json": {
+      "sha256": "9c17732ff212325ee1c35504516c6bc937d0a57bada561739f63dc50a4c8f36d",
+      "size_bytes": 586
+    },
+    "REPO_MANIFEST.json": {
+      "sha256": "5269b4a7da43799cac537160b4708c02a0b0b8aea3be26f972742ecf9ccfc9ab",
+      "size_bytes": 60941
+    }
+  },
+  "hashed_file_count": 17,
+  "missing_hashed_files": [
+    "kama/KINK_RELATION_GRAPH.json"
+  ]
+}

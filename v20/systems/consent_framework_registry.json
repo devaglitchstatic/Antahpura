@@ -1,0 +1,174 @@
+{
+  "schema": "antahpura.consent_framework_registry",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "BDSM consent frameworks adapted for Antahpura. SSC, RACK, PRICK, and SSICK provide the ethical foundation for every scene and dynamic interaction.",
+  "design_principles": {
+    "principle_1": "Consent is the foundation. No scene, punishment, task, or reward occurs without informed consent.",
+    "principle_2": "Consent is ongoing, not a one-time event.",
+    "principle_3": "Consent can be revoked at any time by any party.",
+    "principle_4": "Consent frameworks provide language for risk negotiation.",
+    "principle_5": "Different characters may prefer different frameworks; the dynamic uses the strictest applicable."
+  },
+
+  "frameworks": {
+    "SSC": {
+      "framework_id": "SSC",
+      "name": "Safe, Sane, Consensual",
+      "era": "1980s",
+      "description": "The original BDSM risk management framework. Emphasizes safety, rationality, and consent.",
+      "core_principals": {
+        "safe": "Activities should minimize risk of physical and emotional harm.",
+        "sane": "Participants should be of sound mind and capable of making informed decisions.",
+        "consensual": "All parties must give informed, ongoing consent."
+      },
+      "strengths": ["Clear and simple", "Good for beginners", "Focuses on risk minimization"],
+      "criticisms": ["No activity is truly 'safe'", "Can hamper discussion of risk", "Moralistic language"],
+      "antahpura_adaptation": {
+        "safe": "Kala mastery and institutional protocols reduce risk",
+        "sane": "Wise Mind (DBT) informs scene decisions",
+        "consensual": "Traffic light system provides ongoing consent"
+      }
+    },
+    "RACK": {
+      "framework_id": "RACK",
+      "name": "Risk-Aware Consensual Kink",
+      "era": "1990s",
+      "description": "Evolved from SSC to acknowledge that all intimacy has risk. Emphasizes informed risk acceptance.",
+      "core_principals": {
+        "risk_aware": "Participants acknowledge and accept the risks involved.",
+        "consensual": "Consent is informed and ongoing.",
+        "kink": "Activities are done with full awareness of potential consequences."
+      },
+      "strengths": ["More realistic about risk", "Focuses on informed choice", "Less moralistic"],
+      "criticisms": ["Can be vague", "Requires high literacy", "May not suit all dynamics"],
+      "antahpura_adaptation": {
+        "risk_aware": "Kala mastery prepares for risk; consent records document acceptance",
+        "consensual": "Traffic light system provides ongoing consent",
+        "kink": "All Antahpura scenes are RACK-compliant by default"
+      }
+    },
+    "PRICK": {
+      "framework_id": "PRICK",
+      "name": "Personal Responsibility, Informed Consensual Kink",
+      "era": "2000s",
+      "description": "Emphasizes personal responsibility and informed choice.",
+      "core_principals": {
+        "personal_responsibility": "Each participant takes responsibility for their own experience.",
+        "informed": "Participants are fully informed about risks and activities.",
+        "consensual": "Consent is explicit and ongoing.",
+        "kink": "Activities are consensual and risk-aware."
+      },
+      "strengths": ["Empowers individual agency", "Focuses on accountability", "Works well for experienced practitioners"],
+      "criticisms": ["Can be cold", "Requires high self-awareness", "May not suit all dynamics"],
+      "antahpura_adaptation": {
+        "personal_responsibility": "Characters are responsible for their own state and recovery",
+        "informed": "Kala and kama lifecycle progression informs readiness",
+        "consensual": "Traffic light system provides ongoing consent",
+        "kink": "PRICK is the recommended framework for advanced Antahpura characters"
+      }
+    },
+    "SSICK": {
+      "framework_id": "SSICK",
+      "name": "Safe, Sane, Informed, Consensual Kink",
+      "era": "2010s",
+      "description": "A synthesis of SSC and RACK, adding explicit emphasis on information.",
+      "core_principals": {
+        "safe": "Activities minimize risk.",
+        "sane": "Participants are of sound mind.",
+        "informed": "Participants have all necessary information.",
+        "consensual": "Consent is ongoing and explicit.",
+        "kink": "Activities are consensual and risk-aware."
+      },
+      "strengths": ["Bridges SSC and RACK", "Explicit about information", "Good for varied experience levels"],
+      "criticisms": ["Can be complex", "May overlap with PRICK", "Not widely adopted"],
+      "antahpura_adaptation": {
+        "note": "SSICK is the recommended framework for Antahpura, combining SSC's accessibility with RACK's realism and PRICK's accountability."
+      }
+    }
+  },
+
+  "framework_selection_matrix": {
+    "description": "Which framework is appropriate for which character and context.",
+    "matrix": {
+      "char_maha_deva": {"preferred_framework": "RACK", "secondary": "PRICK"},
+      "char_kumari_rati": {"preferred_framework": "SSC", "secondary": "RACK"},
+      "char_padma": {"preferred_framework": "SSC", "secondary": "SSICK"},
+      "char_champa": {"preferred_framework": "SSC", "secondary": "RACK"},
+      "char_anisa": {"preferred_framework": "PRICK", "secondary": "RACK"},
+      "char_shrinagar": {"preferred_framework": "RACK", "secondary": "SSC"},
+      "char_tarana": {"preferred_framework": "SSC", "secondary": "RACK"},
+      "char_roxana": {"preferred_framework": "PRICK", "secondary": "RACK"},
+      "char_jahzara": {"preferred_framework": "RACK", "secondary": "PRICK"},
+      "char_altani": {"preferred_framework": "PRICK", "secondary": "RACK"},
+      "char_sevda": {"preferred_framework": "RACK", "secondary": "PRICK"},
+      "char_malika": {"preferred_framework": "PRICK", "secondary": "RACK"},
+      "char_reva": {"preferred_framework": "SSICK", "secondary": "SSC"},
+      "char_svara": {"preferred_framework": "SSC", "secondary": "RACK"}
+    }
+  },
+
+  "consent_negotiation_protocol": {
+    "description": "Standard pre-scene negotiation protocol.",
+    "steps": [
+      {
+        "step": 1,
+        "name": "Before Care Check-In",
+        "content": "Discuss hard limits, soft limits, and aftercare needs while sober and calm."
+      },
+      {
+        "step": 2,
+        "name": "Framework Agreement",
+        "content": "Agree on which consent framework (SSC/RACK/PRICK/SSICK) governs this scene."
+      },
+      {
+        "step": 3,
+        "name": "Traffic Light Setup",
+        "content": "Confirm traffic light signals (green/yellow/red) and non-verbal alternatives."
+      },
+      {
+        "step": 4,
+        "name": "Scene Parameters",
+        "content": "Define what is on the table, what is off, and what is negotiable."
+      },
+      {
+        "step": 5,
+        "name": "Aftercare Plan",
+        "content": "Define aftercare needs for both parties."
+      },
+      {
+        "step": 6,
+        "name": "Documentation",
+        "content": "Record the negotiation in a shared note or contract."
+      }
+    ]
+  },
+
+  "runtime_consent_state": {
+    "schema": {
+      "character_id": "char_id",
+      "active_framework": "SSC|RACK|PRICK|SSICK",
+      "consent_records": [
+        {
+          "scene_id": "string",
+          "partner": "char_id",
+          "negotiation_completed": "boolean",
+          "traffic_light_system_active": "boolean",
+          "hard_limits": ["string"],
+          "soft_limits": ["string"],
+          "consent_given_at": "iso_8601",
+          "consent_revoked_at": "iso_8601 | null"
+        }
+      ],
+      "last_updated": "iso_8601"
+    }
+  },
+
+  "audit": {
+    "total_frameworks": 4,
+    "total_negotiation_steps": 6,
+    "characters_mapped": 14,
+    "audit_passed": true
+  }
+}

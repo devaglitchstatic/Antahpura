@@ -1,0 +1,43 @@
+{
+  "schema": "antahpura.canon.domains",
+  "version": "19.0",
+  "total_domains": 6,
+  "domains": {
+    "domain_1_vocal_poetic": {
+      "name": "Vocal & Poetic Arts",
+      "patron": "char_svara",
+      "minigames": ["Rhythm", "Reflection"],
+      "kala_range": [1, 12]
+    },
+    "domain_2_visual_adornment": {
+      "name": "Visual, Adornment & Crafts",
+      "patron": "char_shrinagar",
+      "minigames": ["Precision", "Perception"],
+      "kala_range": [13, 28]
+    },
+    "domain_3_martial_physical": {
+      "name": "Martial, Physical & Strategic Arts",
+      "patron": "char_roxana",
+      "minigames": ["Endurance", "Coordination", "Sequence"],
+      "kala_range": [29, 40]
+    },
+    "domain_4_occult_healing": {
+      "name": "Occult, Healing & Hidden Knowledge",
+      "patron": "char_jahzara",
+      "minigames": ["Puzzle", "Perception", "Reflection"],
+      "kala_range": [41, 52]
+    },
+    "domain_5_movement_dance": {
+      "name": "Movement, Dance & Energy",
+      "patron": "char_tarana",
+      "minigames": ["Rhythm", "Coordination", "Endurance"],
+      "kala_range": [53, 57]
+    },
+    "domain_6_sensory_pleasure": {
+      "name": "Sensory, Pleasure & Temporal Arts",
+      "patron": "char_kumari_rati",
+      "minigames": ["Coordination", "Perception", "Reflection"],
+      "kala_range": [58, 64]
+    }
+  }
+}

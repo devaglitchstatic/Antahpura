@@ -1,0 +1,33 @@
+{
+  "schema": "V18.9_VRTTI_MODULATION",
+  "version": "18.9",
+  "provenance": "CONFIRMED_V18.9_CANON",
+  "description": "Dynamic behavioral expression based on Prakṛti + context",
+  "rule": "Prakṛti + context + relationship + recent experience = Vṛtti",
+  "modulation_strength": 0.1,
+  "expression_styles": {
+    "expressive_assertive": {
+      "description": "High engagement, confident, leading",
+      "modulation_range": [0.7, 1.0]
+    },
+    "engaged_responsive": {
+      "description": "Active participation, responsive, warm",
+      "modulation_range": [0.4, 0.7]
+    },
+    "cautious_observant": {
+      "description": "Watching, measuring, deliberate",
+      "modulation_range": [0.2, 0.4]
+    },
+    "withdrawn_protective": {
+      "description": "Retreated, self-contained, guarded",
+      "modulation_range": [0.0, 0.2]
+    }
+  },
+  "context_factors": {
+    "arousal_weight": 0.4,
+    "krodha_weight": 0.2,
+    "dvesha_weight": -0.1,
+    "trust_weight": 0.2,
+    "lunar_weight": 0.05
+  }
+}

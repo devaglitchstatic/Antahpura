@@ -1,0 +1,1628 @@
+{
+  "schema": "antahpura.validation_results",
+  "version": "1.9",
+  "generated": "2026-09-19T20:00:40.156860+00:00",
+  "root": "D:\\dolphin\\AntahpuraRepo\\v20",
+  "manifest": "REPO_MANIFEST.json",
+  "summary": {
+    "files_scanned": 158,
+    "parse_errors": 0,
+    "files_with_warnings": 0,
+    "manifest_errors": 0,
+    "manifest_warnings": 0,
+    "duplicate_schemas": 0,
+    "registries": {
+      "characters_canonical": 14,
+      "characters_aliases": 43,
+      "kalas_loaded": 64,
+      "kamas_loaded": 99
+    },
+    "dangling_unique_counts": {
+      "character": 0,
+      "kala": 0,
+      "kama": 0
+    }
+  },
+  "manifest_errors": [],
+  "manifest_warnings": [],
+  "duplicate_schemas": {},
+  "dangling_summary": {
+    "character": {},
+    "kala": {},
+    "kama": {}
+  },
+  "dangling_file_index": {
+    "character": {},
+    "kala": {},
+    "kama": {}
+  },
+  "schema_version_gaps": {
+    "missing_schema_only": [],
+    "missing_version_only": [],
+    "missing_both": [],
+    "total_missing_schema": 0,
+    "total_missing_version": 0
+  },
+  "files": [
+    {
+      "path": "audit/ANTAHPURA_CANON_VALIDATION_TESTS.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "ANTAHPURA_CANON_VALIDATION_TESTS",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "audit/ANTAHPURA_MIGRATION_V18.9_TO_V20.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "ANTAHPURA_MIGRATION_LEDGER",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "audit/Antahpura_V17_1_Lorebook.source.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.audit.Antahpura_V17_1_Lorebook.source",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "audit/canon_decisions.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.audit.canon_decisions",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "audit/conflicts.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.audit.conflicts",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "audit/provenance.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.audit.provenance",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "audit/schema_versions.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.audit.schema_versions",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "audit/V18_4_CANONICAL_BASELINE.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "V18.4_CANONICAL_BASELINE",
+        "version": "18.4"
+      }
+    },
+    {
+      "path": "audit/V18_CANONICAL_SNAPSHOT.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.audit.V18_CANONICAL_SNAPSHOT",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "audit/validation_results.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.validation_results",
+        "version": "1.8"
+      }
+    },
+    {
+      "path": "canon/characters.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.canon.characters",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "canon/domains.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.canon.domains",
+        "version": "19.0"
+      }
+    },
+    {
+      "path": "canon/kalas.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.canon.kalas",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "chandra_kala/chandra_kala_modifiers.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.chandra_kala_modifiers",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "chandra_kala/V18_9_CHANDRA_KALA.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "V18.9_CHANDRA_KALA",
+        "version": "18.9"
+      }
+    },
+    {
+      "path": "chandra_kala/V18_9_VRTTI_MODULATION.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "V18.9_VRTTI_MODULATION",
+        "version": "18.9"
+      }
+    },
+    {
+      "path": "characters/archetypes.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.archetypes",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "characters/CHARACTER_CAPABILITY_STATE.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.CHARACTER_CAPABILITY_STATE",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/character_profiles_v20.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character.profiles_v20",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "characters/cultural_profiles.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_cultural_profiles",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "characters/KAMA_CHARACTER_STATE.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.KAMA_CHARACTER_STATE",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/KAMA_CHARACTER_STATE_UPDATED.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.KAMA_CHARACTER_STATE_UPDATED",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_anisa-516ca24ebad9_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_anisa-516ca24ebad9_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_champa-56f763bb0f21_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_champa-56f763bb0f21_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_jahzara-1bf1d3670b86_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_jahzara-1bf1d3670b86_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_maha-deva-0683f297e053_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_maha-deva-0683f297e053_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_malika-8e9a4273b14e_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_malika-8e9a4273b14e_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_padma-6f6d56dd4121_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_padma-6f6d56dd4121_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_princess-kumari-rati-76fccfb0e749_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_princess-kumari-rati-76fccfb0e749_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_reva-a3a602f0ab93_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_reva-a3a602f0ab93_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_roxana-b06eb0cd91a3_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_roxana-b06eb0cd91a3_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_sentinel-altani-ea162aac0cf1_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_sentinel-altani-ea162aac0cf1_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_sevda-f96051425049_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_sevda-f96051425049_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_shrinagar-760b526b2314_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_shrinagar-760b526b2314_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_svara-05e8923aa988_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_svara-05e8923aa988_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/main_tarana-cc4f04e97a59_spec_v2.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.main_tarana-cc4f04e97a59_spec_v2",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/role_orientation/orientations.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.role_orientation.orientations",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/role_orientation/schema.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.role_orientation",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "characters/V17_1_CHARACTER_REGISTRY.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_registry",
+        "version": "17.1"
+      }
+    },
+    {
+      "path": "characters/voice_profiles.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.characters.voice_profiles",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "kalas/character_kala_matrix.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_kala_matrix",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kalas/kala_dimension_matrix.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kala_dimension_matrix",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kalas/kala_domains.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kala_domains",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kalas/kala_kama_linkage.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kala_kama_linkage",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kalas/kala_mastery_ladder.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kala_mastery_ladder",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kalas/kala_prerequisites_graph.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kala_prerequisites_graph",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kalas/kala_synergies.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kala_synergies",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kalas/kala_system_v20.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kala_system",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kalas/KAMA_KALA_BRIDGE.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "V18.9_KAMA_KALA_BRIDGE",
+        "version": "18.9"
+      }
+    },
+    {
+      "path": "kalas/SKILL_KALA_REGISTRY.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "V18.3_SKILL_KALA_REGISTRY",
+        "version": "18.3"
+      }
+    },
+    {
+      "path": "kama/kama_association_types.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kama_association_types",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kama/kama_dimensions.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kama_dimensions",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kama/kama_families.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kama_families",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kama/kama_lifecycle_states.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kama_lifecycle_states",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kama/kama_registry_v20.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kama.kama_registry_v20",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "kama/kama_risk_classes.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kama_risk_classes",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "kama/MASTER_KINK_REGISTRY.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.kama.MASTER_KINK_REGISTRY",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "location/access_rules.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.location.access_rules",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "location/environmental_modifiers.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.location.environmental_modifiers",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "location/institution_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.location.institution_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "location/location_affinity.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.location.location_affinity",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "location/location_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.location.location_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "location/occasion_location_map.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.location.occasion_location_map",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "location/zone_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.location.zone_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "lorebook/Antahpura V18.9 — Unified Lorebook.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.lorebook.unified",
+        "version": "18.9"
+      }
+    },
+    {
+      "path": "matrices/character_dimension_weights.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_dimension_weights",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "matrices/character_kama_derived.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_kama_derived",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "matrices/dimension_kama_matrix.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.dimension_kama_matrix",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/avn_quest_hooks.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.avn_hooks",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/multiplayer_quest_rules.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.multiplayer",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/quest_availability_rules.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.availability_rules",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/quest_branching.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.branching",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/quest_chains.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.chains",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/quest_failure_modes.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.failure_modes",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/quest_prerequisites.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.prerequisites",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/quest_registry_v20.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.registry_v20",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/quest_rewards.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.rewards",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/quest_runtime_schema.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.runtime_schema",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/quest_states.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.states",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/quest_system_v20.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "ANTAHPURA_QUEST_SYSTEM_V20",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "quests/quest_types.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.quest.types",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "registries/location_system_v20.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.location_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "registries/seva_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.seva_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "registries/V17_1_MIGRATION_REGISTRY.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.registries.V17_1_MIGRATION_REGISTRY",
+        "version": "17.1"
+      }
+    },
+    {
+      "path": "registries/V17_1_PHASE_REGISTRY.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.registries.V17_1_PHASE_REGISTRY",
+        "version": "17.1"
+      }
+    },
+    {
+      "path": "registries/V17_1_RELATIONSHIP_REGISTRY.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.registries.V17_1_RELATIONSHIP_REGISTRY",
+        "version": "17.1"
+      }
+    },
+    {
+      "path": "registries/v19_registry_overlay.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.registries.v19_registry_overlay",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "relationships/CONSTITUTIONAL_RELATIONSHIPS.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.relationships.CONSTITUTIONAL_RELATIONSHIPS",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "relationships/relationship_dimensions.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.relationship.dimensions",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "relationships/relationship_edges.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.relationship.edges_canonical",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "relationships/relationship_memory.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.relationship.memory",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "relationships/RELATIONSHIP_STATE.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "V18.3_RELATIONSHIP_STATE",
+        "version": "18.3"
+      }
+    },
+    {
+      "path": "relationships/relationship_system_v20.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.relationship_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "relationships/relationship_types.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.relationship.types",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "relationships/reputation_matrix.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.relationship.reputation_matrix",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "relationships/V17_1_RELATIONSHIP_REGISTRY.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.relationships.V17_1_RELATIONSHIP_REGISTRY",
+        "version": "17.1"
+      }
+    },
+    {
+      "path": "REPO_MANIFEST.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.repo_manifest",
+        "version": "1.1"
+      }
+    },
+    {
+      "path": "runtime/ANTAHPURA_AVN_ASSET_REGISTRY.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "ANTAHPURA_AVN_ASSET_REGISTRY",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "runtime/ANTAHPURA_RUNTIME_ENGINE_V20.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "ANTAHPURA_RUNTIME_ENGINE_V20",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "runtime/Antarvāṇī.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.runtime.preset",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/chandra_kala_modifiers.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.runtime.chandra_kala_modifiers",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/altani.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/anisa.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/campa.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/jahzara.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/kumari_rati.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/maha_deva.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/malika.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/padma.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/reva.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/roxana.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/sevda.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/shrinagar.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/svara.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states/tarana.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.character_state_derived",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime/character_states.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.runtime.character_states",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "runtime/multiplayer_coordination.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.multiplayer_coordination",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "runtime/relationship_edges.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.runtime.relationship_edges",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "runtime/save_contract.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.save_contract",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "runtime/session_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.session_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "runtime/telemetry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.runtime.telemetry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "runtime/world_state.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.runtime.world_state",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "runtime-replayed/chandra_kala_modifiers.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.runtime-replayed.chandra_kala_modifiers",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime-replayed/character_states.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.runtime-replayed.character_states",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime-replayed/relationship_edges.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.runtime-replayed.relationship_edges",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime-replayed/replay_meta.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.runtime-replayed.replay_meta",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "runtime-replayed/world_state.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.runtime-replayed.world_state",
+        "version": "1.0"
+      }
+    },
+    {
+      "path": "scenes/act_structures.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.scene.act_structures",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "scenes/current_scene.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.current_scene",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "scenes/Scene Engine V20.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.scene_engine",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "scenes/scene_engine.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.scene.engine",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "scenes/scene_templates.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.scene.templates",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "scenes/scene_validation_rules.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.scene.validation_rules",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "scenes/V18_9_SCENE_TRIGGERS.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "V18.9_SCENE_TRIGGERS",
+        "version": "18.9"
+      }
+    },
+    {
+      "path": "systems/aphrodisiacs_substances_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.aphrodisiacs_substances_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/collar_ceremony_system.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.collar_ceremony_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/consent_framework_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.consent_framework_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/contract_system.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.contract_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/daily_protocol_system.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.daily_protocol_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/dbt_technique_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.dbt_technique_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/intimate_jewelry_system.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.intimate_jewelry_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/jewelry_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.jewelry_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/journaling_system.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.journaling_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/punishment_system.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.punishment_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/recovery_action_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.recovery_action_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/recovery_system.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.recovery_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/reward_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.reward_registry",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "systems/reward_system.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.reward_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/scene_negotiation_system.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.scene_negotiation_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/scene_template_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.scene_template_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/task_system.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.task_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/toys_registry.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.toys_registry",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "systems/traffic_light_system.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.traffic_light_system",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "world/ANTAHPURA_KAMA_SYSTEM_V20.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "ANTAHPURA_KAMA_SYSTEM_V20",
+        "version": "20.0"
+      }
+    },
+    {
+      "path": "world/institutions.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.institutions",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "world/locations.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.canon.locations",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "world/occasions.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.occasions",
+        "version": "20.1"
+      }
+    },
+    {
+      "path": "world/offices.json",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "schema": "antahpura.world.offices",
+        "version": "20.0"
+      }
+    }
+  ]
+}

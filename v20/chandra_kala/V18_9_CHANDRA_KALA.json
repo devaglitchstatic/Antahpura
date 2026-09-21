@@ -1,0 +1,41 @@
+{
+  "schema": "V18.9_CHANDRA_KALA",
+  "version": "18.9",
+  "provenance": "CONFIRMED_V18.9_CANON",
+  "description": "30-zone erogenous mapping tied to lunar cycle",
+  "waxing_moon": {
+    "day_1": { "zone": "Aṅguṣṭha", "location": "Big Toe" },
+    "day_2": { "zone": "Pāda", "location": "Sole of the Foot" },
+    "day_3": { "zone": "Guḷpha", "location": "Ankle Joint" },
+    "day_4": { "zone": "Jaṅghā", "location": "Calf Muscle" },
+    "day_5": { "zone": "Jānu", "location": "Knee Joint" },
+    "day_6": { "zone": "Ūru", "location": "Lower Thigh" },
+    "day_7": { "zone": "Uru-Mūla", "location": "Root of the Thigh" },
+    "day_8": { "zone": "Yoni", "location": "Genital Zone" },
+    "day_9": { "zone": "Medhra-Mūla", "location": "Pubic Ridge" },
+    "day_10": { "zone": "Nābhi", "location": "Navel" },
+    "day_11": { "zone": "Pārśva", "location": "Flanks" },
+    "day_12": { "zone": "Stanau", "location": "Breasts & Nipples" },
+    "day_13": { "zone": "Kaṇṭha", "location": "Collarbone/Neck Junction" },
+    "day_14": { "zone": "Kaṇṭha-Mūla", "location": "Throat & Lips" },
+    "day_15": { "zone": "Lalāṭa", "location": "Forehead, Brows, Scalp" }
+  },
+  "waning_moon": {
+    "day_1": { "zone": "Lalāṭa", "location": "Forehead, Brows, Scalp" },
+    "day_2": { "zone": "Kaṇṭha-Mūla", "location": "Throat & Lips" },
+    "day_3": { "zone": "Kaṇṭha", "location": "Collarbone/Neck Junction" },
+    "day_4": { "zone": "Stanau", "location": "Breasts & Nipples" },
+    "day_5": { "zone": "Pārśva", "location": "Flanks" },
+    "day_6": { "zone": "Nābhi", "location": "Navel" },
+    "day_7": { "zone": "Medhra-Mūla", "location": "Pubic Ridge" },
+    "day_8": { "zone": "Yoni", "location": "Genital Zone" },
+    "day_9": { "zone": "Uru-Mūla", "location": "Root of the Thigh" },
+    "day_10": { "zone": "Ūru", "location": "Lower Thigh" },
+    "day_11": { "zone": "Jānu", "location": "Knee Joint" },
+    "day_12": { "zone": "Jaṅghā", "location": "Calf Muscle" },
+    "day_13": { "zone": "Guḷpha", "location": "Ankle Joint" },
+    "day_14": { "zone": "Pāda", "location": "Sole of the Foot" },
+    "day_15": { "zone": "Aṅguṣṭha", "location": "Big Toe" }
+  },
+  "effect_modulation": 0.05
+}

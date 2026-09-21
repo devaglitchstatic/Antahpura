@@ -1,0 +1,1225 @@
+{
+  "schema": "ANTAHPURA_QUEST_SYSTEM_V20",
+  "version": "20.0",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "cross_references": {
+    "kama_system": "ANTAHPURA_KAMA_SYSTEM_V20.1",
+    "kala_system": "ANTAHPURA_KALA_SYSTEM_V20.1",
+    "relationship_system": "ANTAHPURA_RELATIONSHIP_SYSTEM_V20",
+    "scene_engine": "ANTAHPURA_SCENE_ENGINE_V20",
+    "chandra_kala": "ANTAHPURA_CHANDRA_KALA"
+  },
+  "total_quest_types": 9,
+  "total_quest_templates": 27,
+  "total_reward_classes": 6,
+  "total_prerequisite_classes": 5,
+
+  "quest_types": {
+    "Q1_character": {"name": "Character Quest", "purpose": "Personal arc for one character", "domain": "Character"},
+    "Q2_institutional": {"name": "Institutional Quest", "purpose": "Faction/office objectives", "domain": "Institution"},
+    "Q3_kala": {"name": "Kala Quest", "purpose": "Skill mastery progression", "domain": "Kala"},
+    "Q4_ritual": {"name": "Ritual Quest", "purpose": "Ceremonial/religious progression", "domain": "Ritual"},
+    "Q5_political": {"name": "Political Quest", "purpose": "Court intrigue and alliances", "domain": "Politics"},
+    "Q6_investigation": {"name": "Investigation Quest", "purpose": "Secrets, cipher, evidence", "domain": "Information"},
+    "Q7_relationship": {"name": "Relationship Quest", "purpose": "Deepening/repairing bonds", "domain": "Relationship"},
+    "Q8_archival": {"name": "Archival Quest", "purpose": "Memory and history recovery", "domain": "Archive"},
+    "Q9_exploration": {"name": "Exploration Quest", "purpose": "Discovery of locations/objects", "domain": "World"}
+  },
+
+  "prerequisite_classes": {
+    "PR1_hard_block": {"description": "Quest cannot start without meeting this", "on_fail": "quest_invisible"},
+    "PR2_soft_block": {"description": "Quest visible but not startable; hints provided", "on_fail": "quest_visible_with_hint"},
+    "PR3_recommended": {"description": "Quest startable but harder without this", "on_fail": "difficulty_penalty"},
+    "PR4_parallel": {"description": "Quest requires another quest to be active", "on_fail": "quest_deferred"},
+    "PR5_sequential": {"description": "Quest requires another quest completed", "on_fail": "quest_locked"}
+  },
+
+  "reward_classes": {
+    "RW1_relationship": {"description": "Relationship dimension increases", "example": "trust +4, respect +3"},
+    "RW2_kala": {"description": "Kala mastery progression", "example": "kala_1_Gita: +1 mastery stage"},
+    "RW3_kama": {"description": "Kama state unlock or progression", "example": "SHALAKA_SOUNDING: discoverable → imaginable"},
+    "RW4_institutional": {"description": "Reputation or access change", "example": "inst_yogic_pavilion reputation +5"},
+    "RW5_narrative": {"description": "Scene/chapter/quest unlock", "example": "sct_abhisheka unlocked"},
+    "RW6_asset": {"description": "Inventory item, memory, or AVN unlock", "example": "item_agate_ring obtained"}
+  },
+
+  "quest_templates": {
+    "Q1_character": {
+      "qst_svara_mastery": {
+        "quest_id": "qst_svara_mastery",
+        "name": "Svara's Calibration Mastery",
+        "type": "Q1_character",
+        "description": "Svara seeks to master micro-tonal calibration by tuning seven different ritual instruments",
+        "narrative_hook": "The Princess has asked Svara to prepare the acoustic space for an upcoming abhisheka",
+        "primary_character": "char_svara",
+        "supporting_characters": ["char_reva", "char_shrinagar"],
+        "institution": "inst_ritual_chorus",
+        "prerequisites": {
+          "kala_checks": [{"kala": "kala_2_Vadya", "min_mastery": 3}],
+          "institutional_checks": [{"institution": "inst_ritual_chorus", "access_min": 3}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "First Tuning", "objective": "Tune a wooden flute", "scene_template": "sct_nada_kala", "required_actions": ["identify_pitch", "adjust_embouchure"], "completion_condition": "pitch_matched"},
+          {"stage_number": 2, "name": "Second Tuning", "objective": "Tune a bronze gong", "scene_template": "sct_nada_kala", "required_actions": ["strike_center", "listen_overtone"], "completion_condition": "overtone_aligned"},
+          {"stage_number": 3, "name": "Third Tuning", "objective": "Tune a silver chime", "scene_template": "sct_nada_kala", "required_actions": ["test_resonance", "adjust_damping"], "completion_condition": "resonance_pure"},
+          {"stage_number": 4, "name": "Fourth Tuning", "objective": "Tune a copper bell", "scene_template": "sct_nada_kala", "required_actions": ["strike_edge", "measure_decay"], "completion_condition": "decay_even"},
+          {"stage_number": 5, "name": "Fifth Tuning", "objective": "Tune a clay drum", "scene_template": "sct_nada_kala", "required_actions": ["tighten_skin", "rhythm_test"], "completion_condition": "rhythm_stable"},
+          {"stage_number": 6, "name": "Sixth Tuning", "objective": "Tune a stringed veena", "scene_template": "sct_nada_kala", "required_actions": ["adjust_bridge", "pluck_scale"], "completion_condition": "scale_clean"},
+          {"stage_number": 7, "name": "Final Tuning", "objective": "Tune the sacred conch", "scene_template": "sct_abhisheka", "required_actions": ["blow_invocation", "hold_pitch"], "completion_condition": "invocation_sustained"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "kala_2_Vadya", "stage_increment": 2}],
+          "kama_unlocks": [{"kama": "NADA_SADHANA", "lifecycle_from": "discoverable", "lifecycle_to": "participatory"}],
+          "institutional_reputation": [{"institution": "inst_ritual_chorus", "delta": 8}],
+          "items": [],
+          "narrative_unlocks": ["sct_abhisheka"]
+        },
+        "consequences": {
+          "on_success": {"institutional_reputation": [{"institution": "inst_ritual_chorus", "delta": 8}]},
+          "on_failure": {"kala_progression": [{"kala": "kala_2_Vadya", "stage_increment": -1}]},
+          "on_partial": {}
+        },
+        "failure_conditions": ["miss any tuning three times"],
+        "time_limit": "none",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_svara_flute", "cg_svara_gong", "cg_svara_conch"],
+          "achievements": ["calibration_master"],
+          "cg_unlocks": ["cg_abhisheka_calibration"]
+        }
+      },
+      "qst_padma_service": {
+        "quest_id": "qst_padma_service",
+        "name": "Padmā's Devotional Cycle",
+        "type": "Q1_character",
+        "description": "Padmā undertakes a cycle of seven service tasks to prove her devotion to the Princess",
+        "narrative_hook": "The Princess wishes to see if Padmā is ready for higher ritual responsibilities",
+        "primary_character": "char_padma",
+        "supporting_characters": ["char_kumari_rati", "char_champa"],
+        "institution": "inst_zenana",
+        "prerequisites": {
+          "relationship_checks": [{"target": "char_kumari_rati", "dimension": "trust", "min": 60}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "First Service", "objective": "Prepare the Princess's morning bath", "scene_template": "sct_darshana_sadhana", "required_actions": ["heat_water", "arrange_oils"], "completion_condition": "princess_approves"},
+          {"stage_number": 2, "name": "Second Service", "objective": "Arrange the Princess's wardrobe", "scene_template": "sct_vastra_vidhi", "required_actions": ["sort_silks", "match_jewels"], "completion_condition": "princess_approves"},
+          {"stage_number": 3, "name": "Third Service", "objective": "Attend during the ritual", "scene_template": "sct_abhisheka", "required_actions": ["hold_vessel", "kneel_still"], "completion_condition": "ritual_complete"},
+          {"stage_number": 4, "name": "Fourth Service", "objective": "Serve during the ceremony", "scene_template": "sct_nada_kala", "required_actions": ["pour_drink", "present_food"], "completion_condition": "guests_satisfied"},
+          {"stage_number": 5, "name": "Fifth Service", "objective": "Assist with ritual cleansing", "scene_template": "sct_darshana_sadhana", "required_actions": ["prepare_water", "assist_washing"], "completion_condition": "cleansing_complete"},
+          {"stage_number": 6, "name": "Sixth Service", "objective": "Prepare the ritual offerings", "scene_template": "sct_rasayana_paka", "required_actions": ["arrange_fruits", "light_incense"], "completion_condition": "offering_ready"},
+          {"stage_number": 7, "name": "Final Service", "objective": "Present the sacred vessel", "scene_template": "sct_abhisheka", "required_actions": ["carry_vessel", "offer_with_bow"], "completion_condition": "vessel_accepted"}
+        ],
+        "rewards": {
+          "relationship_deltas": [{"target": "char_kumari_rati", "dimension": "loyalty", "delta": 8}],
+          "kala_progression": [{"kala": "kala_21_Gandha_yukti", "stage_increment": 2}],
+          "kama_unlocks": [{"kama": "SNANA_PUJA_GIVING", "lifecycle_from": "exploreable", "lifecycle_to": "runtime_enabled"}],
+          "institutional_reputation": [{"institution": "inst_zenana", "delta": 5}],
+          "items": [],
+          "narrative_unlocks": ["padma_advanced_service"]
+        },
+        "consequences": {
+          "on_success": {"relationship_deltas": [{"target": "char_kumari_rati", "dimension": "trust", "delta": 5}]},
+          "on_failure": {"relationship_deltas": [{"target": "char_kumari_rati", "dimension": "trust", "delta": -5}]},
+          "on_partial": {}
+        },
+        "failure_conditions": ["fail any service twice"],
+        "time_limit": "7_scenes",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_padma_bath", "cg_padma_wardrobe", "cg_padma_vessel"],
+          "achievements": ["devoted_handmaiden"],
+          "cg_unlocks": ["cg_zenana_service"]
+        }
+      },
+      "qst_roxana_restraint": {
+        "quest_id": "qst_roxana_restraint",
+        "name": "Roxana's Restraint Mastery",
+        "type": "Q1_character",
+        "description": "Roxana seeks to complete seven complex suspension configurations",
+        "narrative_hook": "The Vizier wishes to demonstrate her mastery before an audience of peers",
+        "primary_character": "char_roxana",
+        "supporting_characters": ["char_sevda", "char_tarana"],
+        "institution": "inst_military_perimeter",
+        "prerequisites": {
+          "kala_checks": [{"kala": "kala_25_Granthana", "min_mastery": 6}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "First Suspension", "objective": "Complete a basic two-rope suspension", "scene_template": "sct_granthi_vidhi", "required_actions": ["knot_chest", "attach_hooks"], "completion_condition": "participant_stable"},
+          {"stage_number": 2, "name": "Second Suspension", "objective": "Complete a three-rope suspension", "scene_template": "sct_granthi_vidhi", "required_actions": ["add_hip_wrap", "test_tension"], "completion_condition": "participant_stable"},
+          {"stage_number": 3, "name": "Third Suspension", "objective": "Complete a four-rope suspension", "scene_template": "sct_granthi_vidhi", "required_actions": ["add_leg_wrap", "balance_weight"], "completion_condition": "participant_stable"},
+          {"stage_number": 4, "name": "Fourth Suspension", "objective": "Complete a five-rope suspension", "scene_template": "sct_granthi_vidhi", "required_actions": ["add_arm_wrap", "monitor_breath"], "completion_condition": "participant_stable"},
+          {"stage_number": 5, "name": "Fifth Suspension", "objective": "Complete a partial inversion", "scene_template": "sct_granthi_vidhi", "required_actions": ["rotate_body", "manage_blood_flow"], "completion_condition": "participant_responsive"},
+          {"stage_number": 6, "name": "Sixth Suspension", "objective": "Complete a full inversion", "scene_template": "sct_granthi_vidhi", "required_actions": ["invert_fully", "monitor_circulation"], "completion_condition": "participant_responsive"},
+          {"stage_number": 7, "name": "Final Suspension", "objective": "Complete a ritual binding", "scene_template": "sct_abhisheka", "required_actions": ["bind_ritual_form", "hold_for_duration"], "completion_condition": "ritual_complete"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "kala_25_Granthana", "stage_increment": 2}],
+          "kama_unlocks": [{"kama": "SANGHATAKA", "lifecycle_from": "exploreable", "lifecycle_to": "runtime_enabled"}],
+          "institutional_reputation": [{"institution": "inst_military_perimeter", "delta": 8}],
+          "items": [],
+          "narrative_unlocks": ["roxana_suspension_arc"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {"institutional_reputation": [{"institution": "inst_military_perimeter", "delta": -8}]},
+          "on_partial": {}
+        },
+        "failure_conditions": ["cause any participant injury"],
+        "time_limit": "none",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_roxana_suspension_1", "cg_roxana_suspension_4", "cg_roxana_suspension_7"],
+          "achievements": ["restraint_master"],
+          "cg_unlocks": ["cg_granthi_apex"]
+        }
+      },
+      "qst_jahzara_threshold": {
+        "quest_id": "qst_jahzara_threshold",
+        "name": "Jahzara's Threshold Vigil",
+        "type": "Q1_character",
+        "description": "Jahzara undertakes an extended vigil to prove her vigilance",
+        "narrative_hook": "Suspicious activity has been noted at the palace perimeter",
+        "primary_character": "char_jahzara",
+        "supporting_characters": ["char_altani", "char_roxana"],
+        "institution": "inst_military_perimeter",
+        "prerequisites": {
+          "institutional_checks": [{"institution": "inst_military_perimeter", "access_min": 4}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "First Watch", "objective": "Guard the outer threshold for one full scene", "scene_template": null, "required_actions": ["patrol_outer", "log_movement"], "completion_condition": "no_breach"},
+          {"stage_number": 2, "name": "Second Watch", "objective": "Guard the inner threshold for two scenes", "scene_template": null, "required_actions": ["patrol_inner", "verify_identity"], "completion_condition": "no_breach"},
+          {"stage_number": 3, "name": "Third Watch", "objective": "Guard the Princess's door for three scenes", "scene_template": null, "required_actions": ["stand_still", "listen", "respond"], "completion_condition": "no_breach"},
+          {"stage_number": 4, "name": "Fourth Watch", "objective": "Guard during a high-risk ritual", "scene_template": "sct_abhisheka", "required_actions": ["guard_perimeter", "screen_guests"], "completion_condition": "ritual_complete_no_threat"}
+        ],
+        "rewards": {
+          "relationship_deltas": [{"target": "char_kumari_rati", "dimension": "trust", "delta": 10}],
+          "kala_progression": [{"kala": "kala_34_Senapatya", "stage_increment": 1}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_military_perimeter", "delta": 12}],
+          "items": [],
+          "narrative_unlocks": ["jahzara_trust_arc"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {"relationship_deltas": [{"target": "char_kumari_rati", "dimension": "trust", "delta": -10}]},
+          "on_partial": {}
+        },
+        "failure_conditions": ["allow any breach during watch"],
+        "time_limit": "none",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_jahzara_vigil", "cg_jahzara_ritual_guard"],
+          "achievements": ["unbreakable_vigil"],
+          "cg_unlocks": ["cg_perimeter_night"]
+        }
+      }
+    },
+
+    "Q2_institutional": {
+      "qst_throne_loyalty": {
+        "quest_id": "qst_throne_loyalty",
+        "name": "Throne Loyalty Audit",
+        "type": "Q2_institutional",
+        "description": "The Throne requires a demonstration of loyalty from all court members",
+        "narrative_hook": "Rumors of dissent have reached the Sovereign's ears",
+        "primary_character": "char_maha_deva",
+        "supporting_characters": ["all_characters"],
+        "institution": "inst_throne",
+        "prerequisites": {},
+        "stages": [
+          {"stage_number": 1, "name": "Public Oath", "objective": "All characters renew their oath publicly", "scene_template": "sct_abhisheka", "required_actions": ["gather_court", "administer_oath"], "completion_condition": "all_oaths_taken"},
+          {"stage_number": 2, "name": "Private Declaration", "objective": "Each character declares private loyalty", "scene_template": null, "required_actions": ["private_audience", "record_declaration"], "completion_condition": "all_declarations_recorded"},
+          {"stage_number": 3, "name": "Trial", "objective": "Each character undertakes a loyalty trial", "scene_template": null, "required_actions": ["assign_trial", "observe_response"], "completion_condition": "all_trials_completed"},
+          {"stage_number": 4, "name": "Acceptance", "objective": "Mahā Deva formally accepts or rejects each", "scene_template": "sct_abhisheka", "required_actions": ["review_record", "pronounce_judgment"], "completion_condition": "judgment_issued"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_throne", "delta": 10}],
+          "items": [],
+          "narrative_unlocks": ["loyalty_arc_conclusion"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {"institutional_reputation": [{"institution": "inst_throne", "delta": -15}]},
+          "on_partial": {}
+        },
+        "failure_conditions": ["refusal by any character"],
+        "time_limit": "10_scenes",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_loyalty_oath", "cg_loyalty_judgment"],
+          "achievements": ["loyal_court"],
+          "cg_unlocks": ["cg_throne_hall"]
+        }
+      },
+      "qst_zenana_purification": {
+        "quest_id": "qst_zenana_purification",
+        "name": "Zenana Purification Rite",
+        "type": "Q2_institutional",
+        "description": "The Zenana undertakes a ritual purification to cleanse the palace",
+        "narrative_hook": "An ill omen has been seen in the palace gardens",
+        "primary_character": "char_kumari_rati",
+        "supporting_characters": ["char_padma", "char_champa", "char_shrinagar"],
+        "institution": "inst_zenana",
+        "prerequisites": {},
+        "stages": [
+          {"stage_number": 1, "name": "Preparation", "objective": "Prepare the purification materials", "scene_template": "sct_rasayana_paka", "required_actions": ["gather_herbs", "mix_pastes"], "completion_condition": "materials_ready"},
+          {"stage_number": 2, "name": "Fumigation", "objective": "Fumigate each chamber with incense", "scene_template": "sct_nada_kala", "required_actions": ["light_incense", "walk_perimeter"], "completion_condition": "all_chambers_fumigated"},
+          {"stage_number": 3, "name": "Bathing", "objective": "Bathe in sacred waters", "scene_template": "sct_darshana_sadhana", "required_actions": ["draw_water", "bathe_ritually"], "completion_condition": "bathing_complete"},
+          {"stage_number": 4, "name": "Anointment", "objective": "Anoint with sacred oils", "scene_template": "sct_darshana_sadhana", "required_actions": ["prepare_oils", "anoint_all"], "completion_condition": "anointment_complete"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "kala_21_Gandha_yukti", "stage_increment": 1}],
+          "kama_unlocks": [{"kama": "SNANA_RATI", "lifecycle_from": "discoverable", "lifecycle_to": "runtime_enabled"}],
+          "institutional_reputation": [{"institution": "inst_zenana", "delta": 8}],
+          "items": [],
+          "narrative_unlocks": ["zenana_purification_arc"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {"institutional_reputation": [{"institution": "inst_zenana", "delta": -5}]},
+          "on_partial": {}
+        },
+        "failure_conditions": ["skip any stage"],
+        "time_limit": "5_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_zenana_fumigation", "cg_zenana_bathing"],
+          "achievements": ["zenana_cleansed"],
+          "cg_unlocks": ["cg_zenana_hall"]
+        }
+      },
+      "qst_military_drill": {
+        "quest_id": "qst_military_drill",
+        "name": "Perimeter Military Drill",
+        "type": "Q2_institutional",
+        "description": "The military undertakes a full perimeter defense drill",
+        "narrative_hook": "The Sovereign has ordered a readiness assessment",
+        "primary_character": "char_roxana",
+        "supporting_characters": ["char_jahzara", "char_altani"],
+        "institution": "inst_military_perimeter",
+        "prerequisites": {
+          "institutional_checks": [{"institution": "inst_military_perimeter", "access_min": 3}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Reconnaissance", "objective": "Survey all perimeter points", "scene_template": null, "required_actions": ["walk_perimeter", "mark_weak_points"], "completion_condition": "survey_complete"},
+          {"stage_number": 2, "name": "Formation", "objective": "Establish defensive formations", "scene_template": null, "required_actions": ["assign_positions", "test_signals"], "completion_condition": "formations_ready"},
+          {"stage_number": 3, "name": "Drill", "objective": "Execute full defense protocol", "scene_template": "sct_malla_yuddha", "required_actions": ["simulate_attack", "respond_in_force"], "completion_condition": "attack_repelled"},
+          {"stage_number": 4, "name": "Debrief", "objective": "Analyze and improve", "scene_template": null, "required_actions": ["review_log", "adjust_protocol"], "completion_condition": "debrief_complete"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "kala_34_Senapatya", "stage_increment": 1}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_military_perimeter", "delta": 6}],
+          "items": [],
+          "narrative_unlocks": ["military_readiness"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {"institutional_reputation": [{"institution": "inst_military_perimeter", "delta": -6}]},
+          "on_partial": {}
+        },
+        "failure_conditions": ["any gap in perimeter"],
+        "time_limit": "3_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_military_drill", "cg_perimeter_defense"],
+          "achievements": ["drill_master"],
+          "cg_unlocks": ["cg_military_yard"]
+        }
+      }
+    },
+
+    "Q3_kala": {
+      "qst_kala_wheel": {
+        "quest_id": "qst_kala_wheel",
+        "name": "The Kala Wheel",
+        "type": "Q3_kala",
+        "description": "Undertake a wheel of all 64 Kalas to demonstrate broad competence",
+        "narrative_hook": "A royal challenge has been issued for all court artists",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": null,
+        "prerequisites": {
+          "kala_checks": [{"kala": "any", "min_mastery": 2}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Domain 1", "objective": "Attempt one Kala from each of the 6 domains", "scene_template": null, "required_actions": ["select_kalas", "perform_kalas"], "completion_condition": "all_attempted"},
+          {"stage_number": 2, "name": "Domain 2", "objective": "Advance one Kala per domain by 1 stage", "scene_template": null, "required_actions": ["practice_kalas", "demonstrate_growth"], "completion_condition": "all_advanced"},
+          {"stage_number": 3, "name": "Domain 3", "objective": "Reach mastery 5 in any single Kala", "scene_template": null, "required_actions": ["focus_practice", "achieve_mastery"], "completion_condition": "mastery_reached"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "any", "stage_increment": 1}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_administration", "delta": 5}],
+          "items": [],
+          "narrative_unlocks": ["sct_malla_yuddha", "sct_nada_kala"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": [],
+        "time_limit": "20_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_kala_wheel_1", "cg_kala_wheel_2", "cg_kala_wheel_3"],
+          "achievements": ["kala_wheel_complete"],
+          "cg_unlocks": []
+        }
+      },
+      "qst_kala_synergy": {
+        "quest_id": "qst_kala_synergy",
+        "name": "Awaken a Kala Synergy",
+        "type": "Q3_kala",
+        "description": "Combine multiple Kalas to awaken a synergy",
+        "narrative_hook": "Whispers speak of forgotten combinations of ancient arts",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": null,
+        "prerequisites": {
+          "kala_checks": [
+            {"kala": "kala_25_Granthana", "min_mastery": 6},
+            {"kala": "kala_33_Naga_pasha", "min_mastery": 4}
+          ]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Prerequisites", "objective": "Meet all Kala mastery requirements", "scene_template": null, "required_actions": ["verify_mastery"], "completion_condition": "all_met"},
+          {"stage_number": 2, "name": "Integration", "objective": "Perform integration ritual", "scene_template": "sct_abhisheka", "required_actions": ["prepare_ritual", "combine_kalas"], "completion_condition": "ritual_complete"},
+          {"stage_number": 3, "name": "Awakening", "objective": "Trigger synergy activation", "scene_template": null, "required_actions": ["execute_synergy", "verify_effect"], "completion_condition": "synergy_active"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "synergy", "stage_increment": 1}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_administration", "delta": 6}],
+          "items": [],
+          "narrative_unlocks": ["synergy_scenes"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["any prerequisite unmet"],
+        "time_limit": "5_scenes",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_synergy_integration", "cg_synergy_awakening"],
+          "achievements": ["synergy_awakened"],
+          "cg_unlocks": []
+        }
+      },
+      "qst_kala_teaching": {
+        "quest_id": "qst_kala_teaching",
+        "name": "Teach a Kala",
+        "type": "Q3_kala",
+        "description": "Teach a Kala you have mastered to another character",
+        "narrative_hook": "The court is in need of new teachers for its ancient arts",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": null,
+        "prerequisites": {
+          "kala_checks": [{"kala": "any", "min_mastery": 8}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Selection", "objective": "Select student and Kala", "scene_template": null, "required_actions": ["choose_student", "choose_kala"], "completion_condition": "both_selected"},
+          {"stage_number": 2, "name": "Instruction", "objective": "Teach across 5 scenes", "scene_template": null, "required_actions": ["demonstrate", "correct", "encourage"], "completion_condition": "student_progresses"},
+          {"stage_number": 3, "name": "Verification", "objective": "Student demonstrates competence", "scene_template": null, "required_actions": ["test_student", "verify_mastery"], "completion_condition": "student_passes"}
+        ],
+        "rewards": {
+          "relationship_deltas": [{"target": "student", "dimension": "respect", "delta": 10}],
+          "kala_progression": [{"kala": "student_kala", "stage_increment": 3}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_administration", "delta": 5}],
+          "items": [],
+          "narrative_unlocks": []
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["student fails to learn"],
+        "time_limit": "7_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_kala_teaching_1", "cg_kala_teaching_2"],
+          "achievements": ["kala_teacher"],
+          "cg_unlocks": []
+        }
+      },
+      "qst_kala_combination": {
+        "quest_id": "qst_kala_combination",
+        "name": "Discover a Kala Combination",
+        "type": "Q3_kala",
+        "description": "Discover a new emergent Kala combination",
+        "narrative_hook": "The archive mentions lost combinations never formalized",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": null,
+        "prerequisites": {
+          "kala_checks": [{"kala": "any", "min_mastery": 7}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Hypothesis", "objective": "Propose a new Kala combination", "scene_template": null, "required_actions": ["study_kalas", "form_hypothesis"], "completion_condition": "hypothesis_formed"},
+          {"stage_number": 2, "name": "Testing", "objective": "Test the combination", "scene_template": null, "required_actions": ["attempt_combination", "observe_effect"], "completion_condition": "effect_observed"},
+          {"stage_number": 3, "name": "Refinement", "objective": "Refine the technique", "scene_template": null, "required_actions": ["adjust_parameters", "retest"], "completion_condition": "combination_reliable"},
+          {"stage_number": 4, "name": "Registration", "objective": "Register the combination in the archive", "scene_template": null, "required_actions": ["document", "submit_to_archive"], "completion_condition": "registered"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "new_combination", "stage_increment": 5}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_administration", "delta": 8}],
+          "items": [],
+          "narrative_unlocks": ["new_combination_unlocked"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["combination cannot be verified"],
+        "time_limit": "10_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_combination_discovery", "cg_combination_registration"],
+          "achievements": ["combination_discoverer"],
+          "cg_unlocks": []
+        }
+      }
+    },
+
+    "Q4_ritual": {
+      "qst_navaratri": {
+        "quest_id": "qst_navaratri",
+        "name": "Navaratri Court Ritual",
+        "type": "Q4_ritual",
+        "description": "Undertake the nine-night ritual in honor of the Goddess",
+        "narrative_hook": "The nine-night festival approaches, and the court must prepare",
+        "primary_character": "char_kumari_rati",
+        "supporting_characters": ["char_maha_deva", "char_jahzara", "char_sevda"],
+        "institution": "inst_yogic_pavilion",
+        "prerequisites": {
+          "chandra_kala_checks": [{"phase": "waxing", "days": [1, 2, 3, 4, 5, 6, 7, 8, 9]}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Night 1", "objective": "Opening invocation", "scene_template": "sct_abhisheka", "required_actions": ["open_circle", "invoke_goddess"], "completion_condition": "invocation_complete"},
+          {"stage_number": 2, "name": "Night 2", "objective": "Sacred dance", "scene_template": "sct_nritya_vidhi", "required_actions": ["perform_dance", "maintain_trance"], "completion_condition": "dance_complete"},
+          {"stage_number": 3, "name": "Night 3", "objective": "Blood offering", "scene_template": "sct_yoga_sadhana", "required_actions": ["offer_blood", "chant_mantra"], "completion_condition": "offering_accepted"},
+          {"stage_number": 4, "name": "Night 4", "objective": "Fire ritual", "scene_template": "sct_abhisheka", "required_actions": ["light_fire", "tend_flame"], "completion_condition": "fire_ritual_complete"},
+          {"stage_number": 5, "name": "Night 5", "objective": "Sacred marriage", "scene_template": "sct_yoga_sadhana", "required_actions": ["perform_union", "bind_souls"], "completion_condition": "union_complete"},
+          {"stage_number": 6, "name": "Night 6", "objective": "Trance", "scene_template": "sct_nada_kala", "required_actions": ["enter_trance", "receive_vision"], "completion_condition": "vision_received"},
+          {"stage_number": 7, "name": "Night 7", "objective": "Victory", "scene_template": "sct_malla_yuddha", "required_actions": ["do_battle", "claim_victory"], "completion_condition": "victory_declared"},
+          {"stage_number": 8, "name": "Night 8", "objective": "Cleansing", "scene_template": "sct_darshana_sadhana", "required_actions": ["cleanse_body", "cleanse_mind"], "completion_condition": "cleansing_complete"},
+          {"stage_number": 9, "name": "Night 9", "objective": "Sealing", "scene_template": "sct_abhisheka", "required_actions": ["seal_circle", "close_ritual"], "completion_condition": "sealing_complete"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [
+            {"kala": "kala_41_Tantra_yukti", "stage_increment": 3},
+            {"kala": "kala_42_Mantra_vidya", "stage_increment": 3}
+          ],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_yogic_pavilion", "delta": 15}],
+          "items": [],
+          "narrative_unlocks": ["chapter_2_navaratri"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {"institutional_reputation": [{"institution": "inst_yogic_pavilion", "delta": -10}]},
+          "on_partial": {}
+        },
+        "failure_conditions": ["break ritual at any night"],
+        "time_limit": "9_scenes",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_navaratri_night_1", "cg_navaratri_night_5", "cg_navaratri_night_9"],
+          "achievements": ["navaratri_complete", "navaratri_perfect"],
+          "cg_unlocks": ["cg_abhisheka", "cg_nritya_vidhi"]
+        }
+      },
+      "qst_amavasya": {
+        "quest_id": "qst_amavasya",
+        "name": "Amavasya Night Vigil",
+        "type": "Q4_ritual",
+        "description": "Undertake the new-moon night ritual",
+        "narrative_hook": "The new moon approaches, and the vault must be prepared",
+        "primary_character": "char_sevda",
+        "supporting_characters": ["char_maha_deva", "char_jahzara"],
+        "institution": "inst_subterranean_vaults",
+        "prerequisites": {
+          "chandra_kala_checks": [{"phase": "amavasya"}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Descent", "objective": "Descend into the vault", "scene_template": null, "required_actions": ["gather_supplies", "enter_vault"], "completion_condition": "reached_bottom"},
+          {"stage_number": 2, "name": "Sealing", "objective": "Seal the entrance", "scene_template": null, "required_actions": ["close_doors", "light_lamps"], "completion_condition": "vault_sealed"},
+          {"stage_number": 3, "name": "Invocation", "objective": "Invoke the darkness", "scene_template": "sct_abhisheka", "required_actions": ["chant_invocation", "open_gate"], "completion_condition": "invocation_successful"},
+          {"stage_number": 4, "name": "Revelation", "objective": "Receive the vision", "scene_template": null, "required_actions": ["wait_silent", "receive_vision"], "completion_condition": "vision_received"},
+          {"stage_number": 5, "name": "Return", "objective": "Return to the surface", "scene_template": null, "required_actions": ["unseal_vault", "ascend"], "completion_condition": "returned_safely"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "kala_43_Yantra", "stage_increment": 2}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_subterranean_vaults", "delta": 6}],
+          "items": [],
+          "narrative_unlocks": ["chapter_3_vault"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["break silence during vigil"],
+        "time_limit": "1_scene",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_amavasya_descent", "cg_amavasya_vision"],
+          "achievements": ["new_moon_vigil"],
+          "cg_unlocks": ["cg_vault_interior"]
+        }
+      },
+      "qst_purnima": {
+        "quest_id": "qst_purnima",
+        "name": "Purnima Celebration",
+        "type": "Q4_ritual",
+        "description": "Undertake the full-moon ritual of renewal",
+        "narrative_hook": "The full moon rises tonight, and the court must celebrate",
+        "primary_character": "char_kumari_rati",
+        "supporting_characters": ["char_maha_deva", "char_shrinagar", "char_reva"],
+        "institution": "inst_zenana",
+        "prerequisites": {
+          "chandra_kala_checks": [{"phase": "purnima"}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Preparation", "objective": "Prepare offerings", "scene_template": "sct_rasayana_paka", "required_actions": ["prepare_food", "arrange_flowers"], "completion_condition": "offerings_ready"},
+          {"stage_number": 2, "name": "Moonrise", "objective": "Greet the full moon", "scene_template": null, "required_actions": ["gather_court", "observe_moon"], "completion_condition": "moon_greeted"},
+          {"stage_number": 3, "name": "Ceremony", "objective": "Conduct ritual", "scene_template": "sct_abhisheka", "required_actions": ["conduct_ritual", "distribute_prasada"], "completion_condition": "ceremony_complete"},
+          {"stage_number": 4, "name": "Feast", "objective": "Celebratory meal", "scene_template": "sct_rasayana_paka", "required_actions": ["serve_feast", "enjoy"], "completion_condition": "feast_complete"},
+          {"stage_number": 5, "name": "Blessing", "objective": "Conclude with blessings", "scene_template": null, "required_actions": ["give_blessing", "dismiss_court"], "completion_condition": "blessing_given"}
+        ],
+        "rewards": {
+          "relationship_deltas": [{"target": "all", "dimension": "affection", "delta": 4}],
+          "kala_progression": [],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_zenana", "delta": 5}],
+          "items": [],
+          "narrative_unlocks": []
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": [],
+        "time_limit": "1_scene",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_purnima_ceremony", "cg_purnima_feast"],
+          "achievements": ["full_moon_celebration"],
+          "cg_unlocks": ["cg_palace_gardens"]
+        }
+      }
+    },
+
+    "Q5_political": {
+      "qst_court_alliance": {
+        "quest_id": "qst_court_alliance",
+        "name": "Court Alliance Formation",
+        "type": "Q5_political",
+        "description": "Form a political alliance between factions",
+        "narrative_hook": "Factional tensions have reached a critical point",
+        "primary_character": "char_roxana",
+        "supporting_characters": ["char_anisa", "char_malika"],
+        "institution": null,
+        "prerequisites": {
+          "relationship_checks": [
+            {"target": "char_anisa", "dimension": "trust", "min": 60},
+            {"target": "char_malika", "dimension": "trust", "min": 60}
+          ]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Approach", "objective": "Approach potential ally", "scene_template": null, "required_actions": ["initiate_contact", "state_intent"], "completion_condition": "ally_interested"},
+          {"stage_number": 2, "name": "Negotiation", "objective": "Negotiate terms", "scene_template": null, "required_actions": ["discuss_terms", "reach_agreement"], "completion_condition": "terms_agreed"},
+          {"stage_number": 3, "name": "Agreement", "objective": "Formalize agreement", "scene_template": null, "required_actions": ["sign_pact", "exchange_tokens"], "completion_condition": "pact_signed"},
+          {"stage_number": 4, "name": "Public Declaration", "objective": "Declare publicly", "scene_template": "sct_abhisheka", "required_actions": ["announce_alliance", "formalize_ties"], "completion_condition": "alliance_public"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_administration", "delta": 10}],
+          "items": [],
+          "narrative_unlocks": ["political_power_arc"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["refusal by any party"],
+        "time_limit": "5_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_alliance_negotiation", "cg_alliance_declaration"],
+          "achievements": ["political_ally"],
+          "cg_unlocks": ["cg_council_chamber"]
+        }
+      },
+      "qst_protocol_breach": {
+        "quest_id": "qst_protocol_breach",
+        "name": "Investigate a Protocol Breach",
+        "type": "Q5_political",
+        "description": "Investigate who violated court protocol",
+        "narrative_hook": "A breach has been discovered, and the court demands answers",
+        "primary_character": "char_anisa",
+        "supporting_characters": ["char_malika", "char_jahzara"],
+        "institution": "inst_administration",
+        "prerequisites": {
+          "institutional_checks": [{"institution": "inst_administration", "access_min": 3}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Notice", "objective": "Notice the breach", "scene_template": null, "required_actions": ["review_ledger", "spot_anomaly"], "completion_condition": "breach_noted"},
+          {"stage_number": 2, "name": "Evidence", "objective": "Gather evidence", "scene_template": null, "required_actions": ["interview_witnesses", "collect_documents"], "completion_condition": "evidence_sufficient"},
+          {"stage_number": 3, "name": "Interrogation", "objective": "Interrogate suspects", "scene_template": null, "required_actions": ["question_suspects", "compare_stories"], "completion_condition": "suspect_identified"},
+          {"stage_number": 4, "name": "Verdict", "objective": "Issue verdict", "scene_template": null, "required_actions": ["announce_finding", "pronounce_sentence"], "completion_condition": "verdict_given"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [],
+          "kama_unlocks": [{"kama": "PROTOCOL_ENFORCEMENT", "lifecycle_from": "exploreable", "lifecycle_to": "runtime_enabled"}],
+          "institutional_reputation": [{"institution": "inst_administration", "delta": 8}],
+          "items": [],
+          "narrative_unlocks": ["protocol_breach_arc"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {"institutional_reputation": [{"institution": "inst_administration", "delta": -8}]},
+          "on_partial": {}
+        },
+        "failure_conditions": ["false accusation"],
+        "time_limit": "4_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_breach_discovery", "cg_breach_verdict"],
+          "achievements": ["protocol_investigator"],
+          "cg_unlocks": ["cg_archive_hall"]
+        }
+      },
+      "qst_reputation_repair": {
+        "quest_id": "qst_reputation_repair",
+        "name": "Reputation Repair",
+        "type": "Q5_political",
+        "description": "Repair damaged reputation with an institution",
+        "narrative_hook": "Your standing has fallen, and you must regain it",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": null,
+        "prerequisites": {
+          "institutional_checks": [{"institution": "any", "reputation_below": 30}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Recognition", "objective": "Recognize the damage", "scene_template": null, "required_actions": ["acknowledge_fault", "seek_counsel"], "completion_condition": "recognized"},
+          {"stage_number": 2, "name": "Atonement", "objective": "Perform atoning acts", "scene_template": null, "required_actions": ["perform_service", "demonstrate_remorse"], "completion_condition": "atonement_done"},
+          {"stage_number": 3, "name": "Reintegration", "objective": "Demonstrate loyalty", "scene_template": null, "required_actions": ["pledge_loyalty", "serve_faithfully"], "completion_condition": "loyalty_shown"},
+          {"stage_number": 4, "name": "Acceptance", "objective": "Gain institutional acceptance", "scene_template": null, "required_actions": ["receive_pardon", "return_to_standing"], "completion_condition": "accepted_back"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "any", "delta": 20}],
+          "items": [],
+          "narrative_unlocks": ["reputation_repaired"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["another transgression"],
+        "time_limit": "6_scenes",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_atonement", "cg_acceptance"],
+          "achievements": ["redeemed"],
+          "cg_unlocks": []
+        }
+      }
+    },
+
+    "Q6_investigation": {
+      "qst_cipher_recovery": {
+        "quest_id": "qst_cipher_recovery",
+        "name": "Recover the Lost Cipher",
+        "type": "Q6_investigation",
+        "description": "Recover a lost cipher hidden in the archive",
+        "narrative_hook": "An ancient cipher has been reported missing from the archive",
+        "primary_character": "char_anisa",
+        "supporting_characters": ["char_reva", "char_svara"],
+        "institution": "inst_administration",
+        "prerequisites": {
+          "institutional_checks": [{"institution": "inst_administration", "access_min": 4}],
+          "kala_checks": [{"kala": "kala_11_Kosha", "min_mastery": 4}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Discovery", "objective": "Discover the cipher's existence", "scene_template": null, "required_actions": ["read_ledger", "find_reference"], "completion_condition": "cipher_known"},
+          {"stage_number": 2, "name": "Search", "objective": "Search the archive", "scene_template": null, "required_actions": ["search_shelves", "consult_index"], "completion_condition": "cipher_found"},
+          {"stage_number": 3, "name": "Decode", "objective": "Decode the cipher", "scene_template": null, "required_actions": ["apply_key", "verify_message"], "completion_condition": "cipher_decoded"},
+          {"stage_number": 4, "name": "Recovery", "objective": "Recover the cipher", "scene_template": null, "required_actions": ["secure_cipher", "submit_to_archive"], "completion_condition": "cipher_recovered"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "kala_11_Kosha", "stage_increment": 2}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_administration", "delta": 8}],
+          "items": ["cipher_document"],
+          "narrative_unlocks": ["cipher_knowledge_arc"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["lost during search"],
+        "time_limit": "5_scenes",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_cipher_discovery", "cg_cipher_decode"],
+          "achievements": ["cipher_found", "cipher_decoded"],
+          "cg_unlocks": ["cg_archive_hall"]
+        }
+      },
+      "qst_secret_reveal": {
+        "quest_id": "qst_secret_reveal",
+        "name": "Reveal a Court Secret",
+        "type": "Q6_investigation",
+        "description": "Uncover and reveal a secret held by another character",
+        "narrative_hook": "Whispers suggest someone holds a dangerous secret",
+        "primary_character": "char_jahzara",
+        "supporting_characters": ["char_reva"],
+        "institution": null,
+        "prerequisites": {
+          "kala_checks": [{"kala": "kala_50_Nimitta", "min_mastery": 4}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Suspicion", "objective": "Notice a secret being held", "scene_template": null, "required_actions": ["observe_behavior", "note_anomaly"], "completion_condition": "suspicion_confirmed"},
+          {"stage_number": 2, "name": "Investigation", "objective": "Investigate the secret", "scene_template": null, "required_actions": ["follow_target", "check_records"], "completion_condition": "secret_identified"},
+          {"stage_number": 3, "name": "Evidence", "objective": "Gather evidence", "scene_template": null, "required_actions": ["collect_proof", "verify_facts"], "completion_condition": "evidence_secure"},
+          {"stage_number": 4, "name": "Reveal", "objective": "Reveal the secret", "scene_template": null, "required_actions": ["choose_audience", "announce_finding"], "completion_condition": "secret_revealed"}
+        ],
+        "rewards": {
+          "relationship_deltas": [{"target": "subject_character", "dimension": "resentment", "delta": 15}],
+          "kala_progression": [],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_military_perimeter", "delta": 6}],
+          "items": [],
+          "narrative_unlocks": ["secret_revealed_arc"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["secret revealed falsely"],
+        "time_limit": "4_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_secret_discovery", "cg_secret_reveal"],
+          "achievements": ["secret_revealer"],
+          "cg_unlocks": []
+        }
+      },
+      "qst_memory_recovery": {
+        "quest_id": "qst_memory_recovery",
+        "name": "Recover a Lost Memory",
+        "type": "Q6_investigation",
+        "description": "Recover a lost or suppressed memory",
+        "narrative_hook": "A dream fragment hints at forgotten events",
+        "primary_character": "char_reva",
+        "supporting_characters": ["char_jahzara", "char_sevda"],
+        "institution": null,
+        "prerequisites": {
+          "kala_checks": [{"kala": "kala_51_Svapna", "min_mastery": 3}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Dream", "objective": "Receive dream fragment", "scene_template": null, "required_actions": ["sleep_ritually", "record_dream"], "completion_condition": "dream_recorded"},
+          {"stage_number": 2, "name": "Interpretation", "objective": "Interpret the dream", "scene_template": null, "required_actions": ["consult_symbols", "form_interpretation"], "completion_condition": "dream_interpreted"},
+          {"stage_number": 3, "name": "Verification", "objective": "Verify against records", "scene_template": null, "required_actions": ["check_archive", "cross_reference"], "completion_condition": "memory_verified"},
+          {"stage_number": 4, "name": "Integration", "objective": "Integrate the memory", "scene_template": null, "required_actions": ["accept_memory", "integrate_self"], "completion_condition": "memory_integrated"}
+        ],
+        "rewards": {
+          "relationship_deltas": [{"target": "self", "dimension": "familiarity", "delta": 10}],
+          "kala_progression": [{"kala": "kala_51_Svapna", "stage_increment": 2}],
+          "kama_unlocks": [],
+          "institutional_reputation": [],
+          "items": [],
+          "narrative_unlocks": ["memory_recovered"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["false interpretation"],
+        "time_limit": "3_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_dream_fragment", "cg_memory_integration"],
+          "achievements": ["memory_keeper"],
+          "cg_unlocks": []
+        }
+      }
+    },
+
+    "Q7_relationship": {
+      "qst_trust_building": {
+        "quest_id": "qst_trust_building",
+        "name": "Build Trust",
+        "type": "Q7_relationship",
+        "description": "Build trust with a target character",
+        "narrative_hook": "A bond has not yet formed, and must be cultivated",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": null,
+        "prerequisites": {
+          "relationship_checks": [{"target": "any", "dimension": "trust", "max": 50}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Recognition", "objective": "Recognize lack of trust", "scene_template": null, "required_actions": ["observe", "reflect"], "completion_condition": "recognized"},
+          {"stage_number": 2, "name": "Small Gesture", "objective": "Offer small gesture", "scene_template": null, "required_actions": ["offer_help", "demonstrate_care"], "completion_condition": "gesture_accepted"},
+          {"stage_number": 3, "name": "Larger Gesture", "objective": "Offer larger commitment", "scene_template": null, "required_actions": ["make_sacrifice", "show_commitment"], "completion_condition": "commitment_accepted"},
+          {"stage_number": 4, "name": "Trust Demonstrated", "objective": "Demonstrate trustworthiness", "scene_template": null, "required_actions": ["keep_promise", "show_consistency"], "completion_condition": "trust_established"}
+        ],
+        "rewards": {
+          "relationship_deltas": [{"target": "target", "dimension": "trust", "delta": 20}],
+          "kala_progression": [],
+          "kama_unlocks": [],
+          "institutional_reputation": [],
+          "items": [],
+          "narrative_unlocks": []
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["broken promise"],
+        "time_limit": "5_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_trust_small", "cg_trust_large"],
+          "achievements": ["trusted_bond"],
+          "cg_unlocks": []
+        }
+      },
+      "qst_relationship_repair": {
+        "quest_id": "qst_relationship_repair",
+        "name": "Repair a Relationship",
+        "type": "Q7_relationship",
+        "description": "Repair a relationship damaged by past events",
+        "narrative_hook": "A rift has formed that must be healed",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": null,
+        "prerequisites": {
+          "relationship_checks": [{"target": "any", "dimension": "resentment", "min": 40}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Acknowledgment", "objective": "Acknowledge the harm", "scene_template": null, "required_actions": ["admit_fault", "understand_impact"], "completion_condition": "acknowledged"},
+          {"stage_number": 2, "name": "Apology", "objective": "Offer sincere apology", "scene_template": null, "required_actions": ["offer_apology", "express_regret"], "completion_condition": "apology_accepted"},
+          {"stage_number": 3, "name": "Restitution", "objective": "Make restitution", "scene_template": null, "required_actions": ["repair_damage", "restore_trust"], "completion_condition": "restitution_complete"},
+          {"stage_number": 4, "name": "Forgiveness", "objective": "Receive forgiveness", "scene_template": null, "required_actions": ["receive_forgiveness", "rebuild_bond"], "completion_condition": "forgiveness_given"}
+        ],
+        "rewards": {
+          "relationship_deltas": [{"target": "target", "dimension": "resentment", "delta": -25}],
+          "kala_progression": [],
+          "kama_unlocks": [],
+          "institutional_reputation": [],
+          "items": [],
+          "narrative_unlocks": []
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["insincere apology"],
+        "time_limit": "6_scenes",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_apology", "cg_forgiveness"],
+          "achievements": ["relationship_repaired"],
+          "cg_unlocks": []
+        }
+      },
+      "qst_intimacy_arc": {
+        "quest_id": "qst_intimacy_arc",
+        "name": "Intimacy Arc",
+        "type": "Q7_relationship",
+        "description": "Deepen intimacy with a specific character",
+        "narrative_hook": "The bond is ready to deepen to a new level",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": null,
+        "prerequisites": {
+          "relationship_checks": [
+            {"target": "target", "dimension": "trust", "min": 60},
+            {"target": "target", "dimension": "affection", "min": 60}
+          ]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Confession", "objective": "Share a private confession", "scene_template": null, "required_actions": ["confess", "receive_confession"], "completion_condition": "confession_shared"},
+          {"stage_number": 2, "name": "Ritual", "objective": "Undertake a private ritual together", "scene_template": "sct_darshana_sadhana", "required_actions": ["prepare_ritual", "perform_ritual"], "completion_condition": "ritual_complete"},
+          {"stage_number": 3, "name": "Union", "objective": "Achieve union", "scene_template": "sct_yoga_sadhana", "required_actions": ["achieve_union", "bind_souls"], "completion_condition": "union_achieved"},
+          {"stage_number": 4, "name": "Integration", "objective": "Integrate into daily life", "scene_template": null, "required_actions": ["integrate_bond", "continue_daily"], "completion_condition": "integration_complete"}
+        ],
+        "rewards": {
+          "relationship_deltas": [{"target": "target", "dimension": "affection", "delta": 15}],
+          "kala_progression": [],
+          "kama_unlocks": [{"kama": "MAITHUNA", "lifecycle_from": "participatory", "lifecycle_to": "runtime_enabled"}],
+          "institutional_reputation": [],
+          "items": [],
+          "narrative_unlocks": ["intimacy_bond"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["betrayal of trust"],
+        "time_limit": "8_scenes",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_confession", "cg_ritual_union", "cg_integration"],
+          "achievements": ["intimacy_achieved", "sacred_bond"],
+          "cg_unlocks": ["cg_private_chamber"]
+        }
+      }
+    },
+
+    "Q8_archival": {
+      "qst_chronicle_entry": {
+        "quest_id": "qst_chronicle_entry",
+        "name": "Record a Chronicle Entry",
+        "type": "Q8_archival",
+        "description": "Add a significant event to the palace chronicle",
+        "narrative_hook": "A significant event has occurred and must be recorded",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": "inst_administration",
+        "prerequisites": {
+          "kala_checks": [{"kala": "kala_6_Kavya", "min_mastery": 3}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Witness", "objective": "Witness a significant event", "scene_template": null, "required_actions": ["be_present", "observe_closely"], "completion_condition": "event_witnessed"},
+          {"stage_number": 2, "name": "Compose", "objective": "Compose the chronicle entry", "scene_template": null, "required_actions": ["write_entry", "review_accuracy"], "completion_condition": "entry_composed"},
+          {"stage_number": 3, "name": "Submit", "objective": "Submit to the archive", "scene_template": null, "required_actions": ["submit_entry", "receive_approval"], "completion_condition": "entry_approved"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "kala_6_Kavya", "stage_increment": 1}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_administration", "delta": 5}],
+          "items": [],
+          "narrative_unlocks": ["chronicle_access"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["inaccurate record"],
+        "time_limit": "3_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_chronicle_writing", "cg_chronicle_submission"],
+          "achievements": ["chronicler"],
+          "cg_unlocks": ["cg_archive_hall"]
+        }
+      },
+      "qst_legacy_recovery": {
+        "quest_id": "qst_legacy_recovery",
+        "name": "Recover a Legacy Record",
+        "type": "Q8_archival",
+        "description": "Recover a legacy record from the archive",
+        "narrative_hook": "A legacy record has been discovered in the deep archive",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": "inst_administration",
+        "prerequisites": {
+          "institutional_checks": [{"institution": "inst_administration", "access_min": 5}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Search", "objective": "Search the archive", "scene_template": null, "required_actions": ["search_deep_archive", "locate_record"], "completion_condition": "record_located"},
+          {"stage_number": 2, "name": "Recovery", "objective": "Recover the record", "scene_template": null, "required_actions": ["extract_record", "preserve_record"], "completion_condition": "record_recovered"},
+          {"stage_number": 3, "name": "Translation", "objective": "Translate if necessary", "scene_template": null, "required_actions": ["translate_record", "verify_translation"], "completion_condition": "record_translated"},
+          {"stage_number": 4, "name": "Integration", "objective": "Integrate into current canon", "scene_template": null, "required_actions": ["integrate_record", "update_canon"], "completion_condition": "integration_complete"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "kala_11_Kosha", "stage_increment": 1}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_administration", "delta": 6}],
+          "items": ["legacy_record"],
+          "narrative_unlocks": ["legacy_knowledge"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["record destroyed"],
+        "time_limit": "4_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_legacy_discovery", "cg_legacy_integration"],
+          "achievements": ["legacy_keeper"],
+          "cg_unlocks": ["cg_deep_archive"]
+        }
+      }
+    },
+
+    "Q9_exploration": {
+      "qst_uncharted_location": {
+        "quest_id": "qst_uncharted_location",
+        "name": "Explore an Uncharted Location",
+        "type": "Q9_exploration",
+        "description": "Explore and map a new location in the palace",
+        "narrative_hook": "A sealed door has been discovered in the palace",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": "inst_military_perimeter",
+        "prerequisites": {
+          "institutional_checks": [{"institution": "inst_military_perimeter", "access_min": 3}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Discovery", "objective": "Discover the location", "scene_template": null, "required_actions": ["find_entrance", "verify_accessibility"], "completion_condition": "location_found"},
+          {"stage_number": 2, "name": "Entry", "objective": "Enter the location", "scene_template": null, "required_actions": ["unlock_door", "enter_carefully"], "completion_condition": "location_entered"},
+          {"stage_number": 3, "name": "Survey", "objective": "Survey the location", "scene_template": null, "required_actions": ["map_room", "note_hazards"], "completion_condition": "location_surveyed"},
+          {"stage_number": 4, "name": "Report", "objective": "Report to the institution", "scene_template": null, "required_actions": ["write_report", "submit_findings"], "completion_condition": "report_submitted"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "kala_39_Vastu", "stage_increment": 1}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_military_perimeter", "delta": 6}],
+          "items": [],
+          "narrative_unlocks": ["new_location_access"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["location inaccessible"],
+        "time_limit": "3_scenes",
+        "repeatable": true,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_uncharted_entrance", "cg_uncharted_interior"],
+          "achievements": ["explorer"],
+          "cg_unlocks": ["cg_hidden_chamber"]
+        }
+      },
+      "qst_sacred_object": {
+        "quest_id": "qst_sacred_object",
+        "name": "Retrieve a Sacred Object",
+        "type": "Q9_exploration",
+        "description": "Retrieve a lost sacred object",
+        "narrative_hook": "A sacred object has been lost and must be found",
+        "primary_character": "any",
+        "supporting_characters": [],
+        "institution": "inst_yogic_pavilion",
+        "prerequisites": {
+          "kala_checks": [{"kala": "kala_50_Nimitta", "min_mastery": 4}]
+        },
+        "stages": [
+          {"stage_number": 1, "name": "Locate", "objective": "Locate the object", "scene_template": null, "required_actions": ["divine_location", "confirm_presence"], "completion_condition": "object_located"},
+          {"stage_number": 2, "name": "Journey", "objective": "Journey to the location", "scene_template": null, "required_actions": ["travel", "overcome_obstacles"], "completion_condition": "arrived"},
+          {"stage_number": 3, "name": "Retrieve", "objective": "Retrieve the object", "scene_template": null, "required_actions": ["retrieve_object", "secure_it"], "completion_condition": "object_retrieved"},
+          {"stage_number": 4, "name": "Return", "objective": "Return with the object", "scene_template": null, "required_actions": ["return_safely", "present_object"], "completion_condition": "object_returned"}
+        ],
+        "rewards": {
+          "relationship_deltas": [],
+          "kala_progression": [{"kala": "kala_43_Yantra", "stage_increment": 1}],
+          "kama_unlocks": [],
+          "institutional_reputation": [{"institution": "inst_yogic_pavilion", "delta": 8}],
+          "items": ["sacred_object"],
+          "narrative_unlocks": ["sacred_object_restored"]
+        },
+        "consequences": {
+          "on_success": {},
+          "on_failure": {},
+          "on_partial": {}
+        },
+        "failure_conditions": ["object lost"],
+        "time_limit": "5_scenes",
+        "repeatable": false,
+        "avn_hooks": {
+          "gallery_scenes": ["cg_object_journey", "cg_object_return"],
+          "achievements": ["sacred_recovery"],
+          "cg_unlocks": ["cg_sacred_chamber"]
+        }
+      }
+    }
+  },
+
+  "quest_runtime_lifecycle": {
+    "state_flow": [
+      "QUEST_AVAILABLE",
+      "PREREQUISITES_CHECKED",
+      "QUEST_ACCEPTED",
+      "STAGE_PROGRESSION",
+      "QUEST_COMPLETE",
+      "REWARDS_APPLIED",
+      "CONSEQUENCES_APPLIED",
+      "ARCHIVE_APPEND",
+      "MEMORY_WRITE",
+      "RELATIONSHIP_UPDATE"
+    ]
+  },
+
+  "multiplayer_quest_coordination": {
+    "shared_quests": {
+      "allowed": true,
+      "participants": "all_players_controlling_relevant_characters",
+      "choice_ownership": "player_who_controls_character_whose_turn",
+      "conflict_resolution": "consensus_or_vote"
+    },
+    "personal_quests": {
+      "allowed": true,
+      "participants": "single_player_plus_observers",
+      "observer_participation": "dialogue_via_their_character_only"
+    },
+    "hard_stop_propagation": "instant_to_all_players",
+    "aftercare": "session_wide_mandatory"
+  },
+
+  "avn_quest_hooks": {
+    "qst_navaratri": {
+      "gallery_scenes": ["cg_navaratri_night_1", "cg_navaratri_night_5", "cg_navaratri_night_9"],
+      "achievements": ["navaratri_complete", "navaratri_perfect"],
+      "cg_unlocks": ["cg_abhisheka", "cg_nritya_vidhi"]
+    },
+    "qst_cipher_recovery": {
+      "gallery_scenes": ["cg_cipher_discovery", "cg_cipher_decode"],
+      "achievements": ["cipher_found", "cipher_decoded"],
+      "cg_unlocks": ["cg_archive_hall"]
+    },
+    "qst_intimacy_arc": {
+      "gallery_scenes": ["cg_confession", "cg_ritual_union", "cg_integration"],
+      "achievements": ["intimacy_achieved", "sacred_bond"],
+      "cg_unlocks": ["cg_private_chamber"]
+    }
+  }
+}

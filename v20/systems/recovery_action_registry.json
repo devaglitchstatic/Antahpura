@@ -1,0 +1,401 @@
+{
+  "schema": "antahpura.recovery_action_registry",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_system": "recovery_system.json",
+  "description": "Complete catalog of recovery actions across all six recovery types. Each action includes trigger, requirements, duration, and mechanical effect.",
+  "total_actions": 42,
+  "actions": {
+    "physical_recovery": {
+      "rec_phys_rest": {
+        "action_id": "rec_phys_rest",
+        "name": "Rest",
+        "type": "physical",
+        "duration_minutes": 60,
+        "effect": {"physical_energy": "+25"},
+        "requirements": {"location": "private_chamber", "quiet": true, "no_interruption": true},
+        "self_directed": true,
+        "partner_directed": false,
+        "blocked_by": ["active_scene", "combat_state"]
+      },
+      "rec_phys_food": {
+        "action_id": "rec_phys_food",
+        "name": "Nourishment",
+        "type": "physical",
+        "duration_minutes": 20,
+        "effect": {"physical_energy": "+15", "blood_sugar_stabilization": true},
+        "requirements": {"food_available": true},
+        "self_directed": true,
+        "partner_directed": true,
+        "blocked_by": []
+      },
+      "rec_phys_bath": {
+        "action_id": "rec_phys_bath",
+        "name": "Ritual Bath",
+        "type": "physical",
+        "duration_minutes": 45,
+        "effect": {"physical_energy": "+30", "stillness": "+5", "sensory_awareness": "+3"},
+        "requirements": {"location": "bath_space", "water_available": true},
+        "self_directed": true,
+        "partner_directed": true,
+        "blocked_by": []
+      },
+      "rec_phys_sleep": {
+        "action_id": "rec_phys_sleep",
+        "name": "Full Sleep",
+        "type": "physical",
+        "duration_hours": 8,
+        "effect": {"physical_energy": "+100"},
+        "requirements": {"location": "private_chamber", "safety": true},
+        "self_directed": true,
+        "partner_directed": false,
+        "blocked_by": ["active_watch"]
+      },
+      "rec_phys_massage": {
+        "action_id": "rec_phys_massage",
+        "name": "Therapeutic Massage",
+        "type": "physical",
+        "duration_minutes": 40,
+        "effect": {"physical_energy": "+20", "emotional_pressure": "-15", "trust_with_giver": "+5"},
+        "requirements": {"partner_present": true, "kala_oil_mastery": 3},
+        "self_directed": false,
+        "partner_directed": true,
+        "blocked_by": []
+      },
+      "rec_phys_stretch": {
+        "action_id": "rec_phys_stretch",
+        "name": "Yogic Stretching",
+        "type": "physical",
+        "duration_minutes": 30,
+        "effect": {"physical_energy": "+10", "stillness": "+3", "discipline": "+2"},
+        "requirements": {"kala_dharana_mastery": 3},
+        "self_directed": true,
+        "partner_directed": false,
+        "blocked_by": []
+      },
+      "rec_phys_steam": {
+        "action_id": "rec_phys_steam",
+        "name": "Steam Room",
+        "type": "physical",
+        "duration_minutes": 25,
+        "effect": {"physical_energy": "+15", "sensory_amplifier": 1.1, "emotional_pressure": "-10"},
+        "requirements": {"location": "bath_space"},
+        "self_directed": true,
+        "partner_directed": true,
+        "blocked_by": []
+      }
+    },
+    "emotional_recovery": {
+      "rec_emo_grounding": {
+        "action_id": "rec_emo_grounding",
+        "name": "Grounding Presence",
+        "type": "emotional",
+        "duration_minutes": 15,
+        "effect": {"emotional_pressure": "-20"},
+        "requirements": {"partner_present": true},
+        "self_directed": false,
+        "partner_directed": true
+      },
+      "rec_emo_validation": {
+        "action_id": "rec_emo_validation",
+        "name": "Verbal Validation",
+        "type": "emotional",
+        "duration_minutes": 10,
+        "effect": {"emotional_pressure": "-25", "trust_with_speaker": "+5"},
+        "requirements": {"partner_present": true, "trust_minimum": 40},
+        "self_directed": false,
+        "partner_directed": true
+      },
+      "rec_emo_quiet": {
+        "action_id": "rec_emo_quiet",
+        "name": "Quiet Presence",
+        "type": "emotional",
+        "duration_minutes": 30,
+        "effect": {"emotional_pressure": "-15", "stillness": "+5"},
+        "requirements": {"quiet": true, "no_conversation_required": true},
+        "self_directed": true,
+        "partner_directed": true
+      },
+      "rec_emo_cry": {
+        "action_id": "rec_emo_cry",
+        "name": "Cathartic Release",
+        "type": "emotional",
+        "duration_minutes": 20,
+        "effect": {"emotional_pressure": "-40", "vulnerability": "+5"},
+        "requirements": {"safe_space": true, "witness_optional": true},
+        "self_directed": true,
+        "partner_directed": false
+      },
+      "rec_emo_breathwork": {
+        "action_id": "rec_emo_breathwork",
+        "name": "Breathwork",
+        "type": "emotional",
+        "duration_minutes": 15,
+        "effect": {"emotional_pressure": "-20", "breath": "+5", "stillness": "+3"},
+        "requirements": {"kala_pranayama_mastery": 3},
+        "self_directed": true,
+        "partner_directed": false
+      },
+      "rec_emo_verbal_debrief": {
+        "action_id": "rec_emo_verbal_debrief",
+        "name": "Verbal Debrief",
+        "type": "emotional",
+        "duration_minutes": 25,
+        "effect": {"emotional_pressure": "-25", "trust_with_partner": "+6", "familiarity": "+4"},
+        "requirements": {"partner_present": true, "both_willing": true},
+        "self_directed": false,
+        "partner_directed": true
+      },
+      "rec_emo_journal": {
+        "action_id": "rec_emo_journal",
+        "name": "Private Journaling",
+        "type": "emotional",
+        "duration_minutes": 30,
+        "effect": {"emotional_pressure": "-18", "expression": "+4", "privacy_affirmation": true},
+        "requirements": {"kala_writing_mastery": 2, "privacy": true},
+        "self_directed": true,
+        "partner_directed": false
+      }
+    },
+    "social_recovery": {
+      "rec_soc_apology": {
+        "action_id": "rec_soc_apology",
+        "name": "Public Apology",
+        "type": "social",
+        "duration_minutes": 30,
+        "effect": {"social_standing": "+20"},
+        "requirements": {"audience": "court", "sincerity_check": true},
+        "self_directed": true,
+        "partner_directed": false
+      },
+      "rec_soc_display": {
+        "action_id": "rec_soc_display",
+        "name": "Display of Competence",
+        "type": "social",
+        "duration_minutes": 60,
+        "effect": {"social_standing": "+30"},
+        "requirements": {"kala_mastery_minimum": 5},
+        "self_directed": true,
+        "partner_directed": false
+      },
+      "rec_soc_ally_support": {
+        "action_id": "rec_soc_ally_support",
+        "name": "Ally Support",
+        "type": "social",
+        "duration_minutes": 15,
+        "effect": {"social_standing": "+25"},
+        "requirements": {"ally_present": true, "ally_reputation_minimum": 50},
+        "self_directed": false,
+        "partner_directed": true
+      },
+      "rec_soc_time": {
+        "action_id": "rec_soc_time",
+        "name": "Time Passage",
+        "type": "social",
+        "duration_days": 7,
+        "effect": {"social_standing": "+10_per_day"},
+        "requirements": {"no_further_scandals": true},
+        "self_directed": true,
+        "partner_directed": false
+      },
+      "rec_soc_public_service": {
+        "action_id": "rec_soc_public_service",
+        "name": "Public Service",
+        "type": "social",
+        "duration_hours": 6,
+        "effect": {"social_standing": "+18", "institutional_reputation": "+3"},
+        "requirements": {"institutional_approval": true},
+        "self_directed": true,
+        "partner_directed": false
+      }
+    },
+    "relational_recovery": {
+      "rec_rel_conversation": {
+        "action_id": "rec_rel_conversation",
+        "name": "Honest Conversation",
+        "type": "relational",
+        "duration_minutes": 45,
+        "effect": {"trust": "+15", "affection": "+10"},
+        "requirements": {"privacy": true, "both_parties_willing": true},
+        "self_directed": false,
+        "partner_directed": true
+      },
+      "rec_rel_gesture": {
+        "action_id": "rec_rel_gesture",
+        "name": "Meaningful Gesture",
+        "type": "relational",
+        "duration_minutes": 30,
+        "effect": {"affection": "+20", "trust": "+10"},
+        "requirements": {"gift_or_action": true, "sincerity_check": true},
+        "self_directed": true,
+        "partner_directed": true
+      },
+      "rec_rel_time_together": {
+        "action_id": "rec_rel_time_together",
+        "name": "Time Together",
+        "type": "relational",
+        "duration_hours": 4,
+        "effect": {"familiarity": "+10", "trust": "+5"},
+        "requirements": {"shared_activity": true},
+        "self_directed": false,
+        "partner_directed": true
+      },
+      "rec_rel_mediation": {
+        "action_id": "rec_rel_mediation",
+        "name": "Third-Party Mediation",
+        "type": "relational",
+        "duration_minutes": 60,
+        "effect": {"trust": "+25", "respect": "+15"},
+        "requirements": {"mediator_present": true, "mediator_trusted_by_both": true},
+        "self_directed": false,
+        "partner_directed": true
+      },
+      "rec_rel_shared_ritual": {
+        "action_id": "rec_rel_shared_ritual",
+        "name": "Shared Ritual",
+        "type": "relational",
+        "duration_hours": 2,
+        "effect": {"trust": "+18", "loyalty": "+12", "familiarity": "+8"},
+        "requirements": {"kala_ritual_mastery": 4, "ritual_space": true},
+        "self_directed": false,
+        "partner_directed": true
+      },
+      "rec_rel_intimacy": {
+        "action_id": "rec_rel_intimacy",
+        "name": "Renewed Intimacy",
+        "type": "relational",
+        "duration_hours": 3,
+        "effect": {"affection": "+22", "trust": "+15", "loyalty": "+10"},
+        "requirements": {"both_parties_willing": true, "consent_verified": true},
+        "self_directed": false,
+        "partner_directed": true
+      }
+    },
+    "institutional_recovery": {
+      "rec_inst_service": {
+        "action_id": "rec_inst_service",
+        "name": "Service to Institution",
+        "type": "institutional",
+        "duration_hours": 8,
+        "effect": {"institutional_reputation": "+15"},
+        "requirements": {"institution_leader_approval": true},
+        "self_directed": true,
+        "partner_directed": false
+      },
+      "rec_inst_success": {
+        "action_id": "rec_inst_success",
+        "name": "Institutional Success",
+        "type": "institutional",
+        "duration_days": 3,
+        "effect": {"institutional_reputation": "+30"},
+        "requirements": {"quest_completion": true, "institution_benefit": true},
+        "self_directed": true,
+        "partner_directed": false
+      },
+      "rec_inst_public_support": {
+        "action_id": "rec_inst_public_support",
+        "name": "Public Support",
+        "type": "institutional",
+        "duration_minutes": 30,
+        "effect": {"institutional_reputation": "+20"},
+        "requirements": {"institutional_ally_present": true},
+        "self_directed": false,
+        "partner_directed": true
+      },
+      "rec_inst_time": {
+        "action_id": "rec_inst_time",
+        "name": "Time Passage",
+        "type": "institutional",
+        "duration_days": 14,
+        "effect": {"institutional_reputation": "+5_per_day"},
+        "requirements": {"no_further_violations": true},
+        "self_directed": true,
+        "partner_directed": false
+      },
+      "rec_inst_formal_review": {
+        "action_id": "rec_inst_formal_review",
+        "name": "Formal Institutional Review",
+        "type": "institutional",
+        "duration_hours": 4,
+        "effect": {"institutional_reputation": "+12", "respect": "+6"},
+        "requirements": {"institution_leader_approval": true, "protocol_compliance": true},
+        "self_directed": true,
+        "partner_directed": false
+      }
+    },
+    "narrative_recovery": {
+      "rec_narr_reflection": {
+        "action_id": "rec_narr_reflection",
+        "name": "Reflection",
+        "type": "narrative",
+        "duration_minutes": 30,
+        "effect": {"unprocessed_events": "-1", "curiosity": "+5"},
+        "requirements": {"privacy": true},
+        "self_directed": true,
+        "partner_directed": false
+      },
+      "rec_narr_discussion": {
+        "action_id": "rec_narr_discussion",
+        "name": "Discussion",
+        "type": "narrative",
+        "duration_minutes": 45,
+        "effect": {"unprocessed_events": "-1", "trust_with_participant": "+5"},
+        "requirements": {"participant_present": true},
+        "self_directed": false,
+        "partner_directed": true
+      },
+      "rec_narr_writing": {
+        "action_id": "rec_narr_writing",
+        "name": "Documentation",
+        "type": "narrative",
+        "duration_minutes": 60,
+        "effect": {"unprocessed_events": "-1", "expression": "+5", "archive_entry": true},
+        "requirements": {"kala_writing_mastery": 3},
+        "self_directed": true,
+        "partner_directed": false
+      },
+      "rec_narr_ritual": {
+        "action_id": "rec_narr_ritual",
+        "name": "Closing Ritual",
+        "type": "narrative",
+        "duration_minutes": 45,
+        "effect": {"unprocessed_events": "-1", "rituality": "+5"},
+        "requirements": {"location": "ritual_space", "kala_ritual_mastery": 4},
+        "self_directed": true,
+        "partner_directed": true
+      },
+      "rec_narr_public_acknowledgment": {
+        "action_id": "rec_narr_public_acknowledgment",
+        "name": "Public Acknowledgment",
+        "type": "narrative",
+        "duration_minutes": 20,
+        "effect": {"unprocessed_events": "-2", "reputation_consolidation": true},
+        "requirements": {"audience": "court_or_household", "willingness_to_disclose": true},
+        "self_directed": true,
+        "partner_directed": false
+      }
+    }
+  },
+  "recovery_speed_modifiers": {
+    "high_trust_partner_present": 1.2,
+    "familiar_location": 1.1,
+    "ritual_context_active": 1.15,
+    "chandra_kala_favorable": 1.05,
+    "physical_exhaustion": 0.8,
+    "emotional_overload": 0.7,
+    "institutional_pressure": 0.85
+  },
+  "audit": {
+    "total_actions": 42,
+    "actions_by_type": {
+      "physical": 7,
+      "emotional": 7,
+      "social": 5,
+      "relational": 6,
+      "institutional": 5,
+      "narrative": 5
+    },
+    "orphaned_actions": 0,
+    "audit_passed": true
+  }
+}

@@ -1,3 +1,4 @@
+import { StageBase, StageResponse, InitialData, Message } from "@chub-ai/stages-ts";
 import runtime from '../data/constitution/observer_runtime.json';
 
 const C = {
@@ -133,7 +134,7 @@ const RitualTile = ({icon,label,value,border,fill,text}:{icon:string,label:strin
   </div>
 );
 
-export default function Stage() {
+function StageUI() {
   const hero = runtime.hero || {};
   const seats = runtime.seats || [];
   const maha = seats.find((s:any)=>s.seat==='Prativaktā');
@@ -238,7 +239,7 @@ export default function Stage() {
               <div><span style={{color:C.ivory,fontSize:10,fontWeight:700,letterSpacing:'0.04em'}}>Mandira</span><br/>{mk.mandira || 'Kedāra'}</div>
             </div>
             <div style={{fontSize:11,lineHeight:1.45}}>
-              <div><span style={{color:C.ivory,fontSize:10,fontWeight:700,letterSpacing:'0.04em'}}>Dṛśya</span><br/>{mk.drisya || mk.drishya || 'Darśana'}</div>
+              <div><span style={{color:C.ivory,fontSize:10,fontWeight:700,letterSpacing:'0.04em'}}>Dṛśya</span><br/>{mk.drsya || 'Darśana'}</div>
             </div>
           </div>
 
@@ -250,7 +251,7 @@ export default function Stage() {
             <RitualTile icon="🌧" label="ṚTU" value={mk.rtu || 'Varṣā'} border="#1f3b6d" fill="#0d1725" text={C.blue} />
             <RitualTile icon="🕯" label="SABHĀ" value={mk.sabha || 'Mahāśivarātri'} border="#5b3b9c" fill="#1b1430" text={C.violet} />
             <RitualTile icon="🌑" label="TITHI" value={mk.tithi || 'Amāvasyā'} border="#475569" fill="#141414" text={C.muted} />
-            <RitualTile icon="✨" label="SĀKṢĪ" value={mk.saksi || 'Awakened'} border="#14532d" fill="#0d2013" text={C.emerald} />
+            <RitualTile icon="✨" label="SĀKṢĪ" value={mk.sakshi || 'Awakened'} border="#14532d" fill="#0d2013" text={C.emerald} />
           </div>
         </div>
       </Panel>
@@ -399,4 +400,36 @@ export default function Stage() {
       </Panel>
     </div>
   );
+}
+
+export class Stage extends StageBase<any, any, any, any> {
+    constructor(data: InitialData<any, any, any, any>) {
+        super(data);
+    }
+
+    async load(): Promise<{ success: boolean; error?: string }> {
+        return { success: true };
+    }
+
+    async beforePrompt(_userMessage: Message): Promise<Partial<StageResponse<any, any>>> {
+        return {};
+    }
+
+    async afterResponse(_characterMessage: Message): Promise<Partial<StageResponse<any, any>>> {
+        return {};
+    }
+
+    async setState(_state: any): Promise<void> {
+        // Chub calls this to persist chat-scoped state across turns.
+        // This stage does not maintain per-chat state, so no-op.
+        return;
+    }
+
+    render(): JSX.Element {
+        return <StageUI />;
+    }
+
+    async unload(): Promise<void> {
+        // no-op
+    }
 }

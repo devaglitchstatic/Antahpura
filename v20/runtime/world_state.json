@@ -1,0 +1,17 @@
+{
+  "schema": "antahpura.runtime.world_state",
+  "version": "20.0",
+  "session_id": null,
+  "chapter": 1,
+  "lunar_day": 1,
+  "lunar_phase": "waxing",
+  "season": "spring",
+  "time_of_day": "dawn",
+  "active_occasions": [],
+  "global_flags": {},
+  "world_discovered_secrets": [],
+  "world_unlocked_locations": [],
+  "world_completed_quests": [],
+  "world_failed_quests": [],
+  "last_updated": "2026-09-16T15:25:48.880260+00:00"
+}

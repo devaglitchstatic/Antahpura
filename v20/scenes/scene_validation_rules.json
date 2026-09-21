@@ -1,0 +1,36 @@
+{
+  "schema": "antahpura.scene.validation_rules",
+  "version": "20.0",
+  "rules": [
+    {
+      "rule_id": "val_001",
+      "name": "Location Access",
+      "check": "All participants have access_permission >= required_level for location"
+    },
+    {
+      "rule_id": "val_002",
+      "name": "Kala Prerequisites",
+      "check": "All required kalas meet minimum mastery for scene type"
+    },
+    {
+      "rule_id": "val_003",
+      "name": "Kama Lifecycle",
+      "check": "All kamas referenced are at lifecycle state >= 'discussable'"
+    },
+    {
+      "rule_id": "val_004",
+      "name": "Consent (Intimate Scenes)",
+      "check": "All participants have explicitly confirmed consent for risk class"
+    },
+    {
+      "rule_id": "val_005",
+      "name": "Institutional Standing",
+      "check": "Institutional reputation threshold met for scene type"
+    },
+    {
+      "rule_id": "val_006",
+      "name": "Multiplayer Consent",
+      "check": "All players have agreed to scene parameters before activation"
+    }
+  ]
+}

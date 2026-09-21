@@ -1,0 +1,63 @@
+{
+  "schema": "antahpura.location.occasion_location_map",
+  "version": "20.0",
+  "map": {
+    "bathukamma": {
+      "location": "loc_zenana_inner",
+      "institution": "inst_zenana",
+      "season": "autumn",
+      "description": "Floral festival. Women-only gathering. Kumārī Rati presides."
+    },
+    "varalakshmi_vratam": {
+      "location": "loc_zenana_inner",
+      "institution": "inst_zenana",
+      "season": "monsoon",
+      "description": "Vow-taking festival. Women-only. Padmā and Kumārī Rati."
+    },
+    "sohrai": {
+      "location": "loc_munda_ritual_space",
+      "institution": "inst_zenana",
+      "season": "winter",
+      "description": "Santhal harvest. Champā leads. Earth-focused."
+    },
+    "sarhul": {
+      "location": "loc_munda_ritual_space",
+      "institution": "inst_zenana",
+      "season": "spring",
+      "description": "Munda spring festival. Sal-tree veneration. Champā."
+    },
+    "cakra_puja": {
+      "location": "loc_yogic_pavilion",
+      "institution": "inst_yogic_pavilion",
+      "season": "any",
+      "lunar_phase": "full_moon",
+      "description": "Left-Hand Tantric ritual. Shrinagar leads. By invitation."
+    },
+    "kula_cakra": {
+      "location": "loc_patala_chamber",
+      "institution": "inst_subterranean_vaults",
+      "season": "any",
+      "lunar_phase": "new_moon",
+      "description": "High-stress Kula-Cakra ritual. Sevda and Jahzara."
+    },
+    "patala_tantra": {
+      "location": "loc_patala_chamber",
+      "institution": "inst_subterranean_vaults",
+      "season": "any",
+      "lunar_phase": "dark_moon",
+      "description": "Chthonic rites. Earth-based. Jahzara and Sevda."
+    },
+    "durbar": {
+      "location": "loc_throne_hall",
+      "institution": "inst_throne",
+      "season": "any",
+      "description": "Formal court assembly. Mahā Deva presides."
+    },
+    "dawn_chorus": {
+      "location": "loc_ritual_chorus",
+      "institution": "inst_ritual_chorus",
+      "time": "dawn",
+      "description": "Daily ritual chorus. Svara and Tarana lead."
+    }
+  }
+}

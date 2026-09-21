@@ -1,0 +1,124 @@
+{
+  "schema": "antahpura.kala_mastery_ladder",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "source": "kala_system_v20.json → mastery_ladder",
+  "total_stages": 11,
+  "ladder": {
+    "0_unknown": {
+      "level": 0,
+      "key": "unknown",
+      "name": "Unknown",
+      "description": "Character has no awareness of this Kala",
+      "runtime_state": "locked",
+      "avn_visibility": "hidden",
+      "next_stage": "1_observed",
+      "advance_trigger": "witness_event"
+    },
+    "1_observed": {
+      "level": 1,
+      "key": "observed",
+      "name": "Observed",
+      "description": "Character has witnessed the Kala performed",
+      "runtime_state": "discoverable",
+      "avn_visibility": "hinted",
+      "next_stage": "2_curious",
+      "advance_trigger": "repeated_exposure"
+    },
+    "2_curious": {
+      "level": 2,
+      "key": "curious",
+      "name": "Curious",
+      "description": "Character expresses interest in learning",
+      "runtime_state": "mentionable",
+      "avn_visibility": "dialogue_available",
+      "next_stage": "3_witnessed",
+      "advance_trigger": "request_observation"
+    },
+    "3_witnessed": {
+      "level": 3,
+      "key": "witnessed",
+      "name": "Witnessed (Darshana)",
+      "description": "Character has closely observed with intent to learn",
+      "runtime_state": "imaginable",
+      "avn_visibility": "reflection_available",
+      "next_stage": "4_accepted",
+      "advance_trigger": "request_teaching"
+    },
+    "4_accepted": {
+      "level": 4,
+      "key": "accepted",
+      "name": "Accepted (Sammati)",
+      "description": "Character has explicitly agreed to receive training",
+      "runtime_state": "discussable",
+      "avn_visibility": "training_option",
+      "next_stage": "5_guided",
+      "advance_trigger": "teacher_accepts"
+    },
+    "5_guided": {
+      "level": 5,
+      "key": "guided",
+      "name": "Guided Practice",
+      "description": "Character performs under direct instruction",
+      "runtime_state": "exploreable",
+      "avn_visibility": "minigame_available",
+      "next_stage": "6_practicing",
+      "advance_trigger": "guided_practice_count"
+    },
+    "6_practicing": {
+      "level": 6,
+      "key": "practicing",
+      "name": "Practicing",
+      "description": "Character performs regularly without instruction",
+      "runtime_state": "participatory",
+      "avn_visibility": "activity_available",
+      "next_stage": "7_internalized",
+      "advance_trigger": "independent_practice_count"
+    },
+    "7_internalized": {
+      "level": 7,
+      "key": "internalized",
+      "name": "Internalized",
+      "description": "Character performs naturally, integrating with other Kalas",
+      "runtime_state": "runtime_enabled",
+      "avn_visibility": "autonomous_use",
+      "next_stage": "8_independent",
+      "advance_trigger": "cross_kala_integration"
+    },
+    "8_independent": {
+      "level": 8,
+      "key": "independent",
+      "name": "Independent",
+      "description": "Character can teach this Kala to others",
+      "runtime_state": "runtime_enabled",
+      "avn_visibility": "teaching_available",
+      "next_stage": "9_integrated",
+      "advance_trigger": "successful_teaching"
+    },
+    "9_integrated": {
+      "level": 9,
+      "key": "integrated",
+      "name": "Integrated (Siddhi)",
+      "description": "Kala is fully integrated into character's identity",
+      "runtime_state": "runtime_enabled",
+      "avn_visibility": "signature_ability",
+      "next_stage": "10_siddha",
+      "advance_trigger": "mastery_threshold_exceeded"
+    },
+    "10_siddha": {
+      "level": 10,
+      "key": "siddha",
+      "name": "Siddha",
+      "description": "Character has achieved mastery beyond formal instruction",
+      "runtime_state": "runtime_enabled",
+      "avn_visibility": "legendary_status",
+      "next_stage": null,
+      "advance_trigger": null
+    }
+  },
+  "audit": {
+    "total_stages": 11,
+    "levels_span": [0, 10],
+    "audit_passed": true
+  }
+}

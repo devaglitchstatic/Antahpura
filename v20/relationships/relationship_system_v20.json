@@ -1,0 +1,424 @@
+{
+  "schema": "antahpura.relationship_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Consolidated V20 relationship system for Antahpura. Integrates constitutional relationships, V17.1 canonical edges, and V18.3 relationship state. Constitutional relationships are immutable; runtime events may modify emergent relational dimensions.",
+  "constitutional_preservation": true,
+  "sovereign_axis": {
+    "type": "constitutional_relationship",
+    "status": "newly_wedded",
+    "members": [
+      "maha_deva",
+      "kumari_rati"
+    ],
+    "bond": "marriage",
+    "dynastic_status": "active",
+    "source": "V17.1.1 canonical reconciliation",
+    "runtime_note": "Marriage is pre-existing constitutional state; runtime events may modify emergent relational dimensions."
+  },
+  "relationship_count": 18,
+  "relationships": [
+    {
+      "from": "maha_deva",
+      "to": "kumari_rati",
+      "relation": "ritual_authority",
+      "status": "canonical"
+    },
+    {
+      "from": "maha_deva",
+      "to": "roxana",
+      "relation": "civil_authority",
+      "status": "canonical"
+    },
+    {
+      "from": "maha_deva",
+      "to": "anisa",
+      "relation": "administrative_authority",
+      "status": "canonical"
+    },
+    {
+      "from": "kumari_rati",
+      "to": "padma",
+      "relation": "attendant_care",
+      "status": "canonical"
+    },
+    {
+      "from": "kumari_rati",
+      "to": "campa",
+      "relation": "attendant_companionship",
+      "status": "canonical"
+    },
+    {
+      "from": "jahzara",
+      "to": "kumari_rati",
+      "relation": "royal_protection",
+      "status": "canonical"
+    },
+    {
+      "from": "jahzara",
+      "to": "roxana",
+      "relation": "security_coordination",
+      "status": "canonical"
+    },
+    {
+      "from": "jahzara",
+      "to": "anisa",
+      "relation": "administrative_security_compliance",
+      "status": "canonical"
+    },
+    {
+      "from": "malika",
+      "to": "maha_deva",
+      "relation": "threshold_subordination",
+      "status": "canonical"
+    },
+    {
+      "from": "malika",
+      "to": "kumari_rati",
+      "relation": "threshold_protection",
+      "status": "canonical"
+    },
+    {
+      "from": "altani",
+      "to": "jahzara",
+      "relation": "perimeter_synchronization",
+      "status": "canonical"
+    },
+    {
+      "from": "shrinagar",
+      "to": "reva",
+      "relation": "acoustic_coordination",
+      "status": "canonical"
+    },
+    {
+      "from": "reva",
+      "to": "tarana",
+      "relation": "acoustic_movement_coordination",
+      "status": "canonical"
+    },
+    {
+      "from": "svara",
+      "to": "shrinagar",
+      "relation": "microtonal_tuning_coordination",
+      "status": "canonical"
+    },
+    {
+      "from": "svara",
+      "to": "reva",
+      "relation": "intonation_coordination",
+      "status": "canonical"
+    },
+    {
+      "from": "svara",
+      "to": "tarana",
+      "relation": "movement_pitch_coordination",
+      "status": "canonical"
+    },
+    {
+      "from": "sevda",
+      "to": "maha_deva",
+      "relation": "ritual_containment",
+      "status": "canonical"
+    },
+    {
+      "from": "anisa",
+      "to": "reva",
+      "relation": "archive_chronicle_duality",
+      "status": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "edge_001",
+      "from": "maha_deva",
+      "to": "kumari_rati",
+      "relation": "ritual_authority",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_002",
+      "from": "maha_deva",
+      "to": "roxana",
+      "relation": "civil_authority",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_003",
+      "from": "maha_deva",
+      "to": "anisa",
+      "relation": "administrative_authority",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_004",
+      "from": "kumari_rati",
+      "to": "padma",
+      "relation": "attendant_care",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_005",
+      "from": "kumari_rati",
+      "to": "campa",
+      "relation": "attendant_companionship",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_006",
+      "from": "jahzara",
+      "to": "kumari_rati",
+      "relation": "royal_protection",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_007",
+      "from": "jahzara",
+      "to": "roxana",
+      "relation": "security_coordination",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_008",
+      "from": "jahzara",
+      "to": "anisa",
+      "relation": "administrative_security_compliance",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_009",
+      "from": "malika",
+      "to": "maha_deva",
+      "relation": "threshold_subordination",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_010",
+      "from": "malika",
+      "to": "kumari_rati",
+      "relation": "threshold_protection",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_011",
+      "from": "altani",
+      "to": "jahzara",
+      "relation": "perimeter_synchronization",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_012",
+      "from": "shrinagar",
+      "to": "reva",
+      "relation": "acoustic_coordination",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_013",
+      "from": "reva",
+      "to": "tarana",
+      "relation": "acoustic_movement_coordination",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_014",
+      "from": "svara",
+      "to": "shrinagar",
+      "relation": "microtonal_tuning_coordination",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_015",
+      "from": "svara",
+      "to": "reva",
+      "relation": "intonation_coordination",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_016",
+      "from": "svara",
+      "to": "tarana",
+      "relation": "movement_pitch_coordination",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_017",
+      "from": "sevda",
+      "to": "maha_deva",
+      "relation": "ritual_containment",
+      "status": "canonical"
+    },
+    {
+      "edge_id": "edge_018",
+      "from": "anisa",
+      "to": "reva",
+      "relation": "archive_chronicle_duality",
+      "status": "canonical"
+    }
+  ],
+  "state": {
+    "schema": "V18.3_RELATIONSHIP_STATE",
+    "version": "18.3",
+    "constitutional_preservation": true,
+    "sovereign_axis": {
+      "type": "constitutional_relationship",
+      "status": "newly_wedded",
+      "members": [
+        "maha_deva",
+        "kumari_rati"
+      ],
+      "bond": "marriage",
+      "dynastic_status": "active",
+      "source": "V17.1.1 canonical reconciliation",
+      "runtime_note": "Marriage is pre-existing constitutional state; runtime events may modify emergent relational dimensions."
+    },
+    "relationship_count": 18,
+    "relationships": [
+      {
+        "from": "maha_deva",
+        "to": "kumari_rati",
+        "relation": "ritual_authority",
+        "status": "canonical"
+      },
+      {
+        "from": "maha_deva",
+        "to": "roxana",
+        "relation": "civil_authority",
+        "status": "canonical"
+      },
+      {
+        "from": "maha_deva",
+        "to": "anisa",
+        "relation": "administrative_authority",
+        "status": "canonical"
+      },
+      {
+        "from": "kumari_rati",
+        "to": "padma",
+        "relation": "attendant_care",
+        "status": "canonical"
+      },
+      {
+        "from": "kumari_rati",
+        "to": "campa",
+        "relation": "attendant_companionship",
+        "status": "canonical"
+      },
+      {
+        "from": "jahzara",
+        "to": "kumari_rati",
+        "relation": "royal_protection",
+        "status": "canonical"
+      },
+      {
+        "from": "jahzara",
+        "to": "roxana",
+        "relation": "security_coordination",
+        "status": "canonical"
+      },
+      {
+        "from": "jahzara",
+        "to": "anisa",
+        "relation": "administrative_security_compliance",
+        "status": "canonical"
+      },
+      {
+        "from": "malika",
+        "to": "maha_deva",
+        "relation": "threshold_subordination",
+        "status": "canonical"
+      },
+      {
+        "from": "malika",
+        "to": "kumari_rati",
+        "relation": "threshold_protection",
+        "status": "canonical"
+      },
+      {
+        "from": "altani",
+        "to": "jahzara",
+        "relation": "perimeter_synchronization",
+        "status": "canonical"
+      },
+      {
+        "from": "shrinagar",
+        "to": "reva",
+        "relation": "acoustic_coordination",
+        "status": "canonical"
+      },
+      {
+        "from": "reva",
+        "to": "tarana",
+        "relation": "acoustic_movement_coordination",
+        "status": "canonical"
+      },
+      {
+        "from": "svara",
+        "to": "shrinagar",
+        "relation": "microtonal_tuning_coordination",
+        "status": "canonical"
+      },
+      {
+        "from": "svara",
+        "to": "reva",
+        "relation": "intonation_coordination",
+        "status": "canonical"
+      },
+      {
+        "from": "svara",
+        "to": "tarana",
+        "relation": "movement_pitch_coordination",
+        "status": "canonical"
+      },
+      {
+        "from": "sevda",
+        "to": "maha_deva",
+        "relation": "ritual_containment",
+        "status": "canonical"
+      },
+      {
+        "from": "anisa",
+        "to": "reva",
+        "relation": "archive_chronicle_duality",
+        "status": "canonical"
+      }
+    ]
+  },
+  "runtime": {
+    "emergent_dimensions": {
+      "note": "Constitutional relationships are immutable. Runtime events may modify emergent relational dimensions listed below.",
+      "dimensions": [
+        "trust",
+        "intimacy",
+        "tension",
+        "respect",
+        "dependency",
+        "affection",
+        "authority_gap",
+        "vulnerability",
+        "obligation",
+        "familiarity"
+      ]
+    },
+    "event_effects": {
+      "note": "Relationship events modify emergent dimensions according to engine policy and character-specific sensitivities.",
+      "source": "v18_relationship_engine.py",
+      "status": "runtime_managed"
+    },
+    "state_persistence": {
+      "note": "Constitutional relationships remain fixed. Emergent dimensions may be saved and restored across sessions.",
+      "persistence_target": "RELATIONSHIP_STATE.json"
+    }
+  },
+  "provenance": {
+    "sources": [
+      "V17_1_RELATIONSHIP_REGISTRY.json",
+      "CONSTITUTIONAL_RELATIONSHIPS.json",
+      "RELATIONSHIP_STATE.json",
+      "relationship_edges.json"
+    ],
+    "compiled_at": "2026-09-16T00:00:00Z",
+    "compiler": "relationship_system_v20_compiler",
+    "compiler_version": "1.0"
+  }
+}

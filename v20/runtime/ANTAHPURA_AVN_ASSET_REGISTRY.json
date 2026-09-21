@@ -1,0 +1,319 @@
+{
+  "schema": "ANTAHPURA_AVN_ASSET_REGISTRY",
+  "version": "20.0",
+  "purpose": "Future AVN conversion: defines all asset hooks for characters, scenes, quests, and domains",
+
+  "asset_categories": {
+    "portraits": {
+      "description": "Character portrait sets per expression",
+      "variants": ["neutral", "smile", "laugh", "cry", "angry", "aroused", "blush", "trance", "subspace", "domspeace", "ritual"],
+      "formats": ["png", "webp"],
+      "resolution_target": "1920x1080 portrait crops",
+      "per_character_required": true
+    },
+    "expressions": {
+      "description": "Overlay sets for real-time expression shifts",
+      "variants": ["eyes", "mouth", "blush", "tears", "sweat"],
+      "formats": ["png_with_alpha", "spine_2d_animation"],
+      "per_character_required": true
+    },
+    "voice": {
+      "description": "Voice acting for characters",
+      "variants": ["neutral_lines", "aroused_lines", "ritual_lines", "command_lines", "plea_lines"],
+      "formats": ["ogg", "opus"],
+      "per_character_required": true
+    },
+    "music_themes": {
+      "description": "Musical theme per character and per scene",
+      "variants": ["character_theme", "scene_ambient", "ritual_chant", "climax_stinger"],
+      "formats": ["ogg"],
+      "per_character_required": true
+    },
+    "backgrounds": {
+      "description": "Location backgrounds",
+      "variants": ["day", "night", "ritual_lit", "aftercare_lit"],
+      "formats": ["png", "webp"],
+      "per_location_required": true
+    },
+    "cg_scenes": {
+      "description": "Illustrated scene moments",
+      "variants": ["primary", "variant_a", "variant_b", "finale"],
+      "formats": ["png", "webp"],
+      "per_scene_template_required": true
+    },
+    "animations": {
+      "description": "Loop animations for movement, ritual, and intimate scenes",
+      "variants": ["loop", "transition_in", "transition_out"],
+      "formats": ["webm", "spine_2d", "live2d"],
+      "per_scene_optional": true
+    },
+    "ui_sheets": {
+      "description": "UI elements per character and system",
+      "variants": ["character_card", "dialogue_frame", "kama_icon", "kala_icon", "relationship_widget"],
+      "formats": ["png", "svg"],
+      "per_character_required": true
+    }
+  },
+
+  "character_assets": {
+    "char_maha_deva": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["throne_backdrop", "mandala_overlay"]
+    },
+    "char_kumari_rati": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["mirror_overlay", "yantra_body_art"]
+    },
+    "char_padma": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["service_tray_prop", "godna_tattoo_reference"]
+    },
+    "char_champa": {
+      "portraits_required": 8,
+      "expressions_required": true,
+      "voice_required": false,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["collar_bell_sound", "pet_nest_prop"]
+    },
+    "char_anisa": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["ledger_prop", "seal_stamp_effect"]
+    },
+    "char_shrinagar": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["lactation_render", "musical_instrument_props"]
+    },
+    "char_tarana": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["dance_animation_set", "anklet_bell_sound"]
+    },
+    "char_roxana": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["rope_props_set", "suspension_rig"]
+    },
+    "char_jahzara": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["fluid_effects", "threshold_backdrop"]
+    },
+    "char_altani": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["impact_tool_props", "stillness_overlay"]
+    },
+    "char_sevda": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["encasement_material", "vault_backdrop"]
+    },
+    "char_malika": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["threshold_gate", "spice_props"]
+    },
+    "char_reva": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["breath_effect", "poem_scroll_prop"]
+    },
+    "char_svara": {
+      "portraits_required": 11,
+      "expressions_required": true,
+      "voice_required": true,
+      "theme_required": true,
+      "ui_sheet_required": true,
+      "special": ["acoustic_wave_effect", "instrument_props"]
+    }
+  },
+
+  "scene_asset_hooks": {
+    "sct_abhisheka": {
+      "bg": ["bg_kedara_mandapa", "bg_yogic_pavilion_night"],
+      "portraits": ["svara_ritual", "jahzara_ritual", "maha_deva_ritual", "kumari_rati_ritual"],
+      "animations": ["ritual_circle_loop", "incense_burn_loop", "mandala_glow_loop"],
+      "cg_scenes": ["cg_abhisheka_consecration", "cg_abhisheka_peak", "cg_abhisheka_sealing"],
+      "music": ["music_abhisheka_ambient", "music_abhisheka_climax"]
+    },
+    "sct_granthi_vidhi": {
+      "bg": ["bg_basalt_chamber", "bg_rope_studio"],
+      "portraits": ["roxana_rigging", "sevda_encasement", "tarana_bound"],
+      "animations": ["rope_flow_loop", "suspension_loop", "shibari_weave"],
+      "cg_scenes": ["cg_granthi_binding", "cg_suspension_apex", "cg_rope_aesthetic"],
+      "music": ["music_granthi_low", "music_granthi_peak"]
+    },
+    "sct_nada_kala": {
+      "bg": ["bg_acoustic_pavilion"],
+      "portraits": ["svara_singing", "reva_breath", "shrinagar_playing", "tarana_drumming"],
+      "animations": ["sound_wave_loop", "breath_sync_loop", "instrument_hand_motion"],
+      "cg_scenes": ["cg_nada_entrainment", "cg_svara_calibration", "cg_trance_state"],
+      "music": ["music_nada_raga_a", "music_nada_raga_b"]
+    },
+    "sct_darshana_sadhana": {
+      "bg": ["bg_vasa_griha_mirror_hall"],
+      "portraits": ["kumari_rati_reflective", "shrinagar_mirror", "reva_observed", "svara_observed"],
+      "animations": ["mirror_glow", "reflection_shift", "blush_progression"],
+      "cg_scenes": ["cg_darshana_first_look", "cg_darshana_bloom", "cg_darshana_shame_break"],
+      "music": ["music_darshana_ambient"]
+    },
+    "sct_rasayana_paka": {
+      "bg": ["bg_rasa_kitchen"],
+      "portraits": ["malika_cooking", "shrinagar_preparing", "padma_serving"],
+      "animations": ["steam_loop", "stir_loop", "taste_testing_gesture"],
+      "cg_scenes": ["cg_rasayana_preparation", "cg_rasayana_taste", "cg_rasayana_feeding"],
+      "music": ["music_rasayana_kitchen_ambient"]
+    },
+    "sct_nritya_vidhi": {
+      "bg": ["bg_performance_mandapa"],
+      "portraits": ["tarana_dancing", "svara_observing", "reva_breathing", "kumari_rati_watching"],
+      "animations": ["dance_loop_1", "dance_loop_2", "spin_loop"],
+      "cg_scenes": ["cg_nritya_opening", "cg_nritya_peak", "cg_nritya_closure"],
+      "music": ["music_nritya_tala"]
+    },
+    "sct_krida_mriga": {
+      "bg": ["bg_vasa_griha_pet_nest"],
+      "portraits": ["champa_pet", "padma_caregiver", "shrinagar_observing"],
+      "animations": ["crawl_loop", "nuzzle_loop", "nurse_loop"],
+      "cg_scenes": ["cg_krida_first_collar", "cg_krida_feeding", "cg_krida_nest"],
+      "music": ["music_krida_gentle"]
+    },
+    "sct_vastra_vidhi": {
+      "bg": ["bg_vasa_griha_weaving_room"],
+      "portraits": ["shrinagar_weaving", "padma_assisting", "kumari_rati_wearing"],
+      "animations": ["weave_loop", "fabric_flow", "jewel_placement"],
+      "cg_scenes": ["cg_vastra_weave", "cg_vastra_presentation", "cg_vastra_wearing"],
+      "music": ["music_vastra_ambient"]
+    },
+    "sct_malla_yuddha": {
+      "bg": ["bg_kalaripayattu_yard"],
+      "portraits": ["roxana_fighting", "altani_stance", "jahzara_observing"],
+      "animations": ["strike_loop", "grapple_loop", "victory_stance"],
+      "cg_scenes": ["cg_malla_opening", "cg_malla_peak", "cg_malla_victory"],
+      "music": ["music_malla_drums"]
+    },
+    "sct_yoga_sadhana": {
+      "bg": ["bg_private_chamber"],
+      "portraits": ["kumari_rati_union", "maha_deva_union", "padma_serving", "champa_observing"],
+      "animations": ["breath_sync", "union_loop", "afterglow"],
+      "cg_scenes": ["cg_yoga_preparation", "cg_yoga_union", "cg_yoga_afterglow"],
+      "music": ["music_yoga_intimate"]
+    },
+    "sct_katha_vidhi": {
+      "bg": ["bg_poetry_chamber"],
+      "portraits": ["reva_narrating", "svara_listening", "shrinagar_present"],
+      "animations": ["scroll_unroll", "voice_wave", "gesture_emphasis"],
+      "cg_scenes": ["cg_katha_opening", "cg_katha_reveal", "cg_katha_closure"],
+      "music": ["music_katha_ambient"]
+    },
+    "sct_drashta_yoga": {
+      "bg": ["bg_observation_gallery"],
+      "portraits": ["anisa_observing", "reva_witnessing", "kumari_rati_watching", "champa_watching"],
+      "animations": ["observation_gaze", "silent_shift", "progressive_blush"],
+      "cg_scenes": ["cg_drashta_first_watch", "cg_drashta_peak", "cg_drashta_reflection"],
+      "music": ["music_drashta_soft"]
+    }
+  },
+
+  "ui_asset_requirements": {
+    "character_card": {
+      "per_character": true,
+      "resolution": "512x768",
+      "style": "deccan_imperial"
+    },
+    "dialogue_frame": {
+      "variants": ["normal", "ritual", "intimate", "correction"],
+      "resolution": "1920x1080",
+      "style": "jali_lattice"
+    },
+    "kama_icon": {
+      "one_per_kama": true,
+      "count": 98,
+      "resolution": "128x128",
+      "style": "minimalist_glyph"
+    },
+    "kala_icon": {
+      "one_per_kala": true,
+      "count": 64,
+      "resolution": "128x128",
+      "style": "minimalist_glyph"
+    },
+    "relationship_widget": {
+      "dimension_icons": 11,
+      "resolution": "64x64",
+      "style": "sanskrit_geometric"
+    }
+  },
+
+  "production_pipeline": {
+    "stage_1_design": {
+      "outputs": ["style_guide", "character_sheets", "location_sheets"],
+      "blockers": []
+    },
+    "stage_2_illustration": {
+      "outputs": ["portraits", "expressions", "backgrounds", "cg_scenes"],
+      "blockers": ["style_guide_approved"]
+    },
+    "stage_3_animation": {
+      "outputs": ["loop_animations", "transitions"],
+      "blockers": ["illustration_complete"]
+    },
+    "stage_4_audio": {
+      "outputs": ["voice_lines", "music_tracks", "sound_effects"],
+      "blockers": ["script_lock"]
+    },
+    "stage_5_integration": {
+      "outputs": ["live2d_or_spine_rigs", "engine_asset_map"],
+      "blockers": ["animation_complete", "audio_complete"]
+    }
+  },
+
+  "provenance": {
+    "asset_owner": "Antaḥpura constitutional council",
+    "generation_policy": "commission_or_ai_with_review",
+    "usage_rights": "private_project_only",
+    "version_control": "git_lfs_recommended"
+  }
+}

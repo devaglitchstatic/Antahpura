@@ -1,0 +1,210 @@
+{
+  "schema": "ANTAHPURA_RUNTIME_ENGINE_V20",
+  "version": "20.0",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "purpose": "Session-scoped state engine, event bus, multiplayer sync, persistence adapters",
+
+  "engine_components": {
+    "session_manager": {
+      "description": "Creates, tracks, and destroys sessions",
+      "lifecycle": ["create", "activate", "pause", "resume", "close", "archive"],
+      "session_id_pattern": "ses_<uuid>",
+      "fields": [
+        "session_id", "started_at", "closed_at", "active_characters",
+        "observer_characters", "current_scene", "current_pov",
+        "active_events", "pending_choices", "scene_phase",
+        "multiplayer_sync", "content_settings", "status"
+      ]
+    },
+    "event_bus": {
+      "description": "Central event dispatch and routing",
+      "event_schema": {
+        "event_id": "evt_<ts>_<seq>",
+        "type": "choice|state_change|relationship_delta|kala_progress|kama_unlock|scene_transition|memory_write|consequence_apply",
+        "source": "player_id|engine|autonomous",
+        "actor": "char_id",
+        "target": "char_id|null",
+        "payload": {},
+        "timestamp": "ISO8601",
+        "visibility": 0,
+        "propagation_targets": [],
+        "canon_relevant": false,
+        "archive_required": false
+      },
+      "dispatch_rules": {
+        "immediate": "synchronous state mutation + broadcast",
+        "queued": "async processing for canonical events",
+        "batchable": "grouped when same session and actor"
+      },
+      "ordering": "strict_by_timestamp_then_seq",
+      "deduplication": "by_event_id_hash"
+    },
+    "state_machine": {
+      "description": "Legal state transitions and constraints",
+      "states": {
+        "session": ["idle", "active", "paused", "closing", "closed"],
+        "scene": ["proposed", "approved", "act_1", "act_2", "act_3", "act_4", "act_5", "aftercare", "complete"],
+        "character_activity": ["inactive", "witness", "participant", "lead", "observer"]
+      },
+      "transitions": {
+        "session": {
+          "idle→active": "session_create",
+          "active→paused": "session_pause",
+          "paused→active": "session_resume",
+          "active→closing": "session_close_initiated",
+          "closing→closed": "archive_written"
+        },
+        "scene": {
+          "proposed→approved": "availability_check_pass",
+          "approved→act_1": "participants_ready",
+          "act_1→act_2": "environment_complete",
+          "act_2→act_3": "preparation_complete",
+          "act_3→act_4": "peak_or_choice_point",
+          "act_4→act_5": "choice_resolved",
+          "act_5→aftercare": "always",
+          "aftercare→complete": "aftercare_protocol_finished"
+        }
+      },
+      "invariants": [
+        "session.status != closed implies archive not final",
+        "scene cannot skip acts",
+        "aftercare mandatory for all scenes with risk >= elevated"
+      ]
+    },
+    "scene_dispatcher": {
+      "description": "Routes runtime requests to scene templates",
+      "inputs": ["session_id", "scene_template_id", "participants", "context"],
+      "availability_check_order": [
+        "chandra_kala_alignment",
+        "ritu_kala_modifier",
+        "relationship_gates",
+        "kala_mastery_gates",
+        "institutional_access",
+        "prior_quest_checks"
+      ],
+      "on_fail_behaviour": "return_reason_to_session_queue"
+    },
+    "choice_resolver": {
+      "description": "Processes player choices and applies consequences",
+      "choice_classes": ["C1_action", "C2_dialogue", "C3_consent", "C4_kama_pursuit", "C5_kala_practice", "C6_meta"],
+      "resolution_steps": [
+        "validate_choice_available",
+        "check_requirements",
+        "apply_immediate_effects",
+        "apply_relationship_effects",
+        "apply_kama_effects",
+        "apply_kala_effects",
+        "apply_reputation_effects",
+        "write_memory",
+        "enqueue_consequence_if_significant"
+      ],
+      "hard_stop_handling": "instant_return_control_to_player"
+    },
+    "telemetry_collector": {
+      "description": "Collects runtime telemetry without mutating canon",
+      "categories": {
+        "character": ["authority", "discipline", "loyalty", "vigilance", "devotion", "curiosity", "restraint"],
+        "performance": ["transmission", "breath", "voice", "circulation", "stillness"],
+        "environmental": ["ritual_intensity", "protocol_compliance", "temple_resonance", "gathering_cohesion"]
+      },
+      "history_window": "last_100_turns",
+      "expose_to_player": ["alignment", "reputation", "mastery", "relationship_state"]
+    },
+    "memory_writer": {
+      "description": "Writes persistent memories linked to events",
+      "memory_schema": {
+        "memory_id": "mem_<char>_<seq>",
+        "character": "char_id",
+        "relationship_target": "char_id|null",
+        "event_ref": "evt_id",
+        "timestamp": "ISO8601",
+        "description": "",
+        "dimension_changes": {},
+        "memory_tag": "",
+        "salience": 0.5,
+        "persists": true
+      },
+      "salience_decay_per_scene": 0.02,
+      "min_salience_before_archive_only": 0.2
+    },
+    "consequence_engine": {
+      "description": "Applies consequences from failed/succeeded quests/choices",
+      "classes": ["micro", "personal", "institutional", "narrative", "canonical"],
+      "severity_levels": ["SL1_mild", "SL2_moderate", "SL3_severe", "SL4_permanent"],
+      "reversibility": {
+        "SL1_mild": "automatic",
+        "SL2_moderate": "via_sadhana",
+        "SL3_severe": "via_extended_sadhana_or_relationship_repair",
+        "SL4_permanent": "rare_requires_major_ritual"
+      }
+    },
+    "archive_writer": {
+      "description": "Append-only event log to disk",
+      "format": "jsonl",
+      "path": "archive/events.jsonl",
+      "write_triggers": ["canon_relevant", "SL3+", "quest_completion", "session_close"],
+      "rollback_policy": "no_rollback"
+    },
+    "multiplayer_sync": {
+      "description": "Coordinates state across multiple players",
+      "broadcast_channel": "session_scoped",
+      "conflict_resolution": "last_write_wins_with_veto_on_consent",
+      "consent_lock": "hard_stop_prevents_any_further_mutation_until_released",
+      "observer_policy": "read_only_plus_dialogue_via_their_character",
+      "heartbeat_interval_seconds": 5,
+      "reconnect_grace_seconds": 30
+    }
+  },
+
+  "persistence_adapters": {
+    "file_system": {
+      "type": "local_fs",
+      "root": "runtime/",
+      "session_path": "runtime/sessions/<session_id>.json",
+      "events_path": "archive/events.jsonl",
+      "memory_path": "archive/memories.json"
+    },
+    "memory_only": {
+      "type": "in_memory",
+      "use_case": "single-shot scenes, tests"
+    },
+    "remote_sync": {
+      "type": "rest_or_websocket",
+      "use_case": "multiplayer_remote",
+      "auth": "session_token",
+      "payload_schema_version": "20.0"
+    }
+  },
+
+  "autonomous_engine": {
+    "description": "Generates events without player input",
+    "tick_interval_scenes": 1,
+    "sources": [
+      "unresolved_threads",
+      "scheduled_rituals",
+      "chandra_kala_shifts",
+      "character_autonomous_tendencies",
+      "institutional_events"
+    ],
+    "generation_rules": {
+      "must_check_canon": true,
+      "must_check_consent": true,
+      "must_not_override_player_scene": true,
+      "queue_major_events": true
+    }
+  },
+
+  "error_handling": {
+    "canon_violation": "reject_event_and_log",
+    "consent_violation": "hard_stop_and_flag",
+    "reference_error": "reject_and_warn",
+    "unknown_event_type": "reject_and_warn",
+    "fallback_mode": "pause_and_notify"
+  },
+
+  "logging": {
+    "levels": ["debug", "info", "warn", "error", "critical"],
+    "destinations": ["console", "archive/engine.log"],
+    "sanitization": ["no_private_content_in_logs", "no_raw_player_identifiers"]
+  }
+}

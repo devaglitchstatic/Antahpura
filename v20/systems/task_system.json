@@ -1,0 +1,215 @@
+{
+  "schema": "antahpura.task_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Structured task assignment, tracking, and completion. Tasks are the daily/weekly operational layer between protocols and rewards.",
+  "design_principles": {
+    "principle_1": "Task is a system, not a goal. The Dominant assigns an operational system to follow, not just an outcome to achieve.",
+    "principle_2": "Every task has a deadline, a verification method, and a consequence/reward.",
+    "principle_3": "Tasks scale with the character's kala mastery and institutional standing.",
+    "principle_4": "Task completion advances relationship dimensions, kala mastery, and kama lifecycle.",
+    "principle_5": "Tasks integrate with the calendar/occasion system."
+  },
+
+  "task_categories": {
+    "service_task": {
+      "name": "Service Task",
+      "description": "Domestic or institutional service duties.",
+      "typical_duration_hours": 1,
+      "default_priority": "moderate",
+      "reward_category": "verbal_praise"
+    },
+    "practice_task": {
+      "name": "Practice Task",
+      "description": "Daily practice of a specific kala to advance mastery.",
+      "typical_duration_hours": 1,
+      "default_priority": "high",
+      "reward_category": "kala_mastery"
+    },
+    "protocol_task": {
+      "name": "Protocol Task",
+      "description": "Following a specific behavioral protocol.",
+      "typical_duration_hours": 24,
+      "default_priority": "high",
+      "reward_category": "symbolic_token"
+    },
+    "learning_task": {
+      "name": "Learning Task",
+      "description": "Studying, memorizing, or internalizing knowledge.",
+      "typical_duration_hours": 2,
+      "default_priority": "moderate",
+      "reward_category": "institutional_recognition"
+    },
+    "physical_task": {
+      "name": "Physical Task",
+      "description": "Body training, endurance, or physical conditioning.",
+      "typical_duration_hours": 1,
+      "default_priority": "high",
+      "reward_category": "physical_contact"
+    },
+    "ritual_task": {
+      "name": "Ritual Task",
+      "description": "Preparation for or participation in a ritual.",
+      "typical_duration_hours": 3,
+      "default_priority": "critical",
+      "reward_category": "kala_mastery"
+    },
+    "journaling_task": {
+      "name": "Journaling Task",
+      "description": "Written reflection on kink, dynamic, or personal growth.",
+      "typical_duration_hours": 1,
+      "default_priority": "moderate",
+      "reward_category": "symbolic_token"
+    },
+    "essay_task": {
+      "name": "Essay Task",
+      "description": "Structured written exploration of a concept or behavior.",
+      "typical_duration_hours": 2,
+      "default_priority": "high",
+      "reward_category": "institutional_recognition"
+    }
+  },
+
+  "task_registry": {
+    "tasks": [
+      {
+        "task_id": "task_service_morning",
+        "name": "Morning Service Routine",
+        "category": "service_task",
+        "assigned_by": "char_kumari_rati",
+        "assigned_to": "char_padma",
+        "frequency": "daily",
+        "deadline": "before_sunrise",
+        "verification": "inspection_by_assigner",
+        "kala_alignment": ["kala_18", "kala_24"],
+        "reward_on_completion": "rw_verbal_praise",
+        "punishment_on_miss": "pun_postural_hold",
+        "relationship_effects": {"trust": "+1_daily"}
+      },
+      {
+        "task_id": "task_practice_dance",
+        "name": "Dance Practice: Araimandi Hold",
+        "category": "practice_task",
+        "assigned_by": "char_tarana",
+        "assigned_to": "char_champa",
+        "frequency": "daily",
+        "duration_minutes": 30,
+        "verification": "self_report_with_witness",
+        "kala_alignment": ["kala_53"],
+        "reward_on_completion": "kala_mastery_progress",
+        "punishment_on_miss": "pun_extra_practice"
+      },
+      {
+        "task_id": "task_protocol_threshold",
+        "name": "Threshold Protocol Adherence",
+        "category": "protocol_task",
+        "assigned_by": "char_malika",
+        "assigned_to": "char_padma",
+        "frequency": "continuous",
+        "verification": "observation_by_supervisor",
+        "kala_alignment": ["kala_11"],
+        "reward_on_completion": "rw_pocket_token",
+        "punishment_on_miss": "pun_privilege_restriction"
+      },
+      {
+        "task_id": "task_learning_cipher",
+        "name": "Cipher Practice: Daily Glyph",
+        "category": "learning_task",
+        "assigned_by": "char_anisa",
+        "assigned_to": "char_reva",
+        "frequency": "daily",
+        "duration_minutes": 45,
+        "verification": "sample_submission",
+        "kala_alignment": ["kala_11"],
+        "reward_on_completion": "kala_mastery_progress",
+        "punishment_on_miss": "pun_writing_lines"
+      },
+      {
+        "task_id": "task_physical_endurance",
+        "name": "Endurance Drill: Wall Hold",
+        "category": "physical_task",
+        "assigned_by": "char_roxana",
+        "assigned_to": "char_jahzara",
+        "frequency": "daily",
+        "duration_minutes": 20,
+        "verification": "supervisor_timer",
+        "kala_alignment": ["kala_36"],
+        "reward_on_completion": "rw_heavy_hold",
+        "punishment_on_miss": "pun_endurance_extension"
+      },
+      {
+        "task_id": "task_journal_daily",
+        "name": "Daily Journal Entry",
+        "category": "journaling_task",
+        "assigned_by": "char_shrinagar",
+        "assigned_to": "char_padma",
+        "frequency": "daily",
+        "duration_minutes": 30,
+        "verification": "written_submission",
+        "kala_alignment": ["kala_6"],
+        "reward_on_completion": "rw_sticker_chart",
+        "punishment_on_miss": "pun_extra_reflection"
+      },
+      {
+        "task_id": "task_essay_submission",
+        "name": "Weekly Essay: On Service",
+        "category": "essay_task",
+        "assigned_by": "char_anisa",
+        "assigned_to": "char_padma",
+        "frequency": "weekly",
+        "duration_hours": 2,
+        "word_count_minimum": 300,
+        "verification": "review_by_assigner",
+        "kala_alignment": ["kala_6", "kala_11"],
+        "reward_on_completion": "rw_formal_title",
+        "punishment_on_miss": "pun_rewrite_essay"
+      },
+      {
+        "task_id": "task_ritual_preparation",
+        "name": "Ritual Space Preparation",
+        "category": "ritual_task",
+        "assigned_by": "char_shrinagar",
+        "assigned_to": "char_padma",
+        "frequency": "per_occasion",
+        "occasion_trigger": "occ_cakra_puja",
+        "duration_hours": 3,
+        "verification": "inspection",
+        "kala_alignment": ["kala_22", "kala_21"],
+        "reward_on_completion": "rw_scent_gift",
+        "punishment_on_miss": "pun_ritual_exclusion"
+      }
+    ]
+  },
+
+  "runtime_task_state": {
+    "schema": {
+      "character_id": "char_id",
+      "tasks_active": [
+        {
+          "task_id": "string",
+          "assigned_by": "char_id",
+          "assigned_at": "iso_8601",
+          "deadline": "iso_8601",
+          "completion_count": "integer",
+          "miss_count": "integer",
+          "streak": "integer",
+          "verification_status": "pending|verified|rejected",
+          "last_completed_at": "iso_8601 | null"
+        }
+      ],
+      "tasks_completed_total": "integer",
+      "tasks_missed_total": "integer",
+      "current_streak": "integer",
+      "longest_streak": "integer",
+      "last_updated": "iso_8601"
+    }
+  },
+
+  "audit": {
+    "total_task_categories": 8,
+    "total_registry_tasks": 8,
+    "orphaned_tasks": 0,
+    "audit_passed": true
+  }
+}

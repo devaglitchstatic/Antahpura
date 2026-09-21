@@ -1,0 +1,126 @@
+{
+  "schema": "antahpura.traffic_light_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Traffic light consent/safeword system for real-time scene communication. Universal, non-verbal compatible, and integrated with all scene types.",
+  "design_principles": {
+    "principle_1": "Traffic lights are checked before, during, and after every scene.",
+    "principle_2": "Yellow is not failure. Yellow is communication.",
+    "principle_3": "Red stops everything. No negotiation during red.",
+    "principle_4": "Non-verbal alternatives are always available.",
+    "principle_5": "The Dominant also has traffic light rights."
+  },
+
+  "traffic_lights": {
+    "green": {
+      "signal": "green",
+      "meaning": "Everything is good. Keep going.",
+      "action_required": "none",
+      "scene_continues": true,
+      "chemistry": "dopamine and endorphins stable"
+    },
+    "yellow": {
+      "signal": "yellow",
+      "meaning": "Slow down, decrease intensity, or change the current action.",
+      "action_required": "adjust_scene",
+      "scene_continues": true,
+      "chemistry": "cortisol rising, needs modulation"
+    },
+    "red": {
+      "signal": "red",
+      "meaning": "Stop everything immediately. Drop character. Transition to care.",
+      "action_required": "stop_scene",
+      "scene_continues": false,
+      "chemistry": "adrenaline spike, immediate grounding required"
+    }
+  },
+
+  "non_verbal_alternatives": {
+    "description": "When speech is restricted, these alternatives are pre-negotiated.",
+    "double_tap": {
+      "name": "Double Tap",
+      "meaning": "Red — Stop immediately",
+      "description": "Two rapid taps on partner's body or floor"
+    },
+    "squeeze_code": {
+      "name": "Squeeze Code",
+      "description": "Hand squeeze system",
+      "signals": {
+        "one_squeeze": "Green — I am present and safe",
+        "two_squeezes": "Yellow — I am hitting a limit, back off",
+        "three_squeezes": "Red — I need to stop"
+      }
+    },
+    "drop_signal": {
+      "name": "Drop Signal",
+      "meaning": "Red — Stop immediately",
+      "description": "Holding a heavy object (keys/coin). If dropped, scene stops instantly."
+    },
+    "thumb_system": {
+      "name": "Thumb System",
+      "description": "For neurodivergent partners or when verbal communication is impossible",
+      "signals": {
+        "thumb_up": "Green — Good, keep going",
+        "thumb_sideways": "Yellow — Zoning out, change stimulation",
+        "thumb_down": "Red — Stop immediately"
+      }
+    }
+  },
+
+  "usage_protocols": {
+    "pre_scene": {
+      "description": "Before the scene begins",
+      "steps": [
+        "Confirm traffic light system is agreed",
+        "Confirm non-verbal alternatives",
+        "Confirm both parties know their rights",
+        "Confirm green to start"
+      ]
+    },
+    "during_scene": {
+      "description": "During the scene",
+      "check_frequency": "every_15_minutes_or_at_phase_transitions",
+      "dominant_responsibility": "Check in at phase transitions and after intensity peaks"
+    },
+    "post_scene": {
+      "description": "After the scene",
+      "steps": [
+        "Confirm final traffic light state",
+        "Transition to aftercare if yellow or red was used",
+        "Document any yellow/red events",
+        "Debrief"
+      ]
+    }
+  },
+
+  "runtime_traffic_light_state": {
+    "schema": {
+      "scene_id": "string",
+      "character_id": "char_id",
+      "current_signal": "green|yellow|red",
+      "signal_history": [
+        {
+          "signal": "string",
+          "timestamp": "iso_8601",
+          "cause": "string",
+          "action_taken": "string"
+        }
+      ],
+      "last_check_at": "iso_8601"
+    }
+  },
+
+  "integration_with_systems": {
+    "reward_system": "Yellow or red signals may trigger reward or recovery actions",
+    "punishment_system": "Traffic lights are never overridden by punishment. Red stops everything.",
+    "recovery_system": "Red signals trigger immediate recovery protocol",
+    "dbt_techniques": "STOP and TIPP techniques are used after red signals"
+  },
+
+  "audit": {
+    "total_signals": 3,
+    "total_non_verbal_alternatives": 4,
+    "audit_passed": true
+  }
+}

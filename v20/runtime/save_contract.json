@@ -1,0 +1,10 @@
+{
+  "schema": "antahpura.save_contract",
+  "version": "20.0",
+  "save_format": "snapshot_plus_event_range",
+  "auto_snapshot_at_chapter_end": true,
+  "max_auto_snapshots_retained": 10,
+  "manual_snapshot_limit": 20,
+  "last_snapshot_id": null,
+  "last_snapshot_at": null
+}

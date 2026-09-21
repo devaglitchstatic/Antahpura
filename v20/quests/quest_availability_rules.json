@@ -1,0 +1,32 @@
+{
+  "schema": "antahpura.quest.availability_rules",
+  "version": "20.0",
+  "total_rules": 5,
+  "rules": [
+    {
+      "rule_id": "avail_001",
+      "name": "Chapter Gating",
+      "condition": "current_chapter within quest.chapter_range"
+    },
+    {
+      "rule_id": "avail_002",
+      "name": "Prerequisite Check",
+      "condition": "all quest.prerequisites satisfied"
+    },
+    {
+      "rule_id": "avail_003",
+      "name": "Issuer Availability",
+      "condition": "issuer alive, present, not otherwise engaged"
+    },
+    {
+      "rule_id": "avail_004",
+      "name": "Occasion Availability",
+      "condition": "required occasion is active or always-on"
+    },
+    {
+      "rule_id": "avail_005",
+      "name": "Chain Position",
+      "condition": "if part of chain, previous step completed"
+    }
+  ]
+}

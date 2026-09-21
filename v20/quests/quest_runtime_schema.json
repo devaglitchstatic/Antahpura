@@ -1,0 +1,31 @@
+{
+  "schema": "antahpura.quest.runtime_schema",
+  "version": "20.0",
+  "fields": {
+    "quest_id": "string",
+    "character_id": "char_id",
+    "state": "locked|available|accepted|in_progress|blocked|completed|failed|abandoned|expired",
+    "current_act": "integer (1-4)",
+    "current_objective": "string",
+    "branches_taken": [
+      "branch_id"
+    ],
+    "prerequisites_met": [
+      "string"
+    ],
+    "prerequisites_pending": [
+      "string"
+    ],
+    "started_at": "iso_8601 | null",
+    "last_updated": "iso_8601",
+    "completed_at": "iso_8601 | null",
+    "rewards_granted": [
+      "reward_id"
+    ],
+    "blocking_conditions": [
+      "string"
+    ],
+    "failed_at": "iso_8601 | null",
+    "failure_mode": "string | null"
+  }
+}

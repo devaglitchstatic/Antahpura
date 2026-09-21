@@ -1,0 +1,27 @@
+{
+  "schema": "antahpura.quest.multiplayer",
+  "version": "20.0",
+  "total_rules": 4,
+  "rules": [
+    {
+      "rule_id": "mquest_001",
+      "name": "Consent for Shared Quests",
+      "description": "All players must consent before a shared quest activates"
+    },
+    {
+      "rule_id": "mquest_002",
+      "name": "Quest State Consensus",
+      "description": "Major branch decisions require consensus or designated decision-maker"
+    },
+    {
+      "rule_id": "mquest_003",
+      "name": "POV Leasing During Quest",
+      "description": "Quests may lease POV to specific characters for specific scenes"
+    },
+    {
+      "rule_id": "mquest_004",
+      "name": "Reward Distribution",
+      "description": "Rewards distributed per participant based on role and contribution"
+    }
+  ]
+}

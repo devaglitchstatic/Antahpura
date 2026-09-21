@@ -1,0 +1,14 @@
+{
+  "schema": "antahpura.kama_association_types",
+  "version": "20.1",
+  "types": {
+    "role_owner":         {"description": "Character's office functionally uses this Kama as primary practice", "confidence_threshold": 0.75},
+    "explicit_affinity":  {"description": "Source material explicitly states character preference", "confidence_threshold": 0.85},
+    "thematic_resonance": {"description": "Kama thematically consistent with character's domain", "confidence_threshold": 0.50},
+    "curiosity":          {"description": "Character is discovering this Kama and openness is present", "confidence_threshold": 0.30},
+    "boundary":           {"description": "Kama is a stated hard limit or boundary for character", "explicit_flag": true},
+    "gated":              {"description": "Kama exists in character's domain but is locked behind progression", "unlock_required": true},
+    "unsupported":        {"description": "No evidence for association", "confidence_threshold": 0.20},
+    "unknown":            {"description": "Not yet evaluated; reserved for future adjudication"}
+  }
+}

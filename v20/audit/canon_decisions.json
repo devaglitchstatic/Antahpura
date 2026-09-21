@@ -1,0 +1,121 @@
+{
+  "schema": "antahpura.audit.canon_decisions",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "description": "Every canonical decision made during the V20 consolidation process. Records what changed, why, and when.",
+  "decisions": [
+    {
+      "decision_id": "V20-KAMA-COUNT",
+      "date": "2026-09-14",
+      "previous": {"kama_count": 99},
+      "current": {"kama_count": 98},
+      "reason": "Frozen at 98 for canonical release.",
+      "status": "superseded",
+      "superseded_by": "V20.1-KAMA-COUNT-FINALIZED"
+    },
+    {
+      "decision_id": "V20-ADULT-STATUS-REMOVED",
+      "date": "2026-09-14",
+      "change": "adult_status field removed from Character schema",
+      "reason": "Age and verification handled at platform layer, not in character data.",
+      "status": "canonical"
+    },
+    {
+      "decision_id": "V20-CHANDRA-RITU-LINK",
+      "date": "2026-09-14",
+      "change": "Chandra-Kala linked to Ritu Kala as biological rhythm tracker",
+      "reason": "Classical Ayurvedic linkage; never a consent override.",
+      "status": "canonical"
+    },
+    {
+      "decision_id": "V20-SEVA-REGISTRY",
+      "date": "2026-09-14",
+      "change": "Seva (office) promoted to first-class registry",
+      "reason": "Role ≠ Skill ≠ Task.",
+      "status": "canonical"
+    },
+    {
+      "decision_id": "V20.1-KAMA-COUNT-FINALIZED",
+      "date": "2026-09-16",
+      "previous": {"kama_count": 97},
+      "current": {"kama_count": 98},
+      "reason": "Added DRASHTA_RATI as the 98th kama, filling a genuine gap for observer pleasure.",
+      "status": "canonical",
+      "affected_files": [
+        "kama/kama_registry_v20.json",
+        "matrices/dimension_kama_matrix.json"
+      ]
+    },
+    {
+      "decision_id": "V20.1-FAMILY-H-FROZEN",
+      "date": "2026-09-16",
+      "change": "Family H frozen at 10 visible entries plus DRASHTA_RATI",
+      "reason": "7 original entries not recoverable from source. Provenance rules forbid fabrication.",
+      "status": "canonical_with_gap",
+      "affected_files": ["kama/kama_registry_v20.json"]
+    },
+    {
+      "decision_id": "V20.1-LAGHAVA-REMOVED",
+      "date": "2026-09-16",
+      "change": "Removed spurious LAGHAVA_KALA entry from matrix",
+      "reason": "LAGHAVA_KALA is not a classical Kala. Correct art is hasta-laghava, absorbed into Domain 2.",
+      "status": "canonical",
+      "affected_files": ["matrices/dimension_kama_matrix.json"]
+    },
+    {
+      "decision_id": "V20.1-PADMA-CO-PRIMARY",
+      "date": "2026-09-16",
+      "change": "Padmā set as co-primary on Kalas 58 and 59",
+      "reason": "Aligns with her service/culinary role. Co-primary with Malika.",
+      "status": "canonical",
+      "affected_files": ["kala/kala_registry_v20.json"]
+    },
+    {
+      "decision_id": "V20.1-SEVDA-RESONANCE-ONLY",
+      "date": "2026-09-16",
+      "change": "Confirmed Sevda has 0 primary kalas",
+      "reason": "By design. Resonance-only in Domain 4.",
+      "status": "canonical"
+    },
+    {
+      "decision_id": "V20.1-ALTANI-RESONANCE-ONLY",
+      "date": "2026-09-16",
+      "change": "Confirmed Altani has 0 primary kalas",
+      "reason": "By design. Resonance-only in Domain 3.",
+      "status": "canonical"
+    },
+    {
+      "decision_id": "V20.1-CDIM-WEIGHTS-FIXED",
+      "date": "2026-09-16",
+      "change": "Fixed character_dimension_weights.json and reduced dims from 21 to 20",
+      "reason": "File had two root objects; 'nurture' dimension folded into 'devotion'.",
+      "status": "canonical",
+      "affected_files": ["matrices/character_dimension_weights.json"]
+    },
+    {
+      "decision_id": "V20.1-KAMA-LIFECYCLE-7",
+      "date": "2026-09-16",
+      "change": "Kama lifecycle canonical count = 7",
+      "reason": "Resolved 6 vs 7 discrepancy.",
+      "status": "canonical"
+    },
+    {
+      "decision_id": "V20.1-DRASHTA-RATI-ADDED",
+      "date": "2026-09-16",
+      "change": "DRASHTA_RATI added as 98th kama in Family H",
+      "reason": "Fills observer-pleasure gap not covered by BUST_EXHIBITIONISM or DACRYPHILIA.",
+      "status": "canonical",
+      "affected_files": [
+        "kama/kama_registry_v20.json",
+        "matrices/dimension_kama_matrix.json"
+      ]
+    }
+  ],
+  "audit": {
+    "total_decisions": 13,
+    "canonical": 12,
+    "canonical_with_gap": 1,
+    "superseded": 1,
+    "audit_passed": true
+  }
+}

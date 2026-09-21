@@ -1,0 +1,412 @@
+{
+  "schema": "antahpura.reward_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Comprehensive reward system with micro/macro rewards, relationship deltas, chemical/mechanical effects, and integration with kama lifecycle, kala mastery, and relationship progression.",
+  "design_principles": {
+    "principle_1": "Rewards are chemical levers, not just points.",
+    "principle_2": "Different characters respond to different reward types.",
+    "principle_3": "Rewards can be micro (daily, low-energy) or macro (weekly, high-energy).",
+    "principle_4": "Rewards reinforce behavior and deepen relationships.",
+    "principle_5": "Rewards can be self-directed or partner-directed.",
+    "principle_6": "Rewards are tracked and can be withheld or amplified based on context."
+  },
+
+  "reward_categories": {
+    "verbal_praise": {
+      "name": "Verbal Praise",
+      "description": "Words of affirmation and validation.",
+      "type": "micro",
+      "duration_seconds": 10,
+      "neurochemical_effect": {"dopamine": "high", "oxytocin": "moderate"},
+      "mechanical_effects": {
+        "affection_delta": "+2",
+        "trust_delta": "+1",
+        "respect_delta": "+1"
+      },
+      "character_preferences": {
+        "char_svara": {"preference": "high", "amplifier": 1.5},
+        "char_kumari_rati": {"preference": "high", "amplifier": 1.3},
+        "char_shrinagar": {"preference": "moderate", "amplifier": 1.0},
+        "char_roxana": {"preference": "low", "amplifier": 0.7},
+        "char_altani": {"preference": "low", "amplifier": 0.5}
+      }
+    },
+    "physical_contact": {
+      "name": "Physical Contact",
+      "description": "Touch, embrace, holding, or grooming.",
+      "type": "micro",
+      "duration_minutes": 2,
+      "neurochemical_effect": {"oxytocin": "very_high", "dopamine": "moderate"},
+      "mechanical_effects": {
+        "affection_delta": "+3",
+        "trust_delta": "+2",
+        "stress_reduction": "-10%"
+      },
+      "character_preferences": {
+        "char_padma": {"preference": "high", "amplifier": 1.4},
+        "char_champa": {"preference": "very_high", "amplifier": 1.6},
+        "char_kumari_rati": {"preference": "high", "amplifier": 1.3},
+        "char_roxana": {"preference": "moderate", "amplifier": 0.8},
+        "char_sevda": {"preference": "low", "amplifier": 0.5}
+      }
+    },
+    "privilege_release": {
+      "name": "Privilege Release",
+      "description": "Temporary lifting of rules or restrictions.",
+      "type": "micro",
+      "duration_minutes": 30,
+      "neurochemical_effect": {"dopamine": "high", "serotonin": "moderate"},
+      "mechanical_effects": {
+        "affection_delta": "+2",
+        "trust_delta": "+2",
+        "obligation_delta": "-2"
+      },
+      "character_preferences": {
+        "char_anisa": {"preference": "moderate", "amplifier": 1.0},
+        "char_kumari_rati": {"preference": "high", "amplifier": 1.3},
+        "char_tarana": {"preference": "high", "amplifier": 1.2},
+        "char_jahzara": {"preference": "low", "amplifier": 0.6}
+      }
+    },
+    "symbolic_token": {
+      "name": "Symbolic Token",
+      "description": "A small gift, trinket, or marker of achievement.",
+      "type": "micro",
+      "duration_seconds": 5,
+      "neurochemical_effect": {"serotonin": "high", "dopamine": "moderate"},
+      "mechanical_effects": {
+        "affection_delta": "+3",
+        "trust_delta": "+3",
+        "loyalty_delta": "+2"
+      },
+      "character_preferences": {
+        "char_reva": {"preference": "high", "amplifier": 1.4},
+        "char_anisa": {"preference": "high", "amplifier": 1.3},
+        "char_padma": {"preference": "moderate", "amplifier": 1.0},
+        "char_shrinagar": {"preference": "moderate", "amplifier": 1.0}
+      }
+    },
+    "sensory_treat": {
+      "name": "Sensory Treat",
+      "description": "A favorite food, scent, or sensory experience.",
+      "type": "micro",
+      "duration_minutes": 10,
+      "neurochemical_effect": {"dopamine": "high", "oxytocin": "moderate"},
+      "mechanical_effects": {
+        "affection_delta": "+3",
+        "trust_delta": "+2",
+        "energy_restoration": "+10"
+      },
+      "character_preferences": {
+        "char_malika": {"preference": "high", "amplifier": 1.4},
+        "char_shrinagar": {"preference": "high", "amplifier": 1.3},
+        "char_padma": {"preference": "moderate", "amplifier": 1.0},
+        "char_roxana": {"preference": "low", "amplifier": 0.7}
+      }
+    },
+    "full_scene_release": {
+      "name": "Full Scene Release",
+      "description": "A complete intimate or intense scene.",
+      "type": "macro",
+      "duration_hours": 2,
+      "neurochemical_effect": {"endorphins": "very_high", "dopamine": "very_high", "oxytocin": "high"},
+      "mechanical_effects": {
+        "affection_delta": "+10",
+        "trust_delta": "+8",
+        "loyalty_delta": "+8",
+        "kama_lifecycle_advance": true,
+        "kala_mastery_advance": true
+      },
+      "character_preferences": {
+        "char_kumari_rati": {"preference": "high", "amplifier": 1.5},
+        "char_roxana": {"preference": "high", "amplifier": 1.4},
+        "char_shrinagar": {"preference": "high", "amplifier": 1.3},
+        "char_altani": {"preference": "moderate", "amplifier": 0.9}
+      }
+    },
+    "total_regression": {
+      "name": "Total Regression",
+      "description": "Full submission to a headspace (little, pet, primal).",
+      "type": "macro",
+      "duration_hours": 4,
+      "neurochemical_effect": {"oxytocin": "very_high", "endorphins": "high", "dopamine": "high"},
+      "mechanical_effects": {
+        "affection_delta": "+12",
+        "trust_delta": "+10",
+        "loyalty_delta": "+10",
+        "vulnerability_delta": "+5",
+        "kama_lifecycle_advance": true
+      },
+      "character_preferences": {
+        "char_champa": {"preference": "very_high", "amplifier": 1.6},
+        "char_padma": {"preference": "high", "amplifier": 1.3},
+        "char_kumari_rati": {"preference": "high", "amplifier": 1.2},
+        "char_sevda": {"preference": "moderate", "amplifier": 0.8}
+      }
+    },
+    "earned_physical_release": {
+      "name": "Earned Physical Release",
+      "description": "Orgasm or physical climax after a period of denial.",
+      "type": "macro",
+      "duration_minutes": 30,
+      "neurochemical_effect": {"dopamine": "very_high", "endorphins": "high", "oxytocin": "high"},
+      "mechanical_effects": {
+        "affection_delta": "+8",
+        "trust_delta": "+6",
+        "loyalty_delta": "+5",
+        "energy_restoration": "-30"
+      },
+      "character_preferences": {
+        "char_kumari_rati": {"preference": "high", "amplifier": 1.4},
+        "char_roxana": {"preference": "moderate", "amplifier": 1.0},
+        "char_tarana": {"preference": "high", "amplifier": 1.2},
+        "char_shrinagar": {"preference": "moderate", "amplifier": 0.9}
+      }
+    },
+    "institutional_recognition": {
+      "name": "Institutional Recognition",
+      "description": "Formal acknowledgment by an institution.",
+      "type": "macro",
+      "duration_days": 1,
+      "neurochemical_effect": {"serotonin": "high", "dopamine": "moderate"},
+      "mechanical_effects": {
+        "respect_delta": "+10",
+        "loyalty_delta": "+8",
+        "institutional_reputation_delta": "+5",
+        "access_permission_advance": true
+      },
+      "character_preferences": {
+        "char_anisa": {"preference": "very_high", "amplifier": 1.5},
+        "char_roxana": {"preference": "high", "amplifier": 1.3},
+        "char_malika": {"preference": "high", "amplifier": 1.2},
+        "char_jahzara": {"preference": "moderate", "amplifier": 1.0}
+      }
+    }
+  },
+
+  "reward_schedule": {
+    "description": "A sample weekly reward schedule for a D/s or Caregiver/Little pairing.",
+    "schedule": [
+      {
+        "day": "Monday",
+        "reward_type": "verbal_praise",
+        "trigger": "morning_protocol_completion",
+        "effect": "Sets positive tone for week"
+      },
+      {
+        "day": "Tuesday",
+        "reward_type": "physical_contact",
+        "trigger": "stressful_workday_survival",
+        "effect": "Grounds submissive after work"
+      },
+      {
+        "day": "Wednesday",
+        "reward_type": "symbolic_token",
+        "trigger": "mid_week_protocol_adherence",
+        "effect": "Reinforces ongoing commitment"
+      },
+      {
+        "day": "Thursday",
+        "reward_type": "privilege_release",
+        "trigger": "exceptional_patience_or_effort",
+        "effect": "Builds anticipation for weekend"
+      },
+      {
+        "day": "Friday",
+        "reward_type": "full_scene_release",
+        "trigger": "weekly_goals_met",
+        "effect": "Peak chemical experience"
+      },
+      {
+        "day": "Saturday",
+        "reward_type": "total_regression",
+        "trigger": "deep_recovery_need",
+        "effect": "Deep bonding and recovery"
+      },
+      {
+        "day": "Sunday",
+        "reward_type": "physical_contact",
+        "trigger": "aftercare_and_reconnection",
+        "effect": "Stabilization before new week"
+      }
+    ],
+    "rules": [
+      "Never weaponize basic needs (food, safety, sleep)",
+      "Keep schedule flexible for real-life emergencies",
+      "Match reward type to character preference",
+      "Alternate rewards to prevent habituation"
+    ]
+  },
+
+  "reward_archetype_matrix": {
+    "description": "What each archetype prefers to give and receive.",
+    "archetypes": {
+      "dominant_caregiver": {
+        "prefers_to_give": ["physical_contact", "sensory_treat", "symbolic_token"],
+        "prefers_to_receive": ["verbal_praise", "physical_contact", "obedience_display"],
+        "reward_amplifier": 1.2,
+        "punishment_aversion": "high"
+      },
+      "submissive_bottom": {
+        "prefers_to_give": ["obedience_display", "service_acts", "verbal_validation"],
+        "prefers_to_receive": ["verbal_praise", "physical_contact", "earned_physical_release"],
+        "reward_amplifier": 1.3,
+        "punishment_tolerance": "moderate"
+      },
+      "sadist": {
+        "prefers_to_give": ["full_scene_release", "sensory_treat", "earned_physical_release"],
+        "prefers_to_receive": ["verbal_praise", "physical_contact", "obedience_display"],
+        "reward_amplifier": 1.1,
+        "punishment_aversion": "low"
+      },
+      "masochist": {
+        "prefers_to_give": ["endurance_display", "service_acts", "obedience_display"],
+        "prefers_to_receive": ["full_scene_release", "earned_physical_release", "symbolic_token"],
+        "reward_amplifier": 1.4,
+        "punishment_tolerance": "very_high"
+      },
+      "switch": {
+        "prefers_to_give": ["varies_by_role", "reciprocal_rewards", "role_rotation"],
+        "prefers_to_receive": ["varies_by_role", "reciprocal_rewards", "role_rotation"],
+        "reward_amplifier": 1.0,
+        "punishment_tolerance": "moderate"
+      }
+    }
+  },
+
+  "micro_rewards": {
+    "description": "Low-energy, quick rewards that take under 5 minutes.",
+    "rewards": [
+      {
+        "reward_id": "mr_verbal_praise",
+        "name": "Verbal Praise",
+        "example": "\"Good girl/boy/human.\"",
+        "duration_seconds": 10,
+        "primary_trigger": "dopamine",
+        "best_for": ["char_svara", "char_kumari_rati", "char_padma"]
+      },
+      {
+        "reward_id": "mr_forehead_kiss",
+        "name": "Forehead Kiss",
+        "example": "Slow, deliberate kiss on the forehead.",
+        "duration_seconds": 5,
+        "primary_trigger": "oxytocin",
+        "best_for": ["char_champa", "char_padma", "char_kumari_rati"]
+      },
+      {
+        "reward_id": "mr_hair_stroke",
+        "name": "Hair Stroke",
+        "example": "Running fingers through hair while kneeling.",
+        "duration_minutes": 2,
+        "primary_trigger": "oxytocin",
+        "best_for": ["char_shrinagar", "char_champa"]
+      },
+      {
+        "reward_id": "mr_heavy_hold",
+        "name": "Heavy-Pressure Hold",
+        "example": "Wrapping arms around from behind and squeezing firmly.",
+        "duration_seconds": 30,
+        "primary_trigger": "oxytocin",
+        "best_for": ["char_jahzara", "char_roxana"]
+      },
+      {
+        "reward_id": "mr_warm_drink",
+        "name": "Warm Drink",
+        "example": "Handing a perfectly timed cup of tea or coffee.",
+        "duration_minutes": 3,
+        "primary_trigger": "oxytocin, serotonin",
+        "best_for": ["char_shrinagar", "char_malika"]
+      },
+      {
+        "reward_id": "mr_privilege_release",
+        "name": "Privilege Release",
+        "example": "Allowing choice of outfit or movie.",
+        "duration_seconds": 30,
+        "primary_trigger": "dopamine",
+        "best_for": ["char_kumari_rati", "char_tarana", "char_anisa"]
+      },
+      {
+        "reward_id": "mr_sticker_chart",
+        "name": "Sticker Chart",
+        "example": "Placing a shiny sticker on a tracking chart.",
+        "duration_seconds": 5,
+        "primary_trigger": "serotonin",
+        "best_for": ["char_champa", "char_padma"]
+      },
+      {
+        "reward_id": "mr_pocket_token",
+        "name": "Pocket Token",
+        "example": "Slipping a small stone or coin into their pocket.",
+        "duration_seconds": 5,
+        "primary_trigger": "serotonin",
+        "best_for": ["char_reva", "char_anisa"]
+      },
+      {
+        "reward_id": "mr_collar_adjustment",
+        "name": "Collar Adjustment",
+        "example": "Gently adjusting or kissing their collar.",
+        "duration_seconds": 10,
+        "primary_trigger": "oxytocin, serotonin",
+        "best_for": ["char_kumari_rati", "char_padma"]
+      },
+      {
+        "reward_id": "mr_sweet_treat",
+        "name": "Sweet Treat",
+        "example": "Leaving a single chocolate or fruit gummy.",
+        "duration_seconds": 5,
+        "primary_trigger": "dopamine",
+        "best_for": ["char_shrinagar", "char_malika"]
+      }
+    ]
+  },
+
+  "runtime_reward_state": {
+    "schema": {
+      "character_id": "char_id",
+      "rewards_received": [
+        {
+          "reward_id": "string",
+          "reward_type": "string",
+          "from_char": "char_id",
+          "timestamp": "iso_8601",
+          "effect_applied": true
+        }
+      ],
+      "rewards_given": [
+        {
+          "reward_id": "string",
+          "reward_type": "string",
+          "to_char": "char_id",
+          "timestamp": "iso_8601",
+          "effect_applied": true
+        }
+      ],
+      "reward_history_summary": {
+        "total_rewards_received": "integer",
+        "total_rewards_given": "integer",
+        "most_common_reward_type": "string",
+        "last_reward_at": "iso_8601"
+      },
+      "active_reward_effects": [
+        {
+          "reward_id": "string",
+          "effect": "string",
+          "expires_at": "iso_8601"
+        }
+      ],
+      "last_updated": "iso_8601"
+    }
+  },
+
+  "audit": {
+    "total_reward_categories": 9,
+    "total_micro_rewards": 10,
+    "total_macro_rewards": 4,
+    "total_archetypes_mapped": 5,
+    "total_schedule_days": 7,
+    "orphaned_rewards": 0,
+    "audit_passed": true
+  }
+}

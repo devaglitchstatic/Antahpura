@@ -1,0 +1,585 @@
+{
+  "schema": "antahpura.intimate_jewelry_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Intimate jewelry as relationship tokens, stat modifiers, scene gates, and progression markers. Integrates with relationship_edges, kama_lifecycle, location_access, and runtime state.",
+  "design_principles": {
+    "principle_1": "Jewelry is never merely decorative. Every item carries relationship meaning, mechanical effect, or narrative weight.",
+    "principle_2": "The same item worn by different characters in different relationships produces different effects.",
+    "principle_3": "Jewelry can be given, received, worn, removed, returned, or destroyed. Each action is an event.",
+    "principle_4": "Jewelry unlocks scenes, kamas, and locations that would otherwise be gated.",
+    "principle_5": "Removal or destruction of jewelry is a significant relational event with cascading consequences.",
+    "principle_6": "Characters can gift jewelry they have crafted themselves (via kala_19 Ã„â‚¬bharaÃ¡Â¹â€¡a, kala_20 MaÃ¡Â¹â€¡i-raÃƒÂ±jana, kala_28 Danta-karma, or kala_40 DhÃ„Âtu-vÃ„Âda)."
+  },
+
+  "jewelry_categories": {
+    "collar": {
+      "name": "Collar",
+      "description": "Worn around the neck. The most significant marker of D/s bond.",
+      "body_location": "neck",
+      "visibility_default": "visible",
+      "symbolic_weight": "very_high",
+      "removal_difficulty": "moderate",
+      "mechanical_effects": {
+        "authority_amplifier": 1.3,
+        "vulnerability_amplifier": 1.2,
+        "trust_requirement_for_wearing": 60,
+        "trust_requirement_for_gifting": 75
+      }
+    },
+    "torque": {
+      "name": "Torque",
+      "description": "Rigid ring worn around the neck or upper arm. Formal, ceremonial, often institutional.",
+      "body_location": ["neck", "upper_arm"],
+      "visibility_default": "visible",
+      "symbolic_weight": "very_high",
+      "removal_difficulty": "hard",
+      "mechanical_effects": {
+        "authority_amplifier": 1.4,
+        "discipline_amplifier": 1.2,
+        "institutional_reputation_requirement": {"inst_throne": 3}
+      }
+    },
+    "ring": {
+      "name": "Ring",
+      "description": "Worn on a finger. Portable, subtle, can be public or private.",
+      "body_location": "finger",
+      "visibility_default": "visible",
+      "symbolic_weight": "high",
+      "removal_difficulty": "easy",
+      "mechanical_effects": {
+        "affection_amplifier": 1.15,
+        "loyalty_amplifier": 1.1,
+        "trust_requirement_for_gifting": 50
+      }
+    },
+    "bracelet_cuff": {
+      "name": "Bracelet / Cuff",
+      "description": "Worn on wrist or forearm. Practical, often tactical.",
+      "body_location": ["wrist", "forearm"],
+      "visibility_default": "visible",
+      "symbolic_weight": "moderate",
+      "removal_difficulty": "easy_to_moderate",
+      "mechanical_effects": {
+        "vigilance_amplifier": 1.15,
+        "discipline_amplifier": 1.1,
+        "trust_requirement_for_gifting": 40
+      }
+    },
+    "armlet": {
+      "name": "Armlet / Vanki",
+      "description": "Worn on upper arm. Classical South Asian form.",
+      "body_location": "upper_arm",
+      "visibility_default": "visible",
+      "symbolic_weight": "high",
+      "removal_difficulty": "moderate",
+      "mechanical_effects": {
+        "authority_amplifier": 1.2,
+        "aesthetic_amplifier": 1.15,
+        "trust_requirement_for_gifting": 55
+      }
+    },
+    "anklet": {
+      "name": "Anklet / Nupur",
+      "description": "Worn on ankle. Often weighted or bell-bearing.",
+      "body_location": "ankle",
+      "visibility_default": "semi_visible",
+      "symbolic_weight": "moderate",
+      "removal_difficulty": "easy",
+      "mechanical_effects": {
+        "stillness_amplifier": 1.1,
+        "performance_amplifier": 1.15,
+        "trust_requirement_for_gifting": 35
+      }
+    },
+    "waist_chain": {
+      "name": "Waist Chain / Kamarbandh",
+      "description": "Worn around the waist or hips. Intimate, often hidden.",
+      "body_location": "waist",
+      "visibility_default": "hidden",
+      "symbolic_weight": "high",
+      "removal_difficulty": "moderate",
+      "mechanical_effects": {
+        "intimacy_amplifier": 1.25,
+        "vulnerability_amplifier": 1.2,
+        "trust_requirement_for_gifting": 65
+      }
+    },
+    "piercing": {
+      "name": "Piercing",
+      "description": "Body piercing. Permanent or semi-permanent.",
+      "body_location": ["ear", "nose", "navel", "nipple", "labia", "hood", "perineum"],
+      "visibility_default": "semi_visible",
+      "symbolic_weight": "very_high",
+      "removal_difficulty": "hard",
+      "mechanical_effects": {
+        "vulnerability_amplifier": 1.3,
+        "trust_requirement_for_gifting": 80,
+        "irreversible_marker": true
+      }
+    },
+    "hair_ornament": {
+      "name": "Hair Ornament / Chochpopuk",
+      "description": "Worn in hair or braids. Personal, often gifted by a lover or mentor.",
+      "body_location": "hair",
+      "visibility_default": "visible",
+      "symbolic_weight": "moderate",
+      "removal_difficulty": "easy",
+      "mechanical_effects": {
+        "aesthetic_amplifier": 1.15,
+        "expression_amplifier": 1.1,
+        "trust_requirement_for_gifting": 30
+      }
+    },
+    "chastity_device": {
+      "name": "Chastity Device",
+      "description": "Locking device worn over genitals. Explicit control marker.",
+      "body_location": "genital",
+      "visibility_default": "hidden",
+      "symbolic_weight": "very_high",
+      "removal_difficulty": "locked_key_required",
+      "mechanical_effects": {
+        "restraint_amplifier": 1.4,
+        "control_amplifier": 1.3,
+        "trust_requirement_for_gifting": 85,
+        "trust_requirement_for_wearing": 80
+      }
+    }
+  },
+
+  "jewelry_registry": {
+    "torque_padma": {
+      "jewelry_id": "jw_torque_padma",
+      "name": "PadmÃ„Â's Service Torque",
+      "category": "torque",
+      "materials": ["brass", "copper", "leather"],
+      "crafted_by": "char_malika",
+      "crafted_at": "2026-09-16",
+      "assigned_to": "char_padma",
+      "gifted_by": "char_kumari_rati",
+      "relationship_context": "rel_kumari_rati_padma",
+      "visibility": "visible",
+      "state": "worn",
+      "kala_requirement": ["kala_40"],
+      "mechanical_effects": {
+        "devotion_amplifier": 1.2,
+        "service_amplifier": 1.25,
+        "trust_amplifier": 1.15
+      },
+      "unlocks_kama_lifecycle": {
+        "kama_id": "DASYAM",
+        "minimum_state": "discussable"
+      },
+      "unlocks_scene": "scene_torque_ceremony",
+      "narrative_notes": "A simple brass torque, hand-forged by Malika for PadmÃ„Â as part of her formal recognition as senior handmaiden. Worn at all times except bathing."
+    },
+    "collar_kumari_rati": {
+      "jewelry_id": "jw_collar_kumari_rati",
+      "name": "KumÃ„ÂrÃ„Â« Rati's Initiate Collar",
+      "category": "collar",
+      "materials": ["gold", "silk_cord", "pearl"],
+      "crafted_by": "char_shrinagar",
+      "crafted_at": "2026-09-16",
+      "assigned_to": "char_kumari_rati",
+      "gifted_by": "char_maha_deva",
+      "relationship_context": "rel_maha_deva_kumari_rati",
+      "visibility": "visible",
+      "state": "worn",
+      "kala_requirement": ["kala_19"],
+      "mechanical_effects": {
+        "devotion_amplifier": 1.3,
+        "authority_amplifier": 1.15,
+        "vulnerability_amplifier": 1.2
+      },
+      "unlocks_kama_lifecycle": {
+        "kama_id": "VICARIOUS_EGO_BHANGA",
+        "minimum_state": "exploreable"
+      },
+      "unlocks_scene": "scene_collar_binding",
+      "narrative_notes": "Woven gold and silk collar, set with a single pearl. Worn only during formal initiation rites and intimate ceremonies. Cannot be worn in public without invitation."
+    },
+    "waist_chain_shrinagar": {
+      "jewelry_id": "jw_waist_chain_shrinagar",
+      "name": "Shrinagar's Saffron Waist Chain",
+      "category": "waist_chain",
+      "materials": ["gold", "saffron_dyed_silk"],
+      "crafted_by": "char_shrinagar",
+      "crafted_at": "2026-09-16",
+      "assigned_to": "char_shrinagar",
+      "gifted_by": null,
+      "relationship_context": null,
+      "visibility": "hidden",
+      "state": "worn",
+      "kala_requirement": ["kala_17", "kala_21"],
+      "mechanical_effects": {
+        "aesthetic_amplifier": 1.3,
+        "sensory_amplifier": 1.2,
+        "intimacy_amplifier": 1.25
+      },
+      "unlocks_kama_lifecycle": {
+        "kama_id": "SNANA_RATI",
+        "minimum_state": "participatory"
+      },
+      "unlocks_scene": "scene_saffron_preparation",
+      "narrative_notes": "A gold chain dyed with saffron and pomegranate, worn beneath clothing during esoteric preparations. Increases sensory awareness. Not worn during public appearances."
+    },
+    "ring_reva_anisa": {
+      "jewelry_id": "jw_ring_reva_anisa",
+      "name": "Cipher Ring",
+      "category": "ring",
+      "materials": ["silver", "black_stone"],
+      "crafted_by": "char_reva",
+      "crafted_at": "2026-09-16",
+      "assigned_to": ["char_reva", "char_anisa"],
+      "gifted_by": "char_reva",
+      "relationship_context": "rel_reva_anisa",
+      "visibility": "visible",
+      "state": "worn",
+      "kala_requirement": ["kala_11", "kala_6"],
+      "mechanical_effects": {
+        "precision_amplifier": 1.2,
+        "privacy_amplifier": 1.25,
+        "trust_amplifier": 1.1
+      },
+      "unlocks_kama_lifecycle": {
+        "kama_id": "GRAPHOEROTICA",
+        "minimum_state": "discussable"
+      },
+      "unlocks_scene": "scene_cipher_exchange",
+      "narrative_notes": "Twin rings, one worn by Reva and one by AniÃ…â€ºÃ„Â. Each ring contains a small cipher disc that can be turned to encode messages. Worn during private meetings."
+    },
+    "cuff_jahzara": {
+      "jewelry_id": "jw_cuff_jahzara",
+      "name": "Habshi Blood-Iron Cuff",
+      "category": "bracelet_cuff",
+      "materials": ["iron", "blood_oath_solder"],
+      "crafted_by": "char_jahzara",
+      "crafted_at": "2026-09-16",
+      "assigned_to": "char_jahzara",
+      "gifted_by": null,
+      "relationship_context": null,
+      "visibility": "visible",
+      "state": "worn",
+      "kala_requirement": ["kala_40", "kala_45"],
+      "mechanical_effects": {
+        "intensity_amplifier": 1.25,
+        "vigilance_amplifier": 1.3,
+        "discipline_amplifier": 1.2
+      },
+      "unlocks_kama_lifecycle": {
+        "kama_id": "RAKTA_SPARSHA",
+        "minimum_state": "exploreable"
+      },
+      "unlocks_scene": "scene_blood_oath",
+      "narrative_notes": "A heavy iron cuff worn on the left forearm. Forged with solder that contains a trace of Jahzara's own blood from her vanguard oath. Worn during guard duty."
+    },
+    "piercing_tarana": {
+      "jewelry_id": "jw_piercing_tarana",
+      "name": "Tarana's Navel Piercing",
+      "category": "piercing",
+      "materials": ["gold", "ruby"],
+      "crafted_by": "char_shrinagar",
+      "crafted_at": "2026-09-16",
+      "assigned_to": "char_tarana",
+      "gifted_by": "char_shrinagar",
+      "relationship_context": "rel_shrinagar_tarana",
+      "visibility": "semi_visible",
+      "state": "worn",
+      "kala_requirement": ["kala_19", "kala_22"],
+      "mechanical_effects": {
+        "performance_amplifier": 1.25,
+        "vulnerability_amplifier": 1.15,
+        "aesthetic_amplifier": 1.2
+      },
+      "unlocks_kama_lifecycle": {
+        "kama_id": "BUST_EXHIBITIONISM",
+        "minimum_state": "discussable"
+      },
+      "unlocks_scene": "scene_dance_display",
+      "narrative_notes": "A gold navel piercing set with a small ruby. Visible during dance performances. Gifted by Shrinagar as a marker of Tarana's position as primary court dancer."
+    },
+    "armlet_roxana": {
+      "jewelry_id": "jw_armlet_roxana",
+      "name": "Roxana's Rigger's Vanki",
+      "category": "armlet",
+      "materials": ["silver", "black_silk_cord"],
+      "crafted_by": "char_roxana",
+      "crafted_at": "2026-09-16",
+      "assigned_to": "char_roxana",
+      "gifted_by": null,
+      "relationship_context": null,
+      "visibility": "visible",
+      "state": "worn",
+      "kala_requirement": ["kala_25", "kala_33"],
+      "mechanical_effects": {
+        "authority_amplifier": 1.3,
+        "restraint_amplifier": 1.35,
+        "precision_amplifier": 1.2
+      },
+      "unlocks_kama_lifecycle": {
+        "kama_id": "GRANTHI_KALA",
+        "minimum_state": "runtime_enabled"
+      },
+      "unlocks_scene": "scene_rigging_review",
+      "narrative_notes": "An inverted V-shaped silver armlet worn on the right bicep. The inner surface is inscribed with knot patterns. Worn during all binding work."
+    },
+    "torque_sevda": {
+      "jewelry_id": "jw_torque_sevda",
+      "name": "Vault Warden's Torque",
+      "category": "torque",
+      "materials": ["dark_iron", "salt_crystal"],
+      "crafted_by": "char_sevda",
+      "crafted_at": "2026-09-16",
+      "assigned_to": "char_sevda",
+      "gifted_by": null,
+      "relationship_context": null,
+      "visibility": "visible",
+      "state": "worn",
+      "kala_requirement": ["kala_41", "kala_43"],
+      "mechanical_effects": {
+        "stillness_amplifier": 1.4,
+        "privacy_amplifier": 1.3,
+        "rituality_amplifier": 1.25
+      },
+      "unlocks_kama_lifecycle": {
+        "kama_id": "INDRIYA_NIRODHA",
+        "minimum_state": "exploreable"
+      },
+      "unlocks_scene": "scene_vault_containment",
+      "narrative_notes": "A dark iron torque set with a single salt crystal at the throat. Worn at all times during vault duty. Removed only for bathing."
+    },
+    "anklet_champa": {
+      "jewelry_id": "jw_anklet_champa",
+      "name": "ChampÃ„Â's Pup Bells",
+      "category": "anklet",
+      "materials": ["brass", "leather"],
+      "crafted_by": "char_padma",
+      "crafted_at": "2026-09-16",
+      "assigned_to": "char_champa",
+      "gifted_by": "char_padma",
+      "relationship_context": "rel_padma_champa",
+      "visibility": "semi_visible",
+      "state": "worn",
+      "kala_requirement": ["kala_24"],
+      "mechanical_effects": {
+        "playfulness_amplifier": 1.3,
+        "trust_amplifier": 1.2,
+        "performance_amplifier": 1.15
+      },
+      "unlocks_kama_lifecycle": {
+        "kama_id": "KRIDA_MRIGA",
+        "minimum_state": "participatory"
+      },
+      "unlocks_scene": "scene_pet_training",
+      "narrative_notes": "A pair of brass anklets strung with small bells. Worn during pet-space sessions. The sound of the bells is used as a behavioral cue."
+    },
+    "hair_ornament_svara": {
+      "jewelry_id": "jw_hair_ornament_svara",
+      "name": "Svara's Calibration Ornament",
+      "category": "hair_ornament",
+      "materials": ["silver", "silk_cord", "tuning_fork_fragment"],
+      "crafted_by": "char_svara",
+      "crafted_at": "2026-09-16",
+      "assigned_to": "char_svara",
+      "gifted_by": null,
+      "relationship_context": null,
+      "visibility": "visible",
+      "state": "worn",
+      "kala_requirement": ["kala_1", "kala_2"],
+      "mechanical_effects": {
+        "precision_amplifier": 1.3,
+        "acoustic_amplifier": 1.35,
+        "rituality_amplifier": 1.15
+      },
+      "unlocks_kama_lifecycle": {
+        "kama_id": "NADA_SADHANA",
+        "minimum_state": "runtime_enabled"
+      },
+      "unlocks_scene": "scene_acoustic_calibration",
+      "narrative_notes": "A silver hair ornament containing a small tuning fork fragment. Svara uses it to calibrate instruments by touch. Worn woven into braids."
+    }
+  },
+
+  "jewelry_actions": {
+    "crafting": {
+      "action_id": "act_craft_jewelry",
+      "description": "Character crafts a piece of jewelry using their kala mastery.",
+      "required_kalas": ["kala_19", "kala_20", "kala_28", "kala_40"],
+      "minimum_mastery": 4,
+      "time_cost_hours": 4,
+      "consumes_materials": ["metal", "gem", "cord", "leather"],
+      "produces": "jewelry_item",
+      "event_type": "jewelry_crafted"
+    },
+    "gifting": {
+      "action_id": "act_gift_jewelry",
+      "description": "Character gives a piece of jewelry to another character.",
+      "requirements": {
+        "relationship_trust": 50,
+        "relationship_affection": 40,
+        "target_consent": "required_for_significant_pieces"
+      },
+      "effects": {
+        "relationship_delta": {"affection": 5, "trust": 5, "loyalty": 3},
+        "memory_tag": "jewelry_gifted",
+        "unlocks_scene": "scene_gifting_ceremony"
+      },
+      "event_type": "jewelry_gifted"
+    },
+    "accepting": {
+      "action_id": "act_accept_jewelry",
+      "description": "Character accepts a gifted piece of jewelry.",
+      "requirements": {
+        "relationship_trust": 40,
+        "relationship_affection": 30,
+        "not_currently_wearing_conflicting_piece": true
+      },
+      "effects": {
+        "relationship_delta": {"affection": 3, "trust": 4, "obligation": 2},
+        "memory_tag": "jewelry_accepted",
+        "unlocks_kama_lifecycle": true
+      },
+      "event_type": "jewelry_accepted"
+    },
+    "wearing": {
+      "action_id": "act_wear_jewelry",
+      "description": "Character puts on a piece of jewelry.",
+      "requirements": {
+        "ownership": true,
+        "trust_with_gifter_if_significant": "varies_by_category"
+      },
+      "effects": {
+        "mechanical_effects_apply": true,
+        "telemetry_shift": {"vulnerability": 2, "authority": -1}
+      },
+      "event_type": "jewelry_worn"
+    },
+    "removing": {
+      "action_id": "act_remove_jewelry",
+      "description": "Character removes a piece of jewelry.",
+      "requirements": {
+        "removal_difficulty": "varies_by_category",
+        "key_or_permission_if_locked": "varies_by_category"
+      },
+      "effects": {
+        "mechanical_effects_removed": true,
+        "relationship_delta_if_gifted": {"affection": -3, "trust": -2, "resentment": 2},
+        "memory_tag": "jewelry_removed"
+      },
+      "event_type": "jewelry_removed"
+    },
+    "returning": {
+      "action_id": "act_return_jewelry",
+      "description": "Character returns a gifted piece of jewelry to the gifter.",
+      "effects": {
+        "relationship_delta": {"affection": -10, "trust": -8, "resentment": 5, "obligation": -5},
+        "memory_tag": "jewelry_returned",
+        "significance": "major_relational_event"
+      },
+      "event_type": "jewelry_returned"
+    },
+    "destroying": {
+      "action_id": "act_destroy_jewelry",
+      "description": "Character destroys a piece of jewelry.",
+      "effects": {
+        "relationship_delta": {"affection": -20, "trust": -25, "resentment": 15, "rivalry": 10},
+        "memory_tag": "jewelry_destroyed",
+        "significance": "transformative_relational_event"
+      },
+      "event_type": "jewelry_destroyed"
+    }
+  },
+
+  "jewelry_unlock_matrix": {
+    "description": "What each jewelry category unlocks for each character.",
+    "matrix": {
+      "char_padma": {
+        "owned": ["jw_torque_padma", "jw_anklet_champa"],
+        "unlocked_scenes": ["scene_torque_ceremony", "scene_pet_training"],
+        "unlocked_kama_lifecycles": ["DASYAM", "KRIDA_MRIGA"]
+      },
+      "char_kumari_rati": {
+        "owned": ["jw_collar_kumari_rati"],
+        "unlocked_scenes": ["scene_collar_binding"],
+        "unlocked_kama_lifecycles": ["VICARIOUS_EGO_BHANGA"]
+      },
+      "char_shrinagar": {
+        "owned": ["jw_waist_chain_shrinagar", "jw_piercing_tarana"],
+        "unlocked_scenes": ["scene_saffron_preparation", "scene_dance_display"],
+        "unlocked_kama_lifecycles": ["SNANA_RATI", "BUST_EXHIBITIONISM"]
+      },
+      "char_reva": {
+        "owned": ["jw_ring_reva_anisa"],
+        "unlocked_scenes": ["scene_cipher_exchange"],
+        "unlocked_kama_lifecycles": ["GRAPHOEROTICA"]
+      },
+      "char_anisa": {
+        "owned": ["jw_ring_reva_anisa"],
+        "unlocked_scenes": ["scene_cipher_exchange"],
+        "unlocked_kama_lifecycles": ["GRAPHOEROTICA"]
+      },
+      "char_jahzara": {
+        "owned": ["jw_cuff_jahzara"],
+        "unlocked_scenes": ["scene_blood_oath"],
+        "unlocked_kama_lifecycles": ["RAKTA_SPARSHA"]
+      },
+      "char_tarana": {
+        "owned": ["jw_piercing_tarana"],
+        "unlocked_scenes": ["scene_dance_display"],
+        "unlocked_kama_lifecycles": ["BUST_EXHIBITIONISM"]
+      },
+      "char_roxana": {
+        "owned": ["jw_armlet_roxana"],
+        "unlocked_scenes": ["scene_rigging_review"],
+        "unlocked_kama_lifecycles": ["GRANTHI_KALA"]
+      },
+      "char_sevda": {
+        "owned": ["jw_torque_sevda"],
+        "unlocked_scenes": ["scene_vault_containment"],
+        "unlocked_kama_lifecycles": ["INDRIYA_NIRODHA"]
+      },
+      "char_champa": {
+        "owned": ["jw_anklet_champa"],
+        "unlocked_scenes": ["scene_pet_training"],
+        "unlocked_kama_lifecycles": ["KRIDA_MRIGA"]
+      },
+      "char_svara": {
+        "owned": ["jw_hair_ornament_svara"],
+        "unlocked_scenes": ["scene_acoustic_calibration"],
+        "unlocked_kama_lifecycles": ["NADA_SADHANA"]
+      }
+    }
+  },
+
+  "runtime_jewelry_state": {
+    "schema": {
+      "character_id": "char_id",
+      "jewelry_worn": [
+        {
+          "jewelry_id": "string",
+          "category": "string",
+          "worn_since": "iso_8601",
+          "mechanical_effects_active": true,
+          "unlocked_scenes": ["string"],
+          "unlocked_kama_lifecycles": ["string"]
+        }
+      ],
+      "jewelry_owned": ["string"],
+      "jewelry_gifted": ["string"],
+      "jewelry_received": ["string"],
+      "jewelry_destroyed": ["string"],
+      "jewelry_returned": ["string"],
+      "last_updated": "iso_8601"
+    }
+  },
+
+  "audit": {
+    "total_categories": 10,
+    "total_registry_items": 10,
+    "total_actions": 6,
+    "total_characters_with_jewelry": 11,
+    "orphaned_items": 0,
+    "audit_passed": true
+  }
+}

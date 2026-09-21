@@ -1,0 +1,310 @@
+{
+  "maha_deva": {
+    "devata_relationships": [
+      {
+        "devata_ref": "DEVATA-003",
+        "belief": 0.95,
+        "devotion": 0.85,
+        "philosophical_alignment": 0.9,
+        "practice_affinity": 0.9,
+        "ritual_relevance": 0.85,
+        "experiential_resonance": 0.8,
+        "interpretation": {
+          "mode": "devotional",
+          "ontology_belief": "metaphysical",
+          "certainty": 0.9
+        }
+      }
+    ],
+    "practice_profile": {
+      "mantra_refs": [
+        "MANTRA-002",
+        "MANTRA-003"
+      ],
+      "yantra_refs": [],
+      "mudra_refs": [],
+      "asana_refs": [
+        "ASANA-003"
+      ]
+    },
+    "tattva_refs": [
+      "TATTVA-005"
+    ],
+    "metric_profile_ref": null,
+    "mission_hooks": []
+  },
+  "kumari_rati": {
+    "devata_relationships": [
+      {
+        "devata_ref": "DEVATA-001",
+        "belief": 0.88,
+        "devotion": 0.76,
+        "philosophical_alignment": 0.91,
+        "practice_affinity": 0.84,
+        "ritual_relevance": 0.79,
+        "experiential_resonance": 0.67,
+        "interpretation": {
+          "mode": "devotional",
+          "ontology_belief": "metaphysical",
+          "certainty": 0.72
+        }
+      }
+    ],
+    "practice_profile": {
+      "mantra_refs": [
+        "MANTRA-001"
+      ],
+      "yantra_refs": [
+        "YANTRA-001"
+      ],
+      "mudra_refs": [],
+      "asana_refs": [
+        "ASANA-001",
+        "ASANA-002"
+      ]
+    },
+    "tattva_refs": [
+      "TATTVA-003"
+    ],
+    "metric_profile_ref": "METRIC-PROFILE-001",
+    "mission_hooks": [
+      "MISSION-TANTRA-001"
+    ]
+  },
+  "padma": {
+    "devata_relationships": [
+      {
+        "devata_ref": "DEVATA-001",
+        "belief": 0.92,
+        "devotion": 0.95,
+        "philosophical_alignment": 0.8,
+        "practice_affinity": 0.9,
+        "ritual_relevance": 0.85,
+        "experiential_resonance": 0.88,
+        "interpretation": {
+          "mode": "devotional",
+          "ontology_belief": "metaphysical",
+          "certainty": 0.85
+        }
+      }
+    ],
+    "practice_profile": {
+      "mantra_refs": [],
+      "yantra_refs": [],
+      "mudra_refs": [
+        "MUDRA-001",
+        "MUDRA-002"
+      ],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-001",
+      "TATTVA-002"
+    ],
+    "metric_profile_ref": null,
+    "mission_hooks": [
+      "MISSION-TATTVA-001"
+    ]
+  },
+  "champa": {
+    "devata_relationships": [],
+    "practice_profile": {
+      "mantra_refs": [],
+      "yantra_refs": [],
+      "mudra_refs": [],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-001"
+    ],
+    "metric_profile_ref": null,
+    "mission_hooks": []
+  },
+  "anisa": {
+    "devata_relationships": [],
+    "practice_profile": {
+      "mantra_refs": [],
+      "yantra_refs": [],
+      "mudra_refs": [],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-005"
+    ],
+    "metric_profile_ref": "METRIC-CQ",
+    "mission_hooks": [
+      "MISSION-HIGHCONTROL-001"
+    ]
+  },
+  "shrinagar": {
+    "devata_relationships": [],
+    "practice_profile": {
+      "mantra_refs": [],
+      "yantra_refs": [],
+      "mudra_refs": [],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-004"
+    ],
+    "metric_profile_ref": null,
+    "mission_hooks": []
+  },
+  "tarana": {
+    "devata_relationships": [],
+    "practice_profile": {
+      "mantra_refs": [],
+      "yantra_refs": [
+        "YANTRA-001"
+      ],
+      "mudra_refs": [],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-001",
+      "TATTVA-002",
+      "TATTVA-003",
+      "TATTVA-004",
+      "TATTVA-005"
+    ],
+    "metric_profile_ref": "METRIC-SDI",
+    "mission_hooks": []
+  },
+  "roxana": {
+    "devata_relationships": [],
+    "practice_profile": {
+      "mantra_refs": [],
+      "yantra_refs": [],
+      "mudra_refs": [],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-001"
+    ],
+    "metric_profile_ref": "METRIC-RLE",
+    "mission_hooks": []
+  },
+  "jahzara": {
+    "devata_relationships": [
+      {
+        "devata_ref": "DEVATA-002",
+        "belief": 0.9,
+        "devotion": 0.7,
+        "philosophical_alignment": 0.85,
+        "practice_affinity": 0.95,
+        "ritual_relevance": 0.8,
+        "experiential_resonance": 0.75,
+        "interpretation": {
+          "mode": "symbolic",
+          "ontology_belief": "metaphysical",
+          "certainty": 0.8
+        }
+      }
+    ],
+    "practice_profile": {
+      "mantra_refs": [],
+      "yantra_refs": [],
+      "mudra_refs": [],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-001"
+    ],
+    "metric_profile_ref": null,
+    "mission_hooks": []
+  },
+  "altani": {
+    "devata_relationships": [],
+    "practice_profile": {
+      "mantra_refs": [],
+      "yantra_refs": [],
+      "mudra_refs": [],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-001",
+      "TATTVA-004"
+    ],
+    "metric_profile_ref": null,
+    "mission_hooks": []
+  },
+  "sevda": {
+    "devata_relationships": [],
+    "practice_profile": {
+      "mantra_refs": [],
+      "yantra_refs": [],
+      "mudra_refs": [],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-002",
+      "TATTVA-005"
+    ],
+    "metric_profile_ref": null,
+    "mission_hooks": []
+  },
+  "malika": {
+    "devata_relationships": [],
+    "practice_profile": {
+      "mantra_refs": [],
+      "yantra_refs": [],
+      "mudra_refs": [],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-001",
+      "TATTVA-005"
+    ],
+    "metric_profile_ref": null,
+    "mission_hooks": []
+  },
+  "reva": {
+    "devata_relationships": [
+      {
+        "devata_ref": "DEVATA-002",
+        "belief": 0.85,
+        "devotion": 0.75,
+        "philosophical_alignment": 0.8,
+        "practice_affinity": 0.9,
+        "ritual_relevance": 0.85,
+        "experiential_resonance": 0.88,
+        "interpretation": {
+          "mode": "devotional",
+          "ontology_belief": "metaphysical",
+          "certainty": 0.78
+        }
+      }
+    ],
+    "practice_profile": {
+      "mantra_refs": [
+        "MANTRA-001"
+      ],
+      "yantra_refs": [],
+      "mudra_refs": [],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-005"
+    ],
+    "metric_profile_ref": null,
+    "mission_hooks": []
+  },
+  "svara": {
+    "devata_relationships": [],
+    "practice_profile": {
+      "mantra_refs": [
+        "MANTRA-001"
+      ],
+      "yantra_refs": [],
+      "mudra_refs": [],
+      "asana_refs": []
+    },
+    "tattva_refs": [
+      "TATTVA-005"
+    ],
+    "metric_profile_ref": null,
+    "mission_hooks": []
+  },
+  "schema": "antahpura.registries.v19_registry_overlay",
+  "version": "1.0"
+}

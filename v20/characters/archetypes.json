@@ -1,0 +1,94 @@
+{
+  "schema": "antahpura.characters.archetypes",
+  "version": "20.0",
+  "total_archetypes": 10,
+  "archetypes": {
+    "dominant": {
+      "name": "Dominant",
+      "description": "Assumes active control within the dynamic",
+      "psychological_drivers": ["control", "protection", "mastery"],
+      "typical_behaviors": ["command", "structure", "decision_making"],
+      "chemistry": ["cortisol_from_responsibility", "dopamine_from_achievement", "oxytocin_when_caregiving"]
+    },
+    "submissive": {
+      "name": "Submissive",
+      "description": "Surrenders control within negotiated boundaries",
+      "psychological_drivers": ["catharsis", "cognitive_offloading", "surrender"],
+      "typical_behaviors": ["obedience", "service", "trust_exercise"],
+      "chemistry": ["endorphins_during_intensity", "dopamine_from_validation", "serotonin_post_scene"]
+    },
+    "switch": {
+      "name": "Switch",
+      "description": "Flows between dominant and submissive roles",
+      "psychological_drivers": ["adaptability", "dual_perspective", "balance"],
+      "typical_behaviors": ["role_rotation", "empathy", "context_dependent_behavior"],
+      "chemistry": ["both_loops", "risk_of_headspace_whiplash"]
+    },
+    "sadist": {
+      "name": "Sadist",
+      "description": "Derives satisfaction from consensually inflicting intense experience",
+      "psychological_drivers": ["orchestration", "authorship", "witness"],
+      "typical_behaviors": ["intensity_control", "scene_architecture"],
+      "chemistry": ["dopamine_from_execution", "endorphin_mirroring"]
+    },
+    "masochist": {
+      "name": "Masochist",
+      "description": "Derives satisfaction from consensually receiving intense experience",
+      "psychological_drivers": ["endurance", "transcendence", "release"],
+      "typical_behaviors": ["threshold_pushing", "stillness_under_stress"],
+      "chemistry": ["endorphin_flood", "opioid_receptor_activation"]
+    },
+    "caregiver": {
+      "name": "Caregiver",
+      "description": "Provides nurturing, protection, and structure",
+      "psychological_drivers": ["protection", "unconditional_care"],
+      "typical_behaviors": ["nurturing", "boundary_setting", "comfort_provision"],
+      "chemistry": ["oxytocin_dominant", "prolactin_attachment"]
+    },
+    "little": {
+      "name": "Little / Middle",
+      "description": "Enters regressed headspace through age-play",
+      "psychological_drivers": ["vulnerability", "simplicity", "safety"],
+      "typical_behaviors": ["play", "dependency", "trust_exercise"],
+      "chemistry": ["oxytocin", "prolactin", "cortisol_reduction"]
+    },
+    "pet": {
+      "name": "Pet",
+      "description": "Enters animal-roleplay headspace",
+      "psychological_drivers": ["simplicity", "loyalty", "freedom_from_social_anxiety"],
+      "typical_behaviors": ["animalistic_movement", "non_verbal_communication"],
+      "chemistry": ["oxytocin", "dopamine", "reduced_self_awareness"]
+    },
+    "brat": {
+      "name": "Brat",
+      "description": "Playfully tests boundaries to elicit response",
+      "psychological_drivers": ["attention", "testing", "dopamine_seeking"],
+      "typical_behaviors": ["defiance", "talking_back", "rule_flexing"],
+      "chemistry": ["dopamine_hunt", "adrenaline_testing"]
+    },
+    "rigger": {
+      "name": "Rigger",
+      "description": "Specialist in binding and suspension",
+      "psychological_drivers": ["precision", "trust_management", "craft"],
+      "typical_behaviors": ["binding", "safety_check", "anatomical_awareness"],
+      "chemistry": ["flow_state", "dopamine_from_craft"]
+    }
+  },
+  "character_archetype_affinity": {
+    "char_maha_deva": {"dominant": 0.9, "caregiver": 0.7, "rigger": 0.3},
+    "char_kumari_rati": {"switch": 0.7, "dominant": 0.5, "submissive": 0.6},
+    "char_padma": {"submissive": 0.9, "caregiver": 0.8, "little": 0.4},
+    "char_champa": {"little": 0.9, "pet": 0.8, "submissive": 0.7},
+    "char_anisa": {"dominant": 0.8, "sadist": 0.6, "rigger": 0.5},
+    "char_shrinagar": {"submissive": 0.8, "masochist": 0.7, "caregiver": 0.6},
+    "char_tarana": {"switch": 0.9, "dominant": 0.5, "submissive": 0.5},
+    "char_roxana": {"dominant": 0.9, "rigger": 0.95, "sadist": 0.7},
+    "char_jahzara": {"dominant": 0.85, "sadist": 0.6, "rigger": 0.5},
+    "char_altani": {"dominant": 0.85, "sadist": 0.5},
+    "char_sevda": {"switch": 0.7, "dominant": 0.6, "rigger": 0.6},
+    "char_malika": {"dominant": 0.8, "rigger": 0.4},
+    "char_reva": {"switch": 0.8, "submissive": 0.6, "poet": 0.9},
+    "char_svara": {"switch": 0.8, "caregiver": 0.5, "poet": 0.9}
+  },
+  "audit": {"total_archetypes": 10, "audit_passed": true}
+}

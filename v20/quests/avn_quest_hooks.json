@@ -1,0 +1,49 @@
+{
+  "schema": "antahpura.quest.avn_hooks",
+  "version": "20.0",
+  "hooks": [
+    {
+      "quest_id": "quest_main_001",
+      "unlockable_assets": [
+        {
+          "asset_id": "initiation_act1_loop",
+          "unlock": "act_1_complete"
+        },
+        {
+          "asset_id": "initiation_act3_loop",
+          "unlock": "act_3_complete"
+        },
+        {
+          "asset_id": "initiation_finale",
+          "unlock": "quest_complete"
+        }
+      ]
+    },
+    {
+      "quest_id": "quest_main_002",
+      "unlockable_assets": [
+        {
+          "asset_id": "cipher_extraction",
+          "unlock": "act_2_complete"
+        },
+        {
+          "asset_id": "cipher_revelation",
+          "unlock": "act_4_reveal_branch"
+        }
+      ]
+    },
+    {
+      "quest_id": "quest_main_006",
+      "unlockable_assets": [
+        {
+          "asset_id": "saffron_confinement_loop",
+          "unlock": "act_2_complete"
+        },
+        {
+          "asset_id": "saffron_integration",
+          "unlock": "quest_complete"
+        }
+      ]
+    }
+  ]
+}

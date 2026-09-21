@@ -1,0 +1,29 @@
+{
+  "schema": "antahpura.location.access_rules",
+  "version": "20.0",
+  "access_rules": {
+    "gender_restrictions": {
+      "women_only": {
+        "applies_to": [
+          "loc_zenana_inner",
+          "loc_bath_space"
+        ],
+        "exceptions": [
+          "eunuch_staff",
+          "explicit_invitation"
+        ]
+      }
+    },
+    "institutional_thresholds": {
+      "level_1": "Visitor — escorted access",
+      "level_2": "Recognized — free movement within institution boundaries",
+      "level_3": "Trusted — unsupervised access to most locations",
+      "level_4": "Senior — access to restricted areas",
+      "level_5": "Inner Circle — access to all locations within institution"
+    },
+    "invitation_types": {
+      "required": "Must be formally invited by resident or governing character",
+      "required_for_non_officials": "Non-office holders need invitation; office holders have standing access"
+    }
+  }
+}

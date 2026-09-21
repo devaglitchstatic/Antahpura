@@ -1,0 +1,18 @@
+{
+  "schema": "antahpura.runtime.telemetry",
+  "version": "20.0",
+  "session_id": null,
+  "session_started_at": "2026-09-16T15:25:48.912831+00:00",
+  "events_since_last_save": 0,
+  "events_total": 0,
+  "scenes_completed": 0,
+  "choices_made_total": 0,
+  "kala_practices_total": 0,
+  "kala_synergies_unlocked": 0,
+  "kama_lifecycles_advanced": 0,
+  "relationships_modified": 0,
+  "secrets_discovered": 0,
+  "quests_completed": 0,
+  "quests_failed": 0,
+  "last_saved_at": null
+}

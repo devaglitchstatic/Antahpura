@@ -1,0 +1,154 @@
+{
+  "schema": "ANTAHPURA_KAMA_SYSTEM_V20",
+  "version": "20.0",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "total_kamas": 98,
+  "note_on_count": "Source registry contains 98 entries. One slot open for future addition to reach 99.",
+
+  "families": {
+    "authority_protocol": {
+      "name": "Authority & Protocol",
+      "description": "Power exchange, ritual authority, protocol enforcement, access control",
+      "primary_characters": ["char_maha_deva", "char_anisa", "char_malika"],
+      "base_dimensions": ["authority", "discipline", "control"]
+    },
+    "devotion_service": {
+      "name": "Devotion & Service",
+      "description": "Servitude, care, nurturing, ritual offering, milk service",
+      "primary_characters": ["char_padma", "char_kumari_rati", "char_shrinagar"],
+      "base_dimensions": ["devotion", "service", "trust"]
+    },
+    "sensory_aesthetic": {
+      "name": "Sensory & Aesthetic",
+      "description": "Sensory refinement, adornment, sensory feeding, bathing, aesthetic presentation",
+      "primary_characters": ["char_shrinagar", "char_svara", "char_jahzara"],
+      "base_dimensions": ["aesthetic", "sensory_awareness", "expression"]
+    },
+    "movement_performance": {
+      "name": "Movement & Performance",
+      "description": "Body, dance, acrobatics, kinetic expression, animal roleplay",
+      "primary_characters": ["char_tarana", "char_champa"],
+      "base_dimensions": ["performance", "playfulness", "novelty"]
+    },
+    "restraint_containment": {
+      "name": "Restraint & Containment",
+      "description": "Rope, binding, encasement, stillness, restraint engineering",
+      "primary_characters": ["char_roxana", "char_sevda", "char_altani"],
+      "base_dimensions": ["restraint", "precision", "control"]
+    },
+    "voice_literary": {
+      "name": "Voice & Literary",
+      "description": "Voice, poetry, writing, cipher, erotic speech, journaling",
+      "primary_characters": ["char_reva", "char_anisa", "char_svara"],
+      "base_dimensions": ["expression", "aesthetic", "precision"]
+    },
+    "hidden_occult": {
+      "name": "Hidden & Occult",
+      "description": "Trance, mantra, energetic practice, ritual isolation, hidden knowledge",
+      "primary_characters": ["char_jahzara", "char_sevda", "char_svara"],
+      "base_dimensions": ["rituality", "intensity", "privacy"]
+    },
+    "exploration_novelty": {
+      "name": "Exploration & Novelty",
+      "description": "Discovery, curiosity, experimentation, boundary testing",
+      "primary_characters": ["char_kumari_rati", "char_champa"],
+      "base_dimensions": ["curiosity", "novelty", "transgression"]
+    }
+  },
+
+  "dimensions": {
+    "dim_authority": { "name": "Authority", "description": "Capacity for command, hierarchy, governance" },
+    "dim_agency": { "name": "Agency", "description": "Capacity for self-directed action and choice" },
+    "dim_curiosity": { "name": "Curiosity", "description": "Drive toward discovery and exploration" },
+    "dim_novelty": { "name": "Novelty", "description": "Openness to new, unexpected experience" },
+    "dim_trust": { "name": "Trust", "description": "Reliance on relational safety and reliability" },
+    "dim_vulnerability": { "name": "Vulnerability", "description": "Openness to exposure and being seen" },
+    "dim_restraint": { "name": "Restraint", "description": "Capacity for control, holding, measured expression" },
+    "dim_precision": { "name": "Precision", "description": "Attention to detail and technical accuracy" },
+    "dim_performance": { "name": "Performance", "description": "Capacity for display, embodiment, spectacle" },
+    "dim_aesthetic": { "name": "Aesthetic Awareness", "description": "Sensitivity to beauty, form, sensory refinement" },
+    "dim_devotion": { "name": "Devotion", "description": "Depth of commitment and reverent surrender" },
+    "dim_service": { "name": "Service", "description": "Orientation toward care and offering" },
+    "dim_playfulness": { "name": "Playfulness", "description": "Capacity for lightness, humor, experimentation" },
+    "dim_stillness": { "name": "Stillness", "description": "Capacity for immobility and quiet presence" },
+    "dim_intensity": { "name": "Intensity", "description": "Depth of somatic and emotional experience" },
+    "dim_rituality": { "name": "Rituality", "description": "Orientation toward formal, ceremonial structure" },
+    "dim_expression": { "name": "Expression", "description": "Capacity for voice, gesture, and manifesting" },
+    "dim_privacy": { "name": "Privacy", "description": "Value of confidentiality and interiority" },
+    "dim_discipline": { "name": "Discipline", "description": "Structure, order, and consistent practice" },
+    "dim_transgression": { "name": "Transgression", "description": "Movement across boundaries and taboos" }
+  },
+
+  "association_types": {
+    "role_owner": {
+      "description": "Character's office functionally uses this Kama as a primary practice",
+      "confidence_threshold": 0.75,
+      "example": "Roxana as role_owner of Granthi-Kala (Shibari Master)"
+    },
+    "explicit_affinity": {
+      "description": "Source material explicitly states character preference",
+      "confidence_threshold": 0.85,
+      "example": "Character openly demonstrates preference in canonical source"
+    },
+    "thematic_resonance": {
+      "description": "Kama thematically consistent with character's domain",
+      "confidence_threshold": 0.5,
+      "example": "Svara resonates with acoustic ritual Kamas"
+    },
+    "curiosity": {
+      "description": "Character is discovering this Kama and openness is present",
+      "confidence_threshold": 0.3,
+      "example": "Kumārī Rati curious about forbidden edge practices"
+    },
+    "boundary": {
+      "description": "Kama is a stated hard limit or boundary for character",
+      "explicit_flag": true,
+      "example": "Character has explicitly refused a Kama in source"
+    },
+    "gated": {
+      "description": "Kama exists in character's domain but is locked behind progression",
+      "unlock_required": true,
+      "example": "Extreme practices requiring high trust and long relationship"
+    },
+    "unsupported": {
+      "description": "No evidence for association; not part of character's profile",
+      "confidence_threshold": 0.2
+    },
+    "unknown": {
+      "description": "Not yet evaluated; reserved for future adjudication"
+    }
+  },
+
+  "lifecycle_states": {
+    "discoverable": { "description": "Concept exists in world; may appear in narrative" },
+    "mentionable": { "description": "Can be discussed in dialogue" },
+    "imaginable": { "description": "Can be fantasized or dreamt" },
+    "discussable": { "description": "Can be philosophically explored" },
+    "exploreable": { "description": "Can be investigated hypothetically" },
+    "participatory": { "description": "Can be participated in with consent" },
+    "runtime_enabled": { "description": "Fully integrated into runtime mechanics" }
+  },
+
+  "risk_classes": {
+    "standard": {
+      "description": "Standard practice; no special gating",
+      "gating": [],
+      "audience": "any"
+    },
+    "elevated": {
+      "description": "Elevated intensity; requires established trust",
+      "gating": ["trust >= 0.5", "relationship_established"],
+      "audience": "private_or_trusted"
+    },
+    "high": {
+      "description": "High intensity or edge practice",
+      "gating": ["trust >= 0.7", "consent_explicit", "aftercare_protocol"],
+      "audience": "private_only"
+    },
+    "restricted": {
+      "description": "Restricted practice requiring special conditions",
+      "gating": ["trust >= 0.85", "ritual_context", "extended_aftercare"],
+      "audience": "private_ritual"
+    }
+  }
+}

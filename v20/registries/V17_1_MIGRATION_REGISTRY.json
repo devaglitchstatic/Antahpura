@@ -1,0 +1,33 @@
+{
+  "version": "17.1",
+  "removed_characters": [
+    {
+      "id": "zola",
+      "display_name": "Zola",
+      "status": "REMOVED_FROM_CURRENT_CANON",
+      "reason": "Explicit constitutional decision: remove Zola and replace the seat with Svara.",
+      "legacy_retrieval_aliases": [
+        "Zola",
+        "Captain Zola",
+        "Ethiopian Guard",
+        "Urdubegi"
+      ],
+      "runtime_policy": "Do not instantiate, speak, or include in active phase assemblies."
+    }
+  ],
+  "corrected_identity_mappings": [
+    {
+      "id": "anisa",
+      "canonical_provenance": "Abyssinian / Habshi / East African",
+      "superseded_field": "Sogdian",
+      "reason": "Legacy/deeper source corpus repeatedly identifies Kamini Anisa as Habshi; Sogdian cultural identity is assigned to Tarana."
+    },
+    {
+      "id": "tarana",
+      "canonical_provenance": "Sogdian / Samarkand / Silk Road",
+      "office": "Pradhāna Nartī / Chief Dancer",
+      "reason": "Explicit source material identifies Kamini Tarana as Sogdian and connects her to Samarkand/Silk Road artistic practice."
+    }
+  ],
+  "schema": "antahpura.registries.V17_1_MIGRATION_REGISTRY"
+}

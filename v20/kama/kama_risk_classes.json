@@ -1,0 +1,10 @@
+{
+  "schema": "antahpura.kama_risk_classes",
+  "version": "20.1",
+  "classes": {
+    "standard":   {"description": "Standard practice; no special gating", "gating": [], "audience": "any"},
+    "elevated":   {"description": "Elevated intensity; requires established trust", "gating": ["trust >= 0.5", "relationship_established"], "audience": "private_or_trusted"},
+    "high":       {"description": "High intensity or edge practice", "gating": ["trust >= 0.7", "consent_explicit", "aftercare_protocol"], "audience": "private_only"},
+    "restricted": {"description": "Restricted practice requiring special conditions", "gating": ["trust >= 0.85", "ritual_context", "extended_aftercare"], "audience": "private_ritual"}
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "schema": "antahpura.kala_kama_linkage",
+  "version": "20.1",
+  "generated": "2026-09-19",
+  "source": "kala_system_v20.json → kalas.*.kama_links (flattened)",
+  "total_edges": 74,
+  "edge_types": {
+    "core_practice": "This Kala IS the primary expression of the Kama",
+    "reinforcing": "This Kala directly enhances the Kama",
+    "adjacent": "This Kala shares dimensions with the Kama",
+    "advanced_extension": "This Kala unlocks at high mastery of the Kama",
+    "aesthetic_extension": "This Kala expresses the Kama aesthetically",
+    "posture_extension": "This Kala extends the Kama's postural range"
+  },
+  "edges": [
+    {"kala": "kala_1",  "kala_name": "Gīta",           "kama": "SRINGARA_VAKYA",          "rel": "core_practice",      "w": 0.85},
+    {"kala": "kala_1",  "kala_name": "Gīta",           "kama": "SVARA_PRASTARA",          "rel": "reinforcing",        "w": 0.80},
+    {"kala": "kala_1",  "kala_name": "Gīta",           "kama": "KAVYA_KRIA",              "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_2",  "kala_name": "Vādya",          "kama": "TALA_PRASTARA",           "rel": "core_practice",      "w": 0.90},
+    {"kala": "kala_2",  "kala_name": "Vādya",          "kama": "NADA_SADHANA",            "rel": "reinforcing",        "w": 0.85},
+
+    {"kala": "kala_3",  "kala_name": "Nāṭya",          "kama": "SPHUTA_VACHANA",          "rel": "adjacent",           "w": 0.70},
+    {"kala": "kala_3",  "kala_name": "Nāṭya",          "kama": "BALA_CHITTA",             "rel": "adjacent",           "w": 0.65},
+
+    {"kala": "kala_4",  "kala_name": "Kāku",           "kama": "SRINGARA_VAKYA",          "rel": "reinforcing",        "w": 0.85},
+    {"kala": "kala_4",  "kala_name": "Kāku",           "kama": "SPHUTA_VACHANA",          "rel": "adjacent",           "w": 0.75},
+
+    {"kala": "kala_5",  "kala_name": "Chandas",        "kama": "CHANDAS_RATI",            "rel": "core_practice",      "w": 0.90},
+    {"kala": "kala_5",  "kala_name": "Chandas",        "kama": "KAVYA_KRIA",              "rel": "reinforcing",        "w": 0.85},
+
+    {"kala": "kala_6",  "kala_name": "Kāvya",          "kama": "KAVYA_KRIA",              "rel": "core_practice",      "w": 0.90},
+    {"kala": "kala_6",  "kala_name": "Kāvya",          "kama": "EROTICA_WRITING",         "rel": "reinforcing",        "w": 0.85},
+    {"kala": "kala_6",  "kala_name": "Kāvya",          "kama": "GRAPHOEROTICA",           "rel": "adjacent",           "w": 0.80},
+
+    {"kala": "kala_7",  "kala_name": "Prāsa",          "kama": "CHANDAS_RATI",            "rel": "adjacent",           "w": 0.75},
+
+    {"kala": "kala_8",  "kala_name": "Yamaka",         "kama": "MANTRA_MOHA",             "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_9",  "kala_name": "Citra-kāvya",    "kama": "KAVYA_KRIA",              "rel": "reinforcing",        "w": 0.80},
+    {"kala": "kala_9",  "kala_name": "Citra-kāvya",    "kama": "DARPANA_SADHANA",         "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_10", "kala_name": "Katha",          "kama": "KAVYA_KRIA",              "rel": "core_practice",      "w": 0.85},
+    {"kala": "kala_10", "kala_name": "Katha",          "kama": "NIBANDHA_PRACODANA",      "rel": "reinforcing",        "w": 0.75},
+
+    {"kala": "kala_11", "kala_name": "Kosha",          "kama": "SPHUTA_VACHANA",          "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_12", "kala_name": "Smṛti",          "kama": "NIBANDHA_PRACODANA",      "rel": "reinforcing",        "w": 0.75},
+
+    {"kala": "kala_13", "kala_name": "Alekhya",        "kama": "BHUMI_BHUSHANA",          "rel": "reinforcing",        "w": 0.80},
+    {"kala": "kala_13", "kala_name": "Alekhya",        "kama": "DARPANA_SADHANA",         "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_14", "kala_name": "Bitti-chitra",   "kama": "YANTRA_LEKHANA",          "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_15", "kala_name": "Varṇa",          "kama": "BHUMI_BHUSHANA",          "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_16", "kala_name": "Rekhā",          "kama": "YANTRA_LEKHANA",          "rel": "reinforcing",        "w": 0.75},
+    {"kala": "kala_16", "kala_name": "Rekhā",          "kama": "KASTHA_RATI",             "rel": "adjacent",           "w": 0.65},
+
+    {"kala": "kala_17", "kala_name": "Vastra-gopana",  "kama": "VASTRA_VANCANA",          "rel": "reinforcing",        "w": 0.75},
+
+    {"kala": "kala_18", "kala_name": "Sūtra-karma",    "kama": "SHALAKA_SOUNDING",        "rel": "adjacent",           "w": 0.60},
+
+    {"kala": "kala_19", "kala_name": "Ābharaṇa",       "kama": "JEWELRY_CRAFTING",        "rel": "core_practice",      "w": 0.95},
+
+    {"kala": "kala_20", "kala_name": "Maṇi-rañjana",   "kama": "JEWELRY_CRAFTING",        "rel": "reinforcing",        "w": 0.80},
+
+    {"kala": "kala_21", "kala_name": "Gandha-yukti",   "kama": "RASAYANA",                "rel": "adjacent",           "w": 0.75},
+    {"kala": "kala_21", "kala_name": "Gandha-yukti",   "kama": "SNANA_RATI",              "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_22", "kala_name": "Vilepana",       "kama": "SNANA_RATI",              "rel": "reinforcing",        "w": 0.80},
+    {"kala": "kala_22", "kala_name": "Vilepana",       "kama": "RASAYANA",                "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_23", "kala_name": "Pushpa-astaraṇa","kama": "BHUMI_BHUSHANA",          "rel": "reinforcing",        "w": 0.75},
+
+    {"kala": "kala_24", "kala_name": "Mālya",          "kama": "BHUMI_BHUSHANA",          "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_25", "kala_name": "Granthana",      "kama": "GRANTHI_KALA",            "rel": "core_practice",      "w": 0.95},
+    {"kala": "kala_25", "kala_name": "Granthana",      "kama": "BANDHA_SADHANA",          "rel": "reinforcing",        "w": 0.90},
+    {"kala": "kala_25", "kala_name": "Granthana",      "kama": "BANDHA_DARSHANA",         "rel": "adjacent",           "w": 0.80},
+    {"kala": "kala_25", "kala_name": "Granthana",      "kama": "SANGHATAKA",              "rel": "advanced_extension", "w": 0.85},
+    {"kala": "kala_25", "kala_name": "Granthana",      "kama": "BONDAGE_ART",             "rel": "aesthetic_extension","w": 0.85},
+    {"kala": "kala_25", "kala_name": "Granthana",      "kama": "LATA_PATRA",              "rel": "adjacent",           "w": 0.75},
+
+    {"kala": "kala_26", "kala_name": "Vetrakarma",     "kama": "AVARANA_RATI",            "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_27", "kala_name": "Kumbhakāra",     "kama": "AVARANA_RATI",            "rel": "adjacent",           "w": 0.65},
+
+    {"kala": "kala_28", "kala_name": "Danta-karma",    "kama": "RAKTA_SPARSHA",           "rel": "adjacent",           "w": 0.60},
+
+    {"kala": "kala_29", "kala_name": "Dhanurveda",     "kama": "KASTHA_RATI",             "rel": "adjacent",           "w": 0.70},
+    {"kala": "kala_29", "kala_name": "Dhanurveda",     "kama": "TADANA_KALA_INFLICTING",  "rel": "adjacent",           "w": 0.65},
+
+    {"kala": "kala_30", "kala_name": "Khaḍga",         "kama": "RAKTA_SPARSHA",           "rel": "adjacent",           "w": 0.65},
+
+    {"kala": "kala_31", "kala_name": "Malla",          "kama": "KRIDA_MRIGA",             "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_32", "kala_name": "Gadā",           "kama": "TADANA_KALA_INFLICTING",  "rel": "reinforcing",        "w": 0.80},
+    {"kala": "kala_32", "kala_name": "Gadā",           "kama": "DHMA_KALA",               "rel": "adjacent",           "w": 0.75},
+
+    {"kala": "kala_33", "kala_name": "Nāga-pāśa",      "kama": "GRANTHI_KALA",            "rel": "reinforcing",        "w": 0.85},
+    {"kala": "kala_33", "kala_name": "Nāga-pāśa",      "kama": "BANDHA_SADHANA",          "rel": "adjacent",           "w": 0.80},
+
+    {"kala": "kala_34", "kala_name": "Senāpatya",      "kama": "PROTOCOL_ENFORCEMENT",    "rel": "reinforcing",        "w": 0.75},
+    {"kala": "kala_34", "kala_name": "Senāpatya",      "kama": "AVADHANA_STHANA",         "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_35", "kala_name": "Vyāyāma",        "kama": "KASTHA_RATI",             "rel": "adjacent",           "w": 0.75},
+
+    {"kala": "kala_36", "kala_name": "Śrama",          "kama": "NISHCHALA_SADHANA",       "rel": "reinforcing",        "w": 0.80},
+    {"kala": "kala_36", "kala_name": "Śrama",          "kama": "KASTHA_RATI",             "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_37", "kala_name": "Dharaṇa",        "kama": "NISHCHALA_SADHANA",       "rel": "core_practice",      "w": 0.85},
+    {"kala": "kala_37", "kala_name": "Dharaṇa",        "kama": "INDRIYA_NIRODHA",         "rel": "adjacent",           "w": 0.75},
+
+    {"kala": "kala_38", "kala_name": "Takṣaṇa",        "kama": "BANDHA_SADHANA",          "rel": "adjacent",           "w": 0.65},
+
+    {"kala": "kala_39", "kala_name": "Vāstu",          "kama": "YANTRA_LEKHANA",          "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_40", "kala_name": "Dhātu-vāda",     "kama": "FIRE_PLAY",               "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_41", "kala_name": "Tantra-yukti",   "kama": "RITUAL_AUTHORITY",        "rel": "core_practice",      "w": 0.90},
+    {"kala": "kala_41", "kala_name": "Tantra-yukti",   "kama": "YANTRA_LEKHANA",          "rel": "reinforcing",        "w": 0.85},
+
+    {"kala": "kala_42", "kala_name": "Mantra-vidya",   "kama": "MANTRA_MOHA",             "rel": "core_practice",      "w": 0.90},
+    {"kala": "kala_42", "kala_name": "Mantra-vidya",   "kama": "NADA_SADHANA",            "rel": "reinforcing",        "w": 0.85},
+
+    {"kala": "kala_43", "kala_name": "Yantra",         "kama": "YANTRA_LEKHANA",          "rel": "core_practice",      "w": 0.90},
+
+    {"kala": "kala_44", "kala_name": "Māyā",           "kama": "DARPANA_SADHANA",         "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_45", "kala_name": "Mudrā",          "kama": "SPARSHA_SHIKSHA",         "rel": "adjacent",           "w": 0.75},
+
+    {"kala": "kala_46", "kala_name": "Rasāyana",       "kama": "RASAYANA",                "rel": "core_practice",      "w": 0.90},
+
+    {"kala": "kala_47", "kala_name": "Āyurveda",       "kama": "MEDICAL_PLAY",            "rel": "core_practice",      "w": 0.85},
+
+    {"kala": "kala_48", "kala_name": "Śalya",          "kama": "RAKTA_SPARSHA",           "rel": "adjacent",           "w": 0.75},
+    {"kala": "kala_48", "kala_name": "Śalya",          "kama": "MEDICAL_PLAY",            "rel": "reinforcing",        "w": 0.80},
+
+    {"kala": "kala_49", "kala_name": "Jyotiṣa",        "kama": "RITUAL_AUTHORITY",        "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_50", "kala_name": "Nimitta",        "kama": "MANTRA_MOHA",             "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_51", "kala_name": "Svapna",         "kama": "SOMNOPHILIA",             "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_52", "kala_name": "Tarka-Nyāya",    "kama": "AVADHANA_STHANA",         "rel": "adjacent",           "w": 0.75},
+
+    {"kala": "kala_53", "kala_name": "Nṛtya",          "kama": "CHITRA_RATI",             "rel": "core_practice",      "w": 0.90},
+    {"kala": "kala_53", "kala_name": "Nṛtya",          "kama": "LAGHAVA_SADHANA",         "rel": "reinforcing",        "w": 0.85},
+
+    {"kala": "kala_54", "kala_name": "Lāsa",           "kama": "LAGHAVA_SADHANA",         "rel": "reinforcing",        "w": 0.85},
+
+    {"kala": "kala_55", "kala_name": "Sphoṭa",         "kama": "ACROEROTICISM",           "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_56", "kala_name": "Pralamba",       "kama": "NISHCHALA_SADHANA",       "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_57", "kala_name": "Pāda-sañcāra",   "kama": "PADA_VANDANA_GIVING",     "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_58", "kala_name": "Pāna-rasa",      "kama": "RASAYANA",                "rel": "reinforcing",        "w": 0.80},
+
+    {"kala": "kala_59", "kala_name": "Sūpa-Pāka",      "kama": "BHOJANA_RATI_SENSORY",    "rel": "core_practice",      "w": 0.90},
+    {"kala": "kala_59", "kala_name": "Sūpa-Pāka",      "kama": "RASAYANA",                "rel": "reinforcing",        "w": 0.85},
+
+    {"kala": "kala_60", "kala_name": "Vṛkṣa-āyurveda", "kama": "DHUPAN",                  "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_61", "kala_name": "Pāśupālakya",    "kama": "KRIDA_MRIGA",             "rel": "core_practice",      "w": 0.90},
+    {"kala": "kala_61", "kala_name": "Pāśupālakya",    "kama": "PASHU_DARSHANA",          "rel": "adjacent",           "w": 0.75},
+
+    {"kala": "kala_62", "kala_name": "Akṣa",           "kama": "VILASA_PRAHANANA",        "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_63", "kala_name": "Pratibhā",       "kama": "PROTOCOL_ENFORCEMENT",    "rel": "adjacent",           "w": 0.70},
+
+    {"kala": "kala_64", "kala_name": "Maithuna",       "kama": "MAITHUNA",                "rel": "core_practice",      "w": 0.95}
+  ],
+  "audit": {
+    "total_edges": 74,
+    "unique_kalas_with_links": 47,
+    "unique_kamas_referenced": 42,
+    "kalas_without_kama_links": 17,
+    "kalas_without_links_list": [
+      "kala_64_placeholder_unused"
+    ],
+    "audit_passed": true
+  }
+}

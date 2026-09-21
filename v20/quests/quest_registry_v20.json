@@ -1,0 +1,23 @@
+{
+  "schema": "antahpura.quest.registry_v20",
+  "version": "20.0",
+  "note": "Full quest definitions live in quest_system_v20.json. This file is the runtime index.",
+  "main_quest_ids": [
+    "quest_main_001",
+    "quest_main_002",
+    "quest_main_003",
+    "quest_main_004",
+    "quest_main_005",
+    "quest_main_006",
+    "quest_main_007",
+    "quest_main_008"
+  ],
+  "side_quest_ids": [
+    "quest_side_001",
+    "quest_side_002",
+    "quest_side_003",
+    "quest_side_004",
+    "quest_side_005",
+    "quest_side_006"
+  ]
+}

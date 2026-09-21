@@ -1,0 +1,177 @@
+{
+  "schema": "antahpura.collar_ceremony_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Three-stage collar ceremony progression. Each collar marks a stage of the dynamic's maturity and is celebrated with a formal ceremony. Collars are physical jewelry pieces that carry mechanical effects. Ceremonies are scene templates.",
+  "design_principles": {
+    "principle_1": "The collar is a symbol, not a shackle. It is worn with pride, not shame.",
+    "principle_2": "Each collar stage has criteria, ceremony, and ongoing obligations.",
+    "principle_3": "A collar is given, not taken. It is a gift with terms.",
+    "principle_4": "The collar can be removed if the dynamic ends — and this is a ceremony too.",
+    "principle_5": "Not all dynamics require collars. This is a system for those that do."
+  },
+
+  "collar_stages": {
+    "stage_1_consideration": {
+      "name": "Collar of Consideration",
+      "stage": 1,
+      "duration_months": 1,
+      "description": "A trial collar. Worn during the consideration period.",
+      "physical_form": "Simple ribbon or light chain",
+      "symbolic_meaning": "I am considering this",
+      "granted_when": "After the first consideration contract is signed",
+      "ceremony_required": false,
+      "criteria_for_next_stage": [
+        "consideration_contract_completed",
+        "consideration_period_survived",
+        "mutual_agreement_to_proceed"
+      ]
+    },
+    "stage_2_training": {
+      "name": "Training Collar",
+      "stage": 2,
+      "duration_months": 3,
+      "description": "The collar worn during the training period.",
+      "physical_form": "Leather collar with metal ring, or silver torque",
+      "symbolic_meaning": "I am learning to belong",
+      "granted_when": "After the training contract is signed",
+      "ceremony_required": true,
+      "ceremony_id": "ceremony_training_collar",
+      "criteria_for_next_stage": [
+        "training_contract_completed",
+        "journal_streak_90_days",
+        "kala_mastery_threshold_met",
+        "mutual_agreement_to_proceed"
+      ]
+    },
+    "stage_3_formal": {
+      "name": "Formal Collar",
+      "stage": 3,
+      "duration_years": 1,
+      "description": "The collar worn during the formal period.",
+      "physical_form": "Gold torque, gem-set collar, or similar formal piece",
+      "symbolic_meaning": "I belong",
+      "granted_when": "After the formal contract is signed",
+      "ceremony_required": true,
+      "ceremony_id": "ceremony_formal_collar",
+      "criteria_for_next_stage": [
+        "year_anniversary_reached",
+        "renewal_agreement",
+        "or_permanent_state_established"
+      ]
+    }
+  },
+
+  "ceremony_templates": {
+    "ceremony_training_collar": {
+      "ceremony_id": "ceremony_training_collar",
+      "name": "Training Collar Ceremony",
+      "duration_hours": 2,
+      "location": "loc_yogic_pavilion",
+      "required_witnesses": ["two_trusted_members_of_household"],
+      "elements": [
+        {"element": "preparation_ritual", "content": "Both parties bathe and purify"},
+        {"element": "spoken_vows", "content": "Each party speaks their intention"},
+        {"element": "collar_presentation", "content": "Dominant presents the collar"},
+        {"element": "collar_placement", "content": "Dominant places the collar on the submissive"},
+        {"element": "first_wearing", "content": "Submissive wears the collar for the first time"},
+        {"element": "witness_acknowledgment", "content": "Witnesses acknowledge the collar"},
+        {"element": "private_celebration", "content": "Both parties share a private moment"}
+      ],
+      "scene_template": "tpl_collar_training",
+      "avn_asset": "collar_training_loop"
+    },
+    "ceremony_formal_collar": {
+      "ceremony_id": "ceremony_formal_collar",
+      "name": "Formal Collar Ceremony",
+      "duration_hours": 4,
+      "location": "loc_throne_hall",
+      "required_witnesses": ["household", "invited_guests"],
+      "elements": [
+        {"element": "formal_processional", "content": "Both parties enter formally"},
+        {"element": "public_vows", "content": "Both parties speak public vows"},
+        {"element": "collar_consecration", "content": "Collar is consecrated by a ritual authority"},
+        {"element": "collar_placement", "content": "Dominant places the collar"},
+        {"element": "assembly_acknowledgment", "content": "Assembly acknowledges the collar"},
+        {"element": "feast", "content": "Formal celebration"}
+      ],
+      "scene_template": "tpl_collar_formal",
+      "avn_asset": "collar_formal_ceremony"
+    },
+    "ceremony_collar_removal": {
+      "ceremony_id": "ceremony_collar_removal",
+      "name": "Collar Removal Ceremony",
+      "duration_hours": 1,
+      "location": "loc_royal_chamber",
+      "description": "When a dynamic ends, the collar is removed with ceremony — not thrown away.",
+      "elements": [
+        {"element": "acknowledgment", "content": "Both parties acknowledge the ending"},
+        {"element": "spoken_closing", "content": "Each party speaks their closing"},
+        {"element": "collar_removal", "content": "Dominant removes the collar"},
+        {"element": "collar_return", "content": "Collar is returned or retained by mutual agreement"},
+        {"element": "farewell", "content": "Both parties part with dignity"}
+      ]
+    }
+  },
+
+  "collar_obligations": {
+    "stage_1_obligations": ["wear_when_alone_together", "do_not_publicize"],
+    "stage_2_obligations": ["wear_daily", "handle_with_care", "report_collar_condition_weekly"],
+    "stage_3_obligations": ["wear_continuously", "never_remove_without_permission", "renew_annually"]
+  },
+
+  "collar_registry": {
+    "collars": [
+      {
+        "collar_id": "collar_kumari_rati_formal",
+        "stage": "stage_3_formal",
+        "holder": "char_kumari_rati",
+        "granted_by": "char_maha_deva",
+        "granted_at": "2026-09-16",
+        "physical_form": "Gold torque with lotus engraving, set with a single pearl",
+        "safeword_attached": "kailasa",
+        "ceremony_completed": true
+      },
+      {
+        "collar_id": "collar_padma_training",
+        "stage": "stage_2_training",
+        "holder": "char_padma",
+        "granted_by": "char_kumari_rati",
+        "granted_at": "2026-09-16",
+        "physical_form": "Leather collar with brass ring, embossed with Soren clan mark",
+        "safeword_attached": "padma_yellow",
+        "ceremony_completed": true
+      }
+    ]
+  },
+
+  "runtime_collar_state": {
+    "schema": {
+      "character_id": "char_id",
+      "active_collar_id": "string | null",
+      "collar_stage": "string | null",
+      "granted_by": "char_id | null",
+      "granted_at": "iso_8601 | null",
+      "ceremony_completed": "boolean",
+      "collar_history": [
+        {
+          "collar_id": "string",
+          "stage": "string",
+          "granted_at": "iso_8601",
+          "removed_at": "iso_8601 | null",
+          "removal_reason": "string | null"
+        }
+      ],
+      "last_updated": "iso_8601"
+    }
+  },
+
+  "audit": {
+    "total_stages": 3,
+    "total_ceremony_templates": 3,
+    "total_obligation_sets": 3,
+    "total_active_collars": 2,
+    "audit_passed": true
+  }
+}

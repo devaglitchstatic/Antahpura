@@ -1,0 +1,100 @@
+{
+  "schema": "antahpura.role_orientation.orientations",
+  "version": "1.0",
+  "assignments": {
+    "char_kumari_rati": {
+      "disposition": "switch",
+      "disposition_source": "design_layer",
+      "confidence": 0.60,
+      "default_role": "fluid",
+      "role_stability": 0.55
+    },
+    "char_padma": {
+      "disposition": "nirvishati",
+      "disposition_source": "design_layer",
+      "confidence": 0.75,
+      "default_role": "receptive",
+      "role_stability": 0.80
+    },
+    "char_champa": {
+      "disposition": "switch",
+      "disposition_source": "design_layer",
+      "confidence": 0.55,
+      "default_role": "fluid",
+      "role_stability": 0.50
+    },
+    "char_anisa": {
+      "disposition": "swarini",
+      "disposition_source": "design_layer",
+      "confidence": 0.70,
+      "default_role": "active",
+      "role_stability": 0.85
+    },
+    "char_shrinagar": {
+      "disposition": "nirvishati",
+      "disposition_source": "upload",
+      "confidence": 0.80,
+      "default_role": "receptive",
+      "role_stability": 0.70
+    },
+    "char_tarana": {
+      "disposition": "switch",
+      "disposition_source": "upload",
+      "confidence": 0.80,
+      "default_role": "fluid",
+      "role_stability": 0.55
+    },
+    "char_roxana": {
+      "disposition": "swarini",
+      "disposition_source": "upload",
+      "confidence": 0.90,
+      "default_role": "active",
+      "role_stability": 0.90
+    },
+    "char_jahzara": {
+      "disposition": "swarini",
+      "disposition_source": "upload",
+      "confidence": 0.80,
+      "default_role": "active",
+      "role_stability": 0.80
+    },
+    "char_altani": {
+      "disposition": "swarini",
+      "disposition_source": "upload",
+      "confidence": 0.80,
+      "default_role": "active",
+      "role_stability": 0.85
+    },
+    "char_sevda": {
+      "disposition": "swarini",
+      "disposition_source": "upload",
+      "confidence": 0.70,
+      "default_role": "active",
+      "role_stability": 0.80
+    },
+    "char_malika": {
+      "disposition": "swarini",
+      "disposition_source": "design_layer",
+      "confidence": 0.60,
+      "default_role": "active",
+      "role_stability": 0.75
+    },
+    "char_reva": {
+      "disposition": "switch",
+      "disposition_source": "upload",
+      "confidence": 0.70,
+      "default_role": "fluid",
+      "role_stability": 0.60
+    },
+    "char_svara": {
+      "disposition": "switch",
+      "disposition_source": "upload",
+      "confidence": 0.70,
+      "default_role": "fluid",
+      "role_stability": 0.60
+    }
+  },
+  "not_mapped": {
+    "char_maha_deva": "male_authorizer_not_part_of_female_female_mapping"
+  }
+}

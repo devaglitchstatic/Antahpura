@@ -1,0 +1,360 @@
+{
+  "schema": "ANTAHPURA_MIGRATION_LEDGER",
+  "version": "20.0",
+  "purpose": "Complete ledger of changes from V18.9 to V20",
+  "migration_date": "2026-09-15",
+  "source_version": "18.9",
+  "target_version": "20.0",
+
+  "migration_summary": {
+    "total_changes": 47,
+    "breaking_changes": 6,
+    "additive_changes": 32,
+    "deprecations": 4,
+    "corrections": 5
+  },
+
+  "breaking_changes": [
+    {
+      "id": "BC_001",
+      "description": "Removed Adult Status critical field",
+      "reason": "Platform-level verification is not part of character data",
+      "affected_files": ["characters/*.json"],
+      "migration_action": "Remove `adult_status` field from all character cards",
+      "user_impact": "None to gameplay; simplifies schema"
+    },
+    {
+      "id": "BC_002",
+      "description": "Retired `primary/secondary/similar/extreme` kama classification",
+      "reason": "Replaced by 8 association types (role_owner, explicit_affinity, thematic_resonance, curiosity, boundary, gated, unsupported, unknown)",
+      "affected_files": ["systems/kama_system_v20.json", "characters/*.json"],
+      "migration_action": "Map old classification to new association types",
+      "user_impact": "Richer semantic associations"
+    },
+    {
+      "id": "BC_003",
+      "description": "Removed Zola from canonical roster",
+      "reason": "Replaced by Svara as seat 14",
+      "affected_files": ["canon/characters.json", "characters/*.json"],
+      "migration_action": "Remove Zola; add Svara; preserve Zola in archive/legacy",
+      "user_impact": "Roster change"
+    },
+    {
+      "id": "BC_004",
+      "description": "Anisa renamed to Aniśā; ethnicity changed Habshi → Yavana",
+      "reason": "Increased diversity and correct cultural lineage",
+      "affected_files": ["canon/characters.json", "characters/char_anisa.json"],
+      "migration_action": "Update name and lineage; keep legacy alias",
+      "user_impact": "Identity change"
+    },
+    {
+      "id": "BC_005",
+      "description": "Retired Chandra-Kala as arousal predictor",
+      "reason": "Chandra-Kala now ritual-temporal modifier + Ritu Kala tracker only",
+      "affected_files": ["systems/chandra_kala.json"],
+      "migration_action": "Reframe Chandra-Kala effect as ritual theme + receptivity modifier, not arousal override",
+      "user_impact": "Safety improvement"
+    },
+    {
+      "id": "BC_006",
+      "description": "Retired `LAGHAVA_KALA` as kala",
+      "reason": "Not a classical kala; Hasta-laghava absorbed into Domain 2",
+      "affected_files": ["systems/kala_system_v20.json"],
+      "migration_action": "Remove `LAGHAVA_KALA` from kala list; note Hasta-laghava as absorbed",
+      "user_impact": "Correction only"
+    }
+  ],
+
+  "additive_changes": [
+    {
+      "id": "AC_001",
+      "description": "Added DRASHTA_RATI as 98th kama",
+      "reason": "Fills observer/pleasure gap in Family H",
+      "affected_files": ["systems/kama_system_v20.json"],
+      "migration_action": "Append DRASHTA_RATI to Family H"
+    },
+    {
+      "id": "AC_002",
+      "description": "Added 20 kama dimensions",
+      "reason": "Semantic layer between kamas and characters",
+      "affected_files": ["systems/kama_system_v20.json"]
+    },
+    {
+      "id": "AC_003",
+      "description": "Added 8 kama association types",
+      "reason": "Replace old primary/secondary/similar/extreme"
+    },
+    {
+      "id": "AC_004",
+      "description": "Added 8 kama families",
+      "reason": "Grouping for reasoning"
+    },
+    {
+      "id": "AC_005",
+      "description": "Added 7 kama lifecycle states",
+      "reason": "Explicit discovery/unlock/participation distinction"
+    },
+    {
+      "id": "AC_006",
+      "description": "Added 4 risk classes",
+      "reason": "Replaces extreme classification"
+    },
+    {
+      "id": "AC_007",
+      "description": "Added 5 kala synergies",
+      "reason": "Emergent abilities from kala combinations"
+    },
+    {
+      "id": "AC_008",
+      "description": "Added mastery ladder (11 stages)",
+      "reason": "Full Punyasiddhi progression"
+    },
+    {
+      "id": "AC_009",
+      "description": "Added 11 relationship dimensions",
+      "reason": "Directional + multidimensional"
+    },
+    {
+      "id": "AC_010",
+      "description": "Added 12 scene templates",
+      "reason": "5-act scene architecture"
+    },
+    {
+      "id": "AC_011",
+      "description": "Added 6 choice classes",
+      "reason": "Categorize player choices"
+    },
+    {
+      "id": "AC_012",
+      "description": "Added 5 consequence classes",
+      "reason": "Micro/personal/institutional/narrative/canonical"
+    },
+    {
+      "id": "AC_013",
+      "description": "Added 4 consequence severity levels"
+    },
+    {
+      "id": "AC_014",
+      "description": "Added 9 quest types"
+    },
+    {
+      "id": "AC_015",
+      "description": "Added 27 quest templates"
+    },
+    {
+      "id": "AC_016",
+      "description": "Added 5 quest prerequisite classes"
+    },
+    {
+      "id": "AC_017",
+      "description": "Added 6 quest reward classes"
+    },
+    {
+      "id": "AC_018",
+      "description": "Added runtime engine schema"
+    },
+    {
+      "id": "AC_019",
+      "description": "Added AVN asset registry"
+    },
+    {
+      "id": "AC_020",
+      "description": "Added canon validation test suite"
+    },
+    {
+      "id": "AC_021",
+      "description": "Added multiplayer sync architecture"
+    },
+    {
+      "id": "AC_022",
+      "description": "Added archive/event sourcing model"
+    },
+    {
+      "id": "AC_023",
+      "description": "Added cultural profile layer (14 profiles)",
+      "reason": "Ethno-context as voice/texture, not preference"
+    },
+    {
+      "id": "AC_024",
+      "description": "Added 8 institutional profiles"
+    },
+    {
+      "id": "AC_025",
+      "description": "Added location registry"
+    },
+    {
+      "id": "AC_026",
+      "description": "Added occasion registry"
+    },
+    {
+      "id": "AC_027",
+      "description": "Added telemetry collector"
+    },
+    {
+      "id": "AC_028",
+      "description": "Added memory writer"
+    },
+    {
+      "id": "AC_029",
+      "description": "Added autonomous engine"
+    },
+    {
+      "id": "AC_030",
+      "description": "Added persistence adapters"
+    },
+    {
+      "id": "AC_031",
+      "description": "Added AVN production pipeline"
+    },
+    {
+      "id": "AC_032",
+      "description": "Added provenance model"
+    }
+  ],
+
+  "deprecations": [
+    {
+      "id": "DEP_001",
+      "description": "Kamini Anisa",
+      "reason": "Renamed to Aniśā",
+      "preserved_as": "legacy_alias"
+    },
+    {
+      "id": "DEP_002",
+      "description": "Zola",
+      "reason": "Removed from roster",
+      "preserved_as": "archive/legacy/zola.json"
+    },
+    {
+      "id": "DEP_003",
+      "description": "LAGHAVA_KALA (as kala)",
+      "reason": "Not classical",
+      "preserved_as": "absent (Hasta-laghava absorbed)"
+    },
+    {
+      "id": "DEP_004",
+      "description": "Family H entries 11-17 (claimed but missing)",
+      "reason": "Not found in source",
+      "preserved_as": "unresolved in audit"
+    }
+  ],
+
+  "corrections": [
+    {
+      "id": "COR_001",
+      "description": "Section VII primary matrix corrected",
+      "from": "Padmā: 1 primary; Sevda: 0",
+      "to": "Padmā: 2 primaries (kalas 58, 59); Sevda: 0 (resonance-only)"
+    },
+    {
+      "id": "COR_002",
+      "description": "Padmā co-primary on kalas 58, 59"
+    },
+    {
+      "id": "COR_003",
+      "description": "Hasta-laghava absorbed into Domain 2 note"
+    },
+    {
+      "id": "COR_004",
+      "description": "Kama count corrected to 98 (was 97)"
+    },
+    {
+      "id": "COR_005",
+      "description": "Chandra-Kala linked to Ritu Kala; not arousal predictor"
+    }
+  ],
+
+  "file_migration_map": {
+    "V18.9_MASTER_KINK_REGISTRY.json": "V20/systems/kama_system_v20.json",
+    "V18.9_KINK_RELATION_GRAPH.json": "V20/systems/kama_system_v20.json (embedded)",
+    "V18.9_KAMA_CHARACTER_STATE.json": "V20/characters/*.json (kama_profile field)",
+    "V18.9_CANONICAL_REGISTRY.json": "V20/canon/characters.json",
+    "V18.9_CHANDRA_KALA.json": "V20/systems/chandra_kala.json",
+    "V18.9_VRTTI_MODULATION.json": "V20/systems/vrtti_modulation.json",
+    "V18.9_SYNTHESIS_RUNTIME.json": "V20/systems/master_schema_v20.json"
+  },
+
+  "migration_steps": [
+    {
+      "step": 1,
+      "action": "Backup existing V18.9 files",
+      "command": "cp -r registry/V18_RUNTIME registry/V18_RUNTIME_backup_2026_09_15"
+    },
+    {
+      "step": 2,
+      "action": "Create V20 directory structure",
+      "command": "mkdir -p V20/{canon,systems,characters,registries,runtime,archive,audit,scripts}"
+    },
+    {
+      "step": 3,
+      "action": "Copy and transform kama registry",
+      "details": "Apply 8-family restructure, 20-dimension mapping, 98-kama count"
+    },
+    {
+      "step": 4,
+      "action": "Copy and transform kala registry",
+      "details": "Apply Section VII correction, Padmā co-primary, Hasta-laghava absorption"
+    },
+    {
+      "step": 5,
+      "action": "Regenerate all 14 character cards",
+      "details": "Apply new schema, remove adult_status, apply new kama association types"
+    },
+    {
+      "step": 6,
+      "action": "Build relationship system",
+      "details": "Create 182 directional edges with 11 dimensions"
+    },
+    {
+      "step": 7,
+      "action": "Build scene engine",
+      "details": "Create 12 templates, 5-act structure"
+    },
+    {
+      "step": 8,
+      "action": "Build quest system",
+      "details": "Create 27 templates across 9 types"
+    },
+    {
+      "step": 9,
+      "action": "Build runtime engine",
+      "details": "Session manager, event bus, multiplayer sync"
+    },
+    {
+      "step": 10,
+      "action": "Run validation tests",
+      "command": "python scripts/validate.py"
+    },
+    {
+      "step": 11,
+      "action": "Commit to version control",
+      "command": "git add V20 && git commit -m 'V20 migration from V18.9'"
+    }
+  ],
+
+  "rollback_plan": {
+    "available": true,
+    "source": "registry/V18_RUNTIME_backup_2026_09_15",
+    "trigger": "any critical validation failure",
+    "steps": [
+      "Stop any active sessions",
+      "Restore registry/V18_RUNTIME_backup_2026_09_15",
+      "Restore original character cards",
+      "Rerun V18.9 engine"
+    ]
+  },
+
+  "post_migration_verification": {
+    "check_1": "All 14 seats present with correct canonical IDs",
+    "check_2": "98 kamas registered",
+    "check_3": "64 kalas registered",
+    "check_4": "182 relationship edges",
+    "check_5": "12 scene templates",
+    "check_6": "27 quest templates",
+    "check_7": "All validation tests pass",
+    "check_8": "CHUB card projection deterministic"
+  },
+
+  "approved_by": "User adjudication (2026-09-15)",
+  "next_review_date": "2026-12-15"
+}

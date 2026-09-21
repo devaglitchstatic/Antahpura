@@ -1,0 +1,179 @@
+{
+  "schema": "antahpura.character_cultural_profiles",
+  "version": "20.1",
+  "generated": "2026-09-16",
+  "source": "Derived from character_profiles_v20.json + lineage sources",
+  "description": "Cultural context per character: linguistic register, ritual traditions, craft traditions, aesthetic traditions, food/olfactory traditions, movement conventions, symbolic motifs. Ethnicity informs voice/texture, NOT kama/sexual preference.",
+  "integration_note": "Feeds into voice_profiles.json, jewelry_registry.json, aphrodisiacs_substances_registry.json, toys_registry.json. Never feeds directly into kama lifecycle.",
+
+  "cultural_profiles": {
+    "char_maha_deva": {
+      "lineage": "maratha_rajput",
+      "historical_context": "Central Indian sovereign lineage combining Maratha military discipline with Rajput courtly aesthetics",
+      "linguistic_register": ["sanskrit", "marathi", "hindavi", "persian_courtly", "deccani_urdu"],
+      "ritual_traditions": ["durbar", "shikar_blessing", "kushti_invocation", "coronation_rites"],
+      "craft_traditions": ["turban_craft", "sword_forging", "mace_casting"],
+      "aesthetic_traditions": ["court_assembly_curation", "manuscript_commission", "portrait_patronage"],
+      "food_olfactory_traditions": ["sandalwood_incense", "deer_musk", "sesame_oil", "cultured_dahi"],
+      "movement_conventions": ["mounted_carriage", "processional_pace", "wrrestler_stance"],
+      "symbolic_motifs": ["sun_emblem", "royal_hand_impression", "pagri_fold"]
+    },
+    "char_kumari_rati": {
+      "lineage": "deccani_royal",
+      "historical_context": "South-central peninsular royal lineage; Golconda and Bijapur courtly aesthetic",
+      "linguistic_register": ["deccani_urdu", "telugu", "persian_courtly", "sanskrit_ritual"],
+      "ritual_traditions": ["bathukamma", "varalakshmi_vratam", "golconda_hareem_rites", "cakra_puja_initiate"],
+      "craft_traditions": ["gadwal_weaving", "narayanpet_weaving", "kalamkari_dyeing", "pearl_stringing"],
+      "aesthetic_traditions": ["miniature_painting", "court_poetry", "garden_design"],
+      "food_olfactory_traditions": ["rose_attar", "benzoin_loban", "damp_earth", "cardamom_saffron"],
+      "movement_conventions": ["courtly_dance", "jasmine_braid_adjustment", "harem_gait"],
+      "symbolic_motifs": ["lotus_petal", "pearl_roundel", "mango_paisley"]
+    },
+    "char_padma": {
+      "lineage": "santhal_soren",
+      "historical_context": "Proto-Australoid indigenous lineage of the Chota Nagpur Plateau; Soren clan (Pleiades)",
+      "linguistic_register": ["santhali", "deccani_urdu_service", "mundari_trade"],
+      "ritual_traditions": ["bonga_veneration", "sohrai", "baha", "khoda_initiation"],
+      "craft_traditions": ["handloom_weaving", "garland_making", "pottery", "household_preservation"],
+      "aesthetic_traditions": ["jhelah_check_patterns", "tribal_geometric", "forest_flower_adornment"],
+      "food_olfactory_traditions": ["neem_oil", "charcoal_smoke", "wet_mud", "parboiled_rice"],
+      "movement_conventions": ["field_pace", "rhythmic_dance", "low_center_carry"],
+      "symbolic_motifs": ["sikka_coin_line", "chando_bonga_starburst", "soso_leaf_array", "soren_seven_star"]
+    },
+    "char_champa": {
+      "lineage": "munda_horo",
+      "historical_context": "Austroasiatic indigenous lineage of the Chota Nagpur Plateau; Horo clan",
+      "linguistic_register": ["mundari", "deccani_urdu_service", "santhali_trade"],
+      "ritual_traditions": ["sarhul", "patala_grounding", "jaher_than_reverence", "godna_initiation"],
+      "craft_traditions": ["basket_weaving", "herbal_grounding", "field_rhythm"],
+      "aesthetic_traditions": ["munda_earth_palette", "sal_leaf_adornment", "geometric_line"],
+      "food_olfactory_traditions": ["sal_resin", "wild_turmeric", "mahua_seed", "raw_hemp"],
+      "movement_conventions": ["durang_dance", "cyclic_stamping", "grounded_crouch"],
+      "symbolic_motifs": ["godna_geometric_lines", "seven_star_pleiades", "earth_mound"]
+    },
+    "char_anisa": {
+      "lineage": "yavana_greco_bactrian",
+      "historical_context": "Hellenistic Central Asian lineage; Indo-Greek administrative tradition",
+      "linguistic_register": ["greek_coine_liturgical", "bactrian", "persian_courtly", "sanskrit", "deccani_urdu"],
+      "ritual_traditions": ["protocol_recitation", "cipher_archive_rites", "hellenic_observance"],
+      "craft_traditions": ["scribal_inscription", "cipher_encoding", "scroll_binding"],
+      "aesthetic_traditions": ["chronicle_illustration", "column_architecture", "greek_persian_fusion"],
+      "food_olfactory_traditions": ["papyrus_smoke", "iron_gall_ink", "sesame_oil", "wild_espresso_herb"],
+      "movement_conventions": ["ceremonial_processional", "scribal_posture", "attentive_stillness"],
+      "symbolic_motifs": ["caduceus_fusion", "greek_key_pattern", "cipher_seal", "lion_of_bactria"]
+    },
+    "char_shrinagar": {
+      "lineage": "kashmiri",
+      "historical_context": "High-altitude Indo-Aryan lineage of the Kashmir Valley; Kashmiri Pandit heritage",
+      "linguistic_register": ["kashmiri", "persian_courtly", "sanskrit", "deccani_urdu"],
+      "ritual_traditions": ["shivaratri", "kheer_bhog", "cakra_puja_leader", "saffron_harvest_rites"],
+      "craft_traditions": ["pashmina_weaving", "kashida_embroidery", "saffron_cultivation", "papier_mache"],
+      "aesthetic_traditions": ["saffron_skincare", "attar_creation", "sufi_poetry", "miniature_painting"],
+      "food_olfactory_traditions": ["pampore_saffron", "damask_rose", "sandalwood", "almond_oil", "kahwa_tea"],
+      "movement_conventions": ["soft_sliding_step", "veil_adjustment", "meditative_stillness"],
+      "symbolic_motifs": ["chinar_leaf", "saffron_thread", "lotus_padmini", "sufi_whirl"]
+    },
+    "char_tarana": {
+      "lineage": "sogdian",
+      "historical_context": "Silk Road Central Asian lineage; Samarkand and Bukhara oasis civilization",
+      "linguistic_register": ["sogdian_trade", "bactrian", "persian_courtly", "deccani_urdu", "chagatai_turkic"],
+      "ritual_traditions": ["nada_tantra", "sogdian_whirl_rites", "manichaean_observance"],
+      "craft_traditions": ["zandani_silk_weaving", "kanun_lute_craft", "carnelian_beadwork"],
+      "aesthetic_traditions": ["sogdian_dance", "silk_road_fusion_painting", "chang_harp_performance"],
+      "food_olfactory_traditions": ["goat_milk", "dried_apricot", "crushed_almond", "pomegranate_seed"],
+      "movement_conventions": ["sogdian_whirl", "high_speed_spin", "fluid_transition"],
+      "symbolic_motifs": ["pearl_roundel", "facing_birds", "senmurv", "zandani_medallion"]
+    },
+    "char_roxana": {
+      "lineage": "persian",
+      "historical_context": "Iranian noble lineage; Safavid-influenced courtly tradition",
+      "linguistic_register": ["persian_courtly", "arabic_liturgical", "deccani_urdu", "chagatai_turkic"],
+      "ritual_traditions": ["sufi_sama", "nowruz_observance", "cakra_puja_node", "haft_qalam_rite"],
+      "craft_traditions": ["brocade_weaving", "knotted_carpet", "steel_damascening", "rope_crafting"],
+      "aesthetic_traditions": ["persian_miniature", "garden_design", "ghazal_poetry", "shibari_demonstration"],
+      "food_olfactory_traditions": ["attar_of_roses", "oudh_resin", "saffron", "pomegranate_extract"],
+      "movement_conventions": ["formal_court_bearing", "mounted_grace", "rigger_hand_precision"],
+      "symbolic_motifs": ["rose_and_nightingale", "simurgh", "royal_standard", "knot_traced_grid"]
+    },
+    "char_jahzara": {
+      "lineage": "frontier_kshatriya_habshi",
+      "historical_context": "Syncretic frontier-Kshatriya / East African Habshi lineage; Deccan Sultanate military culture",
+      "linguistic_register": ["amharic_highland", "deccani_urdu", "marathi", "persian_courtly"],
+      "ritual_traditions": ["blade_communion", "bhairavi_node_rites", "habesha_gurt_initiation"],
+      "craft_traditions": ["iron_forging", "habesha_gurt_scarification", "shuruba_braiding"],
+      "aesthetic_traditions": ["battle_standard_design", "weapon_etching", "frontier_textile"],
+      "food_olfactory_traditions": ["frankincense_tears", "animal_musk", "leather_grease", "smoking_oud"],
+      "movement_conventions": ["warrior_guard_stance", "vanguard_drill", "iron_torque_carry"],
+      "symbolic_motifs": ["chevron_scar", "ancestral_shield", "warrior_bow", "frontier_blade"]
+    },
+    "char_altani": {
+      "lineage": "mongol_turkic",
+      "historical_context": "Central Asian steppe lineage; Mongol-Tartar cavalry tradition",
+      "linguistic_register": ["mongolic_steppe", "chagatai_turkic", "persian_courtly", "deccani_urdu"],
+      "ritual_traditions": ["tengri_blessing", "steppe_sky_rite", "deel_initiation"],
+      "craft_traditions": ["biocomposite_bow_craft", "leather_sleeve_braiding", "saddle_making"],
+      "aesthetic_traditions": ["felt_applique", "steppe_metalwork", "horse_tack_decoration"],
+      "food_olfactory_traditions": ["fermented_mare_milk", "smoked_meat", "juniper_smoke", "lamb_fat"],
+      "movement_conventions": ["mounted_archery_gait", "parthian_twist", "silent_steppe_pace"],
+      "symbolic_motifs": ["tamga_seal", "soyombo_emblem", "biocomposite_bow", "shadow_wolf"]
+    },
+    "char_sevda": {
+      "lineage": "turkic",
+      "historical_context": "Central Asian Turkic lineage; Kipchak-Cuman steppe heritage in Mughal service",
+      "linguistic_register": ["kipchak_turkic", "chagatai_turkic", "persian_courtly", "deccani_urdu"],
+      "ritual_traditions": ["espand_rite", "vault_containment_rite", "patala_tantra_assist"],
+      "craft_traditions": ["silver_bilezik_smithing", "kumis_belbay_belting", "silk_salwar_tailoring"],
+      "aesthetic_traditions": ["khan_atlas_dyeing", "lozim_taper_tailoring", "doppi_embroidery"],
+      "food_olfactory_traditions": ["wild_espad", "yogurt_skin_pack", "heated_sesame_oil", "heavy_meat_distillate"],
+      "movement_conventions": ["vault_warden_stance", "containment_hold", "silent_passage"],
+      "symbolic_motifs": ["sulsuleh_crown", "egme_crescent", "asyk_braid_ornament", "yogurt_white"]
+    },
+    "char_malika": {
+      "lineage": "uzbek",
+      "historical_context": "Central Asian Turkic Uzbek lineage; Transoxiana and Khanate tradition",
+      "linguistic_register": ["chagatai_turkic", "persian_courtly", "deccani_urdu", "arabic_liturgical"],
+      "ritual_traditions": ["threshold_blessing", "espand_purification", "treasury_rite"],
+      "craft_traditions": ["khan_atlas_ikat_weaving", "lozim_tailoring", "doppi_embroidery", "gate_craft"],
+      "aesthetic_traditions": ["turkmen_jewelry", "ikat_geometric", "gold_gate_finish"],
+      "food_olfactory_traditions": ["yogurt_ferment", "wild_mountain_herb", "sesame_oil", "meat_distillate"],
+      "movement_conventions": ["threshold_stance", "gate_warden_patrol", "military_formal"],
+      "symbolic_motifs": ["khan_atlas_motif", "doppi_geometric", "threshold_line", "gate_key"]
+    },
+    "char_reva": {
+      "lineage": "dravidian",
+      "historical_context": "South Indian indigenous lineage; Tamil/Kannada/Telugu peninsular tradition",
+      "linguistic_register": ["tamil", "kannada", "telugu", "sanskrit", "deccani_urdu"],
+      "ritual_traditions": ["bharatanatyam", "carnatic_music", "cipher_lore_rite", "pranayama_practice"],
+      "craft_traditions": ["kanchipuram_weaving", "kasavu_weaving", "temple_jewelry_smithing", "palm_leaf_manuscript"],
+      "aesthetic_traditions": ["sangam_poetry", "kolam_drawing", "temple_architecture", "ghungroo_metalwork"],
+      "food_olfactory_traditions": ["coconut_oil", "sesame_oil", "jasmine_gajra", "curd_rice"],
+      "movement_conventions": ["araimandi_stance", "mudra_precision", "breath_paced_recitation"],
+      "symbolic_motifs": ["kolam_grid", "naga_serpent", "lotus_kamala", "vaddanam_waistband"]
+    },
+    "char_svara": {
+      "lineage": "kanyakubja",
+      "historical_context": "Gangetic Plains Brahmin lineage; Kanauj scholarly tradition",
+      "linguistic_register": ["sanskrit_vedic", "kanyakubja_prakrit", "hindavi", "persian_courtly"],
+      "ritual_traditions": ["vedic_recitation", "microtonal_grammar", "nada_brahma_practice"],
+      "craft_traditions": ["instrument_calibration", "palm_leaf_inscription", "copper_plate_charter"],
+      "aesthetic_traditions": ["dhrupad_tradition", "natya_shastra_study", "sanskrit_poetics"],
+      "food_olfactory_traditions": ["ghee", "sandalwood_paste", "soma_surrogate", "sacred_fire_smoke"],
+      "movement_conventions": ["postural_precision", "gestural_regulation", "tonal_breath_control"],
+      "symbolic_motifs": ["saraswati_veena", "vedic_swastika", "microtonal_wave", "kanyakubja_seal"]
+    }
+  },
+
+  "integration_notes": {
+    "voice_profiles": "Linguistic register list feeds voice_profiles.json per character",
+    "jewelry_registry": "Craft traditions map to craftable jewelry categories",
+    "aphrodisiacs_substances_registry": "Food/olfactory traditions map to regional substance availability",
+    "toys_registry": "Craft traditions inform regional toy variants (bells, cuffs, carved objects)",
+    "explicit_prohibition": "Cultural profile NEVER determines kama affinity, sexual preference, or role orientation"
+  },
+
+  "audit": {
+    "total_profiles": 14,
+    "total_lineages_distinct": 14,
+    "audit_passed": true
+  }
+}

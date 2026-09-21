@@ -1,0 +1,481 @@
+{
+  "schema": "antahpura.scene_engine",
+  "version": "20.0",
+  "generated": "2026-09-14",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Scene template registry, 5-act structure, choice objects, consequence classes, and AVN hooks. Where canon becomes play.",
+
+  "scene_engine": {
+
+    "act_structure": {
+      "description": "Every scene follows a 5-act arc. Acts may be compressed or expanded based on scene type.",
+      "acts": {
+        "act_1_environment": {
+          "name": "Spatial Consecration",
+          "purpose": "Establish location, time, participants, sensory context",
+          "required_fields": ["location_id", "occasion_id", "participants", "environmental_modifiers"],
+          "player_actions": ["observe", "engage", "shift"]
+        },
+        "act_2_preparation": {
+          "name": "Somatic Regulation",
+          "purpose": "Characters prepare physically, emotionally, ritually",
+          "required_fields": ["preparation_activities", "kala_activations", "kama_activations"],
+          "player_actions": ["observe", "engage", "shift"]
+        },
+        "act_3_interaction": {
+          "name": "Sonic & Geometric Resonance",
+          "purpose": "Core interaction — dialogue, kala performance, kama exploration",
+          "required_fields": ["dialogue_nodes", "kala_checks", "relationship_checks", "choice_points"],
+          "player_actions": ["observe", "engage", "shift"]
+        },
+        "act_4_revelation": {
+          "name": "Metaphysical Crux",
+          "purpose": "Decision point — revelation, choice, consequence trigger",
+          "required_fields": ["choice_object", "consequence_class", "visibility", "audience"],
+          "player_actions": ["observe", "engage", "shift"]
+        },
+        "act_5_grounding": {
+          "name": "Grounding & Dissolution",
+          "purpose": "Resolution, memory write, relationship delta, recovery",
+          "required_fields": ["memory_writes", "relationship_deltas", "recovery_type"],
+          "player_actions": ["observe", "engage", "shift"]
+        }
+      }
+    },
+
+    "scene_types": {
+      "dialogue_scene": {
+        "name": "Dialogue Scene",
+        "description": "Character-driven conversation with choice points",
+        "default_act_weights": {"act_1": 0.1, "act_2": 0.05, "act_3": 0.65, "act_4": 0.15, "act_5": 0.05},
+        "typical_minigames": ["Reflection", "Perception"],
+        "typical_kala_checks": ["kala_voice", "kala_expression", "kala_writing"]
+      },
+      "ritual_scene": {
+        "name": "Ritual Scene",
+        "description": "Formal ceremony with preparation, performance, and grounding",
+        "default_act_weights": {"act_1": 0.15, "act_2": 0.25, "act_3": 0.35, "act_4": 0.15, "act_5": 0.10},
+        "typical_minigames": ["Rhythm", "Reflection", "Perception"],
+        "typical_kala_checks": ["kala_ritual", "kala_mantra", "kala_mudra", "kala_yantra"]
+      },
+      "training_scene": {
+        "name": "Training Scene",
+        "description": "Kala mastery progression through guided practice",
+        "default_act_weights": {"act_1": 0.05, "act_2": 0.15, "act_3": 0.55, "act_4": 0.15, "act_5": 0.10},
+        "typical_minigames": ["Endurance", "Coordination", "Sequence"],
+        "typical_kala_checks": ["all_domain_kalas"]
+      },
+      "intimate_scene": {
+        "name": "Intimate Scene",
+        "description": "Kama exploration with consent, trust, and aftercare",
+        "default_act_weights": {"act_1": 0.10, "act_2": 0.15, "act_3": 0.45, "act_4": 0.15, "act_5": 0.15},
+        "typical_minigames": ["Coordination", "Perception", "Reflection"],
+        "typical_kala_checks": ["kala_maithuna", "kala_embrace", "kala_breath"],
+        "special_requirements": ["consent_verified", "aftercare_protocol_active", "risk_class_appropriate"]
+      },
+      "conflict_scene": {
+        "name": "Conflict Scene",
+        "description": "Rivalry, competition, or confrontation",
+        "default_act_weights": {"act_1": 0.10, "act_2": 0.10, "act_3": 0.55, "act_4": 0.15, "act_5": 0.10},
+        "typical_minigames": ["Coordination", "Endurance", "Sequence"],
+        "typical_kala_checks": ["kala_combat", "kala_strategy", "kala_performance"]
+      },
+      "exploration_scene": {
+        "name": "Exploration Scene",
+        "description": "Location discovery, secret discovery, investigation",
+        "default_act_weights": {"act_1": 0.20, "act_2": 0.10, "act_3": 0.45, "act_4": 0.15, "act_5": 0.10},
+        "typical_minigames": ["Perception", "Puzzle"],
+        "typical_kala_checks": ["kala_perception", "kala_investigation", "kala_stealth"]
+      },
+      "political_scene": {
+        "name": "Political Scene",
+        "description": "Court intrigue, alliance negotiation, reputation management",
+        "default_act_weights": {"act_1": 0.15, "act_2": 0.10, "act_3": 0.50, "act_4": 0.15, "act_5": 0.10},
+        "typical_minigames": ["Reflection", "Puzzle"],
+        "typical_kala_checks": ["kala_protocol", "kala_voice", "kala_logic", "kala_writing"]
+      }
+    },
+
+    "choice_object": {
+      "description": "Every choice point in a scene produces a choice object.",
+      "schema": {
+        "choice_id": "string",
+        "scene_id": "string",
+        "act": "integer (1-5)",
+        "prompt_text": "string",
+        "player_actions": ["observe", "engage", "shift"],
+        "options": [
+          {
+            "option_id": "string",
+            "text": "string",
+            "requirements": {
+              "kala_mastery": {"kala_id": "min_level"},
+              "kama_affinity": {"kama_id": "min_score"},
+              "relationship": {"target_char": "dimension", "min_value": "integer"},
+              "institutional_access": {"institution_id": "min_level"}
+            },
+            "immediate_effect": {
+              "state_changes": {},
+              "telemetry_changes": {}
+            },
+            "relationship_effect": {
+              "target_char": "string",
+              "dimension_deltas": {}
+            },
+            "institutional_effect": {
+              "institution_id": "string",
+              "reputation_delta": "integer"
+            },
+            "kala_effect": {
+              "kala_id": "string",
+              "mastery_delta": "float",
+              "practice_count": "integer"
+            },
+            "kama_effect": {
+              "kama_id": "string",
+              "lifecycle_advance": "string",
+              "curiosity_delta": "float"
+            },
+            "reputation_effect": {
+              "layer": "personal|institutional|public|private",
+              "delta": "integer"
+            },
+            "memory_tag": "string",
+            "quest_effect": {
+              "quest_id": "string",
+              "advance": "boolean",
+              "unlock": "boolean"
+            },
+            "future_unlock": {
+              "scene_id": "string",
+              "condition": "string"
+            }
+          }
+        ],
+        "default_option": "option_id (if no choice made within time)",
+        "consequence_class": "micro|personal|institutional|narrative|canonical"
+      }
+    },
+
+    "consequence_classes": {
+      "description": "Five consequence classes determine the scope of choice outcomes.",
+      "classes": {
+        "micro": {
+          "name": "Micro Consequence",
+          "scope": "Affects current scene only",
+          "persistence": "none",
+          "typical_effects": ["dialogue_branch", "minor_relationship_delta", "scene_state_change"],
+          "example": "Choosing to compliment vs. ignore a character's performance"
+        },
+        "personal": {
+          "name": "Personal Consequence",
+          "scope": "Affects character relationship",
+          "persistence": "relationship_memory",
+          "typical_effects": ["relationship_dimension_delta", "memory_write", "kama_curiosity_change"],
+          "example": "Confiding a secret to another character"
+        },
+        "institutional": {
+          "name": "Institutional Consequence",
+          "scope": "Affects office/faction standing",
+          "persistence": "institutional_reputation",
+          "typical_effects": ["institutional_reputation_delta", "access_permission_change", "office_standing_change"],
+          "example": "Publicly challenging a protocol decision"
+        },
+        "narrative": {
+          "name": "Narrative Consequence",
+          "scope": "Changes future chapters",
+          "persistence": "quest_state_change",
+          "typical_effects": ["quest_unlock", "scene_availability_change", "chapter_branch"],
+          "example": "Choosing to ally with one faction over another"
+        },
+        "canonical": {
+          "name": "Canonical Consequence",
+          "scope": "Extremely rare; changes world history",
+          "persistence": "canon_update",
+          "typical_effects": ["canon_decision_record", "world_state_change", "permanent_unlock"],
+          "example": "A decision that alters the succession line or redefines an institution"
+        }
+      }
+    },
+
+    "consequence_severity_ladder": {
+      "description": "Within each consequence class, severity determines magnitude.",
+      "levels": {
+        "negligible": {"multiplier": 0.25, "memory_salience": 0.1, "persists": false},
+        "minor": {"multiplier": 0.5, "memory_salience": 0.3, "persists": false},
+        "moderate": {"multiplier": 1.0, "memory_salience": 0.5, "persists": true},
+        "major": {"multiplier": 1.5, "memory_salience": 0.7, "persists": true},
+        "severe": {"multiplier": 2.0, "memory_salience": 0.9, "persists": true},
+        "transformative": {"multiplier": 3.0, "memory_salience": 1.0, "persists": true, "canon_impact": true}
+      }
+    },
+
+    "visibility_and_audience": {
+      "description": "Choice effects are modified by who witnesses them.",
+      "visibility_levels": {
+        "0_secret": {"multiplier": 0.5, "knowledge_scope": "none"},
+        "1_witnessed_by_one": {"multiplier": 0.75, "knowledge_scope": "single_person"},
+        "2_small_group": {"multiplier": 1.0, "knowledge_scope": "2-4_people"},
+        "3_household": {"multiplier": 1.25, "knowledge_scope": "household"},
+        "4_institutional": {"multiplier": 1.5, "knowledge_scope": "institution"},
+        "5_public": {"multiplier": 2.0, "knowledge_scope": "public"}
+      },
+      "audience_modifiers": {
+        "private": {"institutional_modifier": 0.0, "public_modifier": 0.0},
+        "trusted_pair": {"institutional_modifier": 0.0, "public_modifier": 0.0},
+        "household": {"institutional_modifier": 0.5, "public_modifier": 0.0},
+        "court": {"institutional_modifier": 1.0, "public_modifier": 0.5},
+        "ritual_assembly": {"ritual_modifier": 1.0, "public_modifier": 0.5},
+        "military": {"military_modifier": 1.0, "public_modifier": 0.25},
+        "public": {"institutional_modifier": 0.5, "public_modifier": 1.0}
+      }
+    },
+
+    "multiplayer_scene_coordination": {
+      "description": "Scenes with multiple player-controlled characters.",
+      "session_structure": {
+        "session_id": "ses_<uuid>",
+        "scene_id": "string",
+        "players": [
+          {
+            "player_id": "ply_<uuid>",
+            "controlling_character": "char_id",
+            "pov_leasing": "boolean",
+            "consent_status": "pending|approved|denied"
+          }
+        ],
+        "choice_resolution": {
+          "mode": "consensus|majority|designated_leader|turn_based",
+          "conflict_resolution": "negotiated|gm_arbitrated|vote"
+        },
+        "consent_propagation": {
+          "session_start_negotiation": "completed|pending",
+          "per_action_confirmations": [],
+          "hard_stops_registered": []
+        }
+      }
+    },
+
+    "avn_scene_gallery_hooks": {
+      "description": "Each scene can unlock AVN assets for the gallery.",
+      "hook_schema": {
+        "scene_id": "string",
+        "unlockable_assets": [
+          {
+            "asset_id": "string",
+            "asset_type": "illustration|animation|audio|voice_loop",
+            "unlock_condition": {
+              "kala_mastery": {"kala_id": "min_level"},
+              "kama_lifecycle": {"kama_id": "state"},
+              "relationship": {"target_char": "dimension", "min_value": "integer"},
+              "scene_completion": "boolean",
+              "choice_made": "option_id"
+            },
+            "gallery_category": "string"
+          }
+        ]
+      }
+    },
+
+    "scene_template_registry": {
+      "description": "Pre-built scene templates by type and location.",
+      "templates": [
+        {
+          "template_id": "tpl_dawn_ritual",
+          "name": "Dawn Ritual",
+          "scene_type": "ritual_scene",
+          "location": "temple_pavilion",
+          "occasion": "dawn",
+          "participants": ["char_kumari_rati", "char_padma", "char_svara"],
+          "act_scripts": {
+            "act_1": "Characters gather at the temple pavilion. Oil lamps lit. Incense burned.",
+            "act_2": "Svara calibrates instruments. Padmā prepares offerings. Kumārī Rati enters trance.",
+            "act_3": "Ritual performance. Svara plays. Padmā sings. Kumārī Rati dances.",
+            "act_4": "Kumārī Rati has a vision. Choice: interpret as omen or ignore.",
+            "act_5": "Grounding. Memory write. Relationship deltas based on choice."
+          },
+          "required_kalas": ["kala_ritual", "kala_gita", "kala_nritya"],
+          "available_kamas": ["RITUAL_AUTHORITY", "SNANA_PUJA_GIVING", "NADA_SADHANA"]
+        },
+        {
+          "template_id": "tpl_training_ground",
+          "name": "Training Ground",
+          "scene_type": "training_scene",
+          "location": "military_perimeter",
+          "occasion": "any",
+          "participants": ["char_roxana", "char_altani", "char_jahzara"],
+          "act_scripts": {
+            "act_1": "Training yard. Weapons laid out. Roxana observes.",
+            "act_2": "Altani stretches. Jahzara checks gear. Roxana assigns tasks.",
+            "act_3": "Combat drills. Kala checks. Relationship dynamics emerge.",
+            "act_4": "Roxana tests one character. Choice: show mercy or push harder.",
+            "act_5": "Cool down. Recovery. Memory write."
+          },
+          "required_kalas": ["kala_archery", "kala_swordplay", "kala_endurance"],
+          "available_kamas": ["KASTHA_RATI", "PROTOCOL_ENFORCEMENT", "NISHCHALA_SADHANA"]
+        },
+        {
+          "template_id": "tpl_court_assembly",
+          "name": "Court Assembly",
+          "scene_type": "political_scene",
+          "location": "throne_hall",
+          "occasion": "durbar",
+          "participants": ["char_maha_deva", "char_anisa", "char_malika", "char_roxana"],
+          "act_scripts": {
+            "act_1": "Throne hall. Mahā Deva seated. Aniśā records. Malika guards threshold.",
+            "act_2": "Petitioners enter. Protocol enforced. Roxana stands at attention.",
+            "act_3": "Debate. Protocol checks. Choice: support one faction or remain neutral.",
+            "act_4": "Mahā Deva renders judgment. Choice: enforce or soften.",
+            "act_5": "Assembly dissolves. Memory write. Institutional reputation deltas."
+          },
+          "required_kalas": ["kala_protocol", "kala_logic", "kala_gatekeeping"],
+          "available_kamas": ["PROTOCOL_ENFORCEMENT", "ACCESS_DENIAL", "AVADHANA_STHANA"]
+        },
+        {
+          "template_id": "tpl_private_encounter",
+          "name": "Private Encounter",
+          "scene_type": "intimate_scene",
+          "location": "private_apartment",
+          "occasion": "any",
+          "participants": ["variable"],
+          "act_scripts": {
+            "act_1": "Private chamber. Candles. Scent. Two characters alone.",
+            "act_2": "Preparation. Boundaries discussed. Consent verified.",
+            "act_3": "Interaction. Kama exploration. Kala checks for trust and communication.",
+            "act_4": "Choice: deepen connection or step back. Aftercare negotiation.",
+            "act_5": "Aftercare. Memory write. Relationship deltas. Recovery."
+          },
+          "required_kalas": ["variable"],
+          "available_kamas": ["variable"],
+          "special_requirements": ["consent_verified", "aftercare_protocol_active", "risk_class_appropriate"]
+        }
+      ]
+    },
+
+    "runtime_scene_state": {
+      "description": "Current scene runtime state.",
+      "schema": {
+        "scene_id": "string",
+        "chapter_id": "string",
+        "location_id": "string",
+        "occasion_id": "string",
+        "active_participants": ["char_id"],
+        "active_pov": "char_id",
+        "act": "integer (1-5)",
+        "phase": "string",
+        "state_before": {},
+        "state_after": {},
+        "choices_made": ["choice_id"],
+        "kala_activations": ["kala_id"],
+        "kama_activations": ["kama_id"],
+        "relationship_modifications": [],
+        "memory_writes": [],
+        "unlocks": [],
+        "consequences": [],
+        "gallery_assets_unlocked": ["asset_id"]
+      }
+    },
+
+    "scene_validation_rules": {
+      "description": "Rules enforced before a scene can begin.",
+      "rules": [
+        {
+          "rule_id": "val_001",
+          "name": "Location Access",
+          "check": "All participants have access_permission >= required_level for location"
+        },
+        {
+          "rule_id": "val_002",
+          "name": "Kala Prerequisites",
+          "check": "All required kalas meet minimum mastery for scene type"
+        },
+        {
+          "rule_id": "val_003",
+          "name": "Kama Lifecycle",
+          "check": "All kamas referenced are at lifecycle state >= 'discussable'"
+        },
+        {
+          "rule_id": "val_004",
+          "name": "Consent (Intimate Scenes)",
+          "check": "All participants have explicitly confirmed consent for risk class"
+        },
+        {
+          "rule_id": "val_005",
+          "name": "Institutional Standing",
+          "check": "Institutional reputation threshold met for scene type"
+        },
+        {
+          "rule_id": "val_006",
+          "name": "Multiplayer Consent",
+          "check": "All players have agreed to scene parameters before activation"
+        }
+      ]
+    },
+
+    "consequence_examples": {
+      "description": "Worked examples showing consequence application.",
+      "examples": [
+        {
+          "choice": "Svara publicly praises Kumārī Rati's performance",
+          "consequence_class": "personal",
+          "severity": "moderate",
+          "visibility": "3_household",
+          "audience": "court",
+          "effects": {
+            "svara_to_kumari_rati": {"affection": "+3", "trust": "+2", "respect": "+4"},
+            "kumari_rati_to_svara": {"affection": "+2", "trust": "+1", "loyalty": "+2"},
+            "observer_propagation": {
+              "padma_to_svara": {"respect": "+1"},
+              "jahzara_to_svara": {"trust": "+1"}
+            },
+            "institutional_reputation": {"inst_ritual_chorus": "+2"},
+            "memory_tag": "public_praise"
+          }
+        },
+        {
+          "choice": "Roxana punishes a subordinate in public",
+          "consequence_class": "institutional",
+          "severity": "major",
+          "visibility": "4_institutional",
+          "audience": "military",
+          "effects": {
+            "roxana_to_subordinate": {"respect": "+3", "fear": "+5", "affection": "-2"},
+            "subordinate_to_roxana": {"fear": "+8", "resentment": "+4", "trust": "-3"},
+            "observer_propagation": {
+              "altani_to_roxana": {"respect": "+2"},
+              "jahzara_to_roxana": {"fear": "+1"}
+            },
+            "institutional_reputation": {"inst_military": "+3", "inst_zenana": "-1"},
+            "memory_tag": "public_punishment"
+          }
+        },
+        {
+          "choice": "Aniśā discovers a cipher and chooses to conceal it",
+          "consequence_class": "narrative",
+          "severity": "severe",
+          "visibility": "0_secret",
+          "audience": "private",
+          "effects": {
+            "aniśā_to_reva": {"trust": "-5", "curiosity": "+10"},
+            "reva_to_aniśā": {"suspicion": "+5"},
+            "institutional_reputation": {"inst_administration": "-3"},
+            "quest_unlock": "quest_cipher_investigation",
+            "memory_tag": "cipher_concealed"
+          }
+        }
+      ]
+    }
+  },
+
+  "audit": {
+    "total_scene_types": 7,
+    "total_act_templates": 5,
+    "total_consequence_classes": 5,
+    "total_severity_levels": 6,
+    "total_visibility_levels": 6,
+    "total_audience_types": 7,
+    "total_validation_rules": 6,
+    "orphaned_scenes": 0,
+    "audit_passed": true
+  }
+}

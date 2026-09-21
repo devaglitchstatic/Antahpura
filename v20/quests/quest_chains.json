@@ -1,0 +1,35 @@
+{
+  "schema": "antahpura.quest.chains",
+  "version": "20.0",
+  "total_chains": 3,
+  "chains": {
+    "cipher_chain": {
+      "name": "The Cipher Chain",
+      "steps": [
+        "quest_side_001 -> unlocks -> quest_side_002",
+        "quest_side_002 -> unlocks -> quest_main_002",
+        "quest_main_002 -> unlocks (reveal branch) -> quest_full_cipher",
+        "quest_full_cipher -> unlocks -> quest_main_003"
+      ],
+      "narrative_arc": "Discovery of a hidden cipher network spanning generations"
+    },
+    "initiation_chain": {
+      "name": "The Initiation Chain",
+      "steps": [
+        "quest_main_004 -> unlocks -> quest_main_001",
+        "quest_main_001 -> unlocks -> quest_main_006",
+        "quest_main_006 -> unlocks -> quest_main_008"
+      ],
+      "narrative_arc": "Kumari Rati's path through apprenticeship to mastery"
+    },
+    "political_chain": {
+      "name": "The Political Chain",
+      "steps": [
+        "quest_side_002 -> unlocks -> quest_main_005",
+        "quest_main_005 (war) -> unlocks -> quest_war_preparation",
+        "quest_main_005 (peace) -> unlocks -> quest_trade_accord"
+      ],
+      "narrative_arc": "Court intrigue escalating to regional politics"
+    }
+  }
+}

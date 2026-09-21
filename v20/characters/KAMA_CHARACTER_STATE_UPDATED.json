@@ -1,0 +1,1477 @@
+{
+  "maha_deva": {
+    "kinks": {
+      "AVADHANA_STHANA": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "VICARIOUS_EGO_BHANGA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "RITUAL_AUTHORITY": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "YANTRA_LEKHANA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "PROTOCOL_ENFORCEMENT": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      }
+    }
+  },
+  "kuma_ree": {
+    "kinks": {
+      "VICARIOUS_EGO_BHANGA": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "BHUMI_BHUSHANA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "FOOT_WORSHIP_RECEIVING": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "DARPANA_SADHANA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "KASTHA_RATI": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "RAKTA_BALI": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "PASHU_DARSHANA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "DOLLIFICATION_RECEIVING": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "padma": {
+    "kinks": {
+      "DASYAM": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "RASAYANA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "KRIDA_MRIGA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "SPHUTA_VACHANA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "BHOJANA_RATI_SENSORY": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "DARPANA_SADHANA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "DACRYPHILIA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "MDLG": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "AGAMYA_GAMANA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "SHALAKA_SOUNDING": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "APAN_MUDRA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "SARVANGA_VESHTANA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "champa": {
+    "kinks": {
+      "BALA_CHITTA": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "KRIDA_MRIGA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "CHUSHANA_CHAKRA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "GARBHA_SADHANA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "VATSALYA_RATI": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "DACRYPHILIA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "DHATRI": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "ANDA_VESHA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "KSHETRA_SADHANA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "PASHU_GAMANA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "MUTRA_SNANA_RECEIVING": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "anisa": {
+    "kinks": {
+      "VILASA_PRAHANANA": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "YONI_LEKHANA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "NINDA_VACHANA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "VASTRA_VANCANA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "LAGHAVA_KALA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "MEDICAL_PLAY": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "MUTRA_SNANA_GIVING": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "shrinagar": {
+    "kinks": {
+      "GAU_RUPA": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "BUST_EXHIBITIONISM": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "STANYA_DOHANA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "PITA_RASA_GIVING": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "SNANA_RATI": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "BHOJANA_RATI_SELF_INFUSION": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "FORCE_FEEDING": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "FIGGING": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "tarana": {
+    "kinks": {
+      "CHITRA_RATI": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "VIPARITA_RATI": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "PADA_VANDANA_GIVING": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "LAGHAVA_SADHANA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "ACROEROTICISM": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "LATA_PATRA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "GUDA_PRASTARA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "roxana": {
+    "kinks": {
+      "GRANTHI_KALA": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "GRAPHOEROTICA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "BANDHA_DARSHANA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "NIBANDHA_PRACODANA": {
+        "knowledge": 0.30000000000000004,
+        "training": 0.1,
+        "repetition": 1,
+        "mastery": 0.0,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "SANGHATAKA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "BONDAGE_ART": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "jahzara": {
+    "kinks": {
+      "YONI_VEGA": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "TAILA_SIKTHA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "MUTRA_LANCHHANA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "SNANA_PUJA_GIVING": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "MUTRA_KRIDA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "MUTRA_SNANA_GIVING": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "OMORASHI": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "RAKTA_SPARSHA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "altani": {
+    "kinks": {
+      "TADANA_KALA_INFLICTING": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "NISHCHALA_SADHANA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "EQUINE_FASCINATION": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "URJA_RATI": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "DHMA_KALA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "SOMNOPHILIA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "MUKHA_SAMDANA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "RAKTA_SPARSHA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "sevda": {
+    "kinks": {
+      "SARVANGA_VESHTANA": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "DHUPAN": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "BANDHA_SADHANA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "AVARANA_RATI": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "FIRE_PLAY": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "SHVASA_RODHA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "JALA_PRASTARA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "malika": {
+    "kinks": {
+      "INDRIYA_NIRODHA": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "ACCESS_DENIAL": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "DVARA_RATI": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "AVAGAHA_SADHANA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "KRIDA_MRIGA_PET_GUARD": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "BHOJANA_RATI_SPICE_INFUSION": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "FORCE_FEEDING": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "reva": {
+    "kinks": {
+      "SRINGARA_VAKYA": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "SANTA_RASA": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "KAVYA_KRIA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "CHANDAS_RATI": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "EROTICA_WRITING": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "SVARA_PRASTARA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "RAKTA_BALI": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "svara": {
+    "kinks": {
+      "SPARSHA_SHIKSHA": {
+        "knowledge": 0.5,
+        "training": 0.2,
+        "repetition": 10,
+        "mastery": 0.1,
+        "preference": "like",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "green",
+        "locked": false
+      },
+      "JEWELRY_CRAFTING": {
+        "knowledge": 0.3,
+        "training": 0.1,
+        "repetition": 5,
+        "mastery": 0.05,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "TALA_PRASTARA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "NADA_SADHANA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "MANTRA_MOHA": {
+        "knowledge": 0.1,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "maybe",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "orange",
+        "locked": false
+      },
+      "DOLLIFICATION_INFLICTING": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "SHALAKA_SOUNDING": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      },
+      "APAN_MUDRA": {
+        "knowledge": 0,
+        "training": 0,
+        "repetition": 0,
+        "mastery": 0,
+        "preference": "no",
+        "limits": {
+          "soft": [],
+          "hard": []
+        },
+        "consent": "red",
+        "locked": true
+      }
+    }
+  },
+  "schema": "antahpura.characters.KAMA_CHARACTER_STATE_UPDATED",
+  "version": "1.0"
+}

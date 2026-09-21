@@ -1,0 +1,158 @@
+{
+  "schema": "antahpura.canon.characters",
+  "version": "20.1",
+  "total_characters": 14,
+  "characters": {
+    "char_maha_deva": {
+      "canonical_name": "Mahā Deva",
+      "lineage": "Maratha-Rajput",
+      "age": 35,
+      "office": "Sovereign / Guru",
+      "office_id": "off_sovereign",
+      "institution": "inst_throne",
+      "primary_kalas": ["kala_52"],
+      "status": "canonical"
+    },
+    "char_kumari_rati": {
+      "canonical_name": "Princess Kumārī Rati",
+      "lineage": "Deccani Royal",
+      "age": 18,
+      "office": "Princess / Primary Initiate",
+      "office_id": "off_princess",
+      "institution": "inst_zenana",
+      "primary_kalas": ["kala_64"],
+      "status": "canonical"
+    },
+    "char_padma": {
+      "canonical_name": "Padmā (Baha Soren)",
+      "lineage": "Santhal Adivasi (Soren)",
+      "age": 16,
+      "office": "Personal Handmaiden",
+      "office_id": "off_senior_handmaiden",
+      "institution": "inst_zenana",
+      "primary_kalas": ["kala_58", "kala_59"],
+      "status": "canonical",
+      "note": "Co-primary with Malika on Kalas 58 and 59"
+    },
+    "char_champa": {
+      "canonical_name": "Champā (Buda Horo)",
+      "lineage": "Munda Adivasi",
+      "age": 14,
+      "office": "Handmaiden Apprentice",
+      "office_id": "off_handmaiden_apprentice",
+      "institution": "inst_zenana",
+      "primary_kalas": ["kala_61"],
+      "status": "canonical"
+    },
+    "char_anisa": {
+      "canonical_name": "Aniśā",
+      "lineage": "Yavana (Greco-Bactrian)",
+      "age": 23,
+      "office": "Chief Protocol Steward / Chronicler",
+      "office_id": "off_chief_protocol_steward",
+      "institution": "inst_administrative_court",
+      "primary_kalas": ["kala_62", "kala_63"],
+      "status": "canonical"
+    },
+    "char_shrinagar": {
+      "canonical_name": "Shrinagar",
+      "lineage": "Kashmiri",
+      "age": 22,
+      "office": "Chief Musician / Esoteric Preparer",
+      "office_id": "off_chief_musician",
+      "institution": "inst_yogic_pavilion",
+      "primary_kalas": ["kala_9", "kala_13", "kala_14", "kala_15", "kala_16", "kala_17", "kala_18", "kala_19", "kala_20", "kala_21", "kala_22", "kala_23", "kala_24", "kala_26", "kala_27", "kala_28"],
+      "status": "canonical"
+    },
+    "char_tarana": {
+      "canonical_name": "Tarana",
+      "lineage": "Sogdian",
+      "age": 19,
+      "office": "Primary Court Dancer",
+      "office_id": "off_primary_court_dancer",
+      "institution": "inst_ritual_chorus",
+      "primary_kalas": ["kala_53", "kala_54", "kala_55", "kala_56", "kala_57"],
+      "status": "canonical"
+    },
+    "char_roxana": {
+      "canonical_name": "Roxana",
+      "lineage": "Persian",
+      "age": 25,
+      "office": "Noble Commander / Shibari Master",
+      "office_id": "off_noble_commander",
+      "institution": "inst_military_perimeter",
+      "primary_kalas": ["kala_25", "kala_29", "kala_30", "kala_31", "kala_32", "kala_33", "kala_34", "kala_35", "kala_36", "kala_37", "kala_38", "kala_39"],
+      "status": "canonical"
+    },
+    "char_jahzara": {
+      "canonical_name": "Jahzara",
+      "lineage": "Frontier Kshatriya / Habshi",
+      "age": 22,
+      "office": "Vanguard Sentinel",
+      "office_id": "off_vanguard_sentinel",
+      "institution": "inst_military_perimeter",
+      "primary_kalas": ["kala_40", "kala_41", "kala_43", "kala_44", "kala_45", "kala_46", "kala_47", "kala_48", "kala_49", "kala_50", "kala_51"],
+      "status": "canonical"
+    },
+    "char_altani": {
+      "canonical_name": "Altani",
+      "lineage": "Mongol-Turkic",
+      "age": 30,
+      "office": "Steppe Shadow Sentinel",
+      "office_id": "off_shadow_sentinel",
+      "institution": "inst_military_perimeter",
+      "primary_kalas": [],
+      "status": "canonical",
+      "note": "Resonance-only in Domain 3 (Martial)"
+    },
+    "char_sevda": {
+      "canonical_name": "Sevda",
+      "lineage": "Turkic",
+      "age": 24,
+      "office": "Vault Warden / Containment Specialist",
+      "office_id": "off_vault_warden",
+      "institution": "inst_subterranean_vaults",
+      "primary_kalas": [],
+      "status": "canonical",
+      "note": "Resonance-only in Domain 4 (Occult)"
+    },
+    "char_malika": {
+      "canonical_name": "Malika",
+      "lineage": "Uzbek",
+      "age": 21,
+      "office": "Threshold Commander",
+      "office_id": "off_threshold_commander",
+      "institution": "inst_administrative_court",
+      "primary_kalas": ["kala_58", "kala_59"],
+      "status": "canonical",
+      "note": "Co-primary with Padmā on Kalas 58 and 59"
+    },
+    "char_reva": {
+      "canonical_name": "Reva",
+      "lineage": "Dravidian",
+      "age": 18,
+      "office": "Breathkeeper, Poet, Cipher-Lorekeeper",
+      "office_id": "off_cipher_lorekeeper",
+      "institution": "inst_administrative_court",
+      "primary_kalas": ["kala_6", "kala_10"],
+      "status": "canonical"
+    },
+    "char_svara": {
+      "canonical_name": "Svara",
+      "lineage": "Kanyakubja (Gangetic Plains)",
+      "age": 22,
+      "office": "Micro-tonal Calibrator / Cultural Artist",
+      "office_id": "off_microtonal_calibrator",
+      "institution": "inst_ritual_chorus",
+      "primary_kalas": ["kala_1", "kala_2", "kala_3", "kala_4", "kala_5", "kala_7", "kala_8", "kala_11", "kala_12", "kala_42"],
+      "status": "canonical"
+    }
+  },
+  "audit": {
+    "total_characters": 14,
+    "with_primaries": 12,
+    "without_primaries": 2,
+    "without_primaries_list": ["char_altani", "char_sevda"],
+    "audit_passed": true
+  }
+}

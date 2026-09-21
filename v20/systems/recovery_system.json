@@ -1,0 +1,482 @@
+{
+  "schema": "antahpura.recovery_system",
+  "version": "20.0",
+  "generated": "2026-09-16",
+  "parent_schema": "ANTAHPURA_MASTER_SCHEMA_V20",
+  "description": "Multi-layer recovery system covering physical, emotional, social, relational, institutional, and narrative recovery. Integrates with state transitions, scene engine, and event sourcing.",
+  "design_principles": {
+    "principle_1": "Recovery is a state transition, not a scene end.",
+    "principle_2": "Every character has recovery needs that vary by character, context, and intensity of the preceding event.",
+    "principle_3": "Recovery is not linear. A character may need multiple recovery phases.",
+    "principle_4": "Neglecting recovery produces cascading penalties.",
+    "principle_5": "Recovery can be self-directed, partner-directed, or institution-directed.",
+    "principle_6": "Recovery is tracked per character and per relationship."
+  },
+
+  "recovery_types": {
+    "physical": {
+      "name": "Physical Recovery",
+      "description": "Restoration of bodily energy, tissue, and sensory capacity.",
+      "triggers": [
+        "intense_physical_scene",
+        "endurance_challenge",
+        "impact_play",
+        "long_ritual",
+        "sleep_deprivation"
+      ],
+      "recovery_actions": [
+        {
+          "action_id": "rec_phys_rest",
+          "name": "Rest",
+          "duration_minutes": 60,
+          "effect": "Restores 25% of physical energy",
+          "requirements": {"location": "private_chamber", "quiet": true}
+        },
+        {
+          "action_id": "rec_phys_food",
+          "name": "Nourishment",
+          "duration_minutes": 20,
+          "effect": "Restores 15% of physical energy, stabilizes blood sugar",
+          "requirements": {"food_available": true}
+        },
+        {
+          "action_id": "rec_phys_bath",
+          "name": "Ritual Bath",
+          "duration_minutes": 45,
+          "effect": "Restores 30% of physical energy, +5 stillness",
+          "requirements": {"location": "bath_space", "water_available": true}
+        },
+        {
+          "action_id": "rec_phys_sleep",
+          "name": "Full Sleep",
+          "duration_hours": 8,
+          "effect": "Restores 100% of physical energy",
+          "requirements": {"location": "private_chamber", "safety": true}
+        }
+      ],
+      "depletion_effects": {
+        "energy_below_50": "Disadvantage on coordination checks",
+        "energy_below_25": "Disadvantage on all physical checks",
+        "energy_below_10": "Cannot perform kala practices"
+      },
+      "full_recovery_time_hours": "varies_by_intensity"
+    },
+    "emotional": {
+      "name": "Emotional Recovery",
+      "description": "Restoration of emotional equilibrium after intense experience.",
+      "triggers": [
+        "intense_emotional_scene",
+        "vulnerability_exposure",
+        "vak_kautuka_bhrama_trigger",
+        "sub_drop",
+        "dom_drop"
+      ],
+      "recovery_actions": [
+        {
+          "action_id": "rec_emo_grounding",
+          "name": "Grounding",
+          "duration_minutes": 15,
+          "effect": "Reduces emotional pressure by 20%",
+          "requirements": {"partner_present": true}
+        },
+        {
+          "action_id": "rec_emo_validation",
+          "name": "Verbal Validation",
+          "duration_minutes": 10,
+          "effect": "Reduces emotional pressure by 25%, +5 trust",
+          "requirements": {"partner_present": true, "trust_minimum": 40}
+        },
+        {
+          "action_id": "rec_emo_quiet",
+          "name": "Quiet Presence",
+          "duration_minutes": 30,
+          "effect": "Reduces emotional pressure by 15%, +5 stillness",
+          "requirements": {"quiet": true, "no_conversation_required": true}
+        },
+        {
+          "action_id": "rec_emo_cry",
+          "name": "Cathartic Release",
+          "duration_minutes": 20,
+          "effect": "Reduces emotional pressure by 40%, +5 vulnerability",
+          "requirements": {"safe_space": true, "witness_optional": true}
+        }
+      ],
+      "depletion_effects": {
+        "pressure_above_60": "Disadvantage on expression and performance checks",
+        "pressure_above_80": "Disadvantage on all social checks",
+        "pressure_above_95": "Vāk-Kautuka-Bhrama trigger threshold exceeded"
+      },
+      "full_recovery_time_hours": "varies_by_intensity"
+    },
+    "social": {
+      "name": "Social Recovery",
+      "description": "Restoration of social standing after public embarrassment, conflict, or exposure.",
+      "triggers": [
+        "public_criticism",
+        "public_failure",
+        "scandal",
+        "institutional_censure"
+      ],
+      "recovery_actions": [
+        {
+          "action_id": "rec_soc_apology",
+          "name": "Public Apology",
+          "duration_minutes": 30,
+          "effect": "Restores 20% of social standing",
+          "requirements": {"audience": "court", "sincerity_check": true}
+        },
+        {
+          "action_id": "rec_soc_display",
+          "name": "Display of Competence",
+          "duration_minutes": 60,
+          "effect": "Restores 30% of social standing",
+          "requirements": {"kala_mastery_minimum": 5}
+        },
+        {
+          "action_id": "rec_soc_ally_support",
+          "name": "Ally Support",
+          "duration_minutes": 15,
+          "effect": "Restores 25% of social standing",
+          "requirements": {"ally_present": true, "ally_reputation_minimum": 50}
+        },
+        {
+          "action_id": "rec_soc_time",
+          "name": "Time Passage",
+          "duration_days": 7,
+          "effect": "Restores 10% of social standing per day",
+          "requirements": {"no_further_scandals": true}
+        }
+      ],
+      "depletion_effects": {
+        "standing_below_40": "Disadvantage on court political checks",
+        "standing_below_20": "Cannot access formal court locations",
+        "standing_below_10": "Institutional censure or expulsion"
+      },
+      "full_recovery_time_days": "varies_by_severity"
+    },
+    "relational": {
+      "name": "Relational Recovery",
+      "description": "Restoration of a specific relationship after conflict, rupture, or betrayal.",
+      "triggers": [
+        "relationship_conflict",
+        "trust_violation",
+        "public_argument",
+        "neglect",
+        "jewelry_returned"
+      ],
+      "recovery_actions": [
+        {
+          "action_id": "rec_rel_conversation",
+          "name": "Honest Conversation",
+          "duration_minutes": 45,
+          "effect": "Restores 15% of trust, 10% of affection",
+          "requirements": {"privacy": true, "both_parties_willing": true}
+        },
+        {
+          "action_id": "rec_rel_gesture",
+          "name": "Meaningful Gesture",
+          "duration_minutes": 30,
+          "effect": "Restores 20% of affection, 10% of trust",
+          "requirements": {"gift_or_action": true, "sincerity_check": true}
+        },
+        {
+          "action_id": "rec_rel_time_together",
+          "name": "Time Together",
+          "duration_hours": 4,
+          "effect": "Restores 10% of familiarity, 5% of trust",
+          "requirements": {"shared_activity": true}
+        },
+        {
+          "action_id": "rec_rel_mediation",
+          "name": "Third-Party Mediation",
+          "duration_minutes": 60,
+          "effect": "Restores 25% of trust, 15% of respect",
+          "requirements": {"mediator_present": true, "mediator_trusted_by_both": true}
+        }
+      ],
+      "depletion_effects": {
+        "trust_below_30": "Relationship enters 'fragile' state",
+        "trust_below_15": "Relationship enters 'ruptured' state",
+        "trust_below_5": "Relationship enters 'severed' state"
+      },
+      "full_recovery_time_days": "varies_by_severity"
+    },
+    "institutional": {
+      "name": "Institutional Recovery",
+      "description": "Restoration of standing within an institution after censure, failure, or scandal.",
+      "triggers": [
+        "institutional_censure",
+        "office_failure",
+        "protocol_violation",
+        "scandal_involving_institution"
+      ],
+      "recovery_actions": [
+        {
+          "action_id": "rec_inst_service",
+          "name": "Service to Institution",
+          "duration_hours": 8,
+          "effect": "Restores 15% of institutional reputation",
+          "requirements": {"institution_leader_approval": true}
+        },
+        {
+          "action_id": "rec_inst_success",
+          "name": "Institutional Success",
+          "duration_days": 3,
+          "effect": "Restores 30% of institutional reputation",
+          "requirements": {"quest_completion": true, "institution_benefit": true}
+        },
+        {
+          "action_id": "rec_inst_public_support",
+          "name": "Public Support",
+          "duration_minutes": 30,
+          "effect": "Restores 20% of institutional reputation",
+          "requirements": {"institutional_ally_present": true}
+        },
+        {
+          "action_id": "rec_inst_time",
+          "name": "Time Passage",
+          "duration_days": 14,
+          "effect": "Restores 5% of institutional reputation per day",
+          "requirements": {"no_further_violations": true}
+        }
+      ],
+      "depletion_effects": {
+        "reputation_below_30": "Cannot access institutional restricted locations",
+        "reputation_below_15": "Office suspended",
+        "reputation_below_5": "Office stripped"
+      },
+      "full_recovery_time_days": "varies_by_severity"
+    },
+    "narrative": {
+      "name": "Narrative Recovery",
+      "description": "Processing of major events, memory integration, and return to normal gameplay.",
+      "triggers": [
+        "chapter_end",
+        "major_quest_completion",
+        "transformative_event",
+        "canonical_consequence"
+      ],
+      "recovery_actions": [
+        {
+          "action_id": "rec_narr_reflection",
+          "name": "Reflection",
+          "duration_minutes": 30,
+          "effect": "Integrates event into memory, +5 curiosity",
+          "requirements": {"privacy": true}
+        },
+        {
+          "action_id": "rec_narr_discussion",
+          "name": "Discussion",
+          "duration_minutes": 45,
+          "effect": "Integrates event with others, +5 trust with participant",
+          "requirements": {"participant_present": true}
+        },
+        {
+          "action_id": "rec_narr_writing",
+          "name": "Writing",
+          "duration_minutes": 60,
+          "effect": "Documents event for archive, +5 expression",
+          "requirements": {"kala_writing_mastery": 3}
+        },
+        {
+          "action_id": "rec_narr_ritual",
+          "name": "Closing Ritual",
+          "duration_minutes": 45,
+          "effect": "Ceremonial closure, +5 rituality",
+          "requirements": {"location": "ritual_space", "kala_ritual_mastery": 4}
+        }
+      ],
+      "depletion_effects": {
+        "unprocessed_events_above_5": "Character experiences 'narrative weight' — disadvantage on new scene starts",
+        "unprocessed_events_above_10": "Character enters 'narrative crisis' — cannot initiate new quests"
+      },
+      "full_recovery_time_days": "varies_by_event_magnitude"
+    }
+  },
+
+  "recovery_matrix": {
+    "description": "What each character needs for recovery in each context.",
+    "matrix": {
+      "char_maha_deva": {
+        "preferred_recovery_types": ["narrative", "institutional"],
+        "preferred_actions": ["rec_narr_reflection", "rec_inst_service"],
+        "recovery_speed_modifier": 1.0,
+        "penalty_if_neglected": "authority_disadvantage"
+      },
+      "char_kumari_rati": {
+        "preferred_recovery_types": ["emotional", "relational", "physical"],
+        "preferred_actions": ["rec_emo_validation", "rec_rel_conversation", "rec_phys_rest"],
+        "recovery_speed_modifier": 1.2,
+        "penalty_if_neglected": "vulnerability_overload"
+      },
+      "char_padma": {
+        "preferred_recovery_types": ["physical", "emotional"],
+        "preferred_actions": ["rec_phys_food", "rec_emo_grounding"],
+        "recovery_speed_modifier": 1.1,
+        "penalty_if_neglected": "service_fatigue"
+      },
+      "char_champa": {
+        "preferred_recovery_types": ["emotional", "relational"],
+        "preferred_actions": ["rec_emo_quiet", "rec_rel_time_together"],
+        "recovery_speed_modifier": 1.3,
+        "penalty_if_neglected": "trust_regression"
+      },
+      "char_anisa": {
+        "preferred_recovery_types": ["institutional", "narrative"],
+        "preferred_actions": ["rec_inst_success", "rec_narr_writing"],
+        "recovery_speed_modifier": 0.9,
+        "penalty_if_neglected": "protocol_rigidity"
+      },
+      "char_shrinagar": {
+        "preferred_recovery_types": ["emotional", "physical", "narrative"],
+        "preferred_actions": ["rec_emo_quiet", "rec_phys_bath", "rec_narr_reflection"],
+        "recovery_speed_modifier": 1.0,
+        "penalty_if_neglected": "sensory_overload"
+      },
+      "char_tarana": {
+        "preferred_recovery_types": ["physical", "relational"],
+        "preferred_actions": ["rec_phys_rest", "rec_rel_time_together"],
+        "recovery_speed_modifier": 1.2,
+        "penalty_if_neglected": "performance_anxiety"
+      },
+      "char_roxana": {
+        "preferred_recovery_types": ["physical", "institutional"],
+        "preferred_actions": ["rec_phys_sleep", "rec_inst_service"],
+        "recovery_speed_modifier": 0.8,
+        "penalty_if_neglected": "command_indecision"
+      },
+      "char_jahzara": {
+        "preferred_recovery_types": ["physical", "emotional"],
+        "preferred_actions": ["rec_phys_bath", "rec_emo_cry"],
+        "recovery_speed_modifier": 0.9,
+        "penalty_if_neglected": "vigilance_depletion"
+      },
+      "char_altani": {
+        "preferred_recovery_types": ["physical", "relational"],
+        "preferred_actions": ["rec_phys_rest", "rec_rel_time_together"],
+        "recovery_speed_modifier": 0.8,
+        "penalty_if_neglected": "endurance_failure"
+      },
+      "char_sevda": {
+        "preferred_recovery_types": ["emotional", "narrative"],
+        "preferred_actions": ["rec_emo_quiet", "rec_narr_ritual"],
+        "recovery_speed_modifier": 0.9,
+        "penalty_if_neglected": "containment_breach"
+      },
+      "char_malika": {
+        "preferred_recovery_types": ["institutional", "relational"],
+        "preferred_actions": ["rec_inst_public_support", "rec_rel_conversation"],
+        "recovery_speed_modifier": 1.0,
+        "penalty_if_neglected": "threshold_weakness"
+      },
+      "char_reva": {
+        "preferred_recovery_types": ["emotional", "narrative"],
+        "preferred_actions": ["rec_emo_cry", "rec_narr_writing"],
+        "recovery_speed_modifier": 1.1,
+        "penalty_if_neglected": "cipher_collapse"
+      },
+      "char_svara": {
+        "preferred_recovery_types": ["physical", "emotional"],
+        "preferred_actions": ["rec_phys_bath", "rec_emo_validation"],
+        "recovery_speed_modifier": 1.0,
+        "penalty_if_neglected": "calibration_drift"
+      }
+    }
+  },
+
+  "aftercare_protocol": {
+    "description": "Standard aftercare steps after an intimate or intense scene.",
+    "steps": [
+      {
+        "step": 1,
+        "name": "Physical Warmth",
+        "action": "wrap_in_blanket",
+        "duration_minutes": 5,
+        "effect": "Reduces physical drop severity"
+      },
+      {
+        "step": 2,
+        "name": "Hydration",
+        "action": "offer_water_or_juice",
+        "duration_minutes": 3,
+        "effect": "Reduces physical drop severity"
+      },
+      {
+        "step": 3,
+        "name": "Blood Sugar Stabilization",
+        "action": "offer_food",
+        "duration_minutes": 5,
+        "effect": "Reduces physical drop severity"
+      },
+      {
+        "step": 4,
+        "name": "Verbal Reassurance",
+        "action": "speak_softly",
+        "duration_minutes": 10,
+        "effect": "Reduces emotional drop severity, +5 trust"
+      },
+      {
+        "step": 5,
+        "name": "Physical Contact",
+        "action": "cuddle_or_hold",
+        "duration_minutes": 15,
+        "effect": "Reduces emotional drop severity, +3 affection"
+      },
+      {
+        "step": 6,
+        "name": "Status Restoration",
+        "action": "affirm_equal_status",
+        "duration_minutes": 5,
+        "effect": "Reduces relational drop severity"
+      },
+      {
+        "step": 7,
+        "name": "Check-In",
+        "action": "ask_simple_questions",
+        "duration_minutes": 10,
+        "effect": "Detects early drop signs, +2 trust"
+      }
+    ],
+    "mandatory_after_high_intensity": true,
+    "optional_after_low_intensity": false
+  },
+
+  "runtime_recovery_state": {
+    "schema": {
+      "character_id": "char_id",
+      "physical_energy": "float (0-100)",
+      "emotional_pressure": "float (0-100)",
+      "social_standing": "float (0-100)",
+      "relational_states": {
+        "<target_char_id>": {
+          "trust": "float (0-100)",
+          "affection": "float (0-100)",
+          "state": "healthy|fragile|ruptured|severed"
+        }
+      },
+      "institutional_reputation": {
+        "<institution_id>": "float (0-100)"
+      },
+      "unprocessed_events": "integer",
+      "narrative_weight": "float (0-100)",
+      "active_recovery_actions": [
+        {
+          "action_id": "string",
+          "started_at": "iso_8601",
+          "completes_at": "iso_8601",
+          "effect": "string"
+        }
+      ],
+      "last_updated": "iso_8601"
+    }
+  },
+
+  "audit": {
+    "total_recovery_types": 6,
+    "total_recovery_actions": 24,
+    "total_characters_mapped": 14,
+    "total_aftercare_steps": 7,
+    "orphaned_actions": 0,
+    "audit_passed": true
+  }
+}
